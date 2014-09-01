@@ -34,12 +34,5 @@
     
     echo '<br>';
     
-    $begin_month = strtotime("-1 month");
-    $month = date('m',time());
-    $day = date('d',time());
-    echo $day;
-    echo '<br>';
-	$stime = date('Y-m-16 00:00:00',$begin_month);
-	echo $stime;
-	
+	echo date('Y-m-d');
 ?>
