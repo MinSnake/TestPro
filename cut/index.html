@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+ 	<title>Jcrop Demo</title>
+ 	<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+	<script src="jquery-1.9.1.js"></script>
+	<script src="jquery.Jcrop.js"></script>
+	<link rel="stylesheet" href="index.css" type="text/css" />
+	<link rel="stylesheet" href="jquery.Jcrop.css" type="text/css" />
+</head>
+
+<body>
+<!-- 图片上传模块 -->
+<div class="group_upload">
+	<form action="upload_file.php" method="post" enctype="multipart/form-data">
+		<input type="file" name="file" id="file" /> 
+		<br />
+		<input type="submit" name="submit" value="Submit" />
+	</form>
+</div>
+<!-- 图片剪切模块 -->
+<div class="group_cut">
+	<img id="saki" src="saki.jpg">
+	<span id="min" class="saki_preview">
+		<img id="saki-min" src="saki.jpg">
+	</span>
+	<form action="cut.php" method="post" id="crop_form">
+        <input type="hidden" id="x" name="x" />
+        <input type="hidden" id="y" name="y" />
+        <input type="hidden" id="w" name="w" />
+        <input type="hidden" id="h" name="h" />
+        <input type="button" value="确认剪裁" id="crop_submit" />
+    </form>
+</div>
+    <script type="text/javascript">
+	$(document).ready(function(){
+		$("#saki").Jcrop({
+			onChange:showPreview,
+			onSelect:showPreview,
+			aspectRatio:1
+		});	
+		//响应onChange,onSelect事件，按照上面的Jcrop调用
+		function showPreview(coords){
+			$("#x").val(coords.x);
+			$("#y").val(coords.y);
+			$("#w").val(coords.w);
+			$("#h").val(coords.h);
+			if(parseInt(coords.w) > 0){
+				var rx = $("#min").width() / coords.w; 
+				var ry = $("#min").height() / coords.h;
+				//通过比例值控制图片的样式与显示
+				$("#saki-min").css({
+					width:Math.round(rx * $("#saki").width()) + "px",	
+					height:Math.round(rx * $("#saki").height()) + "px",
+					marginLeft:"-" + Math.round(rx * coords.x) + "px",
+					marginTop:"-" + Math.round(ry * coords.y) + "px"
+				});
+			}
+		}
+	});	
+	</script>
+	<script type="text/javascript">
+	$("#crop_submit").click(function(){
+		if(parseInt($("#x").val())){
+			$("#crop_form").submit();
+
+		}else{
+			alert("请选择需要剪切的区域！");	
+		}
+	});
+	</script>
+</body>
+</html>
+

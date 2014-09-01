@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />  
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />  
+<title>GIS开发利用html5获取经纬度并在百度地图中查看</title>
+<!--加载百度 map api-->
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=1.5&ak=8827ee39511568ac0705d037d67b2624"></script>  
+</head>
+
+<body>
+<span id="support">将下面的经纬度输入谷歌地图：</span>
+<div id="show">
+纬度：<span id="latitude"></span><br />
+经度：<span id="longitude"></span><br />
+准确度：<span id="accuracy"></span>
+</div>
+<script type="text/javascript">
+var doc = document,
+    latitude = doc.getElementById('latitude'),
+    longitude = doc.getElementById('longitude'),
+    accuracy = doc.getElementById('accuracy'),
+    support = doc.getElementById('support'),
+    showDiv = doc.getElementById('show');
+function lodeSupport(){
+    if(navigator.geolocation){
+        support.innerHTML = '将下面的经纬度输入谷歌地图(纬度 经度)查看自己位置：';
+        showDiv.style.display = 'block';
+        navigator.geolocation.getCurrentPosition(updataPosition);
+    }else{
+        support.innerHTML = '对不起，浏览器不支持！';
+        showDiv.style.display = 'none';
+    }
+}
+function updataPosition(position){
+    var latitudeP = position.coords.latitude,
+        longitudeP = position.coords.longitude,
+        accuracyP = position.coords.accuracy;
+    latitude.innerHTML = latitudeP;
+    longitude.innerHTML = longitudeP;
+    accuracy.innerHTML = accuracyP;
+	//在百度 map中显示地址
+	var map = new BMap.Map("map_canvas");          // 创建地图实例  
+	var point = new BMap.Point(longitudeP , latitudeP);  // 创建点坐标  
+	map.centerAndZoom(point, 15);// 初始化地图，设置中心点坐标和地图级别  
+	var marker = new BMap.Marker(point);    
+	map.addOverlay(marker); 
+	var gc = new BMap.Geocoder();    
+	gc.getLocation(point, function(rs){
+        var addComp = rs.addressComponents;
+        alert(addComp.province + ", " + addComp.city + ", " + addComp.district + ", " + addComp.street + ", " + addComp.streetNumber);
+    }); 
+	
+
+
+
+
+	
+}
+window.addEventListener('load', lodeSupport , true);
+</script>
+<div id="map_canvas" style="width:500px; height:500px;"></div>
+</body>
+</html>
+
+

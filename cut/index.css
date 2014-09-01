@@ -1,0 +1,12 @@
+.group_cut{
+	display: block;	
+}
+
+.saki_preview {
+	position: absolute;
+	left: 820px;
+	top: 200px;
+	width: 120px;
+	height: 120px;
+	overflow: hidden;
+}

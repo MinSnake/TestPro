@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+ 	<title>AJAX Demo</title>
+ 	<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+	<script src="jquery-1.9.1.js"></script>
+</head>
+
+<body>
+    <a id="ajax" href="#">AJAX</a>
+    <script type="text/javascript">
+	    $(document).ready(function(){
+            $("#ajax").click(function(){
+	            $.ajax({
+		            url:"http://portalcms.me/admini/slideApi/update", 
+		            data:{
+		            	companyId:1,
+		            	groupId:1
+	            	}, 
+	        	    dataType:"text", 
+		            success:function (data){
+			            
+		            }
+	            });
+            });
+	    });	 
+	</script>
+</body>
+</html>
