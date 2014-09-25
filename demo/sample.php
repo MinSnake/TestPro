@@ -6,7 +6,7 @@ $client = new PHPRPC_Client ( 'http://61.145.163.80/biz/interface/xyDataApi.php'
 
 /*接收微信活动*/
 $arr = array(
-	'actname' => 'test2014-08-2800:00:00',
+	'actname' => 'test',
 	'actstart' => '2014-08-28 00:00:00',
 	'actend' => '2014-08-29 00:00:00',
 	'actgiftnums' => 10
