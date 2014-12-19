@@ -1,8 +1,11 @@
 <?php
-$data['type'] = 2;
-$data['total'] = 8000;
-$data['count'] = 8000;
-$data['data'] = array('B1,B2,B3,B9999,B10000');
-// $data['nextnum'] = 10001;
+$a = '[{"8hFx7p_ZO9Zg--er10dDHvK_RnCySN28r6yN7N2cVJs2Vv0fjrK4hiuAlFskRIFn":"http:\/\/res.playwx.com\/upload\/t4Jy1GE9HljUSM3.jpg"},{"-Ff50XFdX0rzUW8igxW1J9MAmlFautn7miZDCe6rN3dEO4Hv_KPina2ckCWdEuKu":"http:\/\/res.playwx.com\/upload\/gHwqNBdPzMU3JCq.jpg"}]';
+$b = json_decode($a);
 
-echo json_encode($data);
+var_dump($b);
+
+$bb = $b[1];
+
+$bb['123'] = '123';
+
+var_dump($b);
