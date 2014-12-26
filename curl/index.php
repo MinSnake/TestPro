@@ -27,27 +27,26 @@ function sendPostRequest($url, $data) {
 	return $tmpInfo;
 }
 
-$appid = 'wxf1bfcd6801075445';
-$appsecret = 'a0475dd514bb6ab330b9844fde57c1fa';
+$appid = 'abcdefg123';
+$appsecret = 'qwertyuiop555';
 $tm = time();
-$token = md5($appid.$appsecret.$tm);
 
-$url = 'http://bp.me/api/Vip/register?' . 
+//json数据
+$data['cardno'] = 10000001;
+$data['phone'] = '13545454545';
+$data['tm'] = '2014-12-03,2014-12-11';
+$json = json_encode($data);
+
+
+$token = md5($appid.$appsecret.$tm.$json);
+
+$url = 'http://bp.me/api/Vip/searchPoint?' . 
 		'appid=' . $appid . '&'.
 		'tm=' . $tm . '&' .
 		'token=' . $token;
 
 //传递数据
 
-
-//验证数据
-$data['appid'] = $appid;
-$data['tm'] = $tm;
-$data['token'] = md5($appid.$appsecret.$tm);
-
-
-$data = json_encode($data);
-
-$res = sendPostRequest($url, $data);
+$res = sendPostRequest($url, $json);
 
 echo $res;
