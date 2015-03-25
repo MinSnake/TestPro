@@ -1,13 +1,13 @@
-ï»¿ä½¿ç”¨è¯´æ˜ï¼š
-(1) åœ¨WxPay.config.phpé‡Œé¢è®¾ç½®å¥½appidï¼Œappkeyï¼Œpartnerkey
-(2) include WxPayHelper.php å°±å¯ä»¥ç”Ÿæˆç›¸åº”çš„æ”¯ä»˜è¯·æ±‚
+Ê¹ÓÃËµÃ÷£º
+(1) ÔÚWxPay.config.phpÀïÃæÉèÖÃºÃappid£¬appkey£¬partnerkey
+(2) include WxPayHelper.php ¾Í¿ÉÒÔÉú³ÉÏàÓ¦µÄÖ§¸¶ÇëÇó
 
-demoè¯´æ˜ï¼š
-(1) åŸç”Ÿæ”¯ä»˜
-nativecall.php      å¾®ä¿¡åå°è°ƒç”¨è¾“å‡ºxml
-createnativeurl.php ç”Ÿæˆæ‹‰èµ·åŸç”Ÿæ”¯ä»˜çš„url
-(2) jsapiæ”¯ä»˜
-jsapicall.php  jsapiæ”¯ä»˜
-(3) appæ”¯ä»˜
-example.php é‡Œé¢ $wxPayHelper->create_app_package("test"); å¯ä»¥ç”Ÿæˆå¯¹åº”çš„é¢„å…ˆæ”¯ä»˜package
-genappprepayid.php æ•´ä¸ªç”Ÿæˆprepayidçš„è¿‡ç¨‹ï¼Œç¬¬ä¸‰æ–¹appå¯ä»¥åœ¨ç”¨æˆ·é€‰æ‹©å•†å“åï¼Œé€šè¿‡è‡ªå·±åç«¯çš„åè®®ç›´æ¥ç”Ÿæˆprepayidï¼Œç„¶åé‡‡ç”¨å¾®ä¿¡å®¢æˆ·ç«¯çš„åè®®æ¥è°ƒèµ·å¾®ä¿¡æ”¯ä»˜ã€‚
+demoËµÃ÷£º
+(1) Ô­ÉúÖ§¸¶
+nativecall.php      Î¢ĞÅºóÌ¨µ÷ÓÃÊä³öxml
+createnativeurl.php Éú³ÉÀ­ÆğÔ­ÉúÖ§¸¶µÄurl
+(2) jsapiÖ§¸¶
+jsapicall.php  jsapiÖ§¸¶
+(3) appÖ§¸¶
+example.php ÀïÃæ $wxPayHelper->create_app_package("test"); ¿ÉÒÔÉú³É¶ÔÓ¦µÄÔ¤ÏÈÖ§¸¶package
+genappprepayid.php Õû¸öÉú³ÉprepayidµÄ¹ı³Ì£¬µÚÈı·½app¿ÉÒÔÔÚÓÃ»§Ñ¡ÔñÉÌÆ·ºó£¬Í¨¹ı×Ô¼ººó¶ËµÄĞ­ÒéÖ±½ÓÉú³Éprepayid£¬È»ºó²ÉÓÃÎ¢ĞÅ¿Í»§¶ËµÄĞ­ÒéÀ´µ÷ÆğÎ¢ĞÅÖ§¸¶¡£
