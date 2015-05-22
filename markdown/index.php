@@ -15,20 +15,17 @@ $content =
 123123		
 </div>				
 ```		
-| header 1 | header 2 | header 2 |
-| :------- | :------: | -------: |
-| cell 1.1 | cell 1.2 | cell 1.3 |
-| cell 2.1 | cell 2.2 | cell 2.3 |	
-		
-		
-| 123 | 123 |
-| 345 | 567 |				
-		
+| header 1 | header 2 |
+| -------- | -------- |
+| cell 1.1 | cell 1.2 |
+| cell 2.1 | cell 2.2 |
+    
 ![Alt text](http://s0.hao123img.com/res/img/logo/logonew1.png "123")
 Use the `printf()` function.';
 
 $new_content = $Parsedown->text($content);
 
 $str=strip_tags($new_content);
-
+// echo "<link rel=\"stylesheet\" type=\"text/css\" href=\"local.css\" />";
+// echo "<link rel=\"stylesheet\" type=\"text/css\" href=\"reset.css\" />";
 echo $new_content; 

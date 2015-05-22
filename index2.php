@@ -1,7 +1,10 @@
 <?php
-
-$tm = '2014-12-03,2014-12-11';
-
-$tm_arr = explode(',', $tm);
-
-echo $tm_arr[1];
+function getMillisecond() {
+list($t1, $t2) = explode(' ', microtime());     
+return (float)sprintf('%.0f', (floatval($t1) + floatval($t2)) * 1000);  
+}
+echo getMillisecond();
+echo '<br>';
+echo time();
+echo '<br>';
+echo microtime();
