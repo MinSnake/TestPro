@@ -119,7 +119,7 @@ function create_nq_wx_orderno($mch_id,$length=28){
 
 for ($i=0;$i<1000;$i++){
 //     $data =  create_nq_wx_orderno('10035986');
-    $data =  create_nq_wx_orderno('10035986',32);
+    $data =  create_nq_wx_orderno('10035986');
     $order_no = $data['order_no'];
     $millisecond = $data['millisecond'];
     $randnum = $data['randnum'];

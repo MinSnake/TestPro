@@ -23,8 +23,8 @@
 	var ctx = g('pad').getContext('2d');
 		ctx.scale(100,100);
 		ctx.translate(3,3);
-	var theta = 4.2; //转角
-	var eleva = 0.6; //仰角
+	var theta = 0; //转角
+	var eleva = 0; //仰角
 	/* 投影算法（from: www.benjoffe.com） */
 	function iso(x,y,z){
 		var dist = Math.sqrt(x*x+y*y);
@@ -50,6 +50,7 @@
 			y=0;
 			t=1;
 			co = iso(x,y,z); ctx.moveTo(co.x, co.y);
+			//console.log(x+'-'+y+'-'+z);
 			while(true){
 				y=Math.sqrt((r*r-x*x-z*z))*t;
 				if(isNaN(y)){  /* 此时，x值为极值,y的绝对值已经不能再小 */
@@ -58,6 +59,7 @@
 				};
 				co = iso(x,y,z); ctx.lineTo(co.x, co.y);
 				x+=0.1*t;
+				//x+=2*t;
 			}
 			ctx.closePath();
 			z=Cubic(1,z,2*r,4); //应用插值算法（分布均匀些）
