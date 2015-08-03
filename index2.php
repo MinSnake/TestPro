@@ -9,10 +9,15 @@
 // echo '<br>';
 // echo microtime();
 
-echo "<style>
-    .a{
-    font-family:'Letter Game Tiles';
-}
-</style>";
-echo '<h1 class="a">500e</h1>';
-echo '<h1 class="a">FUMA</h1>';
+// echo "<style>
+//     .a{
+//     font-family:'Letter Game Tiles';
+// }
+// </style>";
+// echo '<h1 class="a">500e</h1>';
+// echo '<h1 class="a">FUMA</h1>';
+
+$email = '395408934@qq.com';
+$reg = "/^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+(.[a-zA-Z0-9_-])+/";
+$a = preg_match($reg, $email);
+var_dump($a);
