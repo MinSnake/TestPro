@@ -26,12 +26,18 @@
     sp.Skeleton.CanvasRenderCmd = function(renderableObject){
         cc.Node.CanvasRenderCmd.call(this, renderableObject);
         this._needDraw = true;
+<<<<<<< HEAD
+=======
+
+        this._skeletonSprites = [];
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
     };
 
     var proto = sp.Skeleton.CanvasRenderCmd.prototype = Object.create(cc.Node.CanvasRenderCmd.prototype);
     proto.constructor = sp.Skeleton.CanvasRenderCmd;
 
     proto.rendering = function (wrapper, scaleX, scaleY) {
+<<<<<<< HEAD
         var node = this._node, i, n, slot, slotNode;
         wrapper = wrapper || cc._renderContext;
 
@@ -45,13 +51,36 @@
                 slotNode._renderCmd._dirtyFlag = slot.currentSprite._renderCmd._dirtyFlag = 0;
             }
         }
+=======
+        var node = this._node, i, n, sprites = this._skeletonSprites, selSpriteCmd;
+        wrapper = wrapper || cc._renderContext;
+
+        //draw skeleton sprite by it self
+        wrapper.save();
+        //set to armature mode (spine need same way to draw)
+        wrapper._switchToArmatureMode(true, this._worldTransform, scaleX, scaleY);
+        for(i = 0, n = sprites.length; i < n; i++){
+            selSpriteCmd = sprites[i]._renderCmd;
+            if(selSpriteCmd && selSpriteCmd.rendering){
+                selSpriteCmd.rendering(wrapper, scaleX, scaleY);
+                selSpriteCmd._dirtyFlag = 0;
+            }
+        }
+        wrapper._switchToArmatureMode(false);
+        wrapper.restore();
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
 
         if (!node._debugSlots && !node._debugBones)
             return;
 
         wrapper.setTransform(this._worldTransform, scaleX, scaleY);
+<<<<<<< HEAD
         wrapper.setGlobalAlpha(1);
         var attachment, drawingUtil = cc._drawingUtil;
+=======
+        var locSkeleton = node._skeleton;
+        var attachment, slot, drawingUtil = cc._drawingUtil;
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         if (node._debugSlots) {
             // Slots.
             drawingUtil.setDrawColor(0, 0, 255, 255);
@@ -63,7 +92,11 @@
                 if (!slot.attachment || slot.attachment.type != sp.ATTACHMENT_TYPE.REGION)
                     continue;
                 attachment = slot.attachment;
+<<<<<<< HEAD
                 this._updateRegionAttachmentSlot(attachment, slot, points);
+=======
+                sp._regionAttachment_updateSlotForCanvas(attachment, slot, points);
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                 drawingUtil.drawPoly(points, 4, true);
             }
         }
@@ -96,6 +129,7 @@
         }
     };
 
+<<<<<<< HEAD
     proto._updateRegionAttachmentSlot = function(attachment, slot, points) {
         if(!points)
             return;
@@ -208,6 +242,53 @@
                 continue;
             }
             slotNode.setVisible(true);
+=======
+    proto._createChildFormSkeletonData = function(){
+        var node = this._node;
+        var locSkeleton = node._skeleton, rendererObject, rect;
+        for (var i = 0, n = locSkeleton.drawOrder.length; i < n; i++) {
+            var slot = locSkeleton.drawOrder[i];
+            var attachment = slot.attachment;
+            if (!(attachment instanceof spine.RegionAttachment))
+                continue;
+            rendererObject = attachment.rendererObject;
+            rect = cc.rect(rendererObject.x, rendererObject.y, rendererObject.width,rendererObject.height);
+            var sprite = new cc.Sprite(rendererObject.page._texture, rect, rendererObject.rotate);
+            this._skeletonSprites.push(sprite);
+            slot.currentSprite = sprite;
+        }
+    };
+
+    proto._updateChild = function(){
+        var node = this._node;
+        var locSkeleton = node._skeleton;
+        locSkeleton.updateWorldTransform();
+        var drawOrder = node._skeleton.drawOrder;
+        for (var i = 0, n = drawOrder.length; i < n; i++) {
+            var slot = drawOrder[i];
+            var attachment = slot.attachment, selSprite = slot.currentSprite;
+            if (!(attachment instanceof spine.RegionAttachment)) {
+                if(selSprite)
+                    selSprite.setVisible(false);
+                continue;
+            }
+            if(!selSprite){
+                var rendererObject = attachment.rendererObject;
+                var rect = cc.rect(rendererObject.x, rendererObject.y, rendererObject.width,rendererObject.height);
+                var sprite = new cc.Sprite(rendererObject.page._texture, rect, rendererObject.rotate);
+                this._skeletonSprites.push(sprite);
+                slot.currentSprite = sprite;
+            }
+            selSprite.setVisible(true);
+            //update color and blendFunc
+            selSprite.setBlendFunc(cc.BLEND_SRC, slot.data.additiveBlending ? cc.ONE : cc.BLEND_DST);
+
+            var bone = slot.bone;
+            selSprite.setPosition(bone.worldX + attachment.x * bone.m00 + attachment.y * bone.m01,
+                    bone.worldY + attachment.x * bone.m10 + attachment.y * bone.m11);
+            selSprite.setScale(bone.worldScaleX, bone.worldScaleY);
+            selSprite.setRotation(- (slot.bone.worldRotation + attachment.rotation));
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         }
     };
 })();

@@ -89,7 +89,11 @@ cc.TransitionProgress = cc.TransitionScene.extend(/** @lends cc.TransitionProgre
         texture.end();
 
         //    Since we've passed the outScene to the texture we don't need it.
+<<<<<<< HEAD
         if (this._sceneToBeModified === this._outScene)
+=======
+        if (this._sceneToBeModified == this._outScene)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             this.hideOutShowIn();
 
         //    We need the texture in RenderTexture.
@@ -245,7 +249,11 @@ cc.TransitionProgressRadialCW = cc.TransitionProgress.extend(/** @lends cc.Trans
  */
 cc.TransitionProgressRadialCW.create = function (t, scene) {
     var tempScene = new cc.TransitionProgressRadialCW();
+<<<<<<< HEAD
     if ((tempScene !== null) && (tempScene.initWithDuration(t, scene))) {
+=======
+    if ((tempScene != null) && (tempScene.initWithDuration(t, scene))) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         return tempScene;
     }
     return new cc.TransitionProgressRadialCW(t, scene);

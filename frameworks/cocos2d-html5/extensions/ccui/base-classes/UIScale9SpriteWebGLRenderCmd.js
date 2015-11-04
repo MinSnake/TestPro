@@ -23,8 +23,11 @@
  ****************************************************************************/
 
 (function() {
+<<<<<<< HEAD
     if(!cc.Node.WebGLRenderCmd)
         return;
+=======
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
     ccui.Scale9Sprite.WebGLRenderCmd = function (renderable) {
         cc.Node.WebGLRenderCmd.call(this, renderable);
         this._cachedParent = null;

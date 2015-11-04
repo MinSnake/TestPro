@@ -161,7 +161,11 @@ cc.ParticleBatchNode = cc.Node.extend(/** @lends cc.ParticleBatchNode# */{
         zOrder = (zOrder == null) ? child.zIndex : zOrder;
         tag = (tag == null) ? child.tag : tag;
 
+<<<<<<< HEAD
         if(child.getTexture() !== this.textureAtlas.texture)
+=======
+        if(child.getTexture() != this.textureAtlas.texture)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             throw "cc.ParticleSystem.addChild() : the child is not using the same texture id";
 
         // If this is the 1st children, then copy blending function
@@ -169,7 +173,11 @@ cc.ParticleBatchNode = cc.Node.extend(/** @lends cc.ParticleBatchNode# */{
         if (this._children.length === 0)
             this.setBlendFunc(childBlendFunc);
         else{
+<<<<<<< HEAD
             if((childBlendFunc.src !== this._blendFunc.src) || (childBlendFunc.dst !== this._blendFunc.dst)){
+=======
+            if((childBlendFunc.src != this._blendFunc.src) || (childBlendFunc.dst != this._blendFunc.dst)){
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                 cc.log("cc.ParticleSystem.addChild() : Can't add a ParticleSystem that uses a different blending function");
                 return;
             }
@@ -181,7 +189,11 @@ cc.ParticleBatchNode = cc.Node.extend(/** @lends cc.ParticleBatchNode# */{
         //get new atlasIndex
         var atlasIndex = 0;
 
+<<<<<<< HEAD
         if (pos !== 0) {
+=======
+        if (pos != 0) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             var p = this._children[pos - 1];
             atlasIndex = p.getAtlasIndex() + p.getTotalParticles();
         } else
@@ -210,7 +222,11 @@ cc.ParticleBatchNode = cc.Node.extend(/** @lends cc.ParticleBatchNode# */{
         }
 
         // make room for quads, not necessary for last child
+<<<<<<< HEAD
         if (pSystem.getAtlasIndex() + totalParticles !== totalQuads)
+=======
+        if (pSystem.getAtlasIndex() + totalParticles != totalQuads)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             locTextureAtlas.moveQuadsFromIndex(index, index + totalParticles);
 
         // increase totalParticles here for new particles, update method of particlesystem will fill the quads
@@ -229,7 +245,11 @@ cc.ParticleBatchNode = cc.Node.extend(/** @lends cc.ParticleBatchNode# */{
 
         if(!(child instanceof cc.ParticleSystem))
             throw "cc.ParticleBatchNode.removeChild(): only supports cc.ParticleSystem as children";
+<<<<<<< HEAD
         if(this._children.indexOf(child) === -1){
+=======
+        if(this._children.indexOf(child) == -1){
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             cc.log("cc.ParticleBatchNode.removeChild(): doesn't contain the sprite. Can't remove it");
             return;
         }
@@ -264,14 +284,22 @@ cc.ParticleBatchNode = cc.Node.extend(/** @lends cc.ParticleBatchNode# */{
             return;
         }
 
+<<<<<<< HEAD
         if (zOrder === child.zIndex)
+=======
+        if (zOrder == child.zIndex)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             return;
 
         // no reordering if only 1 child
         if (this._children.length > 1) {
             var getIndexes = this._getCurrentIndex(child, zOrder);
 
+<<<<<<< HEAD
             if (getIndexes.oldIndex !== getIndexes.newIndex) {
+=======
+            if (getIndexes.oldIndex != getIndexes.newIndex) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                 // reorder m_pChildren.array
                 this._children.splice(getIndexes.oldIndex, 1)
                 this._children.splice(getIndexes.newIndex, 0, child);
@@ -287,7 +315,11 @@ cc.ParticleBatchNode = cc.Node.extend(/** @lends cc.ParticleBatchNode# */{
                 var locChildren = this._children;
                 for (var i = 0; i < locChildren.length; i++) {
                     var pNode = locChildren[i];
+<<<<<<< HEAD
                     if (pNode === child) {
+=======
+                    if (pNode == child) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                         newAtlasIndex = child.getAtlasIndex();
                         break;
                     }
@@ -350,7 +382,11 @@ cc.ParticleBatchNode = cc.Node.extend(/** @lends cc.ParticleBatchNode# */{
 
         // If the new texture has No premultiplied alpha, AND the blendFunc hasn't been changed, then update it
         var locBlendFunc = this._blendFunc;
+<<<<<<< HEAD
         if (texture && !texture.hasPremultipliedAlpha() && ( locBlendFunc.src === cc.BLEND_SRC && locBlendFunc.dst === cc.BLEND_DST )) {
+=======
+        if (texture && !texture.hasPremultipliedAlpha() && ( locBlendFunc.src == cc.BLEND_SRC && locBlendFunc.dst == cc.BLEND_DST )) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             locBlendFunc.src = cc.SRC_ALPHA;
             locBlendFunc.dst = cc.ONE_MINUS_SRC_ALPHA;
         }
@@ -429,7 +465,11 @@ cc.ParticleBatchNode = cc.Node.extend(/** @lends cc.ParticleBatchNode# */{
                     break;
             }
             // current index
+<<<<<<< HEAD
             if (child === pNode) {
+=======
+            if (child == pNode) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                 oldIndex = i;
                 foundCurrentIdx = true;
                 if (!foundNewIdx)

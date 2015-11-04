@@ -52,10 +52,17 @@ ccs.Skin = ccs.Sprite.extend(/** @lends ccs.Skin# */{
         this._skinTransform = cc.affineTransformIdentity();
         this._armature = null;
 
+<<<<<<< HEAD
         if (fileName == null || fileName === "") {
             ccs.Skin.prototype.init.call(this);
         } else {
             if(fileName[0] === "#"){
+=======
+        if (fileName == null || fileName == "") {
+            ccs.Skin.prototype.init.call(this);
+        } else {
+            if(fileName[0] == "#"){
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                 ccs.Skin.prototype.initWithSpriteFrameName.call(this, fileName.substr(1));
             } else {
                 ccs.Skin.prototype.initWithFile.call(this, fileName, rect);
@@ -69,7 +76,11 @@ ccs.Skin = ccs.Sprite.extend(/** @lends ccs.Skin# */{
      * @returns {Boolean}
      */
     initWithSpriteFrameName: function (spriteFrameName) {
+<<<<<<< HEAD
         if(spriteFrameName === "")
+=======
+        if(spriteFrameName == "")
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             return false;
         var pFrame = cc.spriteFrameCache.getSpriteFrame(spriteFrameName);
         var ret = true;

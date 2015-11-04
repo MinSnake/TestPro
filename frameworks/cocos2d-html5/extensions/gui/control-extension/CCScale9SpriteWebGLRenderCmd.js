@@ -89,7 +89,11 @@
 
     proto.setState = function (state) {
         var scale9Image = this._node._scale9Image;
+<<<<<<< HEAD
         if(scale9Image === null)
+=======
+        if(scale9Image == null)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             return;
         if (state === cc.Scale9Sprite.state.NORMAL) {
             scale9Image.setShaderProgram(cc.shaderCache.programForKey(cc.SHADER_POSITION_TEXTURECOLOR));

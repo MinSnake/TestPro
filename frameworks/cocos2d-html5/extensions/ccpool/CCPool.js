@@ -52,7 +52,11 @@ cc.pool = /** @lends cc.pool# */{
 
     _autoRelease: function (obj) {
         var running = obj._running === undefined ? false : !obj._running;
+<<<<<<< HEAD
         cc.director.getScheduler().schedule(this._releaseCB, obj, 0, 0, 0, running)
+=======
+        cc.director.getScheduler().scheduleCallbackForTarget(obj, this._releaseCB, 0, 0, 0, running)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
     },
 
     /**
@@ -84,7 +88,11 @@ cc.pool = /** @lends cc.pool# */{
     hasObject: function (objClass) {
         var pid = objClass.prototype.__pid;
         var list = this._pool[pid];
+<<<<<<< HEAD
         if (!list || list.length === 0) {
+=======
+        if (!list || list.length == 0) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             return false;
         }
         return true;

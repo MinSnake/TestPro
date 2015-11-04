@@ -103,14 +103,24 @@ cc.ArrayForObjectSorting = cc.Class.extend(/** @lends cc.ArrayForObjectSorting# 
      * @param {Object} delObject    Object to remove
      */
     removeSortedObject:function (delObject) {
+<<<<<<< HEAD
         if (this.count() === 0) {
+=======
+        if (this.count() == 0) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             return;
         }
 
         var idx = this.indexOfSortedObject(delObject);
+<<<<<<< HEAD
         if (idx < this.count() && idx !== cc.INVALID_INDEX) {
             var foundObj = this.objectAtIndex(idx);
             if (foundObj.getObjectID() === delObject.getObjectID()) {
+=======
+        if (idx < this.count() && idx != cc.INVALID_INDEX) {
+            var foundObj = this.objectAtIndex(idx);
+            if (foundObj.getObjectID() == delObject.getObjectID()) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                 this.removeObjectAtIndex(idx);
             }
         }
@@ -129,9 +139,15 @@ cc.ArrayForObjectSorting = cc.Class.extend(/** @lends cc.ArrayForObjectSorting# 
      */
     setObjectID_ofSortedObject:function (tag, setObject) {
         var idx = this.indexOfSortedObject(setObject);
+<<<<<<< HEAD
         if (idx < this.count() && idx !== cc.INVALID_INDEX) {
             var foundObj = this.objectAtIndex(idx);
             if (foundObj.getObjectID() === setObject.getObjectID()) {
+=======
+        if (idx < this.count() && idx != cc.INVALID_INDEX) {
+            var foundObj = this.objectAtIndex(idx);
+            if (foundObj.getObjectID() == setObject.getObjectID()) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                 this.removeObjectAtIndex(idx);
                 foundObj.setObjectID(tag);
                 this.insertSortedObject(foundObj);
@@ -140,16 +156,26 @@ cc.ArrayForObjectSorting = cc.Class.extend(/** @lends cc.ArrayForObjectSorting# 
     },
 
     objectWithObjectID:function (tag) {
+<<<<<<< HEAD
         if (this.count() === 0) {
+=======
+        if (this.count() == 0) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             return null;
         }
         var foundObj = new cc.SortedObject();
         foundObj.setObjectID(tag);
 
         var idx = this.indexOfSortedObject(foundObj);
+<<<<<<< HEAD
         if (idx < this.count() && idx !== cc.INVALID_INDEX) {
             foundObj = this.objectAtIndex(idx);
             if (foundObj.getObjectID() !== tag)
+=======
+        if (idx < this.count() && idx != cc.INVALID_INDEX) {
+            foundObj = this.objectAtIndex(idx);
+            if (foundObj.getObjectID() != tag)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                 foundObj = null;
         }
         return foundObj;
@@ -193,7 +219,11 @@ cc.ArrayForObjectSorting = cc.Class.extend(/** @lends cc.ArrayForObjectSorting# 
             for (var i = 0; i < locObjectArr.length; i++) {
                 var pSortableObj = locObjectArr[i];
                 var curObjectID = pSortableObj.getObjectID();
+<<<<<<< HEAD
                 if ((uOfSortObjectID === curObjectID) ||
+=======
+                if ((uOfSortObjectID == curObjectID) ||
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                     (uOfSortObjectID >= uPrevObjectID && uOfSortObjectID < curObjectID)) {
                     break;
                 }
@@ -213,7 +243,11 @@ cc.ArrayForObjectSorting = cc.Class.extend(/** @lends cc.ArrayForObjectSorting# 
 
     lastObject:function () {
         var locObjectArr = this._saveObjectArr;
+<<<<<<< HEAD
         if (locObjectArr.length === 0)
+=======
+        if (locObjectArr.length == 0)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             return null;
         return locObjectArr[locObjectArr.length - 1];
     },

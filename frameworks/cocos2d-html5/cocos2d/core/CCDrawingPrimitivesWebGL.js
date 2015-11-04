@@ -104,7 +104,11 @@ cc.DrawingPrimitiveWebGL = cc.Class.extend(/** @lends cc.DrawingPrimitiveWebGL# 
      * @param {Number} numberOfPoints
      */
     drawPoints:function (points, numberOfPoints) {
+<<<<<<< HEAD
         if (!points || points.length === 0)
+=======
+        if (!points || points.length == 0)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             return;
 
         this.lazy_init();
@@ -395,7 +399,11 @@ cc.DrawingPrimitiveWebGL = cc.Class.extend(/** @lends cc.DrawingPrimitiveWebGL# 
             var dt = i / segments;
 
             // border
+<<<<<<< HEAD
             if (dt === 1) {
+=======
+            if (dt == 1) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                 p = config.length - 1;
                 lt = 1;
             } else {
@@ -403,7 +411,11 @@ cc.DrawingPrimitiveWebGL = cc.Class.extend(/** @lends cc.DrawingPrimitiveWebGL# 
                 lt = (dt - deltaT * p) / deltaT;
             }
 
+<<<<<<< HEAD
             var newPos = cc.cardinalSplineAt(
+=======
+            var newPos = cc.CardinalSplineAt(
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                 cc.getControlPointAt(config, p - 1),
                 cc.getControlPointAt(config, p),
                 cc.getControlPointAt(config, p + 1),

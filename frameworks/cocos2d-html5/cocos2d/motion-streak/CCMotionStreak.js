@@ -129,7 +129,11 @@ cc.MotionStreak = cc.Node.extend(/** @lends cc.MotionStreak# */{
      * @param {cc.Texture2D} texture
      */
     setTexture:function (texture) {
+<<<<<<< HEAD
         if (this.texture !== texture)
+=======
+        if (this.texture != texture)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             this.texture = texture;
     },
 
@@ -223,6 +227,7 @@ cc.MotionStreak = cc.Node.extend(/** @lends cc.MotionStreak# */{
     },
 
     /**
+<<<<<<< HEAD
      * Get stroke.
      * @returns {Number} stroke
      */
@@ -239,6 +244,8 @@ cc.MotionStreak = cc.Node.extend(/** @lends cc.MotionStreak# */{
     },
 
     /**
+=======
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
      * initializes a motion streak with fade in seconds, minimum segments, stroke's width, color and texture filename or texture
      * @param {Number} fade time to fade
      * @param {Number} minSeg minimum segment size
@@ -448,7 +455,11 @@ cc.MotionStreak = cc.Node.extend(/** @lends cc.MotionStreak# */{
         else if (locNuPoints > 0) {
             var a1 = cc.pDistanceSQ(cc.p(locPointVertexes[(locNuPoints - 1) * 2], locPointVertexes[(locNuPoints - 1) * 2 + 1]),
                 this._positionR) < this._minSeg;
+<<<<<<< HEAD
             var a2 = (locNuPoints === 1) ? false : (cc.pDistanceSQ(
+=======
+            var a2 = (locNuPoints == 1) ? false : (cc.pDistanceSQ(
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                 cc.p(locPointVertexes[(locNuPoints - 2) * 2], locPointVertexes[(locNuPoints - 2) * 2 + 1]), this._positionR) < (this._minSeg * 2.0));
             if (a1 || a2)
                 appendNewPoint = false;
@@ -489,7 +500,11 @@ cc.MotionStreak = cc.Node.extend(/** @lends cc.MotionStreak# */{
             cc.vertexLineToPolygon(locPointVertexes, this._stroke, this._vertices, 0, locNuPoints);
 
         // Updated Tex Coords only if they are different than previous step
+<<<<<<< HEAD
         if (locNuPoints && this._previousNuPoints !== locNuPoints) {
+=======
+        if (locNuPoints && this._previousNuPoints != locNuPoints) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             var texDelta = 1.0 / locNuPoints;
             var locTexCoords = this._texCoords;
             for (i = 0; i < locNuPoints; i++) {

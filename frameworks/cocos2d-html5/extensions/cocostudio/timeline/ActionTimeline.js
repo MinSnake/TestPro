@@ -60,6 +60,7 @@ ccs.ActionTimelineData = ccs.Class.extend({
 
 });
 
+<<<<<<< HEAD
 ccs.ObjectExtensionData = ccs.Class.extend({
 
     _customProperty: null,
@@ -83,6 +84,8 @@ ccs.ObjectExtensionData.create = function(){
     return new ccs.ObjectExtensionData();
 };
 
+=======
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
 /**
  * Create new ActionTimelineData.
  *
@@ -120,13 +123,19 @@ ccs.ActionTimeline = cc.Action.extend({
     _endFrame: 0,
     _loop: null,
     _frameEventListener: null,
+<<<<<<< HEAD
     _animationInfos: null,
+=======
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
 
     ctor: function(){
         cc.Action.prototype.ctor.call(this);
         this._timelineMap = {};
         this._timelineList = [];
+<<<<<<< HEAD
         this._animationInfos = {};
+=======
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         this.init();
     },
 
@@ -278,7 +287,11 @@ ccs.ActionTimeline = cc.Action.extend({
      * Set current frame index, this will cause action plays to this frame.
      */
     setCurrentFrame: function(frameIndex){
+<<<<<<< HEAD
         if (frameIndex >= this._startFrame && frameIndex <= this._endFrame){
+=======
+        if (frameIndex >= this._startFrame && frameIndex >= this._endFrame){
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             this._currentFrame = frameIndex;
             this._time = this._currentFrame * this._frameInternal;
         }else{
@@ -393,7 +406,11 @@ ccs.ActionTimeline = cc.Action.extend({
      * @param {number} delta
      */
     step: function(delta){
+<<<<<<< HEAD
         if (!this._playing || this._timelineMap.length === 0 || this._duration === 0)
+=======
+        if (!this._playing || this._timelineMap.length == 0 || this._duration == 0)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         {
             return;
         }
@@ -456,6 +473,7 @@ ccs.ActionTimeline = cc.Action.extend({
      */
     isDone: function(){
         return false;
+<<<<<<< HEAD
     },
 
     /**
@@ -492,6 +510,8 @@ ccs.ActionTimeline = cc.Action.extend({
 
     getAnimationInfo: function(name){
         return this._animationInfos[name];
+=======
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
     }
 });
 

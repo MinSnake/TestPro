@@ -24,6 +24,7 @@
  THE SOFTWARE.
  ****************************************************************************/
 var LAYOUT_RES = [
+<<<<<<< HEAD
     "res/cocosui/CCS/Layout/Layout/layout_1.json",
     "res/cocosui/CCS/Layout/Color/color_1.json",
     "res/cocosui/CCS/Layout/Gradient_Color/gradient_color_1.json",
@@ -33,6 +34,17 @@ var LAYOUT_RES = [
     "res/cocosui/CCS/Layout/Linear_Horizontal/linear_horizontal.json",
     "res/cocosui/CCS/Layout/Relative_Align_Parent/relative_align_parent.json",
     "res/cocosui/CCS/Layout/Relative_Align_Location/relative_align_location.json"
+=======
+    "res/cocosui/UIEditorTest/UILayout_Editor/UILayout_Editor/ui_layout_editor_1.json",
+    "res/cocosui/UIEditorTest/UILayout_Editor/UILayout_Color_Editor/ui_layout_color_editor_1.json",
+    "res/cocosui/UIEditorTest/UILayout_Editor/UILayout_Gradient_Color_Editor/ui_layout_gradient_color_editor_1_0.json",
+    "res/cocosui/UIEditorTest/UILayout_Editor/UILayout_BackgroundImage_Editor/ui_layout_backgroundimage_editor_1_0_0.json",
+    "res/cocosui/UIEditorTest/UILayout_Editor/UILayout_Scale9_BackgroundImage_Editor/ui_layout_scale9_backgroundimage_editor.json",
+    "res/cocosui/UIEditorTest/UILayout_Editor/UILayout_Linear_Vertical_Layout_Editor/ui_layout_linear_vertical_layout_editor.json",
+    "res/cocosui/UIEditorTest/UILayout_Editor/UILayout_Linear_Horizontal_Layout_Editor/ui_layout_linear_horizontal_layout_editor.json",
+    "res/cocosui/UIEditorTest/UILayout_Editor/UILayout_Relative_Align_Parent_Editor/ui_layout_relative_align_parent_editor.json",
+    "res/cocosui/UIEditorTest/UILayout_Editor/UILayout_Relative_Align_Location_Editor/ui_layout_relative_align_location_editor.json"
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
 ];
 var LAYOUT_INDEX = 0;
 var UILayoutEditorTest = UIBaseLayer.extend({

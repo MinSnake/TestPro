@@ -42,10 +42,17 @@ cc.Codec.Base64.decode = function Jacob__Codec__Base64__decode(input) {
 
         output.push(String.fromCharCode(chr1));
 
+<<<<<<< HEAD
         if (enc3 !== 64) {
             output.push(String.fromCharCode(chr2));
         }
         if (enc4 !== 64) {
+=======
+        if (enc3 != 64) {
+            output.push(String.fromCharCode(chr2));
+        }
+        if (enc4 != 64) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             output.push(String.fromCharCode(chr3));
         }
     }
@@ -82,7 +89,11 @@ cc.Codec.Base64.decodeAsArray = function Jacob__Codec__Base64___decodeAsArray(in
 };
 
 cc.uint8ArrayToUint32Array = function(uint8Arr){
+<<<<<<< HEAD
     if(uint8Arr.length % 4 !== 0)
+=======
+    if(uint8Arr.length % 4 != 0)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         return null;
 
     var arrLen = uint8Arr.length /4;

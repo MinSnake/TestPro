@@ -191,13 +191,21 @@ ccui.relativeLayoutManager = /** @lends ccui.relativeLayoutManager# */{
         var layoutParameter = widget.getLayoutParameter();
         var relativeName = layoutParameter.getRelativeToWidgetName();
 
+<<<<<<< HEAD
         if (relativeName && relativeName.length !== 0) {
+=======
+        if (relativeName && relativeName.length != 0) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             var locChildren =  this._widgetChildren;
             for(var i = 0, len = locChildren.length;  i  < len; i++){
                 var child = locChildren[i];
                 if (child){
                     var rlayoutParameter = child.getLayoutParameter();
+<<<<<<< HEAD
                     if (rlayoutParameter &&  rlayoutParameter.getRelativeName() === relativeName) {
+=======
+                    if (rlayoutParameter &&  rlayoutParameter.getRelativeName() == relativeName) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                         relativeWidget = child;
                         this._relativeWidgetLP = rlayoutParameter;
                         break;

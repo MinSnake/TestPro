@@ -157,7 +157,11 @@ var LoadSceneEdtiorFileTest = SceneEditorTestLayer.extend({
             var json = ccs.load(file);
             node = json.node;
         }else{
+<<<<<<< HEAD
             //ccs.sceneReader only supports 1.x file
+=======
+            //old api
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             cc.log("ccs.sceneReader.createNodeWithSceneFile : %s", file);
             node = ccs.sceneReader.createNodeWithSceneFile(file);
         }
@@ -189,7 +193,11 @@ var SpriteComponentTest = SceneEditorTestLayer.extend({
             var json = ccs.load(file);
             node = json.node;
         }else{
+<<<<<<< HEAD
             //ccs.sceneReader only supports 1.x file
+=======
+            //old api
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             cc.log("ccs.sceneReader.createNodeWithSceneFile : %s", file);
             node = ccs.sceneReader.createNodeWithSceneFile(file);
         }
@@ -225,7 +233,11 @@ var ArmatureComponentTest = SceneEditorTestLayer.extend({
             var json = ccs.load(file);
             node = json.node;ccs.load(file);
         }else{
+<<<<<<< HEAD
             //ccs.sceneReader only supports 1.x file
+=======
+            //old api
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             cc.log("ccs.sceneReader.createNodeWithSceneFile : %s", file);
             node = ccs.sceneReader.createNodeWithSceneFile(file);
         }
@@ -260,7 +272,11 @@ var UIComponentTest = SceneEditorTestLayer.extend({
             var json = ccs.load(file);
             node = json.node;
         }else{
+<<<<<<< HEAD
             //ccs.sceneReader only supports 1.x file
+=======
+            //old api
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             cc.log("ccs.sceneReader.createNodeWithSceneFile : %s", file);
             node = ccs.sceneReader.createNodeWithSceneFile(file);
         }
@@ -305,7 +321,11 @@ var TmxMapComponentTest = SceneEditorTestLayer.extend({
             var json = ccs.load(file);
             node = json.node;
         }else{
+<<<<<<< HEAD
             //ccs.sceneReader only supports 1.x file
+=======
+            //old api
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             cc.log("ccs.sceneReader.createNodeWithSceneFile : %s", file);
             node = ccs.sceneReader.createNodeWithSceneFile(file);
         }
@@ -346,7 +366,11 @@ var ParticleComponentTest = SceneEditorTestLayer.extend({
             var json = ccs.load(file);
             node = json.node;
         }else{
+<<<<<<< HEAD
             //ccs.sceneReader only supports 1.x file
+=======
+            //old api
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             cc.log("ccs.sceneReader.createNodeWithSceneFile : %s", file);
             node = ccs.sceneReader.createNodeWithSceneFile(file);
         }
@@ -380,7 +404,11 @@ var EffectComponentTest = SceneEditorTestLayer.extend({
             var json = ccs.load(file);
             node = json.node;
         }else{
+<<<<<<< HEAD
             //ccs.sceneReader only supports 1.x file
+=======
+            //old api
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             cc.log("ccs.sceneReader.createNodeWithSceneFile : %s", file);
             node = ccs.sceneReader.createNodeWithSceneFile(file);
         }
@@ -420,7 +448,11 @@ var BackgroundComponentTest = SceneEditorTestLayer.extend({
             var json = ccs.load(file);
             node = json.node;
         }else{
+<<<<<<< HEAD
             //ccs.sceneReader only supports 1.x file
+=======
+            //old api
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             cc.log("ccs.sceneReader.createNodeWithSceneFile : %s", file);
             node = ccs.sceneReader.createNodeWithSceneFile(file);
         }
@@ -456,7 +488,11 @@ var AttributeComponentTest = SceneEditorTestLayer.extend({
             var json = ccs.load(file);
             node = json.node;
         }else{
+<<<<<<< HEAD
             //ccs.sceneReader only supports 1.x file
+=======
+            //old api
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             cc.log("ccs.sceneReader.createNodeWithSceneFile : %s", file);
             node = ccs.sceneReader.createNodeWithSceneFile(file);
         }
@@ -494,7 +530,11 @@ var TriggerTest = SceneEditorTestLayer.extend({
             var json = ccs.load(file);
             node = json.node;
         }else{
+<<<<<<< HEAD
             //ccs.sceneReader only supports 1.x file
+=======
+            //old api
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             cc.log("ccs.sceneReader.createNodeWithSceneFile : %s", file);
             node = ccs.sceneReader.createNodeWithSceneFile(file);
         }

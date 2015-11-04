@@ -432,6 +432,7 @@
             "extensions/spine/CCSkeletonCanvasRenderCmd.js",
             "extensions/spine/CCSkeletonWebGLRenderCmd.js"
         ],
+<<<<<<< HEAD
         "gaf":[
             "core",
 
@@ -456,6 +457,8 @@
             "external/gaf/Library/GAFShaderManager.js",
             "external/gaf/Library/GAFAtlasLoader.js"
         ],
+=======
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         "extensions" : ["gui", "ccbreader", "editbox", "cocostudio", "spine", "ccpool"],
 
         "box2d" : [
@@ -471,7 +474,11 @@
         "socketio" : [
             "external/socketio/socket.io.min.js"
         ],
+<<<<<<< HEAD
         "external" : ["box2d", "chipmunk", "socketio", "pluginx", "gaf"]
+=======
+        "external" : ["box2d", "chipmunk", "socketio", "pluginx"]
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
     },
     "bootFile" : "CCBoot.js"
 }

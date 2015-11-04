@@ -116,7 +116,11 @@ ccs.Bone = ccs.Node.extend(/** @lends ccs.Bone# */{
     setBoneData: function (boneData) {
         cc.assert(boneData, "_boneData must not be null");
 
+<<<<<<< HEAD
         if(this._boneData !== boneData)
+=======
+        if(this._boneData != boneData)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             this._boneData = boneData;
 
         this.setName(this._boneData.name);
@@ -230,7 +234,11 @@ ccs.Bone = ccs.Node.extend(/** @lends ccs.Bone# */{
             srcValue = blendFunc;
             dstValue = dst;
         }
+<<<<<<< HEAD
         if (locBlendFunc.src !== srcValue || locBlendFunc.dst !== dstValue) {
+=======
+        if (locBlendFunc.src != srcValue || locBlendFunc.dst != dstValue) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             locBlendFunc.src = srcValue;
             locBlendFunc.dst = dstValue;
             this.blendDirty = true;
@@ -242,7 +250,11 @@ ccs.Bone = ccs.Node.extend(/** @lends ccs.Bone# */{
      */
     updateColor: function () {
         var display = this._displayManager.getDisplayRenderNode();
+<<<<<<< HEAD
         if (display !== null) {
+=======
+        if (display != null) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             var cmd = this._renderCmd;
             display.setColor(
                 cc.color(
@@ -284,7 +296,11 @@ ccs.Bone = ccs.Node.extend(/** @lends ccs.Bone# */{
      * @param {Boolean} recursion
      */
     removeChildBone: function (bone, recursion) {
+<<<<<<< HEAD
         if (this._children.length > 0 && this._children.getIndex(bone) !== -1 ) {
+=======
+        if (this._children.length > 0 && this._children.getIndex(bone) != -1 ) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             if(recursion) {
                 var ccbones = bone._children;
                 for(var i=0; i<ccbones.length; i++){
@@ -331,7 +347,11 @@ ccs.Bone = ccs.Node.extend(/** @lends ccs.Bone# */{
      * @param {ccs.Armature} armature
      */
     setChildArmature: function (armature) {
+<<<<<<< HEAD
         if (this._childArmature !== armature) {
+=======
+        if (this._childArmature != armature) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             if (armature == null && this._childArmature)
                 this._childArmature.setParentBone(null);
             this._childArmature = armature;
@@ -359,7 +379,11 @@ ccs.Bone = ccs.Node.extend(/** @lends ccs.Bone# */{
      * @param {Number} zOrder
      */
     setLocalZOrder: function (zOrder) {
+<<<<<<< HEAD
         if (this._localZOrder !== zOrder)
+=======
+        if (this._localZOrder != zOrder)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             cc.Node.prototype.setLocalZOrder.call(this, zOrder);
     },
 
@@ -677,7 +701,11 @@ ccs.Bone.RenderCmd = {
     _updateColor: function(){
         var node = this._node;
         var display = node._displayManager.getDisplayRenderNode();
+<<<<<<< HEAD
         if (display !== null) {
+=======
+        if (display != null) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             var displayCmd = display._renderCmd;
             display.setColor(cc.color( node._tweenData.r, node._tweenData.g, node._tweenData.g));
             display.setOpacity(node._tweenData.a);
@@ -700,8 +728,11 @@ ccs.Bone.RenderCmd = {
 })();
 
 (function(){
+<<<<<<< HEAD
     if(!cc.Node.WebGLRenderCmd)
         return;
+=======
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
     ccs.Bone.WebGLRenderCmd = function(renderable){
         cc.Node.WebGLRenderCmd.call(this, renderable);
         this._needDraw = false;

@@ -33,7 +33,11 @@
         },
 
         addSpriteFrame: function(plists, pngs, resourcePath){
+<<<<<<< HEAD
             if(!plists || !pngs || plists.length !== pngs.length)
+=======
+            if(!plists || !pngs || plists.length != pngs.length)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                 return;
             for (var i = 0; i < plists.length; i++) {
                 var plist = resourcePath + plists[i];
@@ -142,12 +146,19 @@
                             widget.pushBackCustomItem(child);
                     } else {
                         if(!(widget instanceof ccui.Layout) && child instanceof ccui.Widget) {
+<<<<<<< HEAD
                             if(child.getPositionType() === ccui.Widget.POSITION_PERCENT) {
+=======
+                            if(child.getPositionType() == ccui.Widget.POSITION_PERCENT) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                                 var position = child.getPositionPercent();
                                 var anchor = widget.getAnchorPoint();
                                 child.setPositionPercent(cc.p(position.x + anchor.x, position.y + anchor.y));
                             }
+<<<<<<< HEAD
                             //To make up for the studio positioning error problem
+=======
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                             var AnchorPointIn = widget.getAnchorPointInPoints();
                             child.setPosition(cc.p(child.getPositionX() + AnchorPointIn.x, child.getPositionY() + AnchorPointIn.y));
                         }
@@ -167,7 +178,11 @@
         var filePath = options["fileName"];
 
         var node;
+<<<<<<< HEAD
         if (filePath && "" !== filePath){
+=======
+        if (filePath && "" != filePath){
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             node = this.createNode(filePath);
         }else{
             node = new ccs.Node();
@@ -219,9 +234,15 @@
         var path = options["resourcePath"];
 
         var tmx = null;
+<<<<<<< HEAD
         if (tmxFile && "" !== tmxFile){
             tmx = new cc.TMXTiledMap(tmxFile);
         }else if (tmxString && "" !== tmxString && path && "" !== path){
+=======
+        if (tmxFile && "" != tmxFile){
+            tmx = new cc.TMXTiledMap(tmxFile);
+        }else if (tmxString && "" != tmxString && path && "" != path){
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             tmx = new cc.TMXTiledMap(tmxString, path);
         }
         return tmx;

@@ -118,7 +118,11 @@ cc.inputManager = /** @lends cc.inputManager# */{
 
             if(index == null){
                 var unusedIndex = this._getUnUsedIndex();
+<<<<<<< HEAD
                 if (unusedIndex === -1) {
+=======
+                if (unusedIndex == -1) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                     cc.log(cc._LogInfos.inputManager_handleTouchesBegin, unusedIndex);
                     continue;
                 }
@@ -266,7 +270,11 @@ cc.inputManager = /** @lends cc.inputManager# */{
         var locPreTouchPool = this._preTouchPool;
         var id = touch.getID();
         for (var i = locPreTouchPool.length - 1; i >= 0; i--) {
+<<<<<<< HEAD
             if (locPreTouchPool[i].getID() === id) {
+=======
+            if (locPreTouchPool[i].getID() == id) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                 preTouch = locPreTouchPool[i];
                 break;
             }
@@ -285,7 +293,11 @@ cc.inputManager = /** @lends cc.inputManager# */{
         var locPreTouchPool = this._preTouchPool;
         var id = touch.getID();
         for (var i = locPreTouchPool.length - 1; i >= 0; i--) {
+<<<<<<< HEAD
             if (locPreTouchPool[i].getID() === id) {
+=======
+            if (locPreTouchPool[i].getID() == id) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                 locPreTouchPool[i] = touch;
                 find = true;
                 break;

@@ -542,6 +542,7 @@ cc.TMXMapInfo = cc.SAXParser.extend(/** @lends cc.TMXMapInfo# */{
         var version = map.getAttribute('version');
         var orientationStr = map.getAttribute('orientation');
 
+<<<<<<< HEAD
         if (map.nodeName === "map") {
             if (version !== "1.0" && version !== null)
                 cc.log("cocos2d: TMXFormat: Unsupported TMX version:" + version);
@@ -551,6 +552,17 @@ cc.TMXMapInfo = cc.SAXParser.extend(/** @lends cc.TMXMapInfo# */{
             else if (orientationStr === "isometric")
                 this.orientation = cc.TMX_ORIENTATION_ISO;
             else if (orientationStr === "hexagonal")
+=======
+        if (map.nodeName == "map") {
+            if (version != "1.0" && version !== null)
+                cc.log("cocos2d: TMXFormat: Unsupported TMX version:" + version);
+
+            if (orientationStr == "orthogonal")
+                this.orientation = cc.TMX_ORIENTATION_ORTHO;
+            else if (orientationStr == "isometric")
+                this.orientation = cc.TMX_ORIENTATION_ISO;
+            else if (orientationStr == "hexagonal")
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                 this.orientation = cc.TMX_ORIENTATION_HEX;
             else if (orientationStr !== null)
                 cc.log("cocos2d: TMXFomat: Unsupported orientation:" + orientationStr);
@@ -693,7 +705,11 @@ cc.TMXMapInfo = cc.SAXParser.extend(/** @lends cc.TMXMapInfo# */{
                     case null:
                     case '':
                         // Uncompressed
+<<<<<<< HEAD
                         if (encoding === "base64")
+=======
+                        if (encoding == "base64")
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                             layer._tiles = cc.Codec.Base64.decodeAsArray(nodeValue, 4);
                         else if (encoding === "csv") {
                             layer._tiles = [];
@@ -709,7 +725,11 @@ cc.TMXMapInfo = cc.SAXParser.extend(/** @lends cc.TMXMapInfo# */{
                         }
                         break;
                     default:
+<<<<<<< HEAD
                         if(this.layerAttrs === cc.TMXLayerInfo.ATTRIB_NONE)
+=======
+                        if(this.layerAttrs == cc.TMXLayerInfo.ATTRIB_NONE)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                             cc.log("cc.TMXMapInfo.parseXMLFile(): Only base64 and/or gzip/zlib maps are supported");
                         break;
                 }
@@ -748,7 +768,10 @@ cc.TMXMapInfo = cc.SAXParser.extend(/** @lends cc.TMXMapInfo# */{
                 }
 
                 var objects = selGroup.querySelectorAll('object');
+<<<<<<< HEAD
                 var getContentScaleFactor = cc.director.getContentScaleFactor();
+=======
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                 if (objects) {
                     for (j = 0; j < objects.length; j++) {
                         var selObj = objects[j];
@@ -762,6 +785,7 @@ cc.TMXMapInfo = cc.SAXParser.extend(/** @lends cc.TMXMapInfo# */{
                         // Assign all the attributes as key/name pairs in the properties dictionary
                         objectProp["type"] = selObj.getAttribute('type') || "";
 
+<<<<<<< HEAD
                         objectProp["width"] = parseInt(selObj.getAttribute('width')) || 0;
                         objectProp["height"] = parseInt(selObj.getAttribute('height')) || 0;
 
@@ -770,6 +794,17 @@ cc.TMXMapInfo = cc.SAXParser.extend(/** @lends cc.TMXMapInfo# */{
                         // Correct y position. (Tiled uses Flipped, cocos2d uses Standard)
                         objectProp["y"] = (parseInt(this.getMapSize().height * this.getTileSize().height) - y - objectProp["height"]) / cc.director.getContentScaleFactor();
 
+=======
+                        objectProp["x"] = parseInt(selObj.getAttribute('x') || 0) + objectGroup.getPositionOffset().x;
+                        var y = parseInt(selObj.getAttribute('y') || 0) + objectGroup.getPositionOffset().y;
+
+                        objectProp["width"] = parseInt(selObj.getAttribute('width')) || 0;
+                        objectProp["height"] = parseInt(selObj.getAttribute('height')) || 0;
+
+                        // Correct y position. (Tiled uses Flipped, cocos2d uses Standard)
+                        objectProp["y"] = parseInt(this.getMapSize().height * this.getTileSize().height) - y - objectProp["height"];
+						
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                         objectProp["rotation"] = parseInt(selObj.getAttribute('rotation')) || 0;
 
                         var docObjProps = selObj.querySelectorAll("properties > property");

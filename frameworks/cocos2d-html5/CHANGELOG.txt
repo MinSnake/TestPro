@@ -1,5 +1,6 @@
 ChangeLog:
 
+<<<<<<< HEAD
 Cocos2d-JS v3.6 @ April 29 2015
 
 * Added GAF web runtime to the web engine, the native support will be merged in future version.
@@ -169,6 +170,8 @@ Cocos2d-JS v3.3 RC0 @ Feb.1, 2015
     20. Added a message to `ccs.Armature` that it doesn't support adding widget as its child.
     21. Improved test cases for stability.
 
+=======
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
 Cocos2d-JS v3.3 Beta @ Jan.24, 2015
 
 * Added Cocos Studio v2.x parser and refactored 1.x parser.

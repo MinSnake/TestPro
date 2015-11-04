@@ -184,7 +184,11 @@ cc.FlipX3D = cc.Grid3DAction.extend(/** @lends cc.FlipX3D# */{
      * @return {Boolean}
      */
     initWithSize:function (gridSize, duration) {
+<<<<<<< HEAD
         if (gridSize.width !== 1 || gridSize.height !== 1) {
+=======
+        if (gridSize.width != 1 || gridSize.height != 1) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             // Grid size must be (1,1)
             cc.log("Grid size must be (1,1)");
             return false;
@@ -516,7 +520,11 @@ cc.Lens3D = cc.Grid3DAction.extend(/** @lends cc.Lens3D# */{
                     if (r < locRadius) {
                         r = locRadius - r;
                         pre_log = r / locRadius;
+<<<<<<< HEAD
                         if (pre_log === 0)
+=======
+                        if (pre_log == 0)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                             pre_log = 0.001;
 
                         l = Math.log(pre_log) * locLensEffect;

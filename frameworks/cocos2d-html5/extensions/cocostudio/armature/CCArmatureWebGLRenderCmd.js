@@ -50,7 +50,11 @@
             var selBone = locChildren[i];
             if (selBone && selBone.getDisplayRenderNode) {
                 var selNode = selBone.getDisplayRenderNode();
+<<<<<<< HEAD
                 if (null === selNode)
+=======
+                if (null == selNode)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                     continue;
                 selNode.setShaderProgram(this._shaderProgram);
                 switch (selBone.getDisplayRenderNodeType()) {
@@ -60,10 +64,17 @@
                             selNode.updateTransform();
 
                             var func = selBone.getBlendFunc();
+<<<<<<< HEAD
                             if (func.src !== alphaPremultiplied.src || func.dst !== alphaPremultiplied.dst)
                                 selNode.setBlendFunc(selBone.getBlendFunc());
                             else {
                                 if ((node._blendFunc.src === alphaPremultiplied.src && node._blendFunc.dst === alphaPremultiplied.dst)
+=======
+                            if (func.src != alphaPremultiplied.src || func.dst != alphaPremultiplied.dst)
+                                selNode.setBlendFunc(selBone.getBlendFunc());
+                            else {
+                                if ((node._blendFunc.src == alphaPremultiplied.src && node._blendFunc.dst == alphaPremultiplied.dst)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                                     && !selNode.getTexture().hasPremultipliedAlpha())
                                     selNode.setBlendFunc(alphaNonPremultipled);
                                 else
@@ -83,8 +94,12 @@
             } else if (selBone instanceof cc.Node) {
                 selBone.setShaderProgram(this._shaderProgram);
                 selBone._renderCmd.transform();
+<<<<<<< HEAD
                 if(selBone._renderCmd.rendering)
                     selBone._renderCmd.rendering(ctx);
+=======
+                selBone._renderCmd.rendering(ctx);
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             }
         }
         if(!dontChangeMatrix)
@@ -118,10 +133,17 @@
         dis.updateTransform();
 
         var func = selBone.getBlendFunc();
+<<<<<<< HEAD
         if (func.src !== alphaPremultiplied.src || func.dst !== alphaPremultiplied.dst)
             dis.setBlendFunc(selBone.getBlendFunc());
         else {
             if ((node._blendFunc.src === alphaPremultiplied.src && node_blendFunc.dst === alphaPremultiplied.dst)
+=======
+        if (func.src != alphaPremultiplied.src || func.dst != alphaPremultiplied.dst)
+            dis.setBlendFunc(selBone.getBlendFunc());
+        else {
+            if ((node._blendFunc.src == alphaPremultiplied.src && node_blendFunc.dst == alphaPremultiplied.dst)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                 && !dis.getTexture().hasPremultipliedAlpha())
                 dis.setBlendFunc(alphaNonPremultipled);
             else

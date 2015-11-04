@@ -54,7 +54,11 @@
             var fontChar = node.getChildByTag(i);
             if (!fontChar) {
                 fontChar = new cc.Sprite();
+<<<<<<< HEAD
                 if (c === 32) {
+=======
+                if (c == 32) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                     fontChar.init();
                     fontChar.setTextureRect(cc.rect(0, 0, 10, 10), false, cc.size(0, 0));
                 } else
@@ -62,7 +66,11 @@
 
                 cc.Node.prototype.addChild.call(node, fontChar, 0, i);
             } else {
+<<<<<<< HEAD
                 if (c === 32) {
+=======
+                if (c == 32) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                     fontChar.init();
                     fontChar.setTextureRect(cc.rect(0, 0, 10, 10), false, cc.size(0, 0));
                 } else {

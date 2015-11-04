@@ -90,7 +90,11 @@
     proto.checkAtlasCapacity = function(index){
         // make needed room
         var locAtlas = this._textureAtlas;
+<<<<<<< HEAD
         while (index >= locAtlas.capacity || locAtlas.capacity === locAtlas.totalQuads) {
+=======
+        while (index >= locAtlas.capacity || locAtlas.capacity == locAtlas.totalQuads) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             this.increaseAtlasCapacity();
         }
     };
@@ -169,7 +173,11 @@
             oldIndex = sprite.atlasIndex;
             sprite.atlasIndex = curIndex;
             sprite.arrivalOrder = 0;
+<<<<<<< HEAD
             if (oldIndex !== curIndex)
+=======
+            if (oldIndex != curIndex)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                 this._swap(oldIndex, curIndex);
             curIndex++;
         } else {
@@ -179,7 +187,11 @@
                 oldIndex = sprite.atlasIndex;
                 sprite.atlasIndex = curIndex;
                 sprite.arrivalOrder = 0;
+<<<<<<< HEAD
                 if (oldIndex !== curIndex)
+=======
+                if (oldIndex != curIndex)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                     this._swap(oldIndex, curIndex);
                 curIndex++;
                 needNewIndex = false;
@@ -190,7 +202,11 @@
                     oldIndex = sprite.atlasIndex;
                     sprite.atlasIndex = curIndex;
                     sprite.arrivalOrder = 0;
+<<<<<<< HEAD
                     if (oldIndex !== curIndex) {
+=======
+                    if (oldIndex != curIndex) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                         this._swap(oldIndex, curIndex);
                     }
                     curIndex++;
@@ -204,7 +220,11 @@
                 oldIndex = sprite.atlasIndex;
                 sprite.atlasIndex = curIndex;
                 sprite.arrivalOrder = 0;
+<<<<<<< HEAD
                 if (oldIndex !== curIndex) {
+=======
+                if (oldIndex != curIndex) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                     this._swap(oldIndex, curIndex);
                 }
                 curIndex++;
@@ -234,7 +254,11 @@
     };
 
     proto.setTextureAtlas = function(textureAtlas){
+<<<<<<< HEAD
         if (textureAtlas !== this._textureAtlas) {
+=======
+        if (textureAtlas != this._textureAtlas) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             this._textureAtlas = textureAtlas;
         }
     };

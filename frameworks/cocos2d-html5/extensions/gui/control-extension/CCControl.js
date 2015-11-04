@@ -335,9 +335,15 @@ cc.Control = cc.Layer.extend(/** @lends cc.Control# */{
                 var invocation = eventInvocationList[i];
                 var shouldBeRemoved = true;
                 if (target)
+<<<<<<< HEAD
                     shouldBeRemoved = (target === invocation.getTarget());
                 if (action)
                     shouldBeRemoved = (shouldBeRemoved && (action === invocation.getAction()));
+=======
+                    shouldBeRemoved = (target == invocation.getTarget());
+                if (action)
+                    shouldBeRemoved = (shouldBeRemoved && (action == invocation.getAction()));
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                 // Remove the corresponding invocation object
                 if (shouldBeRemoved)
                     cc.arrayRemoveObject(eventInvocationList, invocation);

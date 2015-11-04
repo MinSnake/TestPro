@@ -30,7 +30,11 @@
         cc.Node.CanvasRenderCmd.call(this, renderable);
         this._needDraw = true;
 
+<<<<<<< HEAD
         this._drawMode = cc.ParticleSystem.TEXTURE_MODE;
+=======
+        this._drawMode = cc.ParticleSystem.SHAPE_MODE;
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         this._shapeType = cc.ParticleSystem.BALL_SHAPE;
 
         this._pointRect = cc.rect(0, 0, 0, 0);
@@ -55,7 +59,11 @@
     };
 
     proto.setBatchNode = function(batchNode){
+<<<<<<< HEAD
         if (this._batchNode !== batchNode) {
+=======
+        if (this._batchNode != batchNode) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             this._node._batchNode = batchNode;
         }
     };
@@ -82,9 +90,15 @@
 
         var i, particle, lpx, alpha;
         var particleCount = this._node.particleCount, particles = this._node._particles;
+<<<<<<< HEAD
         if (node.drawMode !== cc.ParticleSystem.SHAPE_MODE && node._texture) {
             // Delay drawing until the texture is fully loaded by the browser
             if (!node._texture._textureLoaded) {
+=======
+        if (node.drawMode == cc.ParticleSystem.TEXTURE_MODE) {
+            // Delay drawing until the texture is fully loaded by the browser
+            if (!node._texture || !node._texture._textureLoaded) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                 wrapper.restore();
                 return;
             }
@@ -129,7 +143,11 @@
 
                 context.save();
                 context.translate(0 | particle.drawPos.x, -(0 | particle.drawPos.y));
+<<<<<<< HEAD
                 if (node.shapeType === cc.ParticleSystem.STAR_SHAPE) {
+=======
+                if (node.shapeType == cc.ParticleSystem.STAR_SHAPE) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                     if (particle.rotation)
                         context.rotate(cc.degreesToRadians(particle.rotation));
                     drawTool.drawStar(wrapper, lpx, particle.color);
@@ -206,7 +224,11 @@
 
     proto._initWithTotalParticles = function(totalParticles){};
     proto._updateDeltaColor = function(selParticle, dt){
+<<<<<<< HEAD
         if (!this._node._dontTint) {
+=======
+        if (!this._dontTint) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             selParticle.color.r += selParticle.deltaColor.r * dt;
             selParticle.color.g += selParticle.deltaColor.g * dt;
             selParticle.color.b += selParticle.deltaColor.b * dt;

@@ -88,14 +88,22 @@ cc.PlistParser = cc.SAXParser.extend(/** @lends cc.plistParser# */{
     parse : function (xmlTxt) {
         var xmlDoc = this._parseXML(xmlTxt);
         var plist = xmlDoc.documentElement;
+<<<<<<< HEAD
         if (plist.tagName !== 'plist')
+=======
+        if (plist.tagName != 'plist')
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             throw "Not a plist file!";
 
         // Get first real node
         var node = null;
         for (var i = 0, len = plist.childNodes.length; i < len; i++) {
             node = plist.childNodes[i];
+<<<<<<< HEAD
             if (node.nodeType === 1)
+=======
+            if (node.nodeType == 1)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                 break;
         }
         xmlDoc = null;
@@ -104,12 +112,21 @@ cc.PlistParser = cc.SAXParser.extend(/** @lends cc.plistParser# */{
 
     _parseNode: function (node) {
         var data = null, tagName = node.tagName;
+<<<<<<< HEAD
         if(tagName === "dict"){
             data = this._parseDict(node);
         }else if(tagName === "array"){
             data = this._parseArray(node);
         }else if(tagName === "string"){
             if (node.childNodes.length === 1)
+=======
+        if(tagName == "dict"){
+            data = this._parseDict(node);
+        }else if(tagName == "array"){
+            data = this._parseArray(node);
+        }else if(tagName == "string"){
+            if (node.childNodes.length == 1)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                 data = node.firstChild.nodeValue;
             else {
                 //handle Firefox's 4KB nodeValue limit
@@ -117,6 +134,7 @@ cc.PlistParser = cc.SAXParser.extend(/** @lends cc.plistParser# */{
                 for (var i = 0; i < node.childNodes.length; i++)
                     data += node.childNodes[i].nodeValue;
             }
+<<<<<<< HEAD
         }else if(tagName === "false"){
             data = false;
         }else if(tagName === "true"){
@@ -124,6 +142,15 @@ cc.PlistParser = cc.SAXParser.extend(/** @lends cc.plistParser# */{
         }else if(tagName === "real"){
             data = parseFloat(node.firstChild.nodeValue);
         }else if(tagName === "integer"){
+=======
+        }else if(tagName == "false"){
+            data = false;
+        }else if(tagName == "true"){
+            data = true;
+        }else if(tagName == "real"){
+            data = parseFloat(node.firstChild.nodeValue);
+        }else if(tagName == "integer"){
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             data = parseInt(node.firstChild.nodeValue, 10);
         }
         return data;
@@ -133,7 +160,11 @@ cc.PlistParser = cc.SAXParser.extend(/** @lends cc.plistParser# */{
         var data = [];
         for (var i = 0, len = node.childNodes.length; i < len; i++) {
             var child = node.childNodes[i];
+<<<<<<< HEAD
             if (child.nodeType !== 1)
+=======
+            if (child.nodeType != 1)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                 continue;
             data.push(this._parseNode(child));
         }
@@ -145,11 +176,19 @@ cc.PlistParser = cc.SAXParser.extend(/** @lends cc.plistParser# */{
         var key = null;
         for (var i = 0, len = node.childNodes.length; i < len; i++) {
             var child = node.childNodes[i];
+<<<<<<< HEAD
             if (child.nodeType !== 1)
                 continue;
 
             // Grab the key, next noe should be the value
             if (child.tagName === 'key')
+=======
+            if (child.nodeType != 1)
+                continue;
+
+            // Grab the key, next noe should be the value
+            if (child.tagName == 'key')
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                 key = child.firstChild.nodeValue;
             else
                 data[key] = this._parseNode(child);                 // Parse the value node

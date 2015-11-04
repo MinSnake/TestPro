@@ -408,7 +408,11 @@ if (cc._renderType === cc._RENDER_TYPE_CANVAS) {
         _backupElement: null,
         _isGray: false,
         _switchToGray: function(toGray){
+<<<<<<< HEAD
             if(!this._textureLoaded || this._isGray === toGray)
+=======
+            if(!this._textureLoaded || this._isGray == toGray)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                 return;
             this._isGray = toGray;
             if(this._isGray){
@@ -417,7 +421,11 @@ if (cc._renderType === cc._RENDER_TYPE_CANVAS) {
                      this._grayElementObj = cc.Texture2D._generateGrayTexture(this._htmlElementObj);
                 this._htmlElementObj = this._grayElementObj;
             } else {
+<<<<<<< HEAD
                 if(this._backupElement !== null)
+=======
+                if(this._backupElement != null)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                     this._htmlElementObj = this._backupElement;
             }
         }

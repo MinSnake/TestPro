@@ -48,7 +48,11 @@ cc.DOM._addMethods = function (node) {
 	cc.defineGetterSetter(node, "anchorY", node._getAnchorY, node._setAnchorY);
 	cc.defineGetterSetter(node, "scale", node.getScale, node.setScale);
 	cc.defineGetterSetter(node, "scaleX", node.getScaleX, node.setScaleX);
+<<<<<<< HEAD
 	cc.defineGetterSetter(node, "scaleY", node.getScaleY, node.setScaleY);
+=======
+	cc.defineGetterSetter(node, "scaleY", node.getScaleY, node.getScaleY);
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
 	cc.defineGetterSetter(node, "rotation", node.getRotation, node.setRotation);
  	cc.defineGetterSetter(node, "skewX", node.getSkewX, node.setSkewX);
 	cc.defineGetterSetter(node, "skewY", node.getSkewY, node.setSkewY);
@@ -168,13 +172,20 @@ cc.DOM.methods = /** @lends cc.DOM# */{
 	 */
 	_setAnchorX:function (x) {
 		var locAnchorPoint = this._anchorPoint;
+<<<<<<< HEAD
         var cmd = this._renderCmd;
+=======
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
 
 		if (x === locAnchorPoint.x)
 			return;
 		locAnchorPoint.x = x;
 
+<<<<<<< HEAD
 		var locAPP = cmd._anchorPointInPoints, locSize = this._contentSize;
+=======
+		var locAPP = this._anchorPointInPoints, locSize = this._contentSize;
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
 		locAPP.x = locSize.width * locAnchorPoint.x;
 
 		this.dom.style[cc.$.pfx + 'TransformOrigin'] = '' + locAPP.x + 'px ' + -locAPP.y + 'px';
@@ -193,13 +204,20 @@ cc.DOM.methods = /** @lends cc.DOM# */{
 	 */
 	_setAnchorY:function (y) {
 		var locAnchorPoint = this._anchorPoint;
+<<<<<<< HEAD
         var cmd = this._renderCmd;
+=======
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
 
 		if (y === locAnchorPoint.y)
 			return;
 		locAnchorPoint.y = y;
 
+<<<<<<< HEAD
 		var locAPP = cmd._anchorPointInPoints, locSize = this._contentSize;
+=======
+		var locAPP = this._anchorPointInPoints, locSize = this._contentSize;
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
 		locAPP.y = locSize.height * locAnchorPoint.y;
 
 		this.dom.style[cc.$.pfx + 'TransformOrigin'] = '' + locAPP.x + 'px ' + -locAPP.y + 'px';
@@ -248,12 +266,19 @@ cc.DOM.methods = /** @lends cc.DOM# */{
 	 */
 	_setWidth:function (width) {
 		var locContentSize = this._contentSize;
+<<<<<<< HEAD
         var cmd = this._renderCmd;
+=======
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
 		if (width === locContentSize.width)
 			return;
 		locContentSize.width = width;
 
+<<<<<<< HEAD
 		var locAPP = cmd._anchorPointInPoints, locAnchorPoint = this._anchorPoint;
+=======
+		var locAPP = this._anchorPointInPoints, locAnchorPoint = this._anchorPoint;
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
 		locAPP.x = locContentSize.width * locAnchorPoint.x;
 		this.dom.width = locContentSize.width;
 		this.anchorX = locAnchorPoint.x;
@@ -270,12 +295,19 @@ cc.DOM.methods = /** @lends cc.DOM# */{
 	 */
 	_setHeight:function (height) {
 		var locContentSize = this._contentSize;
+<<<<<<< HEAD
         var cmd = this._renderCmd;
+=======
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
 		if (height === locContentSize.height)
 			return;
 		locContentSize.height = height;
 
+<<<<<<< HEAD
 		var locAPP = cmd._anchorPointInPoints, locAnchorPoint = this._anchorPoint;
+=======
+		var locAPP = this._anchorPointInPoints, locAnchorPoint = this._anchorPoint;
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
 		locAPP.y = locContentSize.height * locAnchorPoint.y;
 		this.dom.height = locContentSize.height;
 		this.anchorY = locAnchorPoint.y;
@@ -291,7 +323,11 @@ cc.DOM.methods = /** @lends cc.DOM# */{
      * @param {Number} newRotation
      */
     setRotation:function (newRotation) {
+<<<<<<< HEAD
         if (this._rotation === newRotation)
+=======
+        if (this._rotation == newRotation)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             return;
 
         this._rotationX = this._rotationY = newRotation;
@@ -360,7 +396,11 @@ cc.DOM.methods = /** @lends cc.DOM# */{
         //if dom does not have parent, but node has no parent and its running
         if (this.dom && !this.dom.parentNode) {
             if (!this.getParent()) {
+<<<<<<< HEAD
                 if(this.dom.id === ""){
+=======
+                if(this.dom.id == ""){
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                     cc.DOM._createEGLViewDiv(this);
                 }else{
                     this.dom.appendTo(cc.container);
@@ -426,6 +466,7 @@ cc.DOM.methods = /** @lends cc.DOM# */{
 };
 
 cc.DOM._resetEGLViewDiv = function(){
+<<<<<<< HEAD
     var div = cc.$("#EGLViewDiv");
     if(div){
         var view = cc.view;
@@ -433,6 +474,15 @@ cc.DOM._resetEGLViewDiv = function(){
         var viewPortRect = view.getViewPortRect();
         var screenSize = view.getFrameSize();
 	    var pixelRatio = view.getDevicePixelRatio();
+=======
+    var eglViewDiv = cc.$("#EGLViewDiv");
+    if(eglViewDiv){
+        var eglViewer = cc.view;
+        var designSize = eglViewer.getDesignResolutionSize();
+        var viewPortRect = eglViewer.getViewPortRect();
+        var screenSize = eglViewer.getFrameSize();
+	    var pixelRatio = eglViewer.getDevicePixelRatio();
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         var designSizeWidth = designSize.width, designSizeHeight = designSize.height;
         if((designSize.width === 0) && (designSize.height === 0)){
             designSizeWidth = screenSize.width;
@@ -444,6 +494,7 @@ cc.DOM._resetEGLViewDiv = function(){
             viewPortWidth = screenSize.width;
         }
 
+<<<<<<< HEAD
         div.style.position = 'absolute';
         //x.dom.style.display='block';
         div.style.width = designSizeWidth + "px";
@@ -459,6 +510,17 @@ cc.DOM._resetEGLViewDiv = function(){
             div.style.left = (designSizeWidth*view.getScaleX()/pixelRatio - designSizeWidth) / 2 + "px";
             div.style.bottom = "0px";
         }
+=======
+        eglViewDiv.style.position = 'absolute';
+        //x.dom.style.display='block';
+        eglViewDiv.style.width = designSizeWidth + "px";
+        eglViewDiv.style.maxHeight = designSizeHeight + "px";
+        eglViewDiv.style.margin = 0;
+
+        eglViewDiv.resize(eglViewer.getScaleX()/pixelRatio, eglViewer.getScaleY()/pixelRatio);
+        eglViewDiv.style.left = (viewPortWidth - designSizeWidth) / 2 + "px";
+        eglViewDiv.style.bottom = "0px";
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
     }
 };
 
@@ -499,6 +561,7 @@ cc.DOM.parentDOM = function (x) {
 };
 
 cc.DOM._createEGLViewDiv = function(p){
+<<<<<<< HEAD
     var div = cc.$("#EGLViewDiv");
     if(!div){
         div = cc.$new("div");
@@ -510,6 +573,19 @@ cc.DOM._createEGLViewDiv = function(p){
     var viewPortRect = view.getViewPortRect();
     var screenSize = view.getFrameSize();
     var pixelRatio = view.getDevicePixelRatio();
+=======
+    var eglViewDiv = cc.$("#EGLViewDiv");
+    if(!eglViewDiv){
+        eglViewDiv = cc.$new("div");
+        eglViewDiv.id = "EGLViewDiv";
+    }
+
+    var eglViewer = cc.view;
+    var designSize = eglViewer.getDesignResolutionSize();
+    var viewPortRect = eglViewer.getViewPortRect();
+    var screenSize = eglViewer.getFrameSize();
+    var pixelRatio = eglViewer.getDevicePixelRatio();
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
     var designSizeWidth = designSize.width, designSizeHeight = designSize.height;
     if ((designSize.width === 0) && (designSize.height === 0)) {
         designSizeWidth = screenSize.width;
@@ -521,6 +597,7 @@ cc.DOM._createEGLViewDiv = function(p){
         viewPortWidth = screenSize.width;
     }
 
+<<<<<<< HEAD
     div.style.position = 'absolute';
     //x.dom.style.display='block';
     div.style.width = designSizeWidth + "px";
@@ -539,6 +616,20 @@ cc.DOM._createEGLViewDiv = function(p){
 
     p.dom.appendTo(div);
     div.appendTo(cc.container);
+=======
+    eglViewDiv.style.position = 'absolute';
+    //x.dom.style.display='block';
+    eglViewDiv.style.width = designSizeWidth + "px";
+    eglViewDiv.style.maxHeight = designSizeHeight + "px";
+    eglViewDiv.style.margin = 0;
+
+    eglViewDiv.resize(eglViewer.getScaleX()/pixelRatio, eglViewer.getScaleY()/pixelRatio);
+    eglViewDiv.style.left = (viewPortWidth - designSizeWidth) / 2 + "px";
+    eglViewDiv.style.bottom = "0px";
+
+    p.dom.appendTo(eglViewDiv);
+    eglViewDiv.appendTo(cc.container);
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
 };
 
 /**
@@ -632,7 +723,11 @@ cc.DOM.convert = function (nodeObject) {
     if (arguments.length > 1) {
         cc.DOM.convert(arguments);
         return;
+<<<<<<< HEAD
     } else if (arguments.length === 1 && !arguments[0].length) {
+=======
+    } else if (arguments.length == 1 && !arguments[0].length) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         cc.DOM.convert([arguments[0]]);
         return;
     }

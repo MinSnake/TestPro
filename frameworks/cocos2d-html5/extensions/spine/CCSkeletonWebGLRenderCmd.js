@@ -27,14 +27,21 @@
         cc.Node.WebGLRenderCmd.call(this, renderableObject);
         this._needDraw = true;
         this.setShaderProgram(cc.shaderCache.programForKey(cc.SHADER_POSITION_TEXTURECOLOR));
+<<<<<<< HEAD
         this._tmpQuad = new cc.V3F_C4B_T2F_Quad();
+=======
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
     };
 
     var proto = sp.Skeleton.WebGLRenderCmd.prototype = Object.create(cc.Node.WebGLRenderCmd.prototype);
     proto.constructor = sp.Skeleton.WebGLRenderCmd;
 
     proto.rendering = function (ctx) {
+<<<<<<< HEAD
         var node = this._node, tmpQuad = this._tmpQuad;
+=======
+        var node = this._node;
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         this._shaderProgram.use();
         this._shaderProgram._setUniformForMVPMatrixWithMat4(this._stackMatrix);
 //        cc.glBlendFunc(this._blendFunc.src, this._blendFunc.dst);
@@ -49,6 +56,7 @@
             locSkeleton.b *= locSkeleton.a;
         }
 
+<<<<<<< HEAD
         var additive, textureAtlas, attachment, slot, i, n;
         var locBlendFunc = node._blendFunc;
 
@@ -72,6 +80,17 @@
                     continue;
             }
 
+=======
+        var additive, textureAtlas, attachment, slot, i, n,
+            quad = new cc.V3F_C4B_T2F_Quad();
+        var locBlendFunc = node._blendFunc;
+
+        for (i = 0, n = locSkeleton.slots.length; i < n; i++) {
+            slot = locSkeleton.drawOrder[i];
+            if (!slot.attachment || slot.attachment.type != sp.ATTACHMENT_TYPE.REGION)
+                continue;
+            attachment = slot.attachment;
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             var regionTextureAtlas = node.getTextureAtlas(attachment);
 
             if (slot.data.additiveBlending != additive) {
@@ -95,7 +114,12 @@
                     return;
             }
 
+<<<<<<< HEAD
             textureAtlas.updateQuad(tmpQuad, quadCount);
+=======
+            sp._regionAttachment_updateQuad(attachment, slot, quad, node._premultipliedAlpha);
+            textureAtlas.updateQuad(quad, quadCount);
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         }
 
         if (textureAtlas) {
@@ -104,10 +128,19 @@
         }
 
         if (node._debugBones || node._debugSlots) {
+<<<<<<< HEAD
             cc.kmGLMatrixMode(cc.KM_GL_MODELVIEW);
             //cc.kmGLPushMatrixWitMat4(this._stackMatrix);
             cc.current_stack.stack.push(cc.current_stack.top);
             cc.current_stack.top = this._stackMatrix;
+=======
+
+            cc.kmGLMatrixMode(cc.KM_GL_MODELVIEW);
+            //cc.kmGLPushMatrixWitMat4(node._stackMatrix);
+            cc.current_stack.stack.push(cc.current_stack.top);
+            cc.current_stack.top = this._stackMatrix;
+
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             var drawingUtil = cc._drawingUtil;
 
             if (node._debugSlots) {
@@ -120,6 +153,7 @@
                     if (!slot.attachment || slot.attachment.type != sp.ATTACHMENT_TYPE.REGION)
                         continue;
                     attachment = slot.attachment;
+<<<<<<< HEAD
                     this._updateRegionAttachmentQuad(attachment, slot, tmpQuad);
 
                     var points = [];
@@ -127,6 +161,16 @@
                     points.push(cc.p(tmpQuad.br.vertices.x, tmpQuad.br.vertices.y));
                     points.push(cc.p(tmpQuad.tr.vertices.x, tmpQuad.tr.vertices.y));
                     points.push(cc.p(tmpQuad.tl.vertices.x, tmpQuad.tl.vertices.y));
+=======
+                    quad = new cc.V3F_C4B_T2F_Quad();
+                    sp._regionAttachment_updateQuad(attachment, slot, quad);
+
+                    var points = [];
+                    points.push(cc.p(quad.bl.vertices.x, quad.bl.vertices.y));
+                    points.push(cc.p(quad.br.vertices.x, quad.br.vertices.y));
+                    points.push(cc.p(quad.tr.vertices.x, quad.tr.vertices.y));
+                    points.push(cc.p(quad.tl.vertices.x, quad.tl.vertices.y));
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
 
                     drawingUtil.drawPoly(points, 4, true);
                 }
@@ -157,6 +201,10 @@
                     }
                 }
             }
+<<<<<<< HEAD
+=======
+
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             cc.kmGLPopMatrix();
         }
     };
@@ -164,6 +212,7 @@
     proto._createChildFormSkeletonData = function(){};
 
     proto._updateChild = function(){};
+<<<<<<< HEAD
 
     proto._updateRegionAttachmentQuad = function(self, slot, quad, premultipliedAlpha) {
         var vertices = {};
@@ -243,4 +292,6 @@
         quad.br.texCoords.u = self.uvs[VERTEX.X4];
         quad.br.texCoords.v = self.uvs[VERTEX.Y4];
     };
+=======
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
 })();

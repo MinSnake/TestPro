@@ -91,9 +91,15 @@
          * @returns {Number}
          */
         getVersionInteger: function(version){
+<<<<<<< HEAD
             if(!version || typeof version !== "string") return 0;
             var arr = version.split(".");
             if (arr.length !== 4)
+=======
+            if(!version || typeof version != "string") return 0;
+            var arr = version.split(".");
+            if (arr.length != 4)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                 return 0;
             var num = 0;
             arr.forEach(function(n, i){
@@ -199,7 +205,11 @@
         getNodeByTag: function(tag){
             if (this._node == null)
                 return null;
+<<<<<<< HEAD
             if (this._node.getTag() === tag)
+=======
+            if (this._node.getTag() == tag)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                 return this._node;
             return this._nodeByTag(this._node, tag);
         },
@@ -211,7 +221,11 @@
             var children = parent.getChildren();
             for (var i = 0; i < children.length; i++) {
                 var child = children[i];
+<<<<<<< HEAD
                 if (child && child.getTag() === tag) {
+=======
+                if (child && child.getTag() == tag) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                     retNode = child;
                     break;
                 } else {

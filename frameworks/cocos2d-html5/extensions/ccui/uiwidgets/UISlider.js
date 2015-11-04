@@ -33,7 +33,10 @@
 ccui.Slider = ccui.Widget.extend(/** @lends ccui.Slider# */{
     _barRenderer: null,
     _progressBarRenderer: null,
+<<<<<<< HEAD
     _barTextureSize: null,
+=======
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
     _progressBarTextureSize: null,
     _slidBallNormalRenderer: null,
     _slidBallPressedRenderer: null,
@@ -75,7 +78,10 @@ ccui.Slider = ccui.Widget.extend(/** @lends ccui.Slider# */{
      * var uiSlider = new ccui.Slider();
      */
     ctor: function (barTextureName, normalBallTextureName, resType) {
+<<<<<<< HEAD
         this._barTextureSize = cc.size(0,0);
+=======
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         this._progressBarTextureSize = cc.size(0, 0);
         this._capInsetsBarRenderer = cc.rect(0, 0, 0, 0);
         this._capInsetsProgressBarRenderer = cc.rect(0, 0, 0, 0);
@@ -135,7 +141,11 @@ ccui.Slider = ccui.Widget.extend(/** @lends ccui.Slider# */{
         var self = this;
         if(!barRenderer._textureLoaded){
             barRenderer.addEventListener("load", function(){
+<<<<<<< HEAD
                 self.loadBarTexture(self._textureFile, self._barTexType);
+=======
+                self.loadBarTexture(fileName, texType);
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             });
         }
 
@@ -157,7 +167,10 @@ ccui.Slider = ccui.Widget.extend(/** @lends ccui.Slider# */{
         this._progressBarRendererDirty = true;
         this._updateContentSizeWithTextureSize(this._barRenderer.getContentSize());
         this._findLayout();
+<<<<<<< HEAD
         this._barTextureSize = this._barRenderer.getContentSize();
+=======
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
     },
 
     /**
@@ -177,7 +190,11 @@ ccui.Slider = ccui.Widget.extend(/** @lends ccui.Slider# */{
         var self = this;
         if(!progressBarRenderer._textureLoaded){
             progressBarRenderer.addEventListener("load", function(){
+<<<<<<< HEAD
                 self.loadProgressBarTexture(self._progressBarTextureFile, self._progressBarTexType);
+=======
+                self.loadProgressBarTexture(fileName, texType);
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             });
         }
 
@@ -208,7 +225,11 @@ ccui.Slider = ccui.Widget.extend(/** @lends ccui.Slider# */{
      */
     setScale9Enabled: function (able) {
         //todo use setScale9Enabled
+<<<<<<< HEAD
         if (this._scale9Enabled === able)
+=======
+        if (this._scale9Enabled == able)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             return;
 
         this._scale9Enabled = able;
@@ -236,8 +257,11 @@ ccui.Slider = ccui.Widget.extend(/** @lends ccui.Slider# */{
         }
         this.setCapInsetsBarRenderer(this._capInsetsBarRenderer);
         this.setCapInsetProgressBarRenderer(this._capInsetsProgressBarRenderer);
+<<<<<<< HEAD
         this._barRendererAdaptDirty = true;
         this._progressBarRendererDirty = true;
+=======
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
     },
 
     /**
@@ -347,7 +371,11 @@ ccui.Slider = ccui.Widget.extend(/** @lends ccui.Slider# */{
         var self = this;
         if(!this._slidBallNormalRenderer._textureLoaded){
             this._slidBallNormalRenderer.addEventListener("load", function(){
+<<<<<<< HEAD
                 self.loadSlidBallTextureNormal(self._slidBallNormalTextureFile, self._ballNTexType);
+=======
+                self.loadSlidBallTextureNormal(normal, texType);
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             });
         }
 
@@ -383,7 +411,11 @@ ccui.Slider = ccui.Widget.extend(/** @lends ccui.Slider# */{
         var self = this;
         if(!this._slidBallPressedRenderer._textureLoaded){
             this._slidBallPressedRenderer.addEventListener("load", function(){
+<<<<<<< HEAD
                 self.loadSlidBallTexturePressed(self._slidBallPressedTextureFile, self._ballPTexType);
+=======
+                self.loadSlidBallTexturePressed(pressed, texType);
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             });
         }
 
@@ -419,7 +451,11 @@ ccui.Slider = ccui.Widget.extend(/** @lends ccui.Slider# */{
         var self = this;
         if(!this._slidBallDisabledRenderer._textureLoaded){
             this._slidBallDisabledRenderer.addEventListener("load", function(){
+<<<<<<< HEAD
                 self.loadSlidBallTextureDisabled(self._slidBallDisabledTextureFile, self._ballDTexType);
+=======
+                self.loadSlidBallTextureDisabled(disabled, texType);
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             });
         }
 
@@ -453,12 +489,20 @@ ccui.Slider = ccui.Widget.extend(/** @lends ccui.Slider# */{
         var dis = this._barLength * res;
         this._slidBallRenderer.setPosition(dis, this._contentSize.height / 2);
         if (this._scale9Enabled)
+<<<<<<< HEAD
             this._progressBarRenderer.setPreferredSize(cc.size(dis, this._contentSize.height));
+=======
+            this._progressBarRenderer.setPreferredSize(cc.size(dis, this._progressBarTextureSize.height));
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         else {
             var spriteRenderer = this._progressBarRenderer;
             var rect = spriteRenderer.getTextureRect();
             spriteRenderer.setTextureRect(
+<<<<<<< HEAD
                 cc.rect(rect.x, rect.y, dis / spriteRenderer._scaleX, rect.height),
+=======
+                cc.rect(rect.x, rect.y, dis, rect.height),
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                 spriteRenderer.isTextureRectRotated()
             );
         }
@@ -600,9 +644,15 @@ ccui.Slider = ccui.Widget.extend(/** @lends ccui.Slider# */{
             this._barLength = this._contentSize.width;
             if (this._scale9Enabled) {
                 this._barRenderer.setPreferredSize(this._contentSize);
+<<<<<<< HEAD
                 this._barRenderer.setScale(1.0);
             } else {
                 var btextureSize = this._barTextureSize;
+=======
+            }
+            else {
+                var btextureSize = this._barRenderer.getContentSize();
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                 if (btextureSize.width <= 0.0 || btextureSize.height <= 0.0) {
                     this._barRenderer.setScale(1.0);
                     return;
@@ -632,7 +682,11 @@ ccui.Slider = ccui.Widget.extend(/** @lends ccui.Slider# */{
         else {
             if (this._scale9Enabled) {
                 this._progressBarRenderer.setPreferredSize(this._contentSize);
+<<<<<<< HEAD
                 this._progressBarRenderer.setScale(1);
+=======
+                this._progressBarTextureSize = this._progressBarRenderer.getContentSize();
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             }
             else {
                 var ptextureSize = this._progressBarTextureSize;

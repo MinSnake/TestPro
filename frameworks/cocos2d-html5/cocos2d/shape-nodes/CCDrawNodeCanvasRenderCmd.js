@@ -45,7 +45,11 @@
 
         //context.save();
         wrapper.setGlobalAlpha(alpha);
+<<<<<<< HEAD
         if ((this._blendFunc && (this._blendFunc.src === cc.SRC_ALPHA) && (this._blendFunc.dst === cc.ONE)))
+=======
+        if ((this._blendFunc && (this._blendFunc.src == cc.SRC_ALPHA) && (this._blendFunc.dst == cc.ONE)))
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             wrapper.setCompositeOperation('lighter');               //todo: need refactor
         var locBuffer = this._buffer;
         for (var i = 0, len = locBuffer.length; i < len; i++) {

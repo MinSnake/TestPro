@@ -52,7 +52,11 @@
                 if(parser)
                     frame = parser.call(self, timeline, resourcePath);
                 else
+<<<<<<< HEAD
                     cc.log("parser does not exist : %s", timeline["Property"]);
+=======
+                    cc.log("parser is not exists : %s", timeline["Property"]);
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                 if(frame)
                     action.addTimeline(frame);
             });
@@ -63,6 +67,7 @@
         },
 
         deferred: function(json, resourcePath, action, file){
+<<<<<<< HEAD
             var animationlist = json["Content"]["Content"]["AnimationList"];
             var length = animationlist ? animationlist.length : 0;
             for (var i = 0; i < length; i++){
@@ -72,6 +77,19 @@
                 info.startIndex = animationdata["StartIndex"];
                 info.endIndex = animationdata["EndIndex"];
                 action.addAnimationInfo(info);
+=======
+            if(cc.sys.isNative) {
+                var animationlist = json["Content"]["Content"]["AnimationList"];
+                var length = animationlist ? animationlist.length : 0;
+                for (var i = 0; i < length; i++) {
+                    var animationdata = animationlist[i];
+                    var info = { name: null, startIndex: null, endIndex: null };
+                    info.name = animationdata["Name"];
+                    info.startIndex = animationdata["StartIndex"];
+                    info.endIndex = animationdata["EndIndex"];
+                    action.addAnimationInfo(info);
+                }
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             }
         }
 
@@ -220,7 +238,11 @@
         },
         {
             name: "ActionValue",
+<<<<<<< HEAD
             handle: function (options) {
+=======
+            handle: function(options){
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
 
                 var frame = new ccs.InnerActionFrame();
                 var innerActionType = options["InnerActionType"];
@@ -229,22 +251,30 @@
 
                 var singleFrameIndex = options["SingleFrameIndex"];
 
+<<<<<<< HEAD
                 var frameIndex = options["FrameIndex"];
                 if(frameIndex !== undefined)
                     frame.setFrameIndex(frameIndex);
 
+=======
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                 frame.setInnerActionType(ccs.InnerActionType[innerActionType]);
                 frame.setSingleFrameIndex(singleFrameIndex);
 
                 frame.setEnterWithName(true);
+<<<<<<< HEAD
                 if (currentAnimationFrame)
                      frame.setAnimationName(currentAnimationFrame);
+=======
+                frame.setAnimationName(currentAnimationFrame);
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
 
                 return frame;
             }
         }
     ];
 
+<<<<<<< HEAD
     var loadEasingDataWithFlatBuffers = function(frame, options){
         var type = options["Type"];
         frame.setTweenType(type);
@@ -257,6 +287,8 @@
         }
     };
 
+=======
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
     frameList.forEach(function(item){
         parser.registerParser(item.name, function(options, resourcePath){
             var timeline = new ccs.Timeline();
@@ -269,10 +301,13 @@
                     frame.setFrameIndex(frameData["FrameIndex"]);
                     var tween = frameData["Tween"] != null ? frameData["Tween"] : true;
                     frame.setTween(tween);
+<<<<<<< HEAD
                     //https://github.com/cocos2d/cocos2d-x/pull/11388/files
                     var easingData = frameData["EasingData"];
                     if(easingData)
                         loadEasingDataWithFlatBuffers(frame, easingData);
+=======
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                     timeline.addFrame(frame);
                 });
             }

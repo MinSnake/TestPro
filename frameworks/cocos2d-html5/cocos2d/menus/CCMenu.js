@@ -88,9 +88,15 @@ cc.Menu = cc.Layer.extend(/** @lends cc.Menu# */{
             cc.log("parameters should not be ending with null in Javascript");
 
         var argc = arguments.length, items;
+<<<<<<< HEAD
         if (argc === 0) {
             items = [];
         } else if (argc === 1) {
+=======
+        if (argc == 0) {
+            items = [];
+        } else if (argc == 1) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             if (menuItems instanceof Array) {
                 items = menuItems;
             }
@@ -315,7 +321,11 @@ cc.Menu = cc.Layer.extend(/** @lends cc.Menu# */{
         if (locChildren && locChildren.length > 0) {
             for (i = 0, len = locChildren.length; i < len; i++) {
                 var child = locChildren[i];
+<<<<<<< HEAD
                 if (rowColumns === 0) {
+=======
+                if (rowColumns == 0) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                     rowColumns = rows[row];
                     w = winSize.width / (1 + rowColumns);
                     x = w;
@@ -409,7 +419,11 @@ cc.Menu = cc.Layer.extend(/** @lends cc.Menu# */{
         if (locChildren && locChildren.length > 0) {
             for (i = 0, len = locChildren.length; i < len; i++) {
                 child = locChildren[i];
+<<<<<<< HEAD
                 if (columnRows === 0) {
+=======
+                if (columnRows == 0) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                     columnRows = columns[column];
                     y = columnHeights[column];
                 }
@@ -447,14 +461,22 @@ cc.Menu = cc.Layer.extend(/** @lends cc.Menu# */{
             return;
         }
 
+<<<<<<< HEAD
         if (this._selectedItem === child)
+=======
+        if (this._selectedItem == child)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             this._selectedItem = null;
         cc.Node.prototype.removeChild.call(this, child, cleanup);
     },
 
     _onTouchBegan: function (touch, event) {
         var target = event.getCurrentTarget();
+<<<<<<< HEAD
         if (target._state !== cc.MENU_STATE_WAITING || !target._visible || !target.enabled)
+=======
+        if (target._state != cc.MENU_STATE_WAITING || !target._visible || !target.enabled)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             return false;
 
         for (var c = target.parent; c != null; c = c.parent) {
@@ -506,7 +528,11 @@ cc.Menu = cc.Layer.extend(/** @lends cc.Menu# */{
             return;
         }
         var currentItem = target._itemForTouch(touch);
+<<<<<<< HEAD
         if (currentItem !== target._selectedItem) {
+=======
+        if (currentItem != target._selectedItem) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             if (target._selectedItem) {
                 target._selectedItem.unselected();
                 target._selectedItem.setNodeDirty();
@@ -528,7 +554,11 @@ cc.Menu = cc.Layer.extend(/** @lends cc.Menu# */{
      * </p>
      */
     onExit: function () {
+<<<<<<< HEAD
         if (this._state === cc.MENU_STATE_TRACKING_TOUCH) {
+=======
+        if (this._state == cc.MENU_STATE_TRACKING_TOUCH) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             if (this._selectedItem) {
                 this._selectedItem.unselected();
                 this._selectedItem = null;
@@ -590,9 +620,15 @@ cc.Menu.create = function (menuItems) {
         cc.log("parameters should not be ending with null in Javascript");
 
     var ret;
+<<<<<<< HEAD
     if (argc === 0)
         ret = new cc.Menu();
     else if (argc === 1)
+=======
+    if (argc == 0)
+        ret = new cc.Menu();
+    else if (argc == 1)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         ret = new cc.Menu(menuItems);
     else
         ret = new cc.Menu(Array.prototype.slice.call(arguments, 0));

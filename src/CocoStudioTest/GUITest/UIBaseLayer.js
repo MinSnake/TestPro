@@ -56,7 +56,10 @@ var UIBaseLayer = cc.Layer.extend({
             var json = ccs.load(file);
             return json.node;
         }else{
+<<<<<<< HEAD
             //ccs.uiReader.widgetFromJsonFile only supports 1.x file.
+=======
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             cc.log("ccs.uiReader.widgetFromJsonFile : %s", file);
             return ccs.uiReader.widgetFromJsonFile(file)
         }

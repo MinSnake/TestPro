@@ -26,6 +26,7 @@
  SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
+<<<<<<< HEAD
 
 /**
  * <p>The main namespace of Cocos2d-html5's math library,                                    <br/>
@@ -40,15 +41,62 @@ cc.math = cc.math || {};
 //cc.kmPIUnder180 = 57.295779;     please use cc.DEG
 
 cc.math.EPSILON = 1.0 / 64.0;         //cc.kmEpsilon
+=======
+/**
+ * @ignore
+ */
+cc.kmScalar = Number;
+
+cc.kmBool = Number;
+
+cc.kmEnum = Number;
+
+cc.KM_FALSE = 0;
+
+cc.KM_TRUE = 1;
+
+cc.kmPI = 3.141592;
+
+cc.kmPIOver180 = 0.017453;
+
+cc.kmPIUnder180 = 57.295779;
+
+cc.kmEpsilon = 1.0 / 64.0;
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
 
 /**
  * Returns the square of s (e.g. s*s)
  * @param {Number} s
  */
+<<<<<<< HEAD
 cc.math.square = function(s){
     return s*s;
 };
 
 cc.math.almostEqual = function(lhs,rhs){
     return (lhs + cc.math.EPSILON > rhs && lhs - cc.math.EPSILON < rhs);
+=======
+cc.kmSQR = function(s){
+    return s*s;
+};
+
+cc.kmDegreesToRadians = function(degrees){
+    return degrees * cc.kmPIOver180;
+};
+
+cc.kmRadiansToDegrees = function(radians){
+    return radians * cc.kmPIUnder180;
+};
+
+cc.kmMin = function(lhs,rhs){
+    return (lhs < rhs)? lhs : rhs;
+};
+
+cc.kmMax = function(lhs,rhs){
+    return (lhs > rhs)? lhs : rhs;
+};
+
+cc.kmAlmostEqual = function(lhs,rhs){
+    return (lhs + cc.kmEpsilon > rhs && lhs - cc.kmEpsilon < rhs);
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
 };

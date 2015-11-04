@@ -151,7 +151,11 @@ cc.ControlColourPicker = cc.Control.extend(/** @lends cc.ControlColourPicker# */
     },
     setEnabled:function (enabled) {
         cc.Control.prototype.setEnabled.call(this, enabled);
+<<<<<<< HEAD
         if (this._huePicker !== null) {
+=======
+        if (this._huePicker != null) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             this._huePicker.setEnabled(enabled);
         }
         if (this._colourPicker) {

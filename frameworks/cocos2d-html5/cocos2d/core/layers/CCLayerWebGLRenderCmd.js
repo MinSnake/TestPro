@@ -75,7 +75,11 @@
     var proto = cc.LayerColor.WebGLRenderCmd.prototype = Object.create(cc.Layer.WebGLRenderCmd.prototype);
     proto.constructor = cc.LayerColor.WebGLRenderCmd;
 
+<<<<<<< HEAD
     proto.rendering = function (ctx) {
+=======
+    cc.LayerColor.WebGLRenderCmd.prototype.rendering = function (ctx) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         var context = ctx || cc._renderContext;
         var node = this._node;
 
@@ -93,7 +97,11 @@
         context.bindBuffer(context.ARRAY_BUFFER, this._colorsUint8Buffer);
         context.vertexAttribPointer(cc.VERTEX_ATTRIB_COLOR, 4, context.UNSIGNED_BYTE, true, 0, 0);
 
+<<<<<<< HEAD
         context.drawArrays(context.TRIANGLE_STRIP, 0, this._squareVertices.length);
+=======
+        context.drawArrays(context.TRIANGLE_STRIP, 0, 4);
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
     };
 
     proto._updateSquareVertices = function(size, height){
@@ -160,8 +168,11 @@
     cc.LayerGradient.WebGLRenderCmd = function(renderable){
         cc.LayerColor.WebGLRenderCmd.call(this, renderable);
         this._needDraw = true;
+<<<<<<< HEAD
         this._clipRect = new cc.Rect();
         this._clippingRectDirty = false;
+=======
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
     };
     var proto = cc.LayerGradient.WebGLRenderCmd.prototype = Object.create(cc.LayerColor.WebGLRenderCmd.prototype);
     cc.inject(cc.LayerGradient.RenderCmd, proto);
@@ -203,6 +214,7 @@
 
     proto._updateColor = function(){
         this._dirtyFlag = this._dirtyFlag & cc.Node._dirtyFlags.gradientDirty ^ this._dirtyFlag;
+<<<<<<< HEAD
         var node = this._node, stops = node._colorStops;
         if(!stops || stops.length < 2)
             return;
@@ -307,5 +319,50 @@
             this._clipRect = cc._rectApplyAffineTransformIn(rect, trans);
         }
         return this._clipRect;
+=======
+        var _t = this, node = this._node;
+        var locAlongVector = node._alongVector;
+        var h = cc.pLength(locAlongVector);
+        if (h === 0)
+            return;
+
+        var c = Math.sqrt(2.0), u = cc.p(locAlongVector.x / h, locAlongVector.y / h);
+
+        // Compressed Interpolation mode
+        if (node._compressedInterpolation) {
+            var h2 = 1 / ( Math.abs(u.x) + Math.abs(u.y) );
+            u = cc.pMult(u, h2 * c);
+        }
+
+        var opacityf = _t._displayedOpacity / 255.0;
+        var locDisplayedColor = _t._displayedColor, locEndColor = node._endColor;
+        var S = { r: locDisplayedColor.r, g: locDisplayedColor.g, b: locDisplayedColor.b, a: node._startOpacity * opacityf};
+        var E = {r: locEndColor.r, g: locEndColor.g, b: locEndColor.b, a: node._endOpacity * opacityf};
+
+        // (-1, -1)
+        var locSquareColors = _t._squareColors;
+        var locSquareColor0 = locSquareColors[0], locSquareColor1 = locSquareColors[1], locSquareColor2 = locSquareColors[2], locSquareColor3 = locSquareColors[3];
+        locSquareColor0.r = ((E.r + (S.r - E.r) * ((c + u.x + u.y) / (2.0 * c))));
+        locSquareColor0.g = ((E.g + (S.g - E.g) * ((c + u.x + u.y) / (2.0 * c))));
+        locSquareColor0.b = ((E.b + (S.b - E.b) * ((c + u.x + u.y) / (2.0 * c))));
+        locSquareColor0.a = ((E.a + (S.a - E.a) * ((c + u.x + u.y) / (2.0 * c))));
+        // (1, -1)
+        locSquareColor1.r = ((E.r + (S.r - E.r) * ((c - u.x + u.y) / (2.0 * c))));
+        locSquareColor1.g = ((E.g + (S.g - E.g) * ((c - u.x + u.y) / (2.0 * c))));
+        locSquareColor1.b = ((E.b + (S.b - E.b) * ((c - u.x + u.y) / (2.0 * c))));
+        locSquareColor1.a = ((E.a + (S.a - E.a) * ((c - u.x + u.y) / (2.0 * c))));
+        // (-1, 1)
+        locSquareColor2.r = ((E.r + (S.r - E.r) * ((c + u.x - u.y) / (2.0 * c))));
+        locSquareColor2.g = ((E.g + (S.g - E.g) * ((c + u.x - u.y) / (2.0 * c))));
+        locSquareColor2.b = ((E.b + (S.b - E.b) * ((c + u.x - u.y) / (2.0 * c))));
+        locSquareColor2.a = ((E.a + (S.a - E.a) * ((c + u.x - u.y) / (2.0 * c))));
+        // (1, 1)
+        locSquareColor3.r = ((E.r + (S.r - E.r) * ((c - u.x - u.y) / (2.0 * c))));
+        locSquareColor3.g = ((E.g + (S.g - E.g) * ((c - u.x - u.y) / (2.0 * c))));
+        locSquareColor3.b = ((E.b + (S.b - E.b) * ((c - u.x - u.y) / (2.0 * c))));
+        locSquareColor3.a = ((E.a + (S.a - E.a) * ((c - u.x - u.y) / (2.0 * c))));
+
+        _t._bindLayerColorsBufferData();
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
     };
 })();

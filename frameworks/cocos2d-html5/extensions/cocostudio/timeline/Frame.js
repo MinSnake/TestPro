@@ -33,15 +33,21 @@ ccs.Frame = ccs.Class.extend({
     _tween: null,
     _timeline: null,
     _node: null,
+<<<<<<< HEAD
     _tweenType: null,
     _easingParam: null,
+=======
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
 
     ctor: function(){
         this._frameIndex = 0;
         this._tween = true;
         this._timeline = null;
         this._node = null;
+<<<<<<< HEAD
         this._easingParam = [];
+=======
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
     },
 
     _emitEvent: function(){
@@ -53,8 +59,11 @@ ccs.Frame = ccs.Class.extend({
     _cloneProperty: function(frame){
         this._frameIndex = frame.getFrameIndex();
         this._tween = frame.isTween();
+<<<<<<< HEAD
         this._tweenType = frame.getTweenType();
         this.setEasingParams(frame.getEasingParams());
+=======
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
     },
 
     /**
@@ -136,6 +145,7 @@ ccs.Frame = ccs.Class.extend({
      * @param {number} percent
      */
     apply: function(percent){
+<<<<<<< HEAD
         if(!this._tween)
             return;
         if(this._tweenType !== ccs.FrameEaseType.TWEEN_EASING_MAX  && this._tweenType !==  ccs.FrameEaseType.LINEAR)
@@ -145,6 +155,8 @@ ccs.Frame = ccs.Class.extend({
 
     _onApply: function(percent){
 
+=======
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
     },
 
     /**
@@ -154,6 +166,7 @@ ccs.Frame = ccs.Class.extend({
      * @return {ccs.Frame}
      */
     clone: function(){ // = 0
+<<<<<<< HEAD
     },
 
     tweenPercent: function(percent){
@@ -243,6 +256,11 @@ ccs.Frame.tweenToMap = {
     30: cc._easeBounceInOutObj.easing //Bounce_EaseInOut
 };
 
+=======
+    }
+});
+
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
 /**
  * Visible frame
  * To control the display state
@@ -263,8 +281,12 @@ ccs.VisibleFrame = ccs.Frame.extend({
      * @param {ccs.Frame} nextFrame
      */
     onEnter: function(nextFrame){
+<<<<<<< HEAD
         if(this._node)
             this._node.setVisible(this._visible);
+=======
+        this._node.setVisible(this._visible);
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
     },
 
     /**
@@ -340,15 +362,21 @@ ccs.TextureFrame = ccs.Frame.extend({
      */
     onEnter: function(nextFrame){
         if(this._sprite){
+<<<<<<< HEAD
             var spriteBlendFunc = this._sprite.getBlendFunc();
+=======
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             var spriteFrame = cc.spriteFrameCache._spriteFrames[this._textureName];
             if(spriteFrame != null)
                 this._sprite.setSpriteFrame(spriteFrame);
             else
                 this._sprite.setTexture(this._textureName);
+<<<<<<< HEAD
 
             if(this._sprite.getBlendFunc() !== spriteBlendFunc)
                 this._sprite.setBlendFunc(spriteBlendFunc);
+=======
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         }
 
     },
@@ -413,8 +441,11 @@ ccs.RotationFrame = ccs.Frame.extend({
      * @param {ccs.Frame} nextFrame
      */
     onEnter: function(nextFrame){
+<<<<<<< HEAD
         if(!this._node)
             return;
+=======
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         this._node.setRotation(this._rotation);
 
         if(this._tween){
@@ -426,8 +457,13 @@ ccs.RotationFrame = ccs.Frame.extend({
      * Each frame logic
      * @param {number} percent
      */
+<<<<<<< HEAD
     _onApply: function(percent){
         if (this._betwennRotation !== 0){
+=======
+    apply: function(percent){
+        if (this._tween && this._betwennRotation != 0){
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             var rotation = this._rotation + percent * this._betwennRotation;
             this._node.setRotation(rotation);
         }
@@ -498,8 +534,11 @@ ccs.SkewFrame = ccs.Frame.extend({
      * @param {ccs.Frame} nextFrame
      */
     onEnter: function(nextFrame){
+<<<<<<< HEAD
         if(!this._node)
             return;
+=======
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         this._node.setSkewX(this._skewX);
         this._node.setSkewY(this._skewY);
 
@@ -514,8 +553,13 @@ ccs.SkewFrame = ccs.Frame.extend({
      * Each frame logic
      * @param {number} percent
      */
+<<<<<<< HEAD
     _onApply: function(percent){
         if (this._betweenSkewX !== 0 || this._betweenSkewY !== 0)
+=======
+    apply: function(percent){
+        if (this._tween && (this._betweenSkewX != 0 || this._betweenSkewY != 0))
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         {
             var skewx = this._skewX + percent * this._betweenSkewX;
             var skewy = this._skewY + percent * this._betweenSkewY;
@@ -596,12 +640,21 @@ ccs.RotationSkewFrame = ccs.SkewFrame.extend({
      * @param {ccs.Frame} nextFrame
      */
     onEnter: function(nextFrame){
+<<<<<<< HEAD
         if(!this._node)
             return;
         this._node.setRotationX(this._skewX);
         this._node.setRotationY(this._skewY);
 
         if (this._tween){
+=======
+
+        this._node.setRotationX(this._skewX);
+        this._node.setRotationY(this._skewY);
+
+        if (this._tween)
+        {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             this._betweenSkewX = nextFrame._skewX - this._skewX;
             this._betweenSkewY = nextFrame._skewY - this._skewY;
         }
@@ -612,8 +665,13 @@ ccs.RotationSkewFrame = ccs.SkewFrame.extend({
      * Each frame logic
      * @param {number} percent
      */
+<<<<<<< HEAD
     _onApply: function(percent){
         if (this._node && (this._betweenSkewX !== 0 || this._betweenSkewY !== 0)){
+=======
+    apply: function(percent){
+        if (this._tween && (this._betweenSkewX != 0 || this._betweenSkewY != 0)){
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             var skewx = this._skewX + percent * this._betweenSkewX;
             var skewy = this._skewY + percent * this._betweenSkewY;
 
@@ -672,9 +730,12 @@ ccs.PositionFrame = ccs.Frame.extend({
      * @param {ccs.Frame} nextFrame
      */
     onEnter: function(nextFrame){
+<<<<<<< HEAD
         if(!this._node)
             return;
 
+=======
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         this._node.setPosition(this._position);
 
         if(this._tween){
@@ -687,8 +748,13 @@ ccs.PositionFrame = ccs.Frame.extend({
      * Each frame logic
      * @param {number} percent
      */
+<<<<<<< HEAD
     _onApply: function(percent){
         if (this._node && (this._betweenX !== 0 || this._betweenY !== 0)){
+=======
+    apply: function(percent){
+        if (this._tween && (this._betweenX != 0 || this._betweenY != 0)){
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             var p = cc.p(0, 0);
             p.x = this._position.x + this._betweenX * percent;
             p.y = this._position.y + this._betweenY * percent;
@@ -794,8 +860,11 @@ ccs.ScaleFrame = ccs.Frame.extend({
      * @param {ccs.Frame} nextFrame
      */
     onEnter: function(nextFrame){
+<<<<<<< HEAD
         if(!this._node)
             return;
+=======
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         this._node.setScaleX(this._scaleX);
         this._node.setScaleY(this._scaleY);
 
@@ -810,8 +879,13 @@ ccs.ScaleFrame = ccs.Frame.extend({
      * Each frame logic
      * @param {number} percent
      */
+<<<<<<< HEAD
     _onApply: function(percent){
         if (this._node && (this._betweenScaleX !== 0 || this._betweenScaleY !== 0)){
+=======
+    apply: function(percent){
+        if (this._tween && (this._betweenScaleX != 0 || this._betweenScaleY != 0)){
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             var scaleX = this._scaleX + this._betweenScaleX * percent;
             var scaleY = this._scaleY + this._betweenScaleY * percent;
 
@@ -908,8 +982,12 @@ ccs.AnchorPointFrame = ccs.Frame.extend({
      * @param {ccs.Frame} nextFrame
      */
     onEnter: function(nextFrame){
+<<<<<<< HEAD
         if(this._node)
             this._node.setAnchorPoint(this._anchorPoint);
+=======
+        this._node.setAnchorPoint(this._anchorPoint);
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
     },
 
     /**
@@ -976,13 +1054,20 @@ ccs.InnerActionFrame = ccs.Frame.extend({
 
     _endFrameIndex:0,
     _singleFrameIndex: 0,
+<<<<<<< HEAD
     _enterWithName: null,
+=======
+    _enterWithName: false,
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
     _animationName: "",
 
     ctor: function(){
         ccs.Frame.prototype.ctor.call(this);
 
+<<<<<<< HEAD
         this._enterWithName = false;
+=======
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         this._innerActionType = ccs.InnerActionType.LoopAction;
         this._startFrameIndex = 0;
     },
@@ -992,10 +1077,15 @@ ccs.InnerActionFrame = ccs.Frame.extend({
      * @param {ccs.Frame} nextFrame
      */
     onEnter: function(nextFrame){
+<<<<<<< HEAD
         if(!this._node)  return;
         var innerActiontimeline = this._node.getActionByTag(this._node.getTag());
         if(!innerActiontimeline) return;
         if (ccs.InnerActionType.SingleFrame === this._innerActionType){
+=======
+        var innerActiontimeline = this._node.getActionByTag(this._node.getTag());
+        if (/*ccs.InnerActionType.SingleFrame*/"SingleFrame" == this._innerActionType){
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             innerActiontimeline.gotoFrameAndPause(this._singleFrameIndex);
             return;
         }
@@ -1003,10 +1093,17 @@ ccs.InnerActionFrame = ccs.Frame.extend({
         var innerStart = this._startFrameIndex;
         var innerEnd = this._endFrameIndex;
         if (this._enterWithName){
+<<<<<<< HEAD
             if (this._animationName === "-- ALL --"){
                 innerStart = 0;
                 innerEnd = innerActiontimeline.getDuration();
             } else if(innerActiontimeline.isAnimationInfoExists(this._animationName)) {
+=======
+            if (this._animationName == "-- ALL --"){
+                innerStart = 0;
+                innerEnd = innerActiontimeline.getDuration();
+            } else if(innerActiontimeline.IsAnimationInfoExists(this._animationName)) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                 var info = innerActiontimeline.getAnimationInfo(this._animationName);
                 innerStart = info.startIndex;
                 innerEnd = info.endIndex;
@@ -1021,15 +1118,29 @@ ccs.InnerActionFrame = ccs.Frame.extend({
             innerEnd += odddiff;
         }
 
+<<<<<<< HEAD
         if (ccs.InnerActionType.NoLoopAction === this._innerActionType){
             innerActiontimeline.gotoFrameAndPlay(innerStart, innerEnd, false);
         }else if (ccs.InnerActionType.LoopAction === this._innerActionType){
+=======
+        if (ccs.InnerActionType.NoLoopAction == this._innerActionType){
+            innerActiontimeline.gotoFrameAndPlay(innerStart, innerEnd, false);
+        }else if (ccs.InnerActionType.LoopAction == this._innerActionType){
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             innerActiontimeline.gotoFrameAndPlay(innerStart, innerEnd, true);
         }
     },
 
     setAnimationName: function(animationName){
+<<<<<<< HEAD
         this._animationName = animationName;
+=======
+        if(!this._enterWithName){
+            cc.log(" cannot set aniamtioname when enter frame with index. setEnterWithName true firstly!");
+        }else{
+            this._animationName = animationName;
+        }
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
     },
 
     setSingleFrameIndex: function(frameIndex){
@@ -1057,9 +1168,12 @@ ccs.InnerActionFrame = ccs.Frame.extend({
         var frame = new ccs.InnerActionFrame();
         frame.setInnerActionType(this._innerActionType);
         frame.setStartFrameIndex(this._startFrameIndex);
+<<<<<<< HEAD
         frame.setEnterWithName(this._enterWithName);
         frame.setAnimationName(this._animationName);
         frame.setSingleFrameIndex(this._singleFrameIndex);
+=======
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
 
         frame._cloneProperty(this);
 
@@ -1136,8 +1250,11 @@ ccs.ColorFrame = ccs.Frame.extend({
      * @param {ccs.ColorFrame} nextFrame
      */
     onEnter: function(nextFrame){
+<<<<<<< HEAD
         if(!this._node)
             return;
+=======
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         this._node.setColor(this._color);
         if(this._tween){
             var color = nextFrame._color;
@@ -1152,8 +1269,13 @@ ccs.ColorFrame = ccs.Frame.extend({
      * Each frame logic
      * @param {number} percent
      */
+<<<<<<< HEAD
     _onApply: function(percent){
         if (this._node && this._tween && (this._betweenAlpha !== 0 || this._betweenRed !== 0 || this._betweenGreen !== 0 || this._betweenBlue !== 0)){
+=======
+    apply: function(percent){
+        if (this._tween && (this._betweenAlpha !=0 || this._betweenRed != 0 || this._betweenGreen != 0 || this._betweenBlue != 0)){
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
 
             var color = cc.color(255, 255, 255);
             color.r = this._color.r + this._betweenRed   * percent;
@@ -1161,7 +1283,11 @@ ccs.ColorFrame = ccs.Frame.extend({
             color.b = this._color.b + this._betweenBlue  * percent;
 
             this._node.setColor(color);
+<<<<<<< HEAD
             if(this._alpha !== null){
+=======
+            if(this._alpha != null){
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                 var alpha = this._alpha + this._betweenAlpha * percent;
                 this._node.setOpacity(alpha);
             }
@@ -1225,19 +1351,30 @@ ccs.AlphaFrame = ccs.Frame.extend({
     },
 
     onEnter: function(nextFrame){
+<<<<<<< HEAD
         if(!this._node)
             return;
+=======
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         this._node.setOpacity(this._alpha);
         if(this._tween){
             this._betweenAlpha = nextFrame._alpha - this._alpha;
         }
     },
 
+<<<<<<< HEAD
     _onApply: function(percent){
         if(!this._node)
             return;
         var alpha = this._alpha + this._betweenAlpha * percent;
         this._node.setOpacity(alpha);
+=======
+    apply: function(percent){
+        if (this._tween){
+            var alpha = this._alpha + this._betweenAlpha * percent;
+            this._node.setOpacity(alpha);
+        }
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
     },
 
     /**
@@ -1386,6 +1523,7 @@ ccs.ZOrderFrame = ccs.Frame.extend({
  */
 ccs.ZOrderFrame.create = function(){
     return new ccs.ZOrderFrame();
+<<<<<<< HEAD
 };
 
 ccs.BlendFuncFrame = ccs.Frame.extend({
@@ -1405,4 +1543,6 @@ ccs.BlendFuncFrame = ccs.Frame.extend({
 
 ccs.BlendFuncFrame.create = function(){
     return new ccs.BlendFuncFrame();
+=======
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
 };

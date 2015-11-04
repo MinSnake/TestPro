@@ -181,7 +181,11 @@ cc.DrawNodeCanvas = cc.Node.extend(/** @lends cc.DrawNode# */{                  
      * @param {cc.Color} lineColor
      */
     drawRect: function (origin, destination, fillColor, lineWidth, lineColor) {
+<<<<<<< HEAD
         lineWidth = (lineWidth == null) ? this._lineWidth : lineWidth;
+=======
+        lineWidth = lineWidth || this._lineWidth;
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         lineColor = lineColor || this.getDrawColor();
         if(lineColor.a == null)
             lineColor.a = 255;
@@ -346,7 +350,11 @@ cc.DrawNodeCanvas = cc.Node.extend(/** @lends cc.DrawNode# */{                  
         for (var i = 0; i < segments + 1; i++) {
             var dt = i / segments;
             // border
+<<<<<<< HEAD
             if (dt === 1) {
+=======
+            if (dt == 1) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                 p = config.length - 1;
                 lt = 1;
             } else {
@@ -436,7 +444,11 @@ cc.DrawNodeCanvas = cc.Node.extend(/** @lends cc.DrawNode# */{                  
      * @param {cc.Color} color
      */
     drawPoly_: function (verts, fillColor, lineWidth, color) {
+<<<<<<< HEAD
         lineWidth = (lineWidth == null ) ? this._lineWidth : lineWidth;
+=======
+        lineWidth = lineWidth || this._lineWidth;
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         color = color || this.getDrawColor();
         if (color.a == null)
             color.a = 255;
@@ -554,7 +566,11 @@ cc.DrawNodeWebGL = cc.Node.extend({
     },
 
     drawRect: function (origin, destination, fillColor, lineWidth, lineColor) {
+<<<<<<< HEAD
         lineWidth = (lineWidth == null) ? this._lineWidth : lineWidth;
+=======
+        lineWidth = lineWidth || this._lineWidth;
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         lineColor = lineColor || this.getDrawColor();
         if (lineColor.a == null)
             lineColor.a = 255;
@@ -632,7 +648,11 @@ cc.DrawNodeWebGL = cc.Node.extend({
             var dt = i / segments;
 
             // border
+<<<<<<< HEAD
             if (dt === 1) {
+=======
+            if (dt == 1) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                 p = config.length - 1;
                 lt = 1;
             } else {
@@ -722,7 +742,11 @@ cc.DrawNodeWebGL = cc.Node.extend({
     },
 
     drawDots: function(points, radius,color) {
+<<<<<<< HEAD
         if(!points || points.length === 0)
+=======
+        if(!points || points.length == 0)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             return;
         color = color || this.getDrawColor();
         if (color.a == null)
@@ -789,7 +813,11 @@ cc.DrawNodeWebGL = cc.Node.extend({
             fillColor.a = 255;
         if (borderColor.a == null)
             borderColor.a = 255;
+<<<<<<< HEAD
         borderWidth = (borderWidth == null)? this._lineWidth : borderWidth;
+=======
+        borderWidth = borderWidth || this._lineWidth;
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         borderWidth *= 0.5;
         var c4bFillColor = {r: 0 | fillColor.r, g: 0 | fillColor.g, b: 0 | fillColor.b, a: 0 | fillColor.a};
         var c4bBorderColor = {r: 0 | borderColor.r, g: 0 | borderColor.g, b: 0 | borderColor.b, a: 0 | borderColor.a};
@@ -852,7 +880,11 @@ cc.DrawNodeWebGL = cc.Node.extend({
     },
 
     _drawSegments: function(verts, borderWidth, borderColor, closePoly){
+<<<<<<< HEAD
         borderWidth = (borderWidth == null) ? this._lineWidth : borderWidth;
+=======
+        borderWidth = borderWidth || this._lineWidth;
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         borderColor = borderColor || this._drawColor;
         if(borderColor.a == null)
             borderColor.a = 255;
@@ -911,7 +943,11 @@ cc.DrawNodeWebGL = cc.Node.extend({
     }
 });
 
+<<<<<<< HEAD
 cc.DrawNode = cc._renderType === cc._RENDER_TYPE_WEBGL ? cc.DrawNodeWebGL : cc.DrawNodeCanvas;
+=======
+cc.DrawNode = cc._renderType == cc._RENDER_TYPE_WEBGL ? cc.DrawNodeWebGL : cc.DrawNodeCanvas;
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
 
 /**
  * Creates a DrawNode

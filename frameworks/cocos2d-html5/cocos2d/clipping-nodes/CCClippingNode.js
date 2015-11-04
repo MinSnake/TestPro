@@ -189,7 +189,11 @@ cc.ClippingNode = cc.Node.extend(/** @lends cc.ClippingNode# */{
      * @param {cc.Node} stencil
      */
     setStencil: function (stencil) {
+<<<<<<< HEAD
         if(this._stencil === stencil)
+=======
+        if(this._stencil == stencil)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             return;
         this._renderCmd.setStencil(stencil);
     },

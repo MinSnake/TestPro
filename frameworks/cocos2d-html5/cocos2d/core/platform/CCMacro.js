@@ -460,7 +460,11 @@ cc.MIRRORED_REPEAT   = 0x8370;
  * @function
  */
 cc.checkGLErrorDebug = function () {
+<<<<<<< HEAD
     if (cc.renderMode === cc._RENDER_TYPE_WEBGL) {
+=======
+    if (cc.renderMode == cc._RENDER_TYPE_WEBGL) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         var _error = cc._renderContext.getError();
         if (_error) {
             cc.log(cc._LogInfos.checkGLErrorDebug, _error);
@@ -785,7 +789,11 @@ cc.arrayVerifyType = function (arr, type) {
  */
 cc.arrayRemoveObject = function (arr, delObj) {
     for (var i = 0, l = arr.length; i < l; i++) {
+<<<<<<< HEAD
         if (arr[i] === delObj) {
+=======
+        if (arr[i] == delObj) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             arr.splice(i, 1);
             break;
         }

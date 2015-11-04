@@ -26,17 +26,29 @@ ccs._load = (function(){
 
     /**
      * load file
+<<<<<<< HEAD
      * @param {String} file
      * @param {String} [type=] - ccui|node|action
      * @param {String} [path=] - Resource search path
      * @returns {*}
      */
     var load = function(file, type, path){
+=======
+     * @param file
+     * @param type - ccui|node|action
+     * @returns {*}
+     */
+    var load = function(file, type){
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
 
         var json = cc.loader.getRes(file);
 
         if(!json)
+<<<<<<< HEAD
             return cc.log("%s does not exist", file);
+=======
+            return cc.log("%s is not exists", file);
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         var ext = extname(file).toLocaleLowerCase();
         if(ext !== "json" && ext !== "exportjson")
             return cc.log("%s load error, must be json file", file);
@@ -60,19 +72,26 @@ ccs._load = (function(){
             return new cc.Node();
         }
         var version = json["version"] || json["Version"];
+<<<<<<< HEAD
         if(!version && json["armature_data"]){
             cc.warn("%s is armature. please use:", file);
             cc.warn("    ccs.armatureDataManager.addArmatureFileInfoAsync(%s);", file);
             cc.warn("    var armature = new ccs.Armature('name');");
             return new cc.Node();
         }
+=======
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         var currentParser = getParser(parse, version);
         if(!currentParser){
             cc.log("Can't find the parser : %s", file);
             return new cc.Node();
         }
 
+<<<<<<< HEAD
         return currentParser.parse(file, json, path) || null;
+=======
+        return currentParser.parse(file, json) || null;
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
     };
 
     var parser = {
@@ -177,17 +196,28 @@ ccs._parser = cc.Class.extend({
  *   action 1.* - 2.*
  *   scene 0.* - 1.*
  * @param {String} file
+<<<<<<< HEAD
  * @param {String} [path=] Resource path
  * @returns {{node: cc.Node, action: cc.Action}}
  */
 ccs.load = function(file, path){
+=======
+ * @returns {{node: cc.Node, action: cc.Action}}
+ */
+ccs.load = function(file){
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
     var object = {
         node: null,
         action: null
     };
 
+<<<<<<< HEAD
     object.node = ccs._load(file, null, path);
     object.action = ccs._load(file, "action", path);
+=======
+    object.node = ccs._load(file);
+    object.action = ccs._load(file, "action");
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
     if(object.action && object.action.tag === -1 && object.node)
         object.action.tag = object.node.tag;
     return object;
@@ -220,4 +250,8 @@ ccs.csLoader = {
     createNode: function(file){
         return ccs._load(file);
     }
+<<<<<<< HEAD
 };
+=======
+};
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b

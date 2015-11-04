@@ -38,17 +38,24 @@
         "src/TransitionsTest/TransitionsTest.js",
         "src/DrawPrimitivesTest/DrawPrimitivesTest.js",
         "src/ParticleTest/ParticleTest.js",
+<<<<<<< HEAD
         "src/Particle3DTest/Particle3DTest.js",
+=======
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         "src/ProgressActionsTest/ProgressActionsTest.js",
         "src/LayerTest/LayerTest.js",
         "src/SceneTest/SceneTest.js",
         "src/SpineTest/SpineTest.js",
+<<<<<<< HEAD
         "src/GafTest/GafTest.js",
         "src/SpriteTest/SpriteTest.js",
         "src/Sprite3DTest/Sprite3DTest.js",
         "src/LightTest/LightTest.js",
         "src/BillBoardTest/BillBoardTest.js",
         "src/Camera3DTest/Camera3DTest.js",
+=======
+        "src/SpriteTest/SpriteTest.js",
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         "src/TextureCacheTest/TextureCacheTest.js",
         "src/CocosDenshionTest/CocosDenshionTest.js",
         "src/CocosNodeTest/CocosNodeTest.js",
@@ -115,6 +122,10 @@
         "src/ExtensionsTest/S9SpriteTest/S9SpriteTest.js",
         "src/ExtensionsTest/NetworkTest/WebSocketTest.js",
         "src/ExtensionsTest/NetworkTest/SocketIOTest.js",
+<<<<<<< HEAD
+=======
+        "src/ExtensionsTest/CocostudioActionTimelineTest/ActionTimelineTestScene.js",
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         "src/ExtensionsTest/PluginXTest/PluginXTest.js",
         "src/ExtensionsTest/PluginXTest/PluginXTestsManager.js",
         "src/ExtensionsTest/PluginXTest/IOSIAPTest.js",
@@ -177,13 +188,20 @@
         "src/CocoStudioTest/SceneTest/SceneEditorTest.js",
         "src/CocoStudioTest/CocoStudioTest.js",
         "src/XHRTest/XHRTest.js",
+<<<<<<< HEAD
         "src/XHRTest/XHRArrayBufferTest.js",
+=======
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
 
         "src/Box2dTest/Box2dTest.js",
         "src/ChipmunkTest/ChipmunkTest.js",
 
         "src/Presentation/Presentation.js",
+<<<<<<< HEAD
         "src/ReflectionTest/ReflectionTest.js",
         "src/TerrainTest/TerrainTest.js"
+=======
+        "src/ReflectionTest/ReflectionTest.js"
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
     ]
 }

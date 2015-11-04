@@ -254,7 +254,11 @@ cc.TableView = cc.ScrollView.extend(/** @lends cc.TableView# */{
             locOffset.y = this.getContainer().getContentSize().height - locOffset.y;
 
         var index = this.__indexFromOffset(locOffset);
+<<<<<<< HEAD
         if (index !== -1) {
+=======
+        if (index != -1) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             index = Math.max(0, index);
             if (index > maxIdx)
                 index = cc.INVALID_INDEX;
@@ -328,8 +332,13 @@ cc.TableView = cc.ScrollView.extend(/** @lends cc.TableView# */{
 
         this.setContentSize(size);
 
+<<<<<<< HEAD
         if (this._oldDirection !== this._direction) {
             if (this._direction === cc.SCROLLVIEW_DIRECTION_HORIZONTAL) {
+=======
+        if (this._oldDirection != this._direction) {
+            if (this._direction == cc.SCROLLVIEW_DIRECTION_HORIZONTAL) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                 this.setContentOffset(cc.p(0, 0));
             } else {
                 this.setContentOffset(cc.p(0, this.minContainerOffset().y));
@@ -347,7 +356,11 @@ cc.TableView = cc.ScrollView.extend(/** @lends cc.TableView# */{
         cc.arrayRemoveObject(this._indices, cell.getIdx());
 
         cell.reset();
+<<<<<<< HEAD
         if (cell.getParent() === this.getContainer()) {
+=======
+        if (cell.getParent() == this.getContainer()) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             this.getContainer().removeChild(cell, true);
         }
     },
@@ -359,12 +372,20 @@ cc.TableView = cc.ScrollView.extend(/** @lends cc.TableView# */{
     },
 
     _addCellIfNecessary:function (cell) {
+<<<<<<< HEAD
         if (cell.getParent() !== this.getContainer()) {
+=======
+        if (cell.getParent() != this.getContainer()) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             this.getContainer().addChild(cell);
         }
         this._cellsUsed.insertSortedObject(cell);
         var locIndices = this._indices, addIdx = cell.getIdx();
+<<<<<<< HEAD
         if(locIndices.indexOf(addIdx) === -1){
+=======
+        if(locIndices.indexOf(addIdx) == -1){
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             locIndices.push(addIdx);
             //sort
             locIndices.sort(function(a,b){return a-b;});
@@ -396,7 +417,11 @@ cc.TableView = cc.ScrollView.extend(/** @lends cc.TableView# */{
      * determines how cell is ordered and filled in the view.
      */
     setVerticalFillOrder:function (fillOrder) {
+<<<<<<< HEAD
         if (this._vOrdering !== fillOrder) {
+=======
+        if (this._vOrdering != fillOrder) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             this._vOrdering = fillOrder;
             if (this._cellsUsed.count() > 0) {
                 this.reloadData();
@@ -428,7 +453,11 @@ cc.TableView = cc.ScrollView.extend(/** @lends cc.TableView# */{
      * @param idx index to find a cell
      */
     updateCellAtIndex:function (idx) {
+<<<<<<< HEAD
         if (idx === cc.INVALID_INDEX || idx > this._dataSource.numberOfCellsInTableView(this) - 1)
+=======
+        if (idx == cc.INVALID_INDEX || idx > this._dataSource.numberOfCellsInTableView(this) - 1)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             return;
 
         var cell = this.cellAtIndex(idx);
@@ -446,7 +475,11 @@ cc.TableView = cc.ScrollView.extend(/** @lends cc.TableView# */{
      * @param idx location to insert
      */
     insertCellAtIndex:function (idx) {
+<<<<<<< HEAD
         if (idx === cc.INVALID_INDEX || idx > this._dataSource.numberOfCellsInTableView(this) - 1)
+=======
+        if (idx == cc.INVALID_INDEX || idx > this._dataSource.numberOfCellsInTableView(this) - 1)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             return;
 
         var newIdx, locCellsUsed = this._cellsUsed;
@@ -474,7 +507,11 @@ cc.TableView = cc.ScrollView.extend(/** @lends cc.TableView# */{
      * @param idx index to find a cell
      */
     removeCellAtIndex:function (idx) {
+<<<<<<< HEAD
         if (idx === cc.INVALID_INDEX || idx > this._dataSource.numberOfCellsInTableView(this) - 1)
+=======
+        if (idx == cc.INVALID_INDEX || idx > this._dataSource.numberOfCellsInTableView(this) - 1)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             return;
 
         var cell = this.cellAtIndex(idx);
@@ -509,7 +546,11 @@ cc.TableView = cc.ScrollView.extend(/** @lends cc.TableView# */{
 
             locCellsFreed.addObject(cell);
             cell.reset();
+<<<<<<< HEAD
             if (cell.getParent() === locContainer)
+=======
+            if (cell.getParent() == locContainer)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                 locContainer.removeChild(cell, true);
         }
 
@@ -545,7 +586,11 @@ cc.TableView = cc.ScrollView.extend(/** @lends cc.TableView# */{
      */
     cellAtIndex:function (idx) {
         var i = this._indices.indexOf(idx);
+<<<<<<< HEAD
         if (i === -1)
+=======
+        if (i == -1)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             return null;
         return this._cellsUsed.objectWithObjectID(idx);
     },
@@ -556,7 +601,11 @@ cc.TableView = cc.ScrollView.extend(/** @lends cc.TableView# */{
         if (0 === countOfItems)
             return;
 
+<<<<<<< HEAD
         if (this._tableViewDelegate !== null && this._tableViewDelegate.scrollViewDidScroll)
+=======
+        if (this._tableViewDelegate != null && this._tableViewDelegate.scrollViewDidScroll)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             this._tableViewDelegate.scrollViewDidScroll(this);
 
         var  idx = 0, locViewSize = this._viewSize, locContainer = this.getContainer();
@@ -611,7 +660,11 @@ cc.TableView = cc.ScrollView.extend(/** @lends cc.TableView# */{
 
         var locIndices = this._indices;
         for (var i = startIdx; i <= endIdx; i++) {
+<<<<<<< HEAD
             if (locIndices.indexOf(i) !== -1)
+=======
+            if (locIndices.indexOf(i) != -1)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                 continue;
             this.updateCellAtIndex(i);
         }
@@ -631,7 +684,11 @@ cc.TableView = cc.ScrollView.extend(/** @lends cc.TableView# */{
             bb.x = tmpOrigin.x;
             bb.y = tmpOrigin.y;
             var locTableViewDelegate = this._tableViewDelegate;
+<<<<<<< HEAD
             if (cc.rectContainsPoint(bb, touch.getLocation()) && locTableViewDelegate !== null){
+=======
+            if (cc.rectContainsPoint(bb, touch.getLocation()) && locTableViewDelegate != null){
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                 if(locTableViewDelegate.tableCellUnhighlight)
                     locTableViewDelegate.tableCellUnhighlight(this, this._touchedCell);
                 if(locTableViewDelegate.tableCellTouched)
@@ -659,10 +716,17 @@ cc.TableView = cc.ScrollView.extend(/** @lends cc.TableView# */{
             else
                 this._touchedCell  = this.cellAtIndex(index);
 
+<<<<<<< HEAD
             if (this._touchedCell && this._tableViewDelegate !== null && this._tableViewDelegate.tableCellHighlight)
                 this._tableViewDelegate.tableCellHighlight(this, this._touchedCell);
         } else if(this._touchedCell) {
             if(this._tableViewDelegate !== null && this._tableViewDelegate.tableCellUnhighlight)
+=======
+            if (this._touchedCell && this._tableViewDelegate != null && this._tableViewDelegate.tableCellHighlight)
+                this._tableViewDelegate.tableCellHighlight(this, this._touchedCell);
+        } else if(this._touchedCell) {
+            if(this._tableViewDelegate != null && this._tableViewDelegate.tableCellUnhighlight)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                 this._tableViewDelegate.tableCellUnhighlight(this, this._touchedCell);
             this._touchedCell = null;
         }
@@ -674,7 +738,11 @@ cc.TableView = cc.ScrollView.extend(/** @lends cc.TableView# */{
         cc.ScrollView.prototype.onTouchMoved.call(this, touch, event);
 
         if (this._touchedCell && this.isTouchMoved()) {
+<<<<<<< HEAD
             if(this._tableViewDelegate !== null && this._tableViewDelegate.tableCellUnhighlight)
+=======
+            if(this._tableViewDelegate != null && this._tableViewDelegate.tableCellUnhighlight)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                 this._tableViewDelegate.tableCellUnhighlight(this, this._touchedCell);
             this._touchedCell = null;
         }
@@ -684,7 +752,11 @@ cc.TableView = cc.ScrollView.extend(/** @lends cc.TableView# */{
         cc.ScrollView.prototype.onTouchCancelled.call(this, touch, event);
 
         if (this._touchedCell) {
+<<<<<<< HEAD
             if(this._tableViewDelegate !== null && this._tableViewDelegate.tableCellUnhighlight)
+=======
+            if(this._tableViewDelegate != null && this._tableViewDelegate.tableCellUnhighlight)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                 this._tableViewDelegate.tableCellUnhighlight(this, this._touchedCell);
             this._touchedCell = null;
         }

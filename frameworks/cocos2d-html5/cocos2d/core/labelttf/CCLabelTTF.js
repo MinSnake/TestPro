@@ -94,10 +94,18 @@ cc.LabelTTF = cc.Sprite.extend(/** @lends cc.LabelTTF# */{
     _lineWidths: null,
     _className: "LabelTTF",
 
+<<<<<<< HEAD
     //for web
     _fontStyle: "normal",
     _fontWeight: "normal",
     _lineHeight: "normal",
+=======
+    _lineHeight: 0,
+
+    //for web
+    _fontStyle: "normal",
+    _fontWeight: "normal",
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
 
     /**
      * Initializes the cc.LabelTTF with a font name, alignment, dimension and font size, do not call it by yourself,
@@ -185,9 +193,13 @@ cc.LabelTTF = cc.Sprite.extend(/** @lends cc.LabelTTF# */{
     },
 
     getLineHeight: function () {
+<<<<<<< HEAD
         return !this._lineHeight || this._lineHeight.charAt ?
             this._renderCmd._getFontClientHeight() :
             this._lineHeight || this._renderCmd._getFontClientHeight();
+=======
+        return this._lineHeight || this._renderCmd._getFontClientHeight();
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
     },
 
     setLineHeight: function (lineHeight) {
@@ -300,17 +312,29 @@ cc.LabelTTF = cc.Sprite.extend(/** @lends cc.LabelTTF# */{
             this._shadowEnabled = true;
 
         var locShadowOffset = this._shadowOffset;
+<<<<<<< HEAD
         if (locShadowOffset && (locShadowOffset.x !== shadowOffsetX) || (locShadowOffset._y !== shadowOffsetY)) {
+=======
+        if (locShadowOffset && (locShadowOffset.x != shadowOffsetX) || (locShadowOffset._y != shadowOffsetY)) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             locShadowOffset.x = shadowOffsetX;
             locShadowOffset.y = shadowOffsetY;
         }
 
+<<<<<<< HEAD
         if (this._shadowOpacity !== shadowOpacity) {
+=======
+        if (this._shadowOpacity != shadowOpacity) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             this._shadowOpacity = shadowOpacity;
         }
         this._renderCmd._setColorsString();
 
+<<<<<<< HEAD
         if (this._shadowBlur !== shadowBlur)
+=======
+        if (this._shadowBlur != shadowBlur)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             this._shadowBlur = shadowBlur;
         this._setUpdateTextureDirty();
     },
@@ -339,7 +363,11 @@ cc.LabelTTF = cc.Sprite.extend(/** @lends cc.LabelTTF# */{
         if (false === this._shadowEnabled)
             this._shadowEnabled = true;
 
+<<<<<<< HEAD
         if (this._shadowOffset.x !== x) {
+=======
+        if (this._shadowOffset.x != x) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             this._shadowOffset.x = x;
             this._setUpdateTextureDirty();
         }
@@ -352,7 +380,11 @@ cc.LabelTTF = cc.Sprite.extend(/** @lends cc.LabelTTF# */{
         if (false === this._shadowEnabled)
             this._shadowEnabled = true;
 
+<<<<<<< HEAD
         if (this._shadowOffset._y !== y) {
+=======
+        if (this._shadowOffset._y != y) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             this._shadowOffset._y = y;
             this._setUpdateTextureDirty();
         }
@@ -365,7 +397,11 @@ cc.LabelTTF = cc.Sprite.extend(/** @lends cc.LabelTTF# */{
         if (false === this._shadowEnabled)
             this._shadowEnabled = true;
 
+<<<<<<< HEAD
         if (this._shadowOffset.x !== offset.x || this._shadowOffset.y !== offset.y) {
+=======
+        if (this._shadowOffset.x != offset.x || this._shadowOffset.y != offset.y) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             this._shadowOffset.x = offset.x;
             this._shadowOffset.y = offset.y;
             this._setUpdateTextureDirty();
@@ -379,7 +415,11 @@ cc.LabelTTF = cc.Sprite.extend(/** @lends cc.LabelTTF# */{
         if (false === this._shadowEnabled)
             this._shadowEnabled = true;
 
+<<<<<<< HEAD
         if (this._shadowOpacity !== shadowOpacity) {
+=======
+        if (this._shadowOpacity != shadowOpacity) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             this._shadowOpacity = shadowOpacity;
             this._renderCmd._setColorsString();
             this._setUpdateTextureDirty();
@@ -393,7 +433,11 @@ cc.LabelTTF = cc.Sprite.extend(/** @lends cc.LabelTTF# */{
         if (false === this._shadowEnabled)
             this._shadowEnabled = true;
 
+<<<<<<< HEAD
         if (this._shadowBlur !== shadowBlur) {
+=======
+        if (this._shadowBlur != shadowBlur) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             this._shadowBlur = shadowBlur;
             this._setUpdateTextureDirty();
         }
@@ -477,7 +521,11 @@ cc.LabelTTF = cc.Sprite.extend(/** @lends cc.LabelTTF# */{
      */
     setFontFillColor: function (fillColor) {
         var locTextFillColor = this._textFillColor;
+<<<<<<< HEAD
         if (locTextFillColor.r !== fillColor.r || locTextFillColor.g !== fillColor.g || locTextFillColor.b !== fillColor.b) {
+=======
+        if (locTextFillColor.r != fillColor.r || locTextFillColor.g != fillColor.g || locTextFillColor.b != fillColor.b) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             locTextFillColor.r = fillColor.r;
             locTextFillColor.g = fillColor.g;
             locTextFillColor.b = fillColor.b;
@@ -505,6 +553,7 @@ cc.LabelTTF = cc.Sprite.extend(/** @lends cc.LabelTTF# */{
 
         this._fontName = textDefinition.fontName;
         this._fontSize = textDefinition.fontSize || 12;
+<<<<<<< HEAD
 
         if(textDefinition.lineHeight)
             this._lineHeight = textDefinition.lineHeight
@@ -513,6 +562,9 @@ cc.LabelTTF = cc.Sprite.extend(/** @lends cc.LabelTTF# */{
 
         this._renderCmd._setFontStyle(textDefinition);
 
+=======
+        this._renderCmd._setFontStyle(this._fontName, this._fontSize, this._fontStyle, this._fontWeight);
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
 
         // shadow
         if (textDefinition.shadowEnabled)
@@ -584,7 +636,11 @@ cc.LabelTTF = cc.Sprite.extend(/** @lends cc.LabelTTF# */{
      */
     setString: function (text) {
         text = String(text);
+<<<<<<< HEAD
         if (this._originalText !== text) {
+=======
+        if (this._originalText != text) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             this._originalText = text + "";
 
             this._updateString();
@@ -617,7 +673,11 @@ cc.LabelTTF = cc.Sprite.extend(/** @lends cc.LabelTTF# */{
      * @param {cc.VERTICAL_TEXT_ALIGNMENT_TOP|cc.VERTICAL_TEXT_ALIGNMENT_CENTER|cc.VERTICAL_TEXT_ALIGNMENT_BOTTOM} verticalAlignment
      */
     setVerticalAlignment: function (verticalAlignment) {
+<<<<<<< HEAD
         if (verticalAlignment !== this._vAlignment) {
+=======
+        if (verticalAlignment != this._vAlignment) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             this._vAlignment = verticalAlignment;
 
             // Force update
@@ -638,11 +698,19 @@ cc.LabelTTF = cc.Sprite.extend(/** @lends cc.LabelTTF# */{
         } else
             width = dim;
 
+<<<<<<< HEAD
         if (width !== this._dimensions.width || height !== this._dimensions.height) {
             this._dimensions.width = width;
             this._dimensions.height = height;
             this._updateString();
             // Force update
+=======
+        if (width != this._dimensions.width || height != this._dimensions.height) {
+            this._dimensions.width = width;
+            this._dimensions.height = height;
+            this._updateString();
+            // Force udpate
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             this._setUpdateTextureDirty();
         }
     },
@@ -651,10 +719,17 @@ cc.LabelTTF = cc.Sprite.extend(/** @lends cc.LabelTTF# */{
         return this._dimensions.width;
     },
     _setBoundingWidth: function (width) {
+<<<<<<< HEAD
         if (width !== this._dimensions.width) {
             this._dimensions.width = width;
             this._updateString();
             // Force update
+=======
+        if (width != this._dimensions.width) {
+            this._dimensions.width = width;
+            this._updateString();
+            // Force udpate
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             this._setUpdateTextureDirty();
         }
     },
@@ -663,10 +738,17 @@ cc.LabelTTF = cc.Sprite.extend(/** @lends cc.LabelTTF# */{
         return this._dimensions.height;
     },
     _setBoundingHeight: function (height) {
+<<<<<<< HEAD
         if (height !== this._dimensions.height) {
             this._dimensions.height = height;
             this._updateString();
             // Force update
+=======
+        if (height != this._dimensions.height) {
+            this._dimensions.height = height;
+            this._updateString();
+            // Force udpate
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             this._setUpdateTextureDirty();
         }
     },
@@ -689,7 +771,11 @@ cc.LabelTTF = cc.Sprite.extend(/** @lends cc.LabelTTF# */{
      * @param {String} fontName
      */
     setFontName: function (fontName) {
+<<<<<<< HEAD
         if (this._fontName && this._fontName !== fontName) {
+=======
+        if (this._fontName && this._fontName != fontName) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             this._fontName = fontName;
             this._renderCmd._setFontStyle(this._fontName, this._fontSize, this._fontStyle, this._fontWeight);
             // Force update
@@ -747,7 +833,11 @@ cc.LabelTTF = cc.Sprite.extend(/** @lends cc.LabelTTF# */{
 
     //For web only
     _setFontStyle: function(fontStyle){
+<<<<<<< HEAD
         if (this._fontStyle !== fontStyle) {
+=======
+        if (this._fontStyle != fontStyle) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             this._fontStyle = fontStyle;
             this._renderCmd._setFontStyle(this._fontName, this._fontSize, this._fontStyle, this._fontWeight);
             this._setUpdateTextureDirty();
@@ -759,7 +849,11 @@ cc.LabelTTF = cc.Sprite.extend(/** @lends cc.LabelTTF# */{
     },
 
     _setFontWeight: function(fontWeight){
+<<<<<<< HEAD
         if (this._fontWeight !== fontWeight) {
+=======
+        if (this._fontWeight != fontWeight) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             this._fontWeight = fontWeight;
             this._renderCmd._setFontStyle(this._fontName, this._fontSize, this._fontStyle, this._fontWeight);
             this._setUpdateTextureDirty();
@@ -822,6 +916,7 @@ document.body ?
     }, false);
 
 cc.LabelTTF.__getFontHeightByDiv = function (fontName, fontSize) {
+<<<<<<< HEAD
 
     if(fontName instanceof cc.FontDefinition){
         /** @type cc.FontDefinition */
@@ -842,6 +937,8 @@ cc.LabelTTF.__getFontHeightByDiv = function (fontName, fontSize) {
     }
 
     //Default
+=======
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
     var clientHeight = cc.LabelTTF.__fontHeightCache[fontName + "." + fontSize];
     if (clientHeight > 0) return clientHeight;
     var labelDiv = cc.LabelTTF.__labelHeightDiv;
@@ -852,7 +949,10 @@ cc.LabelTTF.__getFontHeightByDiv = function (fontName, fontSize) {
     cc.LabelTTF.__fontHeightCache[fontName + "." + fontSize] = clientHeight;
     labelDiv.innerHTML = "";
     return clientHeight;
+<<<<<<< HEAD
 
+=======
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
 };
 
 cc.LabelTTF.__fontHeightCache = {};

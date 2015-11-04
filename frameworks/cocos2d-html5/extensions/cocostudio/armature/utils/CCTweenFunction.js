@@ -28,6 +28,7 @@
  * @type Object
  */
 ccs.TweenType = {
+<<<<<<< HEAD
     CUSTOM_EASING: -1,
     LINEAR: 0,
 
@@ -72,6 +73,52 @@ ccs.TweenType = {
     BOUNCE_EASEINOUT: 30,
 
     TWEEN_EASING_MAX: 10000
+=======
+    customEasing: -1,
+    linear: 0,
+
+    sineEaseIn: 1,
+    sineEaseOut: 2,
+    sineEaseInOut: 3,
+
+    quadEaseIn: 4,
+    quadEaseOut: 5,
+    quadEaseInOut: 6,
+
+    cubicEaseIn: 7,
+    cubicEaseOut: 8,
+    cubicEaseInOut: 9,
+
+    quartEaseIn: 10,
+    quartEaseOut: 11,
+    quartEaseInOut: 12,
+
+    quintEaseIn: 13,
+    quintEaseOut: 14,
+    quintEaseInOut: 15,
+
+    expoEaseIn: 16,
+    expoEaseOut: 17,
+    expoEaseInOut: 18,
+
+    circEaseIn: 19,
+    eircEaseOut: 20,
+    circEaseInOut: 21,
+
+    elasticEaseIn: 22,
+    elasticEaseOut: 23,
+    elasticEaseInOut: 24,
+
+    backEaseIn: 25,
+    backEaseOut: 26,
+    backEaseInOut: 27,
+
+    bounceEaseIn: 28,
+    bounceEaseOut: 29,
+    bounceEaseInOut: 30,
+
+    tweenEasingMax: 10000
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
 };
 
 ccs.TweenFunction = ccs.TweenFunction || ccs.Class.extend({});
@@ -84,6 +131,7 @@ ccs.TweenFunction.tweenTo = function (time, type, easingParam) {
     var delta = 0;
 
     switch (type) {
+<<<<<<< HEAD
         case ccs.TweenType.CUSTOM_EASING:
             delta = this.customEase(time, easingParam);
             break;
@@ -161,20 +209,107 @@ ccs.TweenFunction.tweenTo = function (time, type, easingParam) {
             break;
 
         case ccs.TweenType.ELASTIC_EASEIN:
+=======
+        case ccs.TweenType.customEasing:
+            delta = this.customEase(time, easingParam);
+            break;
+        case ccs.TweenType.linear:
+            delta = this.linear(time);
+            break;
+        case ccs.TweenType.sineEaseIn:
+            delta = this.sineEaseIn(time);
+            break;
+        case ccs.TweenType.sineEaseOut:
+            delta = this.sineEaseOut(time);
+            break;
+        case ccs.TweenType.sineEaseInOut:
+            delta = this.sineEaseInOut(time);
+            break;
+
+        case ccs.TweenType.quadEaseIn:
+            delta = this.quadEaseIn(time);
+            break;
+        case ccs.TweenType.quadEaseOut:
+            delta = this.quadEaseOut(time);
+            break;
+        case ccs.TweenType.quadEaseInOut:
+            delta = this.quadEaseInOut(time);
+            break;
+
+        case ccs.TweenType.cubicEaseIn:
+            delta = this.cubicEaseIn(time);
+            break;
+        case ccs.TweenType.cubicEaseOut:
+            delta = this.cubicEaseOut(time);
+            break;
+        case ccs.TweenType.cubicEaseInOut:
+            delta = this.cubicEaseInOut(time);
+            break;
+
+        case ccs.TweenType.quartEaseIn:
+            delta = this.quartEaseIn(time);
+            break;
+        case ccs.TweenType.quartEaseOut:
+            delta = this.quartEaseOut(time);
+            break;
+        case ccs.TweenType.quartEaseInOut:
+            delta = this.quartEaseInOut(time);
+            break;
+
+        case ccs.TweenType.quintEaseIn:
+            delta = this.quintEaseIn(time);
+            break;
+        case ccs.TweenType.quintEaseOut:
+            delta = this.quintEaseOut(time);
+            break;
+        case ccs.TweenType.quintEaseInOut:
+            delta = this.quintEaseInOut(time);
+            break;
+
+        case ccs.TweenType.expoEaseIn:
+            delta = this.expoEaseIn(time);
+            break;
+        case ccs.TweenType.expoEaseOut:
+            delta = this.expoEaseOut(time);
+            break;
+        case ccs.TweenType.expoEaseInOut:
+            delta = this.expoEaseInOut(time);
+            break;
+
+        case ccs.TweenType.circEaseIn:
+            delta = this.circEaseIn(time);
+            break;
+        case ccs.TweenType.eircEaseOut:
+            delta = this.circEaseOut(time);
+            break;
+        case ccs.TweenType.circEaseInOut:
+            delta = this.circEaseInOut(time);
+            break;
+
+        case ccs.TweenType.elasticEaseIn:
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             var period = 0.3;
             if(null != easingParam && easingParam.length > 0){
                 period = easingParam[0];
             }
             delta = this.elasticEaseIn(time, period);
             break;
+<<<<<<< HEAD
         case ccs.TweenType.ELASTIC_EASEOUT:
+=======
+        case ccs.TweenType.elasticEaseOut:
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             var period = 0.3;
             if(null != easingParam && easingParam.length > 0){
                 period = easingParam[0];
             }
             delta = this.elasticEaseOut(time, period);
             break;
+<<<<<<< HEAD
         case ccs.TweenType.ELASTIC_EASEINOUT:
+=======
+        case ccs.TweenType.elasticEaseInOut:
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             var period = 0.3;
             if(null != easingParam && easingParam.length > 0){
                 period = easingParam[0];
@@ -182,6 +317,7 @@ ccs.TweenFunction.tweenTo = function (time, type, easingParam) {
             delta = this.elasticEaseInOut(time, period);
             break;
 
+<<<<<<< HEAD
         case ccs.TweenType.BACK_EASEIN:
             delta = this.backEaseIn(time);
             break;
@@ -199,6 +335,25 @@ ccs.TweenFunction.tweenTo = function (time, type, easingParam) {
             delta = this.bounceEaseOut(time);
             break;
         case ccs.TweenType.BOUNCE_EASEINOUT:
+=======
+        case ccs.TweenType.backEaseIn:
+            delta = this.backEaseIn(time);
+            break;
+        case ccs.TweenType.backEaseOut:
+            delta = this.backEaseOut(time);
+            break;
+        case ccs.TweenType.backEaseInOut:
+            delta = this.backEaseInOut(time);
+            break;
+
+        case ccs.TweenType.bounceEaseIn:
+            delta = this.bounceEaseIn(time);
+            break;
+        case ccs.TweenType.bounceEaseOut:
+            delta = this.bounceEaseOut(time);
+            break;
+        case ccs.TweenType.bounceEaseInOut:
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             delta = this.bounceEaseInOut(time);
             break;
 
@@ -298,10 +453,17 @@ ccs.TweenFunction.quintEaseInOut = function (time) {
 
 // Expo Ease
 ccs.TweenFunction.expoEaseIn = function (time) {
+<<<<<<< HEAD
     return time === 0 ? 0 : Math.pow(2, 10 * (time - 1)) - 0.001;
 };
 ccs.TweenFunction.expoEaseOut = function (time) {
     return time === 1 ? 1 : (-Math.pow(2, -10 * time) + 1);
+=======
+    return time == 0 ? 0 : Math.pow(2, 10 * (time - 1)) - 0.001;
+};
+ccs.TweenFunction.expoEaseOut = function (time) {
+    return time == 1 ? 1 : (-Math.pow(2, -10 * time) + 1);
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
 };
 ccs.TweenFunction.expoEaseInOut = function (time) {
     time /= 0.5;
@@ -342,7 +504,11 @@ ccs.TweenFunction.elasticEaseIn = function (time, easingParam) {
     }
 
     var newT = 0;
+<<<<<<< HEAD
     if (time === 0 || time === 1) {
+=======
+    if (time == 0 || time == 1) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         newT = time;
     }
     else {
@@ -361,7 +527,11 @@ ccs.TweenFunction.elasticEaseOut = function (time, easingParam) {
     }
 
     var newT = 0;
+<<<<<<< HEAD
     if (time === 0 || time === 1) {
+=======
+    if (time == 0 || time == 1) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         newT = time;
     }
     else {
@@ -379,7 +549,11 @@ ccs.TweenFunction.elasticEaseInOut = function (time, easingParam) {
     }
 
     var newT = 0;
+<<<<<<< HEAD
     if (time === 0 || time === 1) {
+=======
+    if (time == 0 || time == 1) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         newT = time;
     }
     else {

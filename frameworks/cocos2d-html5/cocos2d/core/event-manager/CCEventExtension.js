@@ -111,7 +111,11 @@ cc._EventListenerKeyboard = cc.EventListener.extend({
     },
 
     checkAvailable: function () {
+<<<<<<< HEAD
         if (this.onKeyPressed === null && this.onKeyReleased === null) {
+=======
+        if (this.onKeyPressed == null && this.onKeyReleased == null) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             cc.log(cc._LogInfos._EventListenerKeyboard_checkAvailable);
             return false;
         }

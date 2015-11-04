@@ -242,7 +242,10 @@ cc.Node.RenderCmd.prototype = {
         cc.Node.RenderCmd.call(this, renderable);
         this._cachedParent = null;
         this._cacheDirty = false;
+<<<<<<< HEAD
 
+=======
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
     };
 
     var proto = cc.Node.CanvasRenderCmd.prototype = Object.create(cc.Node.RenderCmd.prototype);
@@ -252,7 +255,11 @@ cc.Node.RenderCmd.prototype = {
         // transform for canvas
         var t = this.getNodeToParentTransform(),
             worldT = this._worldTransform;         //get the world transform
+<<<<<<< HEAD
         this._cacheDirty = true;
+=======
+
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         if (parentCmd) {
             var pt = parentCmd._worldTransform;
             // cc.AffineTransformConcat is incorrect at get world transform
@@ -261,8 +268,16 @@ cc.Node.RenderCmd.prototype = {
             worldT.c = t.c * pt.a + t.d * pt.c;                               //c
             worldT.d = t.c * pt.b + t.d * pt.d;                               //d
 
+<<<<<<< HEAD
             worldT.tx = pt.a * t.tx + pt.c * t.ty + pt.tx;
             worldT.ty = pt.d * t.ty + pt.ty + pt.b * t.tx;
+=======
+            var plt = parentCmd._transform;
+            var xOffset = -(plt.b + plt.c) * t.ty;
+            var yOffset = -(plt.b + plt.c) * t.tx;
+            worldT.tx = (t.tx * pt.a + t.ty * pt.c + pt.tx + xOffset);        //tx
+            worldT.ty = (t.tx * pt.b + t.ty * pt.d + pt.ty + yOffset);		  //ty
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         } else {
             worldT.a = t.a;
             worldT.b = t.b;
@@ -299,6 +314,7 @@ cc.Node.RenderCmd.prototype = {
             t.ty = node._position.y;
 
             // rotation Cos and Sin
+<<<<<<< HEAD
             var a = 1, b = 0,
                 c = 0, d = 1;
             if (node._rotationX) {
@@ -316,6 +332,19 @@ cc.Node.RenderCmd.prototype = {
             t.b = b;
             t.c = c;
             t.d = d;
+=======
+            var Cos = 1, Sin = 0;
+            if (node._rotationX) {
+                var rotationRadiansX = node._rotationX * 0.017453292519943295;  //0.017453292519943295 = (Math.PI / 180);   for performance
+                Cos = Math.cos(rotationRadiansX);
+                Sin = Math.sin(rotationRadiansX);
+            }
+
+            // base abcd
+            t.a = t.d = Cos;
+            t.b = -Sin;
+            t.c = Sin;
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
 
             var lScaleX = node._scaleX, lScaleY = node._scaleY;
             var appX = this._anchorPointInPoints.x, appY = this._anchorPointInPoints.y;
@@ -325,6 +354,7 @@ cc.Node.RenderCmd.prototype = {
             var sx = (lScaleX < 0.000001 && lScaleX > -0.000001) ? 0.000001 : lScaleX,
                 sy = (lScaleY < 0.000001 && lScaleY > -0.000001) ? 0.000001 : lScaleY;
 
+<<<<<<< HEAD
             // scale
             if (lScaleX !== 1 || lScaleY !== 1) {
                 a = t.a *= sx;
@@ -333,6 +363,8 @@ cc.Node.RenderCmd.prototype = {
                 d = t.d *= sy;
             }
 
+=======
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             // skew
             if (node._skewX || node._skewY) {
                 // offset the anchorpoint
@@ -342,6 +374,7 @@ cc.Node.RenderCmd.prototype = {
                     skx = 99999999;
                 if (sky === Infinity)
                     sky = 99999999;
+<<<<<<< HEAD
                 var xx = appY * skx;
                 var yy = appX * sky;
                 t.a = a - c * sky;
@@ -355,6 +388,29 @@ cc.Node.RenderCmd.prototype = {
             // adjust anchorPoint
             t.tx -= a * appX + c * appY;
             t.ty -= b * appX + d * appY;
+=======
+                var xx = appY * skx * sx;
+                var yy = appX * sky * sy;
+                t.a = Cos + -Sin * sky;
+                t.b = Cos * skx + -Sin;
+                t.c = Sin + Cos * sky;
+                t.d = Sin * skx + Cos;
+                t.tx += Cos * xx + -Sin * yy;
+                t.ty += Sin * xx + Cos * yy;
+            }
+
+            // scale
+            if (lScaleX !== 1 || lScaleY !== 1) {
+                t.a *= sx;
+                t.c *= sx;
+                t.b *= sy;
+                t.d *= sy;
+            }
+
+            // adjust anchorPoint
+            t.tx += Cos * -appX * sx + -Sin * appY * sy;
+            t.ty -= Sin * -appX * sx + Cos * appY * sy;
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
 
             // if ignore anchorPoint
             if (node._ignoreAnchorPointForPosition) {
@@ -362,8 +418,15 @@ cc.Node.RenderCmd.prototype = {
                 t.ty += appY;
             }
 
+<<<<<<< HEAD
             if (node._additionalTransformDirty)
                 this._transform = cc.affineTransformConcat(t, node._additionalTransform);
+=======
+            if (node._additionalTransformDirty) {
+                this._transform = cc.affineTransformConcat(t, node._additionalTransform);
+                node._additionalTransformDirty = false;
+            }
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         }
         return this._transform;
     };
@@ -447,7 +510,11 @@ cc.Node.RenderCmd.prototype = {
 
     proto.setDirtyFlag = function (dirtyFlag) {
         cc.Node.RenderCmd.prototype.setDirtyFlag.call(this, dirtyFlag);
+<<<<<<< HEAD
         this._setCacheDirty();                  //TODO it should remove from here.
+=======
+        this._setCacheDirty();
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         if(this._cachedParent)
             this._cachedParent.setDirtyFlag(dirtyFlag);
     };
@@ -456,12 +523,20 @@ cc.Node.RenderCmd.prototype = {
         if (this._cacheDirty === false) {
             this._cacheDirty = true;
             var cachedP = this._cachedParent;
+<<<<<<< HEAD
             cachedP && cachedP !== this && cachedP._setNodeDirtyForCache && cachedP._setNodeDirtyForCache();
+=======
+            cachedP && cachedP != this && cachedP._setNodeDirtyForCache && cachedP._setNodeDirtyForCache();
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         }
     };
 
     proto._setCachedParent = function (cachedParent) {
+<<<<<<< HEAD
         if (this._cachedParent === cachedParent)
+=======
+        if (this._cachedParent == cachedParent)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             return;
 
         this._cachedParent = cachedParent;
@@ -493,11 +568,19 @@ cc.Node.RenderCmd.prototype = {
         if (!blendFunc)
             return "source-over";
         else {
+<<<<<<< HEAD
             if (( blendFunc.src === cc.SRC_ALPHA && blendFunc.dst === cc.ONE) || (blendFunc.src === cc.ONE && blendFunc.dst === cc.ONE))
                 return "lighter";
             else if (blendFunc.src === cc.ZERO && blendFunc.dst === cc.SRC_ALPHA)
                 return "destination-in";
             else if (blendFunc.src === cc.ZERO && blendFunc.dst === cc.ONE_MINUS_SRC_ALPHA)
+=======
+            if (( blendFunc.src == cc.SRC_ALPHA && blendFunc.dst == cc.ONE) || (blendFunc.src == cc.ONE && blendFunc.dst == cc.ONE))
+                return "lighter";
+            else if (blendFunc.src == cc.ZERO && blendFunc.dst == cc.SRC_ALPHA)
+                return "destination-in";
+            else if (blendFunc.src == cc.ZERO && blendFunc.dst == cc.ONE_MINUS_SRC_ALPHA)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                 return "destination-out";
             else
                 return "source-over";

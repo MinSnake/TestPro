@@ -26,8 +26,13 @@
 
 var audioEngine = cc.audioEngine;
 
+<<<<<<< HEAD
 var MUSIC_FILE = cc.sys.os == cc.sys.OS_WP8 || cc.sys.os == cc.sys.OS_WINRT ? "res/Sound/background-music-aac.wav" : "res/Sound/background.mp3";
 var EFFECT_FILE = cc.sys.os == cc.sys.OS_WP8 || cc.sys.os == cc.sys.OS_WINRT ? "res/Sound/pew-pew-lei.wav" : "res/Sound/effect2.mp3";
+=======
+var MUSIC_FILE = "res/Sound/background.mp3";
+var EFFECT_FILE = "res/Sound/effect2.mp3";
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
 
 var _DenshionTests = [
     'Music Test'

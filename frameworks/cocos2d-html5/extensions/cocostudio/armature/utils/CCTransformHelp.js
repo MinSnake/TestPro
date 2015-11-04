@@ -103,7 +103,11 @@ ccs.TransformHelp.transformToParentWithoutScale = function(node, parentNode){
  * @param {cc.AffineTransform} matrix
  */
 ccs.TransformHelp.nodeToMatrix = function (node, matrix) {
+<<<<<<< HEAD
     if (node.skewX === -node.skewY) {
+=======
+    if (node.skewX == -node.skewY) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         var sine = Math.sin(node.skewX);
         var cosine = Math.cos(node.skewX);
         matrix.a = node.scaleX * cosine;

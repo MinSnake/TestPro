@@ -33,7 +33,11 @@
  */
 cc.$ = function (x) {
     /** @lends cc.$# */
+<<<<<<< HEAD
     var parent = (this === cc) ? document : this;
+=======
+    var parent = (this == cc) ? document : this;
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
 
     var el = (x instanceof HTMLElement) ? x : parent.querySelector(x);
 

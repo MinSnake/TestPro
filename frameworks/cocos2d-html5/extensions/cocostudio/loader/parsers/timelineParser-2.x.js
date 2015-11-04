@@ -28,12 +28,17 @@
 
     var Parser = baseParser.extend({
 
+<<<<<<< HEAD
         parse: function(file, json, path){
             var resourcePath;
             if(path !== undefined)
                 resourcePath = path;
             else
                 resourcePath = this._dirname(file);
+=======
+        parse: function(file, json){
+            var resourcePath = this._dirname(file);
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             this.pretreatment(json, resourcePath, file);
             var node = this.parseNode(this.getNodeJson(json), resourcePath);
             this.deferred(json, resourcePath, node, file);
@@ -111,6 +116,7 @@
 
         node.setTag(json["Tag"] || 0);
 
+<<<<<<< HEAD
         var actionTag = json["ActionTag"] || 0;
         var extensionData = new ccs.ObjectExtensionData();
         var customProperty = json["UserData"];
@@ -118,6 +124,9 @@
             extensionData.setCustomProperty(customProperty);
         extensionData.setActionTag(actionTag);
         node.setUserObject(extensionData);
+=======
+        node.setUserObject(new ccs.ActionTimelineData(json["ActionTag"] || 0));
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
 
         node.setCascadeColorEnabled(true);
         node.setCascadeOpacityEnabled(true);
@@ -137,11 +146,20 @@
                             node.pushBackCustomItem(child);
                     } else {
                         if(!(node instanceof ccui.Layout) && child instanceof ccui.Widget) {
+<<<<<<< HEAD
                             if(child.getPositionType() === ccui.Widget.POSITION_PERCENT) {
+=======
+                            if(child.getPositionType() == ccui.Widget.POSITION_PERCENT) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                                 var position = child.getPositionPercent();
                                 var anchor = node.getAnchorPoint();
                                 child.setPositionPercent(cc.p(position.x + anchor.x, position.y + anchor.y));
                             }
+<<<<<<< HEAD
+=======
+                            var AnchorPointIn = node.getAnchorPointInPoints();
+                            child.setPosition(cc.p(child.getPositionX() + AnchorPointIn.x, child.getPositionY() + AnchorPointIn.y));
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                         }
                         node.addChild(child);
                     }
@@ -173,6 +191,7 @@
         var node =  new cc.Sprite();
 
         loadTexture(json["FileData"], resourcePath, function(path, type){
+<<<<<<< HEAD
             if(type === 0)
                 node.setTexture(path);
             else if(type === 1){
@@ -190,6 +209,16 @@
                 blendFunc.dst = blendData["Dst"];
             node.setBlendFunc(blendFunc);
         }
+=======
+            if(type == 0)
+                node.setTexture(path);
+            else if(type == 1){
+                var spriteFrame = cc.spriteFrameCache.getSpriteFrame(path);
+                node.setSpriteFrame(spriteFrame);
+            }
+
+        });
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
 
         if(json["FlipX"])
             node.setFlippedX(true);
@@ -218,6 +247,7 @@
                 cc.log("%s need to be preloaded", path);
             node = new cc.ParticleSystem(path);
             self.generalAttributes(node, json);
+<<<<<<< HEAD
             node.setPositionType(cc.ParticleSystem.TYPE_GROUPED);
             !cc.sys.isNative && node.setDrawMode(cc.ParticleSystem.TEXTURE_MODE);
 
@@ -230,6 +260,9 @@
                     blendFunc.dst = blendData["Dst"];
                 node.setBlendFunc(blendFunc);
             }
+=======
+            !cc.sys.isNative && node.setDrawMode(cc.ParticleSystem.TEXTURE_MODE);
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         });
         return node;
     };
@@ -239,21 +272,33 @@
     // WIDGET //
     ////////////
 
+<<<<<<< HEAD
     parser.widgetAttributes = function (widget, json, enableContent) {
+=======
+    parser.widgetAttributes = function(widget, json){
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         widget.setCascadeColorEnabled(true);
         widget.setCascadeOpacityEnabled(true);
 
         widget.setUnifySizeEnabled(false);
         //widget.setLayoutComponentEnabled(true);
         widget.ignoreContentAdaptWithSize(false);
+<<<<<<< HEAD
         !enableContent && setContentSize(widget, json["Size"]);
 
         var name = json["Name"];
         if (name)
+=======
+        setContentSize(widget, json["Size"]);
+
+        var name = json["Name"];
+        if(name)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             widget.setName(name);
 
         var actionTag = json["ActionTag"] || 0;
         widget.setActionTag(actionTag);
+<<<<<<< HEAD
         var extensionData = new ccs.ObjectExtensionData();
         var customProperty = json["UserData"];
         if(customProperty !== undefined)
@@ -267,11 +312,22 @@
 
         var rotationSkewY = json["RotationSkewY"];
         if (rotationSkewY)
+=======
+        widget.setUserObject(new ccs.ActionTimelineData(actionTag));
+
+        var rotationSkewX = json["RotationSkewX"];
+        if(rotationSkewX)
+            widget.setRotationX(rotationSkewX);
+
+        var rotationSkewY = json["RotationSkewY"];
+        if(rotationSkewY)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             widget.setRotationY(rotationSkewY);
 
         //var rotation = json["Rotation"];
 
         var flipX = json["FlipX"];
+<<<<<<< HEAD
         if (flipX)
             widget.setFlippedX(true);
 
@@ -281,6 +337,17 @@
 
         var zOrder = json["zOrder"];
         if (zOrder != null)
+=======
+        if(flipX)
+            widget.setFlippedX(true);
+
+        var flipY = json["FlipY"];
+        if(flipY)
+            widget.setFlippedY(true);
+
+        var zOrder = json["zOrder"];
+        if(zOrder != null)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             widget.setLocalZOrder(zOrder);
 
         //var visible = json["Visible"];
@@ -289,7 +356,11 @@
         widget.setVisible(visible);
 
         var alpha = json["Alpha"];
+<<<<<<< HEAD
         if (alpha != null)
+=======
+        if(alpha != null)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             widget.setOpacity(alpha);
 
         widget.setTag(json["Tag"] || 0);
@@ -300,6 +371,7 @@
         // -- var frameEvent = json["FrameEvent"];
 
         var callBackType = json["CallBackType"];
+<<<<<<< HEAD
         if (callBackType != null)
             widget.setCallbackType(callBackType);
 
@@ -313,6 +385,21 @@
 
         var scale = json["Scale"];
         if (scale != null) {
+=======
+        if(callBackType != null)
+            widget.setCallbackType(callBackType);
+
+        var callBackName = json["CallBackName"];
+        if(callBackName)
+            widget.setCallbackName(callBackName);
+
+        var position = json["Position"];
+        if(position != null)
+            widget.setPosition(position["X"] || 0, position["Y"] || 0);
+
+        var scale = json["Scale"];
+        if(scale != null){
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             var scaleX = getParam(scale["ScaleX"], 1);
             var scaleY = getParam(scale["ScaleY"], 1);
             widget.setScaleX(scaleX);
@@ -320,6 +407,7 @@
         }
 
         var anchorPoint = json["AnchorPoint"];
+<<<<<<< HEAD
         if (anchorPoint != null)
             widget.setAnchorPoint(anchorPoint["ScaleX"] || 0, anchorPoint["ScaleY"] || 0);
 
@@ -417,6 +505,82 @@
         var x = vector["ScaleX"] || 0;
         var y = vector["ScaleY"] || 0;
         widget.setBackGroundColorVector(cc.p(x, y));
+=======
+        if(anchorPoint != null)
+            widget.setAnchorPoint(anchorPoint["ScaleX"] || 0, anchorPoint["ScaleY"] || 0);
+
+        var color = json["CColor"];
+        if(color != null)
+            widget.setColor(getColor(color));
+
+        if(widget instanceof ccui.Layout){
+            var layoutComponent = ccui.LayoutComponent.bindLayoutComponent(widget);
+
+            var positionXPercentEnabled = json["PositionPercentXEnable"] || false;
+            var positionYPercentEnabled = json["PositionPercentYEnable"] || false;
+            var positionXPercent = 0,
+                positionYPercent = 0,
+                PrePosition = json["PrePosition"];
+            if(PrePosition != null){
+                positionXPercent = PrePosition["X"] || 0;
+                positionYPercent = PrePosition["Y"] || 0;
+            }
+            var sizeXPercentEnable = json["PercentWidthEnable"] || false;
+            var sizeYPercentEnable = json["PercentHeightEnable"] || false;
+            var sizeXPercent = 0,
+                sizeYPercent = 0,
+                PreSize = json["PreSize"];
+            if(PrePosition != null){
+                sizeXPercent = PreSize["X"] || 0;
+                sizeYPercent = PreSize["Y"] || 0;
+            }
+            var stretchHorizontalEnabled = json["StretchWidthEnable"] || false;
+            var stretchVerticalEnabled = json["StretchHeightEnable"] || false;
+            var horizontalEdge = json["HorizontalEdge"];// = ccui.LayoutComponent.horizontalEdge.LEFT;
+            var verticalEdge = json["VerticalEdge"]; // = ccui.LayoutComponent.verticalEdge.TOP;
+            var leftMargin = json["LeftMargin"] || 0;
+            var rightMargin = json["RightMargin"] || 0;
+            var topMargin = json["TopMargin"] || 0;
+            var bottomMargin = json["BottomMargin"] || 0;
+
+            layoutComponent.setPositionPercentXEnabled(positionXPercentEnabled);
+            layoutComponent.setPositionPercentYEnabled(positionYPercentEnabled);
+            layoutComponent.setPositionPercentX(positionXPercent);
+            layoutComponent.setPositionPercentY(positionYPercent);
+            layoutComponent.setPercentWidthEnabled(sizeXPercentEnable);
+            layoutComponent.setPercentHeightEnabled(sizeYPercentEnable);
+            layoutComponent.setPercentWidth(sizeXPercent);
+            layoutComponent.setPercentHeight(sizeYPercent);
+            layoutComponent.setStretchWidthEnabled(stretchHorizontalEnabled);
+            layoutComponent.setStretchHeightEnabled(stretchVerticalEnabled);
+
+            var horizontalEdgeType = ccui.LayoutComponent.horizontalEdge.NONE;
+            if (horizontalEdge == "LeftEdge"){
+                horizontalEdgeType = ccui.LayoutComponent.horizontalEdge.LEFT;
+            }else if (horizontalEdge == "RightEdge"){
+                horizontalEdgeType = ccui.LayoutComponent.horizontalEdge.RIGHT;
+            }else if (horizontalEdge == "BothEdge"){
+                horizontalEdgeType = ccui.LayoutComponent.horizontalEdge.CENTER;
+            }
+            layoutComponent.setHorizontalEdge(horizontalEdgeType);
+
+            var verticalEdgeType = ccui.LayoutComponent.verticalEdge.NONE;
+            if (verticalEdge == "TopEdge"){
+                verticalEdgeType = ccui.LayoutComponent.verticalEdge.TOP;
+            }else if (verticalEdge == "BottomEdge"){
+                verticalEdgeType = ccui.LayoutComponent.verticalEdge.BOTTOM;
+            }else if (verticalEdge == "BothEdge"){
+                verticalEdgeType = ccui.LayoutComponent.verticalEdge.CENTER;
+            }
+            layoutComponent.setVerticalEdge(verticalEdgeType);
+
+            layoutComponent.setTopMargin(topMargin);
+            layoutComponent.setBottomMargin(bottomMargin);
+            layoutComponent.setLeftMargin(leftMargin);
+            layoutComponent.setRightMargin(rightMargin);
+        }
+
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
     };
 
     /**
@@ -471,8 +635,24 @@
 
         }
 
+<<<<<<< HEAD
         setLayoutBackground(widget, json["SingleColor"], json["FirstColor"], json["EndColor"]);
         setLayoutBackgroundVector(widget, json["ColorVector"]);
+=======
+        var bgStartColor = json["FirstColor"];
+        var bgEndColor = json["EndColor"];
+        if(bgStartColor != null && bgEndColor != null){
+            var startC = getColor(bgStartColor);
+            if(bgEndColor["R"] == null && bgEndColor["G"] == null && bgEndColor["B"] == null)
+                widget.setBackGroundColor( startC );
+            else
+                widget.setBackGroundColor( startC, getColor(bgEndColor) );
+        }
+
+        var colorVector = json["ColorVector"];
+        if(colorVector != null)
+            widget.setBackGroundColorVector(cc.p(colorVector["ScaleX"], colorVector["ScaleY"]));
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
 
         return widget;
     };
@@ -486,6 +666,11 @@
 
         var widget = new ccui.Text();
 
+<<<<<<< HEAD
+=======
+        this.widgetAttributes(widget, json);
+
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         var touchScaleEnabled = json["TouchScaleChangeAble"];
         if(touchScaleEnabled != null)
             widget.setTouchScaleChangeEnabled(touchScaleEnabled);
@@ -531,6 +716,14 @@
         }
         widget.setTextVerticalAlignment(v_alignment);
 
+<<<<<<< HEAD
+=======
+        //todo check it
+        var isCustomSize = json["IsCustomSize"];
+        if(isCustomSize != null)
+            widget.ignoreContentAdaptWithSize(!isCustomSize);
+
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         var fontResource = json["FontResource"];
         if(fontResource != null){
             var path = fontResource["Path"];
@@ -546,6 +739,7 @@
             }
         }
 
+<<<<<<< HEAD
         if(json["OutlineEnabled"] && json["OutlineColor"] && widget.enableOutline)
             widget.enableOutline(getColor(json["OutlineColor"]), getParam(json["OutlineSize"], 1));
 
@@ -563,6 +757,12 @@
         widget.setUnifySizeEnabled(false);
 
         this.widgetAttributes(widget, json, widget.isIgnoreContentAdaptWithSize());
+=======
+        widget.setUnifySizeEnabled(false);
+
+        if(widget.isIgnoreContentAdaptWithSize())
+            setContentSize(widget, json["Size"]);
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
 
         return widget;
 
@@ -577,6 +777,7 @@
 
         var widget = new ccui.Button();
 
+<<<<<<< HEAD
         loadTexture(json["NormalFileData"], resourcePath, function(path, type){
             widget.loadTextureNormal(path, type);
         });
@@ -592,6 +793,29 @@
             widget.setScale9Enabled(scale9Enabled);
         }
 
+=======
+        this.widgetAttributes(widget, json);
+
+        var scale9Enabled = getParam(json["Scale9Enable"], false);
+        if(scale9Enabled){
+            widget.setScale9Enabled(scale9Enabled);
+            widget.setUnifySizeEnabled(false);
+            widget.ignoreContentAdaptWithSize(false);
+
+            var capInsets = cc.rect(
+                    json["Scale9OriginX"] || 0,
+                    json["Scale9OriginY"] || 0,
+                    json["Scale9Width"] || 0,
+                    json["Scale9Height"] || 0
+            );
+
+            widget.setCapInsets(capInsets);
+
+        }
+
+        setContentSize(widget, json["Size"]);
+
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         var text = json["ButtonText"];
         if(text != null)
             widget.setTitleText(text);
@@ -608,6 +832,19 @@
         if(textColor != null)
             widget.setTitleColor(getColor(textColor));
 
+<<<<<<< HEAD
+=======
+        loadTexture(json["NormalFileData"], resourcePath, function(path, type){
+            widget.loadTextureNormal(path, type);
+        });
+        loadTexture(json["PressedFileData"], resourcePath, function(path, type){
+            widget.loadTexturePressed(path, type);
+        });
+        loadTexture(json["DisabledFileData"], resourcePath, function(path, type){
+            widget.loadTextureDisabled(path, type);
+        });
+
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         var displaystate = getParam(json["DisplayState"], true);
         widget.setBright(displaystate);
         widget.setEnabled(displaystate);
@@ -627,6 +864,7 @@
             }
         }
 
+<<<<<<< HEAD
         var label = widget.getTitleRenderer();
         if(label && json["ShadowEnabled"] && json["ShadowColor"] && label.enableShadow){
             label.enableShadow(
@@ -655,6 +893,8 @@
 
         setContentSize(widget, json["Size"]);
 
+=======
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         return widget;
 
     };
@@ -670,6 +910,16 @@
 
         this.widgetAttributes(widget, json);
 
+<<<<<<< HEAD
+=======
+        var selectedState = getParam(json["CheckedState"], false);
+        widget.setSelected(selectedState);
+
+        var displaystate = getParam(json["DisplayState"], true);
+        widget.setBright(displaystate);
+        widget.setEnabled(displaystate);
+
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         var dataList = [
             {name: "NormalBackFileData", handle: widget.loadTextureBackGround},
             {name: "PressedBackFileData", handle: widget.loadTextureBackGroundSelected},
@@ -684,6 +934,7 @@
             });
         });
 
+<<<<<<< HEAD
         var selectedState = getParam(json["CheckedState"], false);
         widget.setSelected(selectedState);
 
@@ -691,6 +942,8 @@
         widget.setBright(displaystate);
         widget.setEnabled(displaystate);
 
+=======
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         return widget;
     };
 
@@ -704,10 +957,13 @@
 
         this.widgetAttributes(widget, json);
 
+<<<<<<< HEAD
         loadTexture(json["FileData"], resourcePath, function(path, type){
             widget.setBackGroundImage(path, type);
         });
 
+=======
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         var clipEnabled = json["ClipAble"];
         widget.setClippingEnabled(clipEnabled);
 
@@ -735,8 +991,33 @@
             setContentSize(widget, json["Size"]);
         }
 
+<<<<<<< HEAD
         setLayoutBackground(widget, json["SingleColor"], json["FirstColor"], json["EndColor"]);
         setLayoutBackgroundVector(widget, json["ColorVector"]);
+=======
+        var firstColor = json["FirstColor"];
+        var endColor = json["EndColor"];
+        if(firstColor && endColor){
+            if(endColor["R"] != null && endColor["G"] != null && endColor["B"] != null)
+                widget.setBackGroundColor(getColor(firstColor), getColor(endColor));
+            else
+                widget.setBackGroundColor(getColor(firstColor));
+        }else{
+            widget.setBackGroundColor(getColor(json["SingleColor"]));
+        }
+
+
+        var colorVector = json["ColorVector"];
+        if(colorVector){
+            var colorVectorX = getParam(colorVector["ScaleX"], 1);
+            var colorVectorY = getParam(colorVector["ScaleY"], 1);
+            widget.setBackGroundColorVector(cc.p(colorVectorX, colorVectorY));
+        }
+
+        loadTexture(json["FileData"], resourcePath, function(path, type){
+            widget.setBackGroundImage(path, type);
+        });
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
 
         var innerNodeSize = json["InnerNodeSize"];
         var innerSize = cc.size(
@@ -746,9 +1027,15 @@
         widget.setInnerContainerSize(innerSize);
 
         var direction = 0;
+<<<<<<< HEAD
         if(json["ScrollDirectionType"] === "Vertical") direction = 1;
         if(json["ScrollDirectionType"] === "Horizontal") direction = 2;
         if(json["ScrollDirectionType"] === "Vertical_Horizontal") direction = 3;
+=======
+        if(json["ScrollDirectionType"] == "Vertical") direction = 1;
+        if(json["ScrollDirectionType"] == "Horizontal") direction = 2;
+        if(json["ScrollDirectionType"] == "Vertical_Horizontal") direction = 3;
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         widget.setDirection(direction);
 
         var bounceEnabled = getParam(json["IsBounceEnabled"], false);
@@ -784,10 +1071,17 @@
             var scale9Width = json["Scale9Width"] || 0;
             var scale9Height = json["Scale9Height"] || 0;
             widget.setCapInsets(cc.rect(
+<<<<<<< HEAD
                 scale9OriginX ,
                 scale9OriginY,
                 scale9Width,
                 scale9Height
+=======
+                    scale9OriginX ,
+                    scale9OriginY,
+                    scale9Width,
+                    scale9Height
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             ));
         } else
             setContentSize(widget, json["Size"]);
@@ -813,8 +1107,13 @@
             widget.loadTexture(path, type);
         });
 
+<<<<<<< HEAD
         var direction = json["ProgressType"] === "Right_To_Left" ? 1 : 0;
         widget.setDirection(direction);
+=======
+        var direction = json["ProgressType"];
+        widget.setDirection((direction != "Left_To_Right") | 0);
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
 
         var percent = getParam(json["ProgressInfo"], 80);
         if(percent != null)
@@ -845,7 +1144,11 @@
         ];
         textureList.forEach(function(item){
             loadTexture(json[item.name], resourcePath, function(path, type){
+<<<<<<< HEAD
                 if(type === 0 && !loader.getRes(path))
+=======
+                if(type == 0 && !loader.getRes(path))
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                     cc.log("%s need to be preloaded", path);
                 item.handle.call(widget, path, type);
             });
@@ -872,10 +1175,13 @@
 
         this.widgetAttributes(widget, json);
 
+<<<<<<< HEAD
         loadTexture(json["FileData"], resourcePath, function(path, type){
             widget.setBackGroundImage(path, type);
         });
 
+=======
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         var clipEnabled = json["ClipAble"] || false;
         widget.setClippingEnabled(clipEnabled);
 
@@ -888,16 +1194,24 @@
             var scale9Width = json["Scale9Width"] || 0;
             var scale9Height = json["Scale9Height"] || 0;
             widget.setBackGroundImageCapInsets(cc.rect(
+<<<<<<< HEAD
                 scale9OriginX,
                 scale9OriginY,
                 scale9Width,
                 scale9Height
+=======
+                    scale9OriginX,
+                    scale9OriginY,
+                    scale9Width,
+                    scale9Height
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             ));
         }
 
         var colorType = getParam(json["ComboBoxIndex"], 0);
         widget.setBackGroundColorType(colorType);
 
+<<<<<<< HEAD
         setLayoutBackground(widget, json["SingleColor"], json["FirstColor"], json["EndColor"]);
         setLayoutBackgroundVector(widget, json["ColorVector"]);
 
@@ -905,6 +1219,30 @@
         if(bgColorOpacity != null)
             widget.setBackGroundColorOpacity(bgColorOpacity);
 
+=======
+        var bgColorOpacity = json["BackColorAlpha"];
+        var firstColor = json["FirstColor"];
+        var endColor = json["EndColor"];
+        if(firstColor && endColor){
+            if(endColor["R"] != null && endColor["G"] != null && endColor["B"] != null)
+                widget.setBackGroundColor(getColor(firstColor), getColor(endColor));
+            else
+                widget.setBackGroundColor(getColor(firstColor));
+        }else{
+            widget.setBackGroundColor(getColor(json["SingleColor"]));
+        }
+
+        var colorVector = json["ColorVector"];
+        if(colorVector != null && colorVector["ScaleX"] != null && colorVector["ScaleY"] != null)
+            widget.setBackGroundColorVector(cc.p(colorVector["ScaleX"], colorVector["ScaleY"]));
+        if(bgColorOpacity != null)
+            widget.setBackGroundColorOpacity(bgColorOpacity);
+
+        loadTexture(json["FileData"], resourcePath, function(path, type){
+            widget.setBackGroundImage(path, type);
+        });
+
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         setContentSize(widget, json["Size"]);
 
         return widget;
@@ -923,10 +1261,13 @@
 
         this.widgetAttributes(widget, json);
 
+<<<<<<< HEAD
         loadTexture(json["FileData"], resourcePath, function(path, type){
             widget.setBackGroundImage(path, type);
         });
 
+=======
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         var clipEnabled = json["ClipAble"] || false;
         widget.setClippingEnabled(clipEnabled);
 
@@ -943,10 +1284,17 @@
             var scale9Width = json["Scale9Width"] || 0;
             var scale9Height = json["Scale9Height"] || 0;
             widget.setBackGroundImageCapInsets(cc.rect(
+<<<<<<< HEAD
                 scale9OriginX,
                 scale9OriginY,
                 scale9Width,
                 scale9Height
+=======
+                    scale9OriginX,
+                    scale9OriginY,
+                    scale9Width,
+                    scale9Height
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             ));
         }
 
@@ -955,6 +1303,7 @@
         var horizontalType = getParam(json["HorizontalType"], "Align_Top");
         if(!directionType){
             widget.setDirection(ccui.ScrollView.DIR_HORIZONTAL);
+<<<<<<< HEAD
             if(verticalType === "Align_Bottom")
                 widget.setGravity(ccui.ListView.GRAVITY_BOTTOM);
             else if(verticalType === "Align_VerticalCenter")
@@ -968,6 +1317,21 @@
             else if (horizontalType === "Align_Right")
                 widget.setGravity(ccui.ListView.GRAVITY_RIGHT);
             else if (horizontalType === "Align_HorizontalCenter")
+=======
+            if(verticalType == "Align_Bottom")
+                widget.setGravity(ccui.ListView.GRAVITY_BOTTOM);
+            else if(verticalType == "Align_VerticalCenter")
+                widget.setGravity(ccui.ListView.GRAVITY_CENTER_VERTICAL);
+            else
+                widget.setGravity(ccui.ListView.GRAVITY_TOP);
+        }else if(directionType == "Vertical"){
+            widget.setDirection(ccui.ScrollView.DIR_VERTICAL);
+            if (horizontalType == "")
+                widget.setGravity(ccui.ListView.GRAVITY_LEFT);
+            else if (horizontalType == "Align_Right")
+                widget.setGravity(ccui.ListView.GRAVITY_RIGHT);
+            else if (horizontalType == "Align_HorizontalCenter")
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                 widget.setGravity(ccui.ListView.GRAVITY_CENTER_HORIZONTAL);
         }
 
@@ -983,12 +1347,37 @@
         if(innerSize != null)
             widget.setInnerContainerSize(cc.size(innerSize["Widget"]||0, innerSize["Height"]||0));
 
+<<<<<<< HEAD
         setLayoutBackground(widget, json["SingleColor"], json["FirstColor"], json["EndColor"]);
         setLayoutBackgroundVector(widget, json["ColorVector"]);
 
         if(bgColorOpacity != null)
             widget.setBackGroundColorOpacity(bgColorOpacity);
 
+=======
+        var firstColor = json["FirstColor"];
+        var endColor = json["EndColor"];
+        if(firstColor && endColor){
+            if(endColor["R"] != null && endColor["G"] != null && endColor["B"] != null)
+                widget.setBackGroundColor(getColor(firstColor), getColor(endColor));
+            else
+                widget.setBackGroundColor(getColor(firstColor));
+        }else{
+            widget.setBackGroundColor(getColor(json["SingleColor"]));
+        }
+
+        var colorVector = json["ColorVector"];
+        if(colorVector != null && colorVector["ScaleX"] != null && colorVector["ScaleY"] != null)
+            widget.setBackGroundColorVector(cc.p(colorVector["ScaleX"], colorVector["ScaleY"]));
+        if(bgColorOpacity != null)
+            widget.setBackGroundColorOpacity(bgColorOpacity);
+
+
+        loadTexture(json["FileData"], resourcePath, function(path, type){
+            widget.setBackGroundImage(path, type);
+        });
+
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         setContentSize(widget, json["Size"]);
 
         return widget;
@@ -1013,7 +1402,11 @@
         loadTexture(json["LabelAtlasFileImage_CNB"], resourcePath, function(path, type){
             if(!cc.loader.getRes(path))
                 cc.log("%s need to be preloaded", path);
+<<<<<<< HEAD
             if(type === 0){
+=======
+            if(type == 0){
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                 widget.setProperty(stringValue, path, itemWidth, itemHeight, startCharMap);
             }
         });
@@ -1041,7 +1434,10 @@
                 cc.log("%s need to be pre loaded", path);
             widget.setFntFile(path);
         });
+<<<<<<< HEAD
         widget.ignoreContentAdaptWithSize(true);
+=======
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         return widget;
     };
 
@@ -1154,7 +1550,11 @@
         var node = null;
 
         loadTexture(json["FileData"], resourcePath, function(path, type){
+<<<<<<< HEAD
             if(type === 0)
+=======
+            if(type == 0)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                 node = new cc.TMXTiledMap(path);
 
             parser.generalAttributes(node, json);
@@ -1174,6 +1574,7 @@
         if(projectFile != null && projectFile["Path"]){
             var file = resourcePath + projectFile["Path"];
             if(cc.loader.getRes(file)){
+<<<<<<< HEAD
                 var obj = ccs.load(file, resourcePath);
                 parser.generalAttributes(obj.node, json);
                 if(obj.action && obj.node){
@@ -1181,6 +1582,12 @@
                     var InnerActionSpeed = json["InnerActionSpeed"];
                     if(InnerActionSpeed !== undefined)
                         obj.action.setTimeSpeed(InnerActionSpeed);
+=======
+                var obj = ccs.load(file);
+                parser.generalAttributes(obj.node, json);
+                if(obj.action && obj.node){
+                    obj.action.tag = obj.node.tag;
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                     obj.node.runAction(obj.action);
                     obj.action.gotoFrameAndPause(0);
                 }
@@ -1243,7 +1650,11 @@
         if(json != null){
             var path = json["Path"];
             var type;
+<<<<<<< HEAD
             if(json["Type"] === "Default" || json["Type"] === "Normal")
+=======
+            if(json["Type"] == "Default" || json["Type"] == "Normal")
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                 type = 0;
             else
                 type = 1;
@@ -1269,8 +1680,12 @@
         var r = json["R"] != null ? json["R"] : 255;
         var g = json["G"] != null ? json["G"] : 255;
         var b = json["B"] != null ? json["B"] : 255;
+<<<<<<< HEAD
         var a = json["A"] != null ? json["A"] : 255;
         return cc.color(r, g, b, a);
+=======
+        return cc.color(r, g, b);
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
     };
 
     var setContentSize = function(node, size){
@@ -1282,7 +1697,10 @@
 
     var register = [
         {name: "SingleNodeObjectData", handle: parser.initSingleNode},
+<<<<<<< HEAD
         {name: "NodeObjectData", handle: parser.initSingleNode},
+=======
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         {name: "LayerObjectData", handle: parser.initSingleNode},
         {name: "SpriteObjectData", handle: parser.initSprite},
         {name: "ParticleObjectData", handle: parser.initParticle},

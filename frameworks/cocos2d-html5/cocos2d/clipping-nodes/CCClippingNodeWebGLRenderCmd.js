@@ -44,7 +44,11 @@
         this._mask_layer_le = null;
     };
 
+<<<<<<< HEAD
     var proto = cc.ClippingNode.WebGLRenderCmd.prototype = Object.create(cc.Node.WebGLRenderCmd.prototype);
+=======
+    var proto = cc.ClippingNode.WebGLRenderCmd.prototype = Object.create(cc.Node.CanvasRenderCmd.prototype);
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
     proto.constructor = cc.ClippingNode.WebGLRenderCmd;
 
     cc.ClippingNode.WebGLRenderCmd._init_once = null;
@@ -91,7 +95,11 @@
             return;
         }
 
+<<<<<<< HEAD
         if (cc.ClippingNode.WebGLRenderCmd._layer + 1 === cc.stencilBits) {
+=======
+        if (cc.ClippingNode.WebGLRenderCmd._layer + 1 == cc.stencilBits) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             cc.ClippingNode.WebGLRenderCmd._visit_once = true;
             if (cc.ClippingNode.WebGLRenderCmd._visit_once) {
                 cc.log("Nesting more than " + cc.stencilBits + "stencils is not supported. Everything will be drawn without stencil for this node and its children.");
@@ -144,6 +152,7 @@
 
     proto._drawFullScreenQuadClearStencil = function () {
         // draw a fullscreen solid rectangle to clear the stencil buffer
+<<<<<<< HEAD
         var projStack = cc.projection_matrix_stack;
         //cc.kmGLMatrixMode(cc.KM_GL_PROJECTION);
         //cc.kmGLPushMatrix();
@@ -167,6 +176,19 @@
         //cc.kmGLMatrixMode(cc.KM_GL_MODELVIEW);
         //cc.kmGLPopMatrix();
         modelViewStack.pop();
+=======
+        cc.kmGLMatrixMode(cc.KM_GL_PROJECTION);
+        cc.kmGLPushMatrix();
+        cc.kmGLLoadIdentity();
+        cc.kmGLMatrixMode(cc.KM_GL_MODELVIEW);
+        cc.kmGLPushMatrix();
+        cc.kmGLLoadIdentity();
+        cc._drawingUtil.drawSolidRect(cc.p(-1, -1), cc.p(1, 1), cc.color(255, 255, 255, 255));
+        cc.kmGLMatrixMode(cc.KM_GL_PROJECTION);
+        cc.kmGLPopMatrix();
+        cc.kmGLMatrixMode(cc.KM_GL_MODELVIEW);
+        cc.kmGLPopMatrix();
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
     };
 
     proto._onBeforeVisit = function(ctx){

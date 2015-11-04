@@ -2,19 +2,32 @@
  Copyright (c) 2008-2010 Ricardo Quesada
  Copyright (c) 2011-2012 cocos2d-x.org
  Copyright (c) 2013-2014 Chukong Technologies Inc.
+<<<<<<< HEAD
  
  http://www.cocos2d-x.org
  
+=======
+
+ http://www.cocos2d-x.org
+
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
  Permission is hereby granted, free of charge, to any person obtaining a copy
  of this software and associated documentation files (the "Software"), to deal
  in the Software without restriction, including without limitation the rights
  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
  copies of the Software, and to permit persons to whom the Software is
  furnished to do so, subject to the following conditions:
+<<<<<<< HEAD
  
  The above copyright notice and this permission notice shall be included in
  all copies or substantial portions of the Software.
  
+=======
+
+ The above copyright notice and this permission notice shall be included in
+ all copies or substantial portions of the Software.
+
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
@@ -32,6 +45,7 @@
  */
 cc.screen = /** @lends cc.screen# */{
     _supportsFullScreen: false,
+<<<<<<< HEAD
     // the pre fullscreenchange function
     _preOnFullScreenChange: null,
     _touchEvent: "",
@@ -75,11 +89,57 @@ cc.screen = /** @lends cc.screen# */{
         ]
     ],
     
+=======
+	// the pre fullscreenchange function
+    _preOnFullScreenChange: null,
+    _touchEvent: "",
+	_fn: null,
+	// Function mapping for cross browser support
+	_fnMap: [
+		[
+			'requestFullscreen',
+			'exitFullscreen',
+			'fullscreenchange',
+			'fullscreenEnabled',
+			'fullscreenElement'
+		],
+		[
+			'requestFullScreen',
+			'exitFullScreen',
+			'fullScreenchange',
+			'fullScreenEnabled',
+			'fullScreenElement'
+		],
+		[
+			'webkitRequestFullScreen',
+			'webkitCancelFullScreen',
+			'webkitfullscreenchange',
+			'webkitIsFullScreen',
+			'webkitCurrentFullScreenElement'
+		],
+		[
+			'mozRequestFullScreen',
+			'mozCancelFullScreen',
+			'mozfullscreenchange',
+			'mozFullScreen',
+			'mozFullScreenElement'
+		],
+		[
+			'msRequestFullscreen',
+			'msExitFullscreen',
+			'MSFullscreenChange',
+			'msFullscreenEnabled',
+			'msFullscreenElement'
+		]
+	],
+
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
     /**
      * initialize
      * @function
      */
     init: function () {
+<<<<<<< HEAD
         this._fn = {};
         var i, val, map = this._fnMap, valL;
         for (i = 0, l = map.length; i < l; i++) {
@@ -96,20 +156,46 @@ cc.screen = /** @lends cc.screen# */{
         this._touchEvent = ('ontouchstart' in window) ? 'touchstart' : 'mousedown';
     },
     
+=======
+	    this._fn = {};
+	    var i, val, map = this._fnMap, valL;
+	    for (i = 0, l = map.length; i < l; i++ ) {
+		    val = map[ i ];
+		    if ( val && val[1] in document ) {
+			    for ( i = 0, valL = val.length; i < valL; i++ ) {
+				    this._fn[ map[0][ i ] ] = val[ i ];
+			    }
+			    break;
+		    }
+	    }
+
+		this._supportsFullScreen = (this._fn.requestFullscreen != undefined);
+        this._touchEvent = ('ontouchstart' in window) ? 'touchstart' : 'mousedown';
+    },
+
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
     /**
      * return true if it's full now.
      * @returns {Boolean}
      */
+<<<<<<< HEAD
     fullScreen: function () {
         return this._supportsFullScreen && document[this._fn.fullscreenElement];
     },
     
+=======
+    fullScreen: function() {
+	    return this._supportsFullScreen && document[ this._fn.fullscreenEnabled ];
+    },
+
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
     /**
      * change the screen to full mode.
      * @param {Element} element
      * @param {Function} onFullScreenChange
      */
     requestFullScreen: function (element, onFullScreenChange) {
+<<<<<<< HEAD
         if (!this._supportsFullScreen) {
             return;
         }
@@ -128,22 +214,51 @@ cc.screen = /** @lends cc.screen# */{
         return element[this._fn.requestFullscreen]();
     },
     
+=======
+	    if (!this._supportsFullScreen) return;
+
+	    element = element || document.documentElement;
+	    element[ this._fn.requestFullscreen ]();
+
+	    if (onFullScreenChange) {
+		    var eventName = this._fn.fullscreenchange;
+		    if (this._preOnFullScreenChange)
+			    document.removeEventListener(eventName, this._preOnFullScreenChange);
+		    this._preOnFullScreenChange = onFullScreenChange;
+            cc._addEventListener(document, eventName, onFullScreenChange, false);
+	    }
+
+        return element[ this._fn.requestFullscreen ]();
+    },
+
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
     /**
      * exit the full mode.
      * @return {Boolean}
      */
     exitFullScreen: function () {
+<<<<<<< HEAD
         return this._supportsFullScreen ? document[this._fn.exitFullscreen]() : true;
     },
     
+=======
+        return this._supportsFullScreen ? document[ this._fn.exitFullscreen ]() : true;
+    },
+
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
     /**
      * Automatically request full screen with a touch/click event
      * @param {Element} element
      * @param {Function} onFullScreenChange
      */
     autoFullScreen: function (element, onFullScreenChange) {
+<<<<<<< HEAD
         element = element || document.body;
         var touchTarget = cc._canvas || element;
+=======
+	    element = element || document.body;
+	    var touchTarget = cc._canvas || element;
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         var theScreen = this;
         // Function bind will be too complicated here because we need the callback function's reference to remove the listener
         function callback() {

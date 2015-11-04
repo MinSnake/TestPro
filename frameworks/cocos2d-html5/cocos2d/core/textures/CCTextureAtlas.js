@@ -461,7 +461,11 @@ cc.TextureAtlas = cc.Class.extend(/** @lends cc.TextureAtlas# */{  //WebGL only
      * @return {Boolean}
      */
     resizeCapacity: function (newCapacity) {
+<<<<<<< HEAD
         if (newCapacity === this._capacity)
+=======
+        if (newCapacity == this._capacity)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             return true;
 
         var quadSize = cc.V3F_C4B_T2F_Quad.BYTES_PER_ELEMENT;
@@ -471,7 +475,11 @@ cc.TextureAtlas = cc.Class.extend(/** @lends cc.TextureAtlas# */{  //WebGL only
         this._capacity = 0 | newCapacity;
         var i, capacity = this._capacity, locTotalQuads = this._totalQuads;
 
+<<<<<<< HEAD
         if (this._quads === null) {
+=======
+        if (this._quads == null) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             this._quads = [];
             this._quadsArrayBuffer = new ArrayBuffer(quadSize * capacity);
             this._quadsReader = new Uint8Array(this._quadsArrayBuffer);
@@ -506,7 +514,11 @@ cc.TextureAtlas = cc.Class.extend(/** @lends cc.TextureAtlas# */{  //WebGL only
             }
         }
 
+<<<<<<< HEAD
         if (this._indices === null) {
+=======
+        if (this._indices == null) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             this._indices = new Uint16Array(capacity * 6);
         } else {
             if (capacity > oldCapacity) {
@@ -552,7 +564,11 @@ cc.TextureAtlas = cc.Class.extend(/** @lends cc.TextureAtlas# */{  //WebGL only
             cc.assert((newIndex + amount) <= this._totalQuads, cc._LogInfos.TextureAtlas_moveQuadsFromIndex_2);
             cc.assert(oldIndex < this._totalQuads, cc._LogInfos.TextureAtlas_moveQuadsFromIndex_3);
 
+<<<<<<< HEAD
             if (oldIndex === newIndex)
+=======
+            if (oldIndex == newIndex)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                 return;
         }
 

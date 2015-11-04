@@ -51,11 +51,19 @@
                 if(parser)
                     frame = parser.call(self, timeline, resourcePath);
                 else
+<<<<<<< HEAD
                     cc.log("parser does not exist : %s", timeline["frameType"]);
                 if(frame)
                     action.addTimeline(frame);
 
                 if(timeline["frameType"] === "ColorFrame"){
+=======
+                    cc.log("parser is not exists : %s", timeline["frameType"]);
+                if(frame)
+                    action.addTimeline(frame);
+
+                if(timeline["frameType"] == "ColorFrame"){
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                     action.addTimeline(
                         self.parsers["AlphaFrame"].call(self, timeline, resourcePath)
                     );
@@ -235,4 +243,8 @@
 
     load.registerParser("action", "*", parser);
 
+<<<<<<< HEAD
 })(ccs._load, ccs._parser);
+=======
+})(ccs._load, ccs._parser);
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b

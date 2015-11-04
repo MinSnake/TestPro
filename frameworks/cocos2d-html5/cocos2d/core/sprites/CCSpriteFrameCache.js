@@ -71,6 +71,7 @@ cc.spriteFrameCache = /** @lends cc.spriteFrameCache# */{
             this._frameConfigCache[url] = dict;
             return dict;
         }
+<<<<<<< HEAD
         this._frameConfigCache[url] = this._parseFrameConfig(dict);
         return this._frameConfigCache[url];
     },
@@ -82,6 +83,8 @@ cc.spriteFrameCache = /** @lends cc.spriteFrameCache# */{
     },
 
     _parseFrameConfig: function(dict) {
+=======
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         var tempFrames = dict["frames"], tempMeta = dict["metadata"] || dict["meta"];
         var frames = {}, meta = {};
         var format = 0;
@@ -136,6 +139,7 @@ cc.spriteFrameCache = /** @lends cc.spriteFrameCache# */{
             }
             frames[key] = tempFrame;
         }
+<<<<<<< HEAD
         return {_inited: true, frames: frames, meta: meta};
     },
 
@@ -151,6 +155,40 @@ cc.spriteFrameCache = /** @lends cc.spriteFrameCache# */{
     },
 
     _createSpriteFrames: function(url, frameConfig, texture) {
+=======
+        var cfg = this._frameConfigCache[url] = {
+            _inited : true,
+            frames : frames,
+            meta : meta
+        };
+        return cfg;
+    },
+
+    /**
+     * <p>
+     *   Adds multiple Sprite Frames from a plist or json file.<br/>
+     *   A texture will be loaded automatically. The texture name will composed by replacing the .plist or .json suffix with .png<br/>
+     *   If you want to use another texture, you should use the addSpriteFrames:texture method.<br/>
+     * </p>
+     * @param {String} url file path
+     * @param {HTMLImageElement|cc.Texture2D|string} texture
+     * @example
+     * // add SpriteFrames to SpriteFrameCache With File
+     * cc.spriteFrameCache.addSpriteFrames(s_grossiniPlist);
+     * cc.spriteFrameCache.addSpriteFrames(s_grossiniJson);
+     */
+    addSpriteFrames: function (url, texture) {
+        cc.assert(url, cc._LogInfos.spriteFrameCache_addSpriteFrames_2);
+
+        //Is it a SpriteFrame plist?
+        var dict = this._frameConfigCache[url] || cc.loader.getRes(url);
+        if(!dict || !dict["frames"])
+            return;
+
+        var self = this;
+        var frameConfig = self._frameConfigCache[url] || self._getFrameConfig(url);
+        //self._checkConflict(frameConfig);                             //TODO
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         var frames = frameConfig.frames, meta = frameConfig.meta;
         if(!texture){
             var texturePath = cc.path.changeBasename(url, meta.image || ".png");
@@ -164,7 +202,11 @@ cc.spriteFrameCache = /** @lends cc.spriteFrameCache# */{
         }
 
         //create sprite frames
+<<<<<<< HEAD
         var spAliases = this._spriteFramesAliases, spriteFrames = this._spriteFrames;
+=======
+        var spAliases = self._spriteFramesAliases, spriteFrames = self._spriteFrames;
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         for (var key in frames) {
             var frame = frames[key];
             var spriteFrame = spriteFrames[key];
@@ -174,8 +216,14 @@ cc.spriteFrameCache = /** @lends cc.spriteFrameCache# */{
                 if(aliases){//set aliases
                     for(var i = 0, li = aliases.length; i < li; i++){
                         var alias = aliases[i];
+<<<<<<< HEAD
                         if (spAliases[alias])
                             cc.log(cc._LogInfos.spriteFrameCache_addSpriteFrames, alias);
+=======
+                        if (spAliases[alias]) {
+                            cc.log(cc._LogInfos.spriteFrameCache_addSpriteFrames, alias);
+                        }
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                         spAliases[alias] = key;
                     }
                 }
@@ -195,11 +243,16 @@ cc.spriteFrameCache = /** @lends cc.spriteFrameCache# */{
                         spriteFrame.setRect(cc.rect(0, 0, rect.width, rect.height));
                     }
                 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                 spriteFrames[key] = spriteFrame;
             }
         }
     },
 
+<<<<<<< HEAD
     /**
      * <p>
      *   Adds multiple Sprite Frames from a plist or json file.<br/>
@@ -226,6 +279,8 @@ cc.spriteFrameCache = /** @lends cc.spriteFrameCache# */{
         this._createSpriteFrames(url, frameConfig, texture);
     },
 
+=======
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
     // Function to check if frames to add exists already, if so there may be name conflit that must be solved
     _checkConflict: function (dictionary) {
         var framesDict = dictionary["frames"];
@@ -300,7 +355,11 @@ cc.spriteFrameCache = /** @lends cc.spriteFrameCache# */{
             if (spriteFrames[key]) {
                 delete(spriteFrames[key]);
                 for (var alias in aliases) {//remove alias
+<<<<<<< HEAD
                     if(aliases[alias] === key) delete aliases[alias];
+=======
+                    if(aliases[alias] == key) delete aliases[alias];
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                 }
             }
         }
@@ -317,10 +376,17 @@ cc.spriteFrameCache = /** @lends cc.spriteFrameCache# */{
         var self = this, spriteFrames = self._spriteFrames, aliases = self._spriteFramesAliases;
         for (var key in spriteFrames) {
             var frame = spriteFrames[key];
+<<<<<<< HEAD
             if (frame && (frame.getTexture() === texture)) {
                 delete(spriteFrames[key]);
                 for (var alias in aliases) {//remove alias
                     if(aliases[alias] === key) delete aliases[alias];
+=======
+            if (frame && (frame.getTexture() == texture)) {
+                delete(spriteFrames[key]);
+                for (var alias in aliases) {//remove alias
+                    if(aliases[alias] == key) delete aliases[alias];
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                 }
             }
         }

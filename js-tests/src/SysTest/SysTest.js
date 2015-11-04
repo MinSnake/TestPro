@@ -77,6 +77,7 @@ var LocalStorageTest = SysTestBase.extend({
 
         var key = 'key_' + Math.random();
         var ls = cc.sys.localStorage;
+<<<<<<< HEAD
         cc.log("- Adding items");
         ls.setItem(key, "Hello world");
         var key1 = "1" + key;
@@ -108,6 +109,21 @@ var LocalStorageTest = SysTestBase.extend({
         cc.log( ls.getItem(key1) );
         cc.log( ls.getItem(key2) );
         cc.log( ls.getItem(key3) );
+=======
+        cc.log(1);
+        ls.setItem(key, "Hello world");
+
+        cc.log(2);
+        var r = ls.getItem(key);
+        cc.log(r);
+
+        cc.log(3);
+        ls.removeItem(key);
+
+        cc.log(4);
+        r = ls.getItem(key);
+        cc.log(r);
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
     }
 
 });
@@ -288,6 +304,7 @@ var RestartGameLayerTest = SysTestBase.extend({
     }
 });
 
+<<<<<<< HEAD
 //------------------------------------------------------------------
 //
 // Open URL test
@@ -360,15 +377,21 @@ var ValidObjectTest = SysTestBase.extend({
     }
 });
 
+=======
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
 //
 // Flow control
 //
 
 var arrayOfSysTest = [
     LocalStorageTest,
+<<<<<<< HEAD
     CapabilitiesTest,
     OpenURLTest,
     ValidObjectTest
+=======
+    CapabilitiesTest
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
 ];
 
 if (cc.sys.isNative && cc.sys.OS_WINDOWS != cc.sys.os) {

@@ -1331,14 +1331,22 @@ var LabelTTFChinese = AtlasDemo.extend({
         //----start21----ctor
         this._super();
         var size = director.getWinSize();
+<<<<<<< HEAD
         var fontname = (cc.sys.os === cc.sys.OS_WP8 ) ? "fonts/arialuni.ttf" : (cc.sys.os == cc.sys.OS_WINRT) ? "DengXian" : "Microsoft Yahei";
         var label = new cc.LabelTTF("中国", fontname, 30);
+=======
+        var label = new cc.LabelTTF("中国", "Microsoft Yahei", 30);
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         label.x = size.width / 2;
         label.y = size.height / 3 * 2;
         this.addChild(label);
 
         // Test UTF8 string from native to jsval.
+<<<<<<< HEAD
         var label2 = new cc.LabelTTF("string from native:"+label.getString(), fontname, 30);
+=======
+        var label2 = new cc.LabelTTF("string from native:"+label.getString(), "Microsoft Yahei", 30);
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         label2.x = size.width / 2;
         label2.y = size.height / 3;
         this.addChild(label2);
@@ -1942,10 +1950,13 @@ var WrapAlgorithmTest = AtlasDemo.extend({
             LabelTTF.boundingWidth = 120;
             LabelTTF.boundingHeight = 0;
             LabelTTF.enableStroke(cc.color(0, 0, 0, 1), 3.0);
+<<<<<<< HEAD
             if (cc.sys.os === cc.sys.OS_WP8)
                 LabelTTF.setFontName("fonts/arialuni.ttf");
             else if(cc.sys.os === cc.sys.OS_WINRT)
                 LabelTTF.setFontName("DengXian");
+=======
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             self.addChild(LabelTTF);
         });
 
@@ -1968,10 +1979,13 @@ var WrapAlgorithmTest = AtlasDemo.extend({
             LabelTTF.boundingWidth = 3;
             LabelTTF.boundingHeight = 0;
             LabelTTF.enableStroke(cc.color(0, 0, 0, 1), 3.0);
+<<<<<<< HEAD
             if (cc.sys.os === cc.sys.OS_WP8)
                 LabelTTF.setFontName("fonts/arialuni.ttf");
             else if(cc.sys.os === cc.sys.OS_WINRT)
                 LabelTTF.setFontName("DengXian");
+=======
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             self.addChild(LabelTTF);
         });
 
@@ -1990,10 +2004,13 @@ var WrapAlgorithmTest = AtlasDemo.extend({
             LabelTTF.boundingWidth = 90;
             LabelTTF.boundingHeight = 0;
             LabelTTF.enableStroke(cc.color(0, 0, 0, 1), 3.0);
+<<<<<<< HEAD
             if (cc.sys.os === cc.sys.OS_WP8)
                 LabelTTF.setFontName("fonts/arialuni.ttf");
             else if(cc.sys.os === cc.sys.OS_WINRT)
                 LabelTTF.setFontName("DengXian");
+=======
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             self.addChild(LabelTTF);
         });
 

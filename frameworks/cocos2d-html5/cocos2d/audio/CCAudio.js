@@ -32,7 +32,10 @@
  * auto         : Supports auto-play audio - if Don‘t support it, On a touch detecting background music canvas, and then replay
  * replay       : The first music will fail, must be replay after touchstart
  * emptied      : Whether to use the emptied event to replace load callback
+<<<<<<< HEAD
  * delay        : delay created the context object - only webAudio
+=======
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
  *
  * May be modifications for a few browser version
  */
@@ -49,7 +52,11 @@
     //  ANDROID  //
     supportTable[sys.BROWSER_TYPE_ANDROID]  = {multichannel: false, webAudio: false, auto: false};
     supportTable[sys.BROWSER_TYPE_CHROME]   = {multichannel: true , webAudio: true , auto: false};
+<<<<<<< HEAD
     supportTable[sys.BROWSER_TYPE_FIREFOX]  = {multichannel: true , webAudio: true , auto: true , delay: true};
+=======
+    supportTable[sys.BROWSER_TYPE_FIREFOX]  = {multichannel: true , webAudio: true , auto: true };
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
     supportTable[sys.BROWSER_TYPE_UC]       = {multichannel: true , webAudio: false, auto: false};
     supportTable[sys.BROWSER_TYPE_QQ]       = {multichannel: false, webAudio: false, auto: true };
     supportTable[sys.BROWSER_TYPE_OUPENG]   = {multichannel: false, webAudio: false, auto: false, replay: true , emptied: true };
@@ -121,7 +128,11 @@
                 break;
             case sys.BROWSER_TYPE_MIUI:
                 version = version.match(/\d+/g);
+<<<<<<< HEAD
                 if(version[0] < 2 || (version[0] === 2 && version[1] === 0 && version[2] <= 1)){
+=======
+                if(version[0] < 2 || (version[0] == 2 && version[1] == 0 && version[2] <= 1)){
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                     supportTable[sys.BROWSER_TYPE_MIUI].auto = false;
                 }
                 break;
@@ -129,11 +140,16 @@
     }
 
     if(cc.sys.isMobile){
+<<<<<<< HEAD
         if(cc.sys.os !== cc.sys.OS_IOS)
+=======
+        if(cc.sys.os != cc.sys.OS_IOS)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             cc.__audioSupport = supportTable[sys.browserType] || supportTable["common"];
         else
             cc.__audioSupport = supportTable[sys.BROWSER_TYPE_SAFARI];
     }else{
+<<<<<<< HEAD
       switch(sys.browserType){
           case sys.BROWSER_TYPE_IE:
               cc.__audioSupport = supportTable[sys.BROWSER_TYPE_IE];
@@ -144,6 +160,13 @@
           default:
               cc.__audioSupport = supportTable["common"];
       }
+=======
+        //Desktop support all
+        if(cc.sys.browserType != cc.sys.BROWSER_TYPE_IE)
+            cc.__audioSupport = supportTable["common"];
+        else
+            cc.__audioSupport = supportTable[sys.BROWSER_TYPE_IE];
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
     }
 
     if(DEBUG){
@@ -180,8 +203,11 @@ cc.Audio = cc.Class.extend({
     _context: null,
     _volume: null,
 
+<<<<<<< HEAD
     _ignoreEnded: false,
 
+=======
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
     //DOM Audio
     _element: null,
 
@@ -200,7 +226,11 @@ cc.Audio = cc.Class.extend({
         var playing = this._playing;
         this._AUDIO_TYPE = "WEBAUDIO";
 
+<<<<<<< HEAD
         if(this._buffer && this._buffer !== buffer && this.getPlaying())
+=======
+        if(this._buffer && this._buffer != buffer && this.getPlaying())
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             this.stop();
 
         this._buffer = buffer;
@@ -217,7 +247,11 @@ cc.Audio = cc.Class.extend({
         var playing = this._playing;
         this._AUDIO_TYPE = "AUDIO";
 
+<<<<<<< HEAD
         if(this._element && this._element !== element && this.getPlaying())
+=======
+        if(this._element && this._element != element && this.getPlaying())
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             this.stop();
 
         this._element = element;
@@ -255,7 +289,11 @@ cc.Audio = cc.Class.extend({
                 return true;
         }else{
             var sourceNode = this._currentSource;
+<<<<<<< HEAD
             if(!sourceNode)
+=======
+            if(!this._playing && !sourceNode)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                 return true;
             if(sourceNode["playbackState"] == null)
                 return this._playing;
@@ -280,7 +318,11 @@ cc.Audio = cc.Class.extend({
         audio["connect"](this._volume);
         audio.loop = this.loop;
         this._startTime = this._context.currentTime;
+<<<<<<< HEAD
         this._currentTime = offset || 0;
+=======
+        this._currentTime = 0;
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
 
         /*
          * Safari on iOS 6 only supports noteOn(), noteGrainOn(), and noteOff() now.(iOS 6.1.3)
@@ -312,11 +354,15 @@ cc.Audio = cc.Class.extend({
         this._currentSource = audio;
         var self = this;
         audio["onended"] = function(){
+<<<<<<< HEAD
             if(self._ignoreEnded){
                 self._ignoreEnded = false;
             }else{
                 self._playing = false;
             }
+=======
+            self._playing = false;
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         };
     },
 
@@ -339,7 +385,10 @@ cc.Audio = cc.Class.extend({
 
     _stopOfWebAudio: function(){
         var audio = this._currentSource;
+<<<<<<< HEAD
         this._ignoreEnded = true;
+=======
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         if(audio){
             audio.stop(0);
             this._currentSource = null;
@@ -350,14 +399,21 @@ cc.Audio = cc.Class.extend({
         var audio = this._element;
         if(audio){
             audio.pause();
+<<<<<<< HEAD
             if (audio.duration && audio.duration !== Infinity)
+=======
+            if (audio.duration && audio.duration != Infinity)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                 audio.currentTime = 0;
         }
     },
 
     pause: function(){
+<<<<<<< HEAD
         if(this.getPlaying() === false)
             return;
+=======
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         this._playing = false;
         this._pause = true;
         if(this._AUDIO_TYPE === "AUDIO"){
@@ -484,8 +540,11 @@ cc.Audio = cc.Class.extend({
     try{
         if(SWA){
             var context = new (window.AudioContext || window.webkitAudioContext || window.mozAudioContext)();
+<<<<<<< HEAD
             if(polyfill.delay)
                 setTimeout(function(){ context = new (window.AudioContext || window.webkitAudioContext || window.mozAudioContext)(); }, 0);
+=======
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         }
     }catch(error){
         SWA = false;
@@ -514,6 +573,7 @@ cc.Audio = cc.Class.extend({
 
             var audio;
 
+<<<<<<< HEAD
             if(loader.cache[url])
                 return cb(null, loader.cache[url]);
 
@@ -528,13 +588,27 @@ cc.Audio = cc.Class.extend({
                     cc.log("browser don't support webAudio");
                     audio = new cc.Audio(null, null, realUrl);
                 }
+=======
+            if(loader.cache[realUrl])
+                return cb(null, loader.cache[realUrl]);
+
+            if(SWA){
+                var volume = context["createGain"]();
+                volume["gain"].value = 1;
+                volume["connect"](context["destination"]);
+                audio = new cc.Audio(context, volume, realUrl);
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             }else{
                 audio = new cc.Audio(null, null, realUrl);
             }
 
             this.loadAudioFromExtList(realUrl, typeList, audio, cb);
 
+<<<<<<< HEAD
             loader.cache[url] = audio;
+=======
+            loader.cache[realUrl] = audio;
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
 
         },
 
@@ -578,22 +652,32 @@ cc.Audio = cc.Class.extend({
                 var termination = false;
 
                 var timer = setTimeout(function(){
+<<<<<<< HEAD
                     if(element.readyState === 0){
                         emptied();
                     }else{
                         termination = true;
                     	element.pause();
                     	document.body.removeChild(element);
+=======
+                    if(element.readyState == 0){
+                        emptied();
+                    }else{
+                        termination = true;
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                         cb("audio load timeout : " + realUrl, audio);
                     }
                 }, 10000);
 
                 var success = function(){
                     if(!cbCheck){
+<<<<<<< HEAD
                     	element.pause();
                     	try { element.currentTime = 0;
                     	element.volume = 1; } catch (e) {}
                     	document.body.removeChild(element);
+=======
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                         audio.setElement(element);
                         element.removeEventListener("canplaythrough", success, false);
                         element.removeEventListener("error", failure, false);
@@ -606,8 +690,11 @@ cc.Audio = cc.Class.extend({
 
                 var failure = function(){
                     if(!cbCheck) return;
+<<<<<<< HEAD
                 	element.pause();
                 	document.body.removeChild(element);
+=======
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                     element.removeEventListener("canplaythrough", success, false);
                     element.removeEventListener("error", failure, false);
                     element.removeEventListener("emptied", emptied, false);
@@ -628,9 +715,13 @@ cc.Audio = cc.Class.extend({
                     cc._addEventListener(element, "emptied", emptied, false);
 
                 element.src = realUrl;
+<<<<<<< HEAD
                 document.body.appendChild(element);
                 element.volume = 0;
                 element.play();
+=======
+                element.load();
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             }
 
         }
@@ -1047,4 +1138,8 @@ cc.Audio = cc.Class.extend({
         cc.audioEngine._resumePlaying();
     });
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
 })(cc.__audioSupport);

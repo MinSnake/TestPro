@@ -347,7 +347,11 @@
 
         _syncPosition:function () {
             var locPosition = this._position, locBody = this._body;
+<<<<<<< HEAD
             if (locPosition.x !== locBody.p.x || locPosition.y !== locBody.p.y) {
+=======
+            if (locPosition.x != locBody.p.x || locPosition.y != locBody.p.y) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                 cc.Sprite.prototype.setPosition.call(this, locBody.p.x, locBody.p.y);
             }
         },
@@ -373,7 +377,11 @@
             }
         },
         _syncRotation:function () {
+<<<<<<< HEAD
             if (this._rotationX !== -cc.radiansToDegrees(this._body.a)) {
+=======
+            if (this._rotationX != -cc.radiansToDegrees(this._body.a)) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                 cc.Sprite.prototype.setRotation.call(this, -cc.radiansToDegrees(this._body.a));
             }
         },

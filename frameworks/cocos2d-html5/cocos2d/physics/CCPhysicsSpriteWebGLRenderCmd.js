@@ -59,11 +59,17 @@
         }
 
         // Make matrix
+<<<<<<< HEAD
         var radians = locBody.a, c = 1, s=0;
         if (radians && !node._ignoreBodyRotation) {
             c = Math.cos(radians);
             s = Math.sin(radians);
         }
+=======
+        var radians = locBody.a;
+        var c = Math.cos(radians);
+        var s = Math.sin(radians);
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
 
         // Although scale is not used by physics engines, it is calculated just in case
         // the sprite is animated (scaled up/down) using actions.

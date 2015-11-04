@@ -280,7 +280,13 @@
                 func: function(){
                     return new UITextTest_IgnoreConentSize();
                 }
+<<<<<<< HEAD
             },
+=======
+            }
+        ],
+        "UITextAtlas": [
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             {
                 title: "UILabelAtlasTest",
                 func: function () {

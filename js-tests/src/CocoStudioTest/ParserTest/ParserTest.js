@@ -27,22 +27,39 @@ var g_parsersTests = [
     {
         title: "cocostudio 1.3",
         test: function(){
+<<<<<<< HEAD
             new CocostudioParserJsonScene("res/cocosui/CCS/ccs1_3/CCSV1_3_1.ExportJson").runThisTest();
+=======
+            new CocostudioParserJsonScene("res/cocosui/UIEditorTest/cocostudio1_3/CocostudioV1_3_1.ExportJson").runThisTest();
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         }
     },{
         title: "cocostudio 1.4",
         test: function(){
+<<<<<<< HEAD
             new CocostudioParserJsonScene("res/cocosui/CCS/ccs1_4/CCS1_4_1.ExportJson").runThisTest();
+=======
+            new CocostudioParserJsonScene("res/cocosui/UIEditorTest/cocostudio1_4/Cocostudio1_4_1.ExportJson").runThisTest();
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         }
     },{
         title: "cocostudio 1.5",
         test: function(){
+<<<<<<< HEAD
             new CocostudioParserJsonScene("res/cocosui/CCS/ccs1_5/CCS1_5_1.ExportJson").runThisTest();
         }
     },{
         title: "cocostudio 2.1",
         test: function(){
             new CocostudioParserJsonScene("res/cocosui/CCS/2.1/MainScene.json").runThisTest();
+=======
+            new CocostudioParserJsonScene("res/cocosui/UIEditorTest/cocostudio1_5/Cocostudio1_5_1.ExportJson").runThisTest();
+        }
+    },{
+        title: "cocostudio 2.0",
+        test: function(){
+            new CocostudioParserJsonScene("res/cocosui/UIEditorTest/2.0.5/res/MainScene.json").runThisTest();
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         }
     }
 ];
@@ -73,7 +90,11 @@ var CocostudioParserJsonLayer = cc.Layer.extend({
             var json = ccs.load(this._jsonFile);
             layout = json.node;
         }else{
+<<<<<<< HEAD
             //ccs.uiReader.widgetFromJsonFile only supports 1.x file
+=======
+            //old api
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             cc.log("ccs.uiReader.widgetFromJsonFile : %s", this._jsonFile);
             var guiReader = ccs.uiReader;
             layout = guiReader.widgetFromJsonFile(this._jsonFile);

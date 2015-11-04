@@ -80,6 +80,7 @@
  *
  */
 
+<<<<<<< HEAD
 if(cc.sys){
     var scene3SearchPaths = cc.sys.localStorage.getItem("Scene3SearchPaths");
     if (scene3SearchPaths)
@@ -91,6 +92,16 @@ cc.game.onStart = function(){
     if (cc.sys.isNative) {
         var resolutionPolicy = (cc.sys.os == cc.sys.OS_WP8 || cc.sys.os == cc.sys.OS_WINRT) ? cc.ResolutionPolicy.SHOW_ALL : cc.ResolutionPolicy.FIXED_HEIGHT;
         cc.view.setDesignResolutionSize(800, 450, resolutionPolicy);
+=======
+var scene3SearchPaths = cc.sys.localStorage.getItem("Scene3SearchPaths");
+if (scene3SearchPaths)
+    jsb.fileUtils.setSearchPaths(JSON.parse(scene3SearchPaths));
+
+cc.game.onStart = function(){
+    
+    if (cc.sys.isNative) {
+        cc.view.setDesignResolutionSize(800, 450, cc.ResolutionPolicy.FIXED_HEIGHT);
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         cc.view.resizeWithBrowserSize(true);
         var searchPaths = jsb.fileUtils.getSearchPaths();
         searchPaths.push('script');

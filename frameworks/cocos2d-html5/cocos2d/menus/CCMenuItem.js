@@ -295,7 +295,11 @@ cc.MenuItemLabel = cc.MenuItem.extend(/** @lends cc.MenuItemLabel# */{
      * @param {Boolean} enabled
      */
     setEnabled: function (enabled) {
+<<<<<<< HEAD
         if (this._enabled !== enabled) {
+=======
+        if (this._enabled != enabled) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             var locLabel = this._label;
             if (!enabled) {
                 this._colorBackup = locLabel.color;
@@ -492,7 +496,11 @@ cc.MenuItemAtlasFont = cc.MenuItemLabel.extend(/** @lends cc.MenuItemAtlasFont# 
      * @return {Boolean}
      */
     initWithString: function (value, charMapFile, itemWidth, itemHeight, startCharMap, callback, target) {
+<<<<<<< HEAD
         if (!value || value.length === 0)
+=======
+        if (!value || value.length == 0)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             throw "cc.MenuItemAtlasFont.initWithString(): value should be non-null and its length should be greater than 0";
 
         var label = new cc.LabelAtlas();
@@ -566,7 +574,11 @@ cc.MenuItemFont = cc.MenuItemLabel.extend(/** @lends cc.MenuItemFont# */{
      * @return {Boolean}
      */
     initWithString: function (value, callback, target) {
+<<<<<<< HEAD
         if (!value || value.length === 0)
+=======
+        if (!value || value.length == 0)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             throw "Value should be non-null and its length should be greater than 0";
 
         this._fontName = cc._globalFontName;
@@ -725,8 +737,13 @@ cc.MenuItemSprite = cc.MenuItem.extend(/** @lends cc.MenuItemSprite# */{
         this._disabledImage = null;
 
         if (selectedSprite !== undefined) {
+<<<<<<< HEAD
             //normalSprite = normalSprite;
             //selectedSprite = selectedSprite;
+=======
+            normalSprite = normalSprite;
+            selectedSprite = selectedSprite;
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             var disabledImage, target, callback;
             //when you send 4 arguments, five is undefined
             if (five !== undefined) {
@@ -739,9 +756,15 @@ cc.MenuItemSprite = cc.MenuItem.extend(/** @lends cc.MenuItemSprite# */{
             } else if (four !== undefined && cc.isFunction(three)) {
                 target = four;
                 callback = three;
+<<<<<<< HEAD
                 disabledImage = null;
             } else if (three === undefined) {
                 disabledImage = null;
+=======
+                disabledImage = new cc.Sprite(selectedSprite.getTexture(), selectedSprite.getTextureRect());
+            } else if (three === undefined) {
+                disabledImage = new cc.Sprite(selectedSprite.getTexture(), selectedSprite.getTextureRect());
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             }
             this.initWithNormalSprite(normalSprite, selectedSprite, disabledImage, callback, target);
         }
@@ -760,7 +783,11 @@ cc.MenuItemSprite = cc.MenuItem.extend(/** @lends cc.MenuItemSprite# */{
      * @param {cc.Sprite} normalImage
      */
     setNormalImage: function (normalImage) {
+<<<<<<< HEAD
         if (this._normalImage === normalImage) {
+=======
+        if (this._normalImage == normalImage) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             return;
         }
         if (normalImage) {
@@ -798,7 +825,11 @@ cc.MenuItemSprite = cc.MenuItem.extend(/** @lends cc.MenuItemSprite# */{
      * @param {cc.Sprite} selectedImage
      */
     setSelectedImage: function (selectedImage) {
+<<<<<<< HEAD
         if (this._selectedImage === selectedImage)
+=======
+        if (this._selectedImage == selectedImage)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             return;
 
         if (selectedImage) {
@@ -828,7 +859,11 @@ cc.MenuItemSprite = cc.MenuItem.extend(/** @lends cc.MenuItemSprite# */{
      * @param {cc.Sprite} disabledImage
      */
     setDisabledImage: function (disabledImage) {
+<<<<<<< HEAD
         if (this._disabledImage === disabledImage)
+=======
+        if (this._disabledImage == disabledImage)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             return;
 
         if (disabledImage) {
@@ -959,7 +994,11 @@ cc.MenuItemSprite = cc.MenuItem.extend(/** @lends cc.MenuItemSprite# */{
      * @param {Boolean} bEnabled
      */
     setEnabled: function (bEnabled) {
+<<<<<<< HEAD
         if (this._enabled !== bEnabled) {
+=======
+        if (this._enabled != bEnabled) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             cc.MenuItem.prototype.setEnabled.call(this, bEnabled);
             this._updateImagesVisibility();
         }
@@ -1251,7 +1290,11 @@ cc.MenuItemToggle = cc.MenuItem.extend(/** @lends cc.MenuItemToggle# */{
      * @param {Number} SelectedIndex
      */
     setSelectedIndex: function (SelectedIndex) {
+<<<<<<< HEAD
         if (SelectedIndex !== this._selectedIndex) {
+=======
+        if (SelectedIndex != this._selectedIndex) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             this._selectedIndex = SelectedIndex;
             var currItem = this.getChildByTag(cc.CURRENT_ITEM);
             if (currItem)
@@ -1358,7 +1401,11 @@ cc.MenuItemToggle = cc.MenuItem.extend(/** @lends cc.MenuItemToggle# */{
      * @param {Boolean} enabled
      */
     setEnabled: function (enabled) {
+<<<<<<< HEAD
         if (this._enabled !== enabled) {
+=======
+        if (this._enabled != enabled) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             cc.MenuItem.prototype.setEnabled.call(this, enabled);
             var locItems = this.subItems;
             if (locItems && locItems.length > 0) {

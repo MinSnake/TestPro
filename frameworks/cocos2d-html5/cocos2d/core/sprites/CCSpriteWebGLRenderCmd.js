@@ -80,7 +80,11 @@
 
     proto.isFrameDisplayed = function (frame) {
         var node = this._node;
+<<<<<<< HEAD
         return (cc.rectEqualToRect(frame.getRect(), node._rect) && frame.getTexture().getName() === node._texture.getName()
+=======
+        return (cc.rectEqualToRect(frame.getRect(), node._rect) && frame.getTexture().getName() == node._texture.getName()
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             && cc.pointEqualToPoint(frame.getOffset(), node._unflippedOffsetPositionFromCenter));
     };
 
@@ -251,7 +255,11 @@
 
         // renders using Sprite Manager
         if (node._batchNode) {
+<<<<<<< HEAD
             if (node.atlasIndex !== cc.Sprite.INDEX_NOT_INITIALIZED) {
+=======
+            if (node.atlasIndex != cc.Sprite.INDEX_NOT_INITIALIZED) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                 node.textureAtlas.updateQuad(locQuad, node.atlasIndex)
             } else {
                 // no need to set it recursively
@@ -287,12 +295,20 @@
         var node = this._node;
         // If batchnode, then texture id should be the same
         if (node._batchNode) {
+<<<<<<< HEAD
             if(node._batchNode.texture !== texture){
+=======
+            if(node._batchNode.texture != texture){
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                 cc.log(cc._LogInfos.Sprite_setTexture);
                 return;
             }
         }else{
+<<<<<<< HEAD
             if(node._texture !== texture){
+=======
+            if(node._texture != texture){
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                 node._textureLoaded = texture ? texture._textureLoaded : false;
                 node._texture = texture;
                 this._updateBlendFunc();
@@ -313,7 +329,11 @@
         if (this._dirty) {
             var locQuad = _t._quad, locParent = node._parent;
             // If it is not visible, or one of its ancestors is not visible, then do nothing:
+<<<<<<< HEAD
             if (!node._visible || ( locParent && locParent !== node._batchNode && locParent._shouldBeHidden)) {
+=======
+            if (!node._visible || ( locParent && locParent != node._batchNode && locParent._shouldBeHidden)) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                 locQuad.br.vertices = locQuad.tl.vertices = locQuad.tr.vertices = locQuad.bl.vertices = {x: 0, y: 0, z: 0};
                 node._shouldBeHidden = true;
             } else {
@@ -323,7 +343,11 @@
                     this._dirtyFlag = 0;
                 }
 
+<<<<<<< HEAD
                 if (!locParent || locParent === node._batchNode) {
+=======
+                if (!locParent || locParent == node._batchNode) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                     node._transformToBatch = _t.getNodeToParentTransform();
                 } else {
                     node._transformToBatch = cc.affineTransformConcat(_t.getNodeToParentTransform(), locParent._transformToBatch);

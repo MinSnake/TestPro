@@ -84,7 +84,11 @@ ccui.CheckBox = ccui.Widget.extend(/** @lends ccui.CheckBox# */{
         var strNum = 0;
         for(var i=0; i<arguments.length; i++){
             var type = typeof arguments[i];
+<<<<<<< HEAD
             if(type === "string"){
+=======
+            if(type == "string"){
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                 if(isNaN(arguments[i] - 0))
                     strNum++;
                 else{
@@ -92,7 +96,11 @@ ccui.CheckBox = ccui.Widget.extend(/** @lends ccui.CheckBox# */{
                     arguments[i] = undefined;
                 }
 
+<<<<<<< HEAD
             }else if(type === "number")
+=======
+            }else if(type == "number")
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                 strNum++;
         }
         switch(strNum){
@@ -163,7 +171,11 @@ ccui.CheckBox = ccui.Widget.extend(/** @lends ccui.CheckBox# */{
      * @param {ccui.Widget.LOCAL_TEXTURE|ccui.Widget.PLIST_TEXTURE} texType
      */
     loadTextureBackGround: function (backGround, texType) {
+<<<<<<< HEAD
         if (!backGround)
+=======
+        if (!backGround || (this._backGroundFileName == backGround && this._backGroundTexType == texType))
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             return;
 
         texType = texType || ccui.Widget.LOCAL_TEXTURE;
@@ -174,7 +186,11 @@ ccui.CheckBox = ccui.Widget.extend(/** @lends ccui.CheckBox# */{
         if(!bgBoxRenderer._textureLoaded){
             bgBoxRenderer.addEventListener("load", function(){
                 this._updateContentSizeWithTextureSize(this._backGroundBoxRenderer.getContentSize());
+<<<<<<< HEAD
                 this.loadTextureBackGround(this._backGroundFileName, this._backGroundTexType);
+=======
+                this.loadTextureBackGround(backGround, texType);
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             }, this);
         }else{
             this._backGroundBoxRenderer.setContentSize(this._customSize);
@@ -206,7 +222,11 @@ ccui.CheckBox = ccui.Widget.extend(/** @lends ccui.CheckBox# */{
      * @param {ccui.Widget.LOCAL_TEXTURE|ccui.Widget.PLIST_TEXTURE} texType
      */
     loadTextureBackGroundSelected: function (backGroundSelected, texType) {
+<<<<<<< HEAD
         if (!backGroundSelected)
+=======
+        if (!backGroundSelected || (this._backGroundSelectedFileName == backGroundSelected && this._backGroundSelectedTexType == texType))
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             return;
 
         texType = texType || ccui.Widget.LOCAL_TEXTURE;
@@ -216,7 +236,11 @@ ccui.CheckBox = ccui.Widget.extend(/** @lends ccui.CheckBox# */{
         var backGroundSelectedBoxRenderer = this._backGroundSelectedBoxRenderer;
         if(!backGroundSelectedBoxRenderer._textureLoaded){
             backGroundSelectedBoxRenderer.addEventListener("load", function(){
+<<<<<<< HEAD
                 this.loadTextureBackGroundSelected(this._backGroundSelectedFileName, this._backGroundSelectedTexType);
+=======
+                this.loadTextureBackGroundSelected(backGroundSelected, texType);
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             }, this);
         }
 
@@ -246,7 +270,11 @@ ccui.CheckBox = ccui.Widget.extend(/** @lends ccui.CheckBox# */{
      * @param {ccui.Widget.LOCAL_TEXTURE|ccui.Widget.PLIST_TEXTURE} texType
      */
     loadTextureFrontCross: function (cross, texType) {
+<<<<<<< HEAD
         if (!cross)
+=======
+        if (!cross || (this._frontCrossFileName == cross && this._frontCrossTexType == texType))
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             return;
         texType = texType || ccui.Widget.LOCAL_TEXTURE;
         this._frontCrossFileName = cross;
@@ -256,7 +284,11 @@ ccui.CheckBox = ccui.Widget.extend(/** @lends ccui.CheckBox# */{
         var frontCrossRenderer = this._frontCrossRenderer;
         if(!frontCrossRenderer._textureLoaded){
             frontCrossRenderer.addEventListener("load", function(){
+<<<<<<< HEAD
                 this.loadTextureFrontCross(this._frontCrossFileName, this._frontCrossTexType);
+=======
+                this.loadTextureFrontCross(cross, texType);
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             }, this);
         }
 
@@ -285,7 +317,11 @@ ccui.CheckBox = ccui.Widget.extend(/** @lends ccui.CheckBox# */{
      * @param {ccui.Widget.LOCAL_TEXTURE|ccui.Widget.PLIST_TEXTURE} texType
      */
     loadTextureBackGroundDisabled: function (backGroundDisabled, texType) {
+<<<<<<< HEAD
         if (!backGroundDisabled)
+=======
+        if (!backGroundDisabled || (this._backGroundDisabledFileName == backGroundDisabled && this._backGroundDisabledTexType == texType))
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             return;
         texType = texType || ccui.Widget.LOCAL_TEXTURE;
         this._backGroundDisabledFileName = backGroundDisabled;
@@ -295,7 +331,11 @@ ccui.CheckBox = ccui.Widget.extend(/** @lends ccui.CheckBox# */{
         var backGroundBoxDisabledRenderer = this._backGroundBoxDisabledRenderer;
         if(!backGroundBoxDisabledRenderer._textureLoaded){
             backGroundBoxDisabledRenderer.addEventListener("load", function(){
+<<<<<<< HEAD
                 this.loadTextureBackGroundDisabled(this._backGroundDisabledFileName, this._backGroundDisabledTexType);
+=======
+                this.loadTextureBackGroundDisabled(backGroundDisabled, texType);
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             }, this);
         }
 
@@ -324,7 +364,11 @@ ccui.CheckBox = ccui.Widget.extend(/** @lends ccui.CheckBox# */{
      * @param {ccui.Widget.LOCAL_TEXTURE|ccui.Widget.PLIST_TEXTURE} texType
      */
     loadTextureFrontCrossDisabled: function (frontCrossDisabled, texType) {
+<<<<<<< HEAD
         if (!frontCrossDisabled)
+=======
+        if (!frontCrossDisabled || (this._frontCrossDisabledFileName == frontCrossDisabled && this._frontCrossDisabledTexType == texType))
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             return;
         texType = texType || ccui.Widget.LOCAL_TEXTURE;
         this._frontCrossDisabledFileName = frontCrossDisabled;
@@ -334,7 +378,11 @@ ccui.CheckBox = ccui.Widget.extend(/** @lends ccui.CheckBox# */{
         var frontCrossDisabledRenderer = this._frontCrossDisabledRenderer;
         if(!frontCrossDisabledRenderer._textureLoaded){
             frontCrossDisabledRenderer.addEventListener("load", function(){
+<<<<<<< HEAD
                 this.loadTextureFrontCrossDisabled(this._frontCrossDisabledFileName, this._frontCrossDisabledTexType);
+=======
+                this.loadTextureFrontCrossDisabled(frontCrossDisabled, texType);
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             }, this);
         }
 
@@ -418,7 +466,11 @@ ccui.CheckBox = ccui.Widget.extend(/** @lends ccui.CheckBox# */{
      * @param {Boolean} selected
      */
     setSelected: function (selected) {
+<<<<<<< HEAD
         if (selected === this._isSelected)
+=======
+        if (selected == this._isSelected)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             return;
         this._isSelected = selected;
         this._frontCrossRenderer.setVisible(this._isSelected);

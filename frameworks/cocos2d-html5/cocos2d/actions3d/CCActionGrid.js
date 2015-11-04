@@ -33,7 +33,10 @@
  */
 cc.GridAction = cc.ActionInterval.extend(/** @lends cc.GridAction# */{
     _gridSize:null,
+<<<<<<< HEAD
     _gridNodeTarget:null,
+=======
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
 
 	/**
 	 * Constructor function, override it to extend the construction behavior, remember to call "this._super()" in the extended "ctor" function.
@@ -48,8 +51,11 @@ cc.GridAction = cc.ActionInterval.extend(/** @lends cc.GridAction# */{
 		gridSize && this.initWithDuration(duration, gridSize);
     },
 
+<<<<<<< HEAD
     _cacheTargetAsGridNode: function(){},
 
+=======
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
     /**
      * to copy object with deep copy.
      * returns a clone of action.
@@ -76,7 +82,11 @@ cc.GridAction = cc.ActionInterval.extend(/** @lends cc.GridAction# */{
         var targetGrid = t.grid;
         if (targetGrid && targetGrid.getReuseGrid() > 0) {
             var locGridSize = targetGrid.getGridSize();
+<<<<<<< HEAD
             if (targetGrid.isActive() && (locGridSize.width === this._gridSize.width) && (locGridSize.height === this._gridSize.height))
+=======
+            if (targetGrid.isActive() && (locGridSize.width == this._gridSize.width) && (locGridSize.height == this._gridSize.height))
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                 targetGrid.reuse();
         } else {
             if (targetGrid && targetGrid.isActive())
@@ -158,6 +168,7 @@ cc.Grid3DAction = cc.GridAction.extend(/** @lends cc.Grid3DAction# */{
     },
 
     /**
+<<<<<<< HEAD
      * returns the vertex than belongs to certain position in the grid.                           <br/>
      * It will be deprecated in future, please use getVertex instead.
      * @param {cc.Point} position
@@ -168,10 +179,13 @@ cc.Grid3DAction = cc.GridAction.extend(/** @lends cc.Grid3DAction# */{
     },
 
     /**
+=======
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
      * returns the vertex than belongs to certain position in the grid
      * @param {cc.Point} position
      * @return {cc.Vertex3F}
      */
+<<<<<<< HEAD
     getVertex: function(position){
         return this.target.grid.getVertex(position);
     },
@@ -184,6 +198,10 @@ cc.Grid3DAction = cc.GridAction.extend(/** @lends cc.Grid3DAction# */{
      */
     originalVertex:function (position) {
         return this.getOriginalVertex(position);
+=======
+    vertex:function (position) {
+        return this.target.grid.vertex(position);
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
     },
 
     /**
@@ -191,7 +209,11 @@ cc.Grid3DAction = cc.GridAction.extend(/** @lends cc.Grid3DAction# */{
      * @param {cc.Point} position
      * @return {cc.Vertex3F}
      */
+<<<<<<< HEAD
     getOriginalVertex:function (position) {
+=======
+    originalVertex:function (position) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         return this.target.grid.originalVertex(position);
     },
 
@@ -234,6 +256,7 @@ cc.Grid3DAction.create = cc.grid3DAction;
 cc.TiledGrid3DAction = cc.GridAction.extend(/** @lends cc.TiledGrid3DAction# */{
 
     /**
+<<<<<<< HEAD
      * returns the tile that belongs to a certain position of the grid        <br/>
      * It will be deprecated in future, please use getTile instead.
      * @param {cc.Point} position
@@ -244,15 +267,22 @@ cc.TiledGrid3DAction = cc.GridAction.extend(/** @lends cc.TiledGrid3DAction# */{
     },
 
     /**
+=======
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
      * returns the tile that belongs to a certain position of the grid
      * @param {cc.Point} position
      * @return {cc.Quad3}
      */
+<<<<<<< HEAD
     getTile:function (position) {
+=======
+    tile:function (position) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         return this.target.grid.tile(position);
     },
 
     /**
+<<<<<<< HEAD
      * returns the non-transformed tile that belongs to a certain position of the grid               <br/>
      * It will be deprecated in future, please use getOriginalTile instead.
      * @param {cc.Point} position
@@ -263,11 +293,17 @@ cc.TiledGrid3DAction = cc.GridAction.extend(/** @lends cc.TiledGrid3DAction# */{
     },
 
     /**
+=======
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
      * returns the non-transformed tile that belongs to a certain position of the grid
      * @param {cc.Point} position
      * @return {cc.Quad3}
      */
+<<<<<<< HEAD
     getOriginalTile:function (position) {
+=======
+    originalTile:function (position) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         return this.target.grid.originalTile(position);
     },
 

@@ -112,7 +112,11 @@ ccs.ProcessBase = ccs.Class.extend(/** @lends ccs.ProcessBase# */{
         this._durationTween = 0;
         this._rawDuration = 0;
         this._loopType = ccs.ANIMATION_TYPE_LOOP_BACK;
+<<<<<<< HEAD
         this._tweenEasing = ccs.TweenType.LINEAR;
+=======
+        this._tweenEasing = ccs.TweenType.linear;
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         this.animationInternal = 1 / 60;
         this._curFrameIndex = 0;
         this._durationTween = 0;
@@ -220,9 +224,15 @@ ccs.ProcessBase = ccs.Class.extend(/** @lends ccs.ProcessBase# */{
      */
     gotoFrame: function (frameIndex) {
         var locLoopType = this._loopType;
+<<<<<<< HEAD
         if (locLoopType === ccs.ANIMATION_TYPE_NO_LOOP)
             locLoopType = ccs.ANIMATION_TYPE_MAX;
         else if (locLoopType === ccs.ANIMATION_TYPE_TO_LOOP_FRONT)
+=======
+        if (locLoopType == ccs.ANIMATION_TYPE_NO_LOOP)
+            locLoopType = ccs.ANIMATION_TYPE_MAX;
+        else if (locLoopType == ccs.ANIMATION_TYPE_TO_LOOP_FRONT)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             locLoopType = ccs.ANIMATION_TYPE_LOOP_FRONT;
         this._loopType = locLoopType;
         this._curFrameIndex = frameIndex;

@@ -30,10 +30,13 @@ var UIListViewTest_Vertical = UIScene.extend({
             var background = this._widget.getChildByName("background_Panel");
             var backgroundSize = background.getContentSize();
 
+<<<<<<< HEAD
             this._topDisplayLabel.setString("Scroll listview is disabled.");
             this._topDisplayLabel.x = widgetSize.width / 2.0;
             this._topDisplayLabel.y = widgetSize.height / 2.0 + this._topDisplayLabel.height * 1.5;
 
+=======
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             this._array = [];
             for (var i = 0; i < 20; ++i) {
                 this._array.push("item_" + i);

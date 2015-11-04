@@ -1200,6 +1200,7 @@ PauseResumeTargetTest.create = function(){
     return test;
 };
 
+<<<<<<< HEAD
 var Issue9898 = EventDispatcherTestDemo.extend({
 
     title: function(){
@@ -1250,6 +1251,8 @@ Issue9898.create = function(){
     return test;
 };
 
+=======
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
 var EventDispatcherTestScene = TestScene.extend({
     runThisTest:function (num) {
         eventDispatcherSceneIdx = (num || num == 0) ? (num - 1) : -1;
@@ -1271,8 +1274,12 @@ var arrayOfEventDispatcherTest = [
     //GlobalZTouchTest,
     StopPropagationTest,
     Issue4160,
+<<<<<<< HEAD
     PauseResumeTargetTest,
     Issue9898
+=======
+    PauseResumeTargetTest
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
 ];
 
 var nextDispatcherTest = function () {

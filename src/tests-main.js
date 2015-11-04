@@ -244,6 +244,7 @@ var testNames = [
         }
     },
     {
+<<<<<<< HEAD
         title:"BillBoard Test",
         platforms: PLATFORM_JSB,
         linksrc:"src/BillBoardTest/BillBoardTest.js",
@@ -252,6 +253,8 @@ var testNames = [
         }
     },
     {
+=======
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         title:"Box2D Test",
         resource:g_box2d,
         platforms: PLATFORM_HTML5,
@@ -261,6 +264,7 @@ var testNames = [
         }
     },
     {
+<<<<<<< HEAD
         title:"Camera3D Test",
         platforms: PLATFORM_JSB,
         linksrc:"src/Camera3DTest/Camera3DTest.js",
@@ -269,6 +273,8 @@ var testNames = [
         }
     },
     {
+=======
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         title:"Chipmunk Test",
         platforms: PLATFORM_ALL,
         linksrc:"src/ChipmunkTest/ChipmunkTest.js",
@@ -431,6 +437,7 @@ var testNames = [
         }
     },
     {
+<<<<<<< HEAD
         title:"Light Test",
         platforms: PLATFORM_JSB,
         linksrc:"src/LightTest/LightTest.js",
@@ -439,6 +446,8 @@ var testNames = [
         }
     },
     {
+=======
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         title:"Loader Test",
         platforms: PLATFORM_ALL,
         linksrc:"src/LoaderTest/LoaderTest.js",
@@ -490,6 +499,7 @@ var testNames = [
         }
     },
     {
+<<<<<<< HEAD
         title:"Particle3D Test",
         platforms: PLATFORM_JSB,
         testScene:function () {
@@ -497,6 +507,8 @@ var testNames = [
         }
     },
     {
+=======
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         title:"Particle Test",
         platforms: PLATFORM_ALL,
         linksrc:"",
@@ -580,6 +592,7 @@ var testNames = [
         }
     },
     {
+<<<<<<< HEAD
         title:"Gaf Test",
         resource: g_gaf,
         platforms: PLATFORM_ALL,
@@ -597,6 +610,8 @@ var testNames = [
         }
     },
     {
+=======
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         title:"Sprite Test",
         resource:g_sprites,
         platforms: PLATFORM_ALL,
@@ -615,6 +630,7 @@ var testNames = [
         }
     },
     {
+<<<<<<< HEAD
         title:"Terrain Test",
         platforms: PLATFORM_JSB,
         linksrc:"src/TerrainTest/TerrainTest.js",
@@ -623,6 +639,8 @@ var testNames = [
         }
     },
     {
+=======
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         title:"TextInput Test",
         platforms: PLATFORM_HTML5,
         linksrc:"src/TextInputTest/TextInputTest.js",
@@ -697,6 +715,7 @@ var testNames = [
         testScene:function () {
             return new XHRTestScene();
         }
+<<<<<<< HEAD
     },
     {
         title:"XMLHttpRequest send ArrayBuffer",
@@ -705,6 +724,8 @@ var testNames = [
         testScene:function () {
             return new XHRArrayBufferTestScene();
         }
+=======
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
     }
 
     //"UserDefaultTest",

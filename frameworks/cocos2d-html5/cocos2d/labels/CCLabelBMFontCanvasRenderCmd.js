@@ -75,7 +75,11 @@
             var selChild = locChildren[i];
             var cm = selChild._renderCmd;
             var childDColor = cm._displayedColor;
+<<<<<<< HEAD
             if (this._texture !== cm._texture && (childDColor.r !== locDisplayedColor.r ||
+=======
+            if (this._texture != cm._texture && (childDColor.r !== locDisplayedColor.r ||
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                 childDColor.g !== locDisplayedColor.g || childDColor.b !== locDisplayedColor.b))
                 continue;
             selChild.texture = texture;

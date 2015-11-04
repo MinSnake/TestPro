@@ -236,7 +236,11 @@ cc.SpriteFrame = cc.Class.extend(/** @lends cc.SpriteFrame# */{
      * @param {cc.Texture2D} texture
      */
     setTexture:function (texture) {
+<<<<<<< HEAD
         if (this._texture !== texture) {
+=======
+        if (this._texture != texture) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             var locLoaded = texture.isLoaded();
             this._textureLoaded = locLoaded;
             this._texture = texture;

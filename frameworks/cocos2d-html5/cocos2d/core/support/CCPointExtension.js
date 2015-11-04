@@ -371,7 +371,11 @@ cc.pRotateByAngle = function (v, pivot, angle) {
  * @return {Boolean}
  */
 cc.pLineIntersect = function (A, B, C, D, retP) {
+<<<<<<< HEAD
     if ((A.x === B.x && A.y === B.y) || (C.x === D.x && C.y === D.y)) {
+=======
+    if ((A.x == B.x && A.y == B.y) || (C.x == D.x && C.y == D.y)) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         return false;
     }
     var BAx = B.x - A.x;
@@ -386,8 +390,13 @@ cc.pLineIntersect = function (A, B, C, D, retP) {
     retP.x = DCx * ACy - DCy * ACx;
     retP.y = BAx * ACy - BAy * ACx;
 
+<<<<<<< HEAD
     if (denom === 0) {
         if (retP.x === 0 || retP.y === 0) {
+=======
+    if (denom == 0) {
+        if (retP.x == 0 || retP.y == 0) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             // Lines incident
             return true;
         }
@@ -447,7 +456,11 @@ cc.pIntersectPoint = function (A, B, C, D) {
  */
 cc.pSameAs = function (A, B) {
     if ((A != null) && (B != null)) {
+<<<<<<< HEAD
         return (A.x === B.x && A.y === B.y);
+=======
+        return (A.x == B.x && A.y == B.y);
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
     }
     return false;
 };
@@ -507,7 +520,11 @@ cc.pAddIn = function(v1, v2) {
 
 /**
  * normalizes the point (inplace)
+<<<<<<< HEAD
  * @param {cc.Point} v
+=======
+ * @param {cc.Point{ v
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
  */
 cc.pNormalizeIn = function(v) {
     cc.pMultIn(v, 1.0 / Math.sqrt(v.x * v.x + v.y * v.y));

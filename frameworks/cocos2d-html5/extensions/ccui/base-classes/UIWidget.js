@@ -30,7 +30,11 @@ ccui._FocusNavigationController = cc.Class.extend({
     _keyboardEventPriority: 1,
 
     enableFocusNavigation: function(flag){
+<<<<<<< HEAD
         if (this._enableFocusNavigation === flag)
+=======
+        if (this._enableFocusNavigation == flag)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             return;
 
         this._enableFocusNavigation = flag;
@@ -46,6 +50,7 @@ ccui._FocusNavigationController = cc.Class.extend({
 
     _onKeyPressed: function(keyCode, event){
         if (this._enableFocusNavigation && this._firstFocusedWidget) {
+<<<<<<< HEAD
             if (keyCode === cc.KEY.dpadDown) {
                 this._firstFocusedWidget = this._firstFocusedWidget.findNextFocusedWidget(ccui.Widget.DOWN, this._firstFocusedWidget);
             }
@@ -56,6 +61,18 @@ ccui._FocusNavigationController = cc.Class.extend({
                 this._firstFocusedWidget = this._firstFocusedWidget.findNextFocusedWidget(ccui.Widget.LEFT, this._firstFocusedWidget);
             }
             if (keyCode === cc.KEY.dpadRight) {
+=======
+            if (keyCode == cc.KEY.dpadDown) {
+                this._firstFocusedWidget = this._firstFocusedWidget.findNextFocusedWidget(ccui.Widget.DOWN, this._firstFocusedWidget);
+            }
+            if (keyCode == cc.KEY.dpadUp){
+                this._firstFocusedWidget = this._firstFocusedWidget.findNextFocusedWidget(ccui.Widget.UP, this._firstFocusedWidget);
+            }
+            if (keyCode == cc.KEY.dpadLeft) {
+                this._firstFocusedWidget = this._firstFocusedWidget.findNextFocusedWidget(ccui.Widget.LEFT, this._firstFocusedWidget);
+            }
+            if (keyCode == cc.KEY.dpadRight) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                 this._firstFocusedWidget = this._firstFocusedWidget.findNextFocusedWidget(ccui.Widget.RIGHT, this._firstFocusedWidget);
             }
         }
@@ -329,7 +346,11 @@ ccui.Widget = ccui.ProtectedNode.extend(/** @lends ccui.Widget# */{
         this._touchListener = null;
 
         //cleanup focused widget and focus navigation controller
+<<<<<<< HEAD
         if (ccui.Widget._focusedWidget === this){
+=======
+        if (ccui.Widget._focusedWidget == this){
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             ccui.Widget._focusedWidget = null;
             ccui.Widget._focusNavigationController = null;
         }
@@ -542,7 +563,11 @@ ccui.Widget = ccui.ProtectedNode.extend(/** @lends ccui.Widget# */{
         this._sizeType = type;
         if (this._usingLayoutComponent) {
             var component = this._getOrCreateLayoutComponent();
+<<<<<<< HEAD
             component.setUsingPercentContentSize(this._sizeType === ccui.SIZE_PERCENT);
+=======
+            component.setUsingPercentContentSize(this._sizeType == ccui.SIZE_PERCENT);
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         }
     },
 
@@ -564,7 +589,11 @@ ccui.Widget = ccui.ProtectedNode.extend(/** @lends ccui.Widget# */{
             return;
         }
 
+<<<<<<< HEAD
         if(this._ignoreSize === ignore)
+=======
+        if(this._ignoreSize == ignore)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             return;
 
         this._ignoreSize = ignore;
@@ -696,7 +725,11 @@ ccui.Widget = ccui.ProtectedNode.extend(/** @lends ccui.Widget# */{
      * @param highlight true if the widget is highlighted, false if the widget is not highlighted.
      */
     setHighlighted:function(highlight){
+<<<<<<< HEAD
         if (highlight === this._highlight)
+=======
+        if (highlight == this._highlight)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             return;
         this._highlight = highlight;
         if (this._bright) {
@@ -757,11 +790,19 @@ ccui.Widget = ccui.ProtectedNode.extend(/** @lends ccui.Widget# */{
      * @return  the next focused widget in a layout
      */
     findNextFocusedWidget: function( direction, current){
+<<<<<<< HEAD
         if (null === this.onNextFocusedWidget || null == this.onNextFocusedWidget(direction) ) {
             var isLayout = current instanceof ccui.Layout;
             if (this.isFocused() || isLayout) {
                 var layout = this.getParent();
                 if (null === layout || !(layout instanceof ccui.Layout)){
+=======
+        if (null == this.onNextFocusedWidget || null == this.onNextFocusedWidget(direction) ) {
+            var isLayout = current instanceof ccui.Layout;
+            if (this.isFocused() || isLayout) {
+                var layout = this.getParent();
+                if (null == layout || !(layout instanceof ccui.Layout)){
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                     //the outer layout's default behaviour is : loop focus
                     if (isLayout)
                         return current.findNextFocusedWidget(direction, current);
@@ -781,7 +822,11 @@ ccui.Widget = ccui.ProtectedNode.extend(/** @lends ccui.Widget# */{
      * when a widget calls this method, it will get focus immediately.
      */
     requestFocus: function(){
+<<<<<<< HEAD
         if (this === ccui.Widget._focusedWidget)
+=======
+        if (this == ccui.Widget._focusedWidget)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             return;
         this.dispatchFocusEvent(ccui.Widget._focusedWidget, this);
     },
@@ -841,7 +886,11 @@ ccui.Widget = ccui.ProtectedNode.extend(/** @lends ccui.Widget# */{
         if (widgetLostFocus && !widgetLostFocus.isFocused())
             widgetLostFocus = ccui.Widget._focusedWidget;
 
+<<<<<<< HEAD
         if (widgetGetFocus !== widgetLostFocus){
+=======
+        if (widgetGetFocus != widgetLostFocus){
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             if (widgetGetFocus && widgetGetFocus.onFocusChanged)
                 widgetGetFocus.onFocusChanged(widgetLostFocus, widgetGetFocus);
             if (widgetLostFocus && widgetGetFocus.onFocusChanged)
@@ -868,9 +917,15 @@ ccui.Widget = ccui.ProtectedNode.extend(/** @lends ccui.Widget# */{
      * @param {Number} style BRIGHT_NORMAL the widget is normal state, BRIGHT_HIGHLIGHT the widget is height light state.
      */
     setBrightStyle: function (style) {
+<<<<<<< HEAD
         if (this._brightStyle === style)
             return;
 
+=======
+        if (this._brightStyle == style) {
+            return;
+        }
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         style = style || ccui.Widget.BRIGHT_STYLE_NORMAL;
         this._brightStyle = style;
         switch (this._brightStyle) {
@@ -1136,7 +1191,11 @@ ccui.Widget = ccui.ProtectedNode.extend(/** @lends ccui.Widget# */{
                     this._positionPercent.x = 0;
                     this._positionPercent.y = 0;
                 } else {
+<<<<<<< HEAD
                     if (posY === undefined) {
+=======
+                    if (posY == undefined) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                         this._positionPercent.x = pos.x / pSize.width;
                         this._positionPercent.y = pos.y / pSize.height;
                     } else {
@@ -1254,7 +1313,11 @@ ccui.Widget = ccui.ProtectedNode.extend(/** @lends ccui.Widget# */{
         this._positionType = type;
         if(this._usingLayoutComponent){
             var component = this._getOrCreateLayoutComponent();
+<<<<<<< HEAD
             if (type === ccui.POSITION_ABSOLUTE){
+=======
+            if (type == ccui.POSITION_ABSOLUTE){
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                 component.setPositionPercentXEnabled(false);
                 component.setPositionPercentYEnabled(false);
             } else {
@@ -1645,7 +1708,11 @@ ccui.Widget = ccui.ProtectedNode.extend(/** @lends ccui.Widget# */{
         var _nodes = this._nodes;
         for (var i = 0; i < _nodes.length; i++) {
             var node = _nodes[i];
+<<<<<<< HEAD
             if (node && node.getTag() === tag) {
+=======
+            if (node && node.getTag() == tag) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                 return node;
             }
         }
@@ -1768,7 +1835,11 @@ ccui.Widget = ccui.ProtectedNode.extend(/** @lends ccui.Widget# */{
         return originalScale;
     },
     getScale: function(){
+<<<<<<< HEAD
         if(this.getScaleX() === this.getScaleY())
+=======
+        if(this.getScaleX() == this.getScaleY())
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             cc.log("Widget#scale. ScaleX != ScaleY. Don't know which one to return");
         return this.getScaleX();
     },

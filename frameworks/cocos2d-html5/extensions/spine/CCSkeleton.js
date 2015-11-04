@@ -48,15 +48,25 @@ sp.VERTEX_INDEX = {
 };
 
 /**
+<<<<<<< HEAD
  * The attachment type of spine.  It contains three type: REGION(0), BOUNDING_BOX(1), MESH(2) and SKINNED_MESH.
  * @constant
  * @type {{REGION: number, BOUNDING_BOX: number, REGION_SEQUENCE: number, MESH: number}}
+=======
+ * The attachment type of spine.  It contains three type: REGION(0), BOUNDING_BOX(1) and REGION_SEQUENCE(2).
+ * @constant
+ * @type {{REGION: number, BOUNDING_BOX: number, REGION_SEQUENCE: number}}
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
  */
 sp.ATTACHMENT_TYPE = {
     REGION: 0,
     BOUNDING_BOX: 1,
+<<<<<<< HEAD
     MESH: 2,
     SKINNED_MESH:3
+=======
+    REGION_SEQUENCE: 2
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
 };
 
 /**
@@ -105,14 +115,22 @@ sp.Skeleton = cc.Node.extend(/** @lends sp.Skeleton# */{
      */
     init: function () {
         cc.Node.prototype.init.call(this);
+<<<<<<< HEAD
         //this.setOpacityModifyRGB(true);
+=======
+        this.setOpacityModifyRGB(true);
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         this._blendFunc.src = cc.ONE;
         this._blendFunc.dst = cc.ONE_MINUS_SRC_ALPHA;
         this.scheduleUpdate();
     },
 
     /**
+<<<<<<< HEAD
      * Sets whether open debug slots.
+=======
+     * Sets whether open debug solots.
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
      * @param {boolean} enable true to open, false to close.
      */
     setDebugSolots:function(enable){
@@ -128,6 +146,7 @@ sp.Skeleton = cc.Node.extend(/** @lends sp.Skeleton# */{
     },
 
     /**
+<<<<<<< HEAD
      * Sets whether open debug slots.
      * @param {boolean} enabled true to open, false to close.
      */
@@ -169,6 +188,13 @@ sp.Skeleton = cc.Node.extend(/** @lends sp.Skeleton# */{
 
     getTimeScale: function(){
         return this._timeScale;
+=======
+     * Sets the time scale of sp.Skeleton.
+     * @param {Number} v
+     */
+    setTimeScale:function(v){
+        this._timeScale = v;
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
     },
 
     /**
@@ -221,7 +247,11 @@ sp.Skeleton = cc.Node.extend(/** @lends sp.Skeleton# */{
             if (!slot.attachment || slot.attachment.type != sp.ATTACHMENT_TYPE.REGION)
                 continue;
             var attachment = slot.attachment;
+<<<<<<< HEAD
             this._computeRegionAttachmentWorldVertices(attachment, slot.bone.skeleton.x, slot.bone.skeleton.y, slot.bone, vertices);
+=======
+            sp._regionAttachment_computeWorldVertices(attachment, slot.skeleton.x, slot.skeleton.y, slot.bone, vertices);
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             minX = Math.min(minX, vertices[VERTEX.X1] * scaleX, vertices[VERTEX.X4] * scaleX, vertices[VERTEX.X2] * scaleX, vertices[VERTEX.X3] * scaleX);
             minY = Math.min(minY, vertices[VERTEX.Y1] * scaleY, vertices[VERTEX.Y4] * scaleY, vertices[VERTEX.Y2] * scaleY, vertices[VERTEX.Y3] * scaleY);
             maxX = Math.max(maxX, vertices[VERTEX.X1] * scaleX, vertices[VERTEX.X4] * scaleX, vertices[VERTEX.X2] * scaleX, vertices[VERTEX.X3] * scaleX);
@@ -231,6 +261,7 @@ sp.Skeleton = cc.Node.extend(/** @lends sp.Skeleton# */{
         return cc.rect(position.x + minX, position.y + minY, maxX - minX, maxY - minY);
     },
 
+<<<<<<< HEAD
     _computeRegionAttachmentWorldVertices : function(self, x, y, bone, vertices){
         var offset = self.offset, vertexIndex = sp.VERTEX_INDEX;
         x += bone.worldX;
@@ -245,6 +276,8 @@ sp.Skeleton = cc.Node.extend(/** @lends sp.Skeleton# */{
         vertices[vertexIndex.Y4] = offset[vertexIndex.X4] * bone.m10 + offset[vertexIndex.Y4] * bone.m11 + y;
     },
 
+=======
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
     /**
      * Computes the world SRT from the local SRT for each bone.
      */
@@ -341,11 +374,15 @@ sp.Skeleton = cc.Node.extend(/** @lends sp.Skeleton# */{
      * @param {spine.SkeletonData} ownsSkeletonData
      */
     setSkeletonData: function (skeletonData, ownsSkeletonData) {
+<<<<<<< HEAD
         if(skeletonData.width != null && skeletonData.height != null)
             this.setContentSize(skeletonData.width / cc.director.getContentScaleFactor(), skeletonData.height / cc.director.getContentScaleFactor());
 
         this._skeleton = new spine.Skeleton(skeletonData);
         this._skeleton.updateWorldTransform();
+=======
+        this._skeleton = new spine.Skeleton(skeletonData);
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         this._rootBone = this._skeleton.getRootBone();
         this._ownsSkeletonData = ownsSkeletonData;
 
@@ -391,6 +428,10 @@ sp.Skeleton = cc.Node.extend(/** @lends sp.Skeleton# */{
      */
     update: function (dt) {
         this._skeleton.update(dt);
+<<<<<<< HEAD
+=======
+        this._renderCmd._updateChild();
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
     }
 });
 

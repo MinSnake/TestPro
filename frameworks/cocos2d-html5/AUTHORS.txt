@@ -12,11 +12,19 @@ Core Developers:
 
     Ricardo Quesada
 
+<<<<<<< HEAD
     Huabin LING (@pandamicro)
 
     Sijie Wang (@VisualSJ)
 
     Jialong Zhai (@JoshuaAstray)
+=======
+    Huabin LING (pandamicro)
+
+    Sijie Wang
+
+    Jialong Zhai
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
 
 Contributors:
 Name                GithubID    Main contribution
@@ -86,9 +94,14 @@ Kang-Hao Lu(Opera/Oupeng) @kennyluck    Optimize John Resig's inheritance patter
 Mark Henderson       @MarkEHenderson    Code review, LabelTTF and Scale9Sprite bug fix
 
 Jing Wang             @06wj         CCScheduler improvements
+<<<<<<< HEAD
                                     Js file loading image add
                                     cc.RectApplyAffineTransform improvements
                                     Fixed a bug of cc.Node.setPosition that parameter check is incorrect
+=======
+                                   Js file loading image add
+                                   cc.RectApplyAffineTransform improvements
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
 
 Ze Wang               @WanderWang   Fix crash when BrowserTypes match nothing from navigator.userAgent
                                     LabelTTF improvements
@@ -170,14 +183,21 @@ Asano                @LaercioAsano  cc.Node bug fix
 
 Bruno Assarisse      @bassarisse    cc.LabelBMFont bug fix
 
+<<<<<<< HEAD
 Mykyta Usikov        @musikov       cc.ClippingNode bugs fix
+=======
+Mykyta Usikov        @musikov       cc.ClippingNode bug fix
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                                     cc.fontLoader bug fix
                                     Inverted ClippingNode with DrawNode as stencil bug fix under canvas render mode
                                     JumpTo bug with wrong _delta position bug fix
                                     cc.ProgressTimer bugs fix
                                     cc.Scale9Sprite bugs fix
                                     cc.RenderTexture bug fix
+<<<<<<< HEAD
                                     cc.ParticleSystem bug fix
+=======
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
 
 Han XiaoLong         @kpkhxlgy0     cc.ParticleSytem bug fix
 
@@ -189,7 +209,10 @@ Xiaodong Liu         @tianxing113   cc.Spawn.create bug fix
 Park Hyun Chen       @sincntx       Touch anywhere of screen to finish input when using cc.EditBox
                                     ccui.TextBMFont bug fix
                                     cc.game bug fix
+<<<<<<< HEAD
                                     Fixed an issue of cc.ArmatureAnimation's setMovementEventCallFunc
+=======
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
 
 Ninja Lau            @mutoo         A typo bug in UILayout fix
                                     One-loop CCArmatureAnimation can't finish when setSpeedScale is less than 1.0 bug fix
@@ -222,8 +245,11 @@ Robert Rouhani       @Robmaister    cc.TMXMapInfo bug fix
                                     cc.TMXLayer bug fix
 
 Igor Mats            @IgorMats      cc.Scale9Sprite bug fix
+<<<<<<< HEAD
                                     Spine runtime update
                                     Add getStroke and setStroke method to cc.MotionStreak
+=======
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
 
 Tim                  @duhaibo0404   ccs.csLoader bug fix
 
@@ -237,6 +263,7 @@ Joe Lafiosca         @lafiosca      Added Javascript file loader
 
 galapagosit          @galapagosit   ccs.actionManager bug fix
 
+<<<<<<< HEAD
 Dany Ellement        @DEllement     cc.FontDefinition & ccui.RichText improvements
                                     cc.LayerGradient improvements
 
@@ -256,6 +283,8 @@ feijing566           @feijing566    cc.Audio bug fix
 RackovychV           @RackovychV    Fixed a bug of `cc.Scheduler`'s `pauseAllTargetsWithMinPriority`
 
 
+=======
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
 
 Retired Core Developers:
       Shengxiang Chen (Nero Chan)

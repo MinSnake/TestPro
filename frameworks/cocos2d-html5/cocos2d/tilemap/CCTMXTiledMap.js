@@ -269,7 +269,11 @@ cc.TMXTiledMap = cc.Node.extend(/** @lends cc.TMXTiledMap# */{
      * map.initWithTMXFile("hello.tmx");
      */
     initWithTMXFile:function (tmxFile) {
+<<<<<<< HEAD
         if(!tmxFile || tmxFile.length === 0)
+=======
+        if(!tmxFile || tmxFile.length == 0)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             throw "cc.TMXTiledMap.initWithTMXFile(): tmxFile should be non-null or non-empty string.";
 	    this.width = 0;
 	    this.height = 0;
@@ -353,7 +357,11 @@ cc.TMXTiledMap = cc.Node.extend(/** @lends cc.TMXTiledMap# */{
         var locChildren = this._children;
         for (var i = 0; i < locChildren.length; i++) {
             var layer = locChildren[i];
+<<<<<<< HEAD
             if (layer && layer.layerName === layerName)
+=======
+            if (layer && layer.layerName == layerName)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                 return layer;
         }
         // layer not found
@@ -371,7 +379,11 @@ cc.TMXTiledMap = cc.Node.extend(/** @lends cc.TMXTiledMap# */{
         if (this.objectGroups) {
             for (var i = 0; i < this.objectGroups.length; i++) {
                 var objectGroup = this.objectGroups[i];
+<<<<<<< HEAD
                 if (objectGroup && objectGroup.groupName === groupName) {
+=======
+                if (objectGroup && objectGroup.groupName == groupName) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                     return objectGroup;
                 }
             }
@@ -429,7 +441,11 @@ cc.TMXTiledMap = cc.Node.extend(/** @lends cc.TMXTiledMap# */{
                         for (var x = 0; x < size.width; x++) {
                             var pos = x + size.width * y;
                             var gid = layerInfo._tiles[pos];
+<<<<<<< HEAD
                             if (gid !== 0) {
+=======
+                            if (gid != 0) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                                 // Optimization: quick return
                                 // if the layer is invalid (more than 1 tileset per layer) an cc.assert will be thrown later
                                 if (((gid & cc.TMX_TILE_FLIPPED_MASK)>>>0) >= tileset.firstGid) {

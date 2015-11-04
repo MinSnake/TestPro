@@ -338,6 +338,7 @@ cc._Dictionary = cc.Class.extend({
 });
 
 /**
+<<<<<<< HEAD
  * Common usage:
  *
  * var fontDef = new cc.FontDefinition();
@@ -359,6 +360,12 @@ cc._Dictionary = cc.Class.extend({
  * @constructor
  */
 cc.FontDefinition = function (properties) {
+=======
+ * @class cc.FontDefinition
+ * @constructor
+ */
+cc.FontDefinition = function () {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
     var _t = this;
     _t.fontName = "Arial";
     _t.fontSize = 12;
@@ -371,15 +378,19 @@ cc.FontDefinition = function (properties) {
     _t.strokeEnabled = false;
     _t.strokeStyle = cc.color(255, 255, 255, 255);
     _t.lineWidth = 1;
+<<<<<<< HEAD
     _t.lineHeight = "normal";
     _t.fontStyle = "normal";
     _t.fontWeight = "normal";
+=======
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
 
     _t.shadowEnabled = false;
     _t.shadowOffsetX = 0;
     _t.shadowOffsetY = 0;
     _t.shadowBlur = 0;
     _t.shadowOpacity = 1.0;
+<<<<<<< HEAD
 
     //properties mapping:
     if(properties && properties instanceof Object){
@@ -394,6 +405,8 @@ cc.FontDefinition = function (properties) {
 cc.FontDefinition.prototype._getCanvasFontStr = function(){
     var lineHeight = !this.lineHeight.charAt ? this.lineHeight+"px" : this.lineHeight;
     return this.fontStyle + " " + this.fontWeight + " " + this.fontSize + "px/"+lineHeight+" '" + this.fontName + "'";
+=======
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
 };
 
 if (cc._renderType === cc._RENDER_TYPE_WEBGL) {

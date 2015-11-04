@@ -89,11 +89,20 @@ ccs.Armature = ccs.Node.extend(/** @lends ccs.Armature# */{
         this._boneDic = {};
         this._topBoneList.length = 0;
 
+<<<<<<< HEAD
         //this._name = name || "";
         var armatureDataManager = ccs.armatureDataManager;
 
         var animationData;
         if (name !== "") {
+=======
+
+        this._name = name || "";
+        var armatureDataManager = ccs.armatureDataManager;
+
+        var animationData;
+        if (name != "") {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             //animationData
             animationData = armatureDataManager.getAnimationData(name);
             cc.assert(animationData, "AnimationData not exist!");
@@ -130,6 +139,7 @@ ccs.Armature = ccs.Node.extend(/** @lends ccs.Armature# */{
             this.update(0);
             this.updateOffsetPoint();
         } else {
+<<<<<<< HEAD
             name = "new_armature";
             this.armatureData = new ccs.ArmatureData();
             this.armatureData.name = name;
@@ -139,6 +149,17 @@ ccs.Armature = ccs.Node.extend(/** @lends ccs.Armature# */{
 
             armatureDataManager.addArmatureData(name, this.armatureData);
             armatureDataManager.addAnimationData(name, animationData);
+=======
+            this._name = "new_armature";
+            this.armatureData = new ccs.ArmatureData();
+            this.armatureData.name = this._name;
+
+            animationData = new ccs.AnimationData();
+            animationData.name = this._name;
+
+            armatureDataManager.addArmatureData(this._name, this.armatureData);
+            armatureDataManager.addAnimationData(this._name, animationData);
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
 
             this.animation.setAnimationData(animationData);
         }
@@ -150,6 +171,7 @@ ccs.Armature = ccs.Node.extend(/** @lends ccs.Armature# */{
         return true;
     },
 
+<<<<<<< HEAD
     addChild: function (child, localZOrder, tag) {
         if(child instanceof ccui.Widget){
             cc.log("Armature doesn't support to add Widget as its child, it will be fix soon.");
@@ -158,6 +180,8 @@ ccs.Armature = ccs.Node.extend(/** @lends ccs.Armature# */{
         cc.Node.prototype.addChild.call(this, child, localZOrder, tag);
     },
 
+=======
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
     /**
      * create a bone with name
      * @param {String} boneName
@@ -278,7 +302,11 @@ ccs.Armature = ccs.Node.extend(/** @lends ccs.Armature# */{
         var locOffsetPoint = this._offsetPoint;
         locOffsetPoint.x = -rect.x;
         locOffsetPoint.y = -rect.y;
+<<<<<<< HEAD
         if (rect.width !== 0 && rect.height !== 0)
+=======
+        if (rect.width != 0 && rect.height != 0)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             this.setAnchorPoint(locOffsetPoint.x / rect.width, locOffsetPoint.y / rect.height);
     },
 
@@ -356,7 +384,11 @@ ccs.Armature = ccs.Node.extend(/** @lends ccs.Armature# */{
             var bone = locChildren[i];
             if (bone) {
                 var r = bone.getDisplayManager().getBoundingBox();
+<<<<<<< HEAD
                 if (r.x === 0 && r.y === 0 && r.width === 0 && r.height === 0)
+=======
+                if (r.x == 0 && r.y == 0 && r.width == 0 && r.height == 0)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                     continue;
 
                 if(first) {
@@ -441,7 +473,11 @@ ccs.Armature = ccs.Node.extend(/** @lends ccs.Armature# */{
     },
 
     setBody: function (body) {
+<<<<<<< HEAD
         if (this._body === body)
+=======
+        if (this._body == body)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             return;
 
         this._body = body;

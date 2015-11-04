@@ -33,7 +33,11 @@ if(typeof exports === 'undefined'){
 	cp = {};
 
 	if(typeof window === 'object'){
+<<<<<<< HEAD
 		window["cp"] = cp;
+=======
+		window.cp = cp;
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
 	}
 } else {
 	cp = exports;
@@ -1312,7 +1316,11 @@ var BoxShape2 = cp.BoxShape2 = function(body, box)
 		box.l, box.b,
 		box.l, box.t,
 		box.r, box.t,
+<<<<<<< HEAD
 		box.r, box.b
+=======
+		box.r, box.b,
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
 	];
 	
 	return new PolyShape(body, verts, vzero);

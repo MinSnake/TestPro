@@ -83,8 +83,13 @@ cc.GLProgram = cc.Class.extend(/** @lends cc.GLProgram# */{
         if (!source || !shader)
             return false;
 
+<<<<<<< HEAD
         var preStr = cc.GLProgram._isHighpSupported() ? "precision highp float;\n" : "precision mediump float;\n";
         source = preStr
+=======
+        //var preStr = (type == this._glContext.VERTEX_SHADER) ? "precision highp float;\n" : "precision mediump float;\n";
+        source = "precision highp float;        \n"
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             + "uniform mat4 CC_PMatrix;         \n"
             + "uniform mat4 CC_MVMatrix;        \n"
             + "uniform mat4 CC_MVPMatrix;       \n"
@@ -101,12 +106,20 @@ cc.GLProgram = cc.Class.extend(/** @lends cc.GLProgram# */{
 
         if (!status) {
             cc.log("cocos2d: ERROR: Failed to compile shader:\n" + this._glContext.getShaderSource(shader));
+<<<<<<< HEAD
             if (type === this._glContext.VERTEX_SHADER)
+=======
+            if (type == this._glContext.VERTEX_SHADER)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                 cc.log("cocos2d: \n" + this.vertexShaderLog());
             else
                 cc.log("cocos2d: \n" + this.fragmentShaderLog());
         }
+<<<<<<< HEAD
         return ( status === true );
+=======
+        return ( status == 1 );
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
     },
 
 	/**
@@ -543,9 +556,15 @@ cc.GLProgram = cc.Class.extend(/** @lends cc.GLProgram# */{
      * will update the builtin uniforms if they are different than the previous call for this same shader program.
      */
     setUniformsForBuiltins: function () {
+<<<<<<< HEAD
         var matrixP = new cc.math.Matrix4();
         var matrixMV = new cc.math.Matrix4();
         var matrixMVP = new cc.math.Matrix4();
+=======
+        var matrixP = new cc.kmMat4();
+        var matrixMV = new cc.kmMat4();
+        var matrixMVP = new cc.kmMat4();
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
 
         cc.kmGLGetMatrix(cc.KM_GL_PROJECTION, matrixP);
         cc.kmGLGetMatrix(cc.KM_GL_MODELVIEW, matrixMV);
@@ -568,7 +587,11 @@ cc.GLProgram = cc.Class.extend(/** @lends cc.GLProgram# */{
             this.setUniformLocationWith4f(this._uniforms[cc.UNIFORM_COSTIME], time / 8.0, time / 4.0, time / 2.0, Math.cos(time));
         }
 
+<<<<<<< HEAD
         if (this._uniforms[cc.UNIFORM_RANDOM01] !== -1)
+=======
+        if (this._uniforms[cc.UNIFORM_RANDOM01] != -1)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             this.setUniformLocationWith4f(this._uniforms[cc.UNIFORM_RANDOM01], Math.random(), Math.random(), Math.random(), Math.random());
     },
 
@@ -576,9 +599,15 @@ cc.GLProgram = cc.Class.extend(/** @lends cc.GLProgram# */{
         if(!node || !node._renderCmd)
             return;
 
+<<<<<<< HEAD
         var matrixP = new cc.math.Matrix4();
         //var matrixMV = new cc.kmMat4();
         var matrixMVP = new cc.math.Matrix4();
+=======
+        var matrixP = new cc.kmMat4();
+        //var matrixMV = new cc.kmMat4();
+        var matrixMVP = new cc.kmMat4();
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
 
         cc.kmGLGetMatrix(cc.KM_GL_PROJECTION, matrixP);
         //cc.kmGLGetMatrix(cc.KM_GL_MODELVIEW, node._stackMatrix);
@@ -601,7 +630,11 @@ cc.GLProgram = cc.Class.extend(/** @lends cc.GLProgram# */{
             this.setUniformLocationWith4f(this._uniforms[cc.UNIFORM_COSTIME], time / 8.0, time / 4.0, time / 2.0, Math.cos(time));
         }
 
+<<<<<<< HEAD
         if (this._uniforms[cc.UNIFORM_RANDOM01] !== -1)
+=======
+        if (this._uniforms[cc.UNIFORM_RANDOM01] != -1)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             this.setUniformLocationWith4f(this._uniforms[cc.UNIFORM_RANDOM01], Math.random(), Math.random(), Math.random(), Math.random());
     },
 
@@ -731,6 +764,7 @@ cc.GLProgram.create = function (vShaderFileName, fShaderFileName) {
     return new cc.GLProgram(vShaderFileName, fShaderFileName);
 };
 
+<<<<<<< HEAD
 cc.GLProgram._highpSupported = null;
 
 cc.GLProgram._isHighpSupported = function(){
@@ -742,6 +776,8 @@ cc.GLProgram._isHighpSupported = function(){
     return cc.GLProgram._highpSupported;
 };
 
+=======
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
 /**
  * <p>
  *     Sets the shader program for this node

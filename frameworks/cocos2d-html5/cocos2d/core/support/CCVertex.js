@@ -76,7 +76,11 @@ cc.vertexLineToPolygon = function (points, stroke, vertices, offset, nuPoints) {
     }
 
     // Validate vertexes
+<<<<<<< HEAD
     offset = (offset === 0) ? 0 : offset - 1;
+=======
+    offset = (offset == 0) ? 0 : offset - 1;
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
     for (i = offset; i < nuPointsMinus; i++) {
         idx = i * 2;
         var idx1 = idx + 2;
@@ -117,7 +121,11 @@ cc.vertexLineIntersect = function (Ax, Ay, Bx, By, Cx, Cy, Dx, Dy) {
     var distAB, theCos, theSin, newX;
 
     // FAIL: Line undefined
+<<<<<<< HEAD
     if ((Ax === Bx && Ay === By) || (Cx === Dx && Cy === Dy))
+=======
+    if ((Ax == Bx && Ay == By) || (Cx == Dx && Cy == Dy))
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         return {isSuccess:false, value:0};
 
     //  Translate system to make A the origin
@@ -142,7 +150,11 @@ cc.vertexLineIntersect = function (Ax, Ay, Bx, By, Cx, Cy, Dx, Dy) {
     Dx = newX;
 
     // FAIL: Lines are parallel.
+<<<<<<< HEAD
     if (Cy === Dy) return {isSuccess:false, value:0};
+=======
+    if (Cy == Dy) return {isSuccess:false, value:0};
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
 
     // Discover the relative position of the intersection in the line AB
     var t = (Dx + (Cx - Dx) * Dy / (Dy - Cy)) / distAB;

@@ -61,7 +61,11 @@ ccui._TextFieldRenderer = cc.TextFieldTTF.extend({
     },
 
     onTextFieldInsertText: function (sender, text, len) {
+<<<<<<< HEAD
         if (len === 1 && text === "\n")
+=======
+        if (len == 1 && text == "\n")
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             return false;
 
         this.setInsertText(true);
@@ -81,7 +85,11 @@ ccui._TextFieldRenderer = cc.TextFieldTTF.extend({
     insertText: function (text, len) {
         var input_text = text;
 
+<<<<<<< HEAD
         if (text !== "\n"){
+=======
+        if (text != "\n"){
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             if (this._maxLengthEnabled){
                 var text_count = this.getString().length;
                 if (text_count >= this._maxLength){
@@ -252,12 +260,20 @@ ccui.TextField = ccui.Widget.extend(/** @lends ccui.TextField# */{
      */
     ctor: function (placeholder, fontName, fontSize) {
         ccui.Widget.prototype.ctor.call(this);
+<<<<<<< HEAD
+=======
+        if (placeholder)
+            this.setPlaceHolder(placeholder);
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         if (fontName)
             this.setFontName(fontName);
         if (fontSize)
             this.setFontSize(fontSize);
+<<<<<<< HEAD
         if (placeholder)
             this.setPlaceHolder(placeholder);
+=======
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
     },
 
     /**
@@ -565,14 +581,24 @@ ccui.TextField = ccui.Widget.extend(/** @lends ccui.TextField# */{
     },
 
     update: function (dt) {
+<<<<<<< HEAD
         if (this.getDetachWithIME()) {
             this._detachWithIMEEvent();
             this.setDetachWithIME(false);
         }
+=======
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         if (this.getAttachWithIME()) {
             this._attachWithIMEEvent();
             this.setAttachWithIME(false);
         }
+<<<<<<< HEAD
+=======
+        if (this.getDetachWithIME()) {
+            this._detachWithIMEEvent();
+            this.setDetachWithIME(false);
+        }
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         if (this.getInsertText()) {
             this._textFieldRendererAdaptDirty = true;
             this._updateContentSizeWithTextureSize(this._textFieldRenderer.getContentSize());
@@ -736,6 +762,7 @@ ccui.TextField = ccui.Widget.extend(/** @lends ccui.TextField# */{
         this._textFieldRenderer.setPosition(this._contentSize.width / 2, this._contentSize.height / 2);
     },
 
+<<<<<<< HEAD
     //@since v3.3
     getAutoRenderSize: function(){
         var virtualSize = this._textFieldRenderer.getContentSize();
@@ -747,6 +774,8 @@ ccui.TextField = ccui.Widget.extend(/** @lends ccui.TextField# */{
         return virtualSize;
     },
 
+=======
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
     /**
      * Returns the ccui.TextField's content size.
      * @returns {cc.Size}

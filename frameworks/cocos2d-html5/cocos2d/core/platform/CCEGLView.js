@@ -54,6 +54,7 @@ cc.__BrowserGetter = {
     meta: {
         "width": "device-width",
         "user-scalable": "no"
+<<<<<<< HEAD
     },
     adaptationType: cc.sys.browserType
 };
@@ -73,12 +74,23 @@ switch(cc.__BrowserGetter.adaptationType){
         cc.__BrowserGetter.availHeight = function(frame){
             return frame.clientHeight;
         };
+=======
+    }
+};
+
+switch(cc.sys.browserType){
+    case cc.sys.BROWSER_TYPE_SAFARI:
+        cc.__BrowserGetter.meta["minimal-ui"] = "true";
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         break;
     case cc.sys.BROWSER_TYPE_CHROME:
         cc.__BrowserGetter.__defineGetter__("target-densitydpi", function(){
             return cc.view._targetDensityDPI;
         });
+<<<<<<< HEAD
     case cc.sys.BROWSER_TYPE_SOUGOU:
+=======
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
     case cc.sys.BROWSER_TYPE_UC:
         cc.__BrowserGetter.availWidth = function(frame){
             return frame.clientWidth;
@@ -186,7 +198,11 @@ cc.EGLView = cc.Class.extend(/** @lends cc.view# */{
         _t._viewName = "Cocos2dHTML5";
 
 	    var sys = cc.sys;
+<<<<<<< HEAD
         _t.enableRetina(sys.os === sys.OS_IOS || sys.os === sys.OS_OSX);
+=======
+        _t.enableRetina(sys.os == sys.OS_IOS || sys.os == sys.OS_OSX);
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         cc.visibleRect && cc.visibleRect.init(_t._visibleRect);
 
         // Setup system default resolution policies
@@ -209,6 +225,7 @@ cc.EGLView = cc.Class.extend(/** @lends cc.view# */{
         }else{
             view = cc.view;
         }
+<<<<<<< HEAD
 
         // Check frame size changed or not
         var prevFrameW = view._frameSize.width, prevFrameH = view._frameSize.height;
@@ -218,6 +235,10 @@ cc.EGLView = cc.Class.extend(/** @lends cc.view# */{
 
         // Frame size changed, do resize works
         if (view._resizeCallback) {
+=======
+        if (view._resizeCallback) {
+            view._initFrameSize();
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             view._resizeCallback.call();
         }
         var width = view._originalDesignResolutionSize.width;
@@ -260,15 +281,23 @@ cc.EGLView = cc.Class.extend(/** @lends cc.view# */{
             //enable
             if (!this.__resizeWithBrowserSize) {
                 this.__resizeWithBrowserSize = true;
+<<<<<<< HEAD
                 cc._addEventListener(window, 'resize', this._resizeEvent);
                 cc._addEventListener(window, 'orientationchange', this._resizeEvent);
+=======
+                cc._addEventListener(window, 'resize', this._resizeEvent, false);
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             }
         } else {
             //disable
             if (this.__resizeWithBrowserSize) {
                 this.__resizeWithBrowserSize = false;
+<<<<<<< HEAD
                 window.removeEventListener('resize', this._resizeEvent);
                 window.removeEventListener('orientationchange', this._resizeEvent);
+=======
+                window.removeEventListener('resize', this._resizeEvent, false);
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             }
         }
     },
@@ -421,7 +450,11 @@ cc.EGLView = cc.Class.extend(/** @lends cc.view# */{
      * @return {Boolean}
      */
     isOpenGLReady: function () {
+<<<<<<< HEAD
         return (this._hDC !== null && this._hRC !== null);
+=======
+        return (this._hDC != null && this._hRC != null);
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
     },
 
     /*
@@ -594,7 +627,11 @@ cc.EGLView = cc.Class.extend(/** @lends cc.view# */{
 
         var result = policy.apply(this, this._designResolutionSize);
 
+<<<<<<< HEAD
         if(result.scale && result.scale.length === 2){
+=======
+        if(result.scale && result.scale.length == 2){
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             this._scaleX = result.scale[0];
             this._scaleY = result.scale[1];
         }
@@ -624,7 +661,11 @@ cc.EGLView = cc.Class.extend(/** @lends cc.view# */{
         cc.winSize.width = director._winSizeInPoints.width;
         cc.winSize.height = director._winSizeInPoints.height;
 
+<<<<<<< HEAD
         if (cc._renderType === cc._RENDER_TYPE_WEBGL) {
+=======
+        if (cc._renderType == cc._RENDER_TYPE_WEBGL) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             // reset director's member variables to fit visible rect
             director._createStatsLabel();
             director.setGLDefaultValues();
@@ -824,7 +865,11 @@ cc.ContainerStrategy = cc.Class.extend(/** @lends cc.ContainerStrategy# */{
 
     _setupContainer: function (view, w, h) {
         var frame = view._frame;
+<<<<<<< HEAD
         if (cc.view._autoFullScreen && cc.sys.isMobile && frame === document.documentElement) {
+=======
+        if (cc.view._autoFullScreen && cc.sys.isMobile && frame == document.documentElement) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             // Automatically full screen when user touches on mobile version
             cc.screen.autoFullScreen(frame);
         }
@@ -900,7 +945,11 @@ cc.ContentStrategy = cc.Class.extend(/** @lends cc.ContentStrategy# */{
                                contentW, contentH);
 
         // Translate the content
+<<<<<<< HEAD
         if (cc._renderType === cc._RENDER_TYPE_CANVAS){
+=======
+        if (cc._renderType == cc._RENDER_TYPE_CANVAS){
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             //TODO: modify something for setTransform
             //cc._renderContext.translate(viewport.x, viewport.y + contentH);
         }

@@ -39,10 +39,17 @@ _p.setAccelerometerEnabled = function(isEnable){
     var scheduler = cc.director.getScheduler();
     if(_t._accelEnabled){
         _t._accelCurTime = 0;
+<<<<<<< HEAD
         scheduler.scheduleUpdate(_t);
     } else {
         _t._accelCurTime = 0;
         scheduler.scheduleUpdate(_t);
+=======
+        scheduler.scheduleUpdateForTarget(_t);
+    } else {
+        _t._accelCurTime = 0;
+        scheduler.unscheduleUpdateForTarget(_t);
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
     }
 };
 
@@ -76,12 +83,21 @@ _p._registerAccelerometerEvent = function(){
     _t._accelDeviceEvent = w.DeviceMotionEvent || w.DeviceOrientationEvent;
 
     //TODO fix DeviceMotionEvent bug on QQ Browser version 4.1 and below.
+<<<<<<< HEAD
     if (cc.sys.browserType === cc.sys.BROWSER_TYPE_MOBILE_QQ)
         _t._accelDeviceEvent = window.DeviceOrientationEvent;
 
     var _deviceEventType = (_t._accelDeviceEvent === w.DeviceMotionEvent) ? "devicemotion" : "deviceorientation";
     var ua = navigator.userAgent;
     if (/Android/.test(ua) || (/Adr/.test(ua) && cc.sys.browserType === cc.BROWSER_TYPE_UC)) {
+=======
+    if (cc.sys.browserType == cc.sys.BROWSER_TYPE_MOBILE_QQ)
+        _t._accelDeviceEvent = window.DeviceOrientationEvent;
+
+    var _deviceEventType = (_t._accelDeviceEvent == w.DeviceMotionEvent) ? "devicemotion" : "deviceorientation";
+    var ua = navigator.userAgent;
+    if (/Android/.test(ua) || (/Adr/.test(ua) && cc.sys.browserType == cc.BROWSER_TYPE_UC)) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         _t._minus = -1;
     }
 
@@ -97,7 +113,11 @@ _p.didAccelerate = function (eventData) {
 
     var x, y, z;
 
+<<<<<<< HEAD
     if (_t._accelDeviceEvent === window.DeviceMotionEvent) {
+=======
+    if (_t._accelDeviceEvent == window.DeviceMotionEvent) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         var eventAcceleration = eventData["accelerationIncludingGravity"];
         x = _t._accelMinus * eventAcceleration.x * 0.1;
         y = _t._accelMinus * eventAcceleration.y * 0.1;

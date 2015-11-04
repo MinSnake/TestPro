@@ -104,8 +104,13 @@
          if(!stencil)
             return;
         var node = this._node;
+<<<<<<< HEAD
         if(stencil._renderCmd && stencil._renderCmd._blendFuncStr)          //it is a hack way.
             stencil._renderCmd._blendFuncStr = (node.inverted ? "destination-out" : "destination-in");
+=======
+        if(stencil._renderCmd && stencil._renderCmd._setBlendFuncStr)
+            stencil._renderCmd._setBlendFuncStr(node.inverted ? "destination-out" : "destination-in");
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
 
         if(!stencil._children)
             return;
@@ -180,10 +185,17 @@
         parentCmd = parentCmd || this.getParentRenderCmd();
         if( parentCmd)
             this._curLevel = parentCmd._curLevel + 1;
+<<<<<<< HEAD
         var transformRenderCmd = this;
 
         // Composition mode, costy but support texture stencil
         this._clipElemType = !(!this._cangodhelpme() && node._stencil instanceof cc.DrawNode);
+=======
+        var transformRenderCmd = (node._stencil instanceof cc.Sprite) ? this : null;
+
+        // Composition mode, costy but support texture stencil
+        this._clipElemType = (this._cangodhelpme() || node._stencil instanceof cc.Sprite);
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         if (!node._stencil || !node._stencil.visible) {
             if (this.inverted)
                 cc.Node.CanvasRenderCmd.prototype.visit.call(this, parentCmd);   // draw everything

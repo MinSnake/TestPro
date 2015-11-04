@@ -501,6 +501,7 @@ cc.sequence = function (/*Multiple Arguments*/tempArray) {
     if ((paramArray.length > 0) && (paramArray[paramArray.length - 1] == null))
         cc.log("parameters should not be ending with null in Javascript");
 
+<<<<<<< HEAD
     var result, current, i, repeat;
     while(paramArray && paramArray.length > 0){
         current = Array.prototype.shift.call(paramArray);
@@ -520,6 +521,14 @@ cc.sequence = function (/*Multiple Arguments*/tempArray) {
     }
 
     return result;
+=======
+    var prev = paramArray[0];
+    for (var i = 1; i < paramArray.length; i++) {
+        if (paramArray[i])
+            prev = cc.Sequence._actionOneTwo(prev, paramArray[i]);
+    }
+    return prev;
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
 };
 
 /**
@@ -669,7 +678,11 @@ cc.Repeat = cc.ActionInterval.extend(/** @lends cc.Repeat# */{
      * @return {Boolean}
      */
     isDone:function () {
+<<<<<<< HEAD
         return this._total === this._times;
+=======
+        return this._total == this._times;
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
     },
 
     /**
@@ -688,7 +701,11 @@ cc.Repeat = cc.ActionInterval.extend(/** @lends cc.Repeat# */{
      * @param {cc.FiniteTimeAction} action
      */
     setInnerAction:function (action) {
+<<<<<<< HEAD
         if (this._innerAction !== action) {
+=======
+        if (this._innerAction != action) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             this._innerAction = action;
         }
     },
@@ -826,7 +843,11 @@ cc.RepeatForever = cc.ActionInterval.extend(/** @lends cc.RepeatForever# */{
      * @param {cc.ActionInterval} action
      */
     setInnerAction:function (action) {
+<<<<<<< HEAD
         if (this._innerAction !== action) {
+=======
+        if (this._innerAction != action) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             this._innerAction = action;
         }
     },
@@ -2654,6 +2675,10 @@ cc.FadeTo = cc.ActionInterval.extend(/** @lends cc.FadeTo# */{
         time = this._computeEaseTime(time);
         var fromOpacity = this._fromOpacity !== undefined ? this._fromOpacity : 255;
         this.target.opacity = fromOpacity + (this._toOpacity - fromOpacity) * time;
+<<<<<<< HEAD
+=======
+
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
     },
 
     /**
@@ -2705,9 +2730,13 @@ cc.FadeIn = cc.FadeTo.extend(/** @lends cc.FadeIn# */{
      */
     ctor:function (duration) {
         cc.FadeTo.prototype.ctor.call(this);
+<<<<<<< HEAD
         if (duration == null)
             duration = 0;
         this.initWithDuration(duration, 255);
+=======
+        duration && this.initWithDuration(duration, 255);
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
     },
 
     /**
@@ -2781,9 +2810,13 @@ cc.FadeOut = cc.FadeTo.extend(/** @lends cc.FadeOut# */{
      */
     ctor:function (duration) {
         cc.FadeTo.prototype.ctor.call(this);
+<<<<<<< HEAD
         if (duration == null)
             duration = 0;
         this.initWithDuration(duration, 0);
+=======
+        duration && this.initWithDuration(duration, 0);
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
     },
 
     /**
@@ -3166,7 +3199,11 @@ cc.ReverseTime = cc.ActionInterval.extend(/** @lends cc.ReverseTime# */{
     initWithAction:function (action) {
         if(!action)
             throw "cc.ReverseTime.initWithAction(): action must be non null";
+<<<<<<< HEAD
         if(action === this._other)
+=======
+        if(action == this._other)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             throw "cc.ReverseTime.initWithAction(): the action was already passed in.";
 
         if (cc.ActionInterval.prototype.initWithDuration.call(this, action._duration)) {
@@ -3527,7 +3564,11 @@ cc.TargetedAction = cc.ActionInterval.extend(/** @lends cc.TargetedAction# */{
      * @param {cc.Node} forcedTarget
      */
     setForcedTarget:function (forcedTarget) {
+<<<<<<< HEAD
         if (this._forcedTarget !== forcedTarget)
+=======
+        if (this._forcedTarget != forcedTarget)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             this._forcedTarget = forcedTarget;
     }
 });

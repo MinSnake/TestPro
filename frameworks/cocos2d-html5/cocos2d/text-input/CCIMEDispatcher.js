@@ -178,7 +178,11 @@ cc.IMEDispatcher = cc.Class.extend(/**  @lends cc.imeDispatcher# */{
             if (e.keyCode === cc.KEY.tab) {
                 e.stopPropagation();
                 e.preventDefault();
+<<<<<<< HEAD
             } else if (e.keyCode === cc.KEY.enter) {
+=======
+            } else if (e.keyCode == cc.KEY.enter) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                 selfPointer.dispatchInsertText("\n", 1);
                 e.stopPropagation();
                 e.preventDefault();
@@ -187,7 +191,11 @@ cc.IMEDispatcher = cc.Class.extend(/**  @lends cc.imeDispatcher# */{
 
         if (/msie/i.test(navigator.userAgent)) {
             cc._addEventListener(this._domInputControl, "keyup", function (e) {
+<<<<<<< HEAD
                 if (e.keyCode === cc.KEY.backspace) {
+=======
+                if (e.keyCode == cc.KEY.backspace) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                     selfPointer._processDomInputString(selfPointer._domInputControl.value);
                 }
             }, false);
@@ -353,7 +361,11 @@ cc.IMEDispatcher = cc.Class.extend(/**  @lends cc.imeDispatcher# */{
             return false;
 
         // if delegate is not in delegate list, return
+<<<<<<< HEAD
         if (this.impl._delegateList.indexOf(delegate) === -1)
+=======
+        if (this.impl._delegateList.indexOf(delegate) == -1)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             return false;
 
         if (this.impl._delegateWithIme) {
@@ -387,9 +399,13 @@ cc.IMEDispatcher = cc.Class.extend(/**  @lends cc.imeDispatcher# */{
             delegate.didAttachWithIME();
             //prompt
             this._currentInputString = delegate.string || "";
+<<<<<<< HEAD
 
             var tipMessage = delegate.getTipMessage ? delegate.getTipMessage() : "please enter your word:";
             var userInput = prompt(tipMessage, this._currentInputString);
+=======
+            var userInput = prompt("please enter your word:", this._currentInputString);
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             if(userInput != null)
                 this._processDomInputString(userInput);
             this.dispatchInsertText("\n", 1);
@@ -425,7 +441,11 @@ cc.IMEDispatcher = cc.Class.extend(/**  @lends cc.imeDispatcher# */{
             return false;
 
         // if delegate is not the current delegate attached with ime, return
+<<<<<<< HEAD
         if (this.impl._delegateWithIme !== delegate)
+=======
+        if (this.impl._delegateWithIme != delegate)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             return false;
 
         if (!delegate.canDetachWithIME())
@@ -449,11 +469,19 @@ cc.IMEDispatcher = cc.Class.extend(/**  @lends cc.imeDispatcher# */{
             return;
 
         // if delegate is not in delegate list, return
+<<<<<<< HEAD
         if (this.impl._delegateList.indexOf(delegate) === -1)
             return;
 
         if (this.impl._delegateWithIme) {
             if (delegate === this.impl._delegateWithIme) {
+=======
+        if (this.impl._delegateList.indexOf(delegate) == -1)
+            return;
+
+        if (this.impl._delegateWithIme) {
+            if (delegate == this.impl._delegateWithIme) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                 this.impl._delegateWithIme = null;
             }
         }
@@ -471,6 +499,7 @@ cc.IMEDispatcher = cc.Class.extend(/**  @lends cc.imeDispatcher# */{
      */
     processKeycode:function (keyCode) {
         if (keyCode < 32) {
+<<<<<<< HEAD
             if (keyCode === cc.KEY.backspace) {
                 this.dispatchDeleteBackward();
             } else if (keyCode === cc.KEY.enter) {
@@ -478,6 +507,15 @@ cc.IMEDispatcher = cc.Class.extend(/**  @lends cc.imeDispatcher# */{
             } else if (keyCode === cc.KEY.tab) {
                 //tab input
             } else if (keyCode === cc.KEY.escape) {
+=======
+            if (keyCode == cc.KEY.backspace) {
+                this.dispatchDeleteBackward();
+            } else if (keyCode == cc.KEY.enter) {
+                this.dispatchInsertText("\n", 1);
+            } else if (keyCode == cc.KEY.tab) {
+                //tab input
+            } else if (keyCode == cc.KEY.escape) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                 //ESC input
             }
         } else if (keyCode < 255) {
@@ -511,7 +549,11 @@ cc.IMEDispatcher.Impl = cc.Class.extend(/** @lends cc.IMEDispatcher.Impl# */{
      */
     findDelegate:function (delegate) {
         for (var i = 0; i < this._delegateList.length; i++) {
+<<<<<<< HEAD
             if (this._delegateList[i] === delegate)
+=======
+            if (this._delegateList[i] == delegate)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                 return i;
         }
         return null;

@@ -89,6 +89,7 @@ var BakeLayerTest1 = BakeLayerBaseTest.extend({
         menu.y = winSize.height - 120;
         this.addChild(menu, 10);
 
+<<<<<<< HEAD
         var rootLayer = new cc.Layer();
         rootLayer.setPosition(20,20);
         this.addChild(rootLayer);
@@ -97,6 +98,11 @@ var BakeLayerTest1 = BakeLayerBaseTest.extend({
         bakeLayer.bake();
         bakeLayer.setRotation(30);
         rootLayer.addChild(bakeLayer);
+=======
+        var bakeLayer = new cc.Layer();
+        bakeLayer.bake();
+        this.addChild(bakeLayer);
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
 
         for(var i = 0; i < 9; i++){
             var sprite1 = new cc.Sprite(s_pathGrossini);
@@ -149,21 +155,31 @@ var BakeLayerColorTest = BakeLayerBaseTest.extend({
         menu.y = winSize.height - 120;
         this.addChild(menu, 10);
 
+<<<<<<< HEAD
         var rootLayer = new cc.Layer();
         rootLayer.setPosition(20,20);
         this.addChild(rootLayer);
 
+=======
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         //var bakeLayer = cc.LayerColor.create(cc.color(128,0, 128, 128), 700, 300);     //test for LayerColor
         //bakeLayer.setPosition(60, 80);
 
         var bakeLayer = new cc.LayerGradient(cc.color(128,0, 128, 255), cc.color(0, 0, 128, 255));
         bakeLayer.setPosition(60, 80);
         bakeLayer.setContentSize(700, 300);
+<<<<<<< HEAD
         bakeLayer.setRotation(30);
 
         //bakeLayer.setPosition(winSize.width /2, winSize.height /2);         //test for ignoreAnchorPointForPosition
         //bakeLayer.ignoreAnchorPointForPosition(false);
         rootLayer.addChild(bakeLayer);
+=======
+
+        //bakeLayer.setPosition(winSize.width /2, winSize.height /2);         //test for ignoreAnchorPointForPosition
+        //bakeLayer.ignoreAnchorPointForPosition(false);
+        this.addChild(bakeLayer);
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
 
         for(var i = 0; i < 9; i++){
             var sprite1 = new cc.Sprite(s_pathGrossini);

@@ -31,7 +31,11 @@ cc.BuilderFileLoader = cc.NodeLoader.extend({
         return cc.BuilderFile.create();
     },
     onHandlePropTypeCCBFile:function (node, parent, propertyName, ccbFileNode, ccbReader) {
+<<<<<<< HEAD
         if (propertyName === PROPERTY_CCBFILE) {
+=======
+        if (propertyName == PROPERTY_CCBFILE) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             node.setCCBFileNode(ccbFileNode);
         } else {
             cc.NodeLoader.prototype.onHandlePropTypeCCBFile.call(this, node, parent, propertyName, ccbFileNode, ccbReader);
@@ -51,16 +55,26 @@ cc.ControlLoader = cc.NodeLoader.extend({
     _createCCNode:function (parent, ccbReander) {
     },
     onHandlePropTypeBlockCCControl:function (node, parent, propertyName, blockCCControlData, ccbReader) {
+<<<<<<< HEAD
         if (propertyName === PROPERTY_CCCONTROL) {
+=======
+        if (propertyName == PROPERTY_CCCONTROL) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             node.addTargetWithActionForControlEvents(blockCCControlData.target, blockCCControlData.selCCControlHandler, blockCCControlData.controlEvents);
         } else {
             cc.NodeLoader.prototype.onHandlePropTypeBlockCCControl.call(this, node, parent, propertyName, blockCCControlData, ccbReader);
         }
     },
     onHandlePropTypeCheck:function (node, parent, propertyName, check, ccbReader) {
+<<<<<<< HEAD
         if (propertyName === PROPERTY_ENABLED) {
             node.setEnabled(check);
         } else if (propertyName === PROPERTY_SELECTED) {
+=======
+        if (propertyName == PROPERTY_ENABLED) {
+            node.setEnabled(check);
+        } else if (propertyName == PROPERTY_SELECTED) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             node.setSelected(check);
         } else {
             cc.NodeLoader.prototype.onHandlePropTypeCheck.call(this, node, parent, propertyName, check, ccbReader);
@@ -93,60 +107,97 @@ cc.ControlButtonLoader = cc.ControlLoader.extend({
     },
 
     onHandlePropTypeCheck:function (node, parent, propertyName, check, ccbReader) {
+<<<<<<< HEAD
         if (propertyName === PROPERTY_ZOOMONTOUCHDOWN) {
+=======
+        if (propertyName == PROPERTY_ZOOMONTOUCHDOWN) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             node.setZoomOnTouchDown(check);
         } else {
             cc.ControlLoader.prototype.onHandlePropTypeCheck.call(this, node, parent, propertyName, check, ccbReader);
         }
     },
     onHandlePropTypeString:function (node, parent, propertyName, stringValue, ccbReader) {
+<<<<<<< HEAD
         if (propertyName === PROPERTY_TITLE_NORMAL) {
             node.setTitleForState(stringValue, cc.CONTROL_STATE_NORMAL);
         } else if (propertyName === PROPERTY_TITLE_HIGHLIGHTED) {
             node.setTitleForState(stringValue, cc.CONTROL_STATE_HIGHLIGHTED);
         } else if (propertyName === PROPERTY_TITLE_DISABLED) {
+=======
+        if (propertyName == PROPERTY_TITLE_NORMAL) {
+            node.setTitleForState(stringValue, cc.CONTROL_STATE_NORMAL);
+        } else if (propertyName == PROPERTY_TITLE_HIGHLIGHTED) {
+            node.setTitleForState(stringValue, cc.CONTROL_STATE_HIGHLIGHTED);
+        } else if (propertyName == PROPERTY_TITLE_DISABLED) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             node.setTitleForState(stringValue, cc.CONTROL_STATE_DISABLED);
         } else {
             cc.ControlLoader.prototype.onHandlePropTypeString.call(this, node, parent, propertyName, stringValue, ccbReader);
         }
     },
     onHandlePropTypeFontTTF:function (node, parent, propertyName, fontTTF, ccbReader) {
+<<<<<<< HEAD
         if (propertyName === PROPERTY_TITLETTF_NORMAL) {
             node.setTitleTTFForState(fontTTF, cc.CONTROL_STATE_NORMAL);
         } else if (propertyName === PROPERTY_TITLETTF_HIGHLIGHTED) {
             node.setTitleTTFForState(fontTTF, cc.CONTROL_STATE_HIGHLIGHTED);
         } else if (propertyName === PROPERTY_TITLETTF_DISABLED) {
+=======
+        if (propertyName == PROPERTY_TITLETTF_NORMAL) {
+            node.setTitleTTFForState(fontTTF, cc.CONTROL_STATE_NORMAL);
+        } else if (propertyName == PROPERTY_TITLETTF_HIGHLIGHTED) {
+            node.setTitleTTFForState(fontTTF, cc.CONTROL_STATE_HIGHLIGHTED);
+        } else if (propertyName == PROPERTY_TITLETTF_DISABLED) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             node.setTitleTTFForState(fontTTF, cc.CONTROL_STATE_DISABLED);
         } else {
             cc.ControlLoader.prototype.onHandlePropTypeFontTTF.call(this, node, parent, propertyName, fontTTF, ccbReader);
         }
     },
     onHandlePropTypeFloatScale:function (node, parent, propertyName, floatScale, ccbReader) {
+<<<<<<< HEAD
         if (propertyName === PROPERTY_TITLETTFSIZE_NORMAL) {
             node.setTitleTTFSizeForState(floatScale, cc.CONTROL_STATE_NORMAL);
         } else if (propertyName === PROPERTY_TITLETTFSIZE_HIGHLIGHTED) {
             node.setTitleTTFSizeForState(floatScale, cc.CONTROL_STATE_HIGHLIGHTED);
         } else if (propertyName === PROPERTY_TITLETTFSIZE_DISABLED) {
+=======
+        if (propertyName == PROPERTY_TITLETTFSIZE_NORMAL) {
+            node.setTitleTTFSizeForState(floatScale, cc.CONTROL_STATE_NORMAL);
+        } else if (propertyName == PROPERTY_TITLETTFSIZE_HIGHLIGHTED) {
+            node.setTitleTTFSizeForState(floatScale, cc.CONTROL_STATE_HIGHLIGHTED);
+        } else if (propertyName == PROPERTY_TITLETTFSIZE_DISABLED) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             node.setTitleTTFSizeForState(floatScale, cc.CONTROL_STATE_DISABLED);
         } else {
             cc.ControlLoader.prototype.onHandlePropTypeFloatScale.call(this, node, parent, propertyName, floatScale, ccbReader);
         }
     },
     onHandlePropTypePoint:function (node, parent, propertyName, point, ccbReader) {
+<<<<<<< HEAD
         if (propertyName === PROPERTY_LABELANCHORPOINT) {
+=======
+        if (propertyName == PROPERTY_LABELANCHORPOINT) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             node.setLabelAnchorPoint(point);
         } else {
             cc.ControlLoader.prototype.onHandlePropTypePoint.call(this, node, parent, propertyName, point, ccbReader);
         }
     },
     onHandlePropTypeSize:function (node, parent, propertyName, size, ccbReader) {
+<<<<<<< HEAD
         if (propertyName === PROPERTY_PREFEREDSIZE) {
+=======
+        if (propertyName == PROPERTY_PREFEREDSIZE) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             node.setPreferredSize(size);
         } else {
             cc.ControlLoader.prototype.onHandlePropTypeSize.call(this, node, parent, propertyName, size, ccbReader);
         }
     },
     onHandlePropTypeSpriteFrame:function (node, parent, propertyName, spriteFrame, ccbReader) {
+<<<<<<< HEAD
         if (propertyName === PROPERTY_BACKGROUNDSPRITEFRAME_NORMAL) {
             if (spriteFrame != null) {
                 node.setBackgroundSpriteFrameForState(spriteFrame, cc.CONTROL_STATE_NORMAL);
@@ -156,6 +207,17 @@ cc.ControlButtonLoader = cc.ControlLoader.extend({
                 node.setBackgroundSpriteFrameForState(spriteFrame, cc.CONTROL_STATE_HIGHLIGHTED);
             }
         } else if (propertyName === PROPERTY_BACKGROUNDSPRITEFRAME_DISABLED) {
+=======
+        if (propertyName == PROPERTY_BACKGROUNDSPRITEFRAME_NORMAL) {
+            if (spriteFrame != null) {
+                node.setBackgroundSpriteFrameForState(spriteFrame, cc.CONTROL_STATE_NORMAL);
+            }
+        } else if (propertyName == PROPERTY_BACKGROUNDSPRITEFRAME_HIGHLIGHTED) {
+            if (spriteFrame != null) {
+                node.setBackgroundSpriteFrameForState(spriteFrame, cc.CONTROL_STATE_HIGHLIGHTED);
+            }
+        } else if (propertyName == PROPERTY_BACKGROUNDSPRITEFRAME_DISABLED) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             if (spriteFrame != null) {
                 node.setBackgroundSpriteFrameForState(spriteFrame, cc.CONTROL_STATE_DISABLED);
             }
@@ -164,11 +226,19 @@ cc.ControlButtonLoader = cc.ControlLoader.extend({
         }
     },
     onHandlePropTypeColor3:function (node, parent, propertyName, ccColor3B, ccbReader) {
+<<<<<<< HEAD
         if (propertyName === PROPERTY_TITLECOLOR_NORMAL) {
             node.setTitleColorForState(ccColor3B, cc.CONTROL_STATE_NORMAL);
         } else if (propertyName === PROPERTY_TITLECOLOR_HIGHLIGHTED) {
             node.setTitleColorForState(ccColor3B, cc.CONTROL_STATE_HIGHLIGHTED);
         } else if (propertyName === PROPERTY_TITLECOLOR_DISABLED) {
+=======
+        if (propertyName == PROPERTY_TITLECOLOR_NORMAL) {
+            node.setTitleColorForState(ccColor3B, cc.CONTROL_STATE_NORMAL);
+        } else if (propertyName == PROPERTY_TITLECOLOR_HIGHLIGHTED) {
+            node.setTitleColorForState(ccColor3B, cc.CONTROL_STATE_HIGHLIGHTED);
+        } else if (propertyName == PROPERTY_TITLECOLOR_DISABLED) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             node.setTitleColorForState(ccColor3B, cc.CONTROL_STATE_DISABLED);
         } else {
             cc.ControlLoader.prototype.onHandlePropTypeColor3.call(this, node, parent, propertyName, ccColor3B, ccbReader);
@@ -192,7 +262,11 @@ cc.ScrollViewLoader = cc.NodeLoader.extend({
     },
 
     onHandlePropTypeSize:function(node,parent,propertyName,size,ccbReader){
+<<<<<<< HEAD
         if(propertyName === PROPERTY_CONTENTSIZE){
+=======
+        if(propertyName == PROPERTY_CONTENTSIZE){
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             node.setViewSize(size);
         }else{
             cc.NodeLoader.prototype.onHandlePropTypeSize.call(this, node,parent,propertyName,size,ccbReader);
@@ -200,7 +274,11 @@ cc.ScrollViewLoader = cc.NodeLoader.extend({
     },
 
     onHandlePropTypeCCBFile:function (node, parent, propertyName, ccbFileNode, ccbReader) {
+<<<<<<< HEAD
         if (propertyName === PROPERTY_CONTAINER) {
+=======
+        if (propertyName == PROPERTY_CONTAINER) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             node.setContainer(ccbFileNode);
             node.updateInset();
         } else {
@@ -208,23 +286,37 @@ cc.ScrollViewLoader = cc.NodeLoader.extend({
         }
     },
     onHandlePropTypeCheck:function (node, parent, propertyName, check, ccbReader) {
+<<<<<<< HEAD
         if (propertyName === PROPERTY_CLIPSTOBOUNDS) {
             node.setClippingToBounds(check);
         } else if (propertyName === PROPERTY_BOUNCES) {
+=======
+        if (propertyName == PROPERTY_CLIPSTOBOUNDS) {
+            node.setClippingToBounds(check);
+        } else if (propertyName == PROPERTY_BOUNCES) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             node.setBounceable(check);
         } else {
             cc.NodeLoader.prototype.onHandlePropTypeCheck.call(this, node, parent, propertyName, check, ccbReader);
         }
     },
     onHandlePropTypeFloat:function (node, parent, propertyName, floatValue, ccbReader) {
+<<<<<<< HEAD
         if (propertyName === PROPERTY_SCALE) {
+=======
+        if (propertyName == PROPERTY_SCALE) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             node.setScale(floatValue);
         } else {
             cc.NodeLoader.prototype.onHandlePropTypeFloat.call(this, node, parent, propertyName, floatValue, ccbReader);
         }
     },
     onHandlePropTypeIntegerLabeled:function (node, parent, propertyName, integerLabeled, ccbReader) {
+<<<<<<< HEAD
         if (propertyName === PROPERTY_DIRECTION) {
+=======
+        if (propertyName == PROPERTY_DIRECTION) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             node.setDirection(integerLabeled);
         } else {
             cc.NodeLoader.prototype.onHandlePropTypeIntegerLabeled.call(this, node, parent, propertyName, integerLabeled, ccbReader);
@@ -256,7 +348,11 @@ cc.Scale9SpriteLoader = cc.NodeLoader.extend({
     },
 
     onHandlePropTypeColor3:function(node, parent, propertyName, ccColor3B,ccbReader){
+<<<<<<< HEAD
         if(propertyName === PROPERTY_COLOR) {
+=======
+        if(propertyName == PROPERTY_COLOR) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             if(ccColor3B.r !== 255 || ccColor3B.g !== 255 || ccColor3B.b !== 255){
                 node.setColor(ccColor3B);
             }
@@ -265,14 +361,22 @@ cc.Scale9SpriteLoader = cc.NodeLoader.extend({
         }
     },
     onHandlePropTypeByte:function(node, parent, propertyName, byteValue,ccbReader){
+<<<<<<< HEAD
         if(propertyName === PROPERTY_OPACITY) {
+=======
+        if(propertyName == PROPERTY_OPACITY) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             node.setOpacity(byteValue);
         } else {
             cc.NodeLoader.prototype.onHandlePropTypeByte.call(this, node, parent, propertyName, byteValue,ccbReader);
         }
     },
     onHandlePropTypeBlendFunc:function(node, parent, propertyName, ccBlendFunc,ccbReader){
+<<<<<<< HEAD
         if(propertyName === PROPERTY_BLENDFUNC) {
+=======
+        if(propertyName == PROPERTY_BLENDFUNC) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             // TODO Not exported by CocosBuilder yet!
             // node.setBlendFunc(ccBlendFunc);
         } else {
@@ -280,22 +384,33 @@ cc.Scale9SpriteLoader = cc.NodeLoader.extend({
         }
     },
     onHandlePropTypeSpriteFrame:function(node, parent, propertyName, spriteFrame,ccbReader){
+<<<<<<< HEAD
         if(propertyName === PROPERTY_SPRITEFRAME) {
+=======
+        if(propertyName == PROPERTY_SPRITEFRAME) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             node.setSpriteFrame(spriteFrame);
         } else {
             cc.NodeLoader.prototype.onHandlePropTypeSpriteFrame.call(this, node, parent, propertyName, spriteFrame,ccbReader);
         }
     },
     onHandlePropTypeSize:function(node, parent, propertyName, size,ccbReader){
+<<<<<<< HEAD
         if(propertyName === PROPERTY_CONTENTSIZE) {
             //node.setContentSize(size);
         } else if(propertyName === PROPERTY_PREFEREDSIZE) {
+=======
+        if(propertyName == PROPERTY_CONTENTSIZE) {
+            //node.setContentSize(size);
+        } else if(propertyName == PROPERTY_PREFEREDSIZE) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             node.setPreferredSize(size);
         } else {
             cc.NodeLoader.prototype.onHandlePropTypeSize.call(this, node, parent, propertyName, size,ccbReader);
         }
     },
     onHandlePropTypeFloat:function(node, parent, propertyName, floatValue,ccbReader){
+<<<<<<< HEAD
         if(propertyName === PROPERTY_INSETLEFT) {
             node.setInsetLeft(floatValue);
         } else if(propertyName === PROPERTY_INSETTOP) {
@@ -303,6 +418,15 @@ cc.Scale9SpriteLoader = cc.NodeLoader.extend({
         } else if(propertyName === PROPERTY_INSETRIGHT) {
             node.setInsetRight(floatValue);
         } else if(propertyName === PROPERTY_INSETBOTTOM) {
+=======
+        if(propertyName == PROPERTY_INSETLEFT) {
+            node.setInsetLeft(floatValue);
+        } else if(propertyName == PROPERTY_INSETTOP) {
+            node.setInsetTop(floatValue);
+        } else if(propertyName == PROPERTY_INSETRIGHT) {
+            node.setInsetRight(floatValue);
+        } else if(propertyName == PROPERTY_INSETBOTTOM) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             node.setInsetBottom(floatValue);
         } else {
             cc.NodeLoader.prototype.onHandlePropTypeFloat.call(this, node, parent, propertyName, floatValue,ccbReader);

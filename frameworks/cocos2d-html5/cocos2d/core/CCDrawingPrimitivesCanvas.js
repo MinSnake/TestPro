@@ -279,7 +279,11 @@ cc.DrawingPrimitiveCanvas = cc.Class.extend(/** @lends cc.DrawingPrimitiveCanvas
             var dt = i / segments;
 
             // border
+<<<<<<< HEAD
             if (dt === 1) {
+=======
+            if (dt == 1) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                 p = config.length - 1;
                 lt = 1;
             } else {

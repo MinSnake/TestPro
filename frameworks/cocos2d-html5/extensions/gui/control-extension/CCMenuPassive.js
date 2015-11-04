@@ -257,7 +257,11 @@ cc.MenuPassive = cc.Layer.extend(/** @lends cc.MenuPassive# */{
         if (this._children && this._children.length > 0) {
             for (i = 0; i < this._children.length; i++) {
                 if (this._children[i]) {
+<<<<<<< HEAD
                     if (rowColumns === 0) {
+=======
+                    if (rowColumns == 0) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                         rowColumns = rows[row];
                         w = winSize.width / (1 + rowColumns);
                         x = w;

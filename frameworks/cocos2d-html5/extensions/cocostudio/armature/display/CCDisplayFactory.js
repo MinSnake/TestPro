@@ -118,16 +118,29 @@ ccs.displayFactory = {
         //! remove .xxx
         var textureName = displayData.displayName;
         var startPos = textureName.lastIndexOf(".");
+<<<<<<< HEAD
         if (startPos !== -1)
             textureName = textureName.substring(0, startPos);
         //! create display
         if (textureName === "")
+=======
+        if (startPos != -1)
+            textureName = textureName.substring(0, startPos);
+        //! create display
+        if (textureName == "")
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             skin = new ccs.Skin();
         else
             skin = new ccs.Skin("#" + textureName + ".png");
 
         decoDisplay.setDisplay(skin);
 
+<<<<<<< HEAD
+=======
+        if(skin == null)
+            return;
+
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         skin.setBone(bone);
         this.initSpriteDisplay(bone, decoDisplay, displayData.displayName, skin);
 
@@ -145,7 +158,11 @@ ccs.displayFactory = {
         var textureName = displayName;
         var startPos = textureName.lastIndexOf(".");
 
+<<<<<<< HEAD
         if (startPos !== -1)
+=======
+        if (startPos != -1)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             textureName = textureName.substring(0, startPos);
 
         var textureData = ccs.armatureDataManager.getTextureData(textureName);

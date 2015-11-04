@@ -85,10 +85,17 @@ cc.ProtectedNode = cc.Node.extend(/** @lends cc.ProtectedNode# */{
      * @return {cc.Node} a Node object whose tag equals to the input parameter
      */
     getProtectedChildByTag: function(tag){
+<<<<<<< HEAD
         cc.assert(tag !== cc.NODE_TAG_INVALID, "Invalid tag");
         var locChildren = this._protectedChildren;
         for(var i = 0, len = locChildren.length; i < len; i++)
             if(locChildren.getTag() === tag)
+=======
+        cc.assert(tag != cc.NODE_TAG_INVALID, "Invalid tag");
+        var locChildren = this._protectedChildren;
+        for(var i = 0, len = locChildren.length; i < len; i++)
+            if(locChildren.getTag() == tag)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                 return locChildren[i];
         return null;
     },
@@ -129,7 +136,11 @@ cc.ProtectedNode = cc.Node.extend(/** @lends cc.ProtectedNode# */{
      * @param {Boolean} [cleanup=true]
      */
     removeProtectedChildByTag: function(tag, cleanup){
+<<<<<<< HEAD
         cc.assert( tag !== cc.NODE_TAG_INVALID, "Invalid tag");
+=======
+        cc.assert( tag != cc.NODE_TAG_INVALID, "Invalid tag");
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
 
         if(cleanup == null)
             cleanup = true;

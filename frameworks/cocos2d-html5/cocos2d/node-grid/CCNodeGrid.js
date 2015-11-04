@@ -80,6 +80,7 @@ cc.NodeGrid = cc.Node.extend({
         t4x4Mat[14] = this._vertexZ;
 
         //optimize performance for Javascript
+<<<<<<< HEAD
         topMat4.multiply(t4x4) ; // = cc.kmGLMultMatrix(this._transform4x4);
 
         // XXX: Expensive calls. Camera should be integrated into the cached affine matrix
@@ -87,6 +88,14 @@ cc.NodeGrid = cc.Node.extend({
             var app = this._renderCmd._anchorPointInPoints,
                 apx = app.x, apy = app.y,
                 translate = (apx !== 0.0 || apy !== 0.0);
+=======
+        cc.kmMat4Multiply(topMat4, topMat4, t4x4); // = cc.kmGLMultMatrix(this._transform4x4);
+
+        // XXX: Expensive calls. Camera should be integrated into the cached affine matrix
+        if (this._camera != null && !(this.grid && this.grid.isActive())) {
+            var apx = this._anchorPointInPoints.x, apy = this._anchorPointInPoints.y;
+            var translate = (apx !== 0.0 || apy !== 0.0);
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             if (translate) {
                 if(!cc.SPRITEBATCHNODE_RENDER_SUBPIXEL) {
                     apx = 0 | apx;

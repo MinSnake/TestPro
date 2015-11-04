@@ -5329,6 +5329,7 @@ var SpriteWithRepeatingTexture = SpriteTestDemo.extend({
     }
 });
 
+<<<<<<< HEAD
 var SpriteBlendFuncTest = SpriteTestDemo.extend({
     //webgl only
     _title: "",          //Sprite BlendFunc test
@@ -5396,6 +5397,8 @@ var SpriteBlendFuncTest = SpriteTestDemo.extend({
     }
 });
 
+=======
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
 var SpriteTestScene = TestScene.extend({
     runThisTest:function (num) {
         spriteTestIdx = (num || num == 0) ? (num - 1) : -1;
@@ -5468,8 +5471,12 @@ var arrayOfSpriteTest = [
     TextureColorCacheIssue,
     TextureColorCacheIssue2,
     TextureRotatedSpriteFrame,
+<<<<<<< HEAD
     SpriteWithRepeatingTexture,
     SpriteBlendFuncTest
+=======
+    SpriteWithRepeatingTexture
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
 ];
 
 var nextSpriteTest = function () {

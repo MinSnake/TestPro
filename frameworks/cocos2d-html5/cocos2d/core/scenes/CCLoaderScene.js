@@ -34,8 +34,11 @@ cc.LoaderScene = cc.Scene.extend({
     _interval : null,
     _label : null,
     _className:"LoaderScene",
+<<<<<<< HEAD
     cb: null,
     target: null,
+=======
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
     /**
      * Contructor of cc.LoaderScene
      * @returns {boolean}
@@ -103,14 +106,22 @@ cc.LoaderScene = cc.Scene.extend({
      * init with resources
      * @param {Array} resources
      * @param {Function|String} cb
+<<<<<<< HEAD
      * @param {Object} target
      */
     initWithResources: function (resources, cb, target) {
+=======
+     */
+    initWithResources: function (resources, cb) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         if(cc.isString(resources))
             resources = [resources];
         this.resources = resources || [];
         this.cb = cb;
+<<<<<<< HEAD
         this.target = target;
+=======
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
     },
 
     _startLoading: function () {
@@ -124,7 +135,11 @@ cc.LoaderScene = cc.Scene.extend({
                 self._label.setString("Loading... " + percent + "%");
             }, function () {
                 if (self.cb)
+<<<<<<< HEAD
                     self.cb.call(self.target);
+=======
+                    self.cb();
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             });
     }
 });
@@ -133,7 +148,10 @@ cc.LoaderScene = cc.Scene.extend({
  * <p>when all the resource are downloaded it will invoke call function</p>
  * @param resources
  * @param cb
+<<<<<<< HEAD
  * @param target
+=======
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
  * @returns {cc.LoaderScene|*}
  * @example
  * //Example
@@ -141,13 +159,21 @@ cc.LoaderScene = cc.Scene.extend({
         cc.director.runScene(new HelloWorldScene());
     }, this);
  */
+<<<<<<< HEAD
 cc.LoaderScene.preload = function(resources, cb, target){
+=======
+cc.LoaderScene.preload = function(resources, cb){
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
     var _cc = cc;
     if(!_cc.loaderScene) {
         _cc.loaderScene = new cc.LoaderScene();
         _cc.loaderScene.init();
     }
+<<<<<<< HEAD
     _cc.loaderScene.initWithResources(resources, cb, target);
+=======
+    _cc.loaderScene.initWithResources(resources, cb);
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
 
     cc.director.runScene(_cc.loaderScene);
     return _cc.loaderScene;

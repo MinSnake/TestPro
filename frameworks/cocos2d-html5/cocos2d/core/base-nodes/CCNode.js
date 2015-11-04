@@ -186,8 +186,11 @@ cc.Node = cc.Class.extend(/** @lends cc.Node# */{
 
     _renderCmd:null,
 
+<<<<<<< HEAD
     _camera: null,
 
+=======
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
     /**
      * Constructor function, override it to extend the construction behavior, remember to call "this._super()" in the extended "ctor" function.
      * @function
@@ -448,7 +451,11 @@ cc.Node = cc.Class.extend(/** @lends cc.Node# */{
      * @param {Number} globalZOrder
      */
     setGlobalZOrder: function (globalZOrder) {
+<<<<<<< HEAD
         if (this._globalZOrder !== globalZOrder) {
+=======
+        if (this._globalZOrder != globalZOrder) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             this._globalZOrder = globalZOrder;
             cc.eventManager._setDirtyForNode(this);
         }
@@ -656,7 +663,11 @@ cc.Node = cc.Class.extend(/** @lends cc.Node# */{
             locPosition.x = newPosOrxValue.x;
             locPosition.y = newPosOrxValue.y;
         } else {
+<<<<<<< HEAD
             if(locPosition.x === newPosOrxValue && locPosition.y === yValue)
+=======
+            if(locPosition.x === newPosOrxValue.x && locPosition.y === yValue)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                 return;
             locPosition.x = newPosOrxValue;
             locPosition.y = yValue;
@@ -968,7 +979,11 @@ cc.Node = cc.Class.extend(/** @lends cc.Node# */{
      * @param {Boolean} newValue true if anchor point will be ignored when you position this node
      */
     ignoreAnchorPointForPosition: function (newValue) {
+<<<<<<< HEAD
         if (newValue !== this._ignoreAnchorPointForPosition) {
+=======
+        if (newValue != this._ignoreAnchorPointForPosition) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             this._ignoreAnchorPointForPosition = newValue;
             this._renderCmd.setDirtyFlag(cc.Node._dirtyFlags.transformDirty);
         }
@@ -1078,7 +1093,11 @@ cc.Node = cc.Class.extend(/** @lends cc.Node# */{
      * @param {object} newValue A user cocos2d object
      */
     setUserObject: function (newValue) {
+<<<<<<< HEAD
         if (this.userObject !== newValue)
+=======
+        if (this.userObject != newValue)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             this.userObject = newValue;
     },
 
@@ -1127,7 +1146,11 @@ cc.Node = cc.Class.extend(/** @lends cc.Node# */{
      * @param {cc.ActionManager} actionManager A CCActionManager object that is used by all actions.
      */
     setActionManager: function (actionManager) {
+<<<<<<< HEAD
         if (this._actionManager !== actionManager) {
+=======
+        if (this._actionManager != actionManager) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             this.stopAllActions();
             this._actionManager = actionManager;
         }
@@ -1156,7 +1179,11 @@ cc.Node = cc.Class.extend(/** @lends cc.Node# */{
      * @param scheduler A cc.Scheduler object that is used to schedule all "update" and timers.
      */
     setScheduler: function (scheduler) {
+<<<<<<< HEAD
         if (this._scheduler !== scheduler) {
+=======
+        if (this._scheduler != scheduler) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             this.unscheduleAllCallbacks();
             this._scheduler = scheduler;
         }
@@ -1208,10 +1235,17 @@ cc.Node = cc.Class.extend(/** @lends cc.Node# */{
      */
     getChildByTag: function (aTag) {
         var __children = this._children;
+<<<<<<< HEAD
         if (__children !== null) {
             for (var i = 0; i < __children.length; i++) {
                 var node = __children[i];
                 if (node && node.tag === aTag)
+=======
+        if (__children != null) {
+            for (var i = 0; i < __children.length; i++) {
+                var node = __children[i];
+                if (node && node.tag == aTag)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                     return node;
             }
         }
@@ -1232,7 +1266,11 @@ cc.Node = cc.Class.extend(/** @lends cc.Node# */{
 
         var locChildren = this._children;
         for(var i = 0, len = locChildren.length; i < len; i++){
+<<<<<<< HEAD
            if(locChildren[i]._name === name)
+=======
+           if(locChildren[i]._name == name)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             return locChildren[i];
         }
         return null;
@@ -1304,7 +1342,11 @@ cc.Node = cc.Class.extend(/** @lends cc.Node# */{
      */
     removeFromParent: function (cleanup) {
         if (this._parent) {
+<<<<<<< HEAD
             if (cleanup === undefined)
+=======
+            if (cleanup == null)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                 cleanup = true;
             this._parent.removeChild(this, cleanup);
         }
@@ -1335,7 +1377,11 @@ cc.Node = cc.Class.extend(/** @lends cc.Node# */{
         if (this._children.length === 0)
             return;
 
+<<<<<<< HEAD
         if (cleanup === undefined)
+=======
+        if (cleanup == null)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             cleanup = true;
         if (this._children.indexOf(child) > -1)
             this._detachChild(child, cleanup);
@@ -1357,7 +1403,11 @@ cc.Node = cc.Class.extend(/** @lends cc.Node# */{
             cc.log(cc._LogInfos.Node_removeChildByTag);
 
         var child = this.getChildByTag(tag);
+<<<<<<< HEAD
         if (!child)
+=======
+        if (child == null)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             cc.log(cc._LogInfos.Node_removeChildByTag_2, tag);
         else
             this.removeChild(child, cleanup);
@@ -1380,16 +1430,28 @@ cc.Node = cc.Class.extend(/** @lends cc.Node# */{
     removeAllChildren: function (cleanup) {
         // not using detachChild improves speed here
         var __children = this._children;
+<<<<<<< HEAD
         if (__children !== null) {
             if (cleanup === undefined)
+=======
+        if (__children != null) {
+            if (cleanup == null)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                 cleanup = true;
             for (var i = 0; i < __children.length; i++) {
                 var node = __children[i];
                 if (node) {
+<<<<<<< HEAD
+=======
+                    // IMPORTANT:
+                    //  -1st do onExit
+                    //  -2nd cleanup
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                     if (this._running) {
                         node.onExitTransitionDidStart();
                         node.onExit();
                     }
+<<<<<<< HEAD
 
                     // If you don't do cleanup, the node's actions will not get removed and the
                     if (cleanup)
@@ -1402,6 +1464,15 @@ cc.Node = cc.Class.extend(/** @lends cc.Node# */{
             }
             this._children.length = 0;
             cc.renderer.childrenOrderDirty = true;
+=======
+                    if (cleanup)
+                        node.cleanup();
+                    // set parent nil at the end
+                    node.parent = null;
+                }
+            }
+            this._children.length = 0;
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         }
     },
 
@@ -1498,7 +1569,11 @@ cc.Node = cc.Class.extend(/** @lends cc.Node# */{
 
     // Internal use only, do not call it by yourself,
     transformAncestors: function () {
+<<<<<<< HEAD
         if (this._parent !== null) {
+=======
+        if (this._parent != null) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             this._parent.transformAncestors();
             this._parent.transform();
         }
@@ -1656,7 +1731,11 @@ cc.Node = cc.Class.extend(/** @lends cc.Node# */{
      * @param {Number} priority
      */
     scheduleUpdateWithPriority: function (priority) {
+<<<<<<< HEAD
         this.scheduler.scheduleUpdate(this, priority, !this._running);
+=======
+        this.scheduler.scheduleUpdateForTarget(this, priority, !this._running);
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
     },
 
     /**
@@ -1665,13 +1744,18 @@ cc.Node = cc.Class.extend(/** @lends cc.Node# */{
      * @see cc.Node#scheduleUpdate
      */
     unscheduleUpdate: function () {
+<<<<<<< HEAD
         this.scheduler.unscheduleUpdate(this);
+=======
+        this.scheduler.unscheduleUpdateForTarget(this);
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
     },
 
     /**
      * <p>Schedules a custom selector.         <br/>
      * If the selector is already scheduled, then the interval parameter will be updated without scheduling it again.</p>
      * @function
+<<<<<<< HEAD
      * @param {function} callback A function wrapped as a selector
      * @param {Number} interval  Tick interval in seconds. 0 means tick every frame. If interval = 0, it's recommended to use scheduleUpdate() instead.
      * @param {Number} repeat    The selector will be executed (repeat + 1) times, you can use kCCRepeatForever for tick infinitely.
@@ -1736,12 +1820,30 @@ cc.Node = cc.Class.extend(/** @lends cc.Node# */{
         delay = delay || 0;
 
         this.scheduler.schedule(callback, this, interval, repeat, delay, !this._running, key);
+=======
+     * @param {function} callback_fn A function wrapped as a selector
+     * @param {Number} interval  Tick interval in seconds. 0 means tick every frame. If interval = 0, it's recommended to use scheduleUpdate() instead.
+     * @param {Number} repeat    The selector will be executed (repeat + 1) times, you can use kCCRepeatForever for tick infinitely.
+     * @param {Number} delay     The amount of time that the first tick will wait before execution.
+     */
+    schedule: function (callback_fn, interval, repeat, delay) {
+        interval = interval || 0;
+
+        cc.assert(callback_fn, cc._LogInfos.Node_schedule);
+        cc.assert(interval >= 0, cc._LogInfos.Node_schedule_2);
+
+        repeat = (repeat == null) ? cc.REPEAT_FOREVER : repeat;
+        delay = delay || 0;
+
+        this.scheduler.scheduleCallbackForTarget(this, callback_fn, interval, repeat, delay, !this._running);
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
     },
 
     /**
      * Schedules a callback function that runs only once, with a delay of 0 or larger
      * @function
      * @see cc.Node#schedule
+<<<<<<< HEAD
      * @param {function} callback  A function wrapped as a selector
      * @param {Number} delay  The amount of time that the first tick will wait before execution.
      * @param {String} key The only string identifying the callback
@@ -1752,6 +1854,13 @@ cc.Node = cc.Class.extend(/** @lends cc.Node# */{
         if(key === undefined)
             key = this.__instanceId;
         this.schedule(callback, 0, 0, delay, key);
+=======
+     * @param {function} callback_fn  A function wrapped as a selector
+     * @param {Number} delay  The amount of time that the first tick will wait before execution.
+     */
+    scheduleOnce: function (callback_fn, delay) {
+        this.schedule(callback_fn, 0.0, 0, delay);
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
     },
 
     /**
@@ -1761,12 +1870,19 @@ cc.Node = cc.Class.extend(/** @lends cc.Node# */{
      * @param {function} callback_fn  A function wrapped as a selector
      */
     unschedule: function (callback_fn) {
+<<<<<<< HEAD
         //key
         //selector
         if (!callback_fn)
             return;
 
         this.scheduler.unschedule(callback_fn, this);
+=======
+        if (!callback_fn)
+            return;
+
+        this.scheduler.unscheduleCallbackForTarget(this, callback_fn);
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
     },
 
     /**
@@ -1775,7 +1891,11 @@ cc.Node = cc.Class.extend(/** @lends cc.Node# */{
      * @function
      */
     unscheduleAllCallbacks: function () {
+<<<<<<< HEAD
         this.scheduler.unscheduleAllForTarget(this);
+=======
+        this.scheduler.unscheduleAllCallbacksForTarget(this);
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
     },
 
     /**
@@ -1871,8 +1991,11 @@ cc.Node = cc.Class.extend(/** @lends cc.Node# */{
      * spriteB.setAdditionalTransform(t);
      */
     setAdditionalTransform: function (additionalTransform) {
+<<<<<<< HEAD
         if(additionalTransform === undefined)
             return this._additionalTransformDirty = false;
+=======
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         this._additionalTransform = additionalTransform;
         this._renderCmd.setDirtyFlag(cc.Node._dirtyFlags.transformDirty);
         this._additionalTransformDirty = true;
@@ -1904,7 +2027,11 @@ cc.Node = cc.Class.extend(/** @lends cc.Node# */{
     getNodeToWorldTransform: function () {
         //TODO renderCmd has a WorldTransform
         var t = this.getNodeToParentTransform();
+<<<<<<< HEAD
         for (var p = this._parent; p !== null; p = p.parent)
+=======
+        for (var p = this._parent; p != null; p = p.parent)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             t = cc.affineTransformConcat(t, p.getNodeToParentTransform());
         return t;
     },
@@ -2257,7 +2384,11 @@ cc.Node = cc.Class.extend(/** @lends cc.Node# */{
 
     _getBoundingBoxToCurrentNode: function (parentTransform) {
         var rect = cc.rect(0, 0, this._contentSize.width, this._contentSize.height);
+<<<<<<< HEAD
         var trans = (parentTransform === undefined) ? this.getNodeToParentTransform() : cc.affineTransformConcat(this.getNodeToParentTransform(), parentTransform);
+=======
+        var trans = (parentTransform == null) ? this.getNodeToParentTransform() : cc.affineTransformConcat(this.getNodeToParentTransform(), parentTransform);
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         rect = cc.rectApplyAffineTransform(rect, trans);
 
         //query child's BoundingBox
@@ -2428,6 +2559,7 @@ cc.Node = cc.Class.extend(/** @lends cc.Node# */{
             return new cc.Node.CanvasRenderCmd(this);
         else
             return new cc.Node.WebGLRenderCmd(this);
+<<<<<<< HEAD
     },
 
     /** Search the children of the receiving node to perform processing for nodes which share a name.
@@ -2541,6 +2673,8 @@ cc.Node = cc.Class.extend(/** @lends cc.Node# */{
         }
 
         return ret;
+=======
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
     }
 });
 

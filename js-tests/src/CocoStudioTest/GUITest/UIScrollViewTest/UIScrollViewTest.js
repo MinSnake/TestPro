@@ -25,9 +25,15 @@
  ****************************************************************************/
 
 var SCROLLVIEW_RES = [
+<<<<<<< HEAD
     "res/cocosui/CCS/ScrollView/Vertical/vertical_1.json",
     "res/cocosui/CCS/ScrollView/Horizontal/horizontal_1.json",
     "res/cocosui/CCS/ScrollView/Both/both_1.json"
+=======
+    "res/cocosui/UIEditorTest/UIScrollView_Editor/UIScrollView_Vertical_Editor/ui_scrollview_editor_1.json",
+    "res/cocosui/UIEditorTest/UIScrollView_Editor/UIScrollView_Horizontal_Editor/ui_scrollview_horizontal_editor_1.json",
+    "res/cocosui/UIEditorTest/UIScrollView_Editor/UIScrollView_Both_Editor/ui_scrollview_both_editor_1.json"
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
 ];
 var SCROLLVIEW_INDEX = 0;
 var UIScrollViewEditorTest = UIBaseLayer.extend({

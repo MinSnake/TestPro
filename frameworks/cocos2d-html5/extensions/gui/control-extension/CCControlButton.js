@@ -461,7 +461,11 @@ cc.ControlButton = cc.Control.extend(/** @lends cc.ControlButton# */{
         this._titleDispatchTable[state] = title || "";
 
         // If the current state if equal to the given state we update the layout
+<<<<<<< HEAD
         if (this.getState() === state)
+=======
+        if (this.getState() == state)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             this.needsLayout();
     },
 
@@ -492,7 +496,11 @@ cc.ControlButton = cc.Control.extend(/** @lends cc.ControlButton# */{
         this._titleColorDispatchTable[state] = color;
 
         // If the current state if equal to the given state we update the layout
+<<<<<<< HEAD
         if (this.getState() === state)
+=======
+        if (this.getState() == state)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             this.needsLayout();
     },
 
@@ -531,7 +539,11 @@ cc.ControlButton = cc.Control.extend(/** @lends cc.ControlButton# */{
         this.addChild(titleLabel, 1);
 
         // If the current state if equal to the given state we update the layout
+<<<<<<< HEAD
         if (this.getState() === state)
+=======
+        if (this.getState() == state)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             this.needsLayout();
     },
 

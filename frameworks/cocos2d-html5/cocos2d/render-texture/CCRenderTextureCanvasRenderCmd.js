@@ -42,8 +42,11 @@
 
     proto.clearStencil = function (stencilValue) { };
 
+<<<<<<< HEAD
     proto.setVirtualViewport = function(rtBegin, fullRect, fullViewport) {};
 
+=======
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
     proto.updateClearColor = function(clearColor){
         this._clearColorStr = "rgba(" + (0 | clearColor.r) + "," + (0 | clearColor.g) + "," + (0 | clearColor.b) + "," + clearColor.a / 255 + ")";
     };
@@ -73,7 +76,11 @@
         r = r || 0;
         g = g || 0;
         b = b || 0;
+<<<<<<< HEAD
         a = isNaN(a) ? 255 : a;
+=======
+        a = isNaN(a) ? 1 : a;
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
 
         var context = this._cacheContext.getContext();
         var locCanvas = this._cacheCanvas;

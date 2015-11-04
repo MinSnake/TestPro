@@ -176,7 +176,11 @@ ccs.dataReaderHelper = /** @lends ccs.dataReaderHelper# */{
         /*
          * Check if file is already added to ArmatureDataManager, if then return.
          */
+<<<<<<< HEAD
         if (this._configFileList.indexOf(filePath) !== -1)
+=======
+        if (this._configFileList.indexOf(filePath) != -1)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             return;
         this._configFileList.push(filePath);
 
@@ -191,11 +195,19 @@ ccs.dataReaderHelper = /** @lends ccs.dataReaderHelper# */{
         var dataInfo = new ccs.DataInfo();
         dataInfo.filename = filePath;
         dataInfo.basefilePath = basefilePath;
+<<<<<<< HEAD
         if (str === ".xml")
             ccs.dataReaderHelper.addDataFromXML(filePath, dataInfo);
         else if (str === ".json" || str === ".exportjson")
             ccs.dataReaderHelper.addDataFromJson(filePath, dataInfo);
         else if(str === ".csb")
+=======
+        if (str == ".xml")
+            ccs.dataReaderHelper.addDataFromXML(filePath, dataInfo);
+        else if (str == ".json" || str == ".exportjson")
+            ccs.dataReaderHelper.addDataFromJson(filePath, dataInfo);
+        else if(str == ".csb")
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             ccs.dataReaderHelper.addDataFromBinaryCache(filePath, dataInfo);
     },
 
@@ -211,9 +223,15 @@ ccs.dataReaderHelper = /** @lends ccs.dataReaderHelper# */{
         /*
          * Check if file is already added to ArmatureDataManager, if then return.
          */
+<<<<<<< HEAD
         if (this._configFileList.indexOf(filePath) !== -1) {
             if (target && selector) {
                 if (this._asyncRefTotalCount === 0 && this._asyncRefCount === 0)
+=======
+        if (this._configFileList.indexOf(filePath) != -1) {
+            if (target && selector) {
+                if (this._asyncRefTotalCount == 0 && this._asyncRefCount == 0)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                     this._asyncCallBack(selector,target, 1);
                 else
                     this._asyncCallBack(selector, target, (this._asyncRefTotalCount - this._asyncRefCount) / this._asyncRefTotalCount);
@@ -233,7 +251,11 @@ ccs.dataReaderHelper = /** @lends ccs.dataReaderHelper# */{
             self._asyncRefCount--;
             self._asyncCallBack(selector,target, (self._asyncRefTotalCount - self._asyncRefCount) / self._asyncRefTotalCount);
         };
+<<<<<<< HEAD
         cc.director.getScheduler().schedule(fun, this, 0.1, false, 0, false, "armatrueDataHelper");
+=======
+        cc.director.getScheduler().scheduleCallbackForTarget(this, fun, 0.1, false);
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
     },
 
     /**
@@ -246,11 +268,19 @@ ccs.dataReaderHelper = /** @lends ccs.dataReaderHelper# */{
         var len = locFileList.length;
         var it = locFileList[len];
         for (var i = 0;i<len; i++){
+<<<<<<< HEAD
             if (locFileList[i] === configFile)
                 it = i;
         }
 
         if (it !== locFileList[len])
+=======
+            if (locFileList[i] == configFile)
+                it = i;
+        }
+
+        if (it != locFileList[len])
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             cc.arrayRemoveObject(locFileList, configFile);
     },
 
@@ -411,7 +441,11 @@ ccs.dataReaderHelper = /** @lends ccs.dataReaderHelper# */{
         var isArmature = parseFloat(displayXML.getAttribute(ccs.CONST_A_IS_ARMATURE)) || 0;
         var displayData = null;
 
+<<<<<<< HEAD
         if (isArmature === 1) {
+=======
+        if (isArmature == 1) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             displayData = new ccs.ArmatureDisplayData();
             displayData.displayType = ccs.DISPLAY_TYPE_ARMATURE;
         } else {
@@ -559,9 +593,15 @@ ccs.dataReaderHelper = /** @lends ccs.dataReaderHelper# */{
         if (easing) {
             if (easing != ccs.CONST_FL_NAN) {
                 tweenEasing = easing == null ? 0 : parseFloat(easing);
+<<<<<<< HEAD
                 movementData.tweenEasing = tweenEasing === 2 ? ccs.TweenType.SINE_EASEINOUT : tweenEasing;
             } else
                 movementData.tweenEasing = ccs.TweenType.LINEAR;
+=======
+                movementData.tweenEasing = tweenEasing == 2 ? ccs.TweenType.sineEaseInOut : tweenEasing;
+            } else
+                movementData.tweenEasing = ccs.TweenType.linear;
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         }
 
         var movBonesXml = movementXML.querySelectorAll(ccs.CONST_MOVEMENT + " > " + ccs.CONST_BONE);
@@ -577,10 +617,17 @@ ccs.dataReaderHelper = /** @lends ccs.dataReaderHelper# */{
             var parentName = boneData.parentName;
 
             var parentXML = null;
+<<<<<<< HEAD
             if (parentName !== "") {
                 for (var j = 0; j < movBonesXml.length; j++) {
                     parentXML = movBonesXml[j];
                     if (parentName === parentXML.getAttribute(ccs.CONST_A_NAME))
+=======
+            if (parentName != "") {
+                for (var j = 0; j < movBonesXml.length; j++) {
+                    parentXML = movBonesXml[j];
+                    if (parentName == parentXML.getAttribute(ccs.CONST_A_NAME))
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                         break;
                 }
             }
@@ -610,7 +657,11 @@ ccs.dataReaderHelper = /** @lends ccs.dataReaderHelper# */{
             movementData.scale = json[ccs.CONST_A_MOVEMENT_SCALE] == null ? 1 : json[ccs.CONST_A_MOVEMENT_SCALE];
         }
 
+<<<<<<< HEAD
         movementData.tweenEasing = json[ccs.CONST_A_TWEEN_EASING] == null ? ccs.TweenType.LINEAR : json[ccs.CONST_A_TWEEN_EASING];
+=======
+        movementData.tweenEasing = json[ccs.CONST_A_TWEEN_EASING] == null ? ccs.TweenType.linear : json[ccs.CONST_A_TWEEN_EASING];
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         var name = json[ccs.CONST_A_NAME];
         if(name)
             movementData.name = name;
@@ -790,7 +841,11 @@ ccs.dataReaderHelper = /** @lends ccs.dataReaderHelper# */{
         frameData.soundEffect = frameData.strSoundEffect;
 
         var isTween = frameXML.getAttribute(ccs.CONST_A_TWEEN_FRAME);
+<<<<<<< HEAD
         frameData.isTween = !(isTween != undefined && isTween === "false");
+=======
+        frameData.isTween = !(isTween != undefined && isTween == "false");
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
 
         if (dataInfo.flashToolVersion >= ccs.CONST_VERSION_2_0) {
             x = frameXML.getAttribute(ccs.CONST_A_COCOS2DX_X);
@@ -898,9 +953,15 @@ ccs.dataReaderHelper = /** @lends ccs.dataReaderHelper# */{
             if(_easing != ccs.CONST_FL_NAN){
                 tweenEasing = frameXML.getAttribute(ccs.CONST_A_TWEEN_EASING);
                 if( tweenEasing )
+<<<<<<< HEAD
                     frameData.tweenEasing = (tweenEasing === 2) ? ccs.TweenType.SINE_EASEINOUT : tweenEasing;
             } else
                 frameData.tweenEasing = ccs.TweenType.LINEAR;
+=======
+                    frameData.tweenEasing = (tweenEasing == 2) ? ccs.TweenType.sineEaseInOut : tweenEasing;
+            } else
+                frameData.tweenEasing = ccs.TweenType.linear;
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         }
 
         if (parentFrameXml) {
@@ -935,7 +996,11 @@ ccs.dataReaderHelper = /** @lends ccs.dataReaderHelper# */{
 
         this.decodeNodeFromJson(frameData, json, dataInfo);
 
+<<<<<<< HEAD
         frameData.tweenEasing = json[ccs.CONST_A_TWEEN_EASING] || ccs.TweenType.LINEAR;
+=======
+        frameData.tweenEasing = json[ccs.CONST_A_TWEEN_EASING] || ccs.TweenType.linear;
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         frameData.displayIndex = json[ccs.CONST_A_DISPLAY_INDEX];
         var bd_src = json[ccs.CONST_A_BLEND_SRC] == null ? cc.BLEND_SRC : json[ccs.CONST_A_BLEND_SRC];
         var bd_dst = json[ccs.CONST_A_BLEND_DST] == null ? cc.BLEND_DST : json[ccs.CONST_A_BLEND_DST];

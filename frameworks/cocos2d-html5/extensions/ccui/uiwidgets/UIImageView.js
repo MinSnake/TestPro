@@ -102,7 +102,11 @@ ccui.ImageView = ccui.Widget.extend(/** @lends ccui.ImageView# */{
 
         if(!imageRenderer._textureLoaded){
             imageRenderer.addEventListener("load", function(){
+<<<<<<< HEAD
                 self.loadTexture(self._textureFile, self._imageTexType);
+=======
+                self.loadTexture(fileName, texType);
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             });
         }
 
@@ -154,7 +158,11 @@ ccui.ImageView = ccui.Widget.extend(/** @lends ccui.ImageView# */{
      */
     setScale9Enabled: function (able) {
         //todo setScale9Enabled
+<<<<<<< HEAD
         if (this._scale9Enabled === able)
+=======
+        if (this._scale9Enabled == able)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             return;
 
         this._scale9Enabled = able;
@@ -174,7 +182,10 @@ ccui.ImageView = ccui.Widget.extend(/** @lends ccui.ImageView# */{
         } else
             this.ignoreContentAdaptWithSize(this._prevIgnoreSize);
         this.setCapInsets(this._capInsets);
+<<<<<<< HEAD
         this._imageRendererAdaptDirty = true;
+=======
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
     },
 
     /**
@@ -257,11 +268,18 @@ ccui.ImageView = ccui.Widget.extend(/** @lends ccui.ImageView# */{
             if (!this._scale9Enabled)
                 this._imageRenderer.setScale(1.0);
         } else {
+<<<<<<< HEAD
             if (this._scale9Enabled){
                 this._imageRenderer.setPreferredSize(this._contentSize);
                 this._imageRenderer.setScale(1);
             } else {
                 var textureSize = this._imageTextureSize;
+=======
+            if (this._scale9Enabled)
+                this._imageRenderer.setPreferredSize(this._contentSize);
+            else {
+                var textureSize = this._imageRenderer.getContentSize();
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                 if (textureSize.width <= 0.0 || textureSize.height <= 0.0) {
                     this._imageRenderer.setScale(1.0);
                     return;

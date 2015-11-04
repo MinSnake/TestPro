@@ -23,11 +23,15 @@
  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  THE SOFTWARE.
  ****************************************************************************/
+<<<<<<< HEAD
 var CEHCK_BOX_INDEX = 0;
+=======
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
 
 var UICheckBoxEditorTest = UIBaseLayer.extend({
     ctor: function () {
         this._super();
+<<<<<<< HEAD
         var left_button = new ccui.Button();
         left_button.loadTextures("res/Images/b1.png", "res/Images/b2.png", "");
         left_button.x = 240-50;
@@ -66,6 +70,17 @@ var UICheckBoxEditorTest = UIBaseLayer.extend({
         var scene = new cc.Scene();
         scene.addChild(new CEHCK_BOX_SCENE[CEHCK_BOX_INDEX]());
         cc.director.runScene(scene);
+=======
+        var root = this._parseUIFile("res/cocosui/UIEditorTest/UICheckBox_Editor/ui_checkbox_editor_1.json");
+        this._mainNode.addChild(root);
+
+        var back_label =ccui.helper.seekWidgetByName(root, "back");
+        back_label.addTouchEventListener(this.backEvent,this);
+
+        var checkbox = ccui.helper.seekWidgetByName(root, "CheckBox_540");
+        checkbox.addEventListener(this.selectedStateEvent,this);
+
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
     },
 
     selectedStateEvent: function (sender, type) {
@@ -82,6 +97,7 @@ var UICheckBoxEditorTest = UIBaseLayer.extend({
         }
     }
 });
+<<<<<<< HEAD
 
 var UICheckBoxOldTest = UICheckBoxEditorTest.extend({
     ctor: function () {
@@ -111,3 +127,5 @@ var CEHCK_BOX_SCENE = [
     UICheckBoxOldTest,
     UICheckBoxNewTest
 ];
+=======
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b

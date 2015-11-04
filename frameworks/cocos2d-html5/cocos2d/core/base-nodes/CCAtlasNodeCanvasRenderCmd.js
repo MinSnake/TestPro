@@ -58,7 +58,11 @@
     proto.setColor = function(color3){
         var node = this._node;
         var locRealColor = node._realColor;
+<<<<<<< HEAD
         if ((locRealColor.r === color3.r) && (locRealColor.g === color3.g) && (locRealColor.b === color3.b))
+=======
+        if ((locRealColor.r == color3.r) && (locRealColor.g == color3.g) && (locRealColor.b == color3.b))
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             return;
         this._colorUnmodified = color3;
         this._changeTextureColor();

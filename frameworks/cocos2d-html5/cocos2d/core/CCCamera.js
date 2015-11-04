@@ -62,7 +62,11 @@ cc.Camera = cc.Class.extend({
      * constructor of cc.Camera
      */
     ctor:function () {
+<<<<<<< HEAD
         this._lookupMatrix = new cc.math.Matrix4();
+=======
+        this._lookupMatrix = new cc.kmMat4();
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         this.restore();
     },
 
@@ -103,7 +107,11 @@ cc.Camera = cc.Class.extend({
         this._upY = 1.0;
         this._upZ = 0.0;
 
+<<<<<<< HEAD
         this._lookupMatrix.identity();
+=======
+        cc.kmMat4Identity( this._lookupMatrix );
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
 
         this._dirty = false;
     },
@@ -113,10 +121,21 @@ cc.Camera = cc.Class.extend({
      */
     locate:function () {
         if (this._dirty) {
+<<<<<<< HEAD
             var eye = new cc.math.Vec3(this._eyeX, this._eyeY , this._eyeZ),
                 center = new cc.math.Vec3(this._centerX, this._centerY, this._centerZ),
                 up = new cc.math.Vec3(this._upX, this._upY, this._upZ);
             this._lookupMatrix.lookAt(eye, center, up);
+=======
+            var eye = new cc.kmVec3(), center = new cc.kmVec3(), up = new cc.kmVec3();
+
+            cc.kmVec3Fill( eye, this._eyeX, this._eyeY , this._eyeZ );
+            cc.kmVec3Fill( center, this._centerX, this._centerY, this._centerZ);
+
+            cc.kmVec3Fill( up, this._upX, this._upY, this._upZ);
+            cc.kmMat4LookAt( this._lookupMatrix, eye, center, up);
+
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             this._dirty = false;
         }
         cc.kmGLMultMatrix( this._lookupMatrix);
@@ -124,6 +143,7 @@ cc.Camera = cc.Class.extend({
 
     _locateForRenderer: function(matrix){
         if (this._dirty) {
+<<<<<<< HEAD
             var eye = new cc.math.Vec3(this._eyeX, this._eyeY , this._eyeZ),
                 center = new cc.math.Vec3(this._centerX, this._centerY, this._centerZ),
                 up = new cc.math.Vec3(this._upX, this._upY, this._upZ);
@@ -131,6 +151,19 @@ cc.Camera = cc.Class.extend({
             this._dirty = false;
         }
         matrix.multiply(this._lookupMatrix);
+=======
+            var eye = new cc.kmVec3(), center = new cc.kmVec3(), up = new cc.kmVec3();
+
+            cc.kmVec3Fill( eye, this._eyeX, this._eyeY , this._eyeZ );
+            cc.kmVec3Fill( center, this._centerX, this._centerY, this._centerZ);
+
+            cc.kmVec3Fill( up, this._upX, this._upY, this._upZ);
+            cc.kmMat4LookAt( this._lookupMatrix, eye, center, up);
+
+            this._dirty = false;
+        }
+        cc.kmMat4Multiply(matrix, matrix, this._lookupMatrix);
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
     },
 
     /**

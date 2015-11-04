@@ -171,7 +171,11 @@ cc.LayerGradientLoader = cc.LayerLoader.extend({
     onHandlePropTypeColor3:function (node, parent, propertyName, ccColor3B, ccbReader) {
         if (propertyName === PROPERTY_STARTCOLOR) {
             node.setStartColor(ccColor3B);
+<<<<<<< HEAD
         } else if (propertyName === PROPERTY_ENDCOLOR) {
+=======
+        } else if (propertyName == PROPERTY_ENDCOLOR) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             node.setEndColor(ccColor3B);
         } else {
             cc.LayerLoader.prototype.onHandlePropTypeColor3.call(this, node, parent, propertyName, ccColor3B, ccbReader);

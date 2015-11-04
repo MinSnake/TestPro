@@ -529,6 +529,7 @@ var ScheduleUsingSchedulerTest = SchedulerTestLayer.extend({
     }
 });
 
+<<<<<<< HEAD
 // SchedulerTimeScale
 
 var SchedulerTimeScale = SchedulerTestLayer.extend({
@@ -691,6 +692,8 @@ var unScheduleAndRepeatTest = SchedulerTestLayer.extend({
     }
 });
 
+=======
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
 /*
     main entry
 */
@@ -709,7 +712,10 @@ var SchedulerTestScene = TestScene.extend({
 //
 
 var arrayOfSchedulerTest = [
+<<<<<<< HEAD
     SchedulerTimeScale,
+=======
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
     SchedulerAutoremove,
     SchedulerPauseResume,
     SchedulerUnscheduleAll,
@@ -719,8 +725,12 @@ var arrayOfSchedulerTest = [
     SchedulerUpdateAndCustom,
     SchedulerUpdateFromCustom,
     RescheduleCallback,
+<<<<<<< HEAD
     ScheduleUsingSchedulerTest,
     unScheduleAndRepeatTest
+=======
+    ScheduleUsingSchedulerTest
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
 ];
 
 var nextSchedulerTest = function () {

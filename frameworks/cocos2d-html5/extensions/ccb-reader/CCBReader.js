@@ -159,7 +159,11 @@ cc.BuilderReader = cc.Class.extend({
         this._currentBit = -1;
         this._currentByte = -1;
 
+<<<<<<< HEAD
         if (arguments.length !== 0) {
+=======
+        if (arguments.length != 0) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             if (ccNodeLoaderLibrary instanceof cc.BuilderReader) {
                 var ccbReader = ccNodeLoaderLibrary;
 
@@ -222,7 +226,11 @@ cc.BuilderReader = cc.Class.extend({
         if (/msie/i.test(navigator.userAgent) && !/opera/i.test(navigator.userAgent)) {
             req.setRequestHeader("Accept-Charset", "x-user-defined");
             req.send(null);
+<<<<<<< HEAD
             if (req.status !== 200) {
+=======
+            if (req.status != 200) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                 cc.log(errInfo);
                 return null;
             }
@@ -236,7 +244,11 @@ cc.BuilderReader = cc.Class.extend({
             if (req.overrideMimeType)
                 req.overrideMimeType('text\/plain; charset=x-user-defined');
             req.send(null);
+<<<<<<< HEAD
             if (req.status !== 200) {
+=======
+            if (req.status != 200) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                 cc.log(errInfo);
                 return null;
             }
@@ -280,7 +292,11 @@ cc.BuilderReader = cc.Class.extend({
 
         var nodeGraph = this.readFileWithCleanUp(true);
 
+<<<<<<< HEAD
         if (nodeGraph && locAnimationManager.getAutoPlaySequenceId() !== -1) {
+=======
+        if (nodeGraph && locAnimationManager.getAutoPlaySequenceId() != -1) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             //auto play animations
             locAnimationManager.runAnimations(locAnimationManager.getAutoPlaySequenceId(), 0);
         }
@@ -376,7 +392,11 @@ cc.BuilderReader = cc.Class.extend({
     },
 
     readBool:function () {
+<<<<<<< HEAD
         return (0 !== this.readByte());
+=======
+        return (0 != this.readByte());
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
     },
 
     readFloat:function () {
@@ -428,7 +448,11 @@ cc.BuilderReader = cc.Class.extend({
 
         this._currentByte += size;
 
+<<<<<<< HEAD
         return exponent === (bias << 1) + 1 ? significand ? NaN : signal ? -Infinity : +Infinity
+=======
+        return exponent == (bias << 1) + 1 ? significand ? NaN : signal ? -Infinity : +Infinity
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             : (1 + signal * -2) * (exponent || significand ? !exponent ? Math.pow(2, -bias + 1) * significand
             : Math.pow(2, exponent - bias) * (1 + significand) : 0);
     },
@@ -458,7 +482,11 @@ cc.BuilderReader = cc.Class.extend({
     },
 
     _shl:function (a, b) {
+<<<<<<< HEAD
         for (++b; --b; a = ((a %= 0x7fffffff + 1) & 0x40000000) === 0x40000000 ? a * 2 : (a - 0x40000000) * 2 + 0x7fffffff + 1);
+=======
+        for (++b; --b; a = ((a %= 0x7fffffff + 1) & 0x40000000) == 0x40000000 ? a * 2 : (a - 0x40000000) * 2 + 0x7fffffff + 1);
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         return a;
     },
 
@@ -669,6 +697,7 @@ cc.BuilderReader = cc.Class.extend({
         keyframe.setEasingType(easingType);
         keyframe.setEasingOpt(easingOpt);
 
+<<<<<<< HEAD
         if (type === CCB_PROPTYPE_CHECK) {
             value = this.readBool();
         } else if (type === CCB_PROPTYPE_BYTE) {
@@ -687,6 +716,26 @@ cc.BuilderReader = cc.Class.extend({
             var spriteFile = this.readCachedString();
 
             if (spriteSheet === "") {
+=======
+        if (type == CCB_PROPTYPE_CHECK) {
+            value = this.readBool();
+        } else if (type == CCB_PROPTYPE_BYTE) {
+            value = this.readByte();
+        } else if (type == CCB_PROPTYPE_COLOR3) {
+            var c = cc.color(this.readByte(), this.readByte(), this.readByte());
+            value = cc.Color3BWapper.create(c);
+        } else if (type == CCB_PROPTYPE_FLOATXY) {
+            value = [this.readFloat(), this.readFloat()];
+        } else if (type == CCB_PROPTYPE_DEGREES) {
+            value = this.readFloat();
+        } else if (type == CCB_PROPTYPE_SCALELOCK || type == CCB_PROPTYPE_POSITION || type == CCB_PROPTYPE_FLOATXY) {
+            value = [this.readFloat(), this.readFloat()];
+        } else if (type == CCB_PROPTYPE_SPRITEFRAME) {
+            var spriteSheet = this.readCachedString();
+            var spriteFile = this.readCachedString();
+
+            if (spriteSheet == "") {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                 spriteFile = this._ccbRootPath + spriteFile;
                 var texture = cc.textureCache.addImage(spriteFile);
                 var locContentSize = texture.getContentSize();
@@ -696,7 +745,11 @@ cc.BuilderReader = cc.Class.extend({
                 spriteSheet = this._ccbRootPath + spriteSheet;
                 var frameCache = cc.spriteFrameCache;
                 // Load the sprite sheet only if it is not loaded
+<<<<<<< HEAD
                 if (this._loadedSpriteSheets.indexOf(spriteSheet) === -1) {
+=======
+                if (this._loadedSpriteSheets.indexOf(spriteSheet) == -1) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                     frameCache.addSpriteFrames(spriteSheet);
                     this._loadedSpriteSheets.push(spriteSheet);
                 }
@@ -709,20 +762,34 @@ cc.BuilderReader = cc.Class.extend({
 
     _readHeader:function () {
         /* If no bytes loaded, don't crash about it. */
+<<<<<<< HEAD
         if (!this._data)
             return false;
+=======
+        if (this._data == null) {
+            return false;
+        }
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
 
         /* Read magic bytes */
         var magicBytes = this._readStringFromBytes(this._currentByte, 4, true);
         this._currentByte += 4;
 
+<<<<<<< HEAD
         if (magicBytes !== 'ccbi') {
+=======
+        if (magicBytes != 'ccbi') {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             return false;
         }
 
         /* Read version. */
         var version = this.readInt(false);
+<<<<<<< HEAD
         if (version !== CCB_VERSION) {
+=======
+        if (version != CCB_VERSION) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             cc.log("WARNING! Incompatible ccbi file version (file: " + version + " reader: " + CCB_VERSION + ")");
             return false;
         }
@@ -782,7 +849,11 @@ cc.BuilderReader = cc.Class.extend({
 
         var memberVarAssignmentType = this.readInt(false);
         var memberVarAssignmentName;
+<<<<<<< HEAD
         if (memberVarAssignmentType !== CCB_TARGETTYPE_NONE) {
+=======
+        if (memberVarAssignmentType != CCB_TARGETTYPE_NONE) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             memberVarAssignmentName = this.readCachedString();
         }
 
@@ -798,7 +869,11 @@ cc.BuilderReader = cc.Class.extend({
         if (!locActionManager.getRootNode())
             locActionManager.setRootNode(node);
 
+<<<<<<< HEAD
         if (locJsControlled && node === locActionManager.getRootNode()) {
+=======
+        if (locJsControlled && node == locActionManager.getRootNode()) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             locActionManager.setDocumentControllerName(jsControlledName);
         }
 
@@ -854,7 +929,11 @@ cc.BuilderReader = cc.Class.extend({
             node = embeddedNode;
         }
         var target = null, locMemberAssigner = null;
+<<<<<<< HEAD
         if (memberVarAssignmentType !== CCB_TARGETTYPE_NONE) {
+=======
+        if (memberVarAssignmentType != CCB_TARGETTYPE_NONE) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             if (!locJsControlled) {
                 if (memberVarAssignmentType === CCB_TARGETTYPE_DOCUMENTROOT) {
                     target = locActionManager.getRootNode();
@@ -862,19 +941,32 @@ cc.BuilderReader = cc.Class.extend({
                     target = this._owner;
                 }
 
+<<<<<<< HEAD
                 if (!target) {
                     var assigned = false;
 
                     if (target.onAssignCCBMemberVariable)
                         assigned = target.onAssignCCBMemberVariable(target, memberVarAssignmentName, node);
 
+=======
+                if (target != null) {
+                    var assigned = false;
+
+                    if (target != null && (target.onAssignCCBMemberVariable)) {
+                        assigned = target.onAssignCCBMemberVariable(target, memberVarAssignmentName, node);
+                    }
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                     locMemberAssigner = this._ccbMemberVariableAssigner;
                     if (!assigned && locMemberAssigner != null && locMemberAssigner.onAssignCCBMemberVariable) {
                         locMemberAssigner.onAssignCCBMemberVariable(target, memberVarAssignmentName, node);
                     }
                 }
             } else {
+<<<<<<< HEAD
                 if (memberVarAssignmentType === CCB_TARGETTYPE_DOCUMENTROOT) {
+=======
+                if (memberVarAssignmentType == CCB_TARGETTYPE_DOCUMENTROOT) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                     locActionManager.addDocumentOutletName(memberVarAssignmentName);
                     locActionManager.addDocumentOutletNode(node);
                 } else {
@@ -927,7 +1019,12 @@ cc.BuilderReader = cc.Class.extend({
     },
 
     _getBit:function () {
+<<<<<<< HEAD
         var bit = (this._data[this._currentByte] & (1 << this._currentBit)) !== 0;
+=======
+        var bit = (this._data[this._currentByte] & (1 << this._currentBit)) != 0;
+
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         this._currentBit++;
 
         if (this._currentBit >= 8) {
@@ -936,6 +1033,10 @@ cc.BuilderReader = cc.Class.extend({
             if(this._currentByte > this._data.length)
                 throw "out of the data bound";
         }
+<<<<<<< HEAD
+=======
+
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         return bit;
     },
 
@@ -977,7 +1078,11 @@ cc.BuilderReader.load = function (ccbFilePath, owner, parentSize, ccbRootPath) {
     ccbRootPath = ccbRootPath || cc.BuilderReader.getResourcePath();
     var reader = new cc.BuilderReader(cc.NodeLoaderLibrary.newDefaultCCNodeLoaderLibrary());
     reader.setCCBRootPath(ccbRootPath);
+<<<<<<< HEAD
     if((ccbFilePath.length < 5)||(ccbFilePath.toLowerCase().lastIndexOf(".ccbi") !== ccbFilePath.length - 5))
+=======
+    if((ccbFilePath.length < 5)||(ccbFilePath.toLowerCase().lastIndexOf(".ccbi") != ccbFilePath.length - 5))
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         ccbFilePath = ccbFilePath + ".ccbi";
 
     var node = reader.readNodeGraphFromFile(ccbFilePath, owner, parentSize);
@@ -1077,9 +1182,12 @@ cc.BuilderReader.load = function (ccbFilePath, owner, parentSize, ccbRootPath) {
         }
     }
 
+<<<<<<< HEAD
     //auto play animations
     animationManager.runAnimations(animationManager.getAutoPlaySequenceId(), 0);
 
+=======
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
     return node;
 };
 
@@ -1094,7 +1202,11 @@ cc.BuilderReader.getResourcePath = function () {
 
 cc.BuilderReader.lastPathComponent = function (pathStr) {
     var slashPos = pathStr.lastIndexOf("/");
+<<<<<<< HEAD
     if (slashPos !== -1) {
+=======
+    if (slashPos != -1) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         return pathStr.substring(slashPos + 1, pathStr.length - slashPos);
     }
     return pathStr;
@@ -1102,7 +1214,11 @@ cc.BuilderReader.lastPathComponent = function (pathStr) {
 
 cc.BuilderReader.deletePathExtension = function (pathStr) {
     var dotPos = pathStr.lastIndexOf(".");
+<<<<<<< HEAD
     if (dotPos !== -1) {
+=======
+    if (dotPos != -1) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         return pathStr.substring(0, dotPos);
     }
     return pathStr;
@@ -1114,7 +1230,11 @@ cc.BuilderReader.toLowerCase = function (sourceStr) {
 
 cc.BuilderReader.endsWith = function (sourceStr, ending) {
     if (sourceStr.length >= ending.length)
+<<<<<<< HEAD
         return (sourceStr.lastIndexOf(ending) === 0);
+=======
+        return (sourceStr.lastIndexOf(ending) == 0);
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
     else
         return false;
 };

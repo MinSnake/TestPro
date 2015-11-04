@@ -66,8 +66,11 @@ ccui.LayoutComponent = cc.Component.extend({
     _usingPercentHeight: false,
 
     _actived: true,
+<<<<<<< HEAD
     _isPercentOnly: false,
 
+=======
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
     ctor: function () {
         this._name = ccui.LayoutComponent.NAME;
     },
@@ -137,7 +140,11 @@ ccui.LayoutComponent = cc.Component.extend({
                 x = position;
             var parentSize = parent.getContentSize();
 
+<<<<<<< HEAD
             if (parentSize.width !== 0)
+=======
+            if (parentSize.width != 0)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                 this._positionPercentX = x / parentSize.width;
             else {
                 this._positionPercentX = 0;
@@ -145,7 +152,11 @@ ccui.LayoutComponent = cc.Component.extend({
                     x = 0;
             }
 
+<<<<<<< HEAD
             if (parentSize.height !== 0)
+=======
+            if (parentSize.height != 0)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                 this._positionPercentY = y / parentSize.height;
             else {
                 this._positionPercentY = 0;
@@ -176,7 +187,11 @@ ccui.LayoutComponent = cc.Component.extend({
         this._positionPercentX = percentMargin;
 
         var parent = this._getOwnerParent();
+<<<<<<< HEAD
         if (parent !== null) {
+=======
+        if (parent != null) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             this._owner.setPositionX(parent.width * this._positionPercentX);
             this._refreshHorizontalMargin();
         }
@@ -198,7 +213,11 @@ ccui.LayoutComponent = cc.Component.extend({
         this._positionPercentY = percentMargin;
 
         var parent = this._getOwnerParent();
+<<<<<<< HEAD
         if (parent !== null) {
+=======
+        if (parent != null) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             this._owner.setPositionY(parent.height * this._positionPercentY);
             this._refreshVerticalMargin();
         }
@@ -209,6 +228,7 @@ ccui.LayoutComponent = cc.Component.extend({
     },
     setHorizontalEdge: function (hEdge) {
         this._horizontalEdge = hEdge;
+<<<<<<< HEAD
         if (this._horizontalEdge !== ccui.LayoutComponent.horizontalEdge.NONE)
             this._usingPositionPercentX = false;
 
@@ -217,6 +237,16 @@ ccui.LayoutComponent = cc.Component.extend({
             var ownerPoint = this._owner.getPosition();
             var parentSize = parent.getContentSize();
             if (parentSize.width !== 0)
+=======
+        if (this._horizontalEdge != ccui.LayoutComponent.horizontalEdge.NONE)
+            this._usingPositionPercentX = false;
+
+        var parent = this._getOwnerParent();
+        if (parent != null) {
+            var ownerPoint = this._owner.getPosition();
+            var parentSize = parent.getContentSize();
+            if (parentSize.width != 0)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                 this._positionPercentX = ownerPoint.x / parentSize.width;
             else {
                 this._positionPercentX = 0;
@@ -233,6 +263,7 @@ ccui.LayoutComponent = cc.Component.extend({
     },
     setVerticalEdge: function (vEdge) {
         this._verticalEdge = vEdge;
+<<<<<<< HEAD
         if (this._verticalEdge !== ccui.LayoutComponent.verticalEdge.NONE)
             this._usingPositionPercentY = false;
 
@@ -241,6 +272,16 @@ ccui.LayoutComponent = cc.Component.extend({
             var ownerPoint = this._owner.getPosition();
             var parentSize = parent.getContentSize();
             if (parentSize.height !== 0)
+=======
+        if (this._verticalEdge != ccui.LayoutComponent.verticalEdge.NONE)
+            this._usingPositionPercentY = false;
+
+        var parent = this._getOwnerParent();
+        if (parent != null) {
+            var ownerPoint = this._owner.getPosition();
+            var parentSize = parent.getContentSize();
+            if (parentSize.height != 0)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                 this._positionPercentY = ownerPoint.y / parentSize.height;
             else {
                 this._positionPercentY = 0;
@@ -286,10 +327,17 @@ ccui.LayoutComponent = cc.Component.extend({
     },
     setSize: function (size) {
         var parent = this._getOwnerParent();
+<<<<<<< HEAD
         if (parent !== null) {
             var ownerSize = size, parentSize = parent.getContentSize();
 
             if (parentSize.width !== 0)
+=======
+        if (parent != null) {
+            var ownerSize = size, parentSize = parent.getContentSize();
+
+            if (parentSize.width != 0)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                 this._percentWidth = ownerSize.width / parentSize.width;
             else {
                 this._percentWidth = 0;
@@ -297,7 +345,11 @@ ccui.LayoutComponent = cc.Component.extend({
                     ownerSize.width = 0;
             }
 
+<<<<<<< HEAD
             if (parentSize.height !== 0)
+=======
+            if (parentSize.height != 0)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                 this._percentHeight = ownerSize.height / parentSize.height;
             else {
                 this._percentHeight = 0;
@@ -331,9 +383,15 @@ ccui.LayoutComponent = cc.Component.extend({
         ownerSize.width = width;
 
         var parent = this._getOwnerParent();
+<<<<<<< HEAD
         if (parent !== null) {
             var parentSize = parent.getContentSize();
             if (parentSize.width !== 0)
+=======
+        if (parent != null) {
+            var parentSize = parent.getContentSize();
+            if (parentSize.width != 0)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                 this._percentWidth = ownerSize.width / parentSize.width;
             else {
                 this._percentWidth = 0;
@@ -353,7 +411,11 @@ ccui.LayoutComponent = cc.Component.extend({
         this._percentWidth = percentWidth;
 
         var parent = this._getOwnerParent();
+<<<<<<< HEAD
         if (parent !== null) {
+=======
+        if (parent != null) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             var ownerSize = this._owner.getContentSize();
             ownerSize.width = parent.width * this._percentWidth;
             this._owner.setContentSize(ownerSize);
@@ -378,9 +440,15 @@ ccui.LayoutComponent = cc.Component.extend({
         ownerSize.height = height;
 
         var parent = this._getOwnerParent();
+<<<<<<< HEAD
         if (parent !== null) {
             var parentSize = parent.getContentSize();
             if (parentSize.height !== 0)
+=======
+        if (parent != null) {
+            var parentSize = parent.getContentSize();
+            if (parentSize.height != 0)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                 this._percentHeight = ownerSize.height / parentSize.height;
             else {
                 this._percentHeight = 0;
@@ -401,7 +469,11 @@ ccui.LayoutComponent = cc.Component.extend({
         this._percentHeight = percentHeight;
 
         var parent = this._getOwnerParent();
+<<<<<<< HEAD
         if (parent !== null) {
+=======
+        if (parent != null) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             var ownerSize = this._owner.getContentSize();
             ownerSize.height = parent.height * this._percentHeight;
             this._owner.setContentSize(ownerSize);
@@ -427,19 +499,27 @@ ccui.LayoutComponent = cc.Component.extend({
             this._usingPercentHeight = false;
     },
 
+<<<<<<< HEAD
     setPercentOnlyEnabled: function(enable){
         this._isPercentOnly = enable;
     },
 
+=======
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
     setActiveEnabled: function (enable) {
         this._actived = enable;
     },
     refreshLayout: function () {
+<<<<<<< HEAD
         if(!this._actived)
             return;
 
         var parent = this._getOwnerParent();
         if (parent === null)
+=======
+        var parent = this._getOwnerParent();
+        if (parent == null)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             return;
 
         var parentSize = parent.getContentSize(), locOwner = this._owner;
@@ -448,7 +528,11 @@ ccui.LayoutComponent = cc.Component.extend({
 
         switch (this._horizontalEdge) {
             case ccui.LayoutComponent.horizontalEdge.NONE:
+<<<<<<< HEAD
                 if (this._usingStretchWidth && !this._isPercentOnly) {
+=======
+                if (this._usingStretchWidth) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                     ownerSize.width = parentSize.width * this._percentWidth;
                     ownerPosition.x = this._leftMargin + ownerAnchor.x * ownerSize.width;
                 } else {
@@ -459,32 +543,47 @@ ccui.LayoutComponent = cc.Component.extend({
                 }
                 break;
             case ccui.LayoutComponent.horizontalEdge.LEFT:
+<<<<<<< HEAD
                 if(this._isPercentOnly)
                     break;
+=======
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                 if (this._usingPercentWidth || this._usingStretchWidth)
                     ownerSize.width = parentSize.width * this._percentWidth;
                 ownerPosition.x = this._leftMargin + ownerAnchor.x * ownerSize.width;
                 break;
             case ccui.LayoutComponent.horizontalEdge.RIGHT:
+<<<<<<< HEAD
                 if(this._isPercentOnly)
                     break;
+=======
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                 if (this._usingPercentWidth || this._usingStretchWidth)
                     ownerSize.width = parentSize.width * this._percentWidth;
                 ownerPosition.x = parentSize.width - (this._rightMargin + (1 - ownerAnchor.x) * ownerSize.width);
                 break;
             case ccui.LayoutComponent.horizontalEdge.CENTER:
+<<<<<<< HEAD
                 if(this._isPercentOnly)
                     break;
                 if (this._usingStretchWidth) {
+=======
+                if (this._usingPercentWidth || this._usingStretchWidth) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                     ownerSize.width = parentSize.width - this._leftMargin - this._rightMargin;
                     if (ownerSize.width < 0)
                         ownerSize.width = 0;
                     ownerPosition.x = this._leftMargin + ownerAnchor.x * ownerSize.width;
+<<<<<<< HEAD
                 } else {
                     if (this._usingPercentWidth)
                         ownerSize.width = parentSize.width * this._percentWidth;
                     ownerPosition.x = parentSize.width * this._positionPercentX;
                 }
+=======
+                } else
+                    ownerPosition.x = parentSize.width * this._positionPercentX;
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                 break;
             default:
                 break;
@@ -492,7 +591,11 @@ ccui.LayoutComponent = cc.Component.extend({
 
         switch (this._verticalEdge) {
             case ccui.LayoutComponent.verticalEdge.NONE:
+<<<<<<< HEAD
                 if (this._usingStretchHeight && !this._isPercentOnly) {
+=======
+                if (this._usingStretchHeight) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                     ownerSize.height = parentSize.height * this._percentHeight;
                     ownerPosition.y = this._bottomMargin + ownerAnchor.y * ownerSize.height;
                 } else {
@@ -503,32 +606,47 @@ ccui.LayoutComponent = cc.Component.extend({
                 }
                 break;
             case ccui.LayoutComponent.verticalEdge.BOTTOM:
+<<<<<<< HEAD
                 if(this._isPercentOnly)
                     break;
+=======
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                 if (this._usingPercentHeight || this._usingStretchHeight)
                     ownerSize.height = parentSize.height * this._percentHeight;
                 ownerPosition.y = this._bottomMargin + ownerAnchor.y * ownerSize.height;
                 break;
             case ccui.LayoutComponent.verticalEdge.TOP:
+<<<<<<< HEAD
                 if(this._isPercentOnly)
                     break;
+=======
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                 if (this._usingPercentHeight || this._usingStretchHeight)
                     ownerSize.height = parentSize.height * this._percentHeight;
                 ownerPosition.y = parentSize.height - (this._topMargin + (1 - ownerAnchor.y) * ownerSize.height);
                 break;
             case ccui.LayoutComponent.verticalEdge.CENTER:
+<<<<<<< HEAD
                 if(this._isPercentOnly)
                     break;
                 if (this._usingStretchHeight) {
+=======
+                if (this._usingPercentHeight || this._usingStretchHeight) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                     ownerSize.height = parentSize.height - this._topMargin - this._bottomMargin;
                     if (ownerSize.height < 0)
                         ownerSize.height = 0;
                     ownerPosition.y = this._bottomMargin + ownerAnchor.y * ownerSize.height;
+<<<<<<< HEAD
                 } else {
                     if(this._usingPercentHeight)
                         ownerSize.height = parentSize.height * this._percentHeight;
                     ownerPosition.y = parentSize.height * this._positionPercentY;
                 }
+=======
+                } else
+                    ownerPosition.y = parentSize.height * this._positionPercentY;
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                 break;
             default:
                 break;
@@ -545,7 +663,11 @@ ccui.LayoutComponent = cc.Component.extend({
     },
     _refreshHorizontalMargin: function () {
         var parent = this._getOwnerParent();
+<<<<<<< HEAD
         if (parent === null)
+=======
+        if (parent == null)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             return;
 
         var ownerPoint = this._owner.getPosition(), ownerAnchor = this._owner.getAnchorPoint();
@@ -556,7 +678,11 @@ ccui.LayoutComponent = cc.Component.extend({
     },
     _refreshVerticalMargin: function () {
         var parent = this._getOwnerParent();
+<<<<<<< HEAD
         if (parent === null)
+=======
+        if (parent == null)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             return;
 
         var ownerPoint = this._owner.getPosition(), ownerAnchor = this._owner.getAnchorPoint();
@@ -573,7 +699,11 @@ ccui.LayoutComponent.verticalEdge = {NONE: 0, BOTTOM: 1, TOP: 2, CENTER: 3};
 ccui.LayoutComponent.NAME = "__ui_layout";
 ccui.LayoutComponent.bindLayoutComponent = function (node) {
     var layout = node.getComponent(ccui.LayoutComponent.NAME);
+<<<<<<< HEAD
     if (layout !== undefined)
+=======
+    if (layout != null)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         return layout;
 
     layout = new ccui.LayoutComponent();

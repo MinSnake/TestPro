@@ -73,7 +73,11 @@ cc.ActionManager = cc.Class.extend(/** @lends cc.ActionManager# */{
 
     _searchElementByTarget:function (arr, target) {
         for (var k = 0; k < arr.length; k++) {
+<<<<<<< HEAD
             if (target === arr[k].target)
+=======
+            if (target == arr[k].target)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                 return arr[k];
         }
         return null;
@@ -143,7 +147,11 @@ cc.ActionManager = cc.Class.extend(/** @lends cc.ActionManager# */{
                 element.currentActionSalvaged = true;
 
             element.actions.length = 0;
+<<<<<<< HEAD
             if (this._currentTarget === element && !forceDelete) {
+=======
+            if (this._currentTarget == element && !forceDelete) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                 this._currentTargetSalvaged = true;
             } else {
                 this._deleteHashElement(element);
@@ -162,7 +170,11 @@ cc.ActionManager = cc.Class.extend(/** @lends cc.ActionManager# */{
 
         if (element) {
             for (var i = 0; i < element.actions.length; i++) {
+<<<<<<< HEAD
                 if (element.actions[i] === action) {
+=======
+                if (element.actions[i] == action) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                     element.actions.splice(i, 1);
                     break;
                 }
@@ -177,7 +189,11 @@ cc.ActionManager = cc.Class.extend(/** @lends cc.ActionManager# */{
      * @param {object} target
      */
     removeActionByTag:function (tag, target) {
+<<<<<<< HEAD
         if(tag === cc.ACTION_TAG_INVALID)
+=======
+        if(tag == cc.ACTION_TAG_INVALID)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             cc.log(cc._LogInfos.ActionManager_addAction);
 
         cc.assert(target, cc._LogInfos.ActionManager_addAction);
@@ -188,7 +204,11 @@ cc.ActionManager = cc.Class.extend(/** @lends cc.ActionManager# */{
             var limit = element.actions.length;
             for (var i = 0; i < limit; ++i) {
                 var action = element.actions[i];
+<<<<<<< HEAD
                 if (action && action.getTag() === tag && action.getOriginalTarget() === target) {
+=======
+                if (action && action.getTag() === tag && action.getOriginalTarget() == target) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                     this._removeActionAtIndex(i, element);
                     break;
                 }
@@ -202,7 +222,11 @@ cc.ActionManager = cc.Class.extend(/** @lends cc.ActionManager# */{
      * @return {cc.Action|Null}  return the Action with the given tag on success
      */
     getActionByTag:function (tag, target) {
+<<<<<<< HEAD
         if(tag === cc.ACTION_TAG_INVALID)
+=======
+        if(tag == cc.ACTION_TAG_INVALID)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             cc.log(cc._LogInfos.ActionManager_getActionByTag);
 
         var element = this._hashTargets[target.__instanceId];
@@ -287,14 +311,22 @@ cc.ActionManager = cc.Class.extend(/** @lends cc.ActionManager# */{
      * because it uses this, so it can not be static
      */
     purgeSharedManager:function () {
+<<<<<<< HEAD
         cc.director.getScheduler().unscheduleUpdate(this);
+=======
+        cc.director.getScheduler().unscheduleUpdateForTarget(this);
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
     },
 
     //protected
     _removeActionAtIndex:function (index, element) {
         var action = element.actions[index];
 
+<<<<<<< HEAD
         if ((action === element.currentAction) && (!element.currentActionSalvaged))
+=======
+        if ((action == element.currentAction) && (!element.currentActionSalvaged))
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             element.currentActionSalvaged = true;
 
         element.actions.splice(index, 1);
@@ -303,8 +335,13 @@ cc.ActionManager = cc.Class.extend(/** @lends cc.ActionManager# */{
         if (element.actionIndex >= index)
             element.actionIndex--;
 
+<<<<<<< HEAD
         if (element.actions.length === 0) {
             if (this._currentTarget === element) {
+=======
+        if (element.actions.length == 0) {
+            if (this._currentTarget == element) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                 this._currentTargetSalvaged = true;
             } else {
                 this._deleteHashElement(element);

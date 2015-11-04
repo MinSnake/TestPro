@@ -46,13 +46,25 @@
 
     proto._init = function () {};
 
+<<<<<<< HEAD
+=======
+    proto._setBlendFuncStr = function(compositeOperation){
+        //a hack function for clippingNode
+         this._blendFuncStr = compositeOperation;
+    };
+
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
     proto.setDirtyRecursively = function (value) {};
 
     proto._resetForBatchNode = function () {};
 
     proto._setTexture = function (texture) {
         var node = this._node;
+<<<<<<< HEAD
         if (node._texture !== texture) {
+=======
+        if (node._texture != texture) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             if (texture) {
                 if(texture.getHtmlElementObj() instanceof  HTMLImageElement)
                     this._originalTexture = texture;
@@ -70,7 +82,11 @@
 
     proto.isFrameDisplayed = function (frame) {      //TODO there maybe has a bug
         var node = this._node;
+<<<<<<< HEAD
         if (frame.getTexture() !== node._texture)
+=======
+        if (frame.getTexture() != node._texture)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             return false;
         return cc.rectEqualToRect(frame.getRect(), node._rect);
     };
@@ -83,15 +99,25 @@
         return true;
     };
 
+<<<<<<< HEAD
     proto._handleTextureForRotatedTexture = function (texture, rect, rotated, counterclockwise) {
         if (rotated && texture.isLoaded()) {
             var tempElement = texture.getHtmlElementObj();
             tempElement = cc.Sprite.CanvasRenderCmd._cutRotateImageToCanvas(tempElement, rect, counterclockwise);
+=======
+    proto._handleTextureForRotatedTexture = function (texture, rect, rotated) {
+        if (rotated && texture.isLoaded()) {
+            var tempElement = texture.getHtmlElementObj();
+            tempElement = cc.Sprite.CanvasRenderCmd._cutRotateImageToCanvas(tempElement, rect);
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             var tempTexture = new cc.Texture2D();
             tempTexture.initWithElement(tempElement);
             tempTexture.handleLoadedTexture();
             texture = tempTexture;
+<<<<<<< HEAD
             rect.x = rect.y = 0;
+=======
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             this._node._rect = cc.rect(0, 0, rect.width, rect.height);
         }
         return texture;
@@ -119,9 +145,15 @@
         var locX = node._offsetPosition.x, locHeight = node._rect.height, locWidth = node._rect.width,
             locY = -node._offsetPosition.y - locHeight, image;
 
+<<<<<<< HEAD
         wrapper.setTransform(this._worldTransform, scaleX, scaleY);
         wrapper.setCompositeOperation(this._blendFuncStr);
         wrapper.setGlobalAlpha(alpha);
+=======
+        wrapper.setCompositeOperation(this._blendFuncStr);
+        wrapper.setGlobalAlpha(alpha);
+        wrapper.setTransform(this._worldTransform, scaleX, scaleY);
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
 
         if(node._flippedX || node._flippedY)
             wrapper.save();
@@ -136,7 +168,11 @@
 
         if (node._texture) {
             image = node._texture._htmlElementObj;
+<<<<<<< HEAD
             if (node._texture._pattern !== "") {
+=======
+            if (node._texture._pattern != "") {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                 wrapper.setFillStyle(context.createPattern(image, node._texture._pattern));
                 context.fillRect(locX * scaleX, locY * scaleY, locWidth * scaleX, locHeight * scaleY);
             } else {
@@ -216,7 +252,11 @@
 
                 this._colorized = true;
                 if (locElement instanceof HTMLCanvasElement && !this._rectRotated && !this._newTextureWhenChangeColor
+<<<<<<< HEAD
                     && this._originalTexture._htmlElementObj !== locElement)
+=======
+                    && this._originalTexture._htmlElementObj != locElement)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                     cc.Sprite.CanvasRenderCmd._generateTintImageWithMultiply(this._originalTexture._htmlElementObj, displayedColor, locRect, locElement);
                 else {
                     locElement = cc.Sprite.CanvasRenderCmd._generateTintImageWithMultiply(this._originalTexture._htmlElementObj, displayedColor, locRect);
@@ -255,12 +295,20 @@
         if (node.dirty) {
             // If it is not visible, or one of its ancestors is not visible, then do nothing:
             var locParent = node._parent;
+<<<<<<< HEAD
             if (!node._visible || ( locParent && locParent !== node._batchNode && locParent._shouldBeHidden)) {
+=======
+            if (!node._visible || ( locParent && locParent != node._batchNode && locParent._shouldBeHidden)) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                 node._shouldBeHidden = true;
             } else {
                 node._shouldBeHidden = false;
 
+<<<<<<< HEAD
                 if (!locParent || locParent === node._batchNode) {
+=======
+                if (!locParent || locParent == node._batchNode) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                     node._transformToBatch = _t.getNodeToParentTransform();
                 } else {
                     //cc.assert(_t._parent instanceof cc.Sprite, "Logic error in CCSprite. Parent must be a CCSprite");
@@ -309,7 +357,11 @@
 
         //set the texture's color after the it loaded
         var locColor = locRenderCmd._displayedColor;
+<<<<<<< HEAD
         if (locColor.r !== 255 || locColor.g !== 255 || locColor.b !== 255)
+=======
+        if (locColor.r != 255 || locColor.g != 255 || locColor.b != 255)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             locRenderCmd._updateColor();
 
         // by default use "Self Render".
@@ -332,6 +384,10 @@
         if(this._colorized){
             this._node._texture = this._originalTexture;
             this._colorized = false;
+<<<<<<< HEAD
+=======
+            this._updateColor();
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         }
     };
 
@@ -342,7 +398,11 @@
         renderCanvas = renderCanvas || cc.newElement("canvas");
         rect = rect || cc.rect(0, 0, image.width, image.height);
         var context = renderCanvas.getContext("2d");
+<<<<<<< HEAD
         if (renderCanvas.width !== rect.width || renderCanvas.height !== rect.height) {
+=======
+        if (renderCanvas.width != rect.width || renderCanvas.height != rect.height) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             renderCanvas.width = rect.width;
             renderCanvas.height = rect.height;
         } else {
@@ -488,24 +548,35 @@
     cc.Sprite.CanvasRenderCmd._generateTextureCacheForColor.tempCanvas = cc.newElement('canvas');
     cc.Sprite.CanvasRenderCmd._generateTextureCacheForColor.tempCtx = cc.Sprite.CanvasRenderCmd._generateTextureCacheForColor.tempCanvas.getContext('2d');
 
+<<<<<<< HEAD
     cc.Sprite.CanvasRenderCmd._cutRotateImageToCanvas = function (texture, rect, counterclockwise) {
+=======
+    cc.Sprite.CanvasRenderCmd._cutRotateImageToCanvas = function (texture, rect) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         if (!texture)
             return null;
 
         if (!rect)
             return texture;
 
+<<<<<<< HEAD
         counterclockwise = counterclockwise == null? true: counterclockwise;   // texture package is counterclockwise, spine is clockwise
 
+=======
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         var nCanvas = cc.newElement("canvas");
         nCanvas.width = rect.width;
         nCanvas.height = rect.height;
         var ctx = nCanvas.getContext("2d");
         ctx.translate(nCanvas.width / 2, nCanvas.height / 2);
+<<<<<<< HEAD
         if(counterclockwise)
             ctx.rotate(-1.5707963267948966);
         else
             ctx.rotate(1.5707963267948966);
+=======
+        ctx.rotate(-1.5707963267948966);
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         ctx.drawImage(texture, rect.x, rect.y, rect.height, rect.width, -rect.height / 2, -rect.width / 2, rect.height, rect.width);
         return nCanvas;
     };

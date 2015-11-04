@@ -143,7 +143,11 @@
       "name": "CCBackgroundAudio",
       "file": null,
       "fileData": {
+<<<<<<< HEAD
         "path": "Misc/music_logo.wav",
+=======
+        "path": "Misc/music_logo.mp3",
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         "plistFile": null,
         "resourceType": 0
       },

@@ -319,7 +319,11 @@ ccs.DisplayData = ccs.Class.extend(/** @lends ccs.DisplayData# */{
         var textureName = displayName;
         var startPos = textureName.lastIndexOf(".");
 
+<<<<<<< HEAD
         if (startPos !== -1)
+=======
+        if (startPos != -1)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             textureName = textureName.substring(0, startPos);
         return textureName;
     },
@@ -549,7 +553,11 @@ ccs.FrameData = ccs.BaseData.extend(/** @lends ccs.FrameData# */{
         ctor:function () {
             ccs.BaseData.prototype.ctor.call(this);
             this.duration = 1;
+<<<<<<< HEAD
             this.tweenEasing = ccs.TweenType.LINEAR;
+=======
+            this.tweenEasing = ccs.TweenType.linear;
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             this.easingParamNumber = 0;
             this.easingParams = [];
             this.displayIndex = 0;
@@ -580,7 +588,11 @@ ccs.FrameData = ccs.BaseData.extend(/** @lends ccs.FrameData# */{
 //            this.sound = frameData.sound;
 //            this.soundEffect = frameData.soundEffect;
 //            this.easingParams.length = 0;
+<<<<<<< HEAD
             if (this.easingParamNumber !== 0){
+=======
+            if (this.easingParamNumber != 0){
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                 this.easingParams.length = 0;
                 for (var i = 0; i<this.easingParamNumber; i++){
                     this.easingParams[i] = frameData.easingParams[i];
@@ -675,7 +687,11 @@ ccs.MovementData = function(){
      * Which tween easing effect the movement use
      * TWEEN_EASING_MAX : use the value from MovementData get from flash design panel
      */
+<<<<<<< HEAD
     this.tweenEasing = ccs.TweenType.LINEAR;
+=======
+    this.tweenEasing = ccs.TweenType.linear;
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
     this.movBoneDataDic = {};
 };
 

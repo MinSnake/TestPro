@@ -227,11 +227,19 @@ cc.ScrollView = cc.Layer.extend(/** @lends cc.ScrollView# */{
         }
 
         var locContainer = this._container;
+<<<<<<< HEAD
         if (locContainer.getScale() !== scale) {
             var oldCenter, newCenter;
             var center;
 
             if (this._touchLength === 0.0) {
+=======
+        if (locContainer.getScale() != scale) {
+            var oldCenter, newCenter;
+            var center;
+
+            if (this._touchLength == 0.0) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                 var locViewSize = this._viewSize;
                 center = cc.p(locViewSize.width * 0.5, locViewSize.height * 0.5);
                 center = this.convertToWorldSpace(center);
@@ -262,7 +270,11 @@ cc.ScrollView = cc.Layer.extend(/** @lends cc.ScrollView# */{
     setZoomScaleInDuration:function (s, dt) {
         if (dt > 0) {
             var locScale = this._container.getScale();
+<<<<<<< HEAD
             if (locScale !== s) {
+=======
+            if (locScale != s) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                 var scaleAction = cc.actionTween(dt, "zoomScale", locScale, s);
                 this.runAction(scaleAction);
             }
@@ -421,7 +433,11 @@ cc.ScrollView = cc.Layer.extend(/** @lends cc.ScrollView# */{
             this._scrollDistance.x = 0;
             this._scrollDistance.y = 0;
             this._touchLength = 0.0;
+<<<<<<< HEAD
         } else if (locTouches.length === 2) {
+=======
+        } else if (locTouches.length == 2) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             this._touchPoint = cc.pMidpoint(this.convertTouchToNodeSpace(locTouches[0]),
                 this.convertTouchToNodeSpace(locTouches[1]));
             this._touchLength = cc.pDistance(locContainer.convertTouchToNodeSpace(locTouches[0]),
@@ -514,7 +530,11 @@ cc.ScrollView = cc.Layer.extend(/** @lends cc.ScrollView# */{
         if (!this.isVisible())
             return;
 
+<<<<<<< HEAD
         if (this._touches.length === 1 && this._touchMoved)
+=======
+        if (this._touches.length == 1 && this._touchMoved)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             this.schedule(this._deaccelerateScrolling);
 
         this._touches.length = 0;
@@ -532,7 +552,11 @@ cc.ScrollView = cc.Layer.extend(/** @lends cc.ScrollView# */{
     },
 
     setContentSize: function (size, height) {
+<<<<<<< HEAD
         if (this.getContainer() !== null) {
+=======
+        if (this.getContainer() != null) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             if(height === undefined)
                 this.getContainer().setContentSize(size);
             else
@@ -542,14 +566,22 @@ cc.ScrollView = cc.Layer.extend(/** @lends cc.ScrollView# */{
     },
 	_setWidth: function (value) {
 		var container = this.getContainer();
+<<<<<<< HEAD
 		if (container !== null) {
+=======
+		if (container != null) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
 			container._setWidth(value);
 			this.updateInset();
 		}
 	},
 	_setHeight: function (value) {
 		var container = this.getContainer();
+<<<<<<< HEAD
 		if (container !== null) {
+=======
+		if (container != null) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
 			container._setHeight(value);
 			this.updateInset();
 		}
@@ -560,7 +592,11 @@ cc.ScrollView = cc.Layer.extend(/** @lends cc.ScrollView# */{
     },
 
     updateInset:function () {
+<<<<<<< HEAD
         if (this.getContainer() !== null) {
+=======
+        if (this.getContainer() != null) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             var locViewSize = this._viewSize;
             var tempOffset = this.maxContainerOffset();
             this._maxInset.x = tempOffset.x + locViewSize.width * INSET_RATIO;
@@ -599,7 +635,11 @@ cc.ScrollView = cc.Layer.extend(/** @lends cc.ScrollView# */{
 
         //child.ignoreAnchorPointForPosition(false);
         //child.setAnchorPoint(0, 0);
+<<<<<<< HEAD
         if (this._container !== child) {
+=======
+        if (this._container != child) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             this._container.addChild(child, zOrder, tag);
         } else {
             cc.Layer.prototype.addChild.call(this, child, zOrder, tag);
@@ -607,7 +647,11 @@ cc.ScrollView = cc.Layer.extend(/** @lends cc.ScrollView# */{
     },
 
     isTouchEnabled: function(){
+<<<<<<< HEAD
         return this._touchListener !== null;
+=======
+        return this._touchListener != null;
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
     },
 
     setTouchEnabled:function (e) {
@@ -663,12 +707,20 @@ cc.ScrollView = cc.Layer.extend(/** @lends cc.ScrollView# */{
             newX = Math.min(newX, max.x);
         }
 
+<<<<<<< HEAD
         if (locDirection === cc.SCROLLVIEW_DIRECTION_BOTH || locDirection === cc.SCROLLVIEW_DIRECTION_VERTICAL) {
+=======
+        if (locDirection == cc.SCROLLVIEW_DIRECTION_BOTH || locDirection == cc.SCROLLVIEW_DIRECTION_VERTICAL) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             newY = Math.min(newY, max.y);
             newY = Math.max(newY, min.y);
         }
 
+<<<<<<< HEAD
         if (newY !== oldPoint.y || newX !== oldPoint.x) {
+=======
+        if (newY != oldPoint.y || newX != oldPoint.x) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             this.setContentOffset(cc.p(newX, newY), animated);
         }
     },
@@ -709,8 +761,13 @@ cc.ScrollView = cc.Layer.extend(/** @lends cc.ScrollView# */{
             Math.abs(locScrollDistance.y) <= SCROLL_DEACCEL_DIST) ||
             newY > maxInset.y || newY < minInset.y ||
             newX > maxInset.x || newX < minInset.x ||
+<<<<<<< HEAD
             newX === maxInset.x || newX === minInset.x ||
             newY === maxInset.y || newY === minInset.y) {
+=======
+            newX == maxInset.x || newX == minInset.x ||
+            newY == maxInset.y || newY == minInset.y) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             this.unschedule(this._deaccelerateScrolling);
             this._relocateContainer(true);
         }

@@ -61,7 +61,11 @@ ccs.Timeline = ccs.Class.extend({
     },
 
     _gotoFrame: function(frameIndex){
+<<<<<<< HEAD
         if(this._frames.length === 0)
+=======
+        if(this._frames.length == 0)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             return;
 
         this._binarySearchKeyFrame(frameIndex);
@@ -69,7 +73,11 @@ ccs.Timeline = ccs.Class.extend({
     },
 
     _stepToFrame: function(frameIndex){
+<<<<<<< HEAD
         if(this._frames.length === 0)
+=======
+        if(this._frames.length == 0)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             return;
 
         this._updateCurrentKeyFrame(frameIndex);
@@ -187,7 +195,11 @@ ccs.Timeline = ccs.Class.extend({
     _apply: function(frameIndex){
         if (this._currentKeyFrame)
         {
+<<<<<<< HEAD
             var currentPercent = this._betweenDuration === 0 ? 0 : (frameIndex - this._currentKeyFrameIndex) / this._betweenDuration;
+=======
+            var currentPercent = this._betweenDuration == 0 ? 0 : (frameIndex - this._currentKeyFrameIndex) / this._betweenDuration;
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             this._currentKeyFrame.apply(currentPercent);
         }
     },
@@ -239,14 +251,23 @@ ccs.Timeline = ccs.Class.extend({
             from = this._frames[target];
             to   = this._frames[target+1];
 
+<<<<<<< HEAD
             if(target === 0 && this._currentKeyFrameIndex < from.getFrameIndex())
+=======
+            if(target == 0 && this._currentKeyFrameIndex < from.getFrameIndex())
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                 needEnterFrame = true;
 
             this._currentKeyFrameIndex = from.getFrameIndex();
             this._betweenDuration = to.getFrameIndex() - from.getFrameIndex();
         } while (0);
 
+<<<<<<< HEAD
         if(needEnterFrame || this._currentKeyFrame != from) {
+=======
+        if(needEnterFrame || this._currentKeyFrame != from)
+        {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             this._currentKeyFrame = from;
             this._currentKeyFrame.onEnter(to);
         }
@@ -292,7 +313,11 @@ ccs.Timeline = ccs.Class.extend({
 
                     to = this._frames[this._toIndex];
 
+<<<<<<< HEAD
                     if (frameIndex === from.getFrameIndex())
+=======
+                    if (frameIndex == from.getFrameIndex())
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                     {
                         break;
                     }

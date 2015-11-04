@@ -31,7 +31,11 @@
  * @type {String}
  * @name cc.ENGINE_VERSION
  */
+<<<<<<< HEAD
 window["CocosEngine"] = cc.ENGINE_VERSION = "Cocos2d-JS v3.6";
+=======
+window["CocosEngine"] = cc.ENGINE_VERSION = "Cocos2d-JS v3.3 Beta0";
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
 
 /**
  * <p>

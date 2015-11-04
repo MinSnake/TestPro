@@ -55,7 +55,11 @@
 
             if (!this._bakeSprite){
                 this._bakeSprite = new cc.BakeSprite();
+<<<<<<< HEAD
                 this._bakeSprite.setAnchorPoint(0,0);
+=======
+                this._bakeSprite._parent = this._node;
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             }
         }
     };
@@ -93,8 +97,24 @@
             var ctx = bakeContext.getContext();
             locBakeSprite.resetCanvasSize(boundingBox.width, boundingBox.height);
 
+<<<<<<< HEAD
             bakeContext.setOffset(0 - boundingBox.x, ctx.canvas.height - boundingBox.height + boundingBox.y );
             locBakeSprite.setPosition(boundingBox.x, boundingBox.y);
+=======
+            var anchor = locBakeSprite.getAnchorPointInPoints(), locPos = node._position;
+            if(node._ignoreAnchorPointForPosition){
+                //bakeContext.translate(0 - boundingBox.x + locPos.x, boundingBox.height + boundingBox.y - locPos.y);
+                bakeContext.setOffset(0 - boundingBox.x, ctx.canvas.height - boundingBox.height + boundingBox.y );
+                //reset the bake sprite's position
+                locBakeSprite.setPosition(anchor.x + boundingBox.x - locPos.x, anchor.y + boundingBox.y - locPos.y);
+            } else {
+                var selfAnchor = this.getAnchorPointInPoints();
+                var selfPos = {x: locPos.x - selfAnchor.x, y: locPos.y - selfAnchor.y};
+                //bakeContext.translate(0 - boundingBox.x + selfPos.x, boundingBox.height + boundingBox.y - selfPos.y);
+                bakeContext.setOffset(0 - boundingBox.x, ctx.canvas.height - boundingBox.height + boundingBox.y);
+                locBakeSprite.setPosition(anchor.x + boundingBox.x - selfPos.x, anchor.y + boundingBox.y - selfPos.y);
+            }
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
 
             //visit for canvas
             node.sortAllChildren();
@@ -103,7 +123,11 @@
                 children[i].visit(this);
             }
             cc.renderer._renderingToCacheCanvas(bakeContext, this.__instanceId);
+<<<<<<< HEAD
             locBakeSprite.transform();                   //because bake sprite's position was changed at rendering.
+=======
+            locBakeSprite.transform(this);                   //because bake sprite's position was changed at rendering.
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             this._cacheDirty = false;
         }
     };
@@ -129,7 +153,11 @@
     };
 
     proto._bakeForAddChild = function(child){
+<<<<<<< HEAD
         if(child._parent === this._node && this._isBaked)
+=======
+        if(child._parent == this._node && this._isBaked)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             child._renderCmd._setCachedParent(this);
     };
 
@@ -223,9 +251,25 @@
             var bakeContext = locBakeSprite.getCacheContext();
             var ctx = bakeContext.getContext();
             locBakeSprite.resetCanvasSize(boundingBox.width, boundingBox.height);
+<<<<<<< HEAD
 
             bakeContext.setOffset(0 - boundingBox.x, ctx.canvas.height - boundingBox.height + boundingBox.y );
             locBakeSprite.setPosition(boundingBox.x, boundingBox.y);
+=======
+            var anchor = locBakeSprite.getAnchorPointInPoints(), locPos = node._position;
+            if(node._ignoreAnchorPointForPosition){
+                //bakeContext.translate(0 - boundingBox.x + locPos.x, boundingBox.height + boundingBox.y - locPos.y);
+                bakeContext.setOffset(0 - boundingBox.x, ctx.canvas.height - boundingBox.height + boundingBox.y );
+                //reset the bake sprite's position
+                locBakeSprite.setPosition(anchor.x + boundingBox.x - locPos.x, anchor.y + boundingBox.y - locPos.y);
+            } else {
+                var selfAnchor = this.getAnchorPointInPoints();
+                var selfPos = {x: locPos.x - selfAnchor.x, y: locPos.y - selfAnchor.y};
+                //bakeContext.translate(0 - boundingBox.x + selfPos.x, boundingBox.height + boundingBox.y - selfPos.y);
+                bakeContext.setOffset(0 - boundingBox.x, ctx.canvas.height - boundingBox.height + boundingBox.y);
+                locBakeSprite.setPosition(anchor.x + boundingBox.x - selfPos.x, anchor.y + boundingBox.y - selfPos.y);
+            }
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
 
             var child;
             cc.renderer._turnToCacheMode(this.__instanceId);
@@ -247,7 +291,11 @@
             } else
                 cc.renderer.pushRenderCommand(this);
             cc.renderer._renderingToCacheCanvas(bakeContext, this.__instanceId);
+<<<<<<< HEAD
             locBakeSprite.transform();
+=======
+            locBakeSprite.transform(this);
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             this._cacheDirty = false;
         }
     };
@@ -348,6 +396,7 @@
         var locWidth = node._contentSize.width, locHeight = node._contentSize.height;
         wrapper.setCompositeOperation(this._blendFuncStr);
         wrapper.setGlobalAlpha(opacity);
+<<<<<<< HEAD
         var gradient = context.createLinearGradient(this._startPoint.x*scaleX, this._startPoint.y*scaleY, this._endPoint.x*scaleX, this._endPoint.y*scaleY);
 
         if(node._colorStops){  //Should always fall here now
@@ -360,6 +409,11 @@
             gradient.addColorStop(1, this._endStopStr);
         }
 
+=======
+        var gradient = context.createLinearGradient(this._startPoint.x, this._startPoint.y, this._endPoint.x, this._endPoint.y);
+        gradient.addColorStop(0, this._startStopStr);
+        gradient.addColorStop(1, this._endStopStr);
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         wrapper.setFillStyle(gradient);
 
         wrapper.setTransform(this._worldTransform, scaleX, scaleY);
@@ -404,6 +458,7 @@
     proto._updateColor = function(){
         var node = this._node;
         var contentSize = node._contentSize;
+<<<<<<< HEAD
         var tWidth = contentSize.width * 0.5, tHeight = contentSize.height * 0.5;
         this._dirtyFlag = this._dirtyFlag & cc.Node._dirtyFlags.gradientDirty ^ this._dirtyFlag;
 
@@ -416,6 +471,15 @@
         this._startPoint.y = tHeight * (p1.y * factor) - tHeight;
         this._endPoint.x = tWidth * (p1.x * factor) + tWidth;
         this._endPoint.y = tHeight * (-p1.y * factor) - tHeight;
+=======
+        var locAlongVector = node._alongVector, tWidth = contentSize.width * 0.5, tHeight = contentSize.height * 0.5;
+        this._dirtyFlag = this._dirtyFlag & cc.Node._dirtyFlags.gradientDirty ^ this._dirtyFlag;
+
+        this._startPoint.x = tWidth * (-locAlongVector.x) + tWidth;
+        this._startPoint.y = tHeight * locAlongVector.y - tHeight;
+        this._endPoint.x = tWidth * locAlongVector.x + tWidth;
+        this._endPoint.y = tHeight * (-locAlongVector.y) - tHeight;
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
 
         var locStartColor = this._displayedColor, locEndColor = node._endColor;
         var startOpacity = node._startOpacity/255, endOpacity = node._endOpacity/255;
@@ -423,6 +487,7 @@
             + Math.round(locStartColor.b) + "," + startOpacity.toFixed(4) + ")";
         this._endStopStr = "rgba(" + Math.round(locEndColor.r) + "," + Math.round(locEndColor.g) + ","
             + Math.round(locEndColor.b) + "," + endOpacity.toFixed(4) + ")";
+<<<<<<< HEAD
 
         if( node._colorStops){
             this._startOpacity = 0;
@@ -436,5 +501,7 @@
                     + Math.round(stopColor.b) + "," + stopOpacity.toFixed(4) + ")");
             }
         }
+=======
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
     };
 })();

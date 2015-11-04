@@ -356,7 +356,11 @@ cc.TextFieldTTF = cc.LabelTTF.extend(/** @lends cc.TextFieldTTF# */{
      */
     deleteBackward:function () {
         var strLen = this._inputText.length;
+<<<<<<< HEAD
         if (strLen === 0)
+=======
+        if (strLen == 0)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             return;
 
         // get the delete byte number
@@ -387,6 +391,7 @@ cc.TextFieldTTF = cc.LabelTTF.extend(/** @lends cc.TextFieldTTF# */{
         cc.imeDispatcher.removeDelegate(this);
     },
 
+<<<<<<< HEAD
     _tipMessage: "please enter your word:",
     /**
      * Sets the input tip message to show on mobile browser.  (mobile Web only)
@@ -406,6 +411,8 @@ cc.TextFieldTTF = cc.LabelTTF.extend(/** @lends cc.TextFieldTTF# */{
         return this._tipMessage;
     },
 
+=======
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
     /**
      * Append the text. <br />
      * Input the character.
@@ -432,7 +439,11 @@ cc.TextFieldTTF = cc.LabelTTF.extend(/** @lends cc.TextFieldTTF# */{
             this.string = sText;
         }
 
+<<<<<<< HEAD
         if (pos === -1)
+=======
+        if (pos == -1)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             return;
 
         // '\n' has inserted,  let delegate process first

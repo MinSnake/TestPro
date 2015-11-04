@@ -78,7 +78,11 @@ ccs.triggerManager = /** @lends ccs.triggerManager# */{
         var eventTriggers = this._eventTriggers[event];
         if (!eventTriggers)
             eventTriggers = [];
+<<<<<<< HEAD
         if (eventTriggers.indexOf(triggerObj) === -1) {
+=======
+        if (eventTriggers.indexOf(triggerObj) == -1) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             eventTriggers.push(triggerObj);
             this._eventTriggers[event] = eventTriggers;
         }
@@ -180,7 +184,11 @@ ccs.triggerManager = /** @lends ccs.triggerManager# */{
         var locAmd, hasADD = false;
         for (var i = 0; i < this._movementDispatches.length; i++) {
             locAmd = this._movementDispatches[i];
+<<<<<<< HEAD
             if (locAmd && locAmd[0] === armature) {
+=======
+            if (locAmd && locAmd[0] == armature) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                 locAmd.addAnimationEventCallBack(callFunc, target);
                 hasADD = true;
             }
@@ -205,7 +213,11 @@ ccs.triggerManager = /** @lends ccs.triggerManager# */{
         var locAmd;
         for (var i = 0; i < this._movementDispatches.length; i++) {
             locAmd = this._movementDispatches[i];
+<<<<<<< HEAD
             if (locAmd && locAmd[0] === armature)
+=======
+            if (locAmd && locAmd[0] == armature)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                 locAmd.removeAnimationEventCallBack(callFunc, target);
         }
     },
@@ -220,7 +232,11 @@ ccs.triggerManager = /** @lends ccs.triggerManager# */{
         var locAmd;
         for (var i = 0; i < this._movementDispatches.length; i++) {
             locAmd = this._movementDispatches[i];
+<<<<<<< HEAD
             if (locAmd && locAmd[0] === armature) {
+=======
+            if (locAmd && locAmd[0] == armature) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                 this._movementDispatches.splice(i, 1);
                 break;
             }
@@ -293,7 +309,11 @@ ccs.ArmatureMovementDispatcher = ccs.Class.extend(/** @lends ccs.ArmatureMovemen
         var locEventAni;
         for (var i = 0; i < this._mapEventAnimation.length; i++) {
             locEventAni = this._mapEventAnimation[i];
+<<<<<<< HEAD
             if (locEventAni[0] === target) {
+=======
+            if (locEventAni[0] == target) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                 this._mapEventAnimation.splice(i, 1);
             }
         }

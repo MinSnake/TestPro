@@ -114,7 +114,11 @@
             var selBone = locChildren[i];
             if (selBone && selBone.getDisplayRenderNode) {
                 var selNode = selBone.getDisplayRenderNode();
+<<<<<<< HEAD
                 if (null === selNode)
+=======
+                if (null == selNode)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                     continue;
 
                 switch (selBone.getDisplayRenderNodeType()) {

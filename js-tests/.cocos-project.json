@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
     "project_type": "js",
     "has_native": true,
     "win32_cfg": {
@@ -45,3 +46,8 @@
     },
     "engine_dir": "../../"
 }
+=======
+  "has_native": false,
+  "project_type": "js"
+}
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b

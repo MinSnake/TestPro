@@ -186,7 +186,11 @@
                         widget.pushBackCustomItem(child);
                     } else {
                         if(!(widget instanceof ccui.Layout)) {
+<<<<<<< HEAD
                             if(child.getPositionType() === ccui.Widget.POSITION_PERCENT) {
+=======
+                            if(child.getPositionType() == ccui.Widget.POSITION_PERCENT) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                                 var position = child.getPositionPercent();
                                 var anchor = widget.getAnchorPoint();
                                 child.setPositionPercent(cc.p(position.x + anchor.x, position.y + anchor.y));
@@ -203,7 +207,11 @@
 
     var getPath = function(res, type, path, cb){
         if(path){
+<<<<<<< HEAD
             if(type === 0)
+=======
+            if(type == 0)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                 cb(res + path, type);
             else
                 cb(path, type);
@@ -458,7 +466,10 @@
     /**
      * Text parser (UIText)
      */
+<<<<<<< HEAD
     var regTTF = /\.ttf$/;
+=======
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
     parser.TextAttributes = function(widget, options, resourcePath){
         var touchScaleChangeAble = options["touchScaleEnable"];
         widget.setTouchScaleChangeEnabled(touchScaleChangeAble);
@@ -470,6 +481,7 @@
         }
         var fn = options["fontName"];
         if (fn != null){
+<<<<<<< HEAD
             if(cc.sys.isNative){
                 if(regTTF.test(fn)){
                     widget.setFontName(cc.path.join(cc.loader.resPath, resourcePath, fn));
@@ -479,6 +491,9 @@
             }else{
                 widget.setFontName(fn.replace(regTTF, ''));
             }
+=======
+            widget.setFontName(options["fontName"]);
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         }
         var aw = options["areaWidth"];
         var ah = options["areaHeight"];
@@ -608,7 +623,11 @@
     /**
      * TextField parser (UITextField)
      */
+<<<<<<< HEAD
     parser.TextFieldAttributes = function(widget, options, resourcePath){
+=======
+    parser.TextFieldAttributes = function(widget, options, resoutcePath){
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         var ph = options["placeHolder"];
         if(ph)
             widget.setPlaceHolder(ph);
@@ -617,6 +636,7 @@
         if(fs)
             widget.setFontSize(fs);
         var fn = options["fontName"];
+<<<<<<< HEAD
         if (fn != null){
             if(cc.sys.isNative){
                 if(regTTF.test(fn)){
@@ -628,6 +648,10 @@
                 widget.setFontName(fn.replace(regTTF, ''));
             }
         }
+=======
+        if(fn)
+            widget.setFontName(fn);
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         var tsw = options["touchSizeWidth"];
         var tsh = options["touchSizeHeight"];
         if(tsw!=null && tsh!=null)

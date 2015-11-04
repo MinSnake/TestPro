@@ -114,7 +114,11 @@ cc.extend = function(target) {
  * @returns {boolean}
  */
 cc.isFunction = function(obj) {
+<<<<<<< HEAD
     return typeof obj === 'function';
+=======
+    return typeof obj == 'function';
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
 };
 
 /**
@@ -123,7 +127,11 @@ cc.isFunction = function(obj) {
  * @returns {boolean}
  */
 cc.isNumber = function(obj) {
+<<<<<<< HEAD
     return typeof obj === 'number' || Object.prototype.toString.call(obj) === '[object Number]';
+=======
+    return typeof obj == 'number' || Object.prototype.toString.call(obj) == '[object Number]';
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
 };
 
 /**
@@ -132,7 +140,11 @@ cc.isNumber = function(obj) {
  * @returns {boolean}
  */
 cc.isString = function(obj) {
+<<<<<<< HEAD
     return typeof obj === 'string' || Object.prototype.toString.call(obj) === '[object String]';
+=======
+    return typeof obj == 'string' || Object.prototype.toString.call(obj) == '[object String]';
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
 };
 
 /**
@@ -141,8 +153,12 @@ cc.isString = function(obj) {
  * @returns {boolean}
  */
 cc.isArray = function(obj) {
+<<<<<<< HEAD
     return Array.isArray(obj) ||
         (typeof obj === 'object' && Object.prototype.toString.call(obj) === '[object Array]');
+=======
+    return Object.prototype.toString.call(obj) == '[object Array]';
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
 };
 
 /**
@@ -151,7 +167,11 @@ cc.isArray = function(obj) {
  * @returns {boolean}
  */
 cc.isUndefined = function(obj) {
+<<<<<<< HEAD
     return typeof obj === 'undefined';
+=======
+    return typeof obj == 'undefined';
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
 };
 
 /**
@@ -160,7 +180,13 @@ cc.isUndefined = function(obj) {
  * @returns {boolean}
  */
 cc.isObject = function(obj) {
+<<<<<<< HEAD
     return typeof obj === "object" && Object.prototype.toString.call(obj) === '[object Object]';
+=======
+    var type = typeof obj;
+
+    return type == 'function' || (obj && type == 'object');
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
 };
 
 /**
@@ -174,12 +200,21 @@ cc.isCrossOrigin = function (url) {
         return false;
     }
     var startIndex = url.indexOf("://");
+<<<<<<< HEAD
     if (startIndex === -1)
         return false;
 
     var endIndex = url.indexOf("/", startIndex + 3);
     var urlOrigin = (endIndex === -1) ? url : url.substring(0, endIndex);
     return urlOrigin !== location.origin;
+=======
+    if (startIndex == -1)
+        return false;
+
+    var endIndex = url.indexOf("/", startIndex + 3);
+    var urlOrigin = (endIndex == -1) ? url : url.substring(0, endIndex);
+    return urlOrigin != location.origin;
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
 };
 
 //+++++++++++++++++++++++++something about async begin+++++++++++++++++++++++++++++++
@@ -226,7 +261,11 @@ cc.AsyncPool = function(srcObj, limit, iterator, onEnd, target){
 
     self._handleItem = function(){
         var self = this;
+<<<<<<< HEAD
         if(self._pool.length === 0 || self._workingSize >= self._limit)
+=======
+        if(self._pool.length == 0 || self._workingSize >= self._limit)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             return;                                                         //return directly if the array's length = 0 or the working size great equal limit number
 
         var item = self._pool.shift();
@@ -248,7 +287,11 @@ cc.AsyncPool = function(srcObj, limit, iterator, onEnd, target){
 
                 var arr = Array.prototype.slice.call(arguments, 1);
                 self._results[this.index] = arr[0];
+<<<<<<< HEAD
                 if (self.finishedSize === self.size) {
+=======
+                if (self.finishedSize == self.size) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                     if (self._onEnd)
                         self._onEnd.call(self._onEndTarget, null, self._results);
                     return;
@@ -260,7 +303,11 @@ cc.AsyncPool = function(srcObj, limit, iterator, onEnd, target){
 
     self.flow = function(){
         var self = this;
+<<<<<<< HEAD
         if(self._pool.length === 0) {
+=======
+        if(self._pool.length == 0) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             if(self._onEnd)
                 self._onEnd.call(self._onEndTarget, null, []);
                 return;
@@ -318,7 +365,11 @@ cc.async = /** @lends cc.async# */{
             function (func, index, cb1) {
                 args.push(function (err) {
                     args = Array.prototype.slice.call(arguments, 1);
+<<<<<<< HEAD
                     if(tasks.length - 1 === index) lastResults = lastResults.concat(args);//while the last task
+=======
+                    if(tasks.length - 1 == index) lastResults = lastResults.concat(args);//while the last task
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                     cb1.apply(null, arguments);
                 });
                 func.apply(target, args);
@@ -343,7 +394,11 @@ cc.async = /** @lends cc.async# */{
      */
     map : function(tasks, iterator, callback, target){
         var locIterator = iterator;
+<<<<<<< HEAD
         if(typeof(iterator) === "object"){
+=======
+        if(typeof(iterator) == "object"){
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             callback = iterator.cb;
             target = iterator.iteratorTarget;
             locIterator = iterator.iterator;
@@ -388,7 +443,11 @@ cc.path = /** @lends cc.path# */{
         var l = arguments.length;
         var result = "";
         for (var i = 0; i < l; i++) {
+<<<<<<< HEAD
             result = (result + (result === "" ? "" : "/") + arguments[i]).replace(/(\/|\\\\)$/, "");
+=======
+            result = (result + (result == "" ? "" : "/") + arguments[i]).replace(/(\/|\\\\)$/, "");
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         }
         return result;
     },
@@ -441,7 +500,11 @@ cc.path = /** @lends cc.path# */{
         var result = reg.exec(pathStr.replace(/(\/|\\\\)$/, ""));
         if (!result) return null;
         var baseName = result[2];
+<<<<<<< HEAD
         if (extname && pathStr.substring(pathStr.length - extname.length).toLowerCase() === extname.toLowerCase())
+=======
+        if (extname && pathStr.substring(pathStr.length - extname.length).toLowerCase() == extname.toLowerCase())
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             return baseName.substring(0, baseName.length - extname.length);
         return baseName;
     },
@@ -499,7 +562,11 @@ cc.path = /** @lends cc.path# */{
      * @returns {string}
      */
     changeBasename: function (pathStr, basename, isSameExt) {
+<<<<<<< HEAD
         if (basename.indexOf(".") === 0) return this.changeExtname(pathStr, basename);
+=======
+        if (basename.indexOf(".") == 0) return this.changeExtname(pathStr, basename);
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         var index = pathStr.indexOf("?");
         var tempStr = "";
         var ext = isSameExt ? this.extname(pathStr) : "";
@@ -545,7 +612,11 @@ cc.loader = /** @lends cc.loader# */{
         if (args.length === 1) {
             results[1] = a0 instanceof Array ? a0 : [a0];
         } else if (args.length === 2) {
+<<<<<<< HEAD
             if (typeof a1 === "function") {
+=======
+            if (typeof a1 == "function") {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                 results[1] = a0 instanceof Array ? a0 : [a0];
                 results[2] = a1;
             } else {
@@ -603,6 +674,7 @@ cc.loader = /** @lends cc.loader# */{
     _createScript: function (jsPath, isAsync, cb) {
         var d = document, self = this, s = cc.newElement('script');
         s.async = isAsync;
+<<<<<<< HEAD
         self._jsCache[jsPath] = true;
         if(cc.game.config["noCache"] && typeof jsPath === "string"){
             if(self._noCacheRex.test(jsPath))
@@ -612,6 +684,10 @@ cc.loader = /** @lends cc.loader# */{
         }else{
             s.src = jsPath;
         }
+=======
+        s.src = jsPath;
+        self._jsCache[jsPath] = true;
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         cc._addEventListener(s, 'load', function () {
             s.parentNode.removeChild(s);
             this.removeEventListener('load', arguments.callee, false);
@@ -671,14 +747,24 @@ cc.loader = /** @lends cc.loader# */{
                 // IE-specific logic here
                 xhr.setRequestHeader("Accept-Charset", "utf-8");
                 xhr.onreadystatechange = function () {
+<<<<<<< HEAD
                     if(xhr.readyState === 4)
                         xhr.status === 200 ? cb(null, xhr.responseText) : cb(errInfo);
+=======
+                    if(xhr.readyState == 4)
+                        xhr.status == 200 ? cb(null, xhr.responseText) : cb(errInfo);
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                 };
             } else {
                 if (xhr.overrideMimeType) xhr.overrideMimeType("text\/plain; charset=utf-8");
                 xhr.onload = function () {
+<<<<<<< HEAD
                     if(xhr.readyState === 4)
                         xhr.status === 200 ? cb(null, xhr.responseText) : cb(errInfo);
+=======
+                    if(xhr.readyState == 4)
+                        xhr.status == 200 ? cb(null, xhr.responseText) : cb(errInfo);
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                 };
             }
             xhr.send(null);
@@ -700,7 +786,11 @@ cc.loader = /** @lends cc.loader# */{
                 if (xhr.overrideMimeType) xhr.overrideMimeType("text\/plain; charset=utf-8");
             }
             xhr.send(null);
+<<<<<<< HEAD
             if (!xhr.readyState === 4 || xhr.status !== 200) {
+=======
+            if (!xhr.readyState == 4 || xhr.status != 200) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                 return null;
             }
             return xhr.responseText;
@@ -720,8 +810,13 @@ cc.loader = /** @lends cc.loader# */{
             if (arrayBuffer) {
                 window.msg = arrayBuffer;
             }
+<<<<<<< HEAD
             if(xhr.readyState === 4)
                 xhr.status === 200 ? cb(null, xhr.response) : cb("load " + url + " failed!");
+=======
+            if(xhr.readyState == 4)
+                xhr.status == 200 ? cb(null, xhr.response) : cb("load " + url + " failed!");
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         };
 
         xhr.send(null);
@@ -766,7 +861,11 @@ cc.loader = /** @lends cc.loader# */{
             isCrossOrigin: true
         };
         if (callback !== undefined)
+<<<<<<< HEAD
             opt.isCrossOrigin = option.isCrossOrigin === null ? opt.isCrossOrigin : option.isCrossOrigin;
+=======
+            opt.isCrossOrigin = option.isCrossOrigin == null ? opt.isCrossOrigin : option.isCrossOrigin;
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         else if (option !== undefined)
             callback = option;
 
@@ -777,7 +876,11 @@ cc.loader = /** @lends cc.loader# */{
         }
 
         img = new Image();
+<<<<<<< HEAD
         if (opt.isCrossOrigin && location.origin !== "file://")
+=======
+        if (opt.isCrossOrigin && location.origin != "file://")
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             img.crossOrigin = "Anonymous";
 
         var loadCallback = function () {
@@ -793,12 +896,20 @@ cc.loader = /** @lends cc.loader# */{
         var errorCallback = function () {
             this.removeEventListener('error', errorCallback, false);
 
+<<<<<<< HEAD
             if(img.crossOrigin && img.crossOrigin.toLowerCase() === "anonymous"){
+=======
+            if(img.crossOrigin && img.crossOrigin.toLowerCase() == "anonymous"){
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                 opt.isCrossOrigin = false;
                 self.release(url);
                 cc.loader.loadImg(url, opt, callback);
             }else{
+<<<<<<< HEAD
                 typeof callback === "function" && callback("load image failed");
+=======
+                typeof callback == "function" && callback("load image failed");
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             }
         };
 
@@ -840,12 +951,15 @@ cc.loader = /** @lends cc.loader# */{
         }
         var basePath = loader.getBasePath ? loader.getBasePath() : self.resPath;
         var realUrl = self.getUrl(basePath, url);
+<<<<<<< HEAD
         if(cc.game.config["noCache"] && typeof realUrl === "string"){
             if(self._noCacheRex.test(realUrl))
                 realUrl += "&_t=" + (new Date() - 0);
             else
                 realUrl += "?_t=" + (new Date() - 0);
         }
+=======
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         loader.load(realUrl, url, item, function (err, data) {
             if (err) {
                 cc.log(err);
@@ -858,7 +972,10 @@ cc.loader = /** @lends cc.loader# */{
             }
         });
     },
+<<<<<<< HEAD
     _noCacheRex: /\?/,
+=======
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
 
     /**
      * Get url with basePath.
@@ -898,20 +1015,36 @@ cc.loader = /** @lends cc.loader# */{
     load : function(resources, option, loadCallback){
         var self = this;
         var len = arguments.length;
+<<<<<<< HEAD
         if(len === 0)
             throw "arguments error!";
 
         if(len === 3){
             if(typeof option === "function"){
                 if(typeof loadCallback === "function")
+=======
+        if(len == 0)
+            throw "arguments error!";
+
+        if(len == 3){
+            if(typeof option == "function"){
+                if(typeof loadCallback == "function")
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                     option = {trigger : option, cb : loadCallback };
                 else
                     option = { cb : option, cbTarget : loadCallback};
             }
+<<<<<<< HEAD
         }else if(len === 2){
             if(typeof option === "function")
                 option = {cb : option};
         }else if(len === 1){
+=======
+        }else if(len == 2){
+            if(typeof option == "function")
+                option = {cb : option};
+        }else if(len == 1){
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             option = {};
         }
 
@@ -992,7 +1125,11 @@ cc.loader = /** @lends cc.loader# */{
     register: function (extNames, loader) {
         if (!extNames || !loader) return;
         var self = this;
+<<<<<<< HEAD
         if (typeof extNames === "string")
+=======
+        if (typeof extNames == "string")
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             return this._register[extNames.trim().toLowerCase()] = loader;
         for (var i = 0, li = extNames.length; i < li; i++) {
             self._register["." + extNames[i].trim().toLowerCase()] = loader;
@@ -1047,7 +1184,11 @@ cc.formatStr = function(){
 
     var str = args[0];
     var needToFormat = true;
+<<<<<<< HEAD
     if(typeof str === "object"){
+=======
+    if(typeof str == "object"){
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         needToFormat = false;
     }
     for(var i = 1; i < l; ++i){
@@ -1055,7 +1196,11 @@ cc.formatStr = function(){
         if(needToFormat){
             while(true){
                 var result = null;
+<<<<<<< HEAD
                 if(typeof arg === "number"){
+=======
+                if(typeof arg == "number"){
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                     result = str.match(/(%d)|(%s)/);
                     if(result){
                         str = str.replace(/(%d)|(%s)/, arg);
@@ -1321,6 +1466,7 @@ cc._initSys = function (config, CONFIG_KEY) {
 
     /**
      * @memberof cc.sys
+<<<<<<< HEAD
      * @name OS_IOS
      * @constant
      * @type {string}
@@ -1335,6 +1481,8 @@ cc._initSys = function (config, CONFIG_KEY) {
     sys.OS_ANDROID = "Android";
     /**
      * @memberof cc.sys
+=======
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
      * @name OS_WINDOWS
      * @constant
      * @type {string}
@@ -1342,6 +1490,7 @@ cc._initSys = function (config, CONFIG_KEY) {
     sys.OS_WINDOWS = "Windows";
     /**
      * @memberof cc.sys
+<<<<<<< HEAD
      * @name OS_MARMALADE
      * @constant
      * @type {string}
@@ -1389,6 +1538,41 @@ cc._initSys = function (config, CONFIG_KEY) {
      * @type {string}
      */
     sys.OS_WINRT = "WINRT";
+=======
+     * @name OS_IOS
+     * @constant
+     * @type {string}
+     */
+    sys.OS_IOS = "iOS";
+    /**
+     * @memberof cc.sys
+     * @name OS_OSX
+     * @constant
+     * @type {string}
+     */
+    sys.OS_OSX = "OS X";
+    /**
+     * @memberof cc.sys
+     * @name OS_UNIX
+     * @constant
+     * @type {string}
+     */
+    sys.OS_UNIX = "UNIX";
+    /**
+     * @memberof cc.sys
+     * @name OS_LINUX
+     * @constant
+     * @type {string}
+     */
+    sys.OS_LINUX = "Linux";
+    /**
+     * @memberof cc.sys
+     * @name OS_ANDROID
+     * @constant
+     * @type {string}
+     */
+    sys.OS_ANDROID = "Android";
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
     /**
      * @memberof cc.sys
      * @name OS_UNKNOWN
@@ -1399,51 +1583,91 @@ cc._initSys = function (config, CONFIG_KEY) {
 
     /**
      * @memberof cc.sys
+<<<<<<< HEAD
      * @name UNKNOWN
+=======
+     * @name WINDOWS
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
      * @constant
      * @default
      * @type {Number}
      */
+<<<<<<< HEAD
     sys.UNKNOWN = 0;
     /**
      * @memberof cc.sys
      * @name IOS
+=======
+    sys.WINDOWS = 0;
+    /**
+     * @memberof cc.sys
+     * @name LINUX
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
      * @constant
      * @default
      * @type {Number}
      */
+<<<<<<< HEAD
     sys.IOS = 1;
     /**
      * @memberof cc.sys
      * @name ANDROID
+=======
+    sys.LINUX = 1;
+    /**
+     * @memberof cc.sys
+     * @name MACOS
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
      * @constant
      * @default
      * @type {Number}
      */
+<<<<<<< HEAD
     sys.ANDROID = 2;
     /**
      * @memberof cc.sys
      * @name WIN32
+=======
+    sys.MACOS = 2;
+    /**
+     * @memberof cc.sys
+     * @name ANDROID
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
      * @constant
      * @default
      * @type {Number}
      */
+<<<<<<< HEAD
     sys.WIN32 = 3;
     /**
      * @memberof cc.sys
      * @name MARMALADE
+=======
+    sys.ANDROID = 3;
+    /**
+     * @memberof cc.sys
+     * @name IPHONE
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
      * @constant
      * @default
      * @type {Number}
      */
+<<<<<<< HEAD
     sys.MARMALADE = 4;
     /**
      * @memberof cc.sys
      * @name LINUX
+=======
+    sys.IPHONE = 4;
+    /**
+     * @memberof cc.sys
+     * @name IPAD
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
      * @constant
      * @default
      * @type {Number}
      */
+<<<<<<< HEAD
     sys.LINUX = 5;
     /**
      * @memberof cc.sys
@@ -1453,6 +1677,9 @@ cc._initSys = function (config, CONFIG_KEY) {
      * @type {Number}
      */
     sys.BADA = 6;
+=======
+    sys.IPAD = 5;
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
     /**
      * @memberof cc.sys
      * @name BLACKBERRY
@@ -1460,6 +1687,7 @@ cc._initSys = function (config, CONFIG_KEY) {
      * @default
      * @type {Number}
      */
+<<<<<<< HEAD
     sys.BLACKBERRY = 7;
     /**
      * @memberof cc.sys
@@ -1469,6 +1697,9 @@ cc._initSys = function (config, CONFIG_KEY) {
      * @type {Number}
      */
     sys.MACOS = 8;
+=======
+    sys.BLACKBERRY = 6;
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
     /**
      * @memberof cc.sys
      * @name NACL
@@ -1476,7 +1707,11 @@ cc._initSys = function (config, CONFIG_KEY) {
      * @default
      * @type {Number}
      */
+<<<<<<< HEAD
     sys.NACL = 9;
+=======
+    sys.NACL = 7;
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
     /**
      * @memberof cc.sys
      * @name EMSCRIPTEN
@@ -1484,7 +1719,11 @@ cc._initSys = function (config, CONFIG_KEY) {
      * @default
      * @type {Number}
      */
+<<<<<<< HEAD
     sys.EMSCRIPTEN = 10;
+=======
+    sys.EMSCRIPTEN = 8;
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
     /**
      * @memberof cc.sys
      * @name TIZEN
@@ -1492,15 +1731,26 @@ cc._initSys = function (config, CONFIG_KEY) {
      * @default
      * @type {Number}
      */
+<<<<<<< HEAD
     sys.TIZEN = 11;
     /**
      * @memberof cc.sys
      * @name QT5
+=======
+    sys.TIZEN = 9;
+    /**
+     * @memberof cc.sys
+     * @name WINRT
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
      * @constant
      * @default
      * @type {Number}
      */
+<<<<<<< HEAD
     sys.QT5 = 12;
+=======
+    sys.WINRT = 10;
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
     /**
      * @memberof cc.sys
      * @name WP8
@@ -1508,6 +1758,7 @@ cc._initSys = function (config, CONFIG_KEY) {
      * @default
      * @type {Number}
      */
+<<<<<<< HEAD
     sys.WP8 = 13;
     /**
      * @memberof cc.sys
@@ -1517,6 +1768,9 @@ cc._initSys = function (config, CONFIG_KEY) {
      * @type {Number}
      */
     sys.WINRT = 14;
+=======
+    sys.WP8 = 11;
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
     /**
      * @memberof cc.sys
      * @name MOBILE_BROWSER
@@ -1563,6 +1817,16 @@ cc._initSys = function (config, CONFIG_KEY) {
      */
     sys.isNative = false;
 
+<<<<<<< HEAD
+=======
+    var browserSupportWebGL = [sys.BROWSER_TYPE_BAIDU, sys.BROWSER_TYPE_OPERA, sys.BROWSER_TYPE_FIREFOX, sys.BROWSER_TYPE_CHROME, sys.BROWSER_TYPE_SAFARI];
+    var osSupportWebGL = [sys.OS_IOS, sys.OS_WINDOWS, sys.OS_OSX, sys.OS_LINUX];
+    var multipleAudioWhiteList = [
+        sys.BROWSER_TYPE_BAIDU, sys.BROWSER_TYPE_OPERA, sys.BROWSER_TYPE_FIREFOX, sys.BROWSER_TYPE_CHROME, sys.BROWSER_TYPE_BAIDU_APP,
+        sys.BROWSER_TYPE_SAFARI, sys.BROWSER_TYPE_UC, sys.BROWSER_TYPE_QQ, sys.BROWSER_TYPE_MOBILE_QQ, sys.BROWSER_TYPE_IE
+    ];
+
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
     var win = window, nav = win.navigator, doc = document, docEle = doc.documentElement;
     var ua = nav.userAgent.toLowerCase();
 
@@ -1572,7 +1836,11 @@ cc._initSys = function (config, CONFIG_KEY) {
      * @name isMobile
      * @type {Boolean}
      */
+<<<<<<< HEAD
     sys.isMobile = ua.indexOf('mobile') !== -1 || ua.indexOf('android') !== -1;
+=======
+    sys.isMobile = ua.indexOf('mobile') != -1 || ua.indexOf('android') != -1;
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
 
     /**
      * Indicate the running platform
@@ -1599,6 +1867,7 @@ cc._initSys = function (config, CONFIG_KEY) {
         || ua.match(/chrome|safari/i);
     if (browserTypes && browserTypes.length > 0) {
         browserType = browserTypes[0];
+<<<<<<< HEAD
         if (browserType === 'micromessenger') {
             browserType = sys.BROWSER_TYPE_WECHAT;
         } else if (browserType === "safari" && (ua.match(/android.*applewebkit/)))
@@ -1607,6 +1876,14 @@ cc._initSys = function (config, CONFIG_KEY) {
         else if (browserType === "360 aphone") browserType = sys.BROWSER_TYPE_360;
     }else if(ua.indexOf("iphone") && ua.indexOf("mobile")){
         browserType = "safari";
+=======
+        if (browserType == 'micromessenger') {
+            browserType = sys.BROWSER_TYPE_WECHAT;
+        } else if (browserType === "safari" && (ua.match(/android.*applewebkit/)))
+            browserType = sys.BROWSER_TYPE_ANDROID;
+        else if (browserType == "trident") browserType = sys.BROWSER_TYPE_IE;
+        else if (browserType == "360 aphone") browserType = sys.BROWSER_TYPE_360;
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
     }
     /**
      * Indicate the running browser type
@@ -1620,12 +1897,21 @@ cc._initSys = function (config, CONFIG_KEY) {
     var iOS = ( ua.match(/(iPad|iPhone|iPod)/i) ? true : false );
     var isAndroid = ua.match(/android/i) || nav.platform.match(/android/i) ? true : false;
     var osName = sys.OS_UNKNOWN;
+<<<<<<< HEAD
     if (nav.appVersion.indexOf("Win") !== -1) osName = sys.OS_WINDOWS;
     else if (iOS) osName = sys.OS_IOS;
     else if (nav.appVersion.indexOf("Mac") !== -1) osName = sys.OS_OSX;
     else if (nav.appVersion.indexOf("X11") !== -1 && nav.appVersion.indexOf("Linux") === -1) osName = sys.OS_UNIX;
     else if (isAndroid) osName = sys.OS_ANDROID;
     else if (nav.appVersion.indexOf("Linux") !== -1) osName = sys.OS_LINUX;
+=======
+    if (nav.appVersion.indexOf("Win") != -1) osName = sys.OS_WINDOWS;
+    else if (iOS) osName = sys.OS_IOS;
+    else if (nav.appVersion.indexOf("Mac") != -1) osName = sys.OS_OSX;
+    else if (nav.appVersion.indexOf("X11") != -1 && nav.appVersion.indexOf("Linux") == -1) osName = sys.OS_UNIX;
+    else if (isAndroid) osName = sys.OS_ANDROID;
+    else if (nav.appVersion.indexOf("Linux") != -1) osName = sys.OS_LINUX;
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
 
     /**
      * Indicate the running os name
@@ -1635,15 +1921,19 @@ cc._initSys = function (config, CONFIG_KEY) {
      */
     sys.os = osName;
 
+<<<<<<< HEAD
     var multipleAudioWhiteList = [
         sys.BROWSER_TYPE_BAIDU, sys.BROWSER_TYPE_OPERA, sys.BROWSER_TYPE_FIREFOX, sys.BROWSER_TYPE_CHROME, sys.BROWSER_TYPE_BAIDU_APP,
         sys.BROWSER_TYPE_SAFARI, sys.BROWSER_TYPE_UC, sys.BROWSER_TYPE_QQ, sys.BROWSER_TYPE_MOBILE_QQ, sys.BROWSER_TYPE_IE
     ];
 
+=======
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
     sys._supportMultipleAudio = multipleAudioWhiteList.indexOf(sys.browserType) > -1;
 
 
     //++++++++++++++++++something about cc._renderTYpe and cc._supportRender begin++++++++++++++++++++++++++++
+<<<<<<< HEAD
 
     (function(sys, config){
         var userRenderMode = config[CONFIG_KEY.renderMode] - 0;
@@ -1673,6 +1963,16 @@ cc._initSys = function (config, CONFIG_KEY) {
                 cc._supportRender = true;
             } catch (e) {}
     })(sys, config);
+=======
+    var userRenderMode = parseInt(config[CONFIG_KEY.renderMode]);
+    var renderType = cc._RENDER_TYPE_WEBGL;
+    var tempCanvas = cc.newElement("Canvas");
+    cc._supportRender = true;
+    var notSupportGL = !window.WebGLRenderingContext || browserSupportWebGL.indexOf(sys.browserType) == -1 || osSupportWebGL.indexOf(sys.os) == -1;
+    if (userRenderMode === 1 || (userRenderMode === 0 && notSupportGL) || (location.origin == "file://")) {
+        renderType = cc._RENDER_TYPE_CANVAS;
+    }
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
 
     sys._canUseCanvasNewBlendModes = function(){
         var canvas = document.createElement('canvas');
@@ -1698,6 +1998,25 @@ cc._initSys = function (config, CONFIG_KEY) {
     //Whether or not the Canvas BlendModes are supported.
     sys._supportCanvasNewBlendModes = sys._canUseCanvasNewBlendModes();
 
+<<<<<<< HEAD
+=======
+    if (renderType == cc._RENDER_TYPE_WEBGL) {
+        if (!win.WebGLRenderingContext
+            || !cc.create3DContext(tempCanvas, {'stencil': true, 'preserveDrawingBuffer': true })) {
+            if (userRenderMode == 0) renderType = cc._RENDER_TYPE_CANVAS;
+            else cc._supportRender = false;
+        }
+    }
+
+    if (renderType == cc._RENDER_TYPE_CANVAS) {
+        try {
+            tempCanvas.getContext("2d");
+        } catch (e) {
+            cc._supportRender = false;
+        }
+    }
+    cc._renderType = renderType;
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
     //++++++++++++++++++something about cc._renderType and cc._supportRender end++++++++++++++++++++++++++++++
 
     // check if browser supports Web Audio
@@ -1728,7 +2047,11 @@ cc._initSys = function (config, CONFIG_KEY) {
     }
 
     var capabilities = sys.capabilities = {"canvas": true};
+<<<<<<< HEAD
     if (cc._renderType === cc._RENDER_TYPE_WEBGL)
+=======
+    if (cc._renderType == cc._RENDER_TYPE_WEBGL)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         capabilities["opengl"] = true;
     if (docEle['ontouchstart'] !== undefined || doc['ontouchstart'] !== undefined || nav.msPointerEnabled)
         capabilities["touches"] = true;
@@ -1781,6 +2104,7 @@ cc._initSys = function (config, CONFIG_KEY) {
     };
 
     /**
+<<<<<<< HEAD
      * Check whether an object is valid,
      * In web engine, it will return true if the object exist
      * In native engine, it will return true if the JS object and the correspond native object are both valid
@@ -1796,6 +2120,8 @@ cc._initSys = function (config, CONFIG_KEY) {
     };
 
     /**
+=======
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
      * Dump system informations
      * @memberof cc.sys
      * @name dump
@@ -1812,6 +2138,7 @@ cc._initSys = function (config, CONFIG_KEY) {
         str += "platform : " + self.platform + "\r\n";
         cc.log(str);
     }
+<<<<<<< HEAD
 
     /**
      * Open a url in browser
@@ -1822,6 +2149,8 @@ cc._initSys = function (config, CONFIG_KEY) {
     sys.openURL = function(url){
         window.open(url);
     }
+=======
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
 };
 
 //+++++++++++++++++++++++++something about sys end+++++++++++++++++++++++++++++
@@ -1915,7 +2244,11 @@ cc._setup = function (el, width, height) {
 
     cc.game._setAnimFrame();
 
+<<<<<<< HEAD
     if (element.tagName === "CANVAS") {
+=======
+    if (element.tagName == "CANVAS") {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         width = width || element.width;
         height = height || element.height;
 
@@ -1926,7 +2259,11 @@ cc._setup = function (el, width, height) {
         localCanvas.appendTo(localContainer);
         localContainer.setAttribute('id', 'Cocos2dGameContainer');
     } else {//we must make a new canvas and place into this element
+<<<<<<< HEAD
         if (element.tagName !== "DIV") {
+=======
+        if (element.tagName != "DIV") {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             cc.log("Warning: target element is not a DIV or CANVAS");
         }
         width = width || element.clientWidth;
@@ -1950,13 +2287,21 @@ cc._setup = function (el, width, height) {
     localConStyle.overflow = 'hidden';
     localContainer.top = '100%';
 
+<<<<<<< HEAD
     if (cc._renderType === cc._RENDER_TYPE_WEBGL)
+=======
+    if (cc._renderType == cc._RENDER_TYPE_WEBGL)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         cc._renderContext = cc.webglContext = cc.create3DContext(localCanvas, {
             'stencil': true,
             'preserveDrawingBuffer': true,
             'antialias': !cc.sys.isMobile,
+<<<<<<< HEAD
             'alpha': false
         });
+=======
+            'alpha': false});
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
     if (cc._renderContext) {
         win.gl = cc._renderContext; // global variable declared in CCMacro.js
         cc._drawingUtil = new cc.DrawingPrimitiveWebGL(cc._renderContext);
@@ -2113,7 +2458,11 @@ cc.game = /** @lends cc.game# */{
     _setAnimFrame: function () {
         this._lastTime = new Date();
         this._frameTime = 1000 / cc.game.config[cc.game.CONFIG_KEY.frameRate];
+<<<<<<< HEAD
         if((cc.sys.os === cc.sys.OS_IOS && cc.sys.browserType === cc.sys.BROWSER_TYPE_WECHAT) || cc.game.config[cc.game.CONFIG_KEY.frameRate] !== 60) {
+=======
+        if((cc.sys.os === cc.sys.OS_IOS && cc.sys.browserType === cc.sys.BROWSER_TYPE_WECHAT) || cc.game.config[cc.game.CONFIG_KEY.frameRate] != 60) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             window.requestAnimFrame = this._stTime;
             window.cancelAnimationFrame = this._ctTime;
         }
@@ -2234,7 +2583,11 @@ cc.game = /** @lends cc.game# */{
                 var cocos_script = document.getElementsByTagName('script');
                 for(var i=0;i<cocos_script.length;i++){
                     var _t = cocos_script[i].getAttribute('cocos');
+<<<<<<< HEAD
                     if(_t === '' || _t){break;}
+=======
+                    if(_t == '' || _t){break;}
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                 }
                 var _src, txt, _resPath;
                 if(i < cocos_script.length){
@@ -2277,7 +2630,11 @@ cc.game = /** @lends cc.game# */{
             if (!extname) {
                 var arr = this._getJsListOfModule(moduleMap, item, dir);
                 if (arr) jsList = jsList.concat(arr);
+<<<<<<< HEAD
             } else if (extname.toLowerCase() === ".js") jsList.push(ccPath.join(dir, item));
+=======
+            } else if (extname.toLowerCase() == ".js") jsList.push(ccPath.join(dir, item));
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             jsAddedCache[item] = 1;
         }
         return jsList;
@@ -2310,7 +2667,11 @@ cc.game = /** @lends cc.game# */{
                 var modules = config["modules"] || [];
                 var moduleMap = modulesJson["module"];
                 var newJsList = [];
+<<<<<<< HEAD
                 if (cc._renderType === cc._RENDER_TYPE_WEBGL) modules.splice(0, 0, "shaders");
+=======
+                if (cc._renderType == cc._RENDER_TYPE_WEBGL) modules.splice(0, 0, "shaders");
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                 else if (modules.indexOf("core") < 0) modules.splice(0, 0, "core");
                 for (var i = 0, li = modules.length; i < li; i++) {
                     var arr = self._getJsListOfModule(moduleMap, modules[i], engineDir);

@@ -26,6 +26,7 @@
  SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
+<<<<<<< HEAD
 (function(cc){
     cc.math.Vec2 = function (x, y) {
         if(y === undefined){
@@ -111,3 +112,84 @@
     };
 })(cc);
 
+=======
+cc.kmVec2 = function (x, y) {
+    this.x = x || 0;
+    this.y = y || 0;
+};
+
+cc.kmVec2Fill = function (pOut, x, y) {
+    pOut.x = x;
+    pOut.y = y;
+    return pOut;
+};
+
+cc.kmVec2Length = function (pIn) {
+    return Math.sqrt(cc.kmSQR(pIn.x) + cc.kmSQR(pIn.y));
+};
+
+cc.kmVec2LengthSq = function (pIn) {
+    return cc.kmSQR(pIn.x) + cc.kmSQR(pIn.y);
+};
+
+cc.kmVec2Normalize = function (pOut, pIn) {
+    var l = 1.0 / cc.kmVec2Length(pIn);
+
+    var v = new cc.kmVec2();
+    v.x = pIn.x * l;
+    v.y = pIn.y * l;
+
+    pOut.x = v.x;
+    pOut.y = v.y;
+
+    return pOut;
+};
+
+cc.kmVec2Add = function (pOut, pV1, pV2) {
+    pOut.x = pV1.x + pV2.x;
+    pOut.y = pV1.y + pV2.y;
+
+    return pOut
+};
+
+cc.kmVec2Dot = function (pV1, pV2) {
+    return pV1.x * pV2.x + pV1.y * pV2.y;
+};
+
+cc.kmVec2Subtract = function (pOut, pV1, pV2) {
+    pOut.x = pV1.x - pV2.x;
+    pOut.y = pV1.y - pV2.y;
+
+    return pOut;
+};
+
+cc.kmVec2Transform = function (pOut, pV, pM) {
+    var v= new cc.kmVec2();
+
+    v.x = pV.x * pM.mat[0] + pV.y * pM.mat[3] + pM.mat[6];
+    v.y = pV.x * pM.mat[1] + pV.y * pM.mat[4] + pM.mat[7];
+
+    pOut.x = v.x;
+    pOut.y = v.y;
+
+    return pOut;
+};
+
+cc.kmVec2TransformCoord = function (pOut, pV, pM) {
+    return null;
+};
+
+cc.kmVec2Scale = function (pOut, pIn, s) {
+    pOut.x = pIn.x * s;
+    pOut.y = pIn.y * s;
+
+    return pOut;
+};
+
+cc.kmVec2AreEqual = function (p1, p2) {
+    return (
+        (p1.x < p2.x + cc.kmEpsilon && p1.x > p2.x - cc.kmEpsilon) &&
+            (p1.y < p2.y + cc.kmEpsilon && p1.y > p2.y - cc.kmEpsilon)
+        );
+};
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b

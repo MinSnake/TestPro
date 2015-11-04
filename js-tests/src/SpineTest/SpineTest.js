@@ -26,6 +26,7 @@
 
 var sp = sp || {};
 
+<<<<<<< HEAD
 var spineSceneIdx = -1;
 var SpineTestScene = TestScene.extend({
     runThisTest:function () {
@@ -75,18 +76,68 @@ var SpineTestLayer = BaseTestLayer.extend({
 });
 
 var SpineTestLayerNormal = SpineTestLayer.extend({
+=======
+var ANIMATION_TYPE = {
+    ANIMATION_START:      0,
+    ANIMATION_END:        1,
+    ANIMATION_COMPLETE:   2,
+    ANIMATION_EVENT:      3
+};
+
+SpineTestScene = TestScene.extend({
+
+    runThisTest:function () {
+        var layer = new SpineTest();
+        this.addChild(layer);
+
+        director.runScene(this);
+    }
+});
+
+touchcount = 0;
+
+var SpineTest = BaseTestLayer.extend({
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
     _spineboy:null,
     _debugMode: 0,
     _flipped: false,
     ctor:function () {
         this._super(cc.color(0,0,0,255), cc.color(98,99,117,255));
 
+<<<<<<< HEAD
+=======
+        cc.eventManager.addListener({
+            event: cc.EventListener.TOUCH_ALL_AT_ONCE,
+            onTouchesBegan: function(touches, event){
+                var target = event.getCurrentTarget();
+                target._debugMode ++;
+                target._debugMode = target._debugMode % 3;
+                if (target._debugMode == 0) {
+                    target._spineboy.setDebugBones(false);
+                    target._spineboy.setDebugSolots(false);
+                    return;
+                }
+
+                if (target._debugMode == 1) {
+                    target._spineboy.setDebugBones(true);
+                    target._spineboy.setDebugSolots(false);
+                    return;
+                }
+
+                if (target._debugMode == 2) {
+                    target._spineboy.setDebugBones(false);
+                    target._spineboy.setDebugSolots(true);
+                }
+            }
+        }, this);
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         var size = director.getWinSize();
 
         /////////////////////////////
         // Make Spine's Animated skeleton Node
         // You need 'json + atlas + image' resource files to make it.
         // No JS binding for spine-c in this version. So, only file loading is supported.
+<<<<<<< HEAD
         var spineBoy = new sp.SkeletonAnimation('res/skeletons/spineboy.json', 'res/skeletons/spineboy.atlas');
         spineBoy.setPosition(cc.p(size.width / 2, size.height / 2 - 150));
         spineBoy.setMix('walk', 'jump', 0.2);
@@ -155,6 +206,33 @@ var SpineTestLayerNormal = SpineTestLayer.extend({
         this._spineboy.setDebugSlotsEnabled(!this._spineboy.getDebugSlotsEnabled());
     },
 
+=======
+        var SpineBoyAnimation = sp.SkeletonAnimation.extend({
+            ctor: function() {
+                this._super('res/skeletons/spineboy.json', 'res/skeletons/spineboy.atlas');
+                cc.log("Extended SkeletonAnimation");
+            }
+        });
+        
+        var spineBoy = new SpineBoyAnimation();
+        spineBoy.setPosition(cc.p(size.width / 2, size.height / 2 - 150));
+        spineBoy.setAnimation(0, 'walk', true);
+        spineBoy.setMix('walk', 'jump', 0.2);
+        spineBoy.setMix('jump', 'walk', 0.4);
+        spineBoy.setAnimationListener(this, this.animationStateEvent);
+        spineBoy.setScale(0.5);
+        this.addChild(spineBoy, 4);
+        this._spineboy = spineBoy;
+    },
+    onBackCallback:function (sender) {
+    },
+    onRestartCallback:function (sender) {
+    },
+    onNextCallback:function (sender) {
+        touchcount++;
+        this._spineboy.setAnimation(0, ['walk', 'jump','run', 'shoot'][touchcount % 4], true);
+    },
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
     subtitle:function () {
         return "Spine test";
     },
@@ -165,6 +243,7 @@ var SpineTestLayerNormal = SpineTestLayer.extend({
     animationStateEvent: function(obj, trackIndex, type, event, loopCount) {
         var entry = this._spineboy.getCurrent();
         var animationName = (entry && entry.animation) ? entry.animation.name : 0;
+<<<<<<< HEAD
         switch(type) {
             case sp.ANIMATION_EVENT_TYPE.START:
                 cc.log(trackIndex + " start: " + animationName);
@@ -176,6 +255,21 @@ var SpineTestLayerNormal = SpineTestLayer.extend({
                 cc.log(trackIndex + " event: " + animationName);
                 break;
             case sp.ANIMATION_EVENT_TYPE.COMPLETE:
+=======
+
+        switch(type)
+        {
+            case ANIMATION_TYPE.ANIMATION_START:
+                cc.log(trackIndex + " start: " + animationName);
+                break;
+            case ANIMATION_TYPE.ANIMATION_END:
+                cc.log(trackIndex + " end:" + animationName);
+                break;
+            case ANIMATION_TYPE.ANIMATION_EVENT:
+                cc.log(trackIndex + " event: " + animationName);
+                break;
+            case ANIMATION_TYPE.ANIMATION_COMPLETE:
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                 cc.log(trackIndex + " complete: " + animationName + "," + loopCount);
                 if(this._flipped){
                     this._flipped = false;
@@ -197,6 +291,7 @@ var SpineTestLayerNormal = SpineTestLayer.extend({
     getTestNumber:function() {
         return 0;
     }
+<<<<<<< HEAD
 });
 
 var SpineTestLayerFFD = SpineTestLayer.extend({
@@ -278,3 +373,7 @@ if(cc.sys.isNative){
     SpineTestScene.testLayers.push(SpineTestPerformanceLayer);
 }
 
+=======
+
+});
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b

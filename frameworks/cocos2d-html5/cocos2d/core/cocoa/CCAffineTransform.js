@@ -66,6 +66,7 @@ cc.affineTransformMake = function (a, b, c, d, tx, ty) {
  * Apply the affine transformation on a point.
  * @function
  * 
+<<<<<<< HEAD
  * @param {cc.Point|Number} point or x
  * @param {cc.AffineTransform|Number} transOrY transform matrix or y
  * @param {cc.AffineTransform} t transform matrix or y
@@ -86,6 +87,19 @@ cc.pointApplyAffineTransform = function (point, transOrY, t) {
 
 cc._pointApplyAffineTransform = function (x, y, t) {   //it will remove.
     return cc.pointApplyAffineTransform(x, y, t);
+=======
+ * @param {cc.Point} point
+ * @param {cc.AffineTransform} t
+ * @return {cc.Point}
+ */
+cc.pointApplyAffineTransform = function (point, t) {
+    return {x: t.a * point.x + t.c * point.y + t.tx, y: t.b * point.x + t.d * point.y + t.ty};
+};
+
+cc._pointApplyAffineTransform = function (x, y, t) {
+    return {x: t.a * x + t.c * y + t.tx,
+        y: t.b * x + t.d * y + t.ty};
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
 };
 
 /**
@@ -140,10 +154,17 @@ cc.rectApplyAffineTransform = function (rect, anAffineTransform) {
     var right = cc.rectGetMaxX(rect);
     var bottom = cc.rectGetMaxY(rect);
 
+<<<<<<< HEAD
     var topLeft = cc.pointApplyAffineTransform(left, top, anAffineTransform);
     var topRight = cc.pointApplyAffineTransform(right, top, anAffineTransform);
     var bottomLeft = cc.pointApplyAffineTransform(left, bottom, anAffineTransform);
     var bottomRight = cc.pointApplyAffineTransform(right, bottom, anAffineTransform);
+=======
+    var topLeft = cc._pointApplyAffineTransform(left, top, anAffineTransform);
+    var topRight = cc._pointApplyAffineTransform(right, top, anAffineTransform);
+    var bottomLeft = cc._pointApplyAffineTransform(left, bottom, anAffineTransform);
+    var bottomRight = cc._pointApplyAffineTransform(right, bottom, anAffineTransform);
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
 
     var minX = Math.min(topLeft.x, topRight.x, bottomLeft.x, bottomRight.x);
     var maxX = Math.max(topLeft.x, topRight.x, bottomLeft.x, bottomRight.x);
@@ -159,10 +180,17 @@ cc._rectApplyAffineTransformIn = function(rect, anAffineTransform){
     var right = cc.rectGetMaxX(rect);
     var bottom = cc.rectGetMaxY(rect);
 
+<<<<<<< HEAD
     var topLeft = cc.pointApplyAffineTransform(left, top, anAffineTransform);
     var topRight = cc.pointApplyAffineTransform(right, top, anAffineTransform);
     var bottomLeft = cc.pointApplyAffineTransform(left, bottom, anAffineTransform);
     var bottomRight = cc.pointApplyAffineTransform(right, bottom, anAffineTransform);
+=======
+    var topLeft = cc._pointApplyAffineTransform(left, top, anAffineTransform);
+    var topRight = cc._pointApplyAffineTransform(right, top, anAffineTransform);
+    var bottomLeft = cc._pointApplyAffineTransform(left, bottom, anAffineTransform);
+    var bottomRight = cc._pointApplyAffineTransform(right, bottom, anAffineTransform);
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
 
     var minX = Math.min(topLeft.x, topRight.x, bottomLeft.x, bottomRight.x);
     var maxX = Math.max(topLeft.x, topRight.x, bottomLeft.x, bottomRight.x);

@@ -70,6 +70,7 @@ ccui.RichElementText = ccui.RichElement.extend(/** @lends ccui.RichElementText# 
     _text: "",
     _fontName: "",
     _fontSize: 0,
+<<<<<<< HEAD
     /** @type cc.FontDefinition */
     _fontDefinition: null,
     /**
@@ -87,22 +88,36 @@ ccui.RichElementText = ccui.RichElement.extend(/** @lends ccui.RichElementText# 
      * Constructor of ccui.RichElementText
      * @param {Number} tag
      * @param {cc.Color|cc.FontDefinition} colorOrFontDef
+=======
+    /**
+     * Constructor of ccui.RichElementText
+     * @param {Number} tag
+     * @param {cc.Color} color
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
      * @param {Number} opacity
      * @param {String} text
      * @param {String} fontName
      * @param {Number} fontSize
      */
+<<<<<<< HEAD
     ctor: function (tag, colorOrFontDef, opacity, text, fontName, fontSize) {
+=======
+    ctor: function (tag, color, opacity, text, fontName, fontSize) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         ccui.RichElement.prototype.ctor.call(this);
         this._type = ccui.RichElement.TEXT;
         this._text = "";
         this._fontName = "";
         this._fontSize = 0;
 
+<<<<<<< HEAD
         if( colorOrFontDef && colorOrFontDef instanceof cc.FontDefinition)
             this.initWithStringAndTextDefinition(tag, text, colorOrFontDef, opacity);
         else
             fontSize && this.init(tag, colorOrFontDef, opacity, text, fontName, fontSize);
+=======
+        fontSize && this.init(tag, color, opacity, text, fontName, fontSize);
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
     },
 
     /**
@@ -120,6 +135,7 @@ ccui.RichElementText = ccui.RichElement.extend(/** @lends ccui.RichElementText# 
         this._text = text;
         this._fontName = fontName;
         this._fontSize = fontSize;
+<<<<<<< HEAD
     },
     initWithStringAndTextDefinition: function(tag, text, fontDef, opacity){
 
@@ -129,6 +145,8 @@ ccui.RichElementText = ccui.RichElement.extend(/** @lends ccui.RichElementText# 
         this._fontName = fontDef.fontName;
         this._fontSize = fontDef.fontSize;
 
+=======
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
     }
 });
 
@@ -263,9 +281,12 @@ ccui.RichText = ccui.Widget.extend(/** @lends ccui.RichText# */{
     _leftSpaceWidth: 0,
     _verticalSpace: 0,
     _elementRenderersContainer: null,
+<<<<<<< HEAD
     _lineBreakOnSpace: false,
     _textHorizontalAlignment: null,
     _textVerticalAlignment: null,
+=======
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
 
     /**
      * create a rich text
@@ -280,8 +301,11 @@ ccui.RichText = ccui.Widget.extend(/** @lends ccui.RichText# */{
         this._elementRenders = [];
         this._leftSpaceWidth = 0;
         this._verticalSpace = 0;
+<<<<<<< HEAD
         this._textHorizontalAlignment = cc.TEXT_ALIGNMENT_LEFT;
         this._textVerticalAlignment = cc.VERTICAL_TEXT_ALIGNMENT_TOP;
+=======
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
     },
 
     _initRenderer: function () {
@@ -336,10 +360,15 @@ ccui.RichText = ccui.Widget.extend(/** @lends ccui.RichText# */{
                     var elementRenderer = null;
                     switch (element._type) {
                         case ccui.RichElement.TEXT:
+<<<<<<< HEAD
                             if( element._fontDefinition)
                                 elementRenderer = new cc.LabelTTF(element._text, element._fontDefinition);
                             else //todo: There may be ambiguous
                                 elementRenderer = new cc.LabelTTF(element._text, element._fontName, element._fontSize);
+=======
+                            //todo: There may be ambiguous
+                            elementRenderer = new cc.LabelTTF(element._text, element._fontName, element._fontSize);
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                             break;
                         case ccui.RichElement.IMAGE:
                             elementRenderer = new cc.Sprite(element._filePath);
@@ -360,10 +389,14 @@ ccui.RichText = ccui.Widget.extend(/** @lends ccui.RichText# */{
                     element = locRichElements[i];
                     switch (element._type) {
                         case ccui.RichElement.TEXT:
+<<<<<<< HEAD
                             if( element._fontDefinition)
                                 this._handleTextRenderer(element._text, element._fontDefinition, element._fontDefinition.fontSize, element._fontDefinition.fillStyle);
                             else
                                 this._handleTextRenderer(element._text, element._fontName, element._fontSize, element._color);
+=======
+                            this._handleTextRenderer(element._text, element._fontName, element._fontSize, element._color);
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                             break;
                         case ccui.RichElement.IMAGE:
                             this._handleImageRenderer(element._filePath, element._color, element._color.a);
@@ -380,6 +413,7 @@ ccui.RichText = ccui.Widget.extend(/** @lends ccui.RichText# */{
             this._formatTextDirty = false;
         }
     },
+<<<<<<< HEAD
     /**
      * Prepare the child LabelTTF based on line breaking
      * @param {String} text
@@ -398,6 +432,11 @@ ccui.RichText = ccui.Widget.extend(/** @lends ccui.RichText# */{
         }
 
         var textRenderer = fontNameOrFontDef instanceof cc.FontDefinition ? new cc.LabelTTF(text, fontNameOrFontDef) : new cc.LabelTTF(text, fontNameOrFontDef, fontSize);
+=======
+
+    _handleTextRenderer: function (text, fontName, fontSize, color) {
+        var textRenderer =  new cc.LabelTTF(text, fontName, fontSize);
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         var textRendererWidth = textRenderer.getContentSize().width;
         this._leftSpaceWidth -= textRendererWidth;
         if (this._leftSpaceWidth < 0) {
@@ -407,6 +446,7 @@ ccui.RichText = ccui.Widget.extend(/** @lends ccui.RichText# */{
             var leftLength = stringLength * (1 - overstepPercent);
             var leftWords = curText.substr(0, leftLength);
             var cutWords = curText.substr(leftLength, curText.length - 1);
+<<<<<<< HEAD
             var validLeftLength = leftLength > 0;
 
             if(this._lineBreakOnSpace){
@@ -427,10 +467,17 @@ ccui.RichText = ccui.Widget.extend(/** @lends ccui.RichText# */{
                     leftRenderer.setColor(color);
                     leftRenderer.setOpacity(color.a);
                 }
+=======
+            if (leftLength > 0) {
+                var leftRenderer = new cc.LabelTTF(leftWords.substr(0, leftLength), fontName, fontSize);
+                leftRenderer.setColor(color);
+                leftRenderer.setOpacity(color.a);
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                 this._pushToContainer(leftRenderer);
             }
 
             this._addNewLine();
+<<<<<<< HEAD
             this._handleTextRenderer(cutWords, fontNameOrFontDef, fontSize, color);
         } else {
             if( fontNameOrFontDef instanceof cc.FontDefinition) {
@@ -439,6 +486,12 @@ ccui.RichText = ccui.Widget.extend(/** @lends ccui.RichText# */{
                 textRenderer.setColor(color);
                 textRenderer.setOpacity(color.a);
             }
+=======
+            this._handleTextRenderer(cutWords, fontName, fontSize, color);
+        } else {
+            textRenderer.setColor(color);
+            textRenderer.setOpacity(color.a);
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             this._pushToContainer(textRenderer);
         }
     },
@@ -475,12 +528,16 @@ ccui.RichText = ccui.Widget.extend(/** @lends ccui.RichText# */{
             var newContentSizeWidth = 0;
             row = locElementRenders[0];
             nextPosX = 0;
+<<<<<<< HEAD
 
+=======
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             for (j = 0; j < row.length; j++) {
                 l = row[j];
                 l.setAnchorPoint(cc.p(0, 0));
                 l.setPosition(nextPosX, 0);
                 locRenderersContainer.addChild(l, 1, j);
+<<<<<<< HEAD
 
                 var lineHeight = l.getLineHeight ? l.getLineHeight() : newContentSizeHeight;
 
@@ -502,6 +559,13 @@ ccui.RichText = ccui.Widget.extend(/** @lends ccui.RichText# */{
                     row[j].x += offsetX;
             }
 
+=======
+                var iSize = l.getContentSize();
+                newContentSizeWidth += iSize.width;
+                newContentSizeHeight = Math.max(newContentSizeHeight, iSize.height);
+                nextPosX += iSize.width;
+            }
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             locRenderersContainer.setContentSize(newContentSizeWidth, newContentSizeHeight);
         } else {
             var maxHeights = [];
@@ -510,16 +574,23 @@ ccui.RichText = ccui.Widget.extend(/** @lends ccui.RichText# */{
                 var maxHeight = 0;
                 for (j = 0; j < row.length; j++) {
                     l = row[j];
+<<<<<<< HEAD
                     var lineHeight = l.getLineHeight ? l.getLineHeight() : l.getContentSize().height;
                     cc.log(lineHeight);
                     maxHeight = Math.max(Math.min(l.getContentSize().height, lineHeight), maxHeight);
+=======
+                    maxHeight = Math.max(l.getContentSize().height, maxHeight);
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                 }
                 maxHeights[i] = maxHeight;
                 newContentSizeHeight += maxHeights[i];
             }
 
             var nextPosY = this._customSize.height;
+<<<<<<< HEAD
 
+=======
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             for (i = 0; i < locElementRenders.length; i++) {
                 row = locElementRenders[i];
                 nextPosX = 0;
@@ -532,6 +603,7 @@ ccui.RichText = ccui.Widget.extend(/** @lends ccui.RichText# */{
                     locRenderersContainer.addChild(l, 1);
                     nextPosX += l.getContentSize().width;
                 }
+<<<<<<< HEAD
                 //Text flow alignment(s)
                 if( this._textHorizontalAlignment !== cc.TEXT_ALIGNMENT_LEFT || this._textVerticalAlignment !== cc.VERTICAL_TEXT_ALIGNMENT_TOP) {
                     var offsetX = 0;
@@ -554,6 +626,9 @@ ccui.RichText = ccui.Widget.extend(/** @lends ccui.RichText# */{
                 }
             }
 
+=======
+            }
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             locRenderersContainer.setContentSize(this._contentSize);
         }
 
@@ -565,7 +640,10 @@ ccui.RichText = ccui.Widget.extend(/** @lends ccui.RichText# */{
 
         this.setContentSize(this._ignoreSize?this.getVirtualRendererSize():this._customSize);
         this._updateContentSizeWithTextureSize(this._contentSize);
+<<<<<<< HEAD
 
+=======
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
         locRenderersContainer.setPosition(this._contentSize.width * 0.5, this._contentSize.height * 0.5);
     },
 
@@ -620,7 +698,11 @@ ccui.RichText = ccui.Widget.extend(/** @lends ccui.RichText# */{
      * @override
      */
     ignoreContentAdaptWithSize: function (ignore) {
+<<<<<<< HEAD
         if (this._ignoreSize !== ignore) {
+=======
+        if (this._ignoreSize != ignore) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             this._formatTextDirty = true;
             ccui.Widget.prototype.ignoreContentAdaptWithSize.call(this, ignore);
         }
@@ -657,6 +739,7 @@ ccui.RichText = ccui.Widget.extend(/** @lends ccui.RichText# */{
      */
     getDescription: function(){
         return "RichText";
+<<<<<<< HEAD
     },
     /**
      * Allow child renderer to be affected by ccui.RichText's opacity
@@ -708,6 +791,8 @@ ccui.RichText = ccui.Widget.extend(/** @lends ccui.RichText# */{
             this._textVerticalAlignment = value;
             this.formatText();
         }
+=======
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
     }
 });
 

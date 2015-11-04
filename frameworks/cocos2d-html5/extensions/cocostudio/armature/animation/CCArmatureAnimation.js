@@ -209,7 +209,11 @@ ccs.ArmatureAnimation = ccs.ProcessBase.extend(/** @lends ccs.ArmatureAnimation#
      * @param {Number} speedScale
      */
     setSpeedScale: function (speedScale) {
+<<<<<<< HEAD
         if (speedScale === this._speedScale)
+=======
+        if (speedScale == this._speedScale)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             return;
         this._speedScale = speedScale;
         this._processScale = !this._movementData ? this._speedScale : this._speedScale * this._movementData.scale;
@@ -261,8 +265,13 @@ ccs.ArmatureAnimation = ccs.ProcessBase.extend(/** @lends ccs.ArmatureAnimation#
         this._processScale = this._speedScale * this._movementData.scale;
 
         //! Further processing parameters
+<<<<<<< HEAD
         durationTo = (durationTo === -1) ? this._movementData.durationTo : durationTo;
         var durationTween = this._movementData.durationTween === 0 ? this._rawDuration : this._movementData.durationTween;
+=======
+        durationTo = (durationTo == -1) ? this._movementData.durationTo : durationTo;
+        var durationTween = this._movementData.durationTween == 0 ? this._rawDuration : this._movementData.durationTween;
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
 
         var tweenEasing = this._movementData.tweenEasing;
         //loop = (!loop || loop < 0) ? this._movementData.loop : loop;
@@ -271,7 +280,11 @@ ccs.ArmatureAnimation = ccs.ProcessBase.extend(/** @lends ccs.ArmatureAnimation#
 
         ccs.ProcessBase.prototype.play.call(this, durationTo, durationTween, loop, tweenEasing);
 
+<<<<<<< HEAD
         if (this._rawDuration === 0)
+=======
+        if (this._rawDuration == 0)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             this._loopType = ccs.ANIMATION_TYPE_SINGLE_FRAME;
         else {
             this._loopType = loop ? ccs.ANIMATION_TYPE_TO_LOOP_FRONT : ccs.ANIMATION_TYPE_NO_LOOP;
@@ -494,7 +507,11 @@ ccs.ArmatureAnimation = ccs.ProcessBase.extend(/** @lends ccs.ArmatureAnimation#
                 case ccs.ANIMATION_TYPE_TO_LOOP_FRONT:
                     this._loopType = ccs.ANIMATION_TYPE_LOOP_FRONT;
                     locCurrentPercent = ccs.fmodf(locCurrentPercent, 1);
+<<<<<<< HEAD
                     this._currentFrame = this._nextFrameIndex === 0 ? 0 : ccs.fmodf(this._currentFrame, this._nextFrameIndex);
+=======
+                    this._currentFrame = this._nextFrameIndex == 0 ? 0 : ccs.fmodf(this._currentFrame, this._nextFrameIndex);
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                     this._nextFrameIndex = this._durationTween > 0 ? this._durationTween : 1;
                     this.movementEvent(this, ccs.MovementEventType.start, this._movementID);
                     break;
@@ -525,9 +542,15 @@ ccs.ArmatureAnimation = ccs.ProcessBase.extend(/** @lends ccs.ArmatureAnimation#
      * @param {Object} target
      */
     setMovementEventCallFunc: function (callFunc, target) {
+<<<<<<< HEAD
         if(arguments.length === 1){
             this._movementEventListener = callFunc;
         }else if(arguments.length === 2){
+=======
+        if(arguments.length == 1){
+            this._frameEventListener = callFunc;
+        }else if(arguments.length == 2){
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             this._movementEventTarget = target;
             this._movementEventCallFunc = callFunc;
         }
@@ -539,9 +562,15 @@ ccs.ArmatureAnimation = ccs.ProcessBase.extend(/** @lends ccs.ArmatureAnimation#
      * @param {Object} target
      */
     setFrameEventCallFunc: function (callFunc, target) {
+<<<<<<< HEAD
         if(arguments.length === 1){
             this._frameEventListener = callFunc;
         }else if(arguments.length === 2){
+=======
+        if(arguments.length == 1){
+            this._frameEventListener = callFunc;
+        }else if(arguments.length == 2){
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             this._frameEventTarget = target;
             this._frameEventCallFunc = callFunc;
         }
@@ -618,7 +647,11 @@ ccs.ArmatureAnimation = ccs.ProcessBase.extend(/** @lends ccs.ArmatureAnimation#
      * @param {ccs.AnimationData} data
      */
     setAnimationData: function (data) {
+<<<<<<< HEAD
         if(this._animationData !== data)
+=======
+        if(this._animationData != data)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             this._animationData = data;
     },
 
@@ -666,4 +699,8 @@ _p = null;
  */
 ccs.ArmatureAnimation.create = function (armature) {
     return new ccs.ArmatureAnimation(armature);
+<<<<<<< HEAD
 };
+=======
+};
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b

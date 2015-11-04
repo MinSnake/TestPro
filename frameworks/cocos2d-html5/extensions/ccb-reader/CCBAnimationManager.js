@@ -205,7 +205,11 @@ cc.BuilderAnimationManager = cc.Class.extend({
         // Move base values
         var locBaseValues = this._baseValues;
         var baseValue = locBaseValues.objectForKey(fromNode);
+<<<<<<< HEAD
         if(baseValue !== null) {
+=======
+        if(baseValue != null) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             locBaseValues.setObject(baseValue, toNode);
             locBaseValues.removeObjectForKey(fromNode);
         }
@@ -246,18 +250,32 @@ cc.BuilderAnimationManager = cc.Class.extend({
                     actions.push(callback);
             } else {
                 var target;
+<<<<<<< HEAD
                 if(selectorTarget === CCB_TARGETTYPE_DOCUMENTROOT)
                     target = this._rootNode;
                 else if (selectorTarget === CCB_TARGETTYPE_OWNER)
+=======
+                if(selectorTarget == CCB_TARGETTYPE_DOCUMENTROOT)
+                    target = this._rootNode;
+                else if (selectorTarget == CCB_TARGETTYPE_OWNER)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                     target = this._owner;
 
                 if(target != null) {
                     if(selectorName.length > 0) {
                         var selCallFunc = 0;
 
+<<<<<<< HEAD
                         if(target.onResolveCCBCCCallFuncSelector != null)
                             selCallFunc = target.onResolveCCBCCCallFuncSelector(target, selectorName);
                         if(selCallFunc === 0)
+=======
+                        var targetAsCCBSelectorResolver = target;
+
+                        if(target.onResolveCCBCCCallFuncSelector != null)
+                            selCallFunc = targetAsCCBSelectorResolver.onResolveCCBCCCallFuncSelector(target, selectorName);
+                        if(selCallFunc == 0)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                             cc.log("Skipping selector '" + selectorName + "' since no CCBSelectorResolver is present.");
                         else
                             actions.push(cc.callFunc(selCallFunc,target));
@@ -340,7 +358,11 @@ cc.BuilderAnimationManager = cc.Class.extend({
                 var baseKeys = nodeBaseValues.allKeys();
                 for(j = 0; j < baseKeys.length;j++){
                     var selBaseKey =  baseKeys[j];
+<<<<<<< HEAD
                     if(seqNodePropNames.indexOf(selBaseKey) === -1){
+=======
+                    if(seqNodePropNames.indexOf(selBaseKey) == -1){
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                         var value = nodeBaseValues.objectForKey(selBaseKey);
                         if(value != null)
                             this._setAnimatedProperty(selBaseKey,node, value, tweenDuration);
@@ -537,10 +559,17 @@ cc.BuilderAnimationManager = cc.Class.extend({
                 // TODO only handle rotation, opacity, displayFrame, color
                 if(propName === "rotation"){
                     node.setRotation(value);
+<<<<<<< HEAD
                 }  else if(propName === "rotationX")
                 {
                     node.setRotationSkewX(value);
                 }else if(propName === "rotationY")
+=======
+                }  else if(propName == "rotationX")
+                {
+                    node.setRotationSkewX(value);
+                }else if(propName == "rotationY")
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                 {
                     node.setRotationSkewY(value);
                 }else if(propName === "opacity"){
@@ -654,7 +683,11 @@ cc.BuilderAnimationManager = cc.Class.extend({
         var nextSeqId = locRunningSequence.getChainedSequenceId();
         this._runningSequence = null;
 
+<<<<<<< HEAD
         if (nextSeqId !== -1)
+=======
+        if (nextSeqId != -1)
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             this.runAnimations(nextSeqId, 0);
 
         if (this._delegate)

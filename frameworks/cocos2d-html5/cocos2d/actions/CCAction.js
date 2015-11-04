@@ -422,7 +422,11 @@ cc.Speed = cc.Action.extend(/** @lends cc.Speed# */{
      * @param {cc.ActionInterval} action
      */
     setInnerAction:function (action) {
+<<<<<<< HEAD
         if (this._innerAction !== action) {
+=======
+        if (this._innerAction != action) {
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
             this._innerAction = action;
         }
     },
@@ -607,7 +611,11 @@ cc.Follow = cc.Action.extend(/** @lends cc.Follow# */{
                 _this.topBoundary = _this.bottomBoundary = (_this.topBoundary + _this.bottomBoundary) / 2;
             }
 
+<<<<<<< HEAD
             if ((_this.topBoundary === _this.bottomBoundary) && (_this.leftBoundary === _this.rightBoundary))
+=======
+            if ((_this.topBoundary == _this.bottomBoundary) && (_this.leftBoundary == _this.rightBoundary))
+>>>>>>> f582c68427c6682e16be99cb6b12cec92446801b
                 _this._boundaryFullyCovered = true;
         }
         return true;
