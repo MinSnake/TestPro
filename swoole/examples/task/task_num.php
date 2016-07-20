@@ -18,7 +18,7 @@ $serv->on('Receive', function(swoole_server $serv, $fd, $from_id, $data) {
 });
 $serv->on('Task', function (swoole_server $serv, $task_id, $from_id, $data) {
     echo "onTask: [PID=".posix_getpid()."]: task_id=$task_id, data_len=".strlen($data).".".PHP_EOL;
-    sleep(10);
+    sleep(1);
     //$serv->finish($data);
     echo 'finish'.PHP_EOL;
     return;
@@ -28,19 +28,19 @@ $serv->on('Finish', function (swoole_server $serv, $task_id, $data) {
     echo "Task#$task_id finished, data_len=".strlen($data).PHP_EOL;
 });
 
-$serv->on('Timer', function(swoole_server $serv, $time) {
-    echo "{$time} call".PHP_EOL;
-    print_r($serv->stats());
-});
+//$serv->on('Timer', function(swoole_server $serv, $time) {
+//    echo "{$time} call".PHP_EOL;
+//    print_r($serv->stats());
+//});
 
-$serv->on('workerStart', function($serv, $worker_id) {
-	global $argv;
-    if($worker_id >= $serv->setting['worker_num']) {
-        swoole_set_process_name("php {$argv[0]}: task_worker");
-    } else {
-        $serv->addtimer(5000);
-        swoole_set_process_name("php {$argv[0]}: worker");
-    }
+//$serv->on('workerStart', function($serv, $worker_id) {
+//	global $argv;
+//    if($worker_id >= $serv->setting['worker_num']) {
+//        swoole_set_process_name("php {$argv[0]}: task_worker");
+//    } else {
+//        $serv->addtimer(5000);
+//        swoole_set_process_name("php {$argv[0]}: worker");
+//    }
 
-});
+//});
 $serv->start();

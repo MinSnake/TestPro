@@ -1,25 +1,15 @@
 <?php
-$contextOptions = [
-    'ssl' => [
-        'verify_peer' => false,
-//        'allow_self_signed' => true,
-//        'cafile' => __DIR__.'/privkey.pem',
-        'peer_name' => 'example.com',
-    ]
-];
-$context = stream_context_create($contextOptions);
-
-$fp = stream_socket_client("ssl://127.0.0.1:9501", $errno, $errstr, 30, STREAM_CLIENT_CONNECT, $context);
-if (!$fp)
+$client = new swoole_client(SWOOLE_SOCK_TCP | SWOOLE_SSL);
+if (!$client->connect('192.168.0.44', 9501, -1))
 {
-    die("Unable to connect: $errstr ($errno)");
+    exit("connect failed. Error: {$client->errCode}\n");
 }
+echo "connect ok\n";
+sleep(1);
 
-stream_socket_enable_crypto($fp, true, STREAM_CRYPTO_METHOD_SSLv23_CLIENT);
-$ret = fwrite($fp, "hello\n");
-var_dump($ret);
-
-$recv =  fread($fp, 8192);
-var_dump($recv);
-echo "finish\n";
-
+for ($i = 0; $i < 1000; $i++)
+{
+    $client->send("hello world-" . str_repeat('A', $i) . "\n");
+    echo $client->recv();
+}
+sleep(1);
