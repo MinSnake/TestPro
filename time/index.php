@@ -1,55 +1,67 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Saki
- * Date: 2016/9/12
- * Time: 10:45
- *
- *
- * @todo
- *
- * 维基百科，自由的百科全书
- * 程序员节是一个国际上被众多科技公司和软件企业承认的业内人士节日。
- * 日期是在每年的第256（十六进制为0x100，或28）天，也就是平年的9月13日或闰年的9月12日。
- *
- * 它是俄罗斯的一个官方节日，其他国家的程序员社区也庆祝这个节日[1]。
- * 之所以选择256（28），是因为它是一个被程序员们所熟知的8比特基本数字。
- *
- * 用1个字节（等于8比特）最多能表示256个数值，
- * 而且在平年中，256是2的最大幂中小于365的值。
- * 与此同时，有些人认为，象征2的10次方的10月24日才是程序员日[2]。
- */
+//输出从2016-08 到 2017-02 半年内每个月的最后一天数据情况
+$month_arr = array('8', '9', '10', '11', '12', '1', '2');
 
-//一年的第一天   xxxx年1月1日
-$first_day_date = date('Y-01-01 00:00:00', time());
-//第一天的时间戳
-$first_day_time = strtotime($first_day_date);
+foreach ($month_arr as $k => $month)
+{
+	//2016年
+	if ((int)$month >= 8)
+	{
+		$year = '2016';
+	}
+	//2017年
+	else
+	{
+		$year = '2017';
+	}
 
-//时间跨度
-$coder_day_time = 60 * 60 * 24 *256;
+	echo "<h4>".$year."年".$month."月</h4>";
+	
+	$test_tm = strtotime($year . '-' . $month);
+	$date = date('Y-m-d H:i:s', $test_tm);
+	$start_tm = date('Y-m-01 00:00:00', strtotime($date));
+	$end_tm = date('Y-m-d 23:59:59', strtotime("$start_tm +1 month -1 day"));
+	
+	$end_2_tm = date('Y-m-d 00:00:00', strtotime("$start_tm +1 month -1 day"));
+	
+	echo $year . '-' . $month . '的时间区间：' . $end_2_tm . '-' . $end_tm;
+	echo '<br>';
+	
+	$s_tm = strtotime($end_2_tm);
+	$e_tm = strtotime($end_tm);
+	
+	echo $year . '-' . $month . '的时间戳区间：' . $s_tm . '-' . $e_tm;
+	echo '<br>';
 
-$final_time = $first_day_time + $coder_day_time;
-
-
-echo '今年的程序员日是：' . date('Y-m-d H:i:s', $final_time);
-
-echo '<br>';
-
-////
-
-echo '今天是今年的第' . date('z',time()) . '天';
-
-
-
-
-
-
+	
+	echo '<h4>查询用户每个房源多余的上传房源加积分的次数和多加的积分：</h4>';
+	
+	echo "select id,uid,point,data_id,count-1,(count - 1) * point from 
+(
+SELECT id,uid,point,data_id,count(data_id) as count FROM `ucenter_member_point_log` 
+WHERE ( `reason` = 16 ) AND ( `status` = 1 ) AND ( (`create_time` BETWEEN $s_tm AND $e_tm ) )
+group by data_id order by uid desc
+) x where count > 1;";
 
 
 
+    echo '<h4>用户的uid和应该扣除的积分值：</h4>';
+	
+	echo "select uid,sum(allpoint) from 
+(
+select id,uid,point,data_id,count-1,(count - 1) * point as allpoint from 
+(
+SELECT id,uid,point,data_id,count(data_id) as count FROM `ucenter_member_point_log` 
+WHERE ( `reason` = 16 ) AND ( `status` = 1 ) AND ( (`create_time` BETWEEN $s_tm AND $e_tm ) )
+group by data_id order by uid desc
+) x where count > 1
+) y group by uid;";
+	
+	echo '<br><br>';
 
-
-
-
-
-
+	
+	echo '==================================================================';
+		
+	echo '<br><br>';
+	
+}
