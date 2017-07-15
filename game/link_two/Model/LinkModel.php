@@ -1,6 +1,7 @@
 <?php
 
-class Link {
+class LinkModel
+{
 
     private $xLength = 9;
 
@@ -26,9 +27,9 @@ class Link {
      */
     public function gameFrameInit()
     {
-        for ($i = 0; $i < $this->xLength; $i++){
-            for ($j = 0; $j < $this->yLength; $j++){
-                array_push($this->gameFrame, array('x'=>$i, 'y'=>$j));
+        for ($i = 0; $i < $this->xLength; $i++) {
+            for ($j = 0; $j < $this->yLength; $j++) {
+                array_push($this->gameFrame, array('x' => $i, 'y' => $j));
             }
         }
         return $this->gameFrame;
@@ -40,15 +41,10 @@ class Link {
     public function gameLinkInit($gameFrame)
     {
         foreach ($gameFrame as $item) {
-            if ($item['x'] !== 4 || $item['y'] !== 3)
-            {
+            if ($item['x'] !== 4 || $item['y'] !== 3) {
                 //随机生成一个连接对象
                 $linkObj = array_rand($this->linkObj);
                 //随机指定一个其他的坐标点
-
-
-
-
 
 
             }
@@ -84,15 +80,3 @@ class Link {
 
 
 }
-
-$test = new Link();
-
-$f = $test->gameFrameInit();
-
-$s_f = serialize($f);
-
-
-echo $s_f;
-
-
-//var_dump($test->gameFrameInit());
