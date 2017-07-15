@@ -13,6 +13,18 @@ namespace CoreSaki\Lib;
 class Main
 {
 
+    public static function start()
+    {
+        //自動加載
+
+        //設定錯誤和異常
+
+
+
+
+
+    }
+
 
 
 

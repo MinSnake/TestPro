@@ -1,23 +1,11 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: saki
- * Date: 2016/5/3
- * Time: 12:04
- */
 
-class MorseCode{
+class MorseCode
+{
 
     private $char_morse_code;//24字母
 
     private $num_morse_code;//0-1数字
-
-//    private $marks_morse_code;//标点符号
-
-//    private $no_char_morse_code;//非英语字符
-
-//    private $special_char_morse_code;//特殊符号
-
 
     public function __construct()
     {
@@ -65,14 +53,6 @@ class MorseCode{
             '9' => '11110',
         );
 
-//        $this->marks_morse_code = array(
-//            '?' => '001100',
-//            '/' => '10010',
-//            '(' => '10110',
-//            ')' => '101101',
-//            '-' => '100001',
-//            '.' => '010101',
-//        );
     }
 
 
@@ -84,24 +64,25 @@ class MorseCode{
      * @param string|$delimiter 分隔符 (-.-/-./---/.---) 其中的 / 就是分隔符
      * @return string
      */
-    public function morse_decode($morse, $point = '.', $line = '-', $delimiter = '/'){
+    public function morse_decode($morse, $point = '.', $line = '-', $delimiter = '/')
+    {
         $result = '';
         $char_morse_code = $this->char_morse_code;
         $num_morse_code = $this->num_morse_code;
-        if (substr($morse,-1) === '/'){
-            $morse = substr($morse,0,strlen($morse)-1);
+        if (substr($morse, -1) === '/') {
+            $morse = substr($morse, 0, strlen($morse) - 1);
         }
         $morse = str_replace($point, "0", $morse);
         $morse = str_replace($line, "1", $morse);
         //将摩斯码按照分隔符变成数组
         $morse_arr = explode($delimiter, $morse);
-        foreach ($morse_arr as $key=>$char) {
-            $char_find = array_search($char,$char_morse_code,true);
-            if($char_find != false){
+        foreach ($morse_arr as $key => $char) {
+            $char_find = array_search($char, $char_morse_code, true);
+            if ($char_find != false) {
                 $result .= $char_find;
             }
-            $num_find = array_search($char,$num_morse_code,true);
-            if ($num_find != false){
+            $num_find = array_search($char, $num_morse_code, true);
+            if ($num_find != false) {
                 $result .= $num_find;
             }
         }
@@ -116,20 +97,20 @@ class MorseCode{
      * @param string $delimiter
      * @return mixed|string
      */
-    public function morse_encode($str, $point = '.', $line = '-', $delimiter = '/'){
+    public function morse_encode($str, $point = '.', $line = '-', $delimiter = '/')
+    {
         $char_morse_code = $this->char_morse_code;
         $num_morse_code = $this->num_morse_code;
         $result = '';
         //1.首先全部转成大写
         $str = mb_strtoupper($str);
-        for($i=0; $i<mb_strlen($str,'utf8'); $i++)
-        {
+        for ($i = 0; $i < mb_strlen($str, 'utf8'); $i++) {
             $char = mb_substr($str, $i, 1, 'utf-8');
-            if ($char === ' '){
+            if ($char === ' ') {
                 $result .= '';
-            }elseif (isset($char_morse_code[$char])){
+            } elseif (isset($char_morse_code[$char])) {
                 $result .= $char_morse_code[$char] . $delimiter;
-            }elseif (isset($num_morse_code[$char])){
+            } elseif (isset($num_morse_code[$char])) {
                 $result .= $num_morse_code[$char] . $delimiter;
             }
         }
