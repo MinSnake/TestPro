@@ -12,6 +12,17 @@ $res = array_merge($a, $id);
 var_dump($res);
 
 
+$c = array();
+
+if($c)
+{
+    echo 'cc';
+}
+else
+{
+    echo 'dd';
+}
+
 
 
 
