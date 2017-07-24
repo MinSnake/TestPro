@@ -15,13 +15,13 @@ include 'auth/Auth.php';
 // );
 
 $oauth_secret_key = array(
-    'oauth_consumer_key'=>'0bb9be981116a83534b7',
-    'oauth_consumer_secret'=>'2c2cce5b87e6364d4cb7',
+    'oauth_consumer_key'=>'67a671523a3b098cf561',
+    'oauth_consumer_secret'=>'6422592d6968c87d1132',
 );
 
 $oauth_consumer_secret = array(
-    'oauth_token'=>'b3daf4de0140bcf88213aff39193f7f90596862af',
-    'oauth_secret'=>'a9e4f90aad40b9fd80c1b6dbeb2683b0'
+    'oauth_token'=>'c05e30214fc58314bbc6878b168917c505971b9a7',
+    'oauth_secret'=>'ee73cd1aff2846a46b27572826881111'
 );
 
 

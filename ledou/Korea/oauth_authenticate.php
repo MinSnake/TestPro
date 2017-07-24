@@ -1,60 +1,85 @@
 <?php
 include 'auth/Auth.php';
 
-//$oauth_secret_key = array(
-//    'oauth_consumer_key'=>'0bb9be981116a83534b7',
-//    'oauth_consumer_secret'=>'2c2cce5b87e6364d4cb7',
-//);
-
 $oauth_secret_key = array(
-    'oauth_consumer_key'=>'05256a1728db60b36fd2',
-    'oauth_consumer_secret'=>'f3221b8477864bb80727',
+    'oauth_consumer_key' => '67a671523a3b098cf561',
+    'oauth_consumer_secret' => '6422592d6968c87d1132',
 );
+
 
 $oauth_consumer_secret = array(
-    'oauth_token'=>'b3daf4de0140bcf88213aff39193f7f90596862af',
-    'oauth_secret'=>'a9e4f90aad40b9fd80c1b6dbeb2683b0'
+    'oauth_token' => 'c05e30214fc58314bbc6878b168917c505971b9a7',
+    'oauth_secret' => 'ee73cd1aff2846a46b27572826881111'
 );
 
 
-
-
-//$api = "http://usa-olsecure.ldoverseas.com";
 $api = "http://test.zzz.secure.ids111.com:97";
-//$api = "http://usa-olsecure.ldoverseas.com";
 
 $url = "/oauth/authenticate";
 
 
-$Fetch_request=new Fetch_request_token();
+$Fetch_request = new Fetch_request_token();
+$time = time();
+$head_test_arr = array(
+    'oauth_consumer_key' => $oauth_secret_key['oauth_consumer_key'],
+    'oauth_token' => $oauth_consumer_secret['oauth_token'],
+    'oauth_signature_method' => 'HMAC-SHA1',
+    'oauth_timestamp' => $time,
+    'oauth_nonce' => '58E27606-FA79-4A52-BB44-4E376CC0C624',
+    'oauth_version' => '1.0',
+);
 
-$time =time();
 
-$headers=array('Authorization'=>'OAuth oauth_consumer_key="'.$oauth_secret_key['oauth_consumer_key'].'", oauth_token="'.$oauth_consumer_secret['oauth_token'].'", oauth_signature_method="HMAC-SHA1",oauth_timestamp="'.$time.'", oauth_nonce="-4076884019643538433", oauth_version="1.0"');
+//$head_test_arr = array(
+//    'oauth_consumer_key'     => '67a671523a3b098cf561',
+//    'oauth_token'            => '815586d4e372151aa652c450c268ffa905971aa0a',
+//    'oauth_signature_method' => 'HMAC-SHA1',
+//    'oauth_timestamp'        => '1500621322',
+//    'oauth_nonce'            => '58E27606-FA79-4A52-BB44-4E376CC0C624',
+//    'oauth_version'          => '1.0',
+////    'oauth_signature'        => 'kanyou22ryoHdYVjo%2Frf97u0eBA%3D'
+//    //oauth_signature=\"kanyou22ryoHdYVjo%2Frf97u0eBA%3D\",
+//);
 
 
+$head_test_str = '';
+foreach ($head_test_arr as $key => $val) {
+    $head_test_str .= $key . '=' . '"' . $val . '",';
+}
 
-//$headers=array('Authorization'=>'OAuth oauth_consumer_key="0bb9be981116a83534b7", oauth_signature_method="HMAC-SHA1", oauth_signature="OZGlpF5Ea2yxLVJUn%2BRD26sZqNY%3D", oauth_timestamp="1476965508", oauth_nonce="9124907849001251709", oauth_version="1.0", oauth_callback="dgc-request-token-callback", oauth_signature_v2="de1eK9yGa8cYdd%2BBbACAGfTXyGI%3D"');
+//var_dump($head_test_str);
+$head_test_str = 'OAuth ' . $head_test_str;
+$head_test_str = substr($head_test_str, 0, -1);
 
-$param_header=$Fetch_request->get_parameter_header($headers);
+//var_dump($head_test_str);
+
+$headers_test = array(
+    'Authorization' => $head_test_str
+);
+
+//var_dump($headers_test);
+
+$param_header = $Fetch_request->get_parameter_header($headers_test);
+
+//var_dump($param_header);
 
 $http_method = 'POST';
-$http_url = $api.$url;
-$params=array();
+$http_url = $api . $url;
+$params = array();
 
 
-$base_string=$Fetch_request->base_string($http_method,$http_url,$param_header,$params);
+$base_string = $Fetch_request->base_string($http_method, $http_url, $param_header, $params);
+
+var_dump($base_string);
+
+$OAuthSignature = new OAuthSignatures($oauth_secret_key['oauth_consumer_secret'], $oauth_consumer_secret['oauth_secret']);
 
 
-$OAuthSignature=new OAuthSignatures($oauth_secret_key['oauth_consumer_secret'],$oauth_consumer_secret['oauth_secret']);
-
-
-$rre=$OAuthSignature->hashsign($base_string);
+$rre = $OAuthSignature->hashsign($base_string);
 
 var_dump(urlencode($rre));
 
-
-print 'Authorization: '.$headers['Authorization'].',oauth_signature="'.urlencode($rre).'"';
+print 'Authorization: ' . $headers_test['Authorization'] . ',oauth_signature="' . urlencode($rre) . '"';
 
 
 

@@ -17,18 +17,39 @@ class OAuthSignatures{
   * @param unknown $oauth_secret_key
   */
  function hashsign($base_string){
-     
+     header("Content-type: text/html; charset=utf-8");
+
+     //用来加密的字符串数组
      $key_parts = array(
          $this->oauth_consumer_secret,
          $this->oauth_secret_key ? $this->oauth_secret_key : ""
      );
 
+//     var_dump($key_parts);
+
      $key_parts = OAuthUtil::urlencode_rfc3986($key_parts);
-     
+
+//     var_dump($key_parts);
+
      $key = implode('&', $key_parts);
+
+//     var_dump($key_parts);
+
+
      print '加密key'."\n"."</br>".$key."\n"."</br>";
      
      print '加密源串    '."\n"."</br>".$base_string."\n"."</br>";
+
+
+     $temp_1 = hash_hmac('sha1', $base_string, $key, true);
+
+//     echo 'sha1结果:';
+//     var_dump($temp_1);
+
+//     echo 'base64结果：';
+//     $temp_2 = base64_encode($temp_1);
+//     var_dump($temp_2);
+
 
      $string=base64_encode(hash_hmac('sha1', $base_string, $key, true));
       return $string;
@@ -61,12 +82,14 @@ class Fetch_request_token{
             $arr=array_merge($authorization,$par);
             var_dump($arr);
         }
-        
+
+        //按照键名进行升序排序
         ksort($arr);
         foreach($arr as $key=>$value){
             $a[]=$key.'='.urlencode($value);
             
         }
+        //用&符号连起来
         $querySBS=join('&',$a);
 
         $parts = array(
@@ -74,6 +97,8 @@ class Fetch_request_token{
             $http_url,
             $querySBS
         );
+
+        //根据RFC3986进行编码转换
         $keyparts = OAuthUtil::urlencode_rfc3986($parts);
         $base_string = implode('&', $keyparts);   
         return $base_string;
@@ -150,7 +175,10 @@ class Fetch_request_token{
 
 
 /**
- * 编码
+ * 编码\
+ * @todo 将字符串转为  RFC3986 编码格式
+ * 即 空格用 + 表示    ~ 用 %7E
+ *
  * @author martin.sun
  */
 class OAuthUtil {

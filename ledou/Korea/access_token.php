@@ -2,18 +2,16 @@
 include 'auth/Auth.php';
 
 $oauth_secret_key = array(
-    'oauth_consumer_key'=>'0bb9be981116a83534b7',
-    'oauth_consumer_secret'=>'2c2cce5b87e6364d4cb7',
+    'oauth_consumer_key'=>'05256a1728db60b36fd2',
+    'oauth_consumer_secret'=>'f3221b8477864bb80727',
 );
-
 
 $oauth_consumer_secret = array(
-    'oauth_token'=>'b3daf4de0140bcf88213aff39193f7f90596862af',
-    'oauth_secret'=>'a9e4f90aad40b9fd80c1b6dbeb2683b0'
+    'oauth_token'=>'4550653b23a2bb8d205f5e10eaf0a3180597161ba',
+    'oauth_secret'=>'87127df004ef1de9f9109a05e23d9a22'
 );
 
 
-// $api = "http://usa-olsecure.ldoverseas.com";
 $api = "http://test.zzz.secure.ids111.com:97";
 
 $url = "/oauth/access_token";

@@ -2,21 +2,22 @@
 include 'auth/Auth.php';
 
 $oauth_secret_key = array(
-    'oauth_consumer_key'=>'0bb9be981116a83534b7',
-    'oauth_consumer_secret'=>'2c2cce5b87e6364d4cb7',
+    'oauth_consumer_key'=>'05256a1728db60b36fd2',
+    'oauth_consumer_secret'=>'f3221b8477864bb80727',
 );
 
 $oauth_consumer_secret = array(
-    'oauth_token'=>'82c8b1d72f37fe71ef5ba7ce33641fe20593f5b87',
-    'oauth_secret'=>'17fcac6f0ec80d00ae9f45b9304425a7'
+    'oauth_token'=>'4550653b23a2bb8d205f5e10eaf0a3180597161ba',
+    'oauth_secret'=>'87127df004ef1de9f9109a05e23d9a22'
 );
 
 
 
 //$http_url = "http://test.zzz.secure.ids111.com:96/sns/account";
 
-$http_url = "http://usa-sb-secure.ldoverseas.com/sns/account";
+//$http_url = "http://usa-sb-secure.ldoverseas.com/sns/account";
 
+$http_url = "http://test.zzz.secure.ids111.com:97/sns/account";
 
 $Fetch_request=new Fetch_request_token();
 
