@@ -8,8 +8,8 @@ $oauth_secret_key = array(
 
 
 $oauth_consumer_secret = array(
-    'oauth_token' => 'c05e30214fc58314bbc6878b168917c505971b9a7',
-    'oauth_secret' => 'ee73cd1aff2846a46b27572826881111'
+    'oauth_token' => '314861a0f205b34ec0c8066d2983ed7f05977faad',
+    'oauth_secret' => 'c3fb3cb5d4494e10ce6a46dd8dd0ce74'
 );
 
 
