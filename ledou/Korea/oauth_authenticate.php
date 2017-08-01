@@ -6,16 +6,22 @@ $oauth_secret_key = array(
     'oauth_consumer_secret' => '6422592d6968c87d1132',
 );
 
-
 $oauth_consumer_secret = array(
-    'oauth_token' => '314861a0f205b34ec0c8066d2983ed7f05977faad',
-    'oauth_secret' => 'c3fb3cb5d4494e10ce6a46dd8dd0ce74'
+    'oauth_token' => 'b50fffc6453ba449fda62390e3a823960597ee163',
+    'oauth_secret' => 'c406d7fc8b4d244b2a1ce7ff4b2883d5'
 );
 
 
-$api = "http://test.zzz.secure.ids111.com:97";
+//测试地址
+//$api = "http://test.zzz.secure.ids111.com:97";
+
+//线上地址
+$api = "http://kor-olsecure.ldoverseas.com";
+
 
 $url = "/oauth/authenticate";
+
+echo $api . $url . '<br>';
 
 
 $Fetch_request = new Fetch_request_token();
@@ -29,17 +35,6 @@ $head_test_arr = array(
     'oauth_version' => '1.0',
 );
 
-
-//$head_test_arr = array(
-//    'oauth_consumer_key'     => '67a671523a3b098cf561',
-//    'oauth_token'            => '815586d4e372151aa652c450c268ffa905971aa0a',
-//    'oauth_signature_method' => 'HMAC-SHA1',
-//    'oauth_timestamp'        => '1500621322',
-//    'oauth_nonce'            => '58E27606-FA79-4A52-BB44-4E376CC0C624',
-//    'oauth_version'          => '1.0',
-////    'oauth_signature'        => 'kanyou22ryoHdYVjo%2Frf97u0eBA%3D'
-//    //oauth_signature=\"kanyou22ryoHdYVjo%2Frf97u0eBA%3D\",
-//);
 
 
 $head_test_str = '';

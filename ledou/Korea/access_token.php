@@ -2,13 +2,13 @@
 include 'auth/Auth.php';
 
 $oauth_secret_key = array(
-    'oauth_consumer_key'=>'05256a1728db60b36fd2',
-    'oauth_consumer_secret'=>'f3221b8477864bb80727',
+    'oauth_consumer_key' => '67a671523a3b098cf561',
+    'oauth_consumer_secret' => '6422592d6968c87d1132',
 );
 
 $oauth_consumer_secret = array(
-    'oauth_token'=>'f68ce3ee2fb0024420c23963dc80fb600597565b5',
-    'oauth_secret'=>'09eefe3eb51ed1993be61189e6e39d69'
+    'oauth_token' => 'ecc6820aabd79341817372ff2268faea0597aeadc',
+    'oauth_secret' => 'db4a0114be901c6555c1aec1331489c8'
 );
 
 

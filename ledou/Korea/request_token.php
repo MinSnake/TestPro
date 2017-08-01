@@ -24,9 +24,20 @@ $param_header = array(
     'oauth_callback'         => 'dgc-request-token-callback',
 );
 
-var_dump($param_header);
 
-$url = "http://test.zzz.secure.ids111.com:97" . "/oauth/request_token";
+//测试地址
+//$host = "http://test.zzz.secure.ids111.com:97";
+
+//线上地址
+$host = "http://kor-olsecure.ldoverseas.com";
+
+
+$url = $host . "/oauth/request_token";
+
+echo $url . '<br>';
+
+
+var_dump($param_header);
 
 /** @var TYPE_NAME $base_string */
 $base_string = $Fetch_request->base_string('POST', $url, $param_header, array());

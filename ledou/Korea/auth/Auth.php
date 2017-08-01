@@ -21,7 +21,7 @@ class OAuthSignatures
      */
     function hashsign($base_string)
     {
-//     header("Content-type: text/html; charset=utf-8");
+     header("Content-type: text/html; charset=utf-8");
 
         //用来加密的字符串数组
         $key_parts = array(
@@ -75,7 +75,7 @@ class Fetch_request_token
     function base_string($http_method, $http_url, $authorization, $par = '')
     {
 
-        header("Content-type: text/html; charset=utf-8");
+//        header("Content-type: text/html; charset=utf-8");
         $params = $this->par_url($http_url);
 
         if ($params) {
