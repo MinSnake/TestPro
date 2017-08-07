@@ -1,52 +1,42 @@
 <?php
 
-/**
- * @todo 发送POST请求
- * @param $url 请求地址
- * @param $data 请求参数
- * @author Saki <zha_zha@outlook.com>
- * @date 2014-5-29上午10:58:30
- * @version v1.0.0
- */
-function sendPostRequest($url, $data) {
-	$ch = curl_init ();
-	curl_setopt ( $ch, CURLOPT_URL, $url );
-	curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
-	curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, FALSE);
-	curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, FALSE);
-	curl_setopt($ch, CURLOPT_USERAGENT, 'Mozilla/5.0 (compatible; MSIE 5.01; Windows NT 5.0)');
-	curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
-	curl_setopt($ch, CURLOPT_AUTOREFERER, 1);
-	curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
-	curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-	$tmpInfo = curl_exec($ch);
-	if (curl_errno($ch)) {
-		return curl_error($ch);
-	}
-	curl_close($ch);
-	return $tmpInfo;
+function sendCurlPostRequest($url, $data)
+{
+    $ch = curl_init();
+    curl_setopt($ch, CURLOPT_URL, $url);
+    curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
+    curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($ch, CURLOPT_HTTPHEADER, array(
+            'Content-Type: application/json',
+            'Content-Length: ' . strlen($data))
+    );
+    /**使用了SOCKS5代理，测试**/
+    curl_setopt($ch, CURLOPT_PROXYTYPE, CURLPROXY_SOCKS5);
+    curl_setopt($ch, CURLOPT_PROXY, "192.168.141.162:7070");
+    /**使用了SOCKS5代理，测试**/
+    $result = curl_exec($ch);
+    curl_close($ch);
+    return $result;
 }
 
-$appid = 'abcdefg123';
-$appsecret = 'qwertyuiop555';
-$tm = time();
+$url = 'https://iapdev.tstore.co.kr/digitalsignconfirm.iap';
+$data = array(
+    'txid' => 'TX_00000000492664',
+    'appid' => 'OA00718081',
+    'signdata' => 'MIIIBwYJKoZIhvcNAQcCoIIH DCCB/QCAQExDzANBglghkgBZQMEAgEFADBlBgkqhkiG9w0BBwGgWARWMjAxNzA4MDMxMDU4NDB8VFhfMDAwMDAwMDA0OTI2NjR8MTM1Mjg3NDIyMDF8T0EwMDcxODA4MXwwOTEwMDg0Njg1fDEwMDB8REQyMDAzOTQyNzUzfHygggXvMIIF6zCCBNOgAwIBAgIEARQXTzANBgkqhkiG9w0BAQsFADBPMQswCQYDVQQGEwJLUjESMBAGA1UECgwJQ3Jvc3NDZXJ0MRUwEwYDVQQLDAxBY2NyZWRpdGVkQ0ExFTATBgNVBAMMDENyb3NzQ2VydENBMjAeFw0xNjEyMTQwMTA4MDBaFw0xNzEyMjExNDU5NTlaMIGMMQswCQYDVQQGEwJLUjESMBAGA1UECgwJQ3Jvc3NDZXJ0MRUwEwYDVQQLDAxBY2NyZWRpdGVkQ0ExGzAZBgNVBAsMEu2VnOq1reyghOyekOyduOymnTEPMA0GA1UECwwG7ISc67KEMSQwIgYDVQQDDBvsl5DsiqTsvIDsnbQg7ZSM656Y64ubKOyjvCkwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDL8YAYd zD9n QpwCwGNc/P1W/iUedko4nNm1xSPwdzWFIA5Oqu9O7dLhwOFrJWTBkEqtLp6sfPNKPDV6VMgO18zv/0xjVfMjWCeawSv2BpuxXQgS0n1epqC4ZI9FphpaWIwGXMF9sLxChI6QEwcPgpX2sTlHbWyHcscKhVfTREI3NUfBuIO2mQXem0 2X7 lfVXY5Pouen3TgCMOj2mKCKHbAlrLgF rM0oBpGZl/P5teOwZEhi4aL1p8 j2HkfkbR8MYk6H9urBOknCgld6qiHfqLZTu41Fq/GDEPDTZg1EvsLnTQku5jwkjKPt8bJuqKnUECACmL8rrPLSCLiNxAgMBAAGjggKPMIICizCBjwYDVR0jBIGHMIGEgBS2dKmbkjzHUbEipE 8tzz IjPXdqFopGYwZDELMAkGA1UEBhMCS1IxDTALBgNVBAoMBEtJU0ExLjAsBgNVBAsMJUtvcmVhIENlcnRpZmljYXRpb24gQXV0aG9yaXR5IENlbnRyYWwxFjAUBgNVBAMMDUtJU0EgUm9vdENBIDSCAhAEMB0GA1UdDgQWBBS8flgu gIJt/z7cuN4IH48kI1mbzAOBgNVHQ8BAf8EBAMCBsAwgYMGA1UdIAEB/wR5MHcwdQYKKoMajJpEBQQBAzBnMC0GCCsGAQUFBwIBFiFodHRwOi8vZ2NhLmNyb3NzY2VydC5jb20vY3BzLmh0bWwwNgYIKwYBBQUHAgIwKh4ovPgAIMd4yZ3BHMdYACDHINaorjCsBMdAACAAMbFEACDHhbLIsuQALjB6BgNVHREEczBxoG8GCSqDGoyaRAoBAaBiMGAMG yXkOyKpOy8gOydtCDtlIzrnpjri5so7KO8KTBBMD8GCiqDGoyaRAoBAQEwMTALBglghkgBZQMEAgGgIgQgEXX4v6vrKcytDlKOGbAEaNVRfmEWu77shfEhW3lWLLYwfgYDVR0fBHcwdTBzoHGgb4ZtbGRhcDovL2Rpci5jcm9zc2NlcnQuY29tOjM4OS9jbj1zMWRwOXA0Mzksb3U9Y3JsZHAsb3U9QWNjcmVkaXRlZENBLG89Q3Jvc3NDZXJ0LGM9S1I/Y2VydGlmaWNhdGVSZXZvY2F0aW9uTGlzdDBGBggrBgEFBQcBAQQ6MDgwNgYIKwYBBQUHMAGGKmh0dHA6Ly9vY3NwLmNyb3NzY2VydC5jb206MTQyMDMvT0NTUFNlcnZlcjANBgkqhkiG9w0BAQsFAAOCAQEAbVe6TEfwK G6YXNi/ig0PvPi5GJeVUXRiRxVhUk1N7cYM0J1zInZoptEsrtKl JItfrd57bSFPLJBjXjbWxaL7A/di7tWIIPJ1kbIps kfCAq8fL5KgXHeXsUYlOy/MFOw0Be1aNR9IAJSoBZRH5oyO07dk2mwCzYis37b2jCrxB/v0U zhxJwuLEj1DFDA6T/qqHapwBO0/luhTpj7/azZAvnrjeQUaZvEiQ agCPTlFLUElJ3h/klCnopLc9OCUhcRCCxquFiMFVcLxod2zoLrRxszuzhAJU2vZhocwUMO6//jOJVBfVwxThzEi76Ue HA7my0EtIKTIojYaAbXzGCAYIwggF AgEBMFcwTzELMAkGA1UEBhMCS1IxEjAQBgNVBAoMCUNyb3NzQ2VydDEVMBMGA1UECwwMQWNjcmVkaXRlZENBMRUwEwYDVQQDDAxDcm9zc0NlcnRDQTICBAEUF08wDQYJYIZIAWUDBAIBBQAwDQYJKoZIhvcNAQEBBQAEggEAH3We4F3aFPlO60MNZm5OhVtszu/hW5lyUwxe6O/W/XlqT7QDfvy9ExV9G7H3IPzBvFjBbA0tWpwySb9kct4/HWcIIE0i7iLhGg6KUFqDUxwOoSADqJQkA 8i6XhUxTizYE7/w9cLLIJ1gXpNCfYfKp0l96QzXr77qFdo1 cq92FWNdo5iSzjRRuk5/ZjM0z28sjLbMQwyPKMA1PPMr4cOINAPccGUtPI9Mh/Oa3pSRTuNvt6cKw4/5U/2qxwg5vTKD3TPbQyi63QmKJ6x5f wqJl37PKM/ZK9CGb1AOse39NbxPU/cXuFCvt0IvabDatNrOC7lQSm2OZ2H7o0TGRSA==',
+);
 
-//json数据
-$data['cardno'] = 10000001;
-$data['phone'] = '13545454545';
-$data['tm'] = '2014-12-03,2014-12-11';
-$json = json_encode($data);
+echo urldecode($data['signdata']);
+echo '<br>';
+echo '<br>';
+echo '<br>';
 
+$data = json_encode($data);
 
-$token = md5($appid.$appsecret.$tm.$json);
+//echo $data;
 
-$url = 'http://bp.me/api/Vip/searchPoint?' . 
-		'appid=' . $appid . '&'.
-		'tm=' . $tm . '&' .
-		'token=' . $token;
+echo '<br>';
+$res = sendCurlPostRequest($url, $data);
 
-//传递数据
-
-$res = sendPostRequest($url, $json);
-
-echo $res;
+var_dump($res);

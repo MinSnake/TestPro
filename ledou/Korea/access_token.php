@@ -7,12 +7,18 @@ $oauth_secret_key = array(
 );
 
 $oauth_consumer_secret = array(
-    'oauth_token' => 'ecc6820aabd79341817372ff2268faea0597aeadc',
-    'oauth_secret' => 'db4a0114be901c6555c1aec1331489c8'
+    'oauth_token' => 'a52e453f9cb5d51c1e6fc2d8de0d6cf205987c52b',
+    'oauth_secret' => '4e26672c673e7b24f87e931903e9a4eb'
 );
 
 
-$api = "http://test.zzz.secure.ids111.com:97";
+
+//测试地址
+//$api = "http://test.zzz.secure.ids111.com:97";
+
+//线上地址
+$api = "http://kor-olsecure.ldoverseas.com";
+
 
 $url = "/oauth/access_token";
 
@@ -21,7 +27,7 @@ $Fetch_request=new Fetch_request_token();
 
 $time =time();
 
-$headers=array('Authorization'=>'OAuth oauth_consumer_key="'.$oauth_secret_key['oauth_consumer_key'].'", oauth_token="'.$oauth_consumer_secret['oauth_token'].'", oauth_signature_method="HMAC-SHA1",oauth_timestamp="'.$time.'", oauth_nonce="-4076884019643538433", oauth_version="1.0"');
+$headers=array('Authorization'=>'OAuth oauth_consumer_key="'.$oauth_secret_key['oauth_consumer_key'].'", oauth_token="'.$oauth_consumer_secret['oauth_token'].'", oauth_signature_method="HMAC-SHA1",oauth_timestamp="'.$time.'", oauth_nonce="58E27606-FA79-4A52-BB44-4E376CC0C624", oauth_version="1.0"');
 
 
 

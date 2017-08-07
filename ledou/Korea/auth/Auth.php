@@ -21,7 +21,7 @@ class OAuthSignatures
      */
     function hashsign($base_string)
     {
-     header("Content-type: text/html; charset=utf-8");
+//     header("Content-type: text/html; charset=utf-8");
 
         //用来加密的字符串数组
         $key_parts = array(

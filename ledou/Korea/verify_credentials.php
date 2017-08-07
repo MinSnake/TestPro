@@ -7,12 +7,15 @@ $oauth_secret_key = array(
 );
 
 $oauth_consumer_secret = array(
-    'oauth_token' => '036acfdb0077404cde43306b62c5f8ad0597aad23',
-    'oauth_secret' => '3ec871aab1811af979220efc6cb9ec06'
+    'oauth_token' => 'a52e453f9cb5d51c1e6fc2d8de0d6cf205987c52b',
+    'oauth_secret' => '4e26672c673e7b24f87e931903e9a4eb'
 );
 
 
-$http_url = "http://test.zzz.feed.ids111.com:97/account/verify_credentials";
+
+//$http_url = "http://test.zzz.feed.ids111.com:97/account/verify_credentials";
+
+$http_url = "http://kor-olfeed.ldoverseas.com/account/verify_credentials";
 
 $Fetch_request = new Fetch_request_token();
 
@@ -20,7 +23,7 @@ $Fetch_request = new Fetch_request_token();
 $time = time();
 
 //$headers=array('Authorization'=>'OAuth oauth_consumer_key="0bb9be981116a83534b7", oauth_token="6368feb43ecc532271494017766acac5059278894", oauth_signature_method="HMAC-SHA1", oauth_signature="3Z6AoZAPuWF20cOX4v%2FQNJbuchQ%3D", oauth_timestamp="1472438988", oauth_nonce="-5088990226636127275", oauth_version="1.0", oauth_signature_v2="1GXEXEcMS7N51ZYl14NEcf%2BjHNY%3D"');
-$headers = array('Authorization' => 'OAuth oauth_consumer_key="' . $oauth_secret_key['oauth_consumer_key'] . '", oauth_token="' . $oauth_consumer_secret['oauth_token'] . '", oauth_signature_method="HMAC-SHA1",oauth_timestamp="' . $time . '", oauth_nonce="-4076884019643538433", oauth_version="1.0"');
+$headers = array('Authorization' => 'OAuth oauth_consumer_key="' . $oauth_secret_key['oauth_consumer_key'] . '", oauth_token="' . $oauth_consumer_secret['oauth_token'] . '", oauth_signature_method="HMAC-SHA1",oauth_timestamp="' . $time . '", oauth_nonce="58E27606-FA79-4A52-BB44-4E376CC0C624", oauth_version="1.0"');
 
 
 $param_header = $Fetch_request->get_parameter_header($headers);
