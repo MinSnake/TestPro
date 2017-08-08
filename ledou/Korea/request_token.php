@@ -2,12 +2,12 @@
 include 'auth/Auth.php';
 
 $game_key_secret = array(
-    'key'    => '67a671523a3b098cf561',
+    'key' => '67a671523a3b098cf561',
     'secret' => '6422592d6968c87d1132'
 );
 
 $token_key_secret = array(
-    'key'    => '',
+    'key' => '',
     'secret' => ''
 );
 
@@ -15,13 +15,13 @@ $token_key_secret = array(
 $Fetch_request = new Fetch_request_token();
 
 $param_header = array(
-    'oauth_consumer_key'     => $game_key_secret['key'],
+    'oauth_consumer_key' => $game_key_secret['key'],
 //    'oauth_token'            => $token_key_secret['key'],
     'oauth_signature_method' => 'HMAC-SHA1',
-    'oauth_timestamp'        => (string)time(),
-    'oauth_nonce'            => '58E27606-FA79-4A52-BB44-4E376CC0C624',
-    'oauth_version'          => '1.0',
-    'oauth_callback'         => 'dgc-request-token-callback',
+    'oauth_timestamp' => (string)time(),
+    'oauth_nonce' => '58E27606-FA79-4A52-BB44-4E376CC0C624',
+    'oauth_version' => '1.0',
+    'oauth_callback' => 'dgc-request-token-callback',
 );
 
 
@@ -63,7 +63,7 @@ $headers_test = array(
 );
 
 
-print 'Authorization: '.$headers_test['Authorization'].',oauth_signature="'.urlencode($rre).'",oauth_signature_v2="'.urlencode($rre).'"';
+print 'Authorization: ' . $headers_test['Authorization'] . ',oauth_signature="' . urlencode($rre) . '",oauth_signature_v2="' . urlencode($rre) . '"';
 
 
 

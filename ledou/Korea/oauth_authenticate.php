@@ -7,8 +7,8 @@ $oauth_secret_key = array(
 );
 
 $oauth_consumer_secret = array(
-    'oauth_token' => 'a52e453f9cb5d51c1e6fc2d8de0d6cf205987c52b',
-    'oauth_secret' => '4e26672c673e7b24f87e931903e9a4eb'
+    'oauth_token' => '035e51e4575d2a4874fd22958c145b900598927e8',
+    'oauth_secret' => '579780af42caf01693eea03137f9641b'
 );
 
 
@@ -34,7 +34,6 @@ $head_test_arr = array(
     'oauth_nonce' => '58E27606-FA79-4A52-BB44-4E376CC0C624',
     'oauth_version' => '1.0',
 );
-
 
 
 $head_test_str = '';
