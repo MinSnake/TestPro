@@ -6,69 +6,100 @@ $oauth_secret_key = array(
     'oauth_consumer_secret' => '6422592d6968c87d1132',
 );
 
+//$oauth_consumer_secret = array(
+//    'oauth_token' => 'a52e453f9cb5d51c1e6fc2d8de0d6cf205987c52b',
+//    'oauth_secret' => '4e26672c673e7b24f87e931903e9a4eb'
+//);
 $oauth_consumer_secret = array(
-    'oauth_token' => 'a52e453f9cb5d51c1e6fc2d8de0d6cf205987c52b',
+    'oauth_token' => '03910a631f0eb6af7131ee51a2daac540598822fa',
     'oauth_secret' => '4e26672c673e7b24f87e931903e9a4eb'
 );
 
 
-//$http_url = "http://payv2.dev.ids111.com:97/payments/create";
+$http_url = "http://payv2.dev.ids111.com:97/payments/create";
 
-$http_url = "http://kor-olpay.ldoverseas.com/payments/create";
-
-
-$Fetch_request=new Fetch_request_token();
-
-$time=time();
-
-$headers=array('Authorization'=>'OAuth oauth_consumer_key="'.$oauth_secret_key['oauth_consumer_key'].'", oauth_token="'.$oauth_consumer_secret['oauth_token'].'", oauth_signature_method="HMAC-SHA1",oauth_timestamp="'.$time.'", oauth_nonce="58E27606-FA79-4A52-BB44-4E376CC0C624", oauth_version="1.0"');
+//$http_url = "http://kor-olpay.ldoverseas.com/payments/create";
 
 
-$param_header=$Fetch_request->get_parameter_header($headers);
+$Fetch_request = new Fetch_request_token();
 
-$http_method = 'POST';
+$time = time();
 
-$params = array (
+$time = 1502094090;
 
-    "product_id"     => "8880008880000",  //道具id,13位
-    "product_name"   => "金达测试道具",            //道具名称
-    "p_identifier"   => "jindatest",           //道具标识
-    "quantity"       => "1",          //数量
-    "auth_game_type" => "1",              //游戏类型，1-网游，2-休闲
-    "paymethod"      => "24",         //支付方式标识
-    "currency"       => "KRW",         //订单币种
-    "order_amount"   => "1000",          //支付金额
-    "type"           => "8",             //支付形式
-    "extral_info"    => "string",       //透传字段
-    "price"          => "1000",          //道具价格
-    "channel_id"     => "NT0S0N00002",   //渠道号
-    "server_id"      => "1",             //游戏服务器
-    "cli_ver"        => "pay-3.2.2.57",    //版本号
-    "imei"           => "000000000000",
-    "nudid"          => "18682168085186821680851868216808518682168085",
-    "udid"           => "JindaLiJindaLiJindaLiJindaLiJindaLiJindaLiJindaLiJindaLi"
+//$headers=array(
+//    'Authorization'=>'OAuth oauth_consumer_key="'.$oauth_secret_key['oauth_consumer_key'].
+//        '", oauth_token="'.$oauth_consumer_secret['oauth_token'].
+//        '", oauth_signature_method="HMAC-SHA1",oauth_timestamp="'.$time.
+//        '", oauth_nonce="-6696194299137986758", oauth_version="1.0"');
+
+$head_test_arr = array(
+    'oauth_consumer_key' => $oauth_secret_key['oauth_consumer_key'],
+    'oauth_token' => $oauth_consumer_secret['oauth_token'],
+    'oauth_signature_method' => 'HMAC-SHA1',
+    'oauth_timestamp' => $time,
+    'oauth_nonce' => '58E27606-FA79-4A52-BB44-4E376CC0C624',
+    'oauth_version' => '1.0',
 );
 
 
-var_dump(var_export(json_encode($params),true));
+$head_test_str = '';
+foreach ($head_test_arr as $key => $val) {
+    $head_test_str .= $key . '=' . '"' . $val . '",';
+}
+
+$head_test_str = 'OAuth ' . $head_test_str;
+$head_test_str = substr($head_test_str, 0, -1);
 
 
-$base_string=$Fetch_request->base_string($http_method,$http_url,$param_header);
+$headers = array(
+    'Authorization' => $head_test_str
+);
 
-$base_string2=$Fetch_request->base_string($http_method,$http_url,$param_header,$params);
+$param_header = $Fetch_request->get_parameter_header($headers);
+
+$http_method = 'POST';
+
+$params = array(
+    "product_id" => "8880008880000",  //道具id,13位
+    "product_name" => "金达测试道具",            //道具名称
+    "p_identifier" => "jindatest",           //道具标识
+    "quantity" => "1",          //数量
+    "auth_game_type" => "1",              //游戏类型，1-网游，2-休闲
+    "paymethod" => "24",         //支付方式标识
+    "currency" => "KRW",         //订单币种
+    "order_amount" => "1000",          //支付金额
+    "type" => "8",             //支付形式
+    "extral_info" => "string",       //透传字段
+    "price" => "1000",          //道具价格
+    "channel_id" => "NT0S0N00002",   //渠道号
+    "server_id" => "1",             //游戏服务器
+    "cli_ver" => "pay-3.2.2.57",    //版本号
+    "imei" => "000000000000",
+    "nudid" => "18682168085186821680851868216808518682168085",
+    "udid" => "JindaLiJindaLiJindaLiJindaLiJindaLiJindaLiJindaLiJindaLi"
+);
 
 
-$OAuthSignature=new OAuthSignatures($oauth_secret_key['oauth_consumer_secret'],$oauth_consumer_secret['oauth_secret']);
+var_dump(var_export(json_encode($params), true));
 
 
-$rre=$OAuthSignature->hashsign($base_string);
-$rres=$OAuthSignature->hashsign($base_string2);
+$base_string = $Fetch_request->base_string($http_method, $http_url, $param_header);
+
+$base_string2 = $Fetch_request->base_string($http_method, $http_url, $param_header, $params);
+
+
+$OAuthSignature = new OAuthSignatures($oauth_secret_key['oauth_consumer_secret'], $oauth_consumer_secret['oauth_secret']);
+
+
+$rre = $OAuthSignature->hashsign($base_string);
+$rres = $OAuthSignature->hashsign($base_string2);
 
 var_dump(urlencode($rre));
 var_dump(urlencode($rres));
 
 
-print 'Authorization: '.$headers['Authorization'].',oauth_signature="'.urlencode($rre).'",oauth_signature_v2="'.urlencode($rres).'"';
+print 'Authorization: ' . $headers['Authorization'] . ',oauth_signature="' . urlencode($rre) . '",oauth_signature_v2="' . urlencode($rres) . '"';
 
 
 

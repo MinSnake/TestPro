@@ -8,10 +8,10 @@
 $data = array(
     'packageName'  => 'com.idreamsky.korea.demo',
     'productId'    => 'test1',
-    'token'        => 'pmiopafodmclpfpnjlmhhlga.AO-J1Ox5Vw9KAdWwuK3k04eHyltAuodQ7vUATW0LLdUktk43KUXqBn2pI7G09N7nd3RDq-qd9XL4Z_C38Zvaa8eUwSugS3xv1NC_pXJcaVTtpXBtultW0nc',
-    'orderId'      => 'DD6053276034',
-    'purchaseTime' => '1501828967644',
-    'subscrid'     => 'DD6053276034',
+    'token'        => 'kplfegjjnbjnljogjbfajlil.AO-J1OzrxnDek9J32Cgu4g8YTtWFkyL7NkC1mNzaGZgRHYDry-Ln2U-Ku6GFpGHQVFdcdBPy9FfdE9gTeGEHLCdDcheEZWFitx71Z0RZaGhkXrd4a7THDWY',
+    'orderId'      => 'DD6053276087',
+    'purchaseTime' => '1502100116055',
+    'subscrid'     => 'GPA.3378-7948-6564-07594',
 );
 //$data = array(
 //    'packageName'  => 'com.idreamsky.korea.demo',

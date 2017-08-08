@@ -23,6 +23,19 @@
 //
 //var_dump($arr);
 
-$server_deploy_type = get_cfg_var( 'SERVER_DEPLOY_TYPE' );
+//$server_deploy_type = get_cfg_var( 'SERVER_DEPLOY_TYPE' );
+//
+//var_dump($server_deploy_type);
 
-var_dump($server_deploy_type);
+
+$a = '1000.0000';
+$b = 1000;
+
+if ($a == $b)
+{
+    echo '=';
+}
+else
+{
+    echo '!=';
+}
