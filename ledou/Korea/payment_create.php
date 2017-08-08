@@ -12,10 +12,10 @@ $oauth_consumer_secret = array(
 );
 
 //测试地址
-$http_url = "http://payv2.dev.ids111.com:97/payments/create";
+//$http_url = "http://payv2.dev.ids111.com:97/payments/create";
 
 //线上地址
-//$http_url = "http://kor-olpay.ldoverseas.com/payments/create";
+$http_url = "http://kor-olpay.ldoverseas.com/payments/create";
 
 
 $Fetch_request = new Fetch_request_token();
