@@ -7,18 +7,20 @@ $oauth_secret_key = array(
 );
 
 $oauth_consumer_secret = array(
-    'oauth_token' => '035e51e4575d2a4874fd22958c145b900598927e8',
-    'oauth_secret' => '579780af42caf01693eea03137f9641b'
+    'oauth_token' => 'd52a9b5d51557219e2b5f85471bbb9a5059892d7a',
+    'oauth_secret' => 'a200f338e7de6bb038860d18c82084eb'
 );
+
 
 //测试地址
 $http_url = "http://test.zzz.feed.ids111.com:97/account/openid_sessionid";
 
 //线上地址
-$http_url = "http://kor-olfeed.ldoverseas.com/account/openid_sessionid";
+//$http_url = "http://kor-olfeed.ldoverseas.com/account/openid_sessionid";
 
 
 $Fetch_request = new Fetch_request_token();
+echo $http_url . '<br>';
 
 
 $time = time();

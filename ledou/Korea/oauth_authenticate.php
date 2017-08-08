@@ -7,16 +7,16 @@ $oauth_secret_key = array(
 );
 
 $oauth_consumer_secret = array(
-    'oauth_token' => '035e51e4575d2a4874fd22958c145b900598927e8',
-    'oauth_secret' => '579780af42caf01693eea03137f9641b'
+    'oauth_token' => 'd52a9b5d51557219e2b5f85471bbb9a5059892d7a',
+    'oauth_secret' => 'a200f338e7de6bb038860d18c82084eb'
 );
 
 
 //测试地址
-//$api = "http://test.zzz.secure.ids111.com:97";
+$api = "http://test.zzz.secure.ids111.com:97";
 
 //线上地址
-$api = "http://kor-olsecure.ldoverseas.com";
+//$api = "http://kor-olsecure.ldoverseas.com";
 
 
 $url = "/oauth/authenticate";
