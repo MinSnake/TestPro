@@ -98,6 +98,8 @@ class Fetch_request_token
         //用&符号连起来
         $querySBS = join('&', $a);
 
+//        echo $querySBS;
+
         $parts = array(
             $http_method,
             $http_url,

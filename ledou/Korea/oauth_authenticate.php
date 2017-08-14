@@ -7,8 +7,8 @@ $oauth_secret_key = array(
 );
 
 $oauth_consumer_secret = array(
-    'oauth_token' => 'd52a9b5d51557219e2b5f85471bbb9a5059892d7a',
-    'oauth_secret' => 'a200f338e7de6bb038860d18c82084eb'
+    'oauth_token' => '677b6cb94d12bdfc3cdd47dcb481d0e40598c066e',
+    'oauth_secret' => '26de32cc46f837c729ff64df0d794fdf'
 );
 
 
@@ -34,6 +34,16 @@ $head_test_arr = array(
     'oauth_nonce' => '58E27606-FA79-4A52-BB44-4E376CC0C624',
     'oauth_version' => '1.0',
 );
+
+//$head_test_arr = array(
+//    'oauth_consumer_key' => '67a671523a3b098cf561',
+//    'oauth_token' => $oauth_consumer_secret['oauth_token'],
+//    'oauth_signature_method' => 'HMAC-SHA1',
+//    'oauth_timestamp' => 1502283790,
+//    'oauth_nonce' => '-8909201805885946842',
+//    'oauth_version' => '1.0',
+//    'oauth_callback' => 'dgc-request-token-callback',
+//);
 
 
 $head_test_str = '';

@@ -21,7 +21,7 @@ $param_header = array(
     'oauth_timestamp' => (string)time(),
     'oauth_nonce' => '58E27606-FA79-4A52-BB44-4E376CC0C624',
     'oauth_version' => '1.0',
-    'oauth_callback' => 'dgc-request-token-callback',
+//    'oauth_callback' => 'dgc-request-token-callback',
 );
 
 

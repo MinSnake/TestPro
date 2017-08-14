@@ -7,9 +7,10 @@ $oauth_secret_key = array(
 );
 
 $oauth_consumer_secret = array(
-    'oauth_token' => '035e51e4575d2a4874fd22958c145b900598927e8',
-    'oauth_secret' => '579780af42caf01693eea03137f9641b'
+    'oauth_token' => '2a14c8bb7499d7fd96b6a930eca2a7500598a9449',
+    'oauth_secret' => 'a0b5820755dd32200454f7f4a1f37e2d'
 );
+
 
 //测试地址
 $http_url = "http://payv2.dev.ids111.com:97/payments/create";
