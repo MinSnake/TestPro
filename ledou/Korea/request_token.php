@@ -26,10 +26,10 @@ $param_header = array(
 
 
 //测试地址
-$host = "http://test.zzz.secure.ids111.com:97";
+//$host = "http://test.zzz.secure.ids111.com:97";
 
 //线上地址
-//$host = "http://kor-olsecure.ldoverseas.com";
+$host = "http://kor-olsecure.ldoverseas.com";
 
 
 $url = $host . "/oauth/request_token";

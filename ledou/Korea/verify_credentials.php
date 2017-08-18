@@ -7,16 +7,16 @@ $oauth_secret_key = array(
 );
 
 $oauth_consumer_secret = array(
-    'oauth_token' => '2a14c8bb7499d7fd96b6a930eca2a7500598a9449',
-    'oauth_secret' => 'a0b5820755dd32200454f7f4a1f37e2d'
+    'oauth_token' => '58c19bb2b6f3b75104fdc8e7b86362370599649b6',
+    'oauth_secret' => 'c915c06d7fd5decabe85592d142d1476'
 );
 
 
 //测试地址
-$http_url = "http://test.zzz.feed.ids111.com:97/account/verify_credentials";
+//$http_url = "http://test.zzz.feed.ids111.com:97/account/verify_credentials";
 
 //线上地址
-//$http_url = "http://kor-olfeed.ldoverseas.com/account/verify_credentials";
+$http_url = "http://kor-olfeed.ldoverseas.com/account/verify_credentials";
 
 $Fetch_request = new Fetch_request_token();
 

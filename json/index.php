@@ -1,22 +1,33 @@
 <?php
-$a = '{
-    "product": [
-        {
-            "appid": "OA00718081",
-            "bp_info": "",
-            "charge_amount": 1000,
-            "detail_pname": "",
-            "log_time": "20170803105840",
-            "product_id": "0910084685",
-            "tid": "DD2003942753"
-        }
-    ],
-    "message": "정상검증완료.",
-    "detail": "0000",
-    "count": 1,
-    "status": 0
-}';
+//$a = '{
+//    "product": [
+//        {
+//            "appid": "OA00718081",
+//            "bp_info": "",
+//            "charge_amount": 1000,
+//            "detail_pname": "",
+//            "log_time": "20170803105840",
+//            "product_id": "0910084685",
+//            "tid": "DD2003942753"
+//        }
+//    ],
+//    "message": "정상검증완료.",
+//    "detail": "0000",
+//    "count": 1,
+//    "status": 0
+//}';
+//
+//$b = json_decode($a);
+//
+//var_dump($b);
 
-$b = json_decode($a);
+$a = array(
+    'igaworks' => array(
+        'appkey' => '730227318',
+        'haskkey' => 'e14b2ce5c5ab46ce',
+    )
+);
 
-var_dump($b);
+$s = json_encode($a);
+
+echo $s;

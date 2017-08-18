@@ -21,7 +21,7 @@ $http_url =  'http://test.zzz.secure.ids111.com:97/oauth/request_token';
 $param_header = array(
     'oauth_consumer_key'     => '67a671523a3b098cf561',
     'oauth_signature_method' => 'HMAC-SHA1',
-    'oauth_timestamp'        => 1502694226,
+    'oauth_timestamp'        => 1502764514,
     'oauth_nonce'            => '58E27606-FA79-4A52-BB44-4E376CC0C624',
     'oauth_version'          => '1.0',
 );
@@ -43,11 +43,11 @@ $game_key_secret = array(
     'secret' => '6422592d6968c87d1132'
 );
 
-$key = '67a671523a3b098cf561' . '&' . '6422592d6968c87d1132';
+$key = '6422592d6968c87d1132' . '&' . '';
 
-$string = base64_encode(hash_hmac('sha1', $base_string, $key, true));
+$string = base64_encode(hash_hmac('sha1', $str, $key, true));
 
-
-
+echo '<br>';
+echo $string;
 
 

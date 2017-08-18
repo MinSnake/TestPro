@@ -7,23 +7,23 @@ $oauth_secret_key = array(
 );
 
 $oauth_consumer_secret = array(
-    'oauth_token' => '2a14c8bb7499d7fd96b6a930eca2a7500598a9449',
-    'oauth_secret' => 'a0b5820755dd32200454f7f4a1f37e2d'
+    'oauth_token' => '58c19bb2b6f3b75104fdc8e7b86362370599649b6',
+    'oauth_secret' => 'c915c06d7fd5decabe85592d142d1476'
 );
 
 
 //测试地址
-$http_url = "http://payv2.dev.ids111.com:97/payments/create";
+//$http_url = "http://payv2.dev.ids111.com:97/payments/create";
 
 //线上地址
-//$http_url = "http://kor-olpay.ldoverseas.com/payments/create";
+$http_url = "http://kor-olpay.ldoverseas.com/payments/create";
 
 
 $Fetch_request = new Fetch_request_token();
 
 $time = time();
 
-$time = 1502094090;
+//$time = 1502094090;
 
 //$headers=array(
 //    'Authorization'=>'OAuth oauth_consumer_key="'.$oauth_secret_key['oauth_consumer_key'].
@@ -64,12 +64,13 @@ $params = array(
     "p_identifier" => "jindatest",           //道具标识
     "quantity" => "1",          //数量
     "auth_game_type" => "1",              //游戏类型，1-网游，2-休闲
-    "paymethod" => "24",         //支付方式标识
-    "currency" => "KRW",         //订单币种
-    "order_amount" => "1000",          //支付金额
+    "paymethod" => "251",         //支付方式标识
+    "currency" => "USD",         //订单币种
+//    "currency" => "KRW",         //订单币种
+    "order_amount" => "1.0900",          //支付金额
     "type" => "8",             //支付形式
     "extral_info" => "string",       //透传字段
-    "price" => "1000",          //道具价格
+    "price" => "1.0900",          //道具价格
     "channel_id" => "NT0S0N00002",   //渠道号
     "server_id" => "1",             //游戏服务器
     "cli_ver" => "pay-3.2.2.57",    //版本号
