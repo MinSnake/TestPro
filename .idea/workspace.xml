@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9efe3c6e-e332-4730-bb89-b6a6099fef10" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fortumo/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fortumo/index.php" afterPath="$PROJECT_DIR$/fortumo/index.php" />
     </list>
     <ignored path="test.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,8 +26,8 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/fortumo/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="779">
-              <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+            <state relative-caret-position="551">
+              <caret line="32" column="30" selection-start-line="32" selection-start-column="30" selection-end-line="32" selection-end-column="30" />
               <folding>
                 <element signature="e#6#114#0#PHP" expanded="true" />
               </folding>
@@ -61,8 +60,8 @@
         <option value="$PROJECT_DIR$/MD5/test.php" />
         <option value="$PROJECT_DIR$/string/index2.php" />
         <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/fortumo/index.php" />
         <option value="$PROJECT_DIR$/fortumo/fortumo.log" />
+        <option value="$PROJECT_DIR$/fortumo/index.php" />
       </list>
     </option>
   </component>
@@ -255,12 +254,12 @@
       <workItem from="1504923087580" duration="634000" />
       <workItem from="1505094101483" duration="6796000" />
       <workItem from="1505179391200" duration="7472000" />
-      <workItem from="1505264846251" duration="10246000" />
+      <workItem from="1505264846251" duration="10423000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50018000" />
+    <option name="totallyTimeSpent" value="50195000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="498" y="0" width="1422" height="1040" extended-state="0" />
@@ -726,8 +725,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/fortumo/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="779">
-          <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+        <state relative-caret-position="551">
+          <caret line="32" column="30" selection-start-line="32" selection-start-column="30" selection-end-line="32" selection-end-column="30" />
           <folding>
             <element signature="e#6#114#0#PHP" expanded="true" />
           </folding>

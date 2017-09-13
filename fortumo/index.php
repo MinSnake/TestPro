@@ -30,6 +30,7 @@ if ($params)
 }
 else
 {
+    echolog('GET请求参数为空，即将返回403');
     header("HTTP/1.0 403 Forbidden");
     die("Error: Unknown Request");
 }
