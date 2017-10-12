@@ -7,10 +7,9 @@ $oauth_secret_key = array(
 );
 
 $oauth_consumer_secret = array(
-    'oauth_token' => '1aa96e5650a8035e150dc99ab64d875e059b7adaf',
-    'oauth_secret' => 'd8cb0b7246240d495a697ba1e8e91a88'
+    'oauth_token' => '78a0ac23a6ec3e71dbd89e45ceaa52f6059dde488',
+    'oauth_secret' => '26f6a478f0380edd0cccc5bfff039bbc'
 );
-
 
 //测试地址
 $http_url = "http://test.zzz.feed.ids111.com:97/account/verify_credentials";

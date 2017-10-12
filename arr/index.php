@@ -1,28 +1,20 @@
 <?php
 
-$a = array(
-    'id' => 1,
-    'table' => 'xaxaxax',
-    'ds' => 'dbdb',
-    'name' => 'a'
-);
-$id = array(1,2,3,4);
-$res = array_merge($a, $id);
-
-var_dump($res);
-
-
-$c = array();
-
-if($c)
+function splitVersion($versionStr)
 {
-    echo 'cc';
-}
-else
-{
-    echo 'dd';
+    $arr = explode('_', $versionStr);
+    if (count($arr) != 2)
+    {
+        return false;
+    }
+    return array(
+        'game_version' => substr($arr[0], 1),
+        'sdk_version' => substr($arr[1], 1)
+    );
 }
 
 
 
+$arr = splitVersion('v1.0.0_s1.0.1');
 
+var_dump($arr);

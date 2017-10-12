@@ -7,15 +7,15 @@ $oauth_secret_key = array(
 );
 
 $oauth_consumer_secret = array(
-    'oauth_token' => '58c19bb2b6f3b75104fdc8e7b86362370599649b6',
-    'oauth_secret' => 'c915c06d7fd5decabe85592d142d1476'
+    'oauth_token' => '955ecc44846ff470154886552f3d7dff059c0e33a',
+    'oauth_secret' => 'cf340a5f9fe97d296be6c8c7b9093b3f'
 );
 
 
 
-//$http_url = "http://test.zzz.secure.ids111.com:97/sns/account";
+$http_url = "http://test.zzz.secure.ids111.com:97/sns/account";
 
-$http_url = "http://kor-olsecure.ldoverseas.com/sns/account";
+//$http_url = "http://kor-olsecure.ldoverseas.com/sns/account";
 
 $Fetch_request = new Fetch_request_token();
 

@@ -7,8 +7,8 @@ $oauth_secret_key = array(
 );
 
 $oauth_consumer_secret = array(
-    'oauth_token' => '1aa96e5650a8035e150dc99ab64d875e059b7adaf',
-    'oauth_secret' => 'd8cb0b7246240d495a697ba1e8e91a88'
+    'oauth_token' => '78a0ac23a6ec3e71dbd89e45ceaa52f6059dde488',
+    'oauth_secret' => '26f6a478f0380edd0cccc5bfff039bbc'
 );
 
 
@@ -29,9 +29,9 @@ $time = time();
 $head_test_arr = array(
     'oauth_consumer_key' => $oauth_secret_key['oauth_consumer_key'],
     'oauth_token' => $oauth_consumer_secret['oauth_token'],
-    'oauth_signature_method' => 'HMAC-SHA1',
     'oauth_timestamp' => $time,
     'oauth_nonce' => '58E27606-FA79-4A52-BB44-4E376CC0C624',
+    'oauth_signature_method' => 'HMAC-SHA1',
     'oauth_version' => '1.0',
 );
 

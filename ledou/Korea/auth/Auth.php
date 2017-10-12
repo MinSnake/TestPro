@@ -40,25 +40,54 @@ class OAuthSignatures
 //     var_dump($key_parts);
 
 
-        print '加密key' . "\n" . "</br>" . $key . "\n" . "</br>";
+        print 'sign key' . "\n" . "</br>" . $key . "\n" . "</br>";
 
-        print '加密源串    ' . "\n" . "</br>" . $base_string . "\n" . "</br>";
+        print 'sign string    ' . "\n" . "</br>" . $base_string . "\n" . "</br>";
 
 
         $temp_1 = hash_hmac('sha1', $base_string, $key, true);
 
-//     echo 'sha1结果:';
-//     var_dump($temp_1);
-
-//     echo 'base64结果：';
-//     $temp_2 = base64_encode($temp_1);
-//     var_dump($temp_2);
+        echo 'sha1:' . "\n" . "</br>" . $temp_1;
 
 
-        $string = base64_encode(hash_hmac('sha1', $base_string, $key, true));
+        $string = base64_encode($temp_1);
         return $string;
     }
 
+    function hashsign_game($base_string)
+    {
+//     header("Content-type: text/html; charset=utf-8");
+
+        //用来加密的字符串数组
+        $key_parts = array(
+            $this->oauth_consumer_secret,
+            $this->oauth_secret_key ? $this->oauth_secret_key : ""
+        );
+
+//     var_dump($key_parts);
+
+        $key_parts = OAuthUtil::urlencode_rfc3986($key_parts);
+
+//     var_dump($key_parts);
+
+        $key = implode('&', $key_parts);
+
+//     var_dump($key_parts);
+
+
+        print 'sign key' . "\n" . "</br>" . $key . "\n" . "</br>";
+
+        print 'sign string    ' . "\n" . "</br>" . $base_string . "\n" . "</br>";
+
+
+        $temp_1 = hash_hmac('sha1', $base_string, $key, false);
+
+        echo 'sha1:' . "\n" . "</br>" . $temp_1;
+
+
+        $string = base64_encode($temp_1);
+        return $string;
+    }
 
 }
 
@@ -98,7 +127,7 @@ class Fetch_request_token
         //用&符号连起来
         $querySBS = join('&', $a);
 
-//        echo $querySBS;
+        echo $querySBS;
 
         $parts = array(
             $http_method,
@@ -106,8 +135,14 @@ class Fetch_request_token
             $querySBS
         );
 
+
+        var_dump($parts);
+
         //根据RFC3986进行编码转换
         $keyparts = OAuthUtil::urlencode_rfc3986($parts);
+
+        var_dump($keyparts);
+
         $base_string = implode('&', $keyparts);
         return $base_string;
     }
@@ -126,7 +161,7 @@ class Fetch_request_token
             }
         }
 
-        var_dump($arrto);
+//        var_dump($arrto);
         unset($arrto['oauth_signature_v2']);
         unset($arrto['oauth_signature']);
         return $arrto;
