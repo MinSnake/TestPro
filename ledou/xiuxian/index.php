@@ -11,10 +11,8 @@ use Util\OAuthUtil;
 use Util\Log;
 
 /**
- * 请求oauth/request_token
+ * @todo 休闲用户第一步  请求oauth/request_token
  */
-
-
 function oauth_request_token()
 {
     Log::log('');
@@ -46,6 +44,20 @@ function oauth_request_token()
     Log::log('====【secure】接口【oauth/request_token】请求结束====');
     Log::log('');
 }
+
+/**
+ * @todo 休闲用户登录第二步  请求oauth/authenticate
+ */
+function oauth_authenticate()
+{
+
+
+
+
+
+}
+
+
 
 
 oauth_request_token();
