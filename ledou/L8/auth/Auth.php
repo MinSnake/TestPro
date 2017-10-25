@@ -27,15 +27,10 @@ class OAuthSignatures
             $this->oauth_secret_key ? $this->oauth_secret_key : ""
         );
 
-//     var_dump($key_parts);
 
         $key_parts = OAuthUtil::urlencode_rfc3986($key_parts);
-
-//     var_dump($key_parts);
-
         $key = implode('&', $key_parts);
 
-//     var_dump($key_parts);
 
 
         print 'sign key' . "\n" . "</br>" . $key . "\n" . "</br>";
@@ -100,10 +95,7 @@ class Fetch_request_token
      */
     function base_string($http_method, $http_url, $authorization, $par = '')
     {
-
-//        header("Content-type: text/html; charset=utf-8");
         $params = $this->par_url($http_url);
-
         if ($params) {
             if (isset($params['query']) && !empty($params['query'])) {
                 $arr = array_merge($authorization, $params['query']);
@@ -114,7 +106,6 @@ class Fetch_request_token
             $arr = array_merge($authorization, $par);
             var_dump($arr);
         }
-
         //按照键名进行升序排序
         ksort($arr);
         foreach ($arr as $key => $value) {
@@ -123,23 +114,13 @@ class Fetch_request_token
         }
         //用&符号连起来
         $querySBS = join('&', $a);
-
-        echo $querySBS;
-
         $parts = array(
             $http_method,
             $http_url,
             $querySBS
         );
-
-
-        var_dump($parts);
-
         //根据RFC3986进行编码转换
         $keyparts = OAuthUtil::urlencode_rfc3986($parts);
-
-        var_dump($keyparts);
-
         $base_string = implode('&', $keyparts);
         return $base_string;
     }
