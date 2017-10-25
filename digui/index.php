@@ -2,13 +2,12 @@
 
 /**
  * @todo 从M个数字中选N个数字的不重复组合
- *
  * @param $index
  * @param $m
  * @param $n
- * @param $temp_arr
- * @param $result
- * @return mixed
+ * @param array $temp_arr
+ * @param array $result
+ * @return array
  */
 function c($index, $m, $n, $temp_arr = array(), $result = array())
 {
@@ -34,7 +33,7 @@ function c($index, $m, $n, $temp_arr = array(), $result = array())
 
 $m = [1, 2, 3, 4];
 
-$n = 2;
+$n = 4;
 
 $r = c(0, $m, $n);
 

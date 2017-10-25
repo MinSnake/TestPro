@@ -125,8 +125,8 @@ $morseUtil = new MorseCode();
 
 //$str = 'i love u';
 //$result = $morseUtil->morse_encode($str,$point = '.', $line = '_', $delimiter = '/');
-//echo $result;
+//echo $result . PHP_EOL;
 
-$morse_str = '../._../___/..._/./.._/';
-$result = $morseUtil->morse_decode($morse_str, $point = '.', $line = '_', $delimiter = '/');
-echo $result;
+$morse_str = '..-./----./-..../...--/..-/..-./----./.----/-..-/-..-/..-./...../----./-.--/----./..-./-..../..---/.----/.----/..-./-..../--.../-..../...../..-./....-/...-/---../-..../';
+$result = $morseUtil->morse_decode($morse_str, $point = '.', $line = '-', $delimiter = '/');
+echo $result . PHP_EOL;
