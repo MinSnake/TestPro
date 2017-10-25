@@ -47,12 +47,14 @@ class RequestUtil
      */
     public function sendCurlPostData($url, $data = null, $head = null)
     {
+        Log::log('即将请求到乐逗服务器......');
+        Log::log('请求参数：' . var_export($data, true));
+        Log::log('请求头数据：' . var_export($head, true));
         $curl = curl_init();
         curl_setopt($curl, CURLOPT_URL, $url);
         curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
         curl_setopt($curl, CURLOPT_CONNECTTIMEOUT, 10);
         if ($head) {
-//            curl_setopt($curl, CURLOPT_HEADER, true);
             curl_setopt($curl, CURLOPT_HTTPHEADER, $head);
         }
         //普通数据
@@ -60,6 +62,8 @@ class RequestUtil
         curl_setopt($curl, CURLOPT_POSTFIELDS, http_build_query($data));
         $res = curl_exec($curl);
         curl_close($curl);
+        Log::log('请求结果:');
+        Log::log($res);
         return $res;
     }
 
@@ -81,7 +85,6 @@ class RequestUtil
         curl_setopt($curl, CURLOPT_HTTPHEADER, array('Content-Type: application/json', 'Content-Length:' . strlen($jsonData)));
         curl_setopt($curl, CURLOPT_POSTFIELDS, $jsonData);
         if ($head) {
-            curl_setopt($curl, CURLOPT_HEADER, true);
             curl_setopt($curl, CURLOPT_HTTPHEADER, $head);
         }
         $res = curl_exec($curl);
@@ -111,7 +114,6 @@ class RequestUtil
         curl_setopt($curl, CURLOPT_TIMEOUT, 500);
         curl_setopt($curl, CURLOPT_URL, $url);
         if ($head) {
-            curl_setopt($curl, CURLOPT_HEADER, true);
             curl_setopt($curl, CURLOPT_HTTPHEADER, $head);
         }
         $res = curl_exec($curl);
