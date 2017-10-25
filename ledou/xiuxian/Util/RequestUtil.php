@@ -102,6 +102,9 @@ class RequestUtil
      */
     public function sendCurlGet($url, $data = null, $head = null)
     {
+        Log::log('即将请求到乐逗服务器......');
+        Log::log('请求参数：' . var_export($data, true));
+        Log::log('请求头数据：' . var_export($head, true));
         if (is_array($data)) {
             $url .= '?';
             foreach ($data as $key => $value) {
@@ -118,6 +121,8 @@ class RequestUtil
         }
         $res = curl_exec($curl);
         curl_close($curl);
+        Log::log('请求结果:');
+        Log::log($res);
         return $res;
     }
 

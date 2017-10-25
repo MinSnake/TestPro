@@ -8,7 +8,7 @@ namespace Util;
 class OAuthUtil
 {
 
-    public function createHeaders($head, $hash_string)
+    public function createHeaders($head, $hash_string, $hash_string2)
     {
         Log::log('正在创建请求头数据......');
         $head_test_str = '';
@@ -22,7 +22,7 @@ class OAuthUtil
         );
         $temp = 'Authorization: ' . $headers_test['Authorization'] .
             ',oauth_signature="' . urlencode($hash_string) .
-            '",oauth_signature_v2="' . urlencode($hash_string) . '"';
+            '",oauth_signature_v2="' . urlencode($hash_string2) . '"';
         Log::log('【生成请求头数据结果】：');
         Log::log($temp);
         $headers = array(
