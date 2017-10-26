@@ -48,6 +48,7 @@ class RequestUtil
     public function sendCurlPostData($url, $data = null, $head = null)
     {
         Log::log('即将请求到乐逗服务器......');
+        Log::log('发送GET请求URL：' . $url);
         Log::log('请求参数：' . var_export($data, true));
         Log::log('请求头数据：' . var_export($head, true));
         $curl = curl_init();
@@ -108,10 +109,11 @@ class RequestUtil
         if (is_array($data)) {
             $url .= '?';
             foreach ($data as $key => $value) {
-                $url .= $key . '' . $value . '&';
+                $url .= $key . '=' . $value . '&';
             }
         }
         $url = substr($url, 0, strlen($url)-1);
+        Log::log('发送GET请求URL：' . $url);
         $curl = curl_init();
         curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
         curl_setopt($curl, CURLOPT_TIMEOUT, 500);

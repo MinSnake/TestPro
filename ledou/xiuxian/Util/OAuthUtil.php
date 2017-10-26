@@ -48,6 +48,8 @@ class OAuthUtil
         );
         $key_parts = OAuthUtil::urlencode_rfc3986($key_parts);
         $key = implode('&', $key_parts);
+
+
         Log::log('加密key:' . $key);
         Log::log('加密原串:' . $base_string);
         $temp_1 = hash_hmac('sha1', $base_string, $key, true);
@@ -99,6 +101,7 @@ class OAuthUtil
         }
         //按照键名进行升序排序
         ksort($arr);
+        Log::log('排序后的DATA数据：' . var_export($arr, true));
         foreach ($arr as $key => $value) {
             $a[] = $key . '=' . urlencode($value);
 

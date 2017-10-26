@@ -2,8 +2,8 @@
 
 //游戏数据配置
 define('GAME_CONFIG',array(
-    'key'    => 'e19081b4527963d70c7a',
-    'secret' => '8b61acd14a5811186163'
+    'key'    => '8fee977f5ba1244dc4f1',
+    'secret' => '02f1221f49bb90bc68f3'
 ));
 
 define('REQUEST_CONFIG', array(
@@ -12,13 +12,14 @@ define('REQUEST_CONFIG', array(
         'oauth_consumer_key'     => GAME_CONFIG['key'],
         'oauth_signature_method' => 'HMAC-SHA1',
         'oauth_timestamp'        => (string)time(),
-        'oauth_nonce'            => '58111111-FA79-4A52-BB44-4E376CC0C624',
+        'oauth_nonce'            => '648574602577142938',
         'oauth_version'          => '1.0',
+        'oauth_callback'         => 'dgc-request-token-callback',
     ),
     //secure模块请求数据配置
     'secure' => array(
         'oauth/request_token' => array(
-            'url' => 'http://secure.overseas.ids111.com:10016/oauth/request_token',
+            'url' => 'http://secure.overseas.ids111.com/oauth/request_token',
             'sign_url' => 'http://secure.overseas.ids111.com/oauth/request_token',
             'method' => 'POST', //POST, GET
             'data' => array(
@@ -27,7 +28,7 @@ define('REQUEST_CONFIG', array(
             ),
         ),
         'oauth/authenticate' => array(
-            'url' => 'http://secure.overseas.ids111.com:10016/oauth/authenticate',
+            'url' => 'http://secure.overseas.ids111.com/oauth/authenticate',
             'sign_url' => 'http://secure.overseas.ids111.com/oauth/authenticate',
             'method' => 'POST', //POST, GET
             'data' => array(
@@ -49,7 +50,7 @@ define('REQUEST_CONFIG', array(
 
         ),
         'oauth/access_token' => array(
-            'url' => 'http://secure.overseas.ids111.com:10016/oauth/access_token',
+            'url' => 'http://secure.overseas.ids111.com/oauth/access_token',
             'sign_url' => 'http://secure.overseas.ids111.com/oauth/access_token',
             'method' => 'POST', //POST, GET
             'data' => array(
@@ -61,9 +62,8 @@ define('REQUEST_CONFIG', array(
 
 
     'feed' => array(
-
         'account/verify_credentials' => array(
-            'url' => 'http://feed.overseas.ids111.com:10016/account/verify_credentials',
+            'url' => 'http://feed.overseas.ids111.com/account/verify_credentials',
             'sign_url' => 'http://feed.overseas.ids111.com/account/verify_credentials',
             'method' => 'GET',
             'data' => array(
@@ -76,10 +76,52 @@ define('REQUEST_CONFIG', array(
                 'sdk_version'  => '2.0',
             ),
         ),
-
-
     ),
 
 
-    'pay' => array(),
+    'pay' => array(
+        'payments/create' => array(
+            'url' => 'http://sdkpay.overseas.ids111.com/payments/create',
+            'sign_url' => 'http://sdkpay.overseas.ids111.com/payments/create',
+            'method' => 'POST',
+            'data' => array(
+//                'product_id'     =>'44',
+//                'discount'       => 1,
+//                'recharge'       => '1.0' ,
+//                'charge_amount'  => 'US$0.99' ,
+//                'server_id'      => '',
+//                'paymethod'      => '156' ,
+//                'paymentstate'   => '1' ,
+//                'extral_info'    => '',
+//                'quantity'       => 1,
+//                'auth_game_type' => '2' ,
+//                'price'          => '1.0' ,
+//                'nudid'          => '21s51s7s1666938_4133082852qpqr1nq',
+//                'channel_id'     => 'TEST0000000' ,
+//                'udid'           => '00000000-41f2-376c-f9db-9d371fcaf9a3' ,
+//                'currency'       => 'USD',
+//                'cli_ver'        => 'pay-3.2.2.14' ,
+//                'type'           => '2'
+
+                "product_id"=> "44",
+                "charge_amount"=> "US$0.99",
+                "recharge"=> "1.0",
+                "discount"=> 1,
+                "server_id"=> "",
+                "paymethod"=> "156",
+                "paymentstate"=> "1",
+                "extral_info"=> "",
+                "auth_game_type"=> "2",
+                "quantity"=> 1,
+                "price"=> "1.0",
+                "nudid"=> "737po0_8567946855879137oo97352n19",
+                "type"=> "2",
+                "channel_id"=> "TEST0000000",
+                "udid"=> "00000000-0aad-c1e4-ffff-fffff310cc6a",
+                "currency"=> "USD",
+                "cli_ver"=> "1.0.0"
+            ),
+        ),
+
+    ),
 ));
