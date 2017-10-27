@@ -153,7 +153,11 @@ function payments_create()
     $hash_string2 = $oauthUtil->hashsign($base_string2, GAME_CONFIG['secret'], TOKEN_CONFIG['secret']);
     $headers = $oauthUtil->createHeaders($head, $hash_string, $hash_string2);
     $requestUtil = new RequestUtil();
-    $requestUtil->sendCurlPostData($url, $data, $headers);
+    $result = $requestUtil->sendCurlPostData($url, $data, $headers);
+
+    $resultData = json_decode($result);
+    Log::log('【创建订单返回结果】： ' . var_export($resultData, true));
+
     //创建订单流程结束
     $end_time = ToolUtil::getMillisecond();
     $use_time = $end_time - $start_time;

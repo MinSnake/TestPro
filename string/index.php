@@ -1,7 +1,9 @@
 <?php
 
 $a = array(
-    'secret' => '43d264060b765cd93c',
+    'service_id' => 'a81a8e0de31292b1d1c951a288192697',
+    'in_app_secret' => 'e3fb69499d2ff3e37de0f4964c2dc433',
+    'secret' => '0c91ddd3f15b9228184c874da0a92083',
 );
 printf(json_encode($a) . PHP_EOL);
 
