@@ -23,8 +23,8 @@ define('REQUEST_CONFIG', array(
             'sign_url' => 'http://secure.overseas.ids111.com/oauth/request_token',
             'method' => 'POST', //POST, GET
             'data' => array(
-                'nudid' => '83q1q11n1_3229119054873088411r854',
-                'udid'  => '00000000-439c-a1d4-ffff-ffff8c78a45e',
+                'nudid' => '83q1q11n1_3229119054873088411r800',
+                'udid'  => '00000000-439c-a1d4-ffff-ffff8cadaa45e',
             ),
         ),
         'oauth/authenticate' => array(
@@ -33,17 +33,17 @@ define('REQUEST_CONFIG', array(
             'method' => 'POST', //POST, GET
             'data' => array(
                 'pack_ver'              => '2.1',
-                'device_number'         => '18682168085',
+                'device_number'         => '18682168080',
                 'device_system_version' => '7.1.1',
                 'device_resolution'     => '1080X1920',
                 'device_cpu_freq'       => '1900800',
-                'nudid'                 => '83q1q11n1_3229119054873088411r854',
+                'nudid' => '83q1q11n1_3229119054873088411r800',
+                'udid'  => '00000000-439c-a1d4-ffff-ffff8cadaa45e',
                 'login_type'            => '4',
                 'device_model'          => 'MI+6',
                 'device_identifier'     => '865873031141389',
                 'channel_id'            => 'TEST0000000',
                 'device_brand'          => 'Xiaomi',
-                'udid'                  => '00000000-439c-a1d4-ffff-ffff8c78a45e',
                 'oauth_token'           => '', //这里暂定为空，需要程序中手动的实时去填充这个字段
                 'device_google_account' => '',
             ),
@@ -54,8 +54,8 @@ define('REQUEST_CONFIG', array(
             'sign_url' => 'http://secure.overseas.ids111.com/oauth/access_token',
             'method' => 'POST', //POST, GET
             'data' => array(
-                'nudid' => '83q1q11n1_3229119054873088411r854',
-                'udid'  => '00000000-439c-a1d4-ffff-ffff8c78a45e',
+                'nudid' => '83q1q11n1_3229119054873088411r800',
+                'udid'  => '00000000-439c-a1d4-ffff-ffff8cadaa45e',
             ),
         ),
     ),
@@ -69,13 +69,55 @@ define('REQUEST_CONFIG', array(
             'data' => array(
                 'game_version' => '1.0.1',
                 'channel_id'   => 'TEST0000000',
-                'udid'         => '00000000-439c-a1d4-ffff-ffff8c78a45e',
-                'nudid'        => '83q1q11n1_3229119054873088411r854',
+                'nudid' => '83q1q11n1_3229119054873088411r800',
+                'udid'  => '00000000-439c-a1d4-ffff-ffff8cadaa45e',
                 'sign_version' => '0',
                 'init'         => '1',
                 'sdk_version'  => '2.0',
             ),
         ),
+
+        'fortumo/sdkcallback' => array(
+            'url' => 'http://feed.overseas.ids111.com/fortumo/sdkcallback',
+            'sign_url' => 'http://feed.overseas.ids111.com/fortumo/sdkcallback',
+            'method' => 'GET',
+            'data' => array(
+                'order_id'     => 'CM4149627',
+                'user_id'      => '460025000498114',
+                'payment_code' => '1509329285109a1',
+                'service_id'   => 'a81a8e0de31292b1d1c951a288192697',
+            ),
+
+        ),
+
+        //查询fortumo订单支付信息
+        'fortumo/payinfo' => array(
+            'url' => 'http://feed.overseas.ids111.com/fortumo/payinfo',
+            'sign_url' => 'http://feed.overseas.ids111.com/fortumo/payinfo',
+            'method' => 'POST',
+            'data' => array(
+                'order_id'     => 'CM4149627',
+                'user_id'      => '460025000498114',
+                'payment_code' => '1509329285109a1',
+                'service_id'   => 'a81a8e0de31292b1d1c951a288192697',
+            ),
+        ),
+
+        //查询乐逗订单支付信息
+        'order_inquire' => array(
+            'url' => 'http://feed.overseas.ids111.com/order_inquire',
+            'sign_url' => 'http://feed.overseas.ids111.com/order_inquire',
+            'method' => 'POST',
+            'data' => array(
+                'order_id'     => 'CM4149473',
+                'player_id'    => '',
+                'paymentstate' => '',
+                'created'      => strtotime('2017-10-27'),
+                'updated'      => strtotime('2017-10-28'),
+            ),
+        ),
+
+
     ),
 
 

@@ -166,10 +166,97 @@ function payments_create()
     Log::log('');
 }
 
+function fortumo_sdkcallback()
+{
+    Log::log('');
+    Log::log('====正在请求【feed】接口【fortumo/sdkcallback】====');
+    $start_time = ToolUtil::getMillisecond();
+    //流程开始
+    $config = REQUEST_CONFIG['feed']['fortumo/sdkcallback'];
+    $data = $config['data'];
+//    $method = $config['method'];
+    $url = $config['url'];
+//    $sign_url = $config['sign_url'];
+//    $head = REQUEST_CONFIG['common_headers'];
+//    $head['oauth_token'] = TOKEN_CONFIG['key'];
+//    $oauthUtil = new OAuthUtil();
+//    $base_string = $oauthUtil->base_string($method, $sign_url, $head, array());
+//    $hash_string = $oauthUtil->hashsign($base_string, GAME_CONFIG['secret'], TOKEN_CONFIG['secret']);
+//    $headers = $oauthUtil->createHeaders($head, $hash_string, '');
+    $requestUtil = new RequestUtil();
+    $result = $requestUtil->sendCurlGet($url, $data);
+//    $result = $requestUtil->sendCurlPostData($url, $data, $headers);
+    $resultData = json_decode($result);
+    Log::log('【查询fortumo支付信息结果】： ' . var_export($resultData, true));
+    //流程结束
+    $end_time = ToolUtil::getMillisecond();
+    $use_time = $end_time - $start_time;
+    Log::log('====【请求一共耗时' . $use_time . '毫秒】====');
+    Log::log('====【pay】接口【fortumo/sdkcallback】请求结束====');
+    Log::log('');
+}
+
+
+function fortumo_payinfo()
+{
+    Log::log('');
+    Log::log('====正在请求【feed】接口【fortumo/payinfo】====');
+    $start_time = ToolUtil::getMillisecond();
+    //流程开始
+    $config = REQUEST_CONFIG['feed']['fortumo/payinfo'];
+    $data = $config['data'];
+    $method = $config['method'];
+    $url = $config['url'];
+    $sign_url = $config['sign_url'];
+    $head = REQUEST_CONFIG['common_headers'];
+    $head['oauth_token'] = TOKEN_CONFIG['key'];
+    $oauthUtil = new OAuthUtil();
+    $base_string = $oauthUtil->base_string($method, $sign_url, $head, array());
+    $hash_string = $oauthUtil->hashsign($base_string, GAME_CONFIG['secret'], TOKEN_CONFIG['secret']);
+    $headers = $oauthUtil->createHeaders($head, $hash_string, '');
+    $requestUtil = new RequestUtil();
+    $result = $requestUtil->sendCurlPostData($url, $data, $headers);
+    $resultData = json_decode($result);
+    Log::log('【查询fortumo支付信息结果】： ' . var_export($resultData, true));
+    //流程结束
+    $end_time = ToolUtil::getMillisecond();
+    $use_time = $end_time - $start_time;
+    Log::log('====【请求一共耗时' . $use_time . '毫秒】====');
+    Log::log('====【pay】接口【fortumo/payinfo】请求结束====');
+    Log::log('');
+
+}
+
+function order_inquire()
+{
+    Log::log('');
+    Log::log('====正在请求【feed】接口【fortumo/payinfo】====');
+    $start_time = ToolUtil::getMillisecond();
+    //流程开始
+    $config = REQUEST_CONFIG['feed']['order_inquire'];
+    $url = $config['url'];
+    $data = $config['data'];
+    $page = 1;
+    $data['sign'] = strtoupper(md5("OrderInquire" . "Page" . $page));
+    $requestUtil = new RequestUtil();
+    $result = $requestUtil->sendCurlGet($url, $data, '');
+    //流程结束
+    $end_time = ToolUtil::getMillisecond();
+    $use_time = $end_time - $start_time;
+    Log::log('====【请求一共耗时' . $use_time . '毫秒】====');
+    Log::log('====【pay】接口【fortumo/payinfo】请求结束====');
+    Log::log('');
+}
+
 
 oauth_request_token();
 oauth_authenticate();
 oauth_access_token();
 account_verify_credentials();
-payments_create();
+//payments_create();
 
+//fortumo_sdkcallback();
+
+//fortumo_payinfo();
+
+//order_inquire();
