@@ -7,20 +7,10 @@ define('GAME_CONFIG',array(
 ));
 
 define('TEST_HOST', array(
-    //局域网测试环境
-//    'secure' => 'http://secure.overseas.ids111.com',
-//    'feed'   => 'http://feed.overseas.ids111.com',
-//    'pay'    => 'http://sdkpay.overseas.ids111.com',
-
-    //本地测试
-    'secure' => 'http://cm.asia.secure.me',
-    'feed'   => 'http://cm.usa.feed.me',
-    'pay'    => 'http://cm.usa.pay.me',
+    'secure' => 'http://cm.asia.secure.me', // http://secure.overseas.ids111.com
+    'feed'   => 'http://cm.usa.feed.me',    // http://feed.overseas.ids111.com
+    'pay'    => 'http://cm.usa.pay.me',     // http://sdkpay.overseas.ids111.com
 ));
-
-define('UDID',  '00000000-439c-a1d4-ffff-ffff8cadasdfsfs');
-define('NUDID', '83q1q11n1_322911905sfsdfasdf1r800');
-
 
 define('REQUEST_CONFIG', array(
     //公共请求头数据
@@ -40,8 +30,8 @@ define('REQUEST_CONFIG', array(
             'sign_url' => 'oauth/request_token',
             'method' => 'POST', //POST, GET
             'data' => array(
-                'nudid' => NUDID,
-                'udid'  => UDID,
+                'nudid' => '83q1q11n1_3229119054873088411r800',
+                'udid'  => '00000000-439c-a1d4-ffff-ffff8cadaa45e',
             ),
         ),
         'oauth/authenticate' => array(
@@ -54,8 +44,8 @@ define('REQUEST_CONFIG', array(
                 'device_system_version' => '7.1.1',
                 'device_resolution'     => '1080X1920',
                 'device_cpu_freq'       => '1900800',
-                'nudid'                 => NUDID,
-                'udid'                  => UDID,
+                'nudid' => '83q1q11n1_3229119054873088411r800',
+                'udid'  => '00000000-439c-a1d4-ffff-ffff8cadaa45e',
                 'login_type'            => '4',
                 'device_model'          => 'MI+6',
                 'device_identifier'     => '865873031141389',
@@ -71,8 +61,8 @@ define('REQUEST_CONFIG', array(
             'sign_url' => 'oauth/access_token',
             'method' => 'POST', //POST, GET
             'data' => array(
-                'nudid' => NUDID,
-                'udid'  => UDID,
+                'nudid' => '83q1q11n1_3229119054873088411r800',
+                'udid'  => '00000000-439c-a1d4-ffff-ffff8cadaa45e',
             ),
         ),
     ),
@@ -91,8 +81,8 @@ define('REQUEST_CONFIG', array(
             'data' => array(
                 'game_version' => '1.0.1',
                 'channel_id'   => 'TEST0000000',
-                'nudid'        => NUDID,
-                'udid'         => UDID,
+                'nudid' => '83q1q11n1_3229119054873088411r800',
+                'udid'  => '00000000-439c-a1d4-ffff-ffff8cadaa45e',
                 'sign_version' => '0',
                 'init'         => '1',
                 'sdk_version'  => '2.0',
@@ -151,22 +141,22 @@ define('REQUEST_CONFIG', array(
             'sign_url' => 'payments/create',
             'method' => 'POST',
             'data' => array(
-                "product_id"     => "13253",
-                "recharge"       => "1.0",
-                "discount"       => 1,
-                "server_id"      => "",
-                "paymethod"      => "403",
-                "paymentstate"   => "1",
-                "extral_info"    => "",
-                "auth_game_type" => "2",
-                "quantity"       => 1,
-                "price"          => "10.0",
-                "nudid"          => NUDID,
-                "udid"           => UDID,
-                "type"           => "2",
-                "channel_id"     => "TEST0000000",
-                "currency"       => "USD",
-                "cli_ver"        => "1.0.0"
+                "product_id"=> "13253",
+                "recharge"=> "1.0",
+                "discount"=> 1,
+                "server_id"=> "",
+                "paymethod"=> "403",
+                "paymentstate"=> "1",
+                "extral_info"=> "",
+                "auth_game_type"=> "2",
+                "quantity"=> 1,
+                "price"=> "10.0",
+                "nudid"=> "737po0_8567946855879137oo97352n19",
+                "type"=> "2",
+                "channel_id"=> "TEST0000000",
+                "udid"=> "00000000-0aad-c1e4-ffff-fffff310cc6a",
+                "currency"=> "USD",
+                "cli_ver"=> "1.0.0"
             ),
         ),
 
