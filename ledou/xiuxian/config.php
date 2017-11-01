@@ -6,6 +6,12 @@ define('GAME_CONFIG',array(
     'secret' => '02f1221f49bb90bc68f3'
 ));
 
+define('TEST_HOST', array(
+    'secure' => 'http://cm.asia.secure.me',
+    'feed'   => 'http://cm.usa.feed.me',
+    'pay'    => 'http://cm.usa.pay.me',
+));
+
 define('REQUEST_CONFIG', array(
     //公共请求头数据
     'common_headers' => array(
@@ -18,9 +24,13 @@ define('REQUEST_CONFIG', array(
     ),
     //secure模块请求数据配置
     'secure' => array(
+
+        'host' => 'http://cm.asia.secure.me',
+//        'host' => 'http://secure.overseas.ids111.com',
+
         'oauth/request_token' => array(
-            'url' => 'http://secure.overseas.ids111.com/oauth/request_token',
-            'sign_url' => 'http://secure.overseas.ids111.com/oauth/request_token',
+            'url' => 'oauth/request_token',
+            'sign_url' => 'oauth/request_token',
             'method' => 'POST', //POST, GET
             'data' => array(
                 'nudid' => '83q1q11n1_3229119054873088411r800',
@@ -28,8 +38,8 @@ define('REQUEST_CONFIG', array(
             ),
         ),
         'oauth/authenticate' => array(
-            'url' => 'http://secure.overseas.ids111.com/oauth/authenticate',
-            'sign_url' => 'http://secure.overseas.ids111.com/oauth/authenticate',
+            'url' => 'oauth/authenticate',
+            'sign_url' => 'oauth/authenticate',
             'method' => 'POST', //POST, GET
             'data' => array(
                 'pack_ver'              => '2.1',
@@ -50,8 +60,8 @@ define('REQUEST_CONFIG', array(
 
         ),
         'oauth/access_token' => array(
-            'url' => 'http://secure.overseas.ids111.com/oauth/access_token',
-            'sign_url' => 'http://secure.overseas.ids111.com/oauth/access_token',
+            'url' => 'oauth/access_token',
+            'sign_url' => 'oauth/access_token',
             'method' => 'POST', //POST, GET
             'data' => array(
                 'nudid' => '83q1q11n1_3229119054873088411r800',
@@ -62,9 +72,14 @@ define('REQUEST_CONFIG', array(
 
 
     'feed' => array(
+
+        'host' => 'http://cm.usa.feed.me',
+//        'host' => 'http://feed.overseas.ids111.com',
+
+
         'account/verify_credentials' => array(
-            'url' => 'http://feed.overseas.ids111.com/account/verify_credentials',
-            'sign_url' => 'http://feed.overseas.ids111.com/account/verify_credentials',
+            'url' => 'account/verify_credentials',
+            'sign_url' => 'account/verify_credentials',
             'method' => 'GET',
             'data' => array(
                 'game_version' => '1.0.1',
@@ -78,8 +93,8 @@ define('REQUEST_CONFIG', array(
         ),
 
         'fortumo/sdkcallback' => array(
-            'url' => 'http://feed.overseas.ids111.com/fortumo/sdkcallback',
-            'sign_url' => 'http://feed.overseas.ids111.com/fortumo/sdkcallback',
+            'url' => 'fortumo/sdkcallback',
+            'sign_url' => 'fortumo/sdkcallback',
             'method' => 'GET',
             'data' => array(
                 'order_id'     => 'CM4149627',
@@ -92,8 +107,8 @@ define('REQUEST_CONFIG', array(
 
         //查询fortumo订单支付信息
         'fortumo/payinfo' => array(
-            'url' => 'http://feed.overseas.ids111.com/fortumo/payinfo',
-            'sign_url' => 'http://feed.overseas.ids111.com/fortumo/payinfo',
+            'url' => 'fortumo/payinfo',
+            'sign_url' => 'fortumo/payinfo',
             'method' => 'POST',
             'data' => array(
                 'order_id'     => 'CM4149627',
@@ -105,8 +120,8 @@ define('REQUEST_CONFIG', array(
 
         //查询乐逗订单支付信息
         'order_inquire' => array(
-            'url' => 'http://feed.overseas.ids111.com/order_inquire',
-            'sign_url' => 'http://feed.overseas.ids111.com/order_inquire',
+            'url' => 'order_inquire',
+            'sign_url' => 'order_inquire',
             'method' => 'POST',
             'data' => array(
                 'order_id'     => 'CM4149473',
@@ -116,15 +131,17 @@ define('REQUEST_CONFIG', array(
                 'updated'      => strtotime('2017-10-28'),
             ),
         ),
-
-
     ),
 
 
     'pay' => array(
+
+        'host' => 'http://cm.usa.pay.me',
+//        'host' => 'http://sdkpay.overseas.ids111.com',
+
         'payments/create' => array(
-            'url' => 'http://sdkpay.overseas.ids111.com/payments/create',
-            'sign_url' => 'http://sdkpay.overseas.ids111.com/payments/create',
+            'url' => 'payments/create',
+            'sign_url' => 'payments/create',
             'method' => 'POST',
             'data' => array(
                 "product_id"=> "13253",

@@ -21,14 +21,14 @@ function oauth_request_token()
     Log::log('====正在请求【secure】接口【oauth/request_token】====');
     $start_time = ToolUtil::getMillisecond();
     $result = false;
-    $oauth_request_token_config = REQUEST_CONFIG['secure']['oauth/request_token'];
-    $url = $oauth_request_token_config['url'];
-    $sign_url = $oauth_request_token_config['sign_url'];
-    $data = $oauth_request_token_config['data'];
-    $method = $oauth_request_token_config['method'];
+    $config = REQUEST_CONFIG['secure']['oauth/request_token'];
+    $host = TEST_HOST['secure'];
+    $url = $host . '/' . $config['url'];
+    $data = $config['data'];
+    $method = $config['method'];
     $head = REQUEST_CONFIG['common_headers'];
     $oauthUtil = new OAuthUtil();
-    $base_string = $oauthUtil->base_string($method, $sign_url, $head, array());
+    $base_string = $oauthUtil->base_string($method, $url, $head, array());
     $hash_string = $oauthUtil->hashsign($base_string, GAME_CONFIG['secret'], '');
     $headers = $oauthUtil->createHeaders($head, $hash_string, $hash_string);
     $requestUtil = new RequestUtil();
@@ -250,9 +250,9 @@ function order_inquire()
 
 
 oauth_request_token();
-oauth_authenticate();
-oauth_access_token();
-account_verify_credentials();
+//oauth_authenticate();
+//oauth_access_token();
+//account_verify_credentials();
 //payments_create();
 
 //fortumo_sdkcallback();
