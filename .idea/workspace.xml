@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9efe3c6e-e332-4730-bb89-b6a6099fef10" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ledou/sdk_test_project/Lib/Tools/Tools.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ledou/sdk_test_project/App/Ol/TW/Secure.php" afterPath="$PROJECT_DIR$/ledou/sdk_test_project/App/Ol/TW/Secure.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ledou/sdk_test_project/Lib/Core/Core.php" afterPath="$PROJECT_DIR$/ledou/sdk_test_project/Lib/Core/Core.php" />
     </list>
     <ignored path="test.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -41,8 +38,8 @@
       <file leaf-file-name="Secure.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ledou/sdk_test_project/App/Ol/TW/Secure.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+            <state relative-caret-position="266">
+              <caret line="14" column="96" selection-start-line="14" selection-start-column="96" selection-end-line="14" selection-end-column="96" />
               <folding />
             </state>
           </provider>
@@ -670,12 +667,12 @@
       <workItem from="1508945165734" duration="7835000" />
       <workItem from="1508980893365" duration="29697000" />
       <workItem from="1509433034849" duration="28982000" />
-      <workItem from="1509678430121" duration="11723000" />
+      <workItem from="1509678430121" duration="12518000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="252597000" />
+    <option name="totallyTimeSpent" value="253392000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="384" y="117" width="1532" height="890" extended-state="0" />
@@ -1082,8 +1079,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ledou/sdk_test_project/App/Ol/TW/Secure.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+        <state relative-caret-position="266">
+          <caret line="14" column="96" selection-start-line="14" selection-start-column="96" selection-end-line="14" selection-end-column="96" />
           <folding />
         </state>
       </provider>
