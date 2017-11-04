@@ -12,8 +12,8 @@ define('GAME_CONFIG',array(
 /**
  * 台湾局域网的测试地址
  */
-//define('HOST_URL', 'http://olsecure.overseas.ids111.com:88');
-define('HOST_URL', 'http://olsecure.overseas.ids111.com:10015');
+define('HOST_URL', 'http://olsecure.overseas.ids111.com:88');
+//define('HOST_URL', 'http://olsecure.overseas.ids111.com:10015');
 
 /**
  * @todo 路由配置
