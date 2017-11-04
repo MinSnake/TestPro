@@ -1,7 +1,23 @@
 <?php
+
+namespace App\Ol\TW;
+
+use Lib\App\BaseApp;
+
+
 /**
- * Created by PhpStorm.
- * User: jinda.li
- * Date: 2017/11/3
- * Time: 15:16
+ * @todo 台湾网游Feed模块处理
+ *
+ * [svn开发环境地址]：
+ *     http://svn.ids111.com/dgc/dgc_sdkfeed_online/program/atrunk_taiwan/olfeed_TW-trunk
+ *
+ * @package App\Ol\TW
  */
+class Feed extends BaseApp
+{
+
+
+
+
+
+}
