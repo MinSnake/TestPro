@@ -47,8 +47,8 @@ Class Secure extends BaseApp
         $headers = $oauth->createHeaders($head, $hash_string, $hash_string);
         //发送请求
         $request = new Request();
-//        $result = $request->sendCurlPostData($url, $data, $headers);
-        $result = $request->sendCurlGet($url, $data, $headers);
+        $result = $request->sendCurlPostData($url, $data, $headers);
+//        $result = $request->sendCurlGet($url, $data, $headers);
         $request->saveOauthRequestToken($result);
     }
 

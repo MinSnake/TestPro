@@ -54,10 +54,10 @@ define('REQUEST_CONFIG', array(
     'secure' => array(
 
         'oauth_request_token' => array(
-//            'api' => '/oauth/request_token',
-//            'method' => 'POST',
-            'api' => '',
-            'method' => 'GET',
+            'api' => '/oauth/request_token',
+            'method' => 'POST',
+//            'api' => '',
+//            'method' => 'GET',
             'data' => array(),
         ),
 
