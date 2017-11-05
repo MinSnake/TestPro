@@ -53,13 +53,16 @@ class Core
      */
     public static function run()
     {
-        foreach (TEST_APP_LIST as $module_name => $api_name) {
+        foreach (TEST_APP_LIST as $app_config) {
+            $module_name = $app_config[0];
+            $api_name = $app_config[1];
             //解析类名首字母大写
             $class_name = 'App' . '\\' . TEST_APP_TYPE . '\\' . TEST_APP_AREA . '\\' . ucfirst($module_name);
             //根据配置获取到方法名
-            $function_name = ROUTES[$module_name][$api_name];
+            $function_name = (string)ROUTES[$module_name][$api_name];
             //需要获取到命名空间
             $class_obj = new $class_name();
+            Log::log("");
             Log::log("=====即将请求【" . $module_name . "】模块中的【" . $api_name . "】=====");
             $start_time = Tools::getMillisecond();
             $class_obj->$function_name();

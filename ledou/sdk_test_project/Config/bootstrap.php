@@ -16,5 +16,9 @@ define('TEST_APP_AREA', 'TW');
 
 //需要测试的应用列表,按照顺序执行
 define('TEST_APP_LIST', array(
-    'secure' => 'oauth/request_token',
+    array('secure' , 'oauth/request_token'),
+    array('secure' , 'oauth/authenticate'),
+
+
+
 ));

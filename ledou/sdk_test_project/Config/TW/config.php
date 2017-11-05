@@ -4,16 +4,16 @@
  * 游戏数据配置
  */
 define('GAME_CONFIG',array(
-    'key'    => '8fee977f5ba1244dc4f1',
-    'secret' => '02f1221f49bb90bc68f3'
+    'key'    => '67a671523a3b098cf561',
+    'secret' => '6422592d6968c87d1132'
 ));
 
 
 /**
  * 台湾局域网的测试地址
  */
-define('HOST_URL', 'http://olsecure.overseas.ids111.com:88');
-//define('HOST_URL', 'http://olsecure.overseas.ids111.com:10015');
+//define('HOST_URL', 'http://olsecure.overseas.ids111.com:88');
+define('HOST_URL', 'http://olsecure.overseas.ids111.com:10015');
 
 /**
  * @todo 路由配置
@@ -23,6 +23,7 @@ define('ROUTES', array(
 
     'secure' => array(
         'oauth/request_token' => 'oauth_request_token',
+        'oauth/authenticate' => 'oauth_authenticate',
 
     ),
 
@@ -32,6 +33,10 @@ define('ROUTES', array(
 
 
 ));
+
+
+define('UDID',  '00000000-439c-a1d4-ffff-ffff8cadasdfsfs');
+define('NUDID', '83q1q11n1_322911905sfsdfasdf1r800');
 
 
 /**
@@ -50,15 +55,24 @@ define('REQUEST_CONFIG', array(
     ),
 
 
-
     'secure' => array(
 
         'oauth_request_token' => array(
             'api' => '/oauth/request_token',
             'method' => 'POST',
-//            'api' => '',
-//            'method' => 'GET',
             'data' => array(),
+        ),
+
+        'oauth_authenticate' => array(
+            'api' => '/oauth/authenticate',
+            'method' => 'POST',
+            'data' => array(
+                'device_identifier' => '865873031141389',
+                'oauth_token'       => '',
+                'udid'              => UDID,
+                'nudid'             => NUDID,
+                'login_type'        => '4',
+            ),
         ),
 
 
