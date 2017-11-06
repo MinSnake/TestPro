@@ -30,7 +30,6 @@ class Feed extends BaseApp
         $config = REQUEST_CONFIG[$this->module_name][__FUNCTION__];
         $url = $this->host . $config['api'];            //请求地址
         $data = $config['data'];                     //请求参数
-//        var_dump($data);
         $method = $config['method'];                 //请求方式
         $head = REQUEST_CONFIG['common_headers'];    //请求头
         $head['oauth_token'] = TOKEN_CONFIG['key'];

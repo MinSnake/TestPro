@@ -23,17 +23,19 @@ define('ROUTES', array(
     ),
 
     'feed' => array(
-        'account/verify_credentials' => 'account_verify_credentials'
+        'account/verify_credentials' => 'account_verify_credentials',
     ),
 
-    'payment' => array()
+    'payment' => array(
+        'payments/create' => 'payments_create',
+    )
 
 
 ));
 
 
-define('UDID',  '00000000-439c-a1d4-ffff-ffff8cadasdfsfs');
-define('NUDID', '83q1q11n1_322911905sfsdfasdf1r800');
+define('UDID',  '00000000-439c-a1d4-ffff-jindatest_01udid');
+define('NUDID', '83q1q11n1_322911905_jindatest_01nudid');
 
 
 /**
@@ -93,6 +95,29 @@ define('REQUEST_CONFIG', array(
     ),
 
     'payment' => array(
+        'payments_create' => array(
+            'api' => '/payments/create',
+            'method' => 'POST',
+            'data' => array(
+                "product_id"     => "12136",  //道具id,13位
+                "product_name"   => "jinda_test",     //道具名称
+                "p_identifier"   => "test01",      //道具标识
+                "quantity"       => "1",              //数量
+                "auth_game_type" => "1",              //游戏类型，1-网游，2-休闲
+                "paymethod"      => "31",            //支付方式标识
+                "currency"       => "USD",            //订单币种
+                "order_amount"   => "1.2345",         //支付金额
+                "type"           => "2",              //支付形式
+                "extral_info"    => "string",         //透传字段
+                "price"          => "1.0900",         //道具价格
+                "channel_id"     => "TEST0000000",    //渠道号
+                "server_id"      => "1",              //游戏服务器
+                "cli_ver"        => "pay-3.2.2.57",   //版本号
+                "imei"           => "000000000000",
+                "nudid"          => NUDID,
+                "udid"           => UDID
+            ),
+        ),
 
     )
 

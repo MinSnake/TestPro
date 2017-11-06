@@ -7,14 +7,18 @@
 //);
 //printf(json_encode($a) . PHP_EOL);
 
+$server_deploy_type = get_cfg_var( 'server_deploy_type' );
 
-$a = (object)array(
-);
-
-var_dump($a);
+echo $server_deploy_type . PHP_EOL;
 
 
-echo json_encode($a) . PHP_EOL;
+//$a = (object)array(
+//);
+
+//var_dump($a);
+
+
+//echo json_encode($a) . PHP_EOL;
 
 
 //function urlencode_rfc3986($input)

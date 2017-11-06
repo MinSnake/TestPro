@@ -35,8 +35,5 @@ define('TEST_APP_LIST', array(
     array('secure' , 'oauth/authenticate'),
     array('secure' , 'oauth/access_token'),
     array('feed'   , 'account/verify_credentials'),
-
-
-
-
+    array('payment', 'payments/create'),
 ));
