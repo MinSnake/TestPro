@@ -10,20 +10,6 @@ define('GAME_CONFIG',array(
 
 
 /**
- * 台湾局域网的测试地址
- */
-define('SECURE_HOST_URL', 'http://olsecure.overseas.ids111.com:88');
-//define('HOST_URL', 'http://olsecure.overseas.ids111.com:10015');
-
-
-/**
- * 本地测试
- */
-//define('SECURE_HOST_URL', 'http://ol.taiwan.secure.me');
-
-
-
-/**
  * @todo 路由配置
  * 区分了各个架构模块，映射  路由URL ->  对应模块的方法名
  */
@@ -32,10 +18,13 @@ define('ROUTES', array(
     'secure' => array(
         'oauth/request_token' => 'oauth_request_token',
         'oauth/authenticate' => 'oauth_authenticate',
+        'oauth/access_token' => 'oauth_access_token',
 
     ),
 
-    'feed' => array(),
+    'feed' => array(
+        'account/verify_credentials' => 'account_verify_credentials'
+    ),
 
     'payment' => array()
 
@@ -64,13 +53,11 @@ define('REQUEST_CONFIG', array(
 
 
     'secure' => array(
-
         'oauth_request_token' => array(
             'api' => '/oauth/request_token',
             'method' => 'POST',
             'data' => array(),
         ),
-
         'oauth_authenticate' => array(
             'api' => '/oauth/authenticate',
             'method' => 'POST',
@@ -82,10 +69,32 @@ define('REQUEST_CONFIG', array(
                 'login_type'        => '4',
             ),
         ),
-
-
-
+        'oauth_access_token' => array(
+            'api' => '/oauth/access_token',
+            'method' => 'POST',
+            'data' => array(),
+        ),
     ),
+
+    'feed' => array(
+        'account_verify_credentials' => array(
+            'api' => '/account/verify_credentials',
+            'method' => 'GET',
+            'data' => array(
+                'game_version' => '1.0.1',
+                'channel_id'   => 'TEST0000000',
+                'nudid'        => NUDID,
+                'udid'         => UDID,
+                'sign_version' => '0',
+                'init'         => '1',
+                'sdk_version'  => '2.0',
+            ),
+        ),
+    ),
+
+    'payment' => array(
+
+    )
 
 
 ));

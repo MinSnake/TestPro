@@ -14,10 +14,28 @@ define('TEST_APP_TYPE', 'Ol');
  */
 define('TEST_APP_AREA', 'TW');
 
+/**
+ * 台湾局域网的测试地址
+ */
+//define('SECURE_HOST_URL'   , 'http://olsecure.overseas.ids111.com:88');
+//define('FEED_HOST_URL'     , 'http://olfeed.overseas.ids111.com:88');
+//define('PAYMENT_HOST_URL'  , 'http://olpay.overseas.ids111.com:88');
+
+/**
+ * 本地测试的测试地址
+ */
+define('SECURE_HOST_URL'  , 'http://ol.taiwan.secure.me');
+define('FEED_HOST_URL'    , 'http://ol.taiwan.feed.me');
+define('PAYMENT_HOST_URL' , 'http://ol.taiwan.payment.me');
+
+
 //需要测试的应用列表,按照顺序执行
 define('TEST_APP_LIST', array(
     array('secure' , 'oauth/request_token'),
     array('secure' , 'oauth/authenticate'),
+    array('secure' , 'oauth/access_token'),
+    array('feed'   , 'account/verify_credentials'),
+
 
 
 
