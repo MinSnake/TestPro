@@ -35,7 +35,7 @@ Class Secure extends BaseApp
     {
         //方法配置信息
         $config = REQUEST_CONFIG[$this->module_name][__FUNCTION__];
-        $url = HOST_URL . $config['api'];            //请求地址
+        $url = SECURE_HOST_URL . $config['api'];            //请求地址
         $data = $config['data'];                     //请求参数
         $method = $config['method'];                 //请求方式
         $head = REQUEST_CONFIG['common_headers'];    //请求头
@@ -56,7 +56,7 @@ Class Secure extends BaseApp
     {
         //方法配置信息
         $config = REQUEST_CONFIG[$this->module_name][__FUNCTION__];
-        $url = HOST_URL . $config['api'];            //请求地址
+        $url = SECURE_HOST_URL . $config['api'];            //请求地址
         $data = $config['data'];                     //请求参数
         $data['oauth_token'] = TOKEN_CONFIG['key'];
         $method = $config['method'];                 //请求方式

@@ -63,12 +63,16 @@ class Core
             //需要获取到命名空间
             $class_obj = new $class_name();
             Log::log("");
+            Log::log("");
+            Log::log("");
             Log::log("=====即将请求【" . $module_name . "】模块中的【" . $api_name . "】=====");
             $start_time = Tools::getMillisecond();
             $class_obj->$function_name();
             $end_time = Tools::getMillisecond();
             Log::log('流程结束，耗时：' . ($end_time - $start_time) . '毫秒');
             Log::log("=====结束请求【" . $module_name . "】模块中的【" . $api_name . "】=====");
+            Log::log("");
+            Log::log("");
         }
     }
 
