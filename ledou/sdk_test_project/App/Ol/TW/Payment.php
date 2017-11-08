@@ -4,6 +4,7 @@ namespace App\Ol\TW;
 
 use Lib\App\BaseApp;
 use Lib\App\Oauth;
+use Lib\Log\Log;
 use Lib\NetWork\Request;
 
 
@@ -44,7 +45,13 @@ class Payment extends BaseApp
         $headers = $oauth->createHeaders($head, $hash_string, $hash_string2);
         //发送请求
         $request = new Request();
-        $request->sendCurlPostData($url, $data, $headers);
+        $result = $request->sendCurlPostData($url, $data, $headers);
+        //如果是支付宝支付，则显示出付款地址URL
+        if ($data['paymethod'] = 31)
+        {
+            $result = json_decode($result, true);
+            Log::log('<a href="'.$result['result']['payment_url'].'" target="_blank">点击跳转到支付地址</a>');
+        }
     }
 
 

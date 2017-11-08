@@ -7,10 +7,10 @@
 //);
 //printf(json_encode($a) . PHP_EOL);
 
-$server_deploy_type = get_cfg_var( 'server_deploy_type' );
-
-echo $server_deploy_type . PHP_EOL;
-
+//$server_deploy_type = get_cfg_var( 'server_deploy_type' );
+//
+//echo $server_deploy_type . PHP_EOL;
+echo strtoupper(md5('idreamsky'));
 
 //$a = (object)array(
 //);
