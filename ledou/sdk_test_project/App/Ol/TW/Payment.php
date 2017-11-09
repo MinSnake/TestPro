@@ -47,10 +47,16 @@ class Payment extends BaseApp
         $request = new Request();
         $result = $request->sendCurlPostData($url, $data, $headers);
         //如果是支付宝支付，则显示出付款地址URL
-        if ($data['paymethod'] = 31)
+        if ($data['paymethod'] == 31)
         {
             $result = json_decode($result, true);
             Log::log('<a href="'.$result['result']['payment_url'].'" target="_blank">点击跳转到支付地址</a>');
+        }
+        elseif($data['paymethod'] == 34)
+        {
+            $result = json_decode($result, true);
+            Log::log('' . var_dump($result));
+
         }
     }
 

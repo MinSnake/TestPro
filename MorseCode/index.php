@@ -127,6 +127,6 @@ $morseUtil = new MorseCode();
 //$result = $morseUtil->morse_encode($str,$point = '.', $line = '_', $delimiter = '/');
 //echo $result . PHP_EOL;
 
-$morse_str = '..-./----./-..../...--/..-/..-./----./.----/-..-/-..-/..-./...../----./-.--/----./..-./-..../..---/.----/.----/..-./-..../--.../-..../...../..-./....-/...-/---../-..../';
+$morse_str = '';
 $result = $morseUtil->morse_decode($morse_str, $point = '.', $line = '-', $delimiter = '/');
 echo $result . PHP_EOL;
