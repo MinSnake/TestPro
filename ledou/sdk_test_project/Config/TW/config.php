@@ -99,27 +99,24 @@ define('REQUEST_CONFIG', array(
             'api' => '/payments/create',
             'method' => 'POST',
             'data' => array(
-                "product_id"     => '228' . time(),  //道具id,13位 - 31510043681234
+                "product_id"     => '228' . time(),    //道具id,13位 - 测试随机模拟
                 "type"           => "8",               //支付形式
-
-//                "product_id"     => "12136",  //道具id,13位
-//                "type"           => "2",              //支付形式
-
                 "product_name"   => "jinda_test",     //道具名称
-                "p_identifier"   => "test01",      //道具标识
+                "p_identifier"   => "test01",         //道具标识
                 "quantity"       => "1",              //数量
                 "auth_game_type" => "1",              //游戏类型，1-网游，2-休闲
                 "paymethod"      => "405",            //支付方式标识 31-支付宝，405-微信
                 "currency"       => "CNY",            //订单币种
-                "order_amount"   => "0.01",         //支付金额
+                "order_amount"   => "0.01",           //支付金额
                 "extral_info"    => "string",         //透传字段
-                "price"          => "0.01",         //道具价格
+                "price"          => "0.01",           //道具价格
                 "channel_id"     => "TEST0000000",    //渠道号
                 "server_id"      => "1",              //游戏服务器
                 "cli_ver"        => "pay-3.2.2.57",   //版本号
                 "imei"           => "000000000000",
                 "nudid"          => NUDID,
-                "udid"           => UDID
+                "udid"           => UDID,
+                "wx_appid"       => "wxff23efc69058a60f"
             ),
         ),
 
