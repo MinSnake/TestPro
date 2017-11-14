@@ -5,17 +5,22 @@
       <BehatSettings behat_path="$PROJECT_DIR$" />
     </behat_settings>
   </component>
+  <component name="PhpIncludePathManager">
+    <include_path>
+      <path value="D:\JetBrains\PhpStorm 2017.2.3\swoole-ide-helper-master" />
+    </include_path>
+  </component>
   <component name="PhpInterpreters">
     <interpreters>
       <interpreter home="sftp://root@192.168.120.85:22/usr/local/php7/bin/php" id="887406e4-3a3c-4853-93cd-25712d29581d" name="php7.1.3" debugger_id="php.debugger.XDebug">
-        <remote_data WEB_SERVER_CONFIG_ID="f4e00820-a068-4a34-9da7-1ef6bc1fdfd9" WEB_SERVER_CONFIG_NAME="php7.1.3" HOST="192.168.120.85" PORT="22" ANONYMOUS="false" USERNAME="root" PASSWORD="" PRIVATE_KEY_FILE="" MY_KNOWN_HOSTS_FILE="" PASSPHRASE="" USE_KEY_PAIR="false" INTERPRETER_PATH="/usr/local/php7/bin/php" HELPERS_PATH="/root/.phpstorm_helpers" INITIALIZED="false" VALID="true" />
+        <remote_data WEB_SERVER_CONFIG_ID="f4e00820-a068-4a34-9da7-1ef6bc1fdfd9" WEB_SERVER_CONFIG_NAME="php7.1.3" WEB_SERVER_CREDENTIALS_ID="sftp://root@192.168.120.85:22" INTERPRETER_PATH="/usr/local/php7/bin/php" HELPERS_PATH="/root/.phpstorm_helpers" INITIALIZED="false" VALID="true" />
       </interpreter>
     </interpreters>
   </component>
   <component name="PhpInterpretersPhpInfoCache">
     <phpInfoCache>
       <interpreter name="php7.1.3">
-        <phpinfo binary_type="PHP" php_cgi="/usr/local/php7/bin/php-cgi" php_cli="/usr/local/php7/bin/php" path_separator=":" remote_host="192.168.120.56 59134 22" version="7.1.3">
+        <phpinfo binary_type="PHP" php_cgi="/usr/local/php7/bin/php-cgi" php_cli="/usr/local/php7/bin/php" path_separator=":" remote_host="192.168.120.56" version="7.1.3">
           <additional_php_ini />
           <configuration_file>/usr/local/php7/lib/php.ini</configuration_file>
           <configuration_options>
