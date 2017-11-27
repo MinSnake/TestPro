@@ -17,13 +17,21 @@ define('TEST_APP_AREA', 'TW');
 /**
  * 台湾局域网的测试地址
  */
-define('SECURE_HOST_URL'   , 'http://olsecure.overseas.ids111.com:10015');
-define('FEED_HOST_URL'     , 'http://olfeed.overseas.ids111.com:10015');
-define('PAYMENT_HOST_URL'  , 'http://olpay.overseas.ids111.com:10015');
+//define('SECURE_HOST_URL'   , 'http://olsecure.overseas.ids111.com:10015');
+//define('FEED_HOST_URL'     , 'http://olfeed.overseas.ids111.com:10015');
+//define('PAYMENT_HOST_URL'  , 'http://olpay.overseas.ids111.com:10015');
 
 //define('SECURE_HOST_URL'   , 'http://olsecure.overseas.ids111.com:88');
 //define('FEED_HOST_URL'     , 'http://olfeed.overseas.ids111.com:88');
 //define('PAYMENT_HOST_URL'  , 'http://olpay.overseas.ids111.com:88');
+
+/**
+ * 台湾沙盒的测试地址
+ */
+define('SECURE_HOST_URL'   , 'http://sb-olsecure.idealgame.com.tw');
+define('FEED_HOST_URL'     , 'http://sb-olfeed.idealgame.com.tw');
+define('PAYMENT_HOST_URL'  , 'https://sb-pay.idealgame.com.tw');
+
 
 /**
  * 本地测试的测试地址

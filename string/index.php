@@ -1,74 +1,20 @@
 <?php
 
-//$a = array(
-//    'service_id' => 'a81a8e0de31292b1d1c951a288192697',
-//    'in_app_secret' => 'e3fb69499d2ff3e37de0f4964c2dc433',
-//    'secret' => '0c91ddd3f15b9228184c874da0a92083',
-//);
-//printf(json_encode($a) . PHP_EOL);
-
-//$server_deploy_type = get_cfg_var( 'server_deploy_type' );
-//
-//echo $server_deploy_type . PHP_EOL;
-echo strtoupper(md5('idreamsky'));
-
-//$a = (object)array(
-//);
-
-//var_dump($a);
-
-
-//echo json_encode($a) . PHP_EOL;
-
-
-//function urlencode_rfc3986($input)
-//{
-//    if (is_scalar($input))
-//    {
-//        return str_replace(
-//            '+',
-//            ' ',
-//            str_replace('%7E', '~', rawurlencode($input))
-//        );
-//    }
-//    exit('参数错误');
-//}
-//
-//
-//$http_method = 'POST';
-//
-//$http_url =  'http://test.zzz.secure.ids111.com:97/oauth/request_token';
-//
-//$param_header = array(
-//    'oauth_consumer_key'     => '67a671523a3b098cf561',
-//    'oauth_signature_method' => 'HMAC-SHA1',
-//    'oauth_timestamp'        => 1502764514,
-//    'oauth_nonce'            => '58E27606-FA79-4A52-BB44-4E376CC0C624',
-//    'oauth_version'          => '1.0',
-//);
-//
-//ksort($param_header);
-//$param_str = '';
-//foreach ($param_header as $key=>$value) {
-//    $param_str .= $key . '=' . $value . '&';
-//}
-//$param_str = substr($param_str, 0, -1);
-//
-//
-//$str = urlencode_rfc3986($http_method) . '&' . urlencode_rfc3986($http_url) . '&' . urlencode_rfc3986($param_str);
-//
-//echo $str;
-//
-//$game_key_secret = array(
-//    'key' => '67a671523a3b098cf561',
-//    'secret' => '6422592d6968c87d1132'
-//);
-//
-//$key = '6422592d6968c87d1132' . '&' . '';
-//
-//$string = base64_encode(hash_hmac('sha1', $str, $key, true));
-//
+//echo round(floatval(0.1 * 0.22), 2);
 //echo '<br>';
-//echo $string;
+//echo round(floatval(0.02), 2);
+
+$dataArr['total_fee'] = 2;
+$order['price'] = 0.1000;
+$order['rate'] = 0.2200;
+
+echo intval($order['price'] * 100 * $order['rate']) . '<br>';
 
 
+if(intval($dataArr['total_fee']) !== intval($order['price'] * 100 * $order['rate'])){
+    echo '000';
+}
+else
+{
+    echo '1111';
+}
