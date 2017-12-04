@@ -2,23 +2,25 @@
 include 'auth/Auth.php';
 
 $oauth_secret_key = array(
-    'oauth_consumer_key' => 'e19081b4527963d70c7a',
-    'oauth_consumer_secret' => '8b61acd14a5811186163',
+    'oauth_consumer_key' => '8fee977f5ba1244dc4f1',
+    'oauth_consumer_secret' => '02f1221f49bb90bc68f3',
 );
 
 $oauth_consumer_secret = array(
-    'oauth_token' => '1e17ec2b662eac9142997ffbbd94c00e059eef5e3',
-    'oauth_secret' => '335b0bf7bae2f1c768373d0225ece4ac'
+    'oauth_token' => '123a44f50037ca047fd11263a0df5f5d05a212815',
+    'oauth_secret' => 'e42191e8c0abbc974d78911f7a7dc49a'
 );
 
 
 
 //测试地址
-$http_url = "http://sdkpay.overseas.ids111.com/payments/create";
+//$http_url = "http://sdkpay.overseas.ids111.com/payments/create";
 
 //线上地址
 //$http_url = "http://kor-olpay.ldoverseas.com/payments/create";
 
+//沙盒
+$http_url = "http://usa-sb-pay.ldoverseas.com/payments/create";
 
 $Fetch_request = new Fetch_request_token();
 
@@ -60,12 +62,12 @@ $param_header = $Fetch_request->get_parameter_header($headers);
 $http_method = 'POST';
 
 $params = array(
-    "product_id" => "13222",  //道具id,13位
+    "product_id" => "1632223454574",  //道具id,13位
     "product_name" => "金达测试道具",            //道具名称
     "p_identifier" => "com.jinda.test.fortumo.001",           //道具标识
     "quantity" => "1",          //数量
     "auth_game_type" => "1",              //游戏类型，1-网游，2-休闲
-    "paymethod" => "401",         //支付方式标识
+    "paymethod" => "412",         //支付方式标识
     "currency" => "USD",         //订单币种
     "order_amount" => "1.0900",          //支付金额
     "type" => "2",             //支付形式

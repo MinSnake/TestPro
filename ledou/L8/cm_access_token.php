@@ -2,23 +2,25 @@
 include 'auth/Auth.php';
 
 $oauth_secret_key = array(
-    'oauth_consumer_key' => '67a671523a3b098cf561',
-    'oauth_consumer_secret' => '6422592d6968c87d1132',
+    'oauth_consumer_key' => '8fee977f5ba1244dc4f1',
+    'oauth_consumer_secret' => '02f1221f49bb90bc68f3',
 );
 
 $oauth_consumer_secret = array(
-    'oauth_token' => '57940f04af4d7dbaddc71f8d5d905638059edbf02',
-    'oauth_secret' => '56581935bc3ad76822ac1150b4f6ce6d'
+    'oauth_token' => '123a44f50037ca047fd11263a0df5f5d05a212815',
+    'oauth_secret' => 'e42191e8c0abbc974d78911f7a7dc49a'
 );
 
 
 
 //测试地址
-$api = "http://secure.overseas.ids111.com";
+//$api = "http://secure.overseas.ids111.com";
 
 //线上地址
-//$api = "http://kor-olsecure.ldoverseas.com";
+//$api = "http://cm.asia.secure.me";
 
+//沙盒
+$api = "http://usa-sb-secure.ldoverseas.com";
 
 $url = "/oauth/access_token";
 

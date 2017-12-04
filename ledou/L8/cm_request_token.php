@@ -1,9 +1,11 @@
 <?php
 include 'auth/Auth.php';
 
+//超时空隧道   10058
+
 $game_key_secret = array(
-    'key' => 'e19081b4527963d70c7a',
-    'secret' => '8b61acd14a5811186163'
+    'key' => '8fee977f5ba1244dc4f1',
+    'secret' => '02f1221f49bb90bc68f3'
 );
 
 $token_key_secret = array(
@@ -23,9 +25,12 @@ $param_header = array(
 
 
 //测试地址
-$host = "http://secure.overseas.ids111.com";
+//$host = "http://secure.overseas.ids111.com";
 
-//$host = "http://xiuxian.secure.yazhou.me";
+//$host = "http://cm.asia.secure.me";
+
+//沙盒
+$host = "http://usa-sb-secure.ldoverseas.com";
 
 $url = $host . "/oauth/request_token";
 
