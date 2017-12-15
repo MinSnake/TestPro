@@ -1,8 +1,14 @@
 <?php
-$orderInfo['dgc_amount'] = 0.01 * 0.22;
 
-echo $orderInfo['dgc_amount'] ;
+$url = 'http://test.unify.login.ids111.com:1080/';
 
-echo '<br>';
+//account/basic_info
 
-echo round(floatval($orderInfo['dgc_amount']), 2);
+
+
+
+
+
+
+
+
