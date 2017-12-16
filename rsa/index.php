@@ -1,7 +1,7 @@
 <?php
 
 /**
- * @todo RSA?????
+ * @todo RSA
  *
  * User: jinda.li
  * Date: 2017/7/10
@@ -109,19 +109,23 @@ echo $msg . '<br>';
 echo '<br>';
 echo '<br>';
 
-$private_data = $rsa->privateEncrypt($msg, $privateKey);
-$private_data = base64_encode($private_data);
+
+$public_data = $rsa->publicEncrypt($msg, $publicKey);
+$public_data = base64_encode($public_data);
+
+//$private_data = $rsa->privateEncrypt($msg, $privateKey);
+//$private_data = base64_encode($private_data);
 
 
-echo '私钥加密之后的值：' . '<br>';
+echo '公钥加密之后的值：' . '<br>';
 
-echo $private_data . '<br><br><br><br>';
+echo $public_data . '<br><br><br><br>';
 
-echo '公钥解密之后的值：' . '<br>';
+echo '私钥解密之后的值：' . '<br>';
 
 
-$decode_msg = base64_decode($private_data);
-$decode_msg = $rsa->publicDecrypt($decode_msg, $publicKey);
+$decode_msg = base64_decode($public_data);
+$decode_msg = $rsa->privateDecrypt($decode_msg, $privateKey);
 
 echo $decode_msg;
 
