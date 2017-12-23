@@ -1,17 +1,19 @@
 <?php
-//$mtime = explode(' ', microtime());
-////取毫秒数小数点后6位
-//$code = substr($mtime[0], 2, 4);
-//echo $code;
 
-$token = 'aa4aa4c64b6863a60c918828a35e83f85536f9b5';
+/**
+ *
+OAuth token=bbf46b425b2d459f500e7c5d3460953d26c5992a&timestamp=1513934911595&sign=8d6a15acbe8dc53df1206e691344170b
+
+ */
+$token = 'bbf46b425b2d459f500e7c5d3460953d26c5992a';
 
 echo '当前token:  ' . $token;
 
 echo '<br><br>';
 
-$now_time = time();
-//$now_time = 1513403190095 / 1000;
+$now_time = time() - 60 * 10;
+//$now_time = 1513934911596;
+//$now_time = 0;
 
 echo '当前时间戳:   ' . $now_time . '  --  ' . date('Y-m-d H:i:s' , $now_time);
 
@@ -21,9 +23,6 @@ $sign = md5($now_time . '&weplay&' . $token);
 
 echo '当前时间生成的加密串:   ' . $sign;
 
-//echo '<br><br>';
-
-//echo '生成OAUTH :   ' . "Authorization:OAuth token=".$token."&timestamp=$now_time&sign=$sign";
 
 echo '<br><br>';
 
@@ -33,37 +32,20 @@ echo '7天前的时间戳:   ' . $seven_day_time . '  --  ' . date('Y-m-d H:i:s'
 
 echo '<br><br>';
 
-//$phone = 17507551021;
-//
-//echo '<br><br>';
-//
-//echo substr($phone, 7, strlen($phone));
+echo '<span style="color: #ef5e4d;margin-right: 10px">想不出名字</span>给<span style="color: #ef5e4d;margin: 0 10px">VAVA兔</span>下了一单';
+
+echo '<br><br>';
+
+echo "<span style='font-size: 26px;color: #ef5e4d;margin-right: 10px'>Jimmy</span><span style='font-size: 26px;color: #999999;'>给</span><span style='font-size: 26px;color: #ef5e4d;margin: 0 10px'>ULD3962163725</span><span style='font-size: 26px;color: #999999;'>赠送了1个</span><span style='font-size: 26px;color: #999999;'>海洋之心</span>";
+//echo date('Y-m-d H:i:s', 1513870350);
+
+echo '<br><br>';
+echo '<br><br>';
 
 
-//echo strlen('汉');
+echo "<span style='font-size: 26px;color: #ef5e4d;margin-right: 10px'>荣耀＄特德</span><span style='font-size: 26px;color: #999999;'>给</span><span style='font-size: 26px;color: #ef5e4d;margin: 0 10px'>殇小辛84</span><span style='font-size: 26px;color: #999999;'>下了1单</span>";
 
-//echo strtotime('1991-04-23');
-//
-//if (true === -1)
-//{
-//    echo '1';
-//}
-//else
-//{
-//    echo '2';
-//}
-//
-//$str = sha1(uniqid(rand() . 'weplay', true));
-//
-//echo $str;
-//
-//echo '<br>';
-//
-//echo '长度：' . strlen($str);
 
-//echo strlen(sha1(uniqid(rand(), true)));
+echo '<br><br>';
 
-//$base_string = 'sadasdasdasdasd';
-//$temp_1 = hash_hmac('sha1', $base_string, '1231231231', true);
-
-//echo $temp_1;
+echo "<span style='font-size: 26px;color: #ef5e4d;margin-right: 10px'>ULD8757811146</span><span style='font-size: 26px;color: #999999;'>给</span><span style='font-size: 26px;color: #ef5e4d;margin: 0 10px'>ULD9224850668</span><span style='font-size: 26px;color: #999999;'>赠送了</span><span style='font-size: 26px;color: #ef5e4d;margin-left: 10px'>震动棒x3</span>";

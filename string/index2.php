@@ -8,15 +8,20 @@
 function check($nickname)
 {
     if (!preg_match('/^[a-zA-Z0-9_\x{4e00}-\x{9fa5}]+$/u', $nickname)) {
-        echo $nickname .  '  ============= 不匹配';
+        echo $nickname .  '  ============= 不匹配  ====';
+        $nickname = preg_replace('/[^a-zA-Z0-9_\x{4e00}-\x{9fa5}]/u', "", $nickname);
+        echo '替换之后：' . $nickname;
     }
     else
     {
         echo  $nickname .  '  ===================  ok';
     }
-
     echo '<br>';
 }
+
+//$msg = preg_replace("/<[^>]+>/", "", $msg);
+
+
 
 check('');
 check('123');
@@ -36,7 +41,7 @@ check('--汉字中文1123');
 check('汉字中文1123');
 check('汉字fsdf中文1123');
 check('汉字fsdf中文1123#$%');
-check('汉字fsdf中文112#$%3');
+check('汉字fsdf中__文112#$%3');
 check('#$%#$汉字fsdf中文112#$%3');
 check('#$%#$汉字fsdf中文1');
 check('==中文1');

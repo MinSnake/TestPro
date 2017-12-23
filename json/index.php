@@ -21,13 +21,25 @@
 //
 //var_dump($b);
 
-$a = array(
-    'igaworks' => array(
-        'appkey' => '730227318',
-        'haskkey' => 'e14b2ce5c5ab46ce',
-    )
-);
 
-$s = json_encode($a);
+$a = '[{"id":1050604451}]';
 
-echo $s;
+$b = json_decode($a);
+
+var_dump($b);
+
+echo $b[0]->id;
+//echo $b[0]['id'];
+
+//echo '123';
+
+//$a = array(
+//    'igaworks' => array(
+//        'appkey' => '730227318',
+//        'haskkey' => 'e14b2ce5c5ab46ce',
+//    )
+//);
+//
+//$s = json_encode($a);
+//
+//echo $s;
