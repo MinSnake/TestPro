@@ -48,4 +48,4 @@ echo "<span style='font-size: 26px;color: #ef5e4d;margin-right: 10px'>荣耀＄�
 
 echo '<br><br>';
 
-echo "<span style='font-size: 26px;color: #ef5e4d;margin-right: 10px'>ULD8757811146</span><span style='font-size: 26px;color: #999999;'>给</span><span style='font-size: 26px;color: #ef5e4d;margin: 0 10px'>ULD9224850668</span><span style='font-size: 26px;color: #999999;'>赠送了</span><span style='font-size: 26px;color: #ef5e4d;margin-left: 10px'>震动棒x3</span>";
+echo "<span style='font-size: 10px;color: #ef5e4d;margin-right: 10px'>ULD131561502l</span><span style='font-size: 10px;color: #999999;'>给给给给给给给给给给给给给给给给给给给给给给给给给给给给给给给给给给给给给给给给给给给给给给给给给给给给给给给给给给给给给给给给给给给给给给给给</span><span style='font-size: 10px;color: #ef5e4d;margin: 0 10px'>berton.luo</span><span style='font-size: 10px;color: #999999;'>下了1单</span>";
