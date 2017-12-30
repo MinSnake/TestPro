@@ -134,14 +134,14 @@ class Rsa{
      * @param int 填充方式（貌似php有bug，所以目前仅支持OPENSSL_PKCS1_PADDING）
      * @return string 密文
      */
-    public function encrypt($data, $code = 'base64', $padding = OPENSSL_PKCS1_PADDING){
-        $ret = false;
-        if (!$this->_checkPadding($padding, 'en')) $this->_error('padding error');
-        if (openssl_public_encrypt($data, $result, self::$priKey , $padding)){
-            $ret = $this->_encode($result, $code);
-        }
-        return $ret;
-    }
+//    public function encrypt($data, $code = 'base64', $padding = OPENSSL_PKCS1_PADDING){
+//        $ret = false;
+//        if (!$this->_checkPadding($padding, 'en')) $this->_error('padding error');
+//        if (openssl_public_encrypt($data, $result, self::$priKey , $padding)){
+//            $ret = $this->_encode($result, $code);
+//        }
+//        return $ret;
+//    }
 
     /**
      * 解密
@@ -152,17 +152,17 @@ class Rsa{
      * @param bool 是否翻转明文（When passing Microsoft CryptoAPI-generated RSA cyphertext, revert the bytes in the block）
      * @return string 明文
      */
-    public function decrypt($data, $code = 'base64', $padding = OPENSSL_PKCS1_PADDING, $rev = false){
-        $ret = false;
-        $data = $this->_decode($data, $code);
-        if (!$this->_checkPadding($padding, 'de')) $this->_error('padding error');
-        if ($data !== false){
-            if (openssl_private_decrypt($data, $result, self::$pubKey, $padding)){
-                $ret = $rev ? rtrim(strrev($result), "\0") : ''.$result;
-            }
-        }
-        return $ret;
-    }
+//    public function decrypt($data, $code = 'base64', $padding = OPENSSL_PKCS1_PADDING, $rev = false){
+//        $ret = false;
+//        $data = $this->_decode($data, $code);
+//        if (!$this->_checkPadding($padding, 'de')) $this->_error('padding error');
+//        if ($data !== false){
+//            if (openssl_private_decrypt($data, $result, self::$pubKey, $padding)){
+//                $ret = $rev ? rtrim(strrev($result), "\0") : ''.$result;
+//            }
+//        }
+//        return $ret;
+//    }
 
 
     // 私有方法

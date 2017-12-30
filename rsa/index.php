@@ -1,6 +1,6 @@
 <?php
 require 'Rsa.php';
-$rsa = Rsa::getInstance('privkey.pem', 'pubkey.pem');
+$rsa = Rsa::getInstance('android/privkey.pem', 'android/pubkey.pem');
 
 /**
  * 请求参数：openid    微信的openid     openid
@@ -14,7 +14,7 @@ $rsa = Rsa::getInstance('privkey.pem', 'pubkey.pem');
 
 $openid = md5(time() . rand(1, 4325));
 $openid = substr($openid, 0, 18);
-$openid = 'ozr3OvlwJDvVFTTakaDrMITo77ng';
+$openid = 'ozr3OvlwJDvVFTTakaDrMITo77ngxxxx';
 
 $unionid = md5(time() . rand(3423, 988645));
 $unionid = substr($unionid, 0, 20);

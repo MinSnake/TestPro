@@ -1,66 +1,18 @@
 <?php
-class Rsa2
-{
-    public $privateKey = '';
-
-    public $publicKey = '';
-
-    public function __construct()
-    {
-        $resource = openssl_pkey_new();
-        openssl_pkey_export($resource, $this->privateKey);
-        $detail = openssl_pkey_get_details($resource);
-        $this->publicKey = $detail['key'];
-    }
-
-    public function publicEncrypt($data, $publicKey)
-    {
-        openssl_public_encrypt($data, $encrypted, $publicKey, OPENSSL_PKCS1_PADDING);
-        return $encrypted;
-    }
-
-    public function publicDecrypt($data, $publicKey)
-    {
-        openssl_public_decrypt($data, $decrypted, $publicKey, OPENSSL_PKCS1_PADDING);
-        return $decrypted;
-    }
-
-    public function privateEncrypt($data, $privateKey)
-    {
-        openssl_private_encrypt($data, $encrypted, $privateKey, OPENSSL_PKCS1_PADDING);
-        return $encrypted;
-    }
-
-    public function privateDecrypt($data, $privateKey)
-    {
-        openssl_private_decrypt($data, $decrypted, $privateKey, OPENSSL_PKCS1_PADDING);
-        return $decrypted;
-    }
-}
+require 'Rsa.php';
+$rsa = Rsa::getInstance('android/privkey.pem', 'android/pubkey.pem');
 
 
-$rsa = new Rsa2();
-echo "公钥：\n", $rsa->publicKey, "\n";
-echo "私钥：\n", $rsa->privateKey, "\n";
+//$a = '123';
+//$b = $rsa->pubEncrypt($a);
+//echo $b;
+//echo '<br>';
+//$c = $rsa->privDecrypt($b);
+//echo $c;
 
-// 使用公钥加密
-$str = $rsa->publicEncrypt('hello', $rsa->publicKey);
-// 这里使用base64是为了不出现乱码，默认加密出来的值有乱码
-$str = base64_encode($str);
-echo "公钥加密（base64处理过）：\n", $str, "\n";
-$str = base64_decode($str);
-$pubstr = $rsa->publicDecrypt($str, $rsa->publicKey);
-echo "公钥解密：\n", $pubstr, "\n";
-$privstr = $rsa->privateDecrypt($str, $rsa->privateKey);
-echo "私钥解密：\n", $privstr, "\n";
 
-// 使用私钥加密
-$str = $rsa->privateEncrypt('world', $rsa->privateKey);
-// 这里使用base64是为了不出现乱码，默认加密出来的值有乱码
-$str = base64_encode($str);
-echo "私钥加密（base64处理过）：\n", $str, "\n";
-$str = base64_decode($str);
-$pubstr = $rsa->publicDecrypt($str, $rsa->publicKey);
-echo "公钥解密：\n", $pubstr, "\n";
-$privstr = $rsa->privateDecrypt($str, $rsa->privateKey);
-echo "私钥解密：\n", $privstr, "\n";
+
+
+$str = 'rO6CHk/rKxzPmXamUxQ8SNbhCYuV/sFv8iYLx0D4M2sUfwdZmtOTcdr/yq5EQEO7enS0Y1IUNK1dCEuvT5nc7Gb0Mgp+pOOOGDKreM5tQKyLPCXGdoTMUtmZSCf1YoBmz9ommjQw1ovodyO3kP4ev6zhGOjc+AyFYaO8g0p6G8xaGyHqmtWwNYpExUb+g9LXGVUAK0xguMq8pnlkyIrM40ZwRTJjKg5MKtUMXKgI4o9PlPSFXmLnyDdXXMEck//WmDU2GscNAGtRaJsa175402wU1yKADoAT/Trp47oIGdiuNLtZlhWPigmxknLSnr0H8kxWyjvpNu9CGPJq28/r9A==';
+$res = $rsa->privDecrypt($str);
+echo $res;
