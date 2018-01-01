@@ -30,8 +30,10 @@ require 'User.php';
 
 $s = $_GET['s'];
 
-$langPath = 'lang';
-$langType = 'zh';
+$langPath = '';
+$langType = '';
+//$langPath = 'lang';
+//$langType = 'zh';
 
 $fileload = new \Illuminate\Translation\FileLoader(new \Illuminate\Filesystem\Filesystem(), $langPath);
 $translator = new \Illuminate\Translation\Translator($fileload, $langType);
@@ -44,17 +46,27 @@ $data = array(
 //$rules = ['s' => 'required|string|min:2|max:4'];
 //$rules = ['s' => 'required|string|email'];
 //$rules = ['s' => 'required|string|ip'];
-$rules = ['s' => 'unique:default.mj_user,nickname'];
+//$rules = ['s' => 'unique:mj_user,nickname'];
+//$rules = ['s' => 'alpha_num'];
+$rules = ['s' => 'required|regex:/^[a-zA-Z0-9_\x{4e00}-\x{9fa5}]+$/u'];
 
 //var_dump($db->getConnection());
+$ccc = [
+    'required' => ':attribute 参数为空.',
+    'min.string' => ':attribute 最小长度为:min.',
+    'max.string' => ':attribute 最大长度为:max.',
+    'email' => '邮箱格式不正确',
+    'ip' => 'IP地址不正确',
+    'regex' => ':attribute 123'
+];
 
-$v = new \Illuminate\Validation\Validator($translator, $data, $rules);
+$v = new \Illuminate\Validation\Validator($translator, $data, $rules, $ccc, ['s' => 'sss']);
 
 $xx = array(
     'default' => $db->getConnection()
 );
 $connectResolver = new \Illuminate\Database\ConnectionResolver($xx);
-//$connectResolver->setDefaultConnection('default');
+$connectResolver->setDefaultConnection('default');
 
 $PresenceVerifier = new \Illuminate\Validation\DatabasePresenceVerifier($connectResolver);
 
