@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>login-index</title>
+
+    <style>
+
+        body {
+            background: #6b9ac5;
+        }
+
+    </style>
+</head>
+<body>
+
+<h1>login-index</h1>
+
+
+<button id="load_main_btn">load main</button>
+
+
+<script>
+
+    document.getElementById("load_main_btn").onclick = function () {
+
+        const remote = require('electron').remote;
+        const BrowserWindow = remote.BrowserWindow;
+        const path = require('path')
+        const url = require('url')
+        var win = BrowserWindow.getFocusedWindow();
+//        win.loadURL('https://www.baidu.com/');
+        win.loadURL('file://' + __dirname + '/../main/index.html');
+
+//        win.loadURL(url.format({
+//            pathname: path.join(__dirname, '../main/index.html'),
+//            protocol: 'file:',
+//            slashes: true
+//        }))
+
+    };
+
+</script>
+
+</body>
+</html>
