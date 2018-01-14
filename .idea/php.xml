@@ -8,6 +8,7 @@
   <component name="PhpIncludePathManager">
     <include_path>
       <path value="D:\JetBrains\PhpStorm 2017.2.3\swoole-ide-helper-master" />
+      <path value="D:\JetBrains\PhpStorm 2016.2.2\swoole-ide-helper-master" />
     </include_path>
   </component>
   <component name="PhpInterpreters">
@@ -276,7 +277,7 @@
             <configuration_option name="xdebug.profiler_enable" value="1" />
             <configuration_option name="xdebug.profiler_enable_trigger" value="0" />
             <configuration_option name="xdebug.profiler_enable_trigger_value" value="" />
-            <configuration_option name="xdebug.profiler_output_dir" value="/home/saki/xdebug" />
+            <configuration_option name="xdebug.profiler_output_dir" value="$USER_HOME$/xdebug" />
             <configuration_option name="xdebug.profiler_output_name" value="cachegrind.out.%p" />
             <configuration_option name="xdebug.remote_addr_header" value="" />
             <configuration_option name="xdebug.remote_autostart" value="0" />
@@ -297,7 +298,7 @@
             <configuration_option name="xdebug.trace_enable_trigger_value" value="" />
             <configuration_option name="xdebug.trace_format" value="0" />
             <configuration_option name="xdebug.trace_options" value="0" />
-            <configuration_option name="xdebug.trace_output_dir" value="/home/saki/xdebug" />
+            <configuration_option name="xdebug.trace_output_dir" value="$USER_HOME$/xdebug" />
             <configuration_option name="xdebug.trace_output_name" value="trace.%c" />
             <configuration_option name="xdebug.var_display_max_children" value="128" />
             <configuration_option name="xdebug.var_display_max_data" value="512" />
