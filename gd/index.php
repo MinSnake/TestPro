@@ -125,9 +125,9 @@ function main()
     press($time);
 }
 
-for ($i = 0; $i < 5000; $i++) {
+for ($i = 0; $i < 500000; $i++) {
     logx('当前触发次数:' . $i);
     main();
-    sleep(3);
+    sleep(2);
 }
 
