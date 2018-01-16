@@ -18,7 +18,7 @@ function similar($rgb1, $rgb2, $value = 20)
 }
 
 /**
- * @todo æŸ¥æ‰¾æ£‹å­åº•éƒ¨åæ ‡
+ * @todo ²éÕÒÆå×Óµ×²¿×ø±ê
  * @param $image
  * @param $width
  * @param $height
@@ -39,12 +39,12 @@ function get_player_xy($image, $width, $height, $player_rgb)
             }
         }
     }
-    logx('æ‰¾åˆ°æ£‹å­åæ ‡: [' . $player_x . ',' . $player_y . ']');
+    logx('ÕÒµ½Æå×Ó×ø±ê: [' . $player_x . ',' . $player_y . ']');
     return [$player_x, $player_y];
 }
 
 /**
- * @todo æŸ¥æ‰¾ä¸‹ä¸€ä¸ªç‚¹çš„åæ ‡
+ * @todo ²éÕÒÏÂÒ»¸öµãµÄ×ø±ê
  * @param $image
  * @param $width
  * @param $height
@@ -52,11 +52,11 @@ function get_player_xy($image, $width, $height, $player_rgb)
  */
 function get_next_xy($image, $width, $height)
 {
-    //æ¨¡å—å‡ºç°åŒºåŸŸ Yè½´åŒºåŸŸ  330 - 950  Xè½´ 0 - 1080
+    //Ä£¿é³öÏÖÇøÓò YÖáÇøÓò  330 - 950  XÖá 0 - 1080
     $aims_x = 0;
     $aims_y = 0;
     for ($b = $height / 3; $b < $height / 3 * 2; $b++) {
-        $demo = imagecolorat($image, $width - 1, $b); //ç”¨æ¥å¯¹æ¯”çš„åƒç´ 
+        $demo = imagecolorat($image, $width - 1, $b); //ÓÃÀ´¶Ô±ÈµÄÏñËØ
         for ($a = 0; $a < $width; $a++) {
             $point = imagecolorat($image, $a, $b);
             if (!similar($point, $demo, 30)) {
@@ -68,25 +68,26 @@ function get_next_xy($image, $width, $height)
             }
         }
     }
-    logx('æ‰¾åˆ°ç›®æ ‡åæ ‡: [' . $aims_x . ',' . $aims_y . ']');
+    logx('ÕÒµ½Ä¿±ê×ø±ê: [' . $aims_x . ',' . $aims_y . ']');
     return [$aims_x, $aims_y];
 }
 
 /**
- * @todo æˆªå›¾å¹¶ä¸”æ”¾åˆ°ç”µè„‘ä¸Š
+ * @todo ½ØÍ¼²¢ÇÒ·Åµ½µçÄÔÉÏ
  */
 function screencap()
 {
     ob_start();
     system('adb shell screencap -p /sdcard/saki_test/screen.png');
-    system('adb pull /sdcard/saki_test/screen.png /home/saki/Work/PHP/TestPro/gd/screencap/screen.png');
+//    system('adb pull /sdcard/saki_test/screen.png /home/saki/Work/PHP/TestPro/gd/screencap/screen.png');
+    system('adb pull /sdcard/saki_test/screen.png E:/Work/PHP/test/gd/screencap/screen.png');
     ob_end_clean();
 }
 
 function press($time)
 {
-    logx('å¼€å§‹è‡ªåŠ¨è·³è½¬');
-    // éšæœºç‚¹æŒ‰ä¸‹å’Œç¨å¾®æŒªåŠ¨æŠ¬èµ·ï¼Œæ¨¡æ‹Ÿæ‰‹æŒ‡
+    logx('¿ªÊ¼×Ô¶¯Ìø×ª');
+    // Ëæ»úµã°´ÏÂºÍÉÔÎ¢Å²¶¯Ì§Æğ£¬Ä£ÄâÊÖÖ¸
     $px = rand(500, 600);
     $py = rand(1560, 1600);
     $ux = $px + rand(-10, 10);
@@ -100,24 +101,23 @@ define('PRESS_TIME', 3.95950169);
 
 function main()
 {
-    //1.å…ˆæˆªå›¾
+    //1.ÏÈ½ØÍ¼
     screencap();
-    //è¾“å‡ºæˆªå›¾ä¿¡æ¯
+    //Êä³ö½ØÍ¼ĞÅÏ¢
     $image = imagecreatefrompng("screencap/screen.png");
-//    $player_rgb = imagecolorat($image, 314, 1149);
-//    $player_rgb = 3750243;
     $player_rgb = 3554406;
-//    echo 'æ£‹å­åº•éƒ¨é¢œè‰²: ' . $player_rgb . PHP_EOL;
+//    echo 'Æå×Óµ×²¿ÑÕÉ«: ' . $player_rgb . PHP_EOL;
+
+
     $width = imagesx($image);
     $height = imagesy($image);
-//    echo 'è·å¾—å›¾ç‰‡å°ºå¯¸: ' . $width . '--' . $height . PHP_EOL;
-    //2.æ‰¾åˆ°æ£‹å­çš„åº•éƒ¨åæ ‡
+    //2.ÕÒµ½Æå×ÓµÄµ×²¿×ø±ê
     list($user_x, $user_y) = get_player_xy($image, $width, $height, $player_rgb);
-    //3.æ‰¾åˆ°è¦è·³åˆ°çš„åœ°ç‚¹çš„åæ ‡
+    //3.ÕÒµ½ÒªÌøµ½µÄµØµãµÄ×ø±ê
     list($point_x, $point_y) = get_next_xy($image, $width, $height);
-    //4.è®¡ç®—è·ç¦»,è®¡ç®—æŒ‰å‹æ—¶é—´
+    //4.¼ÆËã¾àÀë,¼ÆËã°´Ñ¹Ê±¼ä
     $dist = sqrt(pow($point_x - $user_x, 2) + pow($point_y - $user_y, 2));
-    // 2.5Dè·ç¦»ä¿®æ­£
+    // 2.5D¾àÀëĞŞÕı
     $trdeg = rad2deg(asin(abs($point_x - $user_x) / $dist));
     $dist_fix = $dist * sin(deg2rad(140 - $trdeg));
     $time = pow($dist_fix, PRESS_EXP) * PRESS_TIME;
@@ -125,9 +125,14 @@ function main()
     press($time);
 }
 
-for ($i = 0; $i < 500000; $i++) {
-    logx('å½“å‰è§¦å‘æ¬¡æ•°:' . $i);
-    main();
-    sleep(2);
+function loop_main($times = 50000000)
+{
+    for ($i = 0; $i < $times; $i++) {
+        logx('µ±Ç°´¥·¢´ÎÊı:' . $i);
+        main();
+        sleep(2);
+    }
 }
 
+
+main();
