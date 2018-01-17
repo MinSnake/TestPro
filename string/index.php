@@ -5,7 +5,7 @@
 OAuth token=bbf46b425b2d459f500e7c5d3460953d26c5992a&timestamp=1513934911595&sign=8d6a15acbe8dc53df1206e691344170b
 
  */
-$token = 'a2747ab3eaf607d78b14f691bab70e324d1d866d';
+$token = '9796cccadab105a31e862a324a9bf160a296dffe';
 
 echo '当前token:  ' . $token;
 
@@ -23,15 +23,15 @@ $sign = md5($now_time . '&weplay&' . $token);
 
 echo '当前时间生成的加密串:   ' . $sign;
 
+//
+//echo '<br><br>';
+//echo '<br><br>';
 
-echo '<br><br>';
-echo '<br><br>';
+//$seven_day_time = $now_time - 7 * 24 * 3600;
 
-$seven_day_time = $now_time - 7 * 24 * 3600;
+//echo '7天前的时间戳:   ' . $seven_day_time . '  --  ' . date('Y-m-d H:i:s' , $seven_day_time);
 
-echo '7天前的时间戳:   ' . $seven_day_time . '  --  ' . date('Y-m-d H:i:s' , $seven_day_time);
-
-echo '<br><br>';
+//echo '<br><br>';
 
 
-echo "<span style='font-size: 10px;color: #ef5e4d;'>烟火</span><span style='font-size: 10px;color: #999999;margin-left: 10px;margin-right: 10px;'> 给 </span><span style='font-size: 10px;color: #ef5e4d;'>ULD9224850668</span><span style='font-size: 10px;color: #999999;margin-left: 10px;margin-right: 10px;'> 赠送了 </span><span style='font-size: 10px;color: #ef5e4d;'>海洋之心x1</span>";
+//echo "<span style='font-size: 10px;color: #ef5e4d;'>烟火</span><span style='font-size: 10px;color: #999999;margin-left: 10px;margin-right: 10px;'> 给 </span><span style='font-size: 10px;color: #ef5e4d;'>ULD9224850668</span><span style='font-size: 10px;color: #999999;margin-left: 10px;margin-right: 10px;'> 赠送了 </span><span style='font-size: 10px;color: #ef5e4d;'>海洋之心x1</span>";
