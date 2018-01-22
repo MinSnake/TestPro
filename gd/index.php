@@ -97,7 +97,7 @@ function press($time)
 }
 
 define('PRESS_EXP', 0.842225);
-define('PRESS_TIME', 3.95950169);
+define('PRESS_TIME', 3.55950169);
 
 function main()
 {
