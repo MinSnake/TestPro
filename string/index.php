@@ -5,7 +5,7 @@
 OAuth token=bbf46b425b2d459f500e7c5d3460953d26c5992a&timestamp=1513934911595&sign=8d6a15acbe8dc53df1206e691344170b
 
  */
-$token = '2062138e025b1cbdfb5740df9d76ff7118683c20';
+$token = '5a3a5057c767bfeea8f6fda5ff2605cc0ff7420f';
 
 echo '当前token:  ' . $token;
 

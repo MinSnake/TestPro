@@ -2,203 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9efe3c6e-e332-4730-bb89-b6a6099fef10" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00000.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00001.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00002.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00003.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00004.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00005.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00006.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00007.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00008.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00009.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00010.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00011.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00012.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00013.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00014.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00015.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00016.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00017.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00018.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00019.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00020.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00021.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00022.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00023.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00024.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00025.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00026.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00027.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00028.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00029.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00030.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00031.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00032.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00033.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00034.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00035.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00036.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00037.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00038.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00039.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00040.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00041.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00042.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00043.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00044.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00045.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00046.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00047.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00048.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00049.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00050.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00051.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00052.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00053.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00054.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00055.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00056.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00057.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00058.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00059.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00060.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00061.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00062.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00063.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00064.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00065.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00066.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00067.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00068.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00069.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00070.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00071.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00072.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00073.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00074.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00075.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00076.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00077.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00078.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00079.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00080.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00081.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00082.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00083.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00084.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00085.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00086.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00087.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00088.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00089.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00090.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00091.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00092.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00093.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00094.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00095.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00096.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00097.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00098.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00099.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00100.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00101.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00102.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00103.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00104.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00105.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00106.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00107.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00108.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00109.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00110.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00111.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00112.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00113.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00114.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00115.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00116.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00117.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00118.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00119.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00120.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00121.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00122.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00123.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00124.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00125.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00126.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00127.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00128.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00129.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00130.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00131.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00132.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00133.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00134.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00135.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00136.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00137.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00138.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00139.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00140.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00141.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00142.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00143.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00144.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00145.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00146.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00147.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00148.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00149.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00150.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00151.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00152.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00153.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00154.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00155.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00156.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00157.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00158.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00159.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00160.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00161.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00162.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00163.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00164.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00165.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00166.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00167.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00168.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00169.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00170.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00171.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00172.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00173.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00174.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00175.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00176.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00177.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00178.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00179.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00180.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00181.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00182.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00183.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00184.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00185.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00186.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00187.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00188.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00189.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/screen/00190.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gd/screencap/screen.png" afterPath="$PROJECT_DIR$/gd/screencap/screen.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gd/JumpJumpHelper/config.php" afterPath="$PROJECT_DIR$/gd/JumpJumpHelper/config.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gd/index.php" afterPath="$PROJECT_DIR$/gd/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/string/index.php" afterPath="$PROJECT_DIR$/string/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/string/index2.php" afterPath="$PROJECT_DIR$/string/index2.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/rsa/android/cert/privkey.pem" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/rsa/android/cert/pubkey.pem" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/rsa/ios/cert/privkey.pem" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/rsa/ios/cert/pubkey.pem" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/string/index3.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/weplay/oauth.php" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" afterPath="$PROJECT_DIR$/.idea/php.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/test.iml" afterPath="$PROJECT_DIR$/.idea/test.iml" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/rsa/index2.php" afterPath="$PROJECT_DIR$/rsa/index2.php" />
+      <change beforePath="$PROJECT_DIR$/string/index.php" afterPath="$PROJECT_DIR$/string/index.php" />
+      <change beforePath="$PROJECT_DIR$/string/index2.php" afterPath="$PROJECT_DIR$/string/index2.php" />
     </list>
     <ignored path="test.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -209,6 +24,9 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true">
+    <pharConfigPath>$PROJECT_DIR$/orm/composer.json</pharConfigPath>
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -221,53 +39,26 @@
     <option name="SHOW_EMPTY_GROUPS" value="false" />
     <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="test" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="oauth.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/weplay/oauth.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="18" column="20" lean-forward="true" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/string/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="7" column="50" selection-start-line="7" selection-start-column="50" selection-end-line="7" selection-end-column="50" />
-              <folding>
-                <marker date="1516345887131" expanded="true" signature="699:730" ph="..." />
-                <marker date="1516345887131" expanded="true" signature="754:822" ph="..." />
-                <marker date="1516345887131" expanded="true" signature="847:878" ph="..." />
-                <marker date="1516345887131" expanded="true" signature="913:981" ph="..." />
-                <marker date="1516345887131" expanded="true" signature="1008:1039" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="run.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gd/JumpJumpHelper/run.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="104" column="1" selection-start-line="104" selection-start-column="1" selection-end-line="104" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="config.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/gd/JumpJumpHelper/config.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
-              <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gd/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="291">
-              <caret line="95" column="33" selection-start-line="95" selection-start-column="33" selection-end-line="95" selection-end-column="33" />
+            <state relative-caret-position="0">
+              <caret line="0" column="3" lean-forward="false" selection-start-line="0" selection-start-column="3" selection-end-line="0" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -280,6 +71,7 @@
       <find>vender</find>
       <find>openssl_public_encrypt</find>
       <find>var_dump</find>
+      <find>ENCODING</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -288,8 +80,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/ledou/sdk_test_project/Lib/BaseApp.php" />
-        <option value="$PROJECT_DIR$/ledou/sdk_test_project/Lib/Log/Log.php" />
         <option value="$PROJECT_DIR$/ledou/sdk_test_project/App/Cm/CmSecure.php" />
         <option value="$PROJECT_DIR$/ledou/xiuxian/index.php" />
         <option value="$PROJECT_DIR$/ledou/xiuxian/Util/RequestUtil.php" />
@@ -325,7 +115,6 @@
         <option value="$PROJECT_DIR$/ftp/FtpApiHelper.php" />
         <option value="$PROJECT_DIR$/rsa/index.php" />
         <option value="$PROJECT_DIR$/rsa/Rsa.php" />
-        <option value="$PROJECT_DIR$/rsa/index2.php" />
         <option value="$PROJECT_DIR$/orm/composer.json" />
         <option value="$PROJECT_DIR$/orm/lang/zh/messages.php" />
         <option value="$PROJECT_DIR$/orm/lang/zh/validation.php" />
@@ -335,10 +124,13 @@
         <option value="$PROJECT_DIR$/gd/index3.php" />
         <option value="$PROJECT_DIR$/time/index.php" />
         <option value="$PROJECT_DIR$/gd/index2.php" />
-        <option value="$PROJECT_DIR$/string/index2.php" />
-        <option value="$PROJECT_DIR$/string/index.php" />
         <option value="$PROJECT_DIR$/gd/index.php" />
         <option value="$PROJECT_DIR$/gd/JumpJumpHelper/config.php" />
+        <option value="$PROJECT_DIR$/string/index.php" />
+        <option value="$PROJECT_DIR$/string/index2.php" />
+        <option value="$PROJECT_DIR$/string/index3.php" />
+        <option value="$PROJECT_DIR$/rsa/index2.php" />
+        <option value="$PROJECT_DIR$/weplay/oauth.php" />
       </list>
     </option>
   </component>
@@ -360,15 +152,34 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="php7.1.3">
     <include_path>
+      <path value="D:\JetBrains\PhpStorm 2017.2.3\swoole-ide-helper-master" />
       <path value="D:\JetBrains\PhpStorm 2016.2.2\swoole-ide-helper-master" />
+      <path value="$PROJECT_DIR$/orm/vendor/illuminate/container" />
+      <path value="$PROJECT_DIR$/orm/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/orm/vendor/illuminate/contracts" />
+      <path value="$PROJECT_DIR$/orm/vendor/illuminate/filesystem" />
+      <path value="$PROJECT_DIR$/orm/vendor/illuminate/database" />
+      <path value="$PROJECT_DIR$/orm/vendor/nesbot/carbon" />
+      <path value="$PROJECT_DIR$/orm/vendor/paragonie/random_compat" />
+      <path value="$PROJECT_DIR$/orm/vendor/symfony/translation" />
+      <path value="$PROJECT_DIR$/orm/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/orm/vendor/symfony/http-foundation" />
+      <path value="$PROJECT_DIR$/orm/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/orm/vendor/symfony/polyfill-php70" />
+      <path value="$PROJECT_DIR$/orm/vendor/composer" />
+      <path value="$PROJECT_DIR$/orm/vendor/illuminate/support" />
+      <path value="$PROJECT_DIR$/orm/vendor/illuminate/translation" />
+      <path value="$PROJECT_DIR$/orm/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/orm/vendor/psr/simple-cache" />
+      <path value="$PROJECT_DIR$/orm/vendor/illuminate/validation" />
     </include_path>
   </component>
   <component name="PhpXdebugProxy" ide_key="PHPSTORM" host="localhost" port="80" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="185" />
-    <option name="y" value="87" />
-    <option name="width" value="1452" />
-    <option name="height" value="839" />
+    <option name="x" value="-1584" />
+    <option name="y" value="77" />
+    <option name="width" value="1813" />
+    <option name="height" value="973" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -428,16 +239,6 @@
       </profile-state>
     </entry>
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
-    <OptionsSetting value="true" id="Add" />
-    <OptionsSetting value="true" id="Remove" />
-    <OptionsSetting value="true" id="Checkout" />
-    <OptionsSetting value="true" id="Update" />
-    <OptionsSetting value="true" id="Status" />
-    <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
-    <ConfirmationsSetting value="0" id="Remove" />
-  </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -453,248 +254,75 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="time" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="string" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rsa" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rsa" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ios" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rsa" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="android" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="random" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ledou" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="yiqiwan" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ledou" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gd" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gd" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="screencap" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gd" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JumpJumpHelper" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gd" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JumpJumpHelper" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="screen" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
+          <expand>
+            <path>
+              <item name="TestPro" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TestPro" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="TestPro" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TestPro" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="ledou" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="TestPro" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TestPro" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="rsa" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="TestPro" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TestPro" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="rsa" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="android" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="TestPro" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TestPro" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="rsa" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="android" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="cert" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="TestPro" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TestPro" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="string" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="TestPro" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TestPro" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="weplay" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+          </expand>
+          <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="terminal" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../doradora/server/game_server" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://E:/Work/PHP/test/ledou/sdk_test_project/Config/TW/config.php" />
     <property name="js-jscs-nodeInterpreter" value="D:\nodejs\node.exe" />
-    <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\Work\PHP\test\gd" />
-      <recent name="E:\Work\PHP\test\orm\lang\zh" />
-      <recent name="E:\Work\PHP\test\rsa\android" />
-      <recent name="E:\Work\PHP\test" />
-      <recent name="E:\Work\PHP\test\ftp" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\Work\PHP\test\rsa\ios" />
       <recent name="E:\Work\PHP\test\ledou\sdk_test_project\Lib\Tools" />
       <recent name="E:\Work\PHP\test\ledou\sdk_test_project\Config" />
       <recent name="E:\Work\PHP\test\ledou\sdk_test_project\Config\USA" />
       <recent name="E:\Work\PHP\test\ledou\sdk_test_project\Lib\App" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/rsa" />
+      <recent name="E:\Work\PHP\test\gd" />
+      <recent name="E:\Work\PHP\test\orm\lang\zh" />
+      <recent name="E:\Work\PHP\test\rsa\android" />
+      <recent name="E:\Work\PHP\test" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -709,7 +337,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="PHP Web Application.http://localtest.me/">
+  <component name="RunManager">
+    <configuration name="http://localtest.me/" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application" server_name="php7.1.3" />
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
       <method />
     </configuration>
@@ -728,15 +357,6 @@
       <method />
     </configuration>
     <configuration default="true" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application">
-      <method />
-    </configuration>
-    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <gulpfile />
-      <tasks />
-      <arguments />
-      <envs />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
@@ -759,12 +379,14 @@
       <recursive>false</recursive>
       <method />
     </configuration>
-    <configuration default="false" name="http://localtest.me/" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application" server_name="php7.1.3">
-      <method />
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
     </configuration>
-    <list size="1">
-      <item index="0" class="java.lang.String" itemvalue="PHP Web Application.http://localtest.me/" />
-    </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -773,6 +395,9 @@
     <option name="myEncoding" value="UTF-8" />
     <option name="myConnectionType" value="DEPLOYMENT_SERVER" />
     <option name="myConnectionId" value="f4e00820-a068-4a34-9da7-1ef6bc1fdfd9" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -843,34 +468,42 @@
       <workItem from="1515979920839" duration="6308000" />
       <workItem from="1516070893163" duration="13064000" />
       <workItem from="1516584838151" duration="2596000" />
+      <workItem from="1520238639472" duration="726000" />
+      <workItem from="1520254740969" duration="2066000" />
+      <workItem from="1520307269638" duration="2314000" />
+      <workItem from="1520823807186" duration="9570000" />
+      <workItem from="1521018329804" duration="664000" />
+      <workItem from="1521022978080" duration="2650000" />
+      <workItem from="1521077451229" duration="3578000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="505549000" />
+    <option name="totallyTimeSpent" value="527117000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="185" y="87" width="1452" height="839" extended-state="0" />
-    <editor active="false" />
+    <frame x="-1584" y="77" width="1813" height="973" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22206506" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13694802" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33435115" sideWeight="0.5024424" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299748" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3131202" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30274135" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40552995" sideWeight="0.49755758" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40552995" sideWeight="0.49755758" order="6" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1069,81 +702,66 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ftp/FtpApiHelper.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-190">
-          <caret line="75" column="45" selection-start-line="75" selection-start-column="45" selection-end-line="75" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/framework-master/doc/bench.md" />
-    <entry file="file://$PROJECT_DIR$/framework-master/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/framework-master/libs/lib_config.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="836">
-          <caret line="44" column="43" selection-start-line="44" selection-start-column="43" selection-end-line="44" selection-end-column="43" />
+          <caret line="44" column="43" lean-forward="false" selection-start-line="44" selection-start-column="43" selection-end-line="44" selection-end-column="43" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/framework-master/libs/Swoole/ModelLoader.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1254">
-          <caret line="66" column="59" selection-start-line="66" selection-start-column="59" selection-end-line="66" selection-end-column="59" />
+          <caret line="66" column="59" lean-forward="false" selection-start-line="66" selection-start-column="59" selection-end-line="66" selection-end-column="59" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/framework-master/apps/classes/DAO/User.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
-          <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
+          <caret line="18" column="18" lean-forward="false" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/framework-master/libs/Swoole/Model.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="969">
-          <caret line="51" column="29" selection-start-line="51" selection-start-column="29" selection-end-line="51" selection-end-column="29" />
+          <caret line="51" column="29" lean-forward="false" selection-start-line="51" selection-start-column="29" selection-end-line="51" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/framework-master/libs/Swoole/Swoole.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="532">
-          <caret line="28" column="3" selection-start-line="28" selection-start-column="3" selection-end-line="28" selection-end-column="3" />
+          <caret line="28" column="3" lean-forward="false" selection-start-line="28" selection-start-column="3" selection-end-line="28" selection-end-column="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/framework-master/apps/models/User.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
-          <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
+          <caret line="17" column="26" lean-forward="false" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/framework-master/libs/Swoole/Database.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1140">
-          <caret line="60" column="0" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+          <caret line="60" column="0" lean-forward="false" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/rsa/android/privkey.pem">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/orm/composer.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1151,63 +769,63 @@
     <entry file="file://$PROJECT_DIR$/orm/vendor/illuminate/support/MessageBag.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2841">
-          <caret line="351" column="0" selection-start-line="351" selection-start-column="0" selection-end-line="351" selection-end-column="0" />
+          <caret line="351" column="0" lean-forward="false" selection-start-line="351" selection-start-column="0" selection-end-line="351" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/orm/vendor/illuminate/translation/Translator.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
-          <caret line="114" column="60" selection-start-line="114" selection-start-column="60" selection-end-line="114" selection-end-column="60" />
+          <caret line="114" column="60" lean-forward="false" selection-start-line="114" selection-start-column="60" selection-end-line="114" selection-end-column="60" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/orm/vendor/illuminate/validation/PresenceVerifierInterface.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
-          <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
+          <caret line="4" column="10" lean-forward="false" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/framework-master/tests/mysql.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/orm/vendor/composer/ClassLoader.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
-          <caret line="323" column="0" selection-start-line="323" selection-start-column="0" selection-end-line="323" selection-end-column="0" />
+          <caret line="323" column="0" lean-forward="false" selection-start-line="323" selection-start-column="0" selection-end-line="323" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/orm/vendor/illuminate/database/Capsule/Manager.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="164">
-          <caret line="107" column="0" selection-start-line="107" selection-start-column="0" selection-end-line="107" selection-end-column="0" />
+          <caret line="107" column="0" lean-forward="false" selection-start-line="107" selection-start-column="0" selection-end-line="107" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/orm/vendor/illuminate/database/Query/Builder.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="155">
-          <caret line="2402" column="20" selection-start-line="2402" selection-start-column="20" selection-end-line="2402" selection-end-column="20" />
+          <caret line="2402" column="20" lean-forward="false" selection-start-line="2402" selection-start-column="20" selection-end-line="2402" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/orm/vendor/illuminate/database/ConnectionResolverInterface.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
-          <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
+          <caret line="12" column="20" lean-forward="false" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/orm/vendor/illuminate/validation/Concerns/ValidatesAttributes.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="298">
-          <caret line="640" column="0" selection-start-line="640" selection-start-column="0" selection-end-line="640" selection-end-column="0" />
+          <caret line="640" column="0" lean-forward="false" selection-start-line="640" selection-start-column="0" selection-end-line="640" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1215,7 +833,7 @@
     <entry file="file://$PROJECT_DIR$/orm/vendor/illuminate/validation/DatabasePresenceVerifier.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="434">
-          <caret line="124" column="0" selection-start-line="124" selection-start-column="0" selection-end-line="124" selection-end-column="0" />
+          <caret line="124" column="0" lean-forward="false" selection-start-line="124" selection-start-column="0" selection-end-line="124" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1223,7 +841,7 @@
     <entry file="file://$PROJECT_DIR$/orm/vendor/illuminate/validation/Concerns/FormatsMessages.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="212">
-          <caret line="25" column="80" selection-start-line="25" selection-start-column="80" selection-end-line="25" selection-end-column="80" />
+          <caret line="25" column="80" lean-forward="false" selection-start-line="25" selection-start-column="80" selection-end-line="25" selection-end-column="80" />
           <folding />
         </state>
       </provider>
@@ -1231,7 +849,7 @@
     <entry file="file://$PROJECT_DIR$/orm/vendor/illuminate/database/ConnectionResolver.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="280">
-          <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+          <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1239,28 +857,28 @@
     <entry file="file://$PROJECT_DIR$/orm/vendor/illuminate/support/helpers.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
-          <caret line="1030" column="0" selection-start-line="1030" selection-start-column="0" selection-end-line="1030" selection-end-column="0" />
+          <caret line="1030" column="0" lean-forward="false" selection-start-line="1030" selection-start-column="0" selection-end-line="1030" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/orm/vendor/illuminate/database/ConnectionInterface.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="79">
-          <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+          <caret line="10" column="6" lean-forward="false" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/orm/lang/zh/validation.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
-          <caret line="1" column="7" selection-start-line="1" selection-start-column="7" selection-end-line="8" selection-end-column="2" />
+          <caret line="1" column="7" lean-forward="false" selection-start-line="1" selection-start-column="7" selection-end-line="8" selection-end-column="2" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/orm/vendor/illuminate/validation/Validator.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3515">
-          <caret line="196" column="20" selection-start-line="196" selection-start-column="20" selection-end-line="196" selection-end-column="20" />
+          <caret line="196" column="20" lean-forward="false" selection-start-line="196" selection-start-column="20" selection-end-line="196" selection-end-column="20" />
           <folding />
         </state>
       </provider>
@@ -1268,66 +886,30 @@
     <entry file="file://$PROJECT_DIR$/orm/User.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
-          <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+          <caret line="13" column="1" lean-forward="false" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/orm/init.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/orm/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="497">
-          <caret line="59" column="31" selection-start-line="59" selection-start-column="31" selection-end-line="59" selection-end-column="31" />
+          <caret line="59" column="31" lean-forward="false" selection-start-line="59" selection-start-column="31" selection-end-line="59" selection-end-column="31" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rsa/index2.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rsa/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rsa/Rsa.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="2" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rsa/index3.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="421">
-          <caret line="54" column="9" selection-start-line="54" selection-start-column="9" selection-end-line="54" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/gd.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="206" column="9" selection-start-line="206" selection-start-column="9" selection-end-line="206" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/gd.php" />
     <entry file="file://$PROJECT_DIR$/gd/JumpJumpHelper/data">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
-          <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
+          <caret line="21" column="28" lean-forward="false" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -1336,68 +918,23 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ledou/yiqiwan/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/standard_2.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="696" column="9" selection-start-line="696" selection-start-column="9" selection-end-line="696" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/standard_2.php" />
     <entry file="file://$PROJECT_DIR$/gd/index3.php" />
     <entry file="file://$PROJECT_DIR$/gd/index2.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
-          <caret line="20" column="14" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
-          <folding />
+          <caret line="20" column="14" lean-forward="false" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/time/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding>
-            <element signature="e#6#27#0#PHP" expanded="false" />
-          </folding>
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/string/index2.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="74" column="5" selection-start-line="74" selection-start-column="5" selection-end-line="74" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/string/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="50" selection-start-line="7" selection-start-column="50" selection-end-line="7" selection-end-column="50" />
-          <folding>
-            <marker date="1516345887131" expanded="true" signature="699:730" ph="..." />
-            <marker date="1516345887131" expanded="true" signature="754:822" ph="..." />
-            <marker date="1516345887131" expanded="true" signature="847:878" ph="..." />
-            <marker date="1516345887131" expanded="true" signature="913:981" ph="..." />
-            <marker date="1516345887131" expanded="true" signature="1008:1039" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gd/JumpJumpHelper/screen/00000.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/gd/JumpJumpHelper/screen/00000.png" />
     <entry file="file://$PROJECT_DIR$/gd/screencap/screen.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -1405,30 +942,101 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/gd/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="95" column="33" selection-start-line="95" selection-start-column="33" selection-end-line="95" selection-end-column="33" />
-          <folding />
+        <state relative-caret-position="1900">
+          <caret line="95" column="33" lean-forward="false" selection-start-line="95" selection-start-column="33" selection-end-line="95" selection-end-column="33" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/gd/JumpJumpHelper/run.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="104" column="1" selection-start-line="104" selection-start-column="1" selection-end-line="104" selection-end-column="1" />
+        <state relative-caret-position="2080">
+          <caret line="104" column="1" lean-forward="false" selection-start-line="104" selection-start-column="1" selection-end-line="104" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/gd/JumpJumpHelper/config.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+        <state relative-caret-position="40">
+          <caret line="2" column="20" lean-forward="false" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/string/index2.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/string/index3.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="371">
+          <caret line="28" column="11" lean-forward="false" selection-start-line="28" selection-start-column="11" selection-end-line="28" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rsa/index3.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="54" column="9" lean-forward="false" selection-start-line="54" selection-start-column="9" selection-end-line="54" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rsa/android/cert/pubkey.pem">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rsa/index2.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="21" column="12" lean-forward="true" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
           <folding />
         </state>
       </provider>
     </entry>
-  </component>
-  <component name="webServersAuthStorage">
-    <data>AAAAsOcFCMfShfqRMrhmFxvcz0sDkZwMNwY2FV3SMKeyeCA70nC+0z5Nw4SUHOZxEy+BgejMGdzubng+gLl715fyVyZkDnXstIPM7/9KtXIBC2z7iE5Y8zMmDfilUs6eFhG6ZYyGJcR5bPZm8SUOR5bb1ROF/0hb7UlKJV2hjKHrOJ33KqjPWVHvdwEXx5zSVOnV+U2LZNZ9taVLWLFlGIQ87wQ+4mDLqntkZPlUbmFtbUhjaYwOe44HLt+U3+43JKqN7g==</data>
+    <entry file="file://$PROJECT_DIR$/rsa/Rsa.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1860">
+          <caret line="93" column="33" lean-forward="false" selection-start-line="93" selection-start-column="33" selection-end-line="93" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ledou/yiqiwan/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/string/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="3" lean-forward="false" selection-start-line="0" selection-start-column="3" selection-end-line="0" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rsa/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weplay/oauth.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="18" column="20" lean-forward="true" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>

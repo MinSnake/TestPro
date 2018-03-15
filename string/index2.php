@@ -1,4 +1,42 @@
 <?php
+//中英文混合昵称，最大支持24个字节
+$name = '我adsa是打算bas大声道中csd打算c文dsad啊efght你是mn中文';
+
+define('MAX_LEN', 24);
+define('ENCODING', 'UTF-8');
+
+function cut_name($name, $temp_name, $i = 1)
+{
+    echo '---------------------------------------------' . PHP_EOL;
+    $mb_name_len = strlen($temp_name);
+    if ($mb_name_len > MAX_LEN) {
+        echo '当前字符串: ' . $temp_name . PHP_EOL;
+        echo '发现字节长度大于24，当前长度：' . $mb_name_len . PHP_EOL;
+        $cut_len = mb_strlen($name, ENCODING) - $i;
+        echo '即将截取长度：' . $cut_len . PHP_EOL;
+        $temp_name = mb_substr($temp_name, 0, $cut_len, ENCODING);
+        echo $temp_name . PHP_EOL;
+        $i++;
+        return cut_name($name, $temp_name, $i);
+    } else {
+        return $temp_name;
+    }
+}
+
+$cut_name = cut_name($name, $name);
+echo '=============================================' . PHP_EOL;
+echo '最终截取结果: ' . $cut_name . PHP_EOL;
+echo '最终字节长度：' . strlen($cut_name) . PHP_EOL;
+
+echo $cut_name . PHP_EOL;
+echo '字节长度: ' . strlen($cut_name) . PHP_EOL;
+
+
+
+//$name = 'asdasd';
+
+//echo mb_strlen($name) . PHP_EOL;
+//echo strlen($name) . PHP_EOL;
 //
 ////$url = 'http://test.unify.login.ids111.com:1080/';
 //
@@ -57,25 +95,25 @@
 //
 //var_dump($xx);
 
-$num = rand(1, 99999);
-
-$num = 2123;
-
-$temp_length = 5;
-
-$num_length = strlen($num);
-if ($num_length < $temp_length)
-{
-    //补齐前面的0
-    $zero_length = $temp_length - $num_length;
-    $zero_temp = '';
-    for ($i = 1; $i <= $zero_length; $i++)
-    {
-        $zero_temp = $zero_temp . '0';
-    }
-    $num = $zero_temp . $num;
-}
-
-echo $num;
+//$num = rand(1, 99999);
+//
+//$num = 2123;
+//
+//$temp_length = 5;
+//
+//$num_length = strlen($num);
+//if ($num_length < $temp_length)
+//{
+//    //补齐前面的0
+//    $zero_length = $temp_length - $num_length;
+//    $zero_temp = '';
+//    for ($i = 1; $i <= $zero_length; $i++)
+//    {
+//        $zero_temp = $zero_temp . '0';
+//    }
+//    $num = $zero_temp . $num;
+//}
+//
+//echo $num;
 
 
