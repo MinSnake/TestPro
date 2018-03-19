@@ -14,8 +14,8 @@ $total_progress_length = 50;
 $total = 100;
 
 for ($i = 0; $i <= $total; $i++) {
-    printf("%s: [%-".$total_progress_length."s] %d%% \r", '正在处理中', str_repeat('■', $i/$total*50),  $i/$total*100);
-    usleep(1000 * 100);
+    printf("%s: [%-".$total_progress_length."s] %d%% \r", '正在处理中', str_repeat('#', $i/$total*50),  $i/$total*100);
+    usleep(1000 * 10);
 }
 echo "\n";
 echo "处理完成!\n";
