@@ -1,18 +1,24 @@
 <?php
 require 'Rsa.php';
-$rsa = Rsa::getInstance('android/privkey.pem', 'android/pubkey.pem');
+//设备系统，1：ios，2：android   默认ios
+$device = intval($_GET['device']);
+$type = intval($_GET['type']); //1-weplay,2-其他
+$id = $_GET['id'];
 
-
-//$a = '123';
-//$b = $rsa->pubEncrypt($a);
-//echo $b;
-//echo '<br>';
-//$c = $rsa->privDecrypt($b);
-//echo $c;
-
-
-
-
-$str = 'rO6CHk/rKxzPmXamUxQ8SNbhCYuV/sFv8iYLx0D4M2sUfwdZmtOTcdr/yq5EQEO7enS0Y1IUNK1dCEuvT5nc7Gb0Mgp+pOOOGDKreM5tQKyLPCXGdoTMUtmZSCf1YoBmz9ommjQw1ovodyO3kP4ev6zhGOjc+AyFYaO8g0p6G8xaGyHqmtWwNYpExUb+g9LXGVUAK0xguMq8pnlkyIrM40ZwRTJjKg5MKtUMXKgI4o9PlPSFXmLnyDdXXMEck//WmDU2GscNAGtRaJsa175402wU1yKADoAT/Trp47oIGdiuNLtZlhWPigmxknLSnr0H8kxWyjvpNu9CGPJq28/r9A==';
-$res = $rsa->privDecrypt($str);
-echo $res;
+if ($type === 1) {
+    if ($device === 1) {
+        $rsa = Rsa::getInstance('weplay/ios/privkey.pem', 'weplay/ios/pubkey.pem');
+    } else {
+        $rsa = Rsa::getInstance('weplay/android/privkey.pem', 'weplay/android/pubkey.pem');
+    }
+} else {
+    // 使用其他方式的RSA加密文件
+    if ($device === 1) {
+        $rsa = Rsa::getInstance('other/ios/privkey.pem', 'other/ios/pubkey.pem');
+    } else {
+        $rsa = Rsa::getInstance('other/android/privkey.pem', 'other/android/pubkey.pem');
+    }
+}
+$xx = $rsa->pubEncrypt($id);
+header('Content-Type: text/plain');
+echo $xx;
