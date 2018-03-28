@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bui bui~</title>
+    <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+</head>
+<style>
+    body, html {
+        margin: 0px;
+        padding: 0px;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    #player-info {
+        text-align: center;
+        /*background: #f0c040;*/
+        height: 12%;
+    }
+
+    #player-info div {
+        padding-top: 10px;
+    }
+
+    #content {
+        /*background: #ff7d27;*/
+        height: 88%;
+        border-top: 1px solid #19141d;
+        padding: 30px;
+    }
+
+    .danmu {
+        /*border: 1px solid #19141d;*/
+        position: fixed;
+        margin-left: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        -webkit-animation: shoot 35s;
+    }
+
+    .danmu .avatar {
+        width: 28px;
+        height: 28px;
+        border-radius: 100px;
+    }
+
+    .danmu .danmu-content {
+
+    }
+
+    .danmu .nickname {
+        color: #dc8b92;
+
+    }
+
+    @-webkit-keyframes shoot {
+        from {
+            margin-left: 100%;
+        }
+        to {
+            margin-left: -100%;
+            display: none;
+        }
+    }
+
+</style>
+<body>
+<div id="player-info">
+    <div>
+        头像：<input type="text" name="avatar" id="player-avatar">
+        <img src="avatar.png" style="width: 48px;height: 48px;position: absolute;">
+        <br>
+        昵称：<input type="text" name="nickname" id="player-nickname">
+        <br>
+        内容：<input type="text" name="content" id="player-content">
+        <button id="send">发送</button>
+    </div>
+</div>
+<div id="content">
+
+
+    <!--<div class="danmu">-->
+    <!--<img class="avatar" src="avatar.png">-->
+    <!--<span class="nickname">新垣结衣: </span>-->
+    <!--<span class="danmu-content">大家好，这是我的一条测试弹幕</span>-->
+    <!--</div>-->
+
+</div>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        var ws = new WebSocket('ws://192.168.115.90:9508/');
+
+        ws.onopen = function () {
+            console.log('成功连接到websocket服务器')
+        };
+
+        ws.onmessage = function (evt) {
+            var data = evt.data;
+            console.log('收到服务器消息：' + data);
+        };
+
+        ws.onclose = function () {
+            alert("连接已断开");
+        };
+
+        $('#send').click(function () {
+            console.log('即将发送弹幕');
+            var nickname = $('#player-nickname').val();
+            var avatar = $('#player-avatar').val();
+            var content = $('#player-content').val();
+            if (!nickname || !content) {
+                alert('昵称和内容不能为空');
+                return false;
+            }
+            if (!avatar) {
+                avatar = 'avatar.png';
+            }
+
+            //请求http到pub
+            $.get('pub.php', function () {
+
+            });
+
+
+        });
+
+
+        function show(avatar, nickname, content) {
+            //0-40
+            var max = 40;
+            var min = 10
+            var rand = Math.floor(Math.random() * (max - min + 1) + min);
+            var top = rand + '%;';
+            var danmu = '<div class="danmu" style="margin-top: ' + top + '">' +
+                    '<img class="avatar" src="' + avatar + '">' +
+                    '<span class="nickname">' + nickname + ': </span>' +
+                    '<span class="danmu-content">' + content + '</span>' +
+                    '</div>';
+            $('#content').append(danmu);
+        }
+
+
+    });
+</script>

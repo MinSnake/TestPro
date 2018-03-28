@@ -24,46 +24,14 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module-library">
-      <library name="PHP" type="php">
+      <library name="PHP">
         <CLASSES>
-          <root url="file://$MODULE_DIR$/orm/vendor/composer" />
-          <root url="file://$MODULE_DIR$/orm/vendor/doctrine/inflector" />
-          <root url="file://$MODULE_DIR$/orm/vendor/illuminate/container" />
-          <root url="file://$MODULE_DIR$/orm/vendor/illuminate/contracts" />
-          <root url="file://$MODULE_DIR$/orm/vendor/illuminate/database" />
-          <root url="file://$MODULE_DIR$/orm/vendor/illuminate/filesystem" />
-          <root url="file://$MODULE_DIR$/orm/vendor/illuminate/support" />
-          <root url="file://$MODULE_DIR$/orm/vendor/illuminate/translation" />
-          <root url="file://$MODULE_DIR$/orm/vendor/illuminate/validation" />
-          <root url="file://$MODULE_DIR$/orm/vendor/nesbot/carbon" />
-          <root url="file://$MODULE_DIR$/orm/vendor/paragonie/random_compat" />
-          <root url="file://$MODULE_DIR$/orm/vendor/psr/container" />
-          <root url="file://$MODULE_DIR$/orm/vendor/psr/simple-cache" />
-          <root url="file://$MODULE_DIR$/orm/vendor/symfony/finder" />
-          <root url="file://$MODULE_DIR$/orm/vendor/symfony/http-foundation" />
-          <root url="file://$MODULE_DIR$/orm/vendor/symfony/polyfill-mbstring" />
-          <root url="file://$MODULE_DIR$/orm/vendor/symfony/polyfill-php70" />
-          <root url="file://$MODULE_DIR$/orm/vendor/symfony/translation" />
+          <root url="file://$APPLICATION_HOME_DIR$/swoole-ide-helper-master" />
+          <root url="file://$MODULE_DIR$/../../Other/php-nsq-master" />
         </CLASSES>
         <SOURCES>
-          <root url="file://$MODULE_DIR$/orm/vendor/composer" />
-          <root url="file://$MODULE_DIR$/orm/vendor/doctrine/inflector" />
-          <root url="file://$MODULE_DIR$/orm/vendor/illuminate/container" />
-          <root url="file://$MODULE_DIR$/orm/vendor/illuminate/contracts" />
-          <root url="file://$MODULE_DIR$/orm/vendor/illuminate/database" />
-          <root url="file://$MODULE_DIR$/orm/vendor/illuminate/filesystem" />
-          <root url="file://$MODULE_DIR$/orm/vendor/illuminate/support" />
-          <root url="file://$MODULE_DIR$/orm/vendor/illuminate/translation" />
-          <root url="file://$MODULE_DIR$/orm/vendor/illuminate/validation" />
-          <root url="file://$MODULE_DIR$/orm/vendor/nesbot/carbon" />
-          <root url="file://$MODULE_DIR$/orm/vendor/paragonie/random_compat" />
-          <root url="file://$MODULE_DIR$/orm/vendor/psr/container" />
-          <root url="file://$MODULE_DIR$/orm/vendor/psr/simple-cache" />
-          <root url="file://$MODULE_DIR$/orm/vendor/symfony/finder" />
-          <root url="file://$MODULE_DIR$/orm/vendor/symfony/http-foundation" />
-          <root url="file://$MODULE_DIR$/orm/vendor/symfony/polyfill-mbstring" />
-          <root url="file://$MODULE_DIR$/orm/vendor/symfony/polyfill-php70" />
-          <root url="file://$MODULE_DIR$/orm/vendor/symfony/translation" />
+          <root url="file://$APPLICATION_HOME_DIR$/swoole-ide-helper-master" />
+          <root url="file://$MODULE_DIR$/../../Other/php-nsq-master" />
         </SOURCES>
       </library>
     </orderEntry>
