@@ -1,393 +1,100 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9efe3c6e-e332-4730-bb89-b6a6099fef10" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/danmu/avatar.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/danmu/http.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/danmu/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/danmu/jquery-3.3.1.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/danmu/pub.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/danmu/sub.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/danmu/test.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/danmu/ws.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nsq/pub.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nsq/sub.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nsq/tcp_client.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/.env" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/app/model/readme.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/app/module/member/Member.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/app/module/member/Organization.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/bin/Service.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/bin/pid/nsqCommon.pid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/conf/main.ini" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/conf/nsq.ini" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/conf/swoole.ini" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/Bootstrap.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/__autoloader.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/db/DB.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/db/redis/Redis.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/exception/DbException.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/exception/ServiceException.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/exception/SystemException.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/container/BoundMethod.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/container/Container.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/container/ContextualBindingBuilder.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/container/composer.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/contracts/Auth/Access/Authorizable.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/contracts/Auth/Access/Gate.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/contracts/Auth/Authenticatable.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/contracts/Auth/CanResetPassword.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/contracts/Auth/Factory.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/contracts/Auth/Guard.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/contracts/Auth/PasswordBroker.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/contracts/Auth/PasswordBrokerFactory.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/contracts/Auth/StatefulGuard.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/contracts/Auth/SupportsBasicAuth.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/contracts/Auth/UserProvider.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/contracts/Broadcasting/Broadcaster.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/contracts/Broadcasting/Factory.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/contracts/Broadcasting/ShouldBroadcast.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/contracts/Broadcasting/ShouldBroadcastNow.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/contracts/Bus/Dispatcher.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/contracts/Bus/QueueingDispatcher.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/contracts/Cache/Factory.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/contracts/Cache/Repository.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/contracts/Cache/Store.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/contracts/Config/Repository.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/contracts/Console/Application.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/contracts/Console/Kernel.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/contracts/Container/BindingResolutionException.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/contracts/Container/Container.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/contracts/Container/ContextualBindingBuilder.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/contracts/Cookie/Factory.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/contracts/Cookie/QueueingFactory.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/contracts/Database/ModelIdentifier.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/contracts/Debug/ExceptionHandler.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/contracts/Encryption/DecryptException.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/contracts/Encryption/EncryptException.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/contracts/Encryption/Encrypter.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/contracts/Events/Dispatcher.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/contracts/Filesystem/Cloud.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/contracts/Filesystem/Factory.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/contracts/Filesystem/FileNotFoundException.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/contracts/Filesystem/Filesystem.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/contracts/Foundation/Application.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/contracts/Hashing/Hasher.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/contracts/Http/Kernel.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/contracts/Logging/Log.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/contracts/Mail/MailQueue.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/contracts/Mail/Mailable.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/contracts/Mail/Mailer.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/contracts/Notifications/Dispatcher.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/contracts/Notifications/Factory.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/contracts/Pagination/LengthAwarePaginator.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/contracts/Pagination/Paginator.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/contracts/Pipeline/Hub.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/contracts/Pipeline/Pipeline.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/contracts/Queue/EntityNotFoundException.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/contracts/Queue/EntityResolver.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/contracts/Queue/Factory.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/contracts/Queue/Job.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/contracts/Queue/Monitor.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/contracts/Queue/Queue.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/contracts/Queue/QueueableCollection.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/contracts/Queue/QueueableEntity.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/contracts/Queue/ShouldQueue.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/contracts/Redis/Factory.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/contracts/Routing/BindingRegistrar.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/contracts/Routing/Registrar.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/contracts/Routing/ResponseFactory.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/contracts/Routing/UrlGenerator.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/contracts/Routing/UrlRoutable.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/contracts/Session/Session.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/contracts/Support/Arrayable.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/contracts/Support/Htmlable.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/contracts/Support/Jsonable.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/contracts/Support/MessageBag.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/contracts/Support/MessageProvider.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/contracts/Support/Renderable.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/contracts/Translation/Translator.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/contracts/Validation/Factory.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/contracts/Validation/ValidatesWhenResolved.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/contracts/Validation/Validator.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/contracts/View/Factory.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/contracts/View/View.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/contracts/composer.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/database/Capsule/Manager.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/database/Concerns/ManagesTransactions.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/database/Connection.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/database/ConnectionInterface.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/database/ConnectionResolver.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/database/ConnectionResolverInterface.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/database/Connectors/ConnectionFactory.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/database/Connectors/Connector.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/database/Connectors/ConnectorInterface.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/database/Connectors/MySqlConnector.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/database/Connectors/PostgresConnector.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/database/Connectors/SQLiteConnector.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/database/Connectors/SqlServerConnector.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/database/Console/Migrations/BaseCommand.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/database/Console/Migrations/InstallCommand.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/database/Console/Migrations/MigrateCommand.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/database/Console/Migrations/MigrateMakeCommand.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/database/Console/Migrations/RefreshCommand.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/database/Console/Migrations/ResetCommand.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/database/Console/Migrations/RollbackCommand.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/database/Console/Migrations/StatusCommand.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/database/Console/Seeds/SeedCommand.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/database/Console/Seeds/SeederMakeCommand.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/database/Console/Seeds/stubs/seeder.stub" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/database/DatabaseManager.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/database/DatabaseServiceProvider.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/database/DetectsDeadlocks.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/database/DetectsLostConnections.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/database/Eloquent/Builder.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/database/Eloquent/Collection.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/database/Eloquent/Concerns/GuardsAttributes.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/database/Eloquent/Concerns/HasAttributes.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/database/Eloquent/Concerns/HasEvents.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/database/Eloquent/Concerns/HasGlobalScopes.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/database/Eloquent/Concerns/HasRelationships.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/database/Eloquent/Concerns/HasTimestamps.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/database/Eloquent/Concerns/HidesAttributes.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/database/Eloquent/Concerns/QueriesRelationships.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/database/Eloquent/Factory.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/database/Eloquent/FactoryBuilder.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/database/Eloquent/JsonEncodingException.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/database/Eloquent/MassAssignmentException.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/database/Eloquent/Model.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/database/Eloquent/ModelNotFoundException.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/database/Eloquent/QueueEntityResolver.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/database/Eloquent/RelationNotFoundException.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/database/Eloquent/Relations/BelongsTo.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/database/Eloquent/Relations/BelongsToMany.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/database/Eloquent/Relations/Concerns/InteractsWithPivotTable.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/database/Eloquent/Relations/HasMany.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/database/Eloquent/Relations/HasManyThrough.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/database/Eloquent/Relations/HasOne.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/database/Eloquent/Relations/HasOneOrMany.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/database/Eloquent/Relations/MorphMany.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/database/Eloquent/Relations/MorphOne.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/database/Eloquent/Relations/MorphOneOrMany.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/database/Eloquent/Relations/MorphPivot.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/database/Eloquent/Relations/MorphTo.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/database/Eloquent/Relations/MorphToMany.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/database/Eloquent/Relations/Pivot.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/database/Eloquent/Relations/Relation.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/database/Eloquent/Scope.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/database/Eloquent/SoftDeletes.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/database/Eloquent/SoftDeletingScope.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/database/Events/ConnectionEvent.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/database/Events/QueryExecuted.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/database/Events/StatementPrepared.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/database/Events/TransactionBeginning.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/database/Events/TransactionCommitted.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/database/Events/TransactionRolledBack.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/database/Grammar.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/database/MigrationServiceProvider.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/database/Migrations/DatabaseMigrationRepository.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/database/Migrations/Migration.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/database/Migrations/MigrationCreator.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/database/Migrations/MigrationRepositoryInterface.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/database/Migrations/Migrator.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/database/Migrations/stubs/blank.stub" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/database/Migrations/stubs/create.stub" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/database/Migrations/stubs/update.stub" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/database/MySqlConnection.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/database/PostgresConnection.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/database/Query/Builder.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/database/Query/Expression.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/database/Query/Grammars/Grammar.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/database/Query/Grammars/MySqlGrammar.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/database/Query/Grammars/PostgresGrammar.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/database/Query/Grammars/SQLiteGrammar.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/database/Query/Grammars/SqlServerGrammar.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/database/Query/JoinClause.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/database/Query/JsonExpression.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/database/Query/Processors/MySqlProcessor.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/database/Query/Processors/PostgresProcessor.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/database/Query/Processors/Processor.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/database/Query/Processors/SQLiteProcessor.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/database/Query/Processors/SqlServerProcessor.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/database/QueryException.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/database/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/database/SQLiteConnection.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/database/Schema/Blueprint.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/database/Schema/Builder.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/database/Schema/Grammars/ChangeColumn.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/database/Schema/Grammars/Grammar.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/database/Schema/Grammars/MySqlGrammar.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/database/Schema/Grammars/PostgresGrammar.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/database/Schema/Grammars/RenameColumn.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/database/Schema/Grammars/SQLiteGrammar.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/database/Schema/Grammars/SqlServerGrammar.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/database/Schema/MySqlBuilder.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/database/Schema/PostgresBuilder.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/database/Seeder.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/database/SqlServerConnection.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/database/composer.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/support/AggregateServiceProvider.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/support/Arr.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/support/Collection.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/support/Composer.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/support/Debug/Dumper.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/support/Debug/HtmlDumper.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/support/Facades/App.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/support/Facades/Artisan.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/support/Facades/Auth.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/support/Facades/Blade.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/support/Facades/Broadcast.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/support/Facades/Bus.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/support/Facades/Cache.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/support/Facades/Config.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/support/Facades/Cookie.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/support/Facades/Crypt.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/support/Facades/DB.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/support/Facades/Event.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/support/Facades/Facade.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/support/Facades/File.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/support/Facades/Gate.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/support/Facades/Hash.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/support/Facades/Input.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/support/Facades/Lang.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/support/Facades/Log.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/support/Facades/Mail.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/support/Facades/Notification.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/support/Facades/Password.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/support/Facades/Queue.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/support/Facades/Redirect.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/support/Facades/Redis.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/support/Facades/Request.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/support/Facades/Response.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/support/Facades/Route.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/support/Facades/Schema.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/support/Facades/Session.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/support/Facades/Storage.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/support/Facades/URL.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/support/Facades/Validator.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/support/Facades/View.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/support/Fluent.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/support/HigherOrderCollectionProxy.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/support/HtmlString.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/support/Manager.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/support/MessageBag.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/support/NamespacedItemResolver.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/support/Pluralizer.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/support/ServiceProvider.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/support/Str.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/support/Testing/Fakes/BusFake.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/support/Testing/Fakes/EventFake.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/support/Testing/Fakes/MailFake.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/support/Testing/Fakes/NotificationFake.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/support/Testing/Fakes/PendingMailFake.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/support/Testing/Fakes/QueueFake.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/support/Traits/CapsuleManagerTrait.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/support/Traits/Macroable.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/support/ViewErrorBag.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/support/composer.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/illuminate/support/helpers.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/log/Log.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/framework/main/Config.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/opt/nsq/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/opt/nsq/Bootsrap.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/opt/nsq/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/opt/nsq/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/opt/nsq/lib/NsqClient.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/opt/nsq/lib/client/Client.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/opt/nsq/lib/client/ClientInterface.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/opt/nsq/lib/client/SynClient.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/opt/nsq/lib/client/SynClientInterface.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/opt/nsq/lib/dedupe/Dedupe.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/opt/nsq/lib/dedupe/DedupeInterface.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/opt/nsq/lib/exception/AuthException.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/opt/nsq/lib/exception/ClientException.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/opt/nsq/lib/exception/LookupException.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/opt/nsq/lib/exception/MessageException.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/opt/nsq/lib/handle/Handle.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/opt/nsq/lib/handle/HandleInterface.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/opt/nsq/lib/log/Log.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/opt/nsq/lib/log/LogInterface.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/opt/nsq/lib/lookup/Lookup.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/opt/nsq/lib/message/Message.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/opt/nsq/lib/message/MessageInterface.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/opt/nsq/lib/message/Packet.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/opt/nsq/lib/message/Unpack.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/opt/nsq/lib/requeue/Requeue.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/opt/nsq/lib/requeue/RequeueInterface.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/opt/nsq/test/Pub.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/opt/nsq/test/Sub.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/opt/nsq/test/auth_server/index.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/service/HttpInterface.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/service/ServerInterface.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/service/Service.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/service/WebSocketInterface.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/service/nsq/Dedupe.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/service/nsq/Handle.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/service/nsq/Main.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/service/nsq/NsqLog.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/service/nsq/common/Route.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/service/nsq/common/Server.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/service/server/Main.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/service/websocket/Main.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/tool/Http.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/tool/Tool.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/lib/tool/check.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/test/Client.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/test/NsqClient.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swoole-nsq-master/test/Test.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/test.iml" afterPath="$PROJECT_DIR$/.idea/test.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    <list default="true" id="7d81b0ff-a321-4db3-9bf5-b465ccabca87" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/jp/a.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jp/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jp/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/markdown-navigator.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/markdown-navigator/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/webServers.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
-    <ignored path="test.iws" />
-    <ignored path=".idea/workspace.xml" />
-    <ignored path=".idea/dataSources.local.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="CreatePatchCommitExecutor">
-    <option name="PATCH_PATH" value="" />
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/orm/composer.json</pharConfigPath>
   </component>
   <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
     <option name="GROUP_SCHEMA" value="true" />
     <option name="GROUP_CONTENTS" value="false" />
     <option name="SORT_POSITIONED" value="false" />
-    <option name="SHOW_TABLE_DETAILS" value="true" />
     <option name="SHOW_EMPTY_GROUPS" value="false" />
     <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
-  </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
-  <component name="FavoritesManager">
-    <favorites_list name="test" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="sub.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/nsq/sub.php">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ledou/yiqiwan/index.php">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ledou/xiuxian/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
-              <folding />
+            <state relative-caret-position="340">
+              <caret line="23" column="23" lean-forward="true" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tcp_client.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/nsq/tcp_client.php">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ledou/xiuxian/config.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="12" selection-end-column="19" />
-              <folding>
-                <element signature="e#7#22#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="-776">
+              <caret line="24" column="8" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ledou/xiuxian/Util/OAuthUtil.php">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ledou/xiuxian/Util/ToolUtil.php">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ledou/xiuxian/Util/RequestUtil.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1483" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ledou/L8/cm_access_token.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-17">
+              <caret line="35" column="6" lean-forward="true" selection-start-line="35" selection-start-column="6" selection-end-line="35" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ledou/L8/cm_authenticate.php">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -399,529 +106,121 @@
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>vender</find>
-      <find>openssl_public_encrypt</find>
-      <find>var_dump</find>
-    </findStrings>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/ledou/sdk_test_project/Lib/App/BaseApp.php" />
-        <option value="$PROJECT_DIR$/ledou/sdk_test_project/Lib/Tools/Tools.php" />
-        <option value="$PROJECT_DIR$/ledou/sdk_test_project/Lib/App/Oauth.php" />
-        <option value="$PROJECT_DIR$/ledou/sdk_test_project/Lib/NetWork/Request.php" />
-        <option value="$PROJECT_DIR$/ledou/sdk_test_project/Lib/Core/Core.php" />
-        <option value="$PROJECT_DIR$/ledou/sdk_test_project/App/Ol/TW/Secure.php" />
-        <option value="$PROJECT_DIR$/ledou/sdk_test_project/App/Ol/TW/Feed.php" />
-        <option value="$PROJECT_DIR$/ledou/sdk_test_project/App/Ol/TW/Payment.php" />
-        <option value="$PROJECT_DIR$/MorseCode/index.php" />
-        <option value="$PROJECT_DIR$/ledou/sdk_test_project/Config/bootstrap.php" />
-        <option value="$PROJECT_DIR$/swoole/tcp_server.php" />
-        <option value="$PROJECT_DIR$/orm/User.php" />
-        <option value="$PROJECT_DIR$/ledou/sdk_test_project/Config/TW/config.php" />
-        <option value="$PROJECT_DIR$/redis/readme.md" />
-        <option value="$PROJECT_DIR$/redis/TestRedis.php" />
-        <option value="$PROJECT_DIR$/redis/key/index.php" />
-        <option value="$PROJECT_DIR$/ledou/sdk_test_project/App/Cm/L8/Secure.php" />
-        <option value="$PROJECT_DIR$/ledou/L8/cm_request_token.php" />
-        <option value="$PROJECT_DIR$/ledou/L8/cm_authenticate.php" />
-        <option value="$PROJECT_DIR$/ledou/L8/cm_access_token.php" />
-        <option value="$PROJECT_DIR$/ledou/L8/cm_create_order.php" />
-        <option value="$PROJECT_DIR$/ledou/yiqiwan/index.php" />
-        <option value="$PROJECT_DIR$/foreach/index.php" />
-        <option value="$PROJECT_DIR$/random/index.php" />
-        <option value="$PROJECT_DIR$/json/index.php" />
-        <option value="$PROJECT_DIR$/ftp/FtpApiHelper.php" />
-        <option value="$PROJECT_DIR$/rsa/index.php" />
-        <option value="$PROJECT_DIR$/rsa/Rsa.php" />
-        <option value="$PROJECT_DIR$/rsa/index2.php" />
-        <option value="$PROJECT_DIR$/orm/composer.json" />
-        <option value="$PROJECT_DIR$/orm/lang/zh/messages.php" />
-        <option value="$PROJECT_DIR$/orm/lang/zh/validation.php" />
-        <option value="$PROJECT_DIR$/orm/index.php" />
-        <option value="$PROJECT_DIR$/rsa/index3.php" />
-        <option value="$PROJECT_DIR$/gd/JumpJumpHelper/run.php" />
-        <option value="$PROJECT_DIR$/gd/index3.php" />
-        <option value="$PROJECT_DIR$/time/index.php" />
-        <option value="$PROJECT_DIR$/gd/index2.php" />
-        <option value="$PROJECT_DIR$/string/index2.php" />
-        <option value="$PROJECT_DIR$/gd/index.php" />
-        <option value="$PROJECT_DIR$/gd/JumpJumpHelper/config.php" />
-        <option value="$PROJECT_DIR$/string/index.php" />
-        <option value="$PROJECT_DIR$/danmu/server_1.php" />
-        <option value="$PROJECT_DIR$/danmu/pub.php" />
-        <option value="$PROJECT_DIR$/danmu/ws.php" />
-        <option value="$PROJECT_DIR$/danmu/index.html" />
-        <option value="$PROJECT_DIR$/danmu/test.php" />
-        <option value="$PROJECT_DIR$/danmu/sub.php" />
-        <option value="$PROJECT_DIR$/danmu/http.php" />
-        <option value="$PROJECT_DIR$/nsq/tcp_client.php" />
-        <option value="$PROJECT_DIR$/nsq/sub.php" />
+        <option value="$PROJECT_DIR$/jp/a.php" />
+        <option value="$PROJECT_DIR$/jp/index.php" />
+        <option value="$PROJECT_DIR$/jp/index.html" />
       </list>
     </option>
   </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
-  </component>
-  <component name="PhpDebugGeneral" xdebug_debug_port="9090" notify_if_session_was_finished_without_being_paused="false" />
   <component name="PhpServers">
-    <servers>
-      <server deployment_server="f4e00820-a068-4a34-9da7-1ef6bc1fdfd9" host="localtest.me" id="3c0c83ed-8e30-442f-b80a-05c42c3118c3" name="php7.1.3" use_path_mappings="true">
-        <path_mappings>
-          <mapping local-root="$PROJECT_DIR$" remote-root="/home/saki/PHP/test" />
-        </path_mappings>
-      </server>
-    </servers>
+    <servers />
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="php7.1.3">
+  <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
-      <path value="D:\JetBrains\PhpStorm 2016.2.2\swoole-ide-helper-master" />
-      <path value="E:\Work\Other\php-nsq-master" />
+      <path value="$PROJECT_DIR$/orm/vendor/symfony/polyfill-php70" />
+      <path value="$PROJECT_DIR$/orm/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/orm/vendor/composer" />
+      <path value="$PROJECT_DIR$/orm/vendor/symfony/http-foundation" />
+      <path value="$PROJECT_DIR$/orm/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/orm/vendor/symfony/translation" />
+      <path value="$PROJECT_DIR$/orm/vendor/nesbot/carbon" />
+      <path value="$PROJECT_DIR$/orm/vendor/paragonie/random_compat" />
+      <path value="$PROJECT_DIR$/orm/vendor/illuminate/validation" />
+      <path value="$PROJECT_DIR$/orm/vendor/illuminate/filesystem" />
+      <path value="$PROJECT_DIR$/orm/vendor/illuminate/support" />
+      <path value="$PROJECT_DIR$/orm/vendor/illuminate/contracts" />
+      <path value="$PROJECT_DIR$/orm/vendor/illuminate/translation" />
+      <path value="$PROJECT_DIR$/orm/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/orm/vendor/illuminate/database" />
+      <path value="$PROJECT_DIR$/orm/vendor/illuminate/container" />
+      <path value="$PROJECT_DIR$/orm/vendor/psr/simple-cache" />
+      <path value="$PROJECT_DIR$/orm/vendor/psr/container" />
     </include_path>
   </component>
-  <component name="PhpXdebugProxy" ide_key="PHPSTORM" host="localhost" port="80" />
-  <component name="ProjectFrameBounds">
-    <option name="x" value="365" />
-    <option name="width" value="1555" />
-    <option name="height" value="1040" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="-1710" />
+    <option name="width" value="1717" />
+    <option name="height" value="1047" />
   </component>
-  <component name="ProjectInspectionProfilesVisibleTreeState">
-    <entry key="Project Default">
-      <profile-state>
-        <expanded-state>
-          <State>
-            <id />
-          </State>
-          <State>
-            <id>Code SmellPHP</id>
-          </State>
-          <State>
-            <id>General</id>
-          </State>
-          <State>
-            <id>GeneralJavaScript</id>
-          </State>
-          <State>
-            <id>GeneralPHP</id>
-          </State>
-          <State>
-            <id>HTML</id>
-          </State>
-          <State>
-            <id>Internationalization issues</id>
-          </State>
-          <State>
-            <id>JavaScript</id>
-          </State>
-          <State>
-            <id>JavaScript validity issuesJavaScript</id>
-          </State>
-          <State>
-            <id>PHP</id>
-          </State>
-          <State>
-            <id>Potentially confusing code constructsJavaScript</id>
-          </State>
-          <State>
-            <id>Probable bugsPHP</id>
-          </State>
-          <State>
-            <id>RELAX NG</id>
-          </State>
-          <State>
-            <id>SQL</id>
-          </State>
-          <State>
-            <id>XML</id>
-          </State>
-        </expanded-state>
-        <selected-state>
-          <State>
-            <id>PhpMethodOrClassCallIsNotCaseSensitiveInspection</id>
-          </State>
-        </selected-state>
-      </profile-state>
-    </entry>
-  </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
-    <OptionsSetting value="true" id="Add" />
-    <OptionsSetting value="true" id="Remove" />
-    <OptionsSetting value="true" id="Checkout" />
-    <OptionsSetting value="true" id="Update" />
-    <OptionsSetting value="true" id="Status" />
-    <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
-    <ConfirmationsSetting value="0" id="Remove" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
-      <flattenPackages />
-      <showMembers />
-      <showModules />
-      <showLibraryContents />
-      <hideEmptyPackages />
-      <abbreviatePackageNames />
-      <autoscrollToSource />
-      <autoscrollFromSource />
-      <sortByType />
-      <manualOrder />
+    <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
       <pane id="ProjectPane">
         <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="swoole-nsq-master" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="swoole-nsq-master" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="swoole-nsq-master" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="swoole-nsq-master" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="service" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="swoole-nsq-master" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="service" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="websocket" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="swoole-nsq-master" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="service" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="server" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="swoole-nsq-master" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="service" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nsq" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="swoole-nsq-master" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="service" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nsq" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="common" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="swoole-nsq-master" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bin" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="swoole-nsq-master" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bin" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pid" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="swoole-nsq-master" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="module" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="member" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="swoole-nsq-master" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nsq" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="danmu" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
+          <expand>
+            <path>
+              <item name="TestPro" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TestPro" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TestPro" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TestPro" type="462c0819:PsiDirectoryNode" />
+              <item name="curl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TestPro" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TestPro" type="462c0819:PsiDirectoryNode" />
+              <item name="jp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TestPro" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TestPro" type="462c0819:PsiDirectoryNode" />
+              <item name="json" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TestPro" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TestPro" type="462c0819:PsiDirectoryNode" />
+              <item name="ledou" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TestPro" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TestPro" type="462c0819:PsiDirectoryNode" />
+              <item name="ledou" type="462c0819:PsiDirectoryNode" />
+              <item name="L8" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TestPro" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TestPro" type="462c0819:PsiDirectoryNode" />
+              <item name="ledou" type="462c0819:PsiDirectoryNode" />
+              <item name="xiuxian" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TestPro" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TestPro" type="462c0819:PsiDirectoryNode" />
+              <item name="ledou" type="462c0819:PsiDirectoryNode" />
+              <item name="xiuxian" type="462c0819:PsiDirectoryNode" />
+              <item name="Util" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TestPro" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TestPro" type="462c0819:PsiDirectoryNode" />
+              <item name="ledou" type="462c0819:PsiDirectoryNode" />
+              <item name="yiqiwan" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../doradora" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://E:/Work/PHP/test/ledou/sdk_test_project/Config/TW/config.php" />
-    <property name="js-jscs-nodeInterpreter" value="D:\nodejs\node.exe" />
-    <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="nodejs_interpreter_path" value="D:/nodejs/node" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\Work\PHP\test\nsq" />
-      <recent name="E:\Work\PHP\test" />
-      <recent name="E:\Work\PHP\test\danmu" />
-      <recent name="E:\Work\PHP\test\gd" />
-      <recent name="E:\Work\PHP\test\orm\lang\zh" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\Work\PHP\test\rsa\ios" />
-      <recent name="E:\Work\PHP\test\ledou\sdk_test_project\Lib\Tools" />
-      <recent name="E:\Work\PHP\test\ledou\sdk_test_project\Config" />
-      <recent name="E:\Work\PHP\test\ledou\sdk_test_project\Config\USA" />
-      <recent name="E:\Work\PHP\test\ledou\sdk_test_project\Lib\App" />
-    </key>
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -935,760 +234,137 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="PHP Web Application.http://localtest.me/">
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
-      <method />
-    </configuration>
-    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
-      <method />
-    </configuration>
-    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
-      <TestRunner />
-      <method />
-    </configuration>
-    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
-      <BehatRunner />
-      <method />
-    </configuration>
-    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
-      <method />
-    </configuration>
-    <configuration default="true" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application">
-      <method />
-    </configuration>
-    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <gulpfile />
-      <tasks />
-      <arguments />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
-      <command value="run-script" />
-      <scripts />
-      <node-interpreter value="project" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <working-directory />
-      <pass-parent-env>true</pass-parent-env>
-      <envs />
-      <ui />
-      <extra-mocha-options />
-      <test-kind>DIRECTORY</test-kind>
-      <test-directory />
-      <recursive>false</recursive>
-      <method />
-    </configuration>
-    <configuration default="false" name="http://localtest.me/" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application" server_name="php7.1.3">
-      <method />
-    </configuration>
-    <list size="1">
-      <item index="0" class="java.lang.String" itemvalue="PHP Web Application.http://localtest.me/" />
-    </list>
-  </component>
-  <component name="ShelveChangesManager" show_recycled="false">
-    <option name="remove_strategy" value="false" />
-  </component>
-  <component name="SshConsoleOptionsProvider">
-    <option name="myEncoding" value="UTF-8" />
-    <option name="myConnectionType" value="DEPLOYMENT_SERVER" />
-    <option name="myConnectionId" value="f4e00820-a068-4a34-9da7-1ef6bc1fdfd9" />
+  <component name="SvnConfiguration">
+    <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="9efe3c6e-e332-4730-bb89-b6a6099fef10" name="Default" comment="" />
-      <created>1503044516911</created>
+      <changelist id="7d81b0ff-a321-4db3-9bf5-b465ccabca87" name="Default Changelist" comment="" />
+      <created>1540992199980</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1503044516911</updated>
-      <workItem from="1503044518172" duration="6359000" />
-      <workItem from="1503278593302" duration="1813000" />
-      <workItem from="1503312137075" duration="3483000" />
-      <workItem from="1504490579089" duration="6629000" />
-      <workItem from="1504575167556" duration="2465000" />
-      <workItem from="1504661858633" duration="839000" />
-      <workItem from="1504747739173" duration="1235000" />
-      <workItem from="1504765638654" duration="834000" />
-      <workItem from="1504833858384" duration="1213000" />
-      <workItem from="1504923087580" duration="634000" />
-      <workItem from="1505094101483" duration="6796000" />
-      <workItem from="1505179391200" duration="7472000" />
-      <workItem from="1505264846251" duration="17766000" />
-      <workItem from="1505352548045" duration="4249000" />
-      <workItem from="1505439881377" duration="19026000" />
-      <workItem from="1505784152533" duration="16353000" />
-      <workItem from="1505957519285" duration="5234000" />
-      <workItem from="1506301804905" duration="2412000" />
-      <workItem from="1506410757666" duration="8874000" />
-      <workItem from="1506504314545" duration="680000" />
-      <workItem from="1506562345575" duration="964000" />
-      <workItem from="1506647659803" duration="5220000" />
-      <workItem from="1506734698979" duration="2660000" />
-      <workItem from="1507512648538" duration="2159000" />
-      <workItem from="1507684409450" duration="5095000" />
-      <workItem from="1507771003511" duration="11178000" />
-      <workItem from="1508220243829" duration="1585000" />
-      <workItem from="1508723489543" duration="6882000" />
-      <workItem from="1508813158410" duration="9538000" />
-      <workItem from="1508898157401" duration="14713000" />
-      <workItem from="1508945165734" duration="7835000" />
-      <workItem from="1508980893365" duration="29697000" />
-      <workItem from="1509433034849" duration="28982000" />
-      <workItem from="1509678430121" duration="12518000" />
-      <workItem from="1509757378135" duration="12218000" />
-      <workItem from="1509846502550" duration="4605000" />
-      <workItem from="1509933839359" duration="39704000" />
-      <workItem from="1510388091422" duration="463000" />
-      <workItem from="1510393737533" duration="6462000" />
-      <workItem from="1510448394474" duration="214000" />
-      <workItem from="1510666310362" duration="4006000" />
-      <workItem from="1511165910302" duration="2349000" />
-      <workItem from="1511487469837" duration="7559000" />
-      <workItem from="1511770020308" duration="32658000" />
-      <workItem from="1512351163814" duration="4152000" />
-      <workItem from="1512460082616" duration="14639000" />
-      <workItem from="1513214848246" duration="11013000" />
-      <workItem from="1513440451794" duration="9184000" />
-      <workItem from="1513561100701" duration="6809000" />
-      <workItem from="1513582864559" duration="5265000" />
-      <workItem from="1513733009969" duration="30928000" />
-      <workItem from="1514367098595" duration="385000" />
-      <workItem from="1514367540320" duration="27000" />
-      <workItem from="1514448491998" duration="19795000" />
-      <workItem from="1514789352371" duration="4803000" />
-      <workItem from="1514856898906" duration="3034000" />
-      <workItem from="1515719306414" duration="1155000" />
-      <workItem from="1515741487758" duration="7974000" />
-      <workItem from="1515979121516" duration="788000" />
-      <workItem from="1515979920839" duration="6308000" />
-      <workItem from="1516070893163" duration="13064000" />
-      <workItem from="1516584838151" duration="11606000" />
-      <workItem from="1517363539266" duration="1196000" />
-      <workItem from="1522027996018" duration="2290000" />
-      <workItem from="1522033199384" duration="12071000" />
-      <workItem from="1522114967114" duration="28520000" />
-      <workItem from="1522201806222" duration="16191000" />
+      <updated>1540992199980</updated>
+      <workItem from="1540992201454" duration="9774000" />
+      <workItem from="1541026492988" duration="6562000" />
+      <workItem from="1541079279790" duration="3712000" />
+      <workItem from="1550714741524" duration="896000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="574827000" />
+    <option name="totallyTimeSpent" value="20944000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="365" y="0" width="1555" height="1040" extended-state="0" />
+    <frame x="-1710" y="0" width="1717" height="1047" extended-state="1" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22148979" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33435115" sideWeight="0.5024424" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299748" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2494577" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31268013" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40552995" sideWeight="0.49755758" order="6" side_tool="false" content_ui="tabs" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12567005" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="1" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="2" />
+      <window_info anchor="bottom" id="Terminal" order="3" />
+      <window_info anchor="bottom" id="Event Log" order="4" side_tool="true" weight="0.32894737" />
+      <window_info anchor="bottom" id="Message" order="5" />
+      <window_info anchor="bottom" id="Find" order="6" />
+      <window_info anchor="bottom" id="Run" order="7" />
+      <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="11" />
+      <window_info anchor="bottom" id="Database" order="12" side_tool="true" weight="0.32894737" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="Vcs.Log.UiProperties">
-    <option name="RECENTLY_FILTERED_USER_GROUPS">
-      <collection />
-    </option>
-    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-      <collection />
-    </option>
-  </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/string/index.php</url>
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/digui/index.php</url>
-          <line>13</line>
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/digui/index.php</url>
-          <line>20</line>
-          <option name="timeStamp" value="16" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/digui/index.php</url>
-          <line>21</line>
-          <option name="timeStamp" value="17" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/digui/index.php</url>
-          <line>28</line>
-          <option name="timeStamp" value="18" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/digui/index.php</url>
-          <line>37</line>
-          <option name="timeStamp" value="19" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/digui/index.php</url>
-          <line>33</line>
-          <option name="timeStamp" value="20" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/orm/index.php</url>
-          <line>30</line>
-          <option name="timeStamp" value="22" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/orm/index.php</url>
-          <line>37</line>
-          <option name="timeStamp" value="23" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/orm/index.php</url>
-          <line>45</line>
-          <option name="timeStamp" value="24" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/orm/index.php</url>
-          <line>74</line>
-          <option name="timeStamp" value="25" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/orm/vendor/illuminate/validation/Validator.php</url>
-          <line>292</line>
-          <option name="timeStamp" value="26" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/orm/vendor/illuminate/validation/Validator.php</url>
-          <line>258</line>
-          <option name="timeStamp" value="27" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/orm/vendor/illuminate/validation/Validator.php</url>
-          <line>645</line>
-          <option name="timeStamp" value="28" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/orm/vendor/illuminate/validation/Concerns/FormatsMessages.php</url>
-          <line>22</line>
-          <option name="timeStamp" value="29" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/orm/vendor/illuminate/validation/Concerns/FormatsMessages.php</url>
-          <line>33</line>
-          <option name="timeStamp" value="30" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/orm/vendor/illuminate/validation/Concerns/FormatsMessages.php</url>
-          <line>48</line>
-          <option name="timeStamp" value="31" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/orm/vendor/illuminate/validation/Validator.php</url>
-          <line>267</line>
-          <option name="timeStamp" value="32" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/orm/vendor/illuminate/validation/Validator.php</url>
-          <line>358</line>
-          <option name="timeStamp" value="33" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/orm/vendor/illuminate/validation/Concerns/ValidatesAttributes.php</url>
-          <line>614</line>
-          <option name="timeStamp" value="34" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/orm/vendor/illuminate/validation/Concerns/ValidatesAttributes.php</url>
-          <line>621</line>
-          <option name="timeStamp" value="35" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/orm/vendor/illuminate/validation/Concerns/ValidatesAttributes.php</url>
-          <line>626</line>
-          <option name="timeStamp" value="36" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/orm/vendor/illuminate/validation/Concerns/ValidatesAttributes.php</url>
-          <line>632</line>
-          <option name="timeStamp" value="37" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/orm/vendor/illuminate/validation/Validator.php</url>
-          <line>1025</line>
-          <option name="timeStamp" value="38" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/orm/vendor/illuminate/validation/Validator.php</url>
-          <line>1055</line>
-          <option name="timeStamp" value="39" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/orm/vendor/illuminate/database/ConnectionResolver.php</url>
-          <line>29</line>
-          <option name="timeStamp" value="40" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/orm/index.php</url>
-          <line>67</line>
-          <option name="timeStamp" value="41" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/orm/vendor/illuminate/validation/Concerns/ValidatesAttributes.php</url>
-          <line>640</line>
-          <option name="timeStamp" value="42" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/orm/vendor/illuminate/validation/DatabasePresenceVerifier.php</url>
-          <line>48</line>
-          <option name="timeStamp" value="44" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/orm/vendor/illuminate/validation/DatabasePresenceVerifier.php</url>
-          <line>124</line>
-          <option name="timeStamp" value="45" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/orm/vendor/illuminate/database/ConnectionResolver.php</url>
-          <line>42</line>
-          <option name="timeStamp" value="46" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/orm/vendor/illuminate/database/ConnectionResolver.php</url>
-          <line>57</line>
-          <option name="timeStamp" value="47" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/gd/JumpJumpHelper/run.php</url>
-          <line>73</line>
-          <option name="timeStamp" value="48" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="49" />
-    </breakpoint-manager>
-    <watches-manager>
-      <configuration name="index.php">
-        <watch expression="$temp_arr" />
-        <watch expression="$result" />
-      </configuration>
-      <configuration name="PhpWebAppRunConfigurationType">
-        <watch expression="$this-&gt;connections" />
-        <watch expression="$name" />
-        <watch expression="$connection" />
-      </configuration>
-    </watches-manager>
-  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/orm/init.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/orm/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="497">
-          <caret line="59" column="31" selection-start-line="59" selection-start-column="31" selection-end-line="59" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rsa/index2.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rsa/index.php" />
-    <entry file="file://$PROJECT_DIR$/rsa/Rsa.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="2" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rsa/index3.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="421">
-          <caret line="54" column="9" selection-start-line="54" selection-start-column="9" selection-end-line="54" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/gd.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="206" column="9" selection-start-line="206" selection-start-column="9" selection-end-line="206" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gd/JumpJumpHelper/data">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gd/tt.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/standard_2.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="696" column="9" selection-start-line="696" selection-start-column="9" selection-end-line="696" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gd/index3.php" />
-    <entry file="file://$PROJECT_DIR$/gd/index2.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="20" column="14" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/time/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/string/index2.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="74" column="5" selection-start-line="74" selection-start-column="5" selection-end-line="74" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gd/JumpJumpHelper/screen/00000.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gd/screencap/screen.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gd/index.php">
+    <entry file="file://$PROJECT_DIR$/json/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
-          <caret line="94" column="52" selection-start-line="94" selection-start-column="52" selection-end-line="94" selection-end-column="52" />
-          <folding />
+          <caret line="36" column="6" selection-start-line="36" selection-start-column="6" selection-end-line="36" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/electron_learn/main/index.html">
+    <entry file="file://$PROJECT_DIR$/orm/composer.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/curl/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-260">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="306">
+          <caret line="18" column="20" lean-forward="true" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/electron_learn/main.js">
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.es5.d.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-171">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="238">
+          <caret line="337" column="4" selection-start-line="337" selection-start-column="4" selection-end-line="337" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/electron_learn/login/index.html">
+    <entry file="file://$PROJECT_DIR$/jp/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-317">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="67">
+          <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jp/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="109" column="1" selection-start-line="109" selection-start-column="1" selection-end-line="109" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jp/a.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="2" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ledou/yiqiwan/index.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ledou/xiuxian/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="340">
+          <caret line="23" column="23" lean-forward="true" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gd/JumpJumpHelper/run.php">
+    <entry file="file://$PROJECT_DIR$/ledou/xiuxian/config.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1976">
-          <caret line="104" column="1" selection-start-line="104" selection-start-column="1" selection-end-line="104" selection-end-column="1" />
-          <folding />
+        <state relative-caret-position="-776">
+          <caret line="24" column="8" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gd/JumpJumpHelper/config.php">
+    <entry file="file://$PROJECT_DIR$/ledou/xiuxian/Util/OAuthUtil.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ledou/xiuxian/Util/ToolUtil.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ledou/xiuxian/Util/RequestUtil.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="18" column="3" selection-start-line="18" selection-start-column="3" selection-end-line="18" selection-end-column="3" />
-        </state>
+        <state relative-caret-position="-1483" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/string/index.php">
+    <entry file="file://$PROJECT_DIR$/ledou/L8/cm_access_token.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="-17">
+          <caret line="35" column="6" lean-forward="true" selection-start-line="35" selection-start-column="6" selection-end-line="35" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/standard_7.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="878" column="9" selection-start-line="878" selection-start-column="9" selection-end-line="878" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/ledou/L8/cm_authenticate.php">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/danmu/jquery-3.3.1.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/swoole-ide-helper-master/src/Server.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="569">
-          <caret line="396" column="20" selection-start-line="396" selection-start-column="20" selection-end-line="396" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/swoole-ide-helper-master/docs/js/prism.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="1429" selection-start-line="10" selection-start-column="1429" selection-end-line="10" selection-end-column="1429" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/danmu/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2280">
-          <caret line="120" column="0" selection-start-line="120" selection-start-column="0" selection-end-line="120" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <marker date="1522150375000" expanded="true" signature="3100:3112" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/danmu/pub.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="23" column="39" selection-start-line="23" selection-start-column="39" selection-end-line="23" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/swoole-ide-helper-master/src/Http/Client.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="80" column="20" selection-start-line="80" selection-start-column="20" selection-end-line="80" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/swoole-ide-helper-master/src/Functionals.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="655" column="6" selection-start-line="655" selection-start-column="6" selection-end-line="655" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/danmu/test.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/danmu/sub.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="62" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/danmu/ws.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/danmu/http.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="34" column="33" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/swoole-nsq-master/app/model/readme.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor>
-            <js_state />
-          </second_editor>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/swoole-nsq-master/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor>
-            <js_state />
-          </second_editor>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/swoole-nsq-master/lib/opt/nsq/lib/NsqClient.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="41" column="27" selection-start-line="41" selection-start-column="27" selection-end-line="41" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/swoole-nsq-master/lib/opt/nsq/lib/lookup/Lookup.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-205">
-          <caret line="46" column="20" selection-start-line="46" selection-start-column="20" selection-end-line="46" selection-end-column="20" />
-          <folding>
-            <element signature="e#113#147#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/swoole-nsq-master/bin/Service.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="11" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/swoole-nsq-master/lib/service/nsq/common/Server.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="13" column="23" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/swoole-nsq-master/lib/service/nsq/Main.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="139" column="36" selection-start-line="139" selection-start-column="36" selection-end-line="139" selection-end-column="36" />
-          <folding>
-            <element signature="e#34#79#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/swoole-nsq-master/lib/service/Service.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="31" column="9" selection-start-line="31" selection-start-column="9" selection-end-line="31" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/swoole-nsq-master/test/Test.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/swoole-nsq-master/test/NsqClient.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="665">
-          <caret line="41" column="19" selection-start-line="41" selection-start-column="19" selection-end-line="41" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/swoole-nsq-master/test/Client.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="20" column="9" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nsq/pub.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="21" column="2" selection-start-line="21" selection-start-column="2" selection-end-line="21" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nsq/tcp_client.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="12" selection-end-column="19" />
-          <folding>
-            <element signature="e#7#22#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/swoole-ide-helper-master/src/Client.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="54" column="20" selection-start-line="54" selection-start-column="20" selection-end-line="54" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nsq/sub.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-  </component>
-  <component name="webServersAuthStorage">
-    <data>AAAAsIFMwdxuFCROg1pyNidiLd28zID3jcRW7znklG6qvxz8dlv/fvs91erNs/4jYwKXvM6CVaPlrLTcZO3jh6HBLEnSy6V7SX9MkG2qp3v3kbc/bKAZYFCpsNQ7WxPUuQ11UnqzLP34r8gp8eyNXMjZixjVKUDMV6Cz58YOT+EIcIoQKhZGIK7ZuNC+P0iJLST9wrlgBszAN8j8h5c85kcl8czI3rvf9ewUV8YtvXS7VuskYzDKKGs+dpePrg2ig5RlBA==</data>
   </component>
 </project>
