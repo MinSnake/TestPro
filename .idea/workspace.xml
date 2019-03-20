@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7d81b0ff-a321-4db3-9bf5-b465ccabca87" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/mysql/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/redis/SortedSet/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/redis/SortedSet/push.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/redis/SortedSet/server.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/session/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/session/index2.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sort/Quicksort.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="7d81b0ff-a321-4db3-9bf5-b465ccabca87" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +108,7 @@
       <path value="$PROJECT_DIR$/orm/vendor/psr/container" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="710" />
     <option name="width" value="1217" />
     <option name="height" value="1047" />
@@ -217,7 +208,7 @@
     <option name="totallyTimeSpent" value="45677000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="710" y="0" width="1217" height="1047" extended-state="1" />
+    <frame x="710" y="0" width="1217" height="1047" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2120441" />
