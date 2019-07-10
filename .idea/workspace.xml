@@ -1,58 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7d81b0ff-a321-4db3-9bf5-b465ccabca87" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/preg_match/index.php" afterDir="false" />
+    <list default="true" id="9efe3c6e-e332-4730-bb89-b6a6099fef10" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/aop/User.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fimor/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gd/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/md5/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wx/demo.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wx/errorCode.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wx/wxBizDataCrypt.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
+    <ignored path="test.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path=".idea/dataSources.local.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true">
     <pharConfigPath>$PROJECT_DIR$/orm/composer.json</pharConfigPath>
   </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
   <component name="DatabaseView">
-    <option name="SHOW_INTERMEDIATE" value="true" />
-    <option name="GROUP_DATA_SOURCES" value="true" />
     <option name="GROUP_SCHEMA" value="true" />
     <option name="GROUP_CONTENTS" value="false" />
     <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
     <option name="SHOW_EMPTY_GROUPS" value="false" />
     <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
-    <option name="HIDDEN_KINDS">
-      <set />
-    </option>
-    <expand />
-    <select />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="test" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/redis/SortedSet/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/preg_match/index.php">
+        <entry file="file://$PROJECT_DIR$/gd/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/redis/SortedSet/server.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" selection-start-line="18" selection-end-line="18" />
+            <state relative-caret-position="102">
+              <caret line="6" column="34" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -68,38 +59,87 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>$key_b</find>
+      <find>vender</find>
+      <find>openssl_public_encrypt</find>
+      <find>var_dump</find>
     </findStrings>
-    <replaceStrings>
-      <replace>$key_r</replace>
-    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="test" />
+      </map>
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/jp/a.php" />
-        <option value="$PROJECT_DIR$/jp/index.php" />
-        <option value="$PROJECT_DIR$/jp/index.html" />
-        <option value="$PROJECT_DIR$/redis/Leaderboard.php" />
-        <option value="$PROJECT_DIR$/redis/serve.php" />
-        <option value="$PROJECT_DIR$/redis/server.php" />
-        <option value="$PROJECT_DIR$/redis/push.php" />
-        <option value="$PROJECT_DIR$/redis/index.php" />
-        <option value="$PROJECT_DIR$/redis/SortedSet/server.php" />
-        <option value="$PROJECT_DIR$/sort/Quicksort.php" />
-        <option value="$PROJECT_DIR$/session/index.php" />
-        <option value="$PROJECT_DIR$/session/index2.php" />
-        <option value="$PROJECT_DIR$/preg_match/index.php" />
+        <option value="$PROJECT_DIR$/ledou/sdk_test_project/App/Ol/TW/Secure.php" />
+        <option value="$PROJECT_DIR$/ledou/sdk_test_project/App/Ol/TW/Feed.php" />
+        <option value="$PROJECT_DIR$/ledou/sdk_test_project/App/Ol/TW/Payment.php" />
+        <option value="$PROJECT_DIR$/MorseCode/index.php" />
+        <option value="$PROJECT_DIR$/ledou/sdk_test_project/Config/bootstrap.php" />
+        <option value="$PROJECT_DIR$/swoole/tcp_server.php" />
+        <option value="$PROJECT_DIR$/orm/User.php" />
+        <option value="$PROJECT_DIR$/ledou/sdk_test_project/Config/TW/config.php" />
+        <option value="$PROJECT_DIR$/redis/readme.md" />
+        <option value="$PROJECT_DIR$/redis/TestRedis.php" />
+        <option value="$PROJECT_DIR$/redis/key/index.php" />
+        <option value="$PROJECT_DIR$/ledou/sdk_test_project/App/Cm/L8/Secure.php" />
+        <option value="$PROJECT_DIR$/ledou/L8/cm_request_token.php" />
+        <option value="$PROJECT_DIR$/ledou/L8/cm_authenticate.php" />
+        <option value="$PROJECT_DIR$/ledou/L8/cm_access_token.php" />
+        <option value="$PROJECT_DIR$/ledou/L8/cm_create_order.php" />
+        <option value="$PROJECT_DIR$/ledou/yiqiwan/index.php" />
+        <option value="$PROJECT_DIR$/foreach/index.php" />
+        <option value="$PROJECT_DIR$/random/index.php" />
+        <option value="$PROJECT_DIR$/json/index.php" />
+        <option value="$PROJECT_DIR$/ftp/FtpApiHelper.php" />
+        <option value="$PROJECT_DIR$/rsa/index.php" />
+        <option value="$PROJECT_DIR$/rsa/Rsa.php" />
+        <option value="$PROJECT_DIR$/rsa/index2.php" />
+        <option value="$PROJECT_DIR$/orm/composer.json" />
+        <option value="$PROJECT_DIR$/orm/lang/zh/messages.php" />
+        <option value="$PROJECT_DIR$/orm/lang/zh/validation.php" />
+        <option value="$PROJECT_DIR$/orm/index.php" />
+        <option value="$PROJECT_DIR$/rsa/index3.php" />
+        <option value="$PROJECT_DIR$/gd/JumpJumpHelper/run.php" />
+        <option value="$PROJECT_DIR$/gd/index3.php" />
+        <option value="$PROJECT_DIR$/time/index.php" />
+        <option value="$PROJECT_DIR$/gd/index2.php" />
+        <option value="$PROJECT_DIR$/string/index2.php" />
+        <option value="$PROJECT_DIR$/gd/JumpJumpHelper/config.php" />
+        <option value="$PROJECT_DIR$/string/index.php" />
+        <option value="$PROJECT_DIR$/danmu/server_1.php" />
+        <option value="$PROJECT_DIR$/danmu/pub.php" />
+        <option value="$PROJECT_DIR$/danmu/ws.php" />
+        <option value="$PROJECT_DIR$/danmu/index.html" />
+        <option value="$PROJECT_DIR$/danmu/test.php" />
+        <option value="$PROJECT_DIR$/danmu/sub.php" />
+        <option value="$PROJECT_DIR$/danmu/http.php" />
+        <option value="$PROJECT_DIR$/nsq/tcp_client.php" />
+        <option value="$PROJECT_DIR$/nsq/sub.php" />
+        <option value="$PROJECT_DIR$/ledou/L8/auth/Auth.php" />
+        <option value="$PROJECT_DIR$/md5/index.php" />
+        <option value="$PROJECT_DIR$/fimor/index.php" />
+        <option value="$PROJECT_DIR$/wx/errorCode.php" />
+        <option value="$PROJECT_DIR$/wx/demo.php" />
+        <option value="$PROJECT_DIR$/gd/index.php" />
       </list>
     </option>
   </component>
+  <component name="PhpDebugGeneral" xdebug_debug_port="9090" notify_if_session_was_finished_without_being_paused="false" />
   <component name="PhpServers">
-    <servers />
+    <servers>
+      <server deployment_server="f4e00820-a068-4a34-9da7-1ef6bc1fdfd9" host="localtest.me" id="3c0c83ed-8e30-442f-b80a-05c42c3118c3" name="php7.1.3" use_path_mappings="true">
+        <path_mappings>
+          <mapping local-root="$PROJECT_DIR$" remote-root="/home/saki/PHP/test" />
+        </path_mappings>
+      </server>
+    </servers>
   </component>
-  <component name="PhpWorkspaceProjectConfiguration">
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="php7.1.3">
     <include_path>
       <path value="$PROJECT_DIR$/orm/vendor/symfony/polyfill-php70" />
       <path value="$PROJECT_DIR$/orm/vendor/symfony/finder" />
@@ -119,23 +159,81 @@
       <path value="$PROJECT_DIR$/orm/vendor/illuminate/container" />
       <path value="$PROJECT_DIR$/orm/vendor/psr/simple-cache" />
       <path value="$PROJECT_DIR$/orm/vendor/psr/container" />
+      <path value="D:/JetBrains/PhpStorm 2017.2.3/swoole-ide-helper-master" />
+      <path value="D:/JetBrains/PhpStorm 2016.2.2/swoole-ide-helper-master" />
+      <path value="$PROJECT_DIR$/../../Other/php-nsq-master" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="272" />
-    <option name="y" value="139" />
-    <option name="width" value="1345" />
-    <option name="height" value="865" />
+  <component name="PhpXdebugProxy" ide_key="PHPSTORM" host="localhost" port="80" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-1670" />
+    <option name="y" value="220" />
+    <option name="width" value="1430" />
+    <option name="height" value="817" />
   </component>
-  <component name="ProjectLevelVcsManager">
-    <ConfirmationsSetting value="2" id="Add" />
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Code SmellPHP</id>
+          </State>
+          <State>
+            <id>General</id>
+          </State>
+          <State>
+            <id>GeneralJavaScript</id>
+          </State>
+          <State>
+            <id>GeneralPHP</id>
+          </State>
+          <State>
+            <id>HTML</id>
+          </State>
+          <State>
+            <id>Internationalization issues</id>
+          </State>
+          <State>
+            <id>JavaScript</id>
+          </State>
+          <State>
+            <id>JavaScript validity issuesJavaScript</id>
+          </State>
+          <State>
+            <id>PHP</id>
+          </State>
+          <State>
+            <id>Potentially confusing code constructsJavaScript</id>
+          </State>
+          <State>
+            <id>Probable bugsPHP</id>
+          </State>
+          <State>
+            <id>RELAX NG</id>
+          </State>
+          <State>
+            <id>SQL</id>
+          </State>
+          <State>
+            <id>XML</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>PhpMethodOrClassCallIsNotCaseSensitiveInspection</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -146,28 +244,43 @@
             <path>
               <item name="TestPro" type="b2602c69:ProjectViewProjectNode" />
               <item name="TestPro" type="462c0819:PsiDirectoryNode" />
-              <item name="preg_match" type="462c0819:PsiDirectoryNode" />
+              <item name="gd" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://E:/Work/PHP/test/ledou/sdk_test_project/Config/TW/config.php" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="js-jscs-nodeInterpreter" value="D:\nodejs\node.exe" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_interpreter_path" value="D:/nodejs/node" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\Work\php\TestPro\redis\SortedSet" />
+      <recent name="E:\Work\PHP\test\rsa\ios" />
+      <recent name="E:\Work\PHP\test\ledou\sdk_test_project\Lib\Tools" />
+      <recent name="E:\Work\PHP\test\ledou\sdk_test_project\Config" />
+      <recent name="E:\Work\PHP\test\ledou\sdk_test_project\Config\USA" />
+      <recent name="E:\Work\PHP\test\ledou\sdk_test_project\Lib\App" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Work\php\TestPro\wx" />
+      <recent name="E:\Work\PHP\test\nsq" />
+      <recent name="E:\Work\PHP\test" />
+      <recent name="E:\Work\PHP\test\danmu" />
+      <recent name="E:\Work\PHP\test\gd" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -182,50 +295,136 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration name="http://localtest.me/" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application" server_name="php7.1.3">
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SshConsoleOptionsProvider">
+    <option name="myEncoding" value="UTF-8" />
+    <option name="myConnectionType" value="DEPLOYMENT_SERVER" />
+    <option name="myConnectionId" value="f4e00820-a068-4a34-9da7-1ef6bc1fdfd9" />
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="7d81b0ff-a321-4db3-9bf5-b465ccabca87" name="Default Changelist" comment="" />
-      <created>1540992199980</created>
+      <changelist id="9efe3c6e-e332-4730-bb89-b6a6099fef10" name="Default" comment="" />
+      <created>1503044516911</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1540992199980</updated>
-      <workItem from="1540992201454" duration="9774000" />
-      <workItem from="1541026492988" duration="6562000" />
-      <workItem from="1541079279790" duration="3712000" />
-      <workItem from="1550714741524" duration="896000" />
-      <workItem from="1552268269461" duration="22198000" />
-      <workItem from="1552871315955" duration="2535000" />
-      <workItem from="1557284592279" duration="3311000" />
+      <updated>1503044516911</updated>
+      <workItem from="1503044518172" duration="6359000" />
+      <workItem from="1503278593302" duration="1813000" />
+      <workItem from="1503312137075" duration="3483000" />
+      <workItem from="1504490579089" duration="6629000" />
+      <workItem from="1504575167556" duration="2465000" />
+      <workItem from="1504661858633" duration="839000" />
+      <workItem from="1504747739173" duration="1235000" />
+      <workItem from="1504765638654" duration="834000" />
+      <workItem from="1504833858384" duration="1213000" />
+      <workItem from="1504923087580" duration="634000" />
+      <workItem from="1505094101483" duration="6796000" />
+      <workItem from="1505179391200" duration="7472000" />
+      <workItem from="1505264846251" duration="17766000" />
+      <workItem from="1505352548045" duration="4249000" />
+      <workItem from="1505439881377" duration="19026000" />
+      <workItem from="1505784152533" duration="16353000" />
+      <workItem from="1505957519285" duration="5234000" />
+      <workItem from="1506301804905" duration="2412000" />
+      <workItem from="1506410757666" duration="8874000" />
+      <workItem from="1506504314545" duration="680000" />
+      <workItem from="1506562345575" duration="964000" />
+      <workItem from="1506647659803" duration="5220000" />
+      <workItem from="1506734698979" duration="2660000" />
+      <workItem from="1507512648538" duration="2159000" />
+      <workItem from="1507684409450" duration="5095000" />
+      <workItem from="1507771003511" duration="11178000" />
+      <workItem from="1508220243829" duration="1585000" />
+      <workItem from="1508723489543" duration="6882000" />
+      <workItem from="1508813158410" duration="9538000" />
+      <workItem from="1508898157401" duration="14713000" />
+      <workItem from="1508945165734" duration="7835000" />
+      <workItem from="1508980893365" duration="29697000" />
+      <workItem from="1509433034849" duration="28982000" />
+      <workItem from="1509678430121" duration="12518000" />
+      <workItem from="1509757378135" duration="12218000" />
+      <workItem from="1509846502550" duration="4605000" />
+      <workItem from="1509933839359" duration="39704000" />
+      <workItem from="1510388091422" duration="463000" />
+      <workItem from="1510393737533" duration="6462000" />
+      <workItem from="1510448394474" duration="214000" />
+      <workItem from="1510666310362" duration="4006000" />
+      <workItem from="1511165910302" duration="2349000" />
+      <workItem from="1511487469837" duration="7559000" />
+      <workItem from="1511770020308" duration="32658000" />
+      <workItem from="1512351163814" duration="4152000" />
+      <workItem from="1512460082616" duration="14639000" />
+      <workItem from="1513214848246" duration="11013000" />
+      <workItem from="1513440451794" duration="9184000" />
+      <workItem from="1513561100701" duration="6809000" />
+      <workItem from="1513582864559" duration="5265000" />
+      <workItem from="1513733009969" duration="30928000" />
+      <workItem from="1514367098595" duration="385000" />
+      <workItem from="1514367540320" duration="27000" />
+      <workItem from="1514448491998" duration="19795000" />
+      <workItem from="1514789352371" duration="4803000" />
+      <workItem from="1514856898906" duration="3034000" />
+      <workItem from="1515719306414" duration="1155000" />
+      <workItem from="1515741487758" duration="7974000" />
+      <workItem from="1515979121516" duration="788000" />
+      <workItem from="1515979920839" duration="6308000" />
+      <workItem from="1516070893163" duration="13064000" />
+      <workItem from="1516584838151" duration="11606000" />
+      <workItem from="1517363539266" duration="1196000" />
+      <workItem from="1522027996018" duration="2290000" />
+      <workItem from="1522033199384" duration="12071000" />
+      <workItem from="1522114967114" duration="28520000" />
+      <workItem from="1522201806222" duration="16191000" />
+      <workItem from="1557306877772" duration="2670000" />
+      <workItem from="1557315236182" duration="1506000" />
+      <workItem from="1558080715521" duration="524000" />
+      <workItem from="1558921022115" duration="2475000" />
+      <workItem from="1561967778837" duration="1959000" />
+      <workItem from="1562720973058" duration="538000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48988000" />
+    <option name="totallyTimeSpent" value="584499000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="272" y="139" width="1345" height="865" extended-state="1" />
+    <frame x="-1670" y="220" width="1430" height="817" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19127774" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2413793" />
+      <window_info id="Structure" order="1" weight="0.2494577" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" order="1" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="2" />
-      <window_info anchor="bottom" id="Terminal" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="4" side_tool="true" weight="0.32894737" />
-      <window_info anchor="bottom" id="Message" order="5" />
-      <window_info anchor="bottom" id="Find" order="6" />
-      <window_info anchor="bottom" id="Run" order="7" />
-      <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="11" />
-      <window_info anchor="bottom" id="Database" order="12" side_tool="true" weight="0.32894737" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Messages" order="0" />
+      <window_info anchor="bottom" id="Version Control" order="1" weight="0.3289183" />
+      <window_info anchor="bottom" id="Terminal" order="2" weight="0.31268013" />
+      <window_info anchor="bottom" id="Message" order="3" />
+      <window_info anchor="bottom" id="Find" order="4" />
+      <window_info anchor="bottom" id="Run" order="5" />
+      <window_info anchor="bottom" id="Debug" order="6" sideWeight="0.49755758" weight="0.40552995" />
+      <window_info anchor="bottom" id="Cvs" order="7" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="8" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="9" />
+      <window_info anchor="bottom" id="Database" order="10" weight="0.3299748" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5024424" weight="0.33435115" />
+      <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="13" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
@@ -233,113 +432,325 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/string/index.php</url>
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/digui/index.php</url>
+          <line>13</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/digui/index.php</url>
+          <line>20</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/digui/index.php</url>
+          <line>21</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/digui/index.php</url>
+          <line>28</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/digui/index.php</url>
+          <line>37</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/digui/index.php</url>
+          <line>33</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/orm/index.php</url>
+          <line>30</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/orm/index.php</url>
+          <line>37</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/orm/index.php</url>
+          <line>45</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/orm/index.php</url>
+          <line>74</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/orm/vendor/illuminate/validation/Validator.php</url>
+          <line>292</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/orm/vendor/illuminate/validation/Validator.php</url>
+          <line>258</line>
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/orm/vendor/illuminate/validation/Validator.php</url>
+          <line>645</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/orm/vendor/illuminate/validation/Concerns/FormatsMessages.php</url>
+          <line>22</line>
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/orm/vendor/illuminate/validation/Concerns/FormatsMessages.php</url>
+          <line>33</line>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/orm/vendor/illuminate/validation/Concerns/FormatsMessages.php</url>
+          <line>48</line>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/orm/vendor/illuminate/validation/Validator.php</url>
+          <line>267</line>
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/orm/vendor/illuminate/validation/Validator.php</url>
+          <line>358</line>
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/orm/vendor/illuminate/validation/Concerns/ValidatesAttributes.php</url>
+          <line>614</line>
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/orm/vendor/illuminate/validation/Concerns/ValidatesAttributes.php</url>
+          <line>621</line>
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/orm/vendor/illuminate/validation/Concerns/ValidatesAttributes.php</url>
+          <line>626</line>
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/orm/vendor/illuminate/validation/Concerns/ValidatesAttributes.php</url>
+          <line>632</line>
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/orm/vendor/illuminate/validation/Validator.php</url>
+          <line>1025</line>
+          <option name="timeStamp" value="38" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/orm/vendor/illuminate/validation/Validator.php</url>
+          <line>1055</line>
+          <option name="timeStamp" value="39" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/orm/vendor/illuminate/database/ConnectionResolver.php</url>
+          <line>29</line>
+          <option name="timeStamp" value="40" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/orm/index.php</url>
+          <line>67</line>
+          <option name="timeStamp" value="41" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/orm/vendor/illuminate/validation/Concerns/ValidatesAttributes.php</url>
+          <line>640</line>
+          <option name="timeStamp" value="42" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/orm/vendor/illuminate/validation/DatabasePresenceVerifier.php</url>
+          <line>48</line>
+          <option name="timeStamp" value="44" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/orm/vendor/illuminate/validation/DatabasePresenceVerifier.php</url>
+          <line>124</line>
+          <option name="timeStamp" value="45" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/orm/vendor/illuminate/database/ConnectionResolver.php</url>
+          <line>42</line>
+          <option name="timeStamp" value="46" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/orm/vendor/illuminate/database/ConnectionResolver.php</url>
+          <line>57</line>
+          <option name="timeStamp" value="47" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/gd/JumpJumpHelper/run.php</url>
+          <line>73</line>
+          <option name="timeStamp" value="48" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="index.php">
+        <watch expression="$temp_arr" />
+        <watch expression="$result" />
+      </configuration>
+      <configuration name="PhpWebAppRunConfigurationType">
+        <watch expression="$this-&gt;connections" />
+        <watch expression="$name" />
+        <watch expression="$connection" />
+      </configuration>
+    </watches-manager>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/json/index.php" />
-    <entry file="file://$PROJECT_DIR$/orm/composer.json" />
-    <entry file="file://$PROJECT_DIR$/curl/index.php" />
-    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.es5.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="337" column="4" selection-start-line="337" selection-start-column="4" selection-end-line="337" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jp/index.html" />
-    <entry file="file://$PROJECT_DIR$/jp/index.php" />
-    <entry file="file://$PROJECT_DIR$/jp/a.php" />
+    <entry file="file://$PROJECT_DIR$/gd/JumpJumpHelper/run.php" />
+    <entry file="file://$PROJECT_DIR$/gd/JumpJumpHelper/config.php" />
+    <entry file="file://$PROJECT_DIR$/string/index.php" />
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/standard_7.php" />
+    <entry file="file://$PROJECT_DIR$/danmu/jquery-3.3.1.min.js" />
+    <entry file="file://$APPLICATION_HOME_DIR$/swoole-ide-helper-master/src/Server.php" />
+    <entry file="file://$APPLICATION_HOME_DIR$/swoole-ide-helper-master/docs/js/prism.min.js" />
+    <entry file="file://$PROJECT_DIR$/danmu/index.html" />
+    <entry file="file://$PROJECT_DIR$/danmu/pub.php" />
+    <entry file="file://$APPLICATION_HOME_DIR$/swoole-ide-helper-master/src/Http/Client.php" />
+    <entry file="file://$APPLICATION_HOME_DIR$/swoole-ide-helper-master/src/Functionals.php" />
+    <entry file="file://$PROJECT_DIR$/danmu/test.php" />
+    <entry file="file://$PROJECT_DIR$/danmu/sub.php" />
+    <entry file="file://$PROJECT_DIR$/danmu/ws.php" />
+    <entry file="file://$PROJECT_DIR$/danmu/http.php" />
+    <entry file="file://$PROJECT_DIR$/swoole-nsq-master/app/model/readme.md" />
+    <entry file="file://$PROJECT_DIR$/swoole-nsq-master/README.md" />
+    <entry file="file://$PROJECT_DIR$/swoole-nsq-master/lib/opt/nsq/lib/NsqClient.php" />
+    <entry file="file://$PROJECT_DIR$/swoole-nsq-master/lib/opt/nsq/lib/lookup/Lookup.php" />
+    <entry file="file://$PROJECT_DIR$/swoole-nsq-master/bin/Service.php" />
+    <entry file="file://$PROJECT_DIR$/swoole-nsq-master/lib/service/nsq/common/Server.php" />
+    <entry file="file://$PROJECT_DIR$/swoole-nsq-master/lib/service/nsq/Main.php" />
+    <entry file="file://$PROJECT_DIR$/swoole-nsq-master/lib/service/Service.php" />
+    <entry file="file://$PROJECT_DIR$/swoole-nsq-master/test/Test.php" />
+    <entry file="file://$PROJECT_DIR$/swoole-nsq-master/test/NsqClient.php" />
+    <entry file="file://$PROJECT_DIR$/swoole-nsq-master/test/Client.php" />
+    <entry file="file://$PROJECT_DIR$/nsq/pub.php" />
+    <entry file="file://$PROJECT_DIR$/nsq/tcp_client.php" />
+    <entry file="file://$APPLICATION_HOME_DIR$/swoole-ide-helper-master/src/Client.php" />
+    <entry file="file://$PROJECT_DIR$/nsq/sub.php" />
     <entry file="file://$PROJECT_DIR$/ledou/yiqiwan/index.php" />
     <entry file="file://$PROJECT_DIR$/ledou/xiuxian/index.php" />
-    <entry file="file://$PROJECT_DIR$/ledou/xiuxian/config.php" />
     <entry file="file://$PROJECT_DIR$/ledou/xiuxian/Util/OAuthUtil.php" />
-    <entry file="file://$PROJECT_DIR$/ledou/xiuxian/Util/ToolUtil.php" />
-    <entry file="file://$PROJECT_DIR$/ledou/xiuxian/Util/RequestUtil.php" />
+    <entry file="file://$PROJECT_DIR$/ledou/sdk_test_project/index.php" />
+    <entry file="file://$PROJECT_DIR$/ledou/sdk_test_project/Lib/init.php" />
+    <entry file="file://$PROJECT_DIR$/ledou/sdk_test_project/Lib/Core/Core.php" />
+    <entry file="file://$PROJECT_DIR$/ledou/sdk_test_project/Lib/App/Oauth.php" />
+    <entry file="file://$PROJECT_DIR$/ledou/L8/cm_request_token.php" />
     <entry file="file://$PROJECT_DIR$/ledou/L8/cm_access_token.php" />
-    <entry file="file://$PROJECT_DIR$/ledou/L8/cm_authenticate.php" />
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="68">
-            <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/curl/curl_d.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="174" column="9" selection-start-line="174" selection-start-column="9" selection-end-line="174" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/redis/Redis.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="2312" column="39" selection-start-line="2312" selection-start-column="32" selection-end-line="2312" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/redis/SortedSet/push.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/standard_8.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="1105" column="9" selection-start-line="1105" selection-start-column="9" selection-end-line="1105" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/session/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" selection-start-line="2" selection-end-line="3" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/session/index2.php" />
-    <entry file="file://$PROJECT_DIR$/mysql/index.php">
+    <entry file="file://$PROJECT_DIR$/ledou/L8/cm_create_order.php" />
+    <entry file="file://$PROJECT_DIR$/ledou/L8/auth/Auth.php" />
+    <entry file="file://$PROJECT_DIR$/ledou/sdk_test_project/Lib/App/BaseApp.php" />
+    <entry file="file://$PROJECT_DIR$/ledou/sdk_test_project/App/Ol/TW/Secure.php" />
+    <entry file="file://$PROJECT_DIR$/ledou/cm/OAuth.php" />
+    <entry file="file://$PROJECT_DIR$/aop/User.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
-          <caret line="6" column="3" lean-forward="true" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sort/Quicksort.php">
+    <entry file="file://$PROJECT_DIR$/md5/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        <state relative-caret-position="17">
+          <caret line="1" column="19" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/redis/SortedSet/server.php">
+    <entry file="file://$PROJECT_DIR$/fimor/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        <state relative-caret-position="374">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
+    <entry file="file://$PROJECT_DIR$/wx/errorCode.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        <state relative-caret-position="357">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/redis/SortedSet/index.php">
+    <entry file="file://$PROJECT_DIR$/wx/wxBizDataCrypt.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        <state relative-caret-position="408">
+          <caret line="37" column="20" selection-start-line="37" selection-start-column="20" selection-end-line="37" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/preg_match/index.php">
+    <entry file="file://$PROJECT_DIR$/wx/demo.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        <state relative-caret-position="136">
+          <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gd/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="34" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="34" />
         </state>
       </provider>
     </entry>
