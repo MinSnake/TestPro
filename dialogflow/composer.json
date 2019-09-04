@@ -1,0 +1,30 @@
+{
+  "name": "dipelta/voice",
+  "description": "The voice project.",
+  "type": "project",
+  "keywords": [
+    "framework",
+    "voice"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "dipelta",
+      "email": "zha_zha@outlook.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.2.0",
+    "google/cloud-dialogflow": "v0.10.0",
+    "google/cloud-storage": "v1.14.0",
+    "google/cloud-core": "^1.31",
+    "google/crc32": "^0.1.0",
+    "google/gax": "^1.1"
+  },
+  "require-dev": {
+  },
+  "autoload": {
+    "psr-4": {
+    }
+  }
+}
