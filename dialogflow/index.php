@@ -1,7 +1,7 @@
 <?php
 require 'vendor/autoload.php';
 
-putenv('GOOGLE_APPLICATION_CREDENTIALS=' . __DIR__ . '/DipeltaAi-de51be284d9a.json');
+putenv('GOOGLE_APPLICATION_CREDENTIALS=' . __DIR__ . '/PiDialog-6ea82d20be81.json');
 
 function detect_intent_texts($projectId, $texts, $sessionId = null, $languageCode = 'en-US')
 {
@@ -46,4 +46,4 @@ function detect_intent_texts($projectId, $texts, $sessionId = null, $languageCod
 $texts = [
     '你叫什么'
 ];
-detect_intent_texts('dipeltaai', $texts, null, 'zh-CN');
+detect_intent_texts('pidialog', $texts, null, 'zh-CN');
