@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9efe3c6e-e332-4730-bb89-b6a6099fef10" name="Default" comment="test">
-      <change afterPath="$PROJECT_DIR$/dialogflow/PiDialog-6ea82d20be81.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dialogflow/composer.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/swoole/PiDialog-6ea82d20be81.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/swoole/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/swoole/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dialogflow/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/dialogflow/index.php" afterDir="false" />
     </list>
     <ignored path="test.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -18,6 +18,9 @@
   </component>
   <component name="ComposerSettings" doNotAsk="true">
     <pharConfigPath>$PROJECT_DIR$/orm/composer.json</pharConfigPath>
+    <execution>
+      <executable />
+    </execution>
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -36,10 +39,64 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/dialogflow/index.php">
+        <entry file="file://$PROJECT_DIR$/swoole/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" column="73" selection-start-line="24" selection-start-column="73" selection-end-line="24" selection-end-column="73" />
+            <state relative-caret-position="380">
+              <caret line="19" column="12" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/swoole/vendor/google/cloud-dialogflow/src/V2/Gapic/SessionsGapicClient.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="404">
+              <caret line="357" column="27" selection-start-line="357" selection-start-column="27" selection-end-line="357" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/swoole/vendor/google/cloud-dialogflow/src/V2/DetectIntentResponse.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="600">
+              <caret line="86" column="63" lean-forward="true" selection-start-line="86" selection-start-column="63" selection-end-line="86" selection-end-column="63" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dialogflow/vendor/google/gax/src/GapicClientTrait.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="844">
+              <caret line="475" column="9" lean-forward="true" selection-start-line="475" selection-start-column="9" selection-end-line="475" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/swoole/vendor/google/gax/src/GapicClientTrait.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1420">
+              <caret line="55" column="6" selection-start-line="55" selection-start-column="6" selection-end-line="55" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/swoole/vendor/google/cloud-dialogflow/src/V2/DetectIntentRequest.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="294">
+              <caret line="92" column="25" lean-forward="true" selection-start-line="92" selection-start-column="25" selection-end-line="92" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/swoole/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="254">
+              <caret line="68" column="20" selection-start-line="68" selection-start-column="20" selection-end-line="68" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -68,6 +125,7 @@
       <find>helloworld</find>
       <find>DRIVE_METADATA_READONLY</find>
       <find>hostname</find>
+      <find>startCall</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -87,10 +145,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/time/index.php" />
-        <option value="$PROJECT_DIR$/gd/index2.php" />
-        <option value="$PROJECT_DIR$/string/index2.php" />
-        <option value="$PROJECT_DIR$/gd/JumpJumpHelper/config.php" />
         <option value="$PROJECT_DIR$/string/index.php" />
         <option value="$PROJECT_DIR$/danmu/server_1.php" />
         <option value="$PROJECT_DIR$/danmu/pub.php" />
@@ -138,6 +192,10 @@
         <option value="$PROJECT_DIR$/grpc_test/index.php" />
         <option value="$PROJECT_DIR$/dialogflow/composer.json" />
         <option value="$PROJECT_DIR$/dialogflow/index.php" />
+        <option value="$PROJECT_DIR$/swoole/composer.json" />
+        <option value="$PROJECT_DIR$/dialogflow/vendor/google/gax/src/GapicClientTrait.php" />
+        <option value="$PROJECT_DIR$/swoole/vendor/google/cloud-dialogflow/src/V2/Gapic/SessionsGapicClient.php" />
+        <option value="$PROJECT_DIR$/swoole/index.php" />
       </list>
     </option>
   </component>
@@ -177,11 +235,11 @@
     </include_path>
   </component>
   <component name="PhpXdebugProxy" ide_key="PHPSTORM" host="localhost" port="80" />
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="377" />
-    <option name="y" value="44" />
-    <option name="width" value="1440" />
-    <option name="height" value="949" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="126" />
+    <option name="y" value="85" />
+    <option name="width" value="1675" />
+    <option name="height" value="922" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -204,6 +262,11 @@
               <item name="TestPro" type="462c0819:PsiDirectoryNode" />
               <item name="dialogflow" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="TestPro" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TestPro" type="462c0819:PsiDirectoryNode" />
+              <item name="swoole" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -216,7 +279,7 @@
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://E:/Work/PHP/test/ledou/sdk_test_project/Config/TW/config.php" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js-jscs-nodeInterpreter" value="D:\nodejs\node.exe" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/dialogflow" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/swoole" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -236,11 +299,11 @@
       <recent name="E:\Work\PHP\test\ledou\sdk_test_project\Config" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/swoole" />
       <recent name="E:\Work\php\TestPro\dialogflow" />
       <recent name="$PROJECT_DIR$/dialogflow" />
       <recent name="$PROJECT_DIR$/grpc_test" />
       <recent name="$PROJECT_DIR$/grpc_test/src" />
-      <recent name="$PROJECT_DIR$/grpc" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -365,16 +428,18 @@
       <workItem from="1567388877223" duration="21620000" />
       <workItem from="1567472726190" duration="39253000" />
       <workItem from="1568041251913" duration="908000" />
+      <workItem from="1568079284430" duration="3751000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="670207000" />
+    <option name="totallyTimeSpent" value="674157000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="377" y="44" width="1440" height="949" extended-state="1" />
+    <frame x="126" y="85" width="1675" height="922" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2703281" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19781554" />
       <window_info id="Structure" order="1" weight="0.2494577" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="0" />
@@ -632,20 +697,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/grpc_test/build/Google/Assistant/Embedded/V1alpha2/AudioOutConfig/Encoding.php" />
-    <entry file="file://$PROJECT_DIR$/google/oauth2callback.php" />
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/standard_5.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="137" column="9" selection-start-line="137" selection-start-column="9" selection-end-line="137" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grpc_test/vendor/google/auth/src/ApplicationDefaultCredentials.php" />
-    <entry file="file://$PROJECT_DIR$/grpc_test/build/Google/Assistant/Embedded/V1alpha2/DeviceConfig.php" />
-    <entry file="file://$PROJECT_DIR$/google/client_secrets.json" />
-    <entry file="file://$PROJECT_DIR$/grpc_test/vendor/google/apiclient-services/src/Google/Service/Drive.php" />
-    <entry file="file://$PROJECT_DIR$/google/index.php" />
     <entry file="file://$PROJECT_DIR$/grpc_test/src/google/type/latlng.proto" />
     <entry file="file://$PROJECT_DIR$/grpc_test/vendor/google/protobuf/src/Google/Protobuf/Internal/DescriptorPool.php" />
     <entry file="jar://$APPLICATION_PLUGINS_DIR$/protobuf-jetbrains-plugin/lib/protobuf-java-3.6.1-sources.jar!/google/protobuf/descriptor.proto" />
@@ -687,7 +738,6 @@
     <entry file="file://$PROJECT_DIR$/dialogflow/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php" />
     <entry file="file://$PROJECT_DIR$/dialogflow/vendor/google/cloud-dialogflow/src/V2/QueryInput.php" />
     <entry file="file://$PROJECT_DIR$/dialogflow/vendor/google/cloud-dialogflow/src/V2/SessionsClient.php" />
-    <entry file="file://$PROJECT_DIR$/dialogflow/vendor/google/gax/src/GapicClientTrait.php" />
     <entry file="file://$PROJECT_DIR$/grpc_test/client_secret_601698329305-gc0ipm9ltcd816jfhju0bnp45vrol7jj.apps.googleusercontent.com.json" />
     <entry file="file://$PROJECT_DIR$/dialogflow/client_secret.json">
       <provider selected="true" editor-type-id="text-editor" />
@@ -704,10 +754,73 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/swoole/PiDialog-6ea82d20be81.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swoole/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="499">
+          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swoole/vendor/google/cloud-dialogflow/src/V2/DetectIntentRequest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="92" column="25" lean-forward="true" selection-start-line="92" selection-start-column="25" selection-end-line="92" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swoole/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="68" column="20" selection-start-line="68" selection-start-column="20" selection-end-line="68" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swoole/vendor/google/gax/src/GapicClientTrait.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1420">
+          <caret line="55" column="6" selection-start-line="55" selection-start-column="6" selection-end-line="55" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dialogflow/vendor/google/gax/src/GapicClientTrait.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="844">
+          <caret line="475" column="9" lean-forward="true" selection-start-line="475" selection-start-column="9" selection-end-line="475" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swoole/vendor/google/cloud-dialogflow/src/V2/DetectIntentResponse.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="86" column="63" lean-forward="true" selection-start-line="86" selection-start-column="63" selection-end-line="86" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swoole/vendor/google/cloud-dialogflow/src/V2/Gapic/SessionsGapicClient.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="404">
+          <caret line="357" column="27" selection-start-line="357" selection-start-column="27" selection-end-line="357" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/dialogflow/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="73" selection-start-line="24" selection-start-column="73" selection-end-line="24" selection-end-column="73" />
+        <state relative-caret-position="339">
+          <caret line="21" column="25" lean-forward="true" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swoole/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="19" column="12" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
         </state>
       </provider>
     </entry>
