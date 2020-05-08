@@ -19,17 +19,38 @@
     <select />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="9efe3c6e-e332-4730-bb89-b6a6099fef10" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
+=======
+    <list default="true" id="9efe3c6e-e332-4730-bb89-b6a6099fef10" name="Default" comment="test">
+      <change afterPath="$PROJECT_DIR$/swoole/PiDialog-6ea82d20be81.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/swoole/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/swoole/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <ignored path="test.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path=".idea/dataSources.local.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+>>>>>>> 1ac9445d1ec5b1d3f4bfd91b70e3d3aef1867ed7
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+<<<<<<< HEAD
   <component name="ComposerSettings">
     <execution />
+=======
+  <component name="ComposerSettings" doNotAsk="true">
+    <pharConfigPath>$PROJECT_DIR$/orm/composer.json</pharConfigPath>
+    <execution>
+      <executable />
+    </execution>
+>>>>>>> 1ac9445d1ec5b1d3f4bfd91b70e3d3aef1867ed7
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -42,6 +63,79 @@
     <option name="SHOW_EMPTY_GROUPS" value="false" />
     <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
   </component>
+<<<<<<< HEAD
+=======
+  <component name="FavoritesManager">
+    <favorites_list name="test" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/swoole/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="380">
+              <caret line="19" column="12" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/swoole/vendor/google/cloud-dialogflow/src/V2/Gapic/SessionsGapicClient.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="404">
+              <caret line="357" column="27" selection-start-line="357" selection-start-column="27" selection-end-line="357" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/swoole/vendor/google/cloud-dialogflow/src/V2/DetectIntentResponse.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="600">
+              <caret line="86" column="63" lean-forward="true" selection-start-line="86" selection-start-column="63" selection-end-line="86" selection-end-column="63" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dialogflow/vendor/google/gax/src/GapicClientTrait.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="844">
+              <caret line="475" column="9" lean-forward="true" selection-start-line="475" selection-start-column="9" selection-end-line="475" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/swoole/vendor/google/gax/src/GapicClientTrait.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1420">
+              <caret line="55" column="6" selection-start-line="55" selection-start-column="6" selection-end-line="55" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/swoole/vendor/google/cloud-dialogflow/src/V2/DetectIntentRequest.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="294">
+              <caret line="92" column="25" lean-forward="true" selection-start-line="92" selection-start-column="25" selection-end-line="92" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/swoole/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="254">
+              <caret line="68" column="20" selection-start-line="68" selection-start-column="20" selection-end-line="68" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+>>>>>>> 1ac9445d1ec5b1d3f4bfd91b70e3d3aef1867ed7
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -49,9 +143,101 @@
       </list>
     </option>
   </component>
+<<<<<<< HEAD
+=======
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>vender</find>
+      <find>openssl_public_encrypt</find>
+      <find>var_dump</find>
+      <find>Assist</find>
+      <find>Xuexitest</find>
+      <find>mergeFromJsonArray</find>
+      <find>Segmentation</find>
+      <find>credentials</find>
+      <find>google/type/latlng.proto</find>
+      <find>Greeter</find>
+      <find>helloworld</find>
+      <find>DRIVE_METADATA_READONLY</find>
+      <find>hostname</find>
+      <find>startCall</find>
+    </findStrings>
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/google</dir>
+    </dirStrings>
+  </component>
+>>>>>>> 1ac9445d1ec5b1d3f4bfd91b70e3d3aef1867ed7
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="test" />
+      </map>
+    </option>
   </component>
+<<<<<<< HEAD
+=======
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/string/index.php" />
+        <option value="$PROJECT_DIR$/danmu/server_1.php" />
+        <option value="$PROJECT_DIR$/danmu/pub.php" />
+        <option value="$PROJECT_DIR$/danmu/ws.php" />
+        <option value="$PROJECT_DIR$/danmu/index.html" />
+        <option value="$PROJECT_DIR$/danmu/test.php" />
+        <option value="$PROJECT_DIR$/danmu/sub.php" />
+        <option value="$PROJECT_DIR$/danmu/http.php" />
+        <option value="$PROJECT_DIR$/nsq/tcp_client.php" />
+        <option value="$PROJECT_DIR$/nsq/sub.php" />
+        <option value="$PROJECT_DIR$/ledou/L8/auth/Auth.php" />
+        <option value="$PROJECT_DIR$/md5/index.php" />
+        <option value="$PROJECT_DIR$/fimor/index.php" />
+        <option value="$PROJECT_DIR$/wx/errorCode.php" />
+        <option value="$PROJECT_DIR$/wx/demo.php" />
+        <option value="$PROJECT_DIR$/gd/index.php" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/google/ok.php" />
+        <option value="$PROJECT_DIR$/google/vendor/google/apiclient/src/Google/Client.php" />
+        <option value="$PROJECT_DIR$/google/oauth2callback.php" />
+        <option value="$PROJECT_DIR$/grpc/test/index.php" />
+        <option value="$PROJECT_DIR$/grpc/greeter_client.php" />
+        <option value="$PROJECT_DIR$/grpc_test/client_secret_1050837770395-1qp931hbpv91cteq1undu320edhl8bc5.apps.googleusercontent.com.json" />
+        <option value="$PROJECT_DIR$/grpc/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php" />
+        <option value="$PROJECT_DIR$/grpc_test/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php" />
+        <option value="$PROJECT_DIR$/grpc_test/GPBMetadata/EmbeddedAssistant.php" />
+        <option value="$PROJECT_DIR$/grpc_test/composer.json" />
+        <option value="$PROJECT_DIR$/grpc_test/build/GPBMetadata/Annotations.php" />
+        <option value="$PROJECT_DIR$/grpc_test/build/Google/Assistant/Embedded/V1alpha2/AssistConfig.php" />
+        <option value="$PROJECT_DIR$/grpc_test/vendor/google/protobuf/src/Google/Protobuf/Internal/FileDescriptorSet.php" />
+        <option value="$PROJECT_DIR$/grpc_test/vendor/google/protobuf/src/GPBMetadata/Google/Protobuf/Internal/Descriptor.php" />
+        <option value="$PROJECT_DIR$/grpc_test/vendor/google/protobuf/src/Google/Protobuf/Internal/DescriptorPool.php" />
+        <option value="$PROJECT_DIR$/grpc_test/build/GPBMetadata/Latlng.php" />
+        <option value="$PROJECT_DIR$/grpc_test/build/GPBMetadata/EmbeddedAssistant.php" />
+        <option value="$PROJECT_DIR$/grpc_test/TestClient.php" />
+        <option value="$PROJECT_DIR$/grpc_test/client_secret_601698329305-gc0ipm9ltcd816jfhju0bnp45vrol7jj.apps.googleusercontent.com.json" />
+        <option value="$PROJECT_DIR$/google/client_secrets.json" />
+        <option value="$PROJECT_DIR$/google/index.php" />
+        <option value="$PROJECT_DIR$/grpc_test/src/embedded_assistant.proto" />
+        <option value="$PROJECT_DIR$/grpc_test/src/descriptor.proto" />
+        <option value="$PROJECT_DIR$/grpc_test/src/annotations.proto" />
+        <option value="$PROJECT_DIR$/grpc_test/roots.pem" />
+        <option value="$PROJECT_DIR$/grpc_test/vendor/grpc/grpc/README.md" />
+        <option value="$PROJECT_DIR$/grpc_test/vendor/grpc/grpc/src/lib/BaseStub.php" />
+        <option value="$PROJECT_DIR$/grpc_test/index.php" />
+        <option value="$PROJECT_DIR$/dialogflow/composer.json" />
+        <option value="$PROJECT_DIR$/dialogflow/index.php" />
+        <option value="$PROJECT_DIR$/swoole/composer.json" />
+        <option value="$PROJECT_DIR$/dialogflow/vendor/google/gax/src/GapicClientTrait.php" />
+        <option value="$PROJECT_DIR$/swoole/vendor/google/cloud-dialogflow/src/V2/Gapic/SessionsGapicClient.php" />
+        <option value="$PROJECT_DIR$/swoole/index.php" />
+      </list>
+    </option>
+  </component>
+>>>>>>> 1ac9445d1ec5b1d3f4bfd91b70e3d3aef1867ed7
   <component name="PhpDebugGeneral" xdebug_debug_port="9090" notify_if_session_was_finished_without_being_paused="false" />
   <component name="PhpServers">
     <servers>
@@ -64,6 +250,7 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="php7.1.3">
     <include_path>
+<<<<<<< HEAD
       <path value="D:/JetBrains/PhpStorm 2017.2.3/swoole-ide-helper-master" />
       <path value="D:/JetBrains/PhpStorm 2016.2.2/swoole-ide-helper-master" />
       <path value="$PROJECT_DIR$/orm/vendor/illuminate/container" />
@@ -145,33 +332,118 @@
         </selected-state>
       </profile-state>
     </entry>
+=======
+      <path value="$PROJECT_DIR$/orm/vendor/symfony/polyfill-php70" />
+      <path value="$PROJECT_DIR$/orm/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/orm/vendor/composer" />
+      <path value="$PROJECT_DIR$/orm/vendor/symfony/http-foundation" />
+      <path value="$PROJECT_DIR$/orm/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/orm/vendor/symfony/translation" />
+      <path value="$PROJECT_DIR$/orm/vendor/nesbot/carbon" />
+      <path value="$PROJECT_DIR$/orm/vendor/paragonie/random_compat" />
+      <path value="$PROJECT_DIR$/orm/vendor/illuminate/validation" />
+      <path value="$PROJECT_DIR$/orm/vendor/illuminate/filesystem" />
+      <path value="$PROJECT_DIR$/orm/vendor/illuminate/support" />
+      <path value="$PROJECT_DIR$/orm/vendor/illuminate/contracts" />
+      <path value="$PROJECT_DIR$/orm/vendor/illuminate/translation" />
+      <path value="$PROJECT_DIR$/orm/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/orm/vendor/illuminate/database" />
+      <path value="$PROJECT_DIR$/orm/vendor/illuminate/container" />
+      <path value="$PROJECT_DIR$/orm/vendor/psr/simple-cache" />
+      <path value="$PROJECT_DIR$/orm/vendor/psr/container" />
+      <path value="D:/JetBrains/PhpStorm 2017.2.3/swoole-ide-helper-master" />
+      <path value="D:/JetBrains/PhpStorm 2016.2.2/swoole-ide-helper-master" />
+      <path value="$PROJECT_DIR$/../../Other/php-nsq-master" />
+    </include_path>
+  </component>
+  <component name="PhpXdebugProxy" ide_key="PHPSTORM" host="localhost" port="80" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="126" />
+    <option name="y" value="85" />
+    <option name="width" value="1675" />
+    <option name="height" value="922" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="TestPro" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TestPro" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TestPro" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TestPro" type="462c0819:PsiDirectoryNode" />
+              <item name="dialogflow" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TestPro" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TestPro" type="462c0819:PsiDirectoryNode" />
+              <item name="swoole" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+>>>>>>> 1ac9445d1ec5b1d3f4bfd91b70e3d3aef1867ed7
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../doradora" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://E:/Work/PHP/test/ledou/sdk_test_project/Config/TW/config.php" />
-    <property name="js-jscs-nodeInterpreter" value="D:\nodejs\node.exe" />
-    <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="nodejs_interpreter_path" value="D:/nodejs/node" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://E:/Work/PHP/test/ledou/sdk_test_project/Config/TW/config.php" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="js-jscs-nodeInterpreter" value="D:\nodejs\node.exe" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/swoole" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path" value="node" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\Work\PHP\test\nsq" />
-      <recent name="E:\Work\PHP\test" />
-      <recent name="E:\Work\PHP\test\danmu" />
-      <recent name="E:\Work\PHP\test\gd" />
-      <recent name="E:\Work\PHP\test\orm\lang\zh" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/grpc_test/src" />
+      <recent name="$PROJECT_DIR$/grpc/test" />
       <recent name="E:\Work\PHP\test\rsa\ios" />
       <recent name="E:\Work\PHP\test\ledou\sdk_test_project\Lib\Tools" />
       <recent name="E:\Work\PHP\test\ledou\sdk_test_project\Config" />
-      <recent name="E:\Work\PHP\test\ledou\sdk_test_project\Config\USA" />
-      <recent name="E:\Work\PHP\test\ledou\sdk_test_project\Lib\App" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/swoole" />
+      <recent name="E:\Work\php\TestPro\dialogflow" />
+      <recent name="$PROJECT_DIR$/dialogflow" />
+      <recent name="$PROJECT_DIR$/grpc_test" />
+      <recent name="$PROJECT_DIR$/grpc_test/src" />
     </key>
   </component>
+<<<<<<< HEAD
+=======
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+>>>>>>> 1ac9445d1ec5b1d3f4bfd91b70e3d3aef1867ed7
   <component name="RunManager">
     <configuration name="http://localtest.me/" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application" server_name="php7.1.3">
       <method v="2" />
@@ -268,14 +540,102 @@
       <workItem from="1522033199384" duration="12071000" />
       <workItem from="1522114967114" duration="28520000" />
       <workItem from="1522201806222" duration="16191000" />
+      <workItem from="1557306877772" duration="2670000" />
+      <workItem from="1557315236182" duration="1506000" />
+      <workItem from="1558080715521" duration="524000" />
+      <workItem from="1558921022115" duration="2475000" />
+      <workItem from="1561967778837" duration="1959000" />
+      <workItem from="1562720973058" duration="538000" />
+      <workItem from="1566358740213" duration="854000" />
+      <workItem from="1567063994831" duration="5455000" />
+      <workItem from="1567127693160" duration="15461000" />
+      <workItem from="1567386675827" duration="1293000" />
+      <workItem from="1567387991198" duration="864000" />
+      <workItem from="1567388877223" duration="21620000" />
+      <workItem from="1567472726190" duration="39253000" />
+      <workItem from="1568041251913" duration="908000" />
+      <workItem from="1568079284430" duration="3751000" />
     </task>
     <servers />
   </component>
+<<<<<<< HEAD
+=======
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="674157000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="126" y="85" width="1675" height="922" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19781554" />
+      <window_info id="Structure" order="1" weight="0.2494577" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="0" />
+      <window_info anchor="bottom" id="Version Control" order="1" weight="0.3289183" />
+      <window_info anchor="bottom" id="Terminal" order="2" weight="0.27820712" />
+      <window_info anchor="bottom" id="Message" order="3" />
+      <window_info anchor="bottom" id="Find" order="4" />
+      <window_info anchor="bottom" id="Run" order="5" />
+      <window_info anchor="bottom" id="Debug" order="6" sideWeight="0.49755758" weight="0.40552995" />
+      <window_info anchor="bottom" id="Cvs" order="7" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="8" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="9" />
+      <window_info anchor="bottom" id="Database" order="10" weight="0.3299748" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5024424" weight="0.33238637" />
+      <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="13" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+>>>>>>> 1ac9445d1ec5b1d3f4bfd91b70e3d3aef1867ed7
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
+<<<<<<< HEAD
     <option name="oldMeFiltersMigrated" value="true" />
+=======
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+>>>>>>> 1ac9445d1ec5b1d3f4bfd91b70e3d3aef1867ed7
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -285,6 +645,13 @@
       <collection />
     </option>
   </component>
+<<<<<<< HEAD
+=======
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="test" />
+    <option name="LAST_COMMIT_MESSAGE" value="test" />
+  </component>
+>>>>>>> 1ac9445d1ec5b1d3f4bfd91b70e3d3aef1867ed7
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -465,4 +832,136 @@
       </configuration>
     </watches-manager>
   </component>
+<<<<<<< HEAD
+=======
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/grpc_test/src/google/type/latlng.proto" />
+    <entry file="file://$PROJECT_DIR$/grpc_test/vendor/google/protobuf/src/Google/Protobuf/Internal/DescriptorPool.php" />
+    <entry file="jar://$APPLICATION_PLUGINS_DIR$/protobuf-jetbrains-plugin/lib/protobuf-java-3.6.1-sources.jar!/google/protobuf/descriptor.proto" />
+    <entry file="file://$PROJECT_DIR$/grpc/composer.json" />
+    <entry file="file://$PROJECT_DIR$/grpc_test/composer.json" />
+    <entry file="file://$PROJECT_DIR$/grpc_test/build/Google/Type/LatLng.php" />
+    <entry file="file://$PROJECT_DIR$/grpc_test/src/latlng.proto" />
+    <entry file="file://$PROJECT_DIR$/grpc_test/src/http.proto" />
+    <entry file="file://$PROJECT_DIR$/grpc_test/src/embedded_assistant.proto" />
+    <entry file="file://$PROJECT_DIR$/grpc_test/src/descriptor.proto" />
+    <entry file="file://$PROJECT_DIR$/grpc_test/build/GPBMetadata/EmbeddedAssistant.php" />
+    <entry file="file://$PROJECT_DIR$/grpc_test/build/GPBMetadata/Http.php" />
+    <entry file="file://$PROJECT_DIR$/grpc_test/build/GPBMetadata/Latlng.php" />
+    <entry file="file://$PROJECT_DIR$/grpc_test/src/annotations.proto" />
+    <entry file="file://$PROJECT_DIR$/grpc_test/build/GPBMetadata/Annotations.php" />
+    <entry file="file://$PROJECT_DIR$/grpc_test/testkey.pem" />
+    <entry file="file://$PROJECT_DIR$/grpc_test/vendor/grpc/grpc/etc/roots.pem" />
+    <entry file="file://$PROJECT_DIR$/grpc_test/roots.pem" />
+    <entry file="file://$PROJECT_DIR$/grpc_test/vendor/grpc/grpc/README.md" />
+    <entry file="file://$PROJECT_DIR$/grpc_test/server.pem" />
+    <entry file="file://$PROJECT_DIR$/grpc_test/vendor/grpc/grpc/src/lib/BaseStub.php" />
+    <entry file="file://$PROJECT_DIR$/grpc_test/vendor/grpc/grpc/src/lib/AbstractCall.php" />
+    <entry file="file://$PROJECT_DIR$/grpc_test/TestClient.php" />
+    <entry file="file://$PROJECT_DIR$/grpc/Helloworld/GreeterClient.php" />
+    <entry file="file://$PROJECT_DIR$/grpc/Helloworld/HelloReply.php" />
+    <entry file="file://$PROJECT_DIR$/grpc_test/vendor/grpc/grpc/src/lib/UnaryCall.php" />
+    <entry file="file://$PROJECT_DIR$/grpc/greeter_client.php" />
+    <entry file="file://$PROJECT_DIR$/grpc_test/Certificates.pem" />
+    <entry file="file://$PROJECT_DIR$/grpc_test/merchant-publickKey.pem" />
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/grpc/grpc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="517" column="32" lean-forward="true" selection-start-line="517" selection-start-column="32" selection-end-line="517" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grpc_test/build/Google/Assistant/Embedded/V1alpha2/AssistConfig.php" />
+    <entry file="file://$PROJECT_DIR$/grpc_test/build/Google/Assistant/Embedded/V1alpha2/AudioOutConfig.php" />
+    <entry file="file://$PROJECT_DIR$/dialogflow/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php" />
+    <entry file="file://$PROJECT_DIR$/dialogflow/vendor/google/cloud-dialogflow/src/V2/QueryInput.php" />
+    <entry file="file://$PROJECT_DIR$/dialogflow/vendor/google/cloud-dialogflow/src/V2/SessionsClient.php" />
+    <entry file="file://$PROJECT_DIR$/grpc_test/client_secret_601698329305-gc0ipm9ltcd816jfhju0bnp45vrol7jj.apps.googleusercontent.com.json" />
+    <entry file="file://$PROJECT_DIR$/dialogflow/client_secret.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dialogflow/vendor/google/cloud-dialogflow/src/V2/Gapic/SessionsGapicClient.php" />
+    <entry file="file://$PROJECT_DIR$/grpc_test/index.php" />
+    <entry file="file://$PROJECT_DIR$/dialogflow/DipeltaAi-de51be284d9a.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dialogflow/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="27" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swoole/PiDialog-6ea82d20be81.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swoole/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="499">
+          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swoole/vendor/google/cloud-dialogflow/src/V2/DetectIntentRequest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="92" column="25" lean-forward="true" selection-start-line="92" selection-start-column="25" selection-end-line="92" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swoole/vendor/google/protobuf/src/Google/Protobuf/Internal/Message.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="68" column="20" selection-start-line="68" selection-start-column="20" selection-end-line="68" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swoole/vendor/google/gax/src/GapicClientTrait.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1420">
+          <caret line="55" column="6" selection-start-line="55" selection-start-column="6" selection-end-line="55" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dialogflow/vendor/google/gax/src/GapicClientTrait.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="844">
+          <caret line="475" column="9" lean-forward="true" selection-start-line="475" selection-start-column="9" selection-end-line="475" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swoole/vendor/google/cloud-dialogflow/src/V2/DetectIntentResponse.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="86" column="63" lean-forward="true" selection-start-line="86" selection-start-column="63" selection-end-line="86" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swoole/vendor/google/cloud-dialogflow/src/V2/Gapic/SessionsGapicClient.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="404">
+          <caret line="357" column="27" selection-start-line="357" selection-start-column="27" selection-end-line="357" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dialogflow/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="339">
+          <caret line="21" column="25" lean-forward="true" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swoole/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="19" column="12" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+>>>>>>> 1ac9445d1ec5b1d3f4bfd91b70e3d3aef1867ed7
 </project>
