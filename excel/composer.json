@@ -1,0 +1,28 @@
+{
+  "name": "dipelta/voice",
+  "description": "The Excel Test project.",
+  "type": "project",
+  "keywords": [
+    "framework",
+    "excel-test"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "dipelta",
+      "email": "zha_zha@outlook.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.3.0",
+    "phpoffice/phpspreadsheet": "1.12.0"
+  },
+  "require-dev": {
+
+  },
+  "autoload": {
+    "psr-4": {
+
+    }
+  }
+}

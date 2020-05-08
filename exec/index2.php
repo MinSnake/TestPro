@@ -1,6 +1,6 @@
 <?php
 // 获取某目录下所有文件、目录名（不包括子目录下文件、目录名）
-$dir = "/Users/dipelta/Movies/Saki/Honnpenn";
+$dir = "/Users/dipelta/Movies/Saki/Honnpenn/xx";
 $handler = opendir($dir);
 while(($file = readdir($handler)) !== false) {
     if ($file !== "." && $file !== ".." && substr($file,0 ,1) == "[") {
