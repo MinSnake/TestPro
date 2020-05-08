@@ -7,8 +7,8 @@
   </component>
   <component name="PhpIncludePathManager">
     <include_path>
-      <path value="D:\JetBrains\PhpStorm 2017.2.3\swoole-ide-helper-master" />
-      <path value="D:\JetBrains\PhpStorm 2016.2.2\swoole-ide-helper-master" />
+      <path value="D:/JetBrains/PhpStorm 2017.2.3/swoole-ide-helper-master" />
+      <path value="D:/JetBrains/PhpStorm 2016.2.2/swoole-ide-helper-master" />
       <path value="$PROJECT_DIR$/orm/vendor/illuminate/container" />
       <path value="$PROJECT_DIR$/orm/vendor/doctrine/inflector" />
       <path value="$PROJECT_DIR$/orm/vendor/illuminate/contracts" />
@@ -27,12 +27,13 @@
       <path value="$PROJECT_DIR$/orm/vendor/psr/container" />
       <path value="$PROJECT_DIR$/orm/vendor/psr/simple-cache" />
       <path value="$PROJECT_DIR$/orm/vendor/illuminate/validation" />
+      <path value="E:/Work/Other/php-nsq-master" />
     </include_path>
   </component>
   <component name="PhpInterpreters">
     <interpreters>
-      <interpreter home="sftp://root@192.168.120.85:22/usr/local/php7/bin/php" id="887406e4-3a3c-4853-93cd-25712d29581d" name="php7.1.3" debugger_id="php.debugger.XDebug">
-        <remote_data WEB_SERVER_CONFIG_ID="f4e00820-a068-4a34-9da7-1ef6bc1fdfd9" WEB_SERVER_CONFIG_NAME="php7.1.3" WEB_SERVER_CREDENTIALS_ID="sftp://root@192.168.120.85:22" INTERPRETER_PATH="/usr/local/php7/bin/php" HELPERS_PATH="/root/.phpstorm_helpers" INITIALIZED="false" VALID="true" />
+      <interpreter id="887406e4-3a3c-4853-93cd-25712d29581d" name="php7.1.3" home="sshConfig://DATA" debugger_id="php.debugger.XDebug">
+        <remote_data INTERPRETER_PATH="/usr/local/php7/bin/php" HELPERS_PATH="/root/.phpstorm_helpers" INITIALIZED="false" VALID="true" RUN_AS_ROOT_VIA_SUDO="false" SSH_CONFIG_ID="1a139547-57e7-46e7-8cd9-b81d0bf431f4" SSH_CONFIG_NAME="php7.1.3" SSH_CREDENTIALS_ID="sshConfig://php7.1.3" />
       </interpreter>
     </interpreters>
   </component>

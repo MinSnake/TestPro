@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SshConfigs">
+    <configs>
+      <sshConfig authType="PASSWORD" host="192.168.115.90" id="1a139547-57e7-46e7-8cd9-b81d0bf431f4" port="22" customName="php7.1.3" nameFormat="CUSTOM" />
+      <sshConfig authType="PASSWORD" host="192.168.115.90" id="58d6438a-9be7-44a6-8725-95058d009918" port="22" customName="php7.1.3" nameFormat="CUSTOM" username="root" />
+    </configs>
+  </component>
+</project>
